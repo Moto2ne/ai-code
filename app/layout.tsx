@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ReactNode } from "react";
 import { Providers } from "./providers";
 
@@ -18,6 +19,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-1">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl font-bold text-brand-600">AICode</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm font-semibold text-brand-600">
+                  <Link href="/login" className="rounded-lg border border-brand-200 px-3 py-2 transition hover:bg-brand-50">
+                    ログイン
+                  </Link>
                 </div>
 {/*                 <nav className="flex items-center gap-4 text-sm font-medium text-slate-600">
                   <a href="/dashboard" className="hover:text-brand-600">ダッシュボード</a>

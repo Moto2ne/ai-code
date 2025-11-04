@@ -4,7 +4,7 @@ import { courseCatalog, lessons, userProfile } from "@/lib/content";
 export default function HomePage() {
   const completedLessons = userProfile.completedLessons.length;
   const totalLessons = Object.keys(lessons).length;
-  const completionLabel = `${completedLessons}個 完了レッスン`;
+  const completionLabel = `${completedLessons}個`;
 
   return (
     <div className="space-y-8">
