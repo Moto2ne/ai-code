@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#0f172a" rx="24" />
+  <g transform="translate(96 72)">
+    <rect width="448" height="216" fill="#1e293b" rx="16" />
+    <rect x="32" y="32" width="384" height="152" fill="#0ea5e9" rx="12" opacity="0.2" />
+    <text x="48" y="78" font-family="Segoe UI" font-size="28" fill="#38bdf8">Visual Studio Code</text>
+    <rect x="48" y="108" width="180" height="40" fill="#38bdf8" rx="8" />
+    <text x="68" y="134" font-family="Segoe UI" font-size="20" fill="#0f172a">Download</text>
+  </g>
+</svg>
