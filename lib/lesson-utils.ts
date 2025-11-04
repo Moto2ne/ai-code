@@ -18,10 +18,11 @@ export function buildPreviewDocument(markup: string): string {
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Live Preview</title>
 <style>
-  body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 24px; background: #f8fafc; color: #0f172a; }
-  header, footer { background: #ffffff; border-radius: 12px; padding: 16px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1); }
-  main { background: #ffffff; border-radius: 12px; padding: 16px; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08); }
-  nav a { margin-right: 12px; color: #0ea5e9; text-decoration: none; font-weight: 600; }
+  body { font-family: 'Noto Sans JP', 'Segoe UI', sans-serif; margin: 0; padding: 24px; background: #ffffff; color: #1f2937; }
+  h1, h2, h3 { margin: 0 0 12px; }
+  p { margin: 0 0 12px; line-height: 1.6; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
 </style>
 </head>
 <body>

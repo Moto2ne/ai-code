@@ -48,6 +48,19 @@ export interface CourseDefinition {
   outcomes: string[];
 }
 
+export interface CourseCatalogEntry {
+  id: string;
+  title: string;
+  description: string;
+  modules: Array<{
+    id: string;
+    title: string;
+    description?: string;
+    lessonId?: string;
+    status?: "available" | "comingSoon";
+  }>;
+}
+
 export interface UserProfile {
   id: string;
   name: string;
@@ -71,6 +84,74 @@ export const userProfile: UserProfile = {
   currentCourseId: "nextjs-basic",
   currentLessonId: "state01"
 };
+
+export const courseCatalog: CourseCatalogEntry[] = [
+  {
+    id: "ai-coding",
+    title: "AIコーディング入門",
+    description: "AIチャットとライブプレビューでWeb制作を体験する入門コースです。初級から実践編まで一本道のステップで進められます。",
+    modules: [
+      {
+        id: "ai-coding-basic",
+        title: "AIコーディング初級編",
+        description: "AIチャットへの質問と基本的なUI作成を体験します。",
+        lessonId: "ai01",
+        status: "available"
+      },
+      {
+        id: "ai-coding-intermediate",
+        title: "AIコーディング中級編",
+        description: "HTML/CSS生成のコツを学び、カードやフォームを仕上げます。",
+        status: "comingSoon"
+      },
+      {
+        id: "ai-coding-advanced",
+        title: "AIコーディング上級編",
+        description: "ランディングページの各セクションをAIと共同で作り込みます。",
+        status: "comingSoon"
+      },
+      {
+        id: "ai-coding-practical",
+        title: "AIコーディング実践編",
+        description: "学んだ内容をベースに実サービスを想定したページを構築します。",
+        status: "comingSoon"
+      }
+    ]
+  },
+  {
+    id: "ai-web-app",
+    title: "AIで作る！Webアプリ開発編",
+    description: "AIと協働しながらWebアプリの設計から公開までを駆け抜けます。",
+    modules: [
+      { id: "ai-web-app-basics", title: "AIコーディング入門", status: "comingSoon" },
+      { id: "ai-web-app-backend", title: "バックエンド連携入門", status: "comingSoon" },
+      { id: "ai-web-app-testing", title: "テスト自動化を学ぼう", status: "comingSoon" },
+      { id: "ai-web-app-deploy", title: "デプロイ準備編", status: "comingSoon" }
+    ]
+  },
+  {
+    id: "ai-todo",
+    title: "AIで作る！Todoアプリ開発編",
+    description: "シンプルなTodoアプリをAIの提案を活かしながら完成させます。",
+    modules: [
+      { id: "ai-todo-plan", title: "要件整理とプロンプト設計", status: "comingSoon" },
+      { id: "ai-todo-ui", title: "UIコンポーネント構築", status: "comingSoon" },
+      { id: "ai-todo-state", title: "状態管理をAIと一緒に", status: "comingSoon" },
+      { id: "ai-todo-polish", title: "仕上げと改善提案", status: "comingSoon" }
+    ]
+  },
+  {
+    id: "ai-portfolio",
+    title: "AIで作る！マイポートフォリオ編",
+    description: "AIと共に自己紹介サイトを構築し、魅力的にアピールしましょう。",
+    modules: [
+      { id: "ai-portfolio-story", title: "ストーリー設計", status: "comingSoon" },
+      { id: "ai-portfolio-layout", title: "レイアウトデザイン", status: "comingSoon" },
+      { id: "ai-portfolio-brand", title: "ブランド表現", status: "comingSoon" },
+      { id: "ai-portfolio-launch", title: "公開とフィードバック", status: "comingSoon" }
+    ]
+  }
+];
 
 export const course: CourseDefinition = {
   id: "nextjs-basic",
@@ -105,8 +186,8 @@ export const course: CourseDefinition = {
     },
     {
       id: "chapter-ai",
-      title: "AI連携",
-      description: "OpenAI APIにリクエストするシンプルなチャットを実装します",
+      title: "AIに触れてみよう！",
+      description: "AIチャットを使ってアイデアをまとめ、コードに反映する体験をします",
       order: ["ai01"]
     },
     {
@@ -330,24 +411,44 @@ export const lessons: Record<string, LessonDefinition> = {
   ai01: {
     id: "ai01",
     chapterId: "chapter-ai",
-    title: "AI APIに問い合わせる",
-    durationMinutes: 12,
+    title: "AIに触れてみよう！",
+    durationMinutes: 10,
     slides: [
-      { type: "text", content: "OpenAIにPOSTリクエストを送ってみましょう" },
+      { type: "text", content: "AIに触れてみましょう。" },
       {
         type: "note",
-        content: "安全なAPIキーの管理方法を忘れずに"
+        content: "🤖AIチャットに、「AIコーディングについて教えてください。」と入力してください。"
+      },
+      {
+        type: "note",
+        content: "AIからの回答をコピーして、中央のコードエリアに貼り付けましょう。"
+      },
+      {
+        type: "note",
+        content: "プレビューで内容を確認したら、右下のチェックボタンを押して結果を見てみましょう。"
       }
     ],
-    starterFiles: {},
-    task: {
-      goal: "OpenAI APIとの通信フローを理解する",
-      hints: ["環境変数にAPIキーを設定"],
-      tests: []
+    starterFiles: {
+      "result.tsx": `export default function Result() {\n  return (\n    <main className="p-6 space-y-4">\n      <p data-placeholder="ai-response">AIチャットの回答をここに貼り付けましょう。</p>\n    </main>\n  );\n}\n`
     },
-    qa: ["Q. Unauthorizedになります A. APIキーを確認"],
+    task: {
+      goal: "AIチャットの回答をまとめてページに表示する",
+      hints: [
+        "まずはAIチャットで質問を送って回答を確認しましょう",
+        "回答をコピーしてプレースホルダーの段落を置き換えます",
+        "見出しや箇条書きを追加すると読みやすくなります"
+      ],
+      tests: [
+        { type: "dom", selector: "h1", exists: true },
+        { type: "dom", selector: "p", exists: true }
+      ]
+    },
+    qa: [
+      "Q. AIの回答が貼り付けられません A. コードエリアのプレースホルダーを選択してから貼り付けてください",
+      "Q. プレビューに表示されません A. コードの保存状態を確認するか、エディタで内容をもう一度コピーしてください"
+    ],
     summary: {
-      recap: ["APIキーの扱い", "レスポンス取り扱い"],
+      recap: ["AIチャットへの質問", "回答のコピペと整形"],
       nextLessonId: "publish01"
     }
   },
@@ -375,5 +476,24 @@ export const lessons: Record<string, LessonDefinition> = {
       recap: ["Vercelデプロイの流れ"],
       nextLessonId: undefined
     }
+  }
+};
+
+export const aiCodingLessons = {
+  "ai-basic-01": {
+    id: "ai-basic-01",
+    title: "AIでボタンコンポーネントを作成",
+    prompt: "Reactでクリック可能なボタンコンポーネントを作成してください。青い背景で、ホバー時に濃くなるようにしてください。",
+    initialCode: `export default function App() {\n  return (\n    <div>\n      {/* ここにボタンを追加 */}\n    </div>\n  );\n}`,
+    targetCode: `export default function App() {\n  const handleClick = () => {\n    alert('クリックされました!');\n  };\n\n  return (\n    <div>\n      <button\n        onClick={handleClick}\n        className="rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"\n      >\n        クリック\n      </button>\n    </div>\n  );\n}`,
+    explanation: "AIが生成したコードでは、ボタンのクリックイベントをhandleClick関数で処理し、Tailwind CSSでスタイリングしています。"
+  },
+  "state01": {
+    id: "state01",
+    title: "AIでカウンターを実装",
+    prompt: "useStateを使ってカウンターを実装してください。+1ボタンと-1ボタンを配置してください。",
+    initialCode: `import { useState } from 'react';\n\nexport default function Counter() {\n  return (\n    <div>\n      {/* カウンター実装 */}\n    </div>\n  );\n}`,
+    targetCode: `import { useState } from 'react';\n\nexport default function Counter() {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div className="space-y-4">\n      <div className="text-2xl font-bold">Count: {count}</div>\n      <div className="flex gap-2">\n        <button onClick={() => setCount(count - 1)}>-1</button>\n        <button onClick={() => setCount(count + 1)}>+1</button>\n      </div>\n    </div>\n  );\n}`,
+    explanation: "useStateフックを使って状態管理を行い、ボタンクリックで状態を更新しています。"
   }
 };

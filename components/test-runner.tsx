@@ -7,6 +7,7 @@ export interface TestRunnerProps {
   lesson: LessonDefinition;
   markup: string;
   onAllPassed: () => void;
+  variant?: "default" | "compact";
 }
 
 interface TestResult {
@@ -63,8 +64,9 @@ function runTests(markup: string, tests: TestCase[]): TestResult[] {
   });
 }
 
-export function TestRunner({ lesson, markup, onAllPassed }: TestRunnerProps) {
+export function TestRunner({ lesson, markup, onAllPassed, variant = "default" }: TestRunnerProps) {
   const [results, setResults] = useState<TestResult[]>([]);
+  const [showResults, setShowResults] = useState(variant !== "compact");
 
   const testResults = useMemo(() => runTests(markup, lesson.task.tests), [lesson.task.tests, markup]);
 
@@ -73,7 +75,7 @@ export function TestRunner({ lesson, markup, onAllPassed }: TestRunnerProps) {
   }, [testResults]);
 
   useEffect(() => {
-    if (lesson.task.tests.length === 0) {
+    if (lesson.task.tests.length === 0 || (variant === "compact" && !showResults)) {
       return;
     }
     const allPassed =
@@ -81,12 +83,63 @@ export function TestRunner({ lesson, markup, onAllPassed }: TestRunnerProps) {
     if (allPassed) {
       onAllPassed();
     }
-  }, [lesson.task.tests.length, onAllPassed, results]);
+  }, [lesson.task.tests.length, onAllPassed, results, showResults, variant]);
+
+  const handleRunTests = () => {
+    setResults(testResults);
+    setShowResults(true);
+  };
 
   if (lesson.task.tests.length === 0) {
+    if (variant === "compact") {
+      return (
+        <button
+          type="button"
+          disabled
+          className="rounded-full bg-slate-200 px-4 py-2 text-sm font-semibold text-slate-500"
+        >
+          手動チェックのみ
+        </button>
+      );
+    }
+
     return (
       <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-700">
         このレッスンでは手動チェックのみが必要です。
+      </div>
+    );
+  }
+
+  if (variant === "compact") {
+    const passedCount = results.filter((result: TestResult) => result.passed).length;
+    return (
+      <div className="flex flex-col items-end gap-3">
+        <button
+          type="button"
+          onClick={handleRunTests}
+          className="rounded-full bg-teal-400 px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-offset-2"
+        >
+          チェック
+        </button>
+        {showResults && (
+          <div className="w-full min-w-[160px] space-y-2 text-xs">
+            <div className="text-right font-semibold text-slate-600">
+              結果: {passedCount} / {results.length}
+            </div>
+            <ul className="space-y-1">
+              {results.map((result: TestResult, index: number) => (
+                <li
+                  key={index}
+                  className={`rounded border px-2 py-1 ${
+                    result.passed ? "border-teal-200 bg-teal-50 text-teal-600" : "border-rose-200 bg-rose-50 text-rose-700"
+                  }`}
+                >
+                  {result.case.type === "dom" ? `${result.case.selector} を確認` : "未対応テスト"}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     );
   }
@@ -100,10 +153,10 @@ export function TestRunner({ lesson, markup, onAllPassed }: TestRunnerProps) {
         </span>
       </div>
       <ul className="space-y-2">
-  {results.map((result: TestResult, index: number) => (
+        {results.map((result: TestResult, index: number) => (
           <li
             key={index}
-            className={`rounded-md border p-3 text-sm ${result.passed ? "border-emerald-200 bg-emerald-50 text-emerald-700" : "border-rose-200 bg-rose-50 text-rose-700"}`}
+            className={`rounded-md border p-3 text-sm ${result.passed ? "border-teal-200 bg-teal-50 text-teal-700" : "border-rose-200 bg-rose-50 text-rose-700"}`}
           >
             <div className="font-medium">{result.case.type === "dom" ? `${result.case.selector} を確認` : "未対応テスト"}</div>
             <div>{result.message}</div>

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Publish Guide | Setup Coach"
+  title: "Publish Guide | AICode "
 };
 
 const STEPS = [

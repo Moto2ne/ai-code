@@ -1,6 +1,6 @@
-# Setup Coach Web App
+# AICode  Web App
 
-Setup Coach is a Progate-inspired learning experience that combines slide-based explanation, live coding, instant preview, automated checks, and AI coaching prompts. This repository contains a Next.js + TypeScript prototype that follows the provided specification.
+AICode  is a Progate-inspired learning experience that combines slide-based explanation, live coding, instant preview, automated checks, and AI coaching prompts. This repository contains a Next.js + TypeScript prototype that follows the provided specification.
 
 ## Features
 
