@@ -1,0 +1,36 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333EA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#heroGradient)"/>
+  
+  <!-- Content Container -->
+  <g transform="translate(400, 200)">
+    <!-- Main Heading -->
+    <text x="0" y="-60" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">
+      Welcome to Our Service
+    </text>
+    
+    <!-- Subtext -->
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.9)" text-anchor="middle">
+      Build something amazing with our platform
+    </text>
+    
+    <!-- CTA Button -->
+    <rect x="-80" y="30" width="160" height="50" rx="25" fill="white" opacity="0.2"/>
+    <rect x="-75" y="35" width="150" height="40" rx="20" fill="white"/>
+    <text x="0" y="62" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#3B82F6" text-anchor="middle">
+      Get Started
+    </text>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="30" fill="white" opacity="0.1"/>
+  <circle cx="700" cy="300" r="40" fill="white" opacity="0.1"/>
+  <circle cx="150" cy="320" r="20" fill="white" opacity="0.15"/>
+</svg>
