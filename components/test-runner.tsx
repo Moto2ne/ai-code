@@ -50,6 +50,9 @@ function runTests(markup: string, tests: TestCase[]): TestResult[] {
   if (tests.length === 0) {
     return [];
   }
+  if (typeof window === "undefined") {
+    return [];
+  }
   const parser = new DOMParser();
   const doc = parser.parseFromString(markup, "text/html");
   return tests.map((testCase) => {

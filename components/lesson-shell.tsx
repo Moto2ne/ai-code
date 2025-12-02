@@ -80,7 +80,6 @@ export function LessonShell({ lesson }: { lesson: LessonDefinition }) {
         <section className="flex min-h-0 flex-col">
           <header className="flex items-center justify-between border-b border-slate-200 px-6 py-3 text-xs font-semibold text-slate-500">
             <span>コード</span>
-            <span className="rounded bg-slate-100 px-2 py-0.5 text-[10px] uppercase">Monaco</span>
           </header>
           <div className="flex-1 min-h-0 px-6 py-4">
             <div className="h-full min-h-0 overflow-hidden rounded-2xl border border-slate-200">
