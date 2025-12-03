@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
-  <rect width="640" height="360" fill="#eff6ff" rx="24" />
-  <rect x="32" y="32" width="576" height="80" fill="#2563eb" rx="12" opacity="0.9" />
-  <rect x="32" y="132" width="384" height="196" fill="#ffffff" stroke="#94a3b8" stroke-width="2" rx="16" />
-  <rect x="436" y="132" width="172" height="196" fill="#dbeafe" rx="16" />
-  <text x="64" y="82" font-family="Segoe UI" font-size="28" fill="#ffffff">Header</text>
-  <text x="60" y="200" font-family="Segoe UI" font-size="24" fill="#1e293b">Main Content</text>
-  <text x="460" y="200" font-family="Segoe UI" font-size="20" fill="#1d4ed8">Preview</text>
-</svg>
