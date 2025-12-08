@@ -5,6 +5,9 @@ on:
     - cron: '0 21 * * *'  # 日本時間 06:00 (UTC 21:00)
   workflow_dispatch:  # 手動実行も可能
 
+permissions:
+  contents: write  # リポジトリへの書き込み権限
+
 jobs:
   daily_intel:
     runs-on: ubuntu-latest
