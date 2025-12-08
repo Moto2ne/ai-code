@@ -64,7 +64,7 @@ JSON形式のみで回答してください。"""
     for attempt in range(max_retries):
         try:
             response = client.models.generate_content(
-                model='gemini-2.5-flash',  # JSON生成が複雑なので新しいモデルを使用
+                model='gemma-3-27b',  # クォータ分散のため別モデルを使用
                 contents=[prompt_text],
                 config=types.GenerateContentConfig(
                     temperature=0.7
@@ -112,7 +112,7 @@ def analyze_and_generate_tactics():
     
     # Gemini APIクライアントを初期化
     client = genai.Client(api_key=api_key)
-    print("📊 Gemini API (gemini-2.5-flash) を使用します")
+    print("📊 Gemini API (gemma-3-27b) を使用します")
     
     # ニュースデータを読み込む
     news_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "news_raw.json")

@@ -147,9 +147,8 @@ def collect_news(max_retries=3):
         print(f"エラー: Gemini APIクライアントの初期化に失敗しました: {e}")
         return None
     
-    # Gemini 2.0 Flash を使用（ニュース収集用）
-    # Google Search Groundingがメインなので古いモデルでOK
-    # ※ analyst.py は gemini-2.5-flash を使用（JSON生成が複雑なため）
+    # Gemini 2.5 Flash Lite を使用（ニュース収集用）
+    # 軽量版でクォータに余裕がある
     model_name = 'gemini-2.5-flash-lite'
     
     # 今日の日付を取得
