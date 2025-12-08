@@ -12,7 +12,7 @@ st.set_page_config(page_title="AI司令塔ナレッジ", layout="wide", initial_
 st.markdown(get_custom_css(), unsafe_allow_html=True)
 
 
-@st.cache_data
+@st.cache_data(ttl=300)  # 5分ごとにキャッシュを更新（GitHubからの変更を反映）
 def load_knowledge_base():
     """ナレッジデータをJSONファイルから読み込む（経験則 + AI戦術）"""
     base_dir = os.path.dirname(__file__)
