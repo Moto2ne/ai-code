@@ -14,40 +14,20 @@ st.markdown(get_custom_css(), unsafe_allow_html=True)
 
 @st.cache_data(ttl=300)  # 5分ごとにキャッシュを更新（GitHubからの変更を反映）
 def load_knowledge_base():
-    """ナレッジデータをJSONファイルから読み込む（経験則 + AI戦術）"""
+    """AI戦術データをJSONファイルから読み込む"""
     base_dir = os.path.dirname(__file__)
-    
-    # 経験則（ユーザーの知見）
-    situations_path = os.path.join(base_dir, "data", "situations.json")
-    # AI生成戦術
     ai_tactics_path = os.path.join(base_dir, "data", "ai_tactics.json")
     
-    all_items = []
-    
     try:
-        # 経験則を読み込み（sourceを追加）
-        if os.path.exists(situations_path):
-            with open(situations_path, "r", encoding="utf-8") as f:
-                situations = json.load(f)
-                for item in situations:
-                    item["_source"] = "experience"  # 経験則マーク
-                all_items.extend(situations)
-        
-        # AI戦術を読み込み（sourceを追加）
         if os.path.exists(ai_tactics_path):
             with open(ai_tactics_path, "r", encoding="utf-8") as f:
                 ai_tactics = json.load(f)
-                for item in ai_tactics:
-                    item["_source"] = "ai"  # AI生成マーク
-                all_items.extend(ai_tactics)
+                # 日付で新しい順にソート
+                ai_tactics.sort(key=lambda x: x.get("date", ""), reverse=True)
+                return ai_tactics
         
-        if not all_items:
-            st.warning("⚠️ データファイルが見つかりません。")
-            return []
-        
-        # 日付で新しい順にソート
-        all_items.sort(key=lambda x: x.get("date", ""), reverse=True)
-        return all_items
+        st.warning("⚠️ データファイルが見つかりません。")
+        return []
         
     except Exception as e:
         st.error(f"❌ データ読み込みエラー: {e}")
@@ -76,24 +56,18 @@ all_tags = sorted(set(tag for item in knowledge_base for tag in item.get("tags",
 st.markdown("""
 <div style="margin-bottom: 2rem;">
     <h1 style="font-size: 1.8rem; margin: 0; color: #1a253a;">🎯 AI司令塔ナレッジ</h1>
-    <p style="color: #666; margin-top: 0.5rem;">世界中のAIトレンドを自動収集 → 実務に使える戦術に変換</p>
+    <p style="color: #666; margin-top: 0.5rem;">毎朝6時に最新AIニュースを自動収集 → 実務で使えるプロンプトに変換</p>
 </div>
 """, unsafe_allow_html=True)
 
 # 検索・フィルターエリア
-col_search, col_tags, col_source = st.columns([2, 1, 1])
+col_search, col_tags = st.columns([2, 1])
 
 with col_search:
-    search_query = st.text_input("🔍 キーワード検索", placeholder="例: テスト, 要件, バグ...")
+    search_query = st.text_input("🔍 キーワード検索", placeholder="例: Claude, コード生成, API...")
 
 with col_tags:
     selected_tags = st.multiselect("🏷️ タグで絞り込み", all_tags)
-
-with col_source:
-    source_filter = st.selectbox(
-        "📂 ソース",
-        ["すべて", "✍️ 経験則のみ", "🤖 AI提案のみ"]
-    )
 
 # 変数設定（折りたたみ）
 with st.expander("⚙️ プロンプト変数を設定"):
@@ -123,27 +97,16 @@ if selected_tags:
         if any(tag in item.get("tags", []) for tag in selected_tags)
     ]
 
-# ソースフィルター
-if source_filter == "✍️ 経験則のみ":
-    filtered = [item for item in filtered if item.get("_source") == "experience"]
-elif source_filter == "🤖 AI提案のみ":
-    filtered = [item for item in filtered if item.get("_source") == "ai"]
-
 # NEW件数をカウント
 new_count = sum(1 for item in filtered if is_new(item.get("date", "")))
 
 # 結果表示
 if not filtered:
-    st.warning("該当するナレッジがありません")
+    st.info("📭 戦術がまだありません。毎朝6時に自動更新されます。")
 else:
-    # 件数カウント
-    exp_count = sum(1 for item in filtered if item.get("_source") == "experience")
-    ai_count = sum(1 for item in filtered if item.get("_source") == "ai")
-    
     st.caption(
-        f"📚 {len(filtered)} 件のナレッジ "
-        f"（✍️ 経験則: {exp_count}件 / 🤖 AI提案: {ai_count}件）"
-        + (f" 🔥 NEW: {new_count}件" if new_count > 0 else "")
+        f"📚 {len(filtered)} 件の戦術"
+        + (f" （🔥 NEW: {new_count}件）" if new_count > 0 else "")
     )
     
     for item in filtered:
@@ -153,14 +116,11 @@ else:
         new_badge = "🔥 NEW " if is_new_item else ""
         date_display = f"[{item_date}]" if item_date else ""
         
-        # ソースバッジ（経験則 or AI）
-        source_badge = "✍️ " if item.get("_source") == "experience" else "🤖 "
-        
         # タイトル（なければsituationを使用）
         title = item.get("title", item.get("situation", "タイトルなし"))
         
         # エクスパンダーのタイトル
-        expander_title = f"{source_badge}{new_badge}{date_display} {title[:55]}{'...' if len(title) > 55 else ''}"
+        expander_title = f"{new_badge}{date_display} {title[:55]}{'...' if len(title) > 55 else ''}"
         
         with st.expander(f"**{expander_title}**"):
             # タグ表示
@@ -177,22 +137,20 @@ else:
             if recommended_ai:
                 model_name = recommended_ai.get("model", "")
                 reason = recommended_ai.get("reason", "")
-                badge_color = recommended_ai.get("badge_color", "blue")
                 
                 col_ai, col_reason = st.columns([1, 2])
                 with col_ai:
                     st.markdown(f"**🚀 推奨: {model_name}**")
                 with col_reason:
                     if reason:
-                        st.markdown(f"💡 **なぜ{model_name.split()[0]}を推奨するのか？**")
-                        st.markdown(reason)
+                        st.markdown(f"💡 {reason}")
             
             st.markdown("---")
             
             # シチュエーション（problem_context）
             problem_context = item.get("problem_context", item.get("situation", ""))
             if problem_context:
-                st.markdown(f"**シチュエーション:**")
+                st.markdown(f"**課題:**")
                 st.markdown(problem_context)
             
             # プロンプト
