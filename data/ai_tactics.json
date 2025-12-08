@@ -210,7 +210,7 @@
     }
   },
   {
-    "title": "複雑設計パターン適用コード生成",
+    "title": "GPT-5.2で複雑設計パターンを実装",
     "problem_context": "複雑な設計パターン実装の手間と品質維持",
     "recommended_ai": {
       "model": "GPT-5.2",
