@@ -52,7 +52,6 @@ jobs:
             echo "📭 新しい戦術はありませんでした"
           else
             git add data/situations.json
-            git add new_tactics.json
             git commit -m "🤖 自動更新: $(date +%Y-%m-%d) のAI戦術を追加"
             git push
             echo "✅ 新しい戦術をコミットしました"
