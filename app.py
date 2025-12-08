@@ -73,16 +73,6 @@ def load_knowledge_base():
         return []
 
 
-def is_new(date_str):
-    """作成日が3日以内かどうかを判定"""
-    try:
-        item_date = datetime.strptime(date_str, "%Y-%m-%d")
-        days_diff = (datetime.now() - item_date).days
-        return days_diff <= 3
-    except:
-        return False
-
-
 # ナレッジデータを読み込む
 knowledge_base = load_knowledge_base()
 
@@ -132,18 +122,13 @@ if selected_tags:
         if any(tag in item.get("tags", []) for tag in selected_tags)
     ]
 
-# NEW件数と済件数をカウント
-new_count = sum(1 for item in filtered if is_new(item.get("date", "")))
+# 済件数をカウント
 completed_count = sum(1 for item in filtered if item.get("id", "") in st.session_state.completed_tactics)
 
 # 結果表示
 if not filtered:
     st.info("📭 戦術がまだありません。毎朝6時に自動更新されます。")
 else:
-    # NEWがある場合は目立たせる
-    if new_count > 0:
-        st.success(f"🆕 新着 {new_count} 件あります！")
-    
     status_parts = [f"📚 全{len(filtered)}件"]
     if completed_count > 0:
         status_parts.append(f"✅ 試した: {completed_count}件")
@@ -152,9 +137,8 @@ else:
     for item in filtered:
         item_id = item.get("id", "")
         
-        # NEWマークと日付
+        # 日付
         item_date = item.get("date", "")
-        is_new_item = is_new(item_date)
         date_display = f"{item_date}" if item_date else ""
         
         # 済チェック
@@ -164,13 +148,10 @@ else:
         # タイトル（なければsituationを使用）
         title = item.get("title", item.get("situation", "タイトルなし"))
         
-        # エクスパンダーのタイトル（NEWは目立つように）
-        if is_new_item:
-            expander_title = f"{completed_badge}🆕 {title[:45]}{'...' if len(title) > 45 else ''}"
-        else:
-            expander_title = f"{completed_badge}{date_display} {title[:50]}{'...' if len(title) > 50 else ''}"
+        # エクスパンダーのタイトル（日付とタイトル）
+        expander_title = f"{completed_badge}{date_display} {title[:50]}{'...' if len(title) > 50 else ''}"
         
-        with st.expander(f"**{expander_title}**", expanded=is_new_item and not is_completed):
+        with st.expander(f"**{expander_title}**"):
             # 推奨AIとリンク（最重要 - 一番上に配置）
             recommended_ai = item.get("recommended_ai")
             if recommended_ai:
