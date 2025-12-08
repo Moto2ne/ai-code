@@ -59,7 +59,7 @@ URL: {news_item.get('url', 'N/A')}
 - 変数（例: {{コード}}, {{言語}}）を含めて汎用的にしてください
 - tagsは3つ程度、日本語で
 
-JSON形式のみで回答してください。"""
+JSON形式のみで回答してください。コードブロックは使わず、純粋なJSONのみを出力してください。"""
 
     for attempt in range(max_retries):
         try:
@@ -67,14 +67,11 @@ JSON形式のみで回答してください。"""
                 model='gemini-2.5-flash',  # 動作確認済みのモデル
                 contents=[prompt_text],
                 config=types.GenerateContentConfig(
-                    temperature=0.7
+                    temperature=0.5  # より確実なJSON生成のため温度を下げる
                 )
             )
             
             response_text = response.text.strip()
-            
-            # デバッグ出力（エラー時のみ）
-            # print(f"DEBUG: {response_text[:200]}")
             
             # JSONマークダウンコードブロックを除去
             if "```json" in response_text:
@@ -90,7 +87,35 @@ JSON形式のみで回答してください。"""
             if json_start != -1 and json_end > json_start:
                 response_text = response_text[json_start:json_end]
             
-            tactic_data = json.loads(response_text)
+            # 不完全なJSONを修正する試み
+            response_text = response_text.replace('\n', ' ').replace('\r', '')
+            
+            # 閉じていない文字列を修正
+            try:
+                tactic_data = json.loads(response_text)
+            except json.JSONDecodeError:
+                # 閉じ括弧が足りない場合の補完
+                if response_text.count('{') > response_text.count('}'):
+                    response_text += '}' * (response_text.count('{') - response_text.count('}'))
+                if response_text.count('[') > response_text.count(']'):
+                    response_text += ']' * (response_text.count('[') - response_text.count(']'))
+                # 末尾の不完全な部分を削除して再試行
+                for end_pattern in ['"}', '"]', '"}]', '"}]}']:
+                    try:
+                        # 最後の完全なフィールドまで切り詰める
+                        last_complete = response_text.rfind('",')
+                        if last_complete > 0:
+                            truncated = response_text[:last_complete+1] + '}'
+                            # tagsがない場合は追加
+                            if '"tags"' not in truncated:
+                                truncated = truncated[:-1] + ', "tags": ["AI", "自動生成"]}'
+                            tactic_data = json.loads(truncated)
+                            break
+                    except:
+                        continue
+                else:
+                    raise
+            
             return tactic_data
             
         except Exception as e:
