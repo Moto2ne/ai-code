@@ -64,7 +64,7 @@ JSON形式のみで回答してください。"""
     for attempt in range(max_retries):
         try:
             response = client.models.generate_content(
-                model='gemini-1.5-flash',  # クォータが大きい安定版モデル
+                model='gemini-2.5-flash',  # 動作確認済みのモデル
                 contents=[prompt_text],
                 config=types.GenerateContentConfig(
                     temperature=0.7
@@ -94,7 +94,7 @@ JSON形式のみで回答してください。"""
             return tactic_data
             
         except Exception as e:
-            wait_time = 2 ** attempt
+            wait_time = 5 + (5 * attempt)  # 5秒, 10秒, 15秒と待機
             print(f"  ⚠️ APIエラー (試行 {attempt + 1}/{max_retries}): {str(e)[:80]}")
             if attempt < max_retries - 1:
                 print(f"     {wait_time}秒後にリトライします...")
@@ -112,7 +112,7 @@ def analyze_and_generate_tactics():
     
     # Gemini APIクライアントを初期化
     client = genai.Client(api_key=api_key)
-    print("📊 Gemini API (gemini-1.5-flash) を使用します")
+    print("📊 Gemini API (gemini-2.5-flash) を使用します")
     
     # ニュースデータを読み込む
     news_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "news_raw.json")
@@ -155,7 +155,7 @@ def analyze_and_generate_tactics():
         else:
             print(f"   ❌ スキップ")
         
-        # レート制限対策
+        # レート制限対策（十分に待機）
         if idx < len(news_items):
             time.sleep(2)
     
