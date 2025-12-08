@@ -1,1 +1,108 @@
-[]
+[
+  {
+    "title": "エッジAIでリアルタイム処理",
+    "problem_context": "低レイテンシ・オフライン環境でのAI利用",
+    "recommended_ai": {
+      "model": "Mistral エッジモデル",
+      "reason": "軽量・高速、デバイス内実行",
+      "badge_color": "orange"
+    },
+    "prompt": "[デバイス]上で[タスク]をオフライン実行する軽量AIモデルの設計を提案してください。",
+    "tags": [
+      "エッジAI",
+      "リアルタイム",
+      "オフライン",
+      "Mistral"
+    ],
+    "id": "20251208_150418_01",
+    "date": "2025-12-08",
+    "source_news": {
+      "title": "Mistral AI、フラッグシップモデルとエッジデバイス向けモデルを発表",
+      "url": "https://www.thetechbuzz.com/mistral-ai-releases-two-new-ai-models-to-challenge-openais-dominance/"
+    }
+  },
+  {
+    "title": "Gemini 3で開発効率最大化",
+    "problem_context": "開発速度とコード品質のボトルネックを解消したい",
+    "recommended_ai": {
+      "model": "Google Gemini 3",
+      "reason": "最新のコーディング支援機能",
+      "badge_color": "orange"
+    },
+    "prompt": "[機能名]を実装するPythonコードを生成して。テストケースも含む。",
+    "tags": [
+      "コード生成",
+      "開発効率",
+      "Gemini"
+    ],
+    "id": "20251208_150425_02",
+    "date": "2025-12-08",
+    "source_news": {
+      "title": "Google Gemini 3がAIベンチマークで新記録を樹立",
+      "url": "https://www.cryptorank.com/news/google-gemini-3-shatters-records-with-unprecedented-ai-benchmark-scores-and-game-changing-coding-app/"
+    }
+  },
+  {
+    "title": "最新LLM性能比較と導入戦略",
+    "problem_context": "既存LLMの性能限界打破と開発効率向上",
+    "recommended_ai": {
+      "model": "DeepSeek V3.2 / Mistral 3 Large",
+      "reason": "高性能オープンモデルでコスト最適化",
+      "badge_color": "orange"
+    },
+    "prompt": "DeepSeek V3.2とMistral 3 Largeで[タスク]を比較評価し、最適なモデルを選定せよ。",
+    "tags": [
+      "LLM",
+      "オープンソース",
+      "性能評価",
+      "モデル選定"
+    ],
+    "id": "20251208_150433_03",
+    "date": "2025-12-08",
+    "source_news": {
+      "title": "DeepSeek V3.2とMistral 3 Largeがリリース",
+      "url": "https://www.ai-everything.com/ai-week-in-review-25-12-06/"
+    }
+  },
+  {
+    "title": "リアルタイム音声UIでUX革新",
+    "problem_context": "既存アプリの操作性・アクセシビリティを向上",
+    "recommended_ai": {
+      "model": "OpenAIの最新音声モデル",
+      "reason": "高精度な音声対話とリアルタイム性",
+      "badge_color": "orange"
+    },
+    "prompt": "ユーザー音声入力から意図を抽出し、自然な音声で応答するAPI連携コードを生成して",
+    "tags": [
+      "音声UI",
+      "リアルタイムAPI"
+    ],
+    "id": "20251208_150443_04",
+    "date": "2025-12-08",
+    "source_news": {
+      "title": "OpenAI、高度なAI音声モデルとリアルタイムAPIアップデートをリリース",
+      "url": "https://www.eweek.com/developer/openai-releases-its-most-advanced-ai-speech-model-amp-realtime-api-updates/"
+    }
+  },
+  {
+    "title": "InstagramインサイトAI活用術",
+    "problem_context": "投稿効果の最大化とエンゲージメント向上",
+    "recommended_ai": {
+      "model": "時系列分析モデル",
+      "reason": "ユーザー行動予測と最適化",
+      "badge_color": "orange"
+    },
+    "prompt": "Instagram APIで取得したインサイトデータから、次週の投稿で最もエンゲージメントを高めるコンテンツタイプと投稿時間を提案して。",
+    "tags": [
+      "データ分析",
+      "コンテンツ戦略",
+      "マーケティング自動化"
+    ],
+    "id": "20251208_150453_05",
+    "date": "2025-12-08",
+    "source_news": {
+      "title": "Instagram APIがインサイト、コンテンツ管理、コラボレーションのアップデートを発表",
+      "url": "https://www.facebook.com/business/news/instagram-api-updates-for-insights-content-management-and-collaboration"
+    }
+  }
+]

@@ -82,5 +82,27 @@
       "title": "GoogleがGemini 3 Deep ThinkモードをAI Ultraユーザーに展開",
       "url": "https://9to5google.com/2025/12/04/google-gemini-3-deep-think-ai-ultra/"
     }
+  },
+  {
+    "title": "Instagram API強化でマーケティング自動化",
+    "problem_context": "Instagram運用効率化とデータ活用不足を解消",
+    "recommended_ai": {
+      "model": "OpenAI GPT-4o",
+      "reason": "コンテンツ生成・分析・要約に最適",
+      "badge_color": "orange"
+    },
+    "prompt": "Instagram投稿のエンゲージメントを最大化するキャプション案を生成し、最適なハッシュタグを提案してください。",
+    "tags": [
+      "Instagram API",
+      "マーケティング自動化",
+      "コンテンツ戦略",
+      "データ分析"
+    ],
+    "id": "20251208_05",
+    "date": "2025-12-08",
+    "source_news": {
+      "title": "Instagram APIがインサイト、コンテンツ管理、コラボレーションのアップデートを発表",
+      "url": "https://www.facebook.com/business/news/instagram-api-updates-for-insights-content-management-and-collaboration"
+    }
   }
 ]

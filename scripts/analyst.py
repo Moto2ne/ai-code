@@ -177,7 +177,6 @@ def analyze_and_generate_tactics():
     print(f"📰 {len(valid_news)}件のニュースを戦術に変換します...\n")
     
     tactics = []
-    date_str = datetime.now().strftime("%Y%m%d")
     
     for idx, news in enumerate(valid_news, 1):
         print(f"🔄 [{idx}/{len(valid_news)}] {news.get('title', 'N/A')[:40]}...")
@@ -185,8 +184,9 @@ def analyze_and_generate_tactics():
         tactic_data = analyze_news_to_tactic(client, news)
         
         if tactic_data:
-            # IDと日付を追加
-            tactic_data["id"] = f"{date_str}_{idx:02d}"
+            # タイムスタンプベースのユニークID（同日複数回実行でも重複しない）
+            timestamp_id = datetime.now().strftime("%Y%m%d_%H%M%S") + f"_{idx:02d}"
+            tactic_data["id"] = timestamp_id
             tactic_data["date"] = datetime.now().strftime("%Y-%m-%d")
             
             # ソース情報を追加

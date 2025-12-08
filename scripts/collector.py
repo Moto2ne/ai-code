@@ -70,49 +70,111 @@ def parse_markdown_to_news_items(markdown_text):
     """Markdown形式のレスポンスを解析してニュースデータに変換"""
     news_items = []
     
+    if not markdown_text:
+        print("⚠️ 空のレスポンスを受信")
+        return news_items
+    
     try:
-        # Markdownのリスト形式をパース: - [タイトル](URL): 要約
-        pattern = r'- \[([^\]]+)\]\(([^)]+)\):\s*(.+?)(?=\n- |\n\n|$)'
-        matches = re.findall(pattern, markdown_text, re.MULTILINE | re.DOTALL)
+        # パターン1: - [タイトル](URL): 要約
+        pattern1 = r'- \[([^\]]+)\]\(([^)]+)\):\s*(.+?)(?=\n- |\n\n|$)'
+        matches = re.findall(pattern1, markdown_text, re.MULTILINE | re.DOTALL)
         
         for title, url, summary in matches:
-            news_items.append({
-                "title": title.strip(),
-                "summary": summary.strip()[:500],  # 最大500文字
-                "url": url.strip(),
-                "collected_at": datetime.now().isoformat()
-            })
+            if url.strip().startswith('http'):
+                news_items.append({
+                    "title": title.strip(),
+                    "summary": summary.strip()[:500],
+                    "url": url.strip(),
+                    "collected_at": datetime.now().isoformat()
+                })
         
-        # パターンマッチが失敗した場合、簡易的なパースを試みる
+        # パターン2: **番号. タイトル**\n[URL](URL): 要約 形式（Geminiの主要出力形式）
         if not news_items:
-            # 行ごとに分割して、URLを含む行を探す
-            lines = markdown_text.split('\n')
-            current_item = {}
-            for line in lines:
-                line = line.strip()
-                if not line or line.startswith('#'):
-                    continue
-                
-                # URLを含む行を検出
-                url_match = re.search(r'https?://[^\s\)]+', line)
-                if url_match:
-                    url = url_match.group(0)
-                    # タイトルを抽出（[タイトル]または行の最初の部分）
-                    title_match = re.search(r'\[([^\]]+)\]', line)
-                    title = title_match.group(1) if title_match else line.split(':')[0].strip()
-                    
-                    # 要約を抽出
-                    summary = line.split(':', 1)[1].strip() if ':' in line else line
-                    
+            pattern2 = r'\*\*\d+\.\s*([^*]+)\*\*\s*\n?\[?(https?://[^\s\)\]\n]+)\]?(?:\([^)]*\))?[:\s]*([^\n*]+)'
+            matches = re.findall(pattern2, markdown_text, re.MULTILINE)
+            for title, url, summary in matches:
+                news_items.append({
+                    "title": title.strip(),
+                    "summary": summary.strip()[:500],
+                    "url": url.strip(),
+                    "collected_at": datetime.now().isoformat()
+                })
+        
+        # パターン3: 番号付きリスト 1. [タイトル](URL): 要約
+        if not news_items:
+            pattern3 = r'\d+\.\s*\[([^\]]+)\]\(([^)]+)\)[:\s]+(.+?)(?=\n\d+\.|\n\n|$)'
+            matches = re.findall(pattern3, markdown_text, re.MULTILINE | re.DOTALL)
+            for title, url, summary in matches:
+                if url.strip().startswith('http'):
                     news_items.append({
-                        "title": title[:200],
-                        "summary": summary[:500],
-                        "url": url,
+                        "title": title.strip(),
+                        "summary": summary.strip()[:500],
+                        "url": url.strip(),
                         "collected_at": datetime.now().isoformat()
                     })
         
+        # パターン4: 行ごとにURLを探す（フォールバック）
+        if not news_items:
+            print("📝 標準パターンで解析失敗、行ごとの解析を試行...")
+            lines = markdown_text.split('\n')
+            current_title = None
+            
+            for i, line in enumerate(lines):
+                line = line.strip()
+                if not line:
+                    continue
+                
+                # **タイトル** を検出して保持
+                bold_match = re.search(r'\*\*\d*\.?\s*([^*]+)\*\*', line)
+                if bold_match and 'http' not in line:
+                    current_title = bold_match.group(1).strip()
+                    continue
+                
+                # URLを含む行を検出
+                url_match = re.search(r'https?://[^\s\)\]>\n]+', line)
+                if url_match:
+                    url = url_match.group(0).rstrip('.,;:')
+                    
+                    # タイトルを決定
+                    title = None
+                    # [タイトル] 形式を探す
+                    title_match = re.search(r'\[([^\]]+)\]', line)
+                    if title_match:
+                        title = title_match.group(1)
+                    elif current_title:
+                        title = current_title
+                    else:
+                        # 行の最初の部分をタイトルとして使用
+                        title = re.sub(r'https?://[^\s]+', '', line).strip()[:100]
+                    
+                    # 要約を抽出
+                    summary_match = re.search(r'[:\-]\s*(.+)$', line)
+                    summary = summary_match.group(1) if summary_match else ""
+                    
+                    if title and url and url.startswith('http'):
+                        news_items.append({
+                            "title": title[:200],
+                            "summary": summary[:500],
+                            "url": url,
+                            "collected_at": datetime.now().isoformat()
+                        })
+                    
+                    current_title = None  # リセット
+        
+        print(f"📊 解析結果: {len(news_items)}件のニュースを検出")
+        
+        # 重複URLを除去
+        seen_urls = set()
+        unique_items = []
+        for item in news_items:
+            if item["url"] not in seen_urls:
+                seen_urls.add(item["url"])
+                unique_items.append(item)
+        news_items = unique_items
+        
         # それでも見つからない場合、全体を1つのニュースとして扱う
         if not news_items:
+            print("⚠️ ニュースを解析できませんでした（フォールバック）")
             news_items.append({
                 "title": "AI/ML News Collection",
                 "summary": markdown_text[:500],
@@ -180,13 +242,17 @@ def collect_news(max_retries=3):
 - 個人ブログ、note、Qiita、まとめサイト
 - AI企業の資金調達・買収ニュース（技術発表を除く）
 
-【出力形式】
-- [タイトル](URL): 要約テキスト（50字以内、技術的なポイントを含める）
+【出力形式】厳密に以下の形式で出力してください:
+- [ニュースのタイトル](実際のURL): 要約（50字以内）
+
+例:
+- [Claude 3.5 Sonnetがリリース](https://anthropic.com/news/claude-3-5): 推論能力が大幅に向上し、コーディングタスクで最高性能を達成
 
 【必須条件】
 - 各ニュースは2025年12月のものであること
-- 公式発表または信頼できるテックメディアのURLであること
-- 5件選定すること"""
+- URLは必ず https:// で始まる実際のURLであること
+- 5件選定すること
+- 余計な説明は不要、上記形式のリストのみ出力"""
     
     for attempt in range(max_retries):
         try:
@@ -207,6 +273,12 @@ def collect_news(max_retries=3):
             
             # レスポンスはMarkdown形式のテキストとして取得
             markdown_text = response.text
+            
+            # デバッグ: レスポンス内容を出力（GitHub Actions用）
+            print("=" * 50)
+            print("📝 Gemini APIレスポンス (先頭1000文字):")
+            print(markdown_text[:1000] if markdown_text else "(空)")
+            print("=" * 50)
             
             # MarkdownをJSON形式に変換
             news_items = parse_markdown_to_news_items(markdown_text)
