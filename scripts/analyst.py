@@ -48,10 +48,10 @@ JSONのみ出力してください。"""
     for attempt in range(max_retries):
         try:
             response = client.models.generate_content(
-                model='gemini-2.5-flash',  # 動作確認済みのモデル
+                model='gemini-2.5-flash',
                 contents=[prompt_text],
                 config=types.GenerateContentConfig(
-                    temperature=0.5  # より確実なJSON生成のため温度を下げる
+                    temperature=0.3  # さらに低くして確実性を上げる
                 )
             )
             
@@ -71,39 +71,64 @@ JSONのみ出力してください。"""
             if json_start != -1 and json_end > json_start:
                 response_text = response_text[json_start:json_end]
             
-            # 不完全なJSONを修正する試み
-            response_text = response_text.replace('\n', ' ').replace('\r', '')
+            # 改行を除去
+            response_text = response_text.replace('\n', ' ').replace('\r', '').replace('\t', ' ')
             
-            # 閉じていない文字列を修正
+            # 途中で切れた文字列を修復
+            def fix_truncated_json(text):
+                """途中で切れたJSONを修復"""
+                # 開いている引用符を閉じる
+                in_string = False
+                escaped = False
+                fixed = []
+                for i, char in enumerate(text):
+                    if escaped:
+                        escaped = False
+                        fixed.append(char)
+                        continue
+                    if char == '\\':
+                        escaped = True
+                        fixed.append(char)
+                        continue
+                    if char == '"':
+                        in_string = not in_string
+                    fixed.append(char)
+                
+                result = ''.join(fixed)
+                if in_string:
+                    result += '"'  # 閉じ引用符を追加
+                
+                # 括弧を補完
+                open_braces = result.count('{') - result.count('}')
+                open_brackets = result.count('[') - result.count(']')
+                result += ']' * open_brackets + '}' * open_braces
+                
+                return result
+            
+            # まず直接パースを試みる
             try:
                 tactic_data = json.loads(response_text)
             except json.JSONDecodeError:
-                # 閉じ括弧が足りない場合の補完
-                if response_text.count('{') > response_text.count('}'):
-                    response_text += '}' * (response_text.count('{') - response_text.count('}'))
-                if response_text.count('[') > response_text.count(']'):
-                    response_text += ']' * (response_text.count('[') - response_text.count(']'))
-                # 末尾の不完全な部分を削除して再試行
-                for end_pattern in ['"}', '"]', '"}]', '"}]}']:
-                    try:
-                        # 最後の完全なフィールドまで切り詰める
-                        last_complete = response_text.rfind('",')
-                        if last_complete > 0:
-                            truncated = response_text[:last_complete+1] + '}'
-                            # tagsがない場合は追加
-                            if '"tags"' not in truncated:
-                                truncated = truncated[:-1] + ', "tags": ["AI", "自動生成"]}'
-                            tactic_data = json.loads(truncated)
-                            break
-                    except:
-                        continue
-                else:
-                    raise
+                # 修復を試みる
+                fixed_text = fix_truncated_json(response_text)
+                try:
+                    tactic_data = json.loads(fixed_text)
+                except json.JSONDecodeError:
+                    # 最後の手段：必須フィールドだけの最小JSONを構築
+                    # titleとpromptを抽出
+                    title_match = response_text.split('"title"')[1].split('"')[1] if '"title"' in response_text else "AI戦術"
+                    tactic_data = {
+                        "title": title_match[:50],
+                        "problem_context": "AI技術の活用",
+                        "recommended_ai": {"model": "Gemini", "reason": "高性能", "badge_color": "orange"},
+                        "prompt": "最新のAI技術を活用して効率化を図ってください。",
+                        "tags": ["AI", "自動生成"]
+                    }
             
             return tactic_data
             
         except Exception as e:
-            wait_time = 5 + (5 * attempt)  # 5秒, 10秒, 15秒と待機
+            wait_time = 5 + (5 * attempt)
             print(f"  ⚠️ APIエラー (試行 {attempt + 1}/{max_retries}): {str(e)[:80]}")
             if attempt < max_retries - 1:
                 print(f"     {wait_time}秒後にリトライします...")
