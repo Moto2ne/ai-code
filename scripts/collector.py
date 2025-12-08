@@ -225,15 +225,25 @@ def collect_news(max_retries=3):
 
 【収集するニュースの種類】（優先度順）
 1. 新しいAIモデルのリリース（GPT、Claude、Gemini、Llama、Mistral、DeepSeekなど）
-2. AI開発ツール・ライブラリのアップデート（LangChain、Hugging Face、vLLMなど）
-3. APIの新機能・変更（OpenAI API、Anthropic API、Google AI APIなど）
-4. AI関連のOSSの重要リリース（GitHub）
-5. 開発者向けAIサービスの発表
+2. AI開発ツールのアップデート（Cursor、v0、Dify、LangChain、Hugging Faceなど）
+3. AIアプリ・サービスの新機能（NotebookLM、Perplexity、Napkin AI、Gamma、Replit AIなど）
+4. APIの新機能・変更（OpenAI API、Anthropic API、Google AI APIなど）
+5. AI関連のOSSの重要リリース（GitHub）
+
+【特に注目するツール・サービス】
+- NotebookLM（Google）: ポッドキャスト生成、RAG
+- Cursor: AIコードエディタ
+- v0（Vercel）: UIコード生成
+- Dify: ノーコードAIアプリ構築
+- Napkin AI: 図解自動生成
+- Gamma: AIプレゼン作成
+- Perplexity: AI検索
+- Replit AI: クラウド開発環境
 
 【必須ソース】以下のドメインからのみ選定：
 - openai.com, anthropic.com, blog.google, ai.meta.com, deepseek.com
 - techcrunch.com, theverge.com, venturebeat.com, arstechnica.com
-- huggingface.co, github.blog, github.com/releases
+- huggingface.co, github.blog, cursor.sh, vercel.com, dify.ai
 - itmedia.co.jp, watch.impress.co.jp, gigazine.net
 
 【絶対に除外する内容】
@@ -253,7 +263,7 @@ def collect_news(max_retries=3):
 - [Claude 3.5 Sonnetがリリース](https://anthropic.com/news/claude-3-5): 推論能力が大幅に向上し、コーディングタスクで最高性能を達成
 
 【必須条件】
-- 各ニュースは2025年12月の「具体的な技術リリース」であること
+- 各ニュースは2025年12月の「具体的な技術リリース・アップデート」であること
 - URLは必ず https:// で始まる実際のURLであること
 - 5件選定すること
 - 余計な説明は不要、上記形式のリストのみ出力"""

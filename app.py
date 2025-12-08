@@ -140,11 +140,13 @@ completed_count = sum(1 for item in filtered if item.get("id", "") in st.session
 if not filtered:
     st.info("📭 戦術がまだありません。毎朝6時に自動更新されます。")
 else:
-    status_parts = [f"📚 {len(filtered)} 件の戦術"]
+    # NEWがある場合は目立たせる
     if new_count > 0:
-        status_parts.append(f"🔥 NEW: {new_count}件")
+        st.success(f"🆕 新着 {new_count} 件あります！")
+    
+    status_parts = [f"📚 全{len(filtered)}件"]
     if completed_count > 0:
-        status_parts.append(f"✅ 済: {completed_count}件")
+        status_parts.append(f"✅ 試した: {completed_count}件")
     st.caption(" | ".join(status_parts))
     
     for item in filtered:
@@ -153,8 +155,7 @@ else:
         # NEWマークと日付
         item_date = item.get("date", "")
         is_new_item = is_new(item_date)
-        new_badge = "🔥 NEW " if is_new_item else ""
-        date_display = f"[{item_date}]" if item_date else ""
+        date_display = f"{item_date}" if item_date else ""
         
         # 済チェック
         is_completed = item_id in st.session_state.completed_tactics
@@ -163,10 +164,13 @@ else:
         # タイトル（なければsituationを使用）
         title = item.get("title", item.get("situation", "タイトルなし"))
         
-        # エクスパンダーのタイトル
-        expander_title = f"{completed_badge}{new_badge}{date_display} {title[:50]}{'...' if len(title) > 50 else ''}"
+        # エクスパンダーのタイトル（NEWは目立つように）
+        if is_new_item:
+            expander_title = f"{completed_badge}🆕 {title[:45]}{'...' if len(title) > 45 else ''}"
+        else:
+            expander_title = f"{completed_badge}{date_display} {title[:50]}{'...' if len(title) > 50 else ''}"
         
-        with st.expander(f"**{expander_title}**"):
+        with st.expander(f"**{expander_title}**", expanded=is_new_item and not is_completed):
             # 推奨AIとリンク（最重要 - 一番上に配置）
             recommended_ai = item.get("recommended_ai")
             if recommended_ai:

@@ -235,6 +235,101 @@ with st.expander("🔴 **Mistral** - 欧州発オープンソース"):
 st.markdown("---")
 
 # ============================================
+# 🔥 今話題のAIツール
+# ============================================
+st.markdown("## 🔥 今話題のAIツール")
+st.caption("2025年に注目を集めているツールたち")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    with st.expander("📓 **NotebookLM** (Google) - AI学習ノート", expanded=True):
+        st.markdown("""
+        **何ができる？**
+        - PDFやWebページをアップロード → AIが内容を理解
+        - 質問すると、アップしたソースに基づいて回答
+        - **ポッドキャスト生成**: 資料を元に2人の会話形式の音声を自動生成！
+        
+        **こんな時に使う:**
+        - 論文や長い資料を効率的に理解したい
+        - 社内ドキュメントを元にQ&Aボットを作りたい
+        - 資料の内容をポッドキャスト風に聞きたい
+        """)
+        st.link_button("NotebookLM を開く", "https://notebooklm.google.com/", use_container_width=True)
+    
+    with st.expander("🎨 **Napkin AI** - 図解自動生成"):
+        st.markdown("""
+        **何ができる？**
+        - テキストを入力 → プロ級の図解・インフォグラフィックを自動生成
+        - プレゼン資料、ブログ、SNS投稿用の図解に最適
+        
+        **こんな時に使う:**
+        - 説明資料にいい感じの図を入れたい
+        - 概念をビジュアルで伝えたい
+        - デザインスキルがないけど見栄えの良い図がほしい
+        """)
+        st.link_button("Napkin AI を開く", "https://www.napkin.ai/", use_container_width=True)
+    
+    with st.expander("🎬 **Dify** - ノーコードAIアプリ構築"):
+        st.markdown("""
+        **何ができる？**
+        - ノーコードでAIチャットボットやワークフローを構築
+        - RAG（社内文書検索）も簡単に実装
+        - オープンソースで自社運用可能
+        
+        **こんな時に使う:**
+        - 社内用AIチャットボットを作りたい
+        - プログラミングなしでAIアプリを作りたい
+        - 複数のAIを組み合わせたワークフローを構築したい
+        """)
+        st.link_button("Dify を開く", "https://dify.ai/", use_container_width=True)
+
+with col2:
+    with st.expander("⚡ **Cursor** - AIコードエディタ", expanded=True):
+        st.markdown("""
+        **何ができる？**
+        - VS Code + AI が融合したエディタ
+        - コードベース全体を理解してコード生成
+        - Cmd+K でその場でコード生成・編集
+        
+        **こんな時に使う:**
+        - 本格的にAIでコーディングしたい
+        - プロジェクト全体を理解した上でコード生成してほしい
+        - GitHub Copilotより高機能なものがほしい
+        """)
+        st.link_button("Cursor を開く", "https://cursor.sh/", use_container_width=True)
+    
+    with st.expander("🎯 **v0** (Vercel) - UIコード生成"):
+        st.markdown("""
+        **何ができる？**
+        - 「こんなUIがほしい」と伝えるとReact/Tailwindコードを生成
+        - 生成したUIをその場でプレビュー・編集
+        - そのままVercelにデプロイ可能
+        
+        **こんな時に使う:**
+        - フロントエンドのUIを素早く作りたい
+        - デザインカンプからコードを起こしたい
+        - プロトタイプを爆速で作りたい
+        """)
+        st.link_button("v0 を開く", "https://v0.dev/", use_container_width=True)
+    
+    with st.expander("🔮 **Gamma** - AIプレゼン作成"):
+        st.markdown("""
+        **何ができる？**
+        - テキストやアウトラインからプレゼン資料を自動生成
+        - デザインも自動でいい感じに
+        - そのままWeb公開やPDFエクスポート
+        
+        **こんな時に使う:**
+        - プレゼン資料を素早く作りたい
+        - デザインに時間をかけたくない
+        - 提案書やレポートを見栄え良く作りたい
+        """)
+        st.link_button("Gamma を開く", "https://gamma.app/", use_container_width=True)
+
+st.markdown("---")
+
+# ============================================
 # 使い分けチャート
 # ============================================
 st.markdown("## 🎯 目的別おすすめ")
@@ -247,38 +342,50 @@ use_cases = {
         "🔍 最新情報を調べる",
         "📊 データ分析",
         "✍️ 文章を書く",
-        "🎨 画像を生成",
-        "🏢 社内で安全に使う",
+        "🎨 図解を作りたい",
+        "📽️ プレゼン資料を作る",
+        "🎨 UIを作りたい",
+        "📓 資料を学習したい",
+        "🏢 社内AIアプリを作る",
     ],
     "1st": [
-        "Claude",
-        "Claude / Cursor",
-        "Claude",
+        "Cursor",
+        "Cursor / Claude",
+        "NotebookLM",
         "Perplexity",
         "ChatGPT",
         "ChatGPT",
-        "ChatGPT (DALL-E)",
-        "Mistral / DeepSeek",
+        "Napkin AI",
+        "Gamma",
+        "v0",
+        "NotebookLM",
+        "Dify",
     ],
     "2nd": [
-        "DeepSeek",
+        "Claude",
         "ChatGPT",
-        "Gemini",
+        "Claude",
         "Gemini",
         "Claude",
         "Claude",
-        "Gemini (Imagen)",
-        "Claude API",
+        "ChatGPT",
+        "ChatGPT",
+        "Claude",
+        "Claude",
+        "ChatGPT GPTs",
     ],
     "理由": [
-        "コード理解力が最も高い",
+        "プロジェクト全体を理解してコード生成",
         "エラー分析と修正提案が優秀",
-        "20万トークンの長文対応",
+        "ソース指定で正確な回答",
         "リアルタイムWeb検索",
         "Code Interpreterでコード実行",
         "自然な日本語",
-        "DALL-E 3の品質が高い",
-        "オープンソースで自社運用可",
+        "テキストから図解を自動生成",
+        "アウトラインからスライド自動生成",
+        "React/Tailwindコードを即生成",
+        "PDFをアップして質問、ポッドキャスト化",
+        "ノーコードでRAGチャットボット構築",
     ]
 }
 
