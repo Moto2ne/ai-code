@@ -224,23 +224,27 @@ def collect_news(max_retries=3):
 ソフトウェアエンジニア、開発者、MLエンジニア
 
 【収集するニュースの種類】（優先度順）
-1. 新しいAIモデルのリリース（GPT、Claude、Gemini、Llama、Mistralなど）
+1. 新しいAIモデルのリリース（GPT、Claude、Gemini、Llama、Mistral、DeepSeekなど）
 2. AI開発ツール・ライブラリのアップデート（LangChain、Hugging Face、vLLMなど）
 3. APIの新機能・変更（OpenAI API、Anthropic API、Google AI APIなど）
 4. AI関連のOSSの重要リリース（GitHub）
 5. 開発者向けAIサービスの発表
 
 【必須ソース】以下のドメインからのみ選定：
-- openai.com, anthropic.com, blog.google, ai.meta.com
+- openai.com, anthropic.com, blog.google, ai.meta.com, deepseek.com
 - techcrunch.com, theverge.com, venturebeat.com, arstechnica.com
 - huggingface.co, github.blog, github.com/releases
 - itmedia.co.jp, watch.impress.co.jp, gigazine.net
 
-【除外】
-- 電力、医療、金融などの業界特化ニュース（エンジニア向けでないもの）
-- 規制・政策ニュース（技術的でないもの）
+【絶対に除外する内容】
+- イベント・カンファレンス開催情報（NeurIPS、AI Summit、IEEE、Global AI Showなど）
+- SNS・マーケティング系（Instagram、TikTok、広告など）
+- 電力、医療、金融などの業界特化ニュース
+- 規制・政策・倫理ニュース（AI規制、EU AI Actなど）
 - 個人ブログ、note、Qiita、まとめサイト
 - AI企業の資金調達・買収ニュース（技術発表を除く）
+- AIoT、スマートホームなどIoT系
+- MLOps一般論、トレンド調査系の抽象的な記事
 
 【出力形式】厳密に以下の形式で出力してください:
 - [ニュースのタイトル](実際のURL): 要約（50字以内）
@@ -249,7 +253,7 @@ def collect_news(max_retries=3):
 - [Claude 3.5 Sonnetがリリース](https://anthropic.com/news/claude-3-5): 推論能力が大幅に向上し、コーディングタスクで最高性能を達成
 
 【必須条件】
-- 各ニュースは2025年12月のものであること
+- 各ニュースは2025年12月の「具体的な技術リリース」であること
 - URLは必ず https:// で始まる実際のURLであること
 - 5件選定すること
 - 余計な説明は不要、上記形式のリストのみ出力"""

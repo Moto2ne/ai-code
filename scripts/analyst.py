@@ -39,9 +39,14 @@ def analyze_news_to_tactic(client, news_item, max_retries=3):
 ニュース: {news_title}
 要約: {news_summary}
 
+【重要な制約】
+- 「トレンド調査」「情報収集」「チェックリスト作成」のような抽象的な戦術は禁止
+- 具体的な「コード生成」「レビュー」「デバッグ」「設計」などの実作業に焦点を当てる
+- promptフィールドは、そのまま使える具体的なプロンプトにすること（{{言語}}や{{コード}}のような変数は可）
+
 以下のJSON形式で出力してください。文字列内に改行を入れないでください：
 
-{{"title": "戦術タイトル（30文字以内）", "problem_context": "解決する課題（50文字以内）", "recommended_ai": {{"model": "推奨AIモデル名", "reason": "推奨理由（30文字以内）", "badge_color": "orange"}}, "prompt": "使えるプロンプト（改行なし、100文字以内）", "tags": ["タグ1", "タグ2"]}}
+{{"title": "戦術タイトル（〜で○○する形式、30文字以内）", "problem_context": "解決する課題（50文字以内）", "recommended_ai": {{"model": "推奨AIモデル名", "reason": "推奨理由（30文字以内）", "badge_color": "orange"}}, "prompt": "実際に使えるプロンプト（改行なし、200文字以内）", "tags": ["タグ1", "タグ2"]}}
 
 JSONのみ出力してください。"""
 
