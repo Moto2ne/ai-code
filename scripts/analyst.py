@@ -163,13 +163,24 @@ def analyze_and_generate_tactics():
         print("警告: ニュースデータが空です")
         return []
     
-    print(f"📰 {len(news_items)}件のニュースを戦術に変換します...\n")
+    # ダミーニュースをフィルタリング（collector.pyがパース失敗した場合のフォールバック）
+    valid_news = [
+        news for news in news_items 
+        if news.get("title") != "AI/ML News Collection" 
+        and news.get("url", "").startswith("http")
+    ]
+    
+    if not valid_news:
+        print("⚠️ 有効なニュースがありません（URLが含まれるニュースのみ処理）")
+        return []
+    
+    print(f"📰 {len(valid_news)}件のニュースを戦術に変換します...\n")
     
     tactics = []
     date_str = datetime.now().strftime("%Y%m%d")
     
-    for idx, news in enumerate(news_items, 1):
-        print(f"🔄 [{idx}/{len(news_items)}] {news.get('title', 'N/A')[:40]}...")
+    for idx, news in enumerate(valid_news, 1):
+        print(f"🔄 [{idx}/{len(valid_news)}] {news.get('title', 'N/A')[:40]}...")
         
         tactic_data = analyze_news_to_tactic(client, news)
         
@@ -190,7 +201,7 @@ def analyze_and_generate_tactics():
             print(f"   ❌ スキップ")
         
         # レート制限対策（十分に待機）
-        if idx < len(news_items):
+        if idx < len(valid_news):
             time.sleep(2)
     
     # 結果をファイルに保存
@@ -211,7 +222,7 @@ if __name__ == "__main__":
     
     result = analyze_and_generate_tactics()
     
-    if result:
+    if result is not None:  # 0件でも成功（有効なニュースがなかった場合）
         print("\n" + "=" * 50)
         print(f"✅ 完了！{len(result)}件の戦術を生成しました")
         print("=" * 50)
