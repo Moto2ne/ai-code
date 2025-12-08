@@ -16,6 +16,14 @@ if "completed_tactics" not in st.session_state:
     st.session_state.completed_tactics = set()
 
 
+def is_today(date_str):
+    """日付が今日かどうかを判定"""
+    if not date_str:
+        return False
+    today = datetime.now().strftime("%Y-%m-%d")
+    return date_str == today
+
+
 def get_ai_url(model_name):
     """AIモデル名からチャットURLを取得"""
     model_lower = model_name.lower()
@@ -139,6 +147,8 @@ else:
         
         # 日付
         item_date = item.get("date", "")
+        is_new_today = is_today(item_date)
+        fire_badge = "🔥 " if is_new_today else ""
         date_display = f"{item_date}" if item_date else ""
         
         # 済チェック
@@ -148,8 +158,8 @@ else:
         # タイトル（なければsituationを使用）
         title = item.get("title", item.get("situation", "タイトルなし"))
         
-        # エクスパンダーのタイトル（日付とタイトル）
-        expander_title = f"{completed_badge}{date_display} {title[:50]}{'...' if len(title) > 50 else ''}"
+        # エクスパンダーのタイトル（今日の新着は🔥、日付とタイトル）
+        expander_title = f"{fire_badge}{completed_badge}{date_display} {title[:50]}{'...' if len(title) > 50 else ''}"
         
         with st.expander(f"**{expander_title}**"):
             # 推奨AIとリンク（最重要 - 一番上に配置）
