@@ -169,9 +169,6 @@ def render_tactic_card(item, is_new=False):
 # ナレッジデータを読み込む
 knowledge_base = load_knowledge_base()
 
-# 全タグを抽出
-all_tags = sorted(set(tag for item in knowledge_base for tag in item.get("tags", [])))
-
 # --- UI ---
 
 # ヘッダー
@@ -184,16 +181,10 @@ with col_title:
     </div>
     """, unsafe_allow_html=True)
 with col_guide:
-    st.page_link("pages/ai_guide.py", label="🤖 AI早わかりガイド", icon="📖")
+    st.page_link("pages/ai_guide.py", label="AI早わかりガイド", icon="📖")
 
-# 検索・フィルターエリア
-col_search, col_tags = st.columns([2, 1])
-
-with col_search:
-    search_query = st.text_input("🔍 キーワード検索", placeholder="例: Claude, コード生成, API...")
-
-with col_tags:
-    selected_tags = st.multiselect("🏷️ タグで絞り込み", all_tags)
+# 検索エリア
+search_query = st.text_input("🔍 キーワード検索", placeholder="例: Claude, コード生成, API...")
 
 st.markdown("---")
 
@@ -207,12 +198,6 @@ if search_query:
         or search_query.lower() in item.get("problem_context", "").lower()
         or search_query.lower() in item.get("prompt", "").lower()
         or any(search_query.lower() in tag.lower() for tag in item.get("tags", []))
-    ]
-
-if selected_tags:
-    filtered = [
-        item for item in filtered
-        if any(tag in item.get("tags", []) for tag in selected_tags)
     ]
 
 # 済件数をカウント
