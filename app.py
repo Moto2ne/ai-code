@@ -177,10 +177,10 @@ else:
                 if reason:
                     st.caption(f"💡 {reason}")
             
-            # タグと済ボタン（小さく横並び）
+            # タグと済チェック（小さく横並び）
             tags = item.get("tags", [])
-            done_label = "✅済" if is_completed else "☐試す"
-            done_style = "background:#d4edda; color:#155724;" if is_completed else "background:#fff3cd; color:#856404;"
+            done_label = "✅済" if is_completed else "☐"
+            done_style = "background:#d4edda; color:#155724;" if is_completed else "background:#f8f9fa; color:#666; cursor:pointer;"
             
             tag_html = " ".join([
                 f'<span style="background:#e8ecf0; padding:2px 6px; border-radius:4px; font-size:0.7rem; color:#666;">{tag}</span>'
@@ -188,17 +188,17 @@ else:
             ])
             st.markdown(tag_html, unsafe_allow_html=True)
             
-            # 済ボタン（小さく）
-            if st.button(
-                done_label,
+            # 済チェックボックス（タグサイズ）
+            st.checkbox(
+                "試した",
+                value=is_completed,
                 key=f"done_{item_id}",
-                type="secondary"
-            ):
-                if is_completed:
-                    st.session_state.completed_tactics.discard(item_id)
-                else:
-                    st.session_state.completed_tactics.add(item_id)
-                st.rerun()
+                on_change=lambda iid=item_id: (
+                    st.session_state.completed_tactics.discard(iid) 
+                    if iid in st.session_state.completed_tactics 
+                    else st.session_state.completed_tactics.add(iid)
+                )
+            )
             
             st.markdown("---")
             
