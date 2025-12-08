@@ -92,12 +92,16 @@ all_tags = sorted(set(tag for item in knowledge_base for tag in item.get("tags",
 # --- UI ---
 
 # ヘッダー
-st.markdown("""
-<div style="margin-bottom: 2rem;">
-    <h1 style="font-size: 1.8rem; margin: 0; color: #1a253a;">🎯 AI司令塔ナレッジ</h1>
-    <p style="color: #666; margin-top: 0.5rem;">最新AIニュースを自動収集 → 使える場面・手順・プロンプトに変換</p>
-</div>
-""", unsafe_allow_html=True)
+col_title, col_guide = st.columns([4, 1])
+with col_title:
+    st.markdown("""
+    <div style="margin-bottom: 1rem;">
+        <h1 style="font-size: 1.8rem; margin: 0; color: #1a253a;">🎯 AI司令塔ナレッジ</h1>
+        <p style="color: #666; margin-top: 0.5rem;">最新AIニュースを自動収集 → 使える場面・手順・プロンプトに変換</p>
+    </div>
+    """, unsafe_allow_html=True)
+with col_guide:
+    st.page_link("pages/ai_guide.py", label="🤖 AI早わかりガイド", icon="📖")
 
 # 検索・フィルターエリア
 col_search, col_tags = st.columns([2, 1])
