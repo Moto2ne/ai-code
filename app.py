@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from styles import get_custom_css
 
 # ページ設定
-st.set_page_config(page_title="毎日AIニュース＆戦術生成", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="毎朝6時AIニュース", layout="wide", initial_sidebar_state="collapsed")
 
 # カスタムCSS適用
 st.markdown(get_custom_css(), unsafe_allow_html=True)
@@ -235,6 +235,6 @@ else:
 # フッター
 st.markdown("""
 <div style="margin-top: 4rem; padding-top: 1rem; border-top: 1px solid #e0e0e0; text-align: center; color: #999; font-size: 0.75rem;">
-    毎日AIニュース ＆ 戦術生成 - 毎朝6時に自動更新
+    毎日AIニュース & 戦術生成アプリ © 2025 WBS株式会社
 </div>
 """, unsafe_allow_html=True)
