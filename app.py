@@ -11,6 +11,10 @@ st.set_page_config(page_title="AI司令塔ナレッジ", layout="wide", initial_
 # カスタムCSS適用
 st.markdown(get_custom_css(), unsafe_allow_html=True)
 
+# 済ボタン用のセッション状態を初期化
+if "completed_tactics" not in st.session_state:
+    st.session_state.completed_tactics = set()
+
 
 @st.cache_data(ttl=300)  # 5分ごとにキャッシュを更新（GitHubからの変更を反映）
 def load_knowledge_base():
@@ -56,7 +60,7 @@ all_tags = sorted(set(tag for item in knowledge_base for tag in item.get("tags",
 st.markdown("""
 <div style="margin-bottom: 2rem;">
     <h1 style="font-size: 1.8rem; margin: 0; color: #1a253a;">🎯 AI司令塔ナレッジ</h1>
-    <p style="color: #666; margin-top: 0.5rem;">毎朝6時に最新AIニュースを自動収集 → 実務で使えるプロンプトに変換</p>
+    <p style="color: #666; margin-top: 0.5rem;">最新AIニュースを自動収集 → 使える場面・手順・プロンプトに変換</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -97,40 +101,64 @@ if selected_tags:
         if any(tag in item.get("tags", []) for tag in selected_tags)
     ]
 
-# NEW件数をカウント
+# NEW件数と済件数をカウント
 new_count = sum(1 for item in filtered if is_new(item.get("date", "")))
+completed_count = sum(1 for item in filtered if item.get("id", "") in st.session_state.completed_tactics)
 
 # 結果表示
 if not filtered:
     st.info("📭 戦術がまだありません。毎朝6時に自動更新されます。")
 else:
-    st.caption(
-        f"📚 {len(filtered)} 件の戦術"
-        + (f" （🔥 NEW: {new_count}件）" if new_count > 0 else "")
-    )
+    status_parts = [f"📚 {len(filtered)} 件の戦術"]
+    if new_count > 0:
+        status_parts.append(f"🔥 NEW: {new_count}件")
+    if completed_count > 0:
+        status_parts.append(f"✅ 済: {completed_count}件")
+    st.caption(" | ".join(status_parts))
     
     for item in filtered:
+        item_id = item.get("id", "")
+        
         # NEWマークと日付
         item_date = item.get("date", "")
         is_new_item = is_new(item_date)
         new_badge = "🔥 NEW " if is_new_item else ""
         date_display = f"[{item_date}]" if item_date else ""
         
+        # 済チェック
+        is_completed = item_id in st.session_state.completed_tactics
+        completed_badge = "✅ " if is_completed else ""
+        
         # タイトル（なければsituationを使用）
         title = item.get("title", item.get("situation", "タイトルなし"))
         
         # エクスパンダーのタイトル
-        expander_title = f"{new_badge}{date_display} {title[:55]}{'...' if len(title) > 55 else ''}"
+        expander_title = f"{completed_badge}{new_badge}{date_display} {title[:50]}{'...' if len(title) > 50 else ''}"
         
         with st.expander(f"**{expander_title}**"):
-            # タグ表示
-            tags = item.get("tags", [])
-            if tags:
-                tag_html = " ".join([
-                    f'<span style="background:#e8ecf0; padding:2px 8px; border-radius:4px; font-size:0.75rem; margin-right:4px;">{tag}</span>'
-                    for tag in tags
-                ])
-                st.markdown(tag_html, unsafe_allow_html=True)
+            # 済ボタン
+            col_done, col_tags = st.columns([1, 3])
+            with col_done:
+                if st.button(
+                    "✅ 試し済み" if is_completed else "☐ 試してみる",
+                    key=f"done_{item_id}",
+                    type="secondary" if is_completed else "primary"
+                ):
+                    if is_completed:
+                        st.session_state.completed_tactics.discard(item_id)
+                    else:
+                        st.session_state.completed_tactics.add(item_id)
+                    st.rerun()
+            
+            with col_tags:
+                # タグ表示
+                tags = item.get("tags", [])
+                if tags:
+                    tag_html = " ".join([
+                        f'<span style="background:#e8ecf0; padding:2px 8px; border-radius:4px; font-size:0.75rem; margin-right:4px;">{tag}</span>'
+                        for tag in tags
+                    ])
+                    st.markdown(tag_html, unsafe_allow_html=True)
             
             # 推奨AI表示
             recommended_ai = item.get("recommended_ai")
@@ -147,17 +175,32 @@ else:
             
             st.markdown("---")
             
+            # 🎯 使える場面（NEW）
+            use_cases = item.get("use_cases", [])
+            if use_cases:
+                st.markdown("**🎯 こんな時に使える:**")
+                for uc in use_cases:
+                    st.markdown(f"- {uc}")
+                st.markdown("")
+            
             # シチュエーション（problem_context）
             problem_context = item.get("problem_context", item.get("situation", ""))
             if problem_context:
-                st.markdown(f"**課題:**")
-                st.markdown(problem_context)
+                st.markdown(f"**📋 課題:** {problem_context}")
+            
+            # 📝 ステップ（NEW）
+            steps = item.get("steps", [])
+            if steps:
+                st.markdown("**📝 手順:**")
+                for i, step in enumerate(steps, 1):
+                    st.markdown(f"{i}. {step}")
+                st.markdown("")
             
             # プロンプト
             prompt = item.get("prompt", "")
             if prompt:
-                st.markdown("**💡 司令塔のアクション:**")
-                st.info(prompt, icon="💡")
+                st.markdown("**💡 プロンプト:**")
+                st.code(prompt, language="markdown")
             
             # ソースニュース表示
             source_news = item.get("source_news")
@@ -169,11 +212,11 @@ else:
             st.markdown("---")
             
             # プロンプト発行
-            mode_key = f"mode_{item['id']}"
+            mode_key = f"mode_{item_id}"
             if mode_key not in st.session_state:
                 st.session_state[mode_key] = False
             
-            if st.button("✨ プロンプト発行", key=f"btn_{item['id']}"):
+            if st.button("✨ カスタムプロンプト発行", key=f"btn_{item_id}"):
                 st.session_state[mode_key] = not st.session_state[mode_key]
             
             if st.session_state[mode_key]:
