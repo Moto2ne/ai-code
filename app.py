@@ -14,17 +14,41 @@ st.markdown(get_custom_css(), unsafe_allow_html=True)
 
 @st.cache_data
 def load_knowledge_base():
-    """ナレッジデータをJSONファイルから読み込む"""
-    json_path = os.path.join(os.path.dirname(__file__), "data", "situations.json")
+    """ナレッジデータをJSONファイルから読み込む（経験則 + AI戦術）"""
+    base_dir = os.path.dirname(__file__)
+    
+    # 経験則（ユーザーの知見）
+    situations_path = os.path.join(base_dir, "data", "situations.json")
+    # AI生成戦術
+    ai_tactics_path = os.path.join(base_dir, "data", "ai_tactics.json")
+    
+    all_items = []
     
     try:
-        if os.path.exists(json_path):
-            with open(json_path, "r", encoding="utf-8") as f:
-                return json.load(f)
-        else:
-            # ファイルが存在しない場合はデフォルトデータを返す
-            st.warning("⚠️ データファイルが見つかりません。デフォルトデータを使用します。")
+        # 経験則を読み込み（sourceを追加）
+        if os.path.exists(situations_path):
+            with open(situations_path, "r", encoding="utf-8") as f:
+                situations = json.load(f)
+                for item in situations:
+                    item["_source"] = "experience"  # 経験則マーク
+                all_items.extend(situations)
+        
+        # AI戦術を読み込み（sourceを追加）
+        if os.path.exists(ai_tactics_path):
+            with open(ai_tactics_path, "r", encoding="utf-8") as f:
+                ai_tactics = json.load(f)
+                for item in ai_tactics:
+                    item["_source"] = "ai"  # AI生成マーク
+                all_items.extend(ai_tactics)
+        
+        if not all_items:
+            st.warning("⚠️ データファイルが見つかりません。")
             return []
+        
+        # 日付で新しい順にソート
+        all_items.sort(key=lambda x: x.get("date", ""), reverse=True)
+        return all_items
+        
     except Exception as e:
         st.error(f"❌ データ読み込みエラー: {e}")
         return []
@@ -57,13 +81,19 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 検索・フィルターエリア
-col_search, col_tags = st.columns([2, 1])
+col_search, col_tags, col_source = st.columns([2, 1, 1])
 
 with col_search:
     search_query = st.text_input("🔍 キーワード検索", placeholder="例: テスト, 要件, バグ...")
 
 with col_tags:
     selected_tags = st.multiselect("🏷️ タグで絞り込み", all_tags)
+
+with col_source:
+    source_filter = st.selectbox(
+        "📂 ソース",
+        ["すべて", "✍️ 経験則のみ", "🤖 AI提案のみ"]
+    )
 
 # 変数設定（折りたたみ）
 with st.expander("⚙️ プロンプト変数を設定"):
@@ -93,6 +123,12 @@ if selected_tags:
         if any(tag in item.get("tags", []) for tag in selected_tags)
     ]
 
+# ソースフィルター
+if source_filter == "✍️ 経験則のみ":
+    filtered = [item for item in filtered if item.get("_source") == "experience"]
+elif source_filter == "🤖 AI提案のみ":
+    filtered = [item for item in filtered if item.get("_source") == "ai"]
+
 # NEW件数をカウント
 new_count = sum(1 for item in filtered if is_new(item.get("date", "")))
 
@@ -100,7 +136,15 @@ new_count = sum(1 for item in filtered if is_new(item.get("date", "")))
 if not filtered:
     st.warning("該当するナレッジがありません")
 else:
-    st.caption(f"📚 {len(filtered)} 件のナレッジ" + (f"（🔥 NEW: {new_count}件）" if new_count > 0 else ""))
+    # 件数カウント
+    exp_count = sum(1 for item in filtered if item.get("_source") == "experience")
+    ai_count = sum(1 for item in filtered if item.get("_source") == "ai")
+    
+    st.caption(
+        f"📚 {len(filtered)} 件のナレッジ "
+        f"（✍️ 経験則: {exp_count}件 / 🤖 AI提案: {ai_count}件）"
+        + (f" 🔥 NEW: {new_count}件" if new_count > 0 else "")
+    )
     
     for item in filtered:
         # NEWマークと日付
@@ -109,11 +153,14 @@ else:
         new_badge = "🔥 NEW " if is_new_item else ""
         date_display = f"[{item_date}]" if item_date else ""
         
+        # ソースバッジ（経験則 or AI）
+        source_badge = "✍️ " if item.get("_source") == "experience" else "🤖 "
+        
         # タイトル（なければsituationを使用）
         title = item.get("title", item.get("situation", "タイトルなし"))
         
         # エクスパンダーのタイトル
-        expander_title = f"{new_badge}{date_display} {title[:60]}{'...' if len(title) > 60 else ''}"
+        expander_title = f"{source_badge}{new_badge}{date_display} {title[:55]}{'...' if len(title) > 55 else ''}"
         
         with st.expander(f"**{expander_title}**"):
             # タグ表示

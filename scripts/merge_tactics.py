@@ -1,5 +1,6 @@
 """
-新しい戦術データを既存のsituations.jsonにマージする
+新しい戦術データをai_tactics.jsonにマージする
+（situations.jsonはユーザーの経験則専用、ai_tactics.jsonはAI生成専用）
 """
 import json
 import os
@@ -24,11 +25,11 @@ def load_json_file(file_path):
 
 
 def merge_tactics():
-    """新しい戦術を既存データにマージ"""
+    """新しい戦術をAI戦術データにマージ"""
     base_dir = os.path.dirname(os.path.dirname(__file__))
     
-    # 既存データを読み込む
-    existing_path = os.path.join(base_dir, "data", "situations.json")
+    # AI生成戦術データを読み込む（situations.jsonではなくai_tactics.json）
+    existing_path = os.path.join(base_dir, "data", "ai_tactics.json")
     existing_tactics = load_json_file(existing_path)
     
     # 新しい戦術を読み込む
@@ -55,17 +56,17 @@ def merge_tactics():
     # 日付でソート（新しい順）
     existing_tactics.sort(key=lambda x: x.get("date", ""), reverse=True)
     
-    # 最大1000件に制限
-    if len(existing_tactics) > 1000:
-        existing_tactics = existing_tactics[:1000]
-        print(f"⚠️ データが1000件を超えたため、最新1000件のみ保持します")
+    # 最大500件に制限（AI生成は多くなりすぎる可能性があるため）
+    if len(existing_tactics) > 500:
+        existing_tactics = existing_tactics[:500]
+        print(f"⚠️ データが500件を超えたため、最新500件のみ保持します")
     
     # 保存
     with open(existing_path, "w", encoding="utf-8") as f:
         json.dump(existing_tactics, f, ensure_ascii=False, indent=2)
     
-    print(f"✅ マージ完了: {added_count}件の新しい戦術を追加しました")
-    print(f"   総件数: {len(existing_tactics)}件")
+    print(f"✅ マージ完了: {added_count}件の新しいAI戦術を追加しました")
+    print(f"   AI戦術総件数: {len(existing_tactics)}件")
     
     return existing_tactics
 

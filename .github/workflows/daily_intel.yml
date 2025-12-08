@@ -50,12 +50,12 @@ jobs:
           git config user.name "AI Staff Officer"
           git config user.email "ai-staff@tactical-intel.ai"
           
-          # 変更があるかチェック
-          if git diff --quiet data/situations.json; then
-            echo "📭 新しい戦術はありませんでした"
+          # AI戦術ファイルの変更をチェック
+          if git diff --quiet data/ai_tactics.json; then
+            echo "📭 新しいAI戦術はありませんでした"
           else
-            git add data/situations.json
+            git add data/ai_tactics.json
             git commit -m "🤖 自動更新: $(date +%Y-%m-%d) のAI戦術を追加"
             git push
-            echo "✅ 新しい戦術をコミットしました"
+            echo "✅ 新しいAI戦術をコミットしました"
           fi
