@@ -82,5 +82,87 @@
       "title": "GoogleがGemini 3 Deep ThinkモードをAI Ultraユーザーに展開",
       "url": "https://9to5google.com/2025/12/04/google-gemini-3-deep-think-ai-ultra/"
     }
+  },
+  {
+    "title": "コード品質とセキュリティをレビュー",
+    "problem_context": "既存コードの品質向上と潜在的脆弱性の発見",
+    "recommended_ai": {
+      "model": "Claude Opus 4.5",
+      "reason": "高度なコード分析能力",
+      "badge_color": "orange"
+    },
+    "prompt": "以下の{言語}コードについて、パフォーマンス、可読性、セキュリティ、およびベストプラクティスの観点から詳細なレビューを行い、具体的な改善提案と修正コード例を提示してください: {コード}",
+    "tags": [
+      "コードレビュー",
+      "品質改善",
+      "セキュリティ"
+    ],
+    "id": "20251208_070541_01",
+    "date": "2025-12-08",
+    "source_news": {
+      "title": "Claude Opus 4.5がリリース",
+      "url": "https://www.anthropic.com/news/claude-opus-4.5"
+    }
+  },
+  {
+    "title": "UIデザインを高速プロトタイピング",
+    "problem_context": "AI技術の活用",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "高性能",
+      "badge_color": "orange"
+    },
+    "prompt": "最新のAI技術を活用して効率化を図ってください。",
+    "tags": [
+      "AI",
+      "自動生成"
+    ],
+    "id": "20251208_070552_02",
+    "date": "2025-12-08",
+    "source_news": {
+      "title": "Gemini 3 Pro Image Previewがリリース",
+      "url": "https://cloud.google.com/vertex-ai/docs/release-notes"
+    }
+  },
+  {
+    "title": "複雑なロジックのコードを高速生成する",
+    "problem_context": "複雑な要件のコード生成に時間がかかる",
+    "recommended_ai": {
+      "model": "GPT-5.1",
+      "reason": "高速な思考と自然な会話で高精度なコードを生成",
+      "badge_color": "orange"
+    },
+    "prompt": "{言語}で、以下の要件を満たすコードを生成してください。要件: {要件詳細}。特に{特定のフレームワーク/ライブラリ}のベストプラクティスに従ってください。",
+    "tags": [
+      "コード生成",
+      "開発効率"
+    ],
+    "id": "20251208_070604_03",
+    "date": "2025-12-08",
+    "source_news": {
+      "title": "GPT-5.1がリリース",
+      "url": "https://www.openai.com/blog/gpt-5-1-release"
+    }
+  },
+  {
+    "title": "エージェントのタスク実行ロジックを自動生成",
+    "problem_context": "複雑なタスクを自動実行するエージェントの思考ロジック設計",
+    "recommended_ai": {
+      "model": "DeepSeek-V3.2",
+      "reason": "エージェント向け最適化",
+      "badge_color": "orange"
+    },
+    "prompt": "あなたは熟練の{言語}プログラマーです。以下の目標を達成するためのエージェントの思考プロセスと、それに基づいたツール利用ロジックを{言語}で記述してください。目標: {目標}。利用可能なツール: {ツールリスト}。",
+    "tags": [
+      "コード生成",
+      "エージェント開発",
+      "設計"
+    ],
+    "id": "20251208_070614_04",
+    "date": "2025-12-08",
+    "source_news": {
+      "title": "DeepSeek-V3.2がリリース",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2"
+    }
   }
 ]
