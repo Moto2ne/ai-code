@@ -30,36 +30,20 @@ except ImportError:
 def analyze_news_to_tactic(client, news_item, max_retries=3):
     """ニュースを実務で使える戦術に変換"""
     
-    prompt_text = f"""あなたは戦術的AIコンサルタントです。
-最新のAI技術ニュースを、エンジニアが明日から使える実践的なプロンプトに変換してください。
+    news_title = news_item.get('title', 'N/A')[:100]
+    news_summary = news_item.get('summary', 'N/A')[:200]
+    news_url = news_item.get('url', '')
+    
+    prompt_text = f"""あなたはAI技術コンサルタントです。以下のニュースを、エンジニアが実務で使える戦術に変換してください。
 
-【ニュース情報】
-タイトル: {news_item.get('title', 'N/A')}
-要約: {news_item.get('summary', 'N/A')}
-URL: {news_item.get('url', 'N/A')}
+ニュース: {news_title}
+要約: {news_summary}
 
-【あなたのタスク】
-このニュースを読んで、エンジニアが実務で「こういう場面で使える！」と思える具体的なユースケースと、すぐにコピペで使えるプロンプトを作成してください。
+以下のJSON形式で出力してください。文字列内に改行を入れないでください：
 
-以下のJSON形式で回答してください：
-{{
-  "title": "戦術のタイトル（例: 'Mistral 3でコードレビューを自動化'）",
-  "problem_context": "どんな実務課題を解決するか（例: 'PRのコードレビューに時間がかかる'）",
-  "recommended_ai": {{
-    "model": "推奨AIモデル名（例: Mistral 3, Claude 3.5 Sonnet, GPT-4o）",
-    "reason": "なぜこのモデルが最適か（例: 'オープンソースで無料、コード理解に優れる'）",
-    "badge_color": "orange"
-  }},
-  "prompt": "すぐに使えるプロンプト（変数は{{変数名}}の形式で）",
-  "tags": ["タグ1", "タグ2", "タグ3"]
-}}
+{{"title": "戦術タイトル（30文字以内）", "problem_context": "解決する課題（50文字以内）", "recommended_ai": {{"model": "推奨AIモデル名", "reason": "推奨理由（30文字以内）", "badge_color": "orange"}}, "prompt": "使えるプロンプト（改行なし、100文字以内）", "tags": ["タグ1", "タグ2"]}}
 
-【重要】
-- promptは具体的で、コピペしてすぐ使えるものにしてください
-- 変数（例: {{コード}}, {{言語}}）を含めて汎用的にしてください
-- tagsは3つ程度、日本語で
-
-JSON形式のみで回答してください。コードブロックは使わず、純粋なJSONのみを出力してください。"""
+JSONのみ出力してください。"""
 
     for attempt in range(max_retries):
         try:
