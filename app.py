@@ -170,35 +170,35 @@ else:
                 reason = recommended_ai.get("reason", "")
                 ai_url = get_ai_url(model_name)
                 
-                col_ai_link, col_done = st.columns([3, 1])
-                with col_ai_link:
-                    if ai_url:
-                        st.markdown(f"### [🚀 {model_name} を開く →]({ai_url})")
-                    else:
-                        st.markdown(f"### 🚀 {model_name}")
-                    if reason:
-                        st.caption(f"💡 {reason}")
-                
-                with col_done:
-                    if st.button(
-                        "✅ 済" if is_completed else "☐ 試す",
-                        key=f"done_{item_id}",
-                        type="secondary" if is_completed else "primary"
-                    ):
-                        if is_completed:
-                            st.session_state.completed_tactics.discard(item_id)
-                        else:
-                            st.session_state.completed_tactics.add(item_id)
-                        st.rerun()
+                if ai_url:
+                    st.markdown(f"### [🚀 {model_name} を開く →]({ai_url})")
+                else:
+                    st.markdown(f"### 🚀 {model_name}")
+                if reason:
+                    st.caption(f"💡 {reason}")
             
-            # タグ表示（小さく）
+            # タグと済ボタン（小さく横並び）
             tags = item.get("tags", [])
-            if tags:
-                tag_html = " ".join([
-                    f'<span style="background:#e8ecf0; padding:2px 6px; border-radius:4px; font-size:0.7rem; color:#666;">{tag}</span>'
-                    for tag in tags
-                ])
-                st.markdown(tag_html, unsafe_allow_html=True)
+            done_label = "✅済" if is_completed else "☐試す"
+            done_style = "background:#d4edda; color:#155724;" if is_completed else "background:#fff3cd; color:#856404;"
+            
+            tag_html = " ".join([
+                f'<span style="background:#e8ecf0; padding:2px 6px; border-radius:4px; font-size:0.7rem; color:#666;">{tag}</span>'
+                for tag in tags
+            ])
+            st.markdown(tag_html, unsafe_allow_html=True)
+            
+            # 済ボタン（小さく）
+            if st.button(
+                done_label,
+                key=f"done_{item_id}",
+                type="secondary"
+            ):
+                if is_completed:
+                    st.session_state.completed_tactics.discard(item_id)
+                else:
+                    st.session_state.completed_tactics.add(item_id)
+                st.rerun()
             
             st.markdown("---")
             
