@@ -16,6 +16,41 @@ if "completed_tactics" not in st.session_state:
     st.session_state.completed_tactics = set()
 
 
+def get_ai_url(model_name):
+    """AIモデル名からチャットURLを取得"""
+    model_lower = model_name.lower()
+    
+    # Claude系
+    if "claude" in model_lower or "opus" in model_lower or "sonnet" in model_lower:
+        return "https://claude.ai/new"
+    
+    # ChatGPT/GPT系
+    if "gpt" in model_lower or "chatgpt" in model_lower or "openai" in model_lower:
+        return "https://chat.openai.com/"
+    
+    # Gemini系
+    if "gemini" in model_lower:
+        return "https://gemini.google.com/app"
+    
+    # DeepSeek系
+    if "deepseek" in model_lower:
+        return "https://chat.deepseek.com/"
+    
+    # Mistral系
+    if "mistral" in model_lower:
+        return "https://chat.mistral.ai/"
+    
+    # Perplexity
+    if "perplexity" in model_lower:
+        return "https://www.perplexity.ai/"
+    
+    # Copilot
+    if "copilot" in model_lower:
+        return "https://copilot.microsoft.com/"
+    
+    return None
+
+
 @st.cache_data(ttl=300)  # 5分ごとにキャッシュを更新（GitHubからの変更を反映）
 def load_knowledge_base():
     """AI戦術データをJSONファイルから読み込む"""
@@ -73,14 +108,6 @@ with col_search:
 with col_tags:
     selected_tags = st.multiselect("🏷️ タグで絞り込み", all_tags)
 
-# 変数設定（折りたたみ）
-with st.expander("⚙️ プロンプト変数を設定"):
-    col1, col2 = st.columns(2)
-    with col1:
-        tech_stack = st.text_input("使用技術", value="Python", placeholder="例: Python, React")
-    with col2:
-        role = st.text_input("ターゲット読者", value="上司", placeholder="例: クライアント")
-
 st.markdown("---")
 
 # フィルタリング
@@ -136,108 +163,72 @@ else:
         expander_title = f"{completed_badge}{new_badge}{date_display} {title[:50]}{'...' if len(title) > 50 else ''}"
         
         with st.expander(f"**{expander_title}**"):
-            # 済ボタン
-            col_done, col_tags = st.columns([1, 3])
-            with col_done:
-                if st.button(
-                    "✅ 試し済み" if is_completed else "☐ 試してみる",
-                    key=f"done_{item_id}",
-                    type="secondary" if is_completed else "primary"
-                ):
-                    if is_completed:
-                        st.session_state.completed_tactics.discard(item_id)
-                    else:
-                        st.session_state.completed_tactics.add(item_id)
-                    st.rerun()
-            
-            with col_tags:
-                # タグ表示
-                tags = item.get("tags", [])
-                if tags:
-                    tag_html = " ".join([
-                        f'<span style="background:#e8ecf0; padding:2px 8px; border-radius:4px; font-size:0.75rem; margin-right:4px;">{tag}</span>'
-                        for tag in tags
-                    ])
-                    st.markdown(tag_html, unsafe_allow_html=True)
-            
-            # 推奨AI表示
+            # 推奨AIとリンク（最重要 - 一番上に配置）
             recommended_ai = item.get("recommended_ai")
             if recommended_ai:
                 model_name = recommended_ai.get("model", "")
                 reason = recommended_ai.get("reason", "")
+                ai_url = get_ai_url(model_name)
                 
-                col_ai, col_reason = st.columns([1, 2])
-                with col_ai:
-                    st.markdown(f"**🚀 推奨: {model_name}**")
-                with col_reason:
+                col_ai_link, col_done = st.columns([3, 1])
+                with col_ai_link:
+                    if ai_url:
+                        st.markdown(f"### [🚀 {model_name} を開く →]({ai_url})")
+                    else:
+                        st.markdown(f"### 🚀 {model_name}")
                     if reason:
-                        st.markdown(f"💡 {reason}")
+                        st.caption(f"💡 {reason}")
+                
+                with col_done:
+                    if st.button(
+                        "✅ 済" if is_completed else "☐ 試す",
+                        key=f"done_{item_id}",
+                        type="secondary" if is_completed else "primary"
+                    ):
+                        if is_completed:
+                            st.session_state.completed_tactics.discard(item_id)
+                        else:
+                            st.session_state.completed_tactics.add(item_id)
+                        st.rerun()
+            
+            # タグ表示（小さく）
+            tags = item.get("tags", [])
+            if tags:
+                tag_html = " ".join([
+                    f'<span style="background:#e8ecf0; padding:2px 6px; border-radius:4px; font-size:0.7rem; color:#666;">{tag}</span>'
+                    for tag in tags
+                ])
+                st.markdown(tag_html, unsafe_allow_html=True)
             
             st.markdown("---")
             
-            # 🎯 使える場面（NEW）
+            # 🎯 使える場面
             use_cases = item.get("use_cases", [])
             if use_cases:
                 st.markdown("**🎯 こんな時に使える:**")
                 for uc in use_cases:
                     st.markdown(f"- {uc}")
-                st.markdown("")
             
-            # シチュエーション（problem_context）
-            problem_context = item.get("problem_context", item.get("situation", ""))
-            if problem_context:
-                st.markdown(f"**📋 課題:** {problem_context}")
-            
-            # 📝 ステップ（NEW）
+            # 📝 ステップ（簡潔に）
             steps = item.get("steps", [])
             if steps:
                 st.markdown("**📝 手順:**")
-                for i, step in enumerate(steps, 1):
-                    st.markdown(f"{i}. {step}")
-                st.markdown("")
-            
-            # プロンプト
-            prompt = item.get("prompt", "")
-            if prompt:
-                st.markdown("**💡 プロンプト:**")
-                st.code(prompt, language="markdown")
-            
-            # ソースニュース表示
-            source_news = item.get("source_news")
-            if source_news and source_news.get("url"):
-                source_title = source_news.get("title", "ソース")
-                source_url = source_news.get("url", "")
-                st.markdown(f"[📰 ソース: {source_title} ↗]({source_url})")
+                steps_text = " → ".join([f"**{i}.** {s}" for i, s in enumerate(steps, 1)])
+                st.markdown(steps_text)
             
             st.markdown("---")
             
-            # プロンプト発行
-            mode_key = f"mode_{item_id}"
-            if mode_key not in st.session_state:
-                st.session_state[mode_key] = False
+            # プロンプト（コピーしやすく）
+            prompt = item.get("prompt", "")
+            if prompt:
+                st.markdown("**💡 このプロンプトをコピーしてAIに貼り付け:**")
+                st.code(prompt, language="markdown")
             
-            if st.button("✨ カスタムプロンプト発行", key=f"btn_{item_id}"):
-                st.session_state[mode_key] = not st.session_state[mode_key]
-            
-            if st.session_state[mode_key]:
-                final_prompt = f"""# あなたの役割
-あなたは{tech_stack}の熟練エキスパートです。
-
-# 依頼内容
-【課題・状況】
-{problem_context}
-
-【指示】
-{prompt}
-
-【制約条件】
-- 技術スタック: {tech_stack}
-- ターゲット読者: {role}
-- 出力形式: 具体的で実行可能なコード、またはマークダウン形式のドキュメント
-
-プロフェッショナルとして、私の指示待ちではなく、最善の解を提案してください。"""
-                st.markdown("**📋 コピーしてAIに貼り付けてください:**")
-                st.code(final_prompt, language="markdown")
+            # ソースニュース表示（小さく下部に）
+            source_news = item.get("source_news")
+            if source_news and source_news.get("url"):
+                source_url = source_news.get("url", "")
+                st.caption(f"[📰 ソース ↗]({source_url})")
 
 # フッター
 st.markdown("""
