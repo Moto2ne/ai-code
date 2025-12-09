@@ -466,6 +466,141 @@
     }
   },
   {
+    "title": "Gemini 3 Proで複雑なAPI設計レビュー",
+    "news_highlight": "Gemini 3 Pro Previewは高度な推論とマルチモーダル理解で複雑な設計課題を解決",
+    "problem_context": "複雑なAPI設計の課題特定と改善",
+    "recommended_ai": {
+      "model": "Gemini 3 Pro Preview",
+      "reason": "高度な推論とマルチモーダル理解",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規API設計のレビュー時",
+      "既存APIのパフォーマンス改善検討時",
+      "マイクロサービス間の連携設計見直し時"
+    ],
+    "steps": [
+      "1. 設計中のAPI仕様書（OpenAPIなど）を準備する。",
+      "2. 関連する既存コードやドキュメントをAIに提供する。",
+      "3. AIに設計上の課題や改善点を質問する。",
+      "4. 提案された改善案を基に設計を修正し、チームで議論する。"
+    ],
+    "prompt": "以下のAPI仕様書と関連コードを分析し、パフォーマンス、セキュリティ、拡張性の観点から潜在的な課題と改善点を提案してください。",
+    "tags": [
+      "API設計",
+      "アーキテクチャ",
+      "パフォーマンス",
+      "レビュー"
+    ],
+    "id": "20251209_010531_01",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Gemini 3 Pro Previewがリリース",
+      "url": "https://cloud.google.com/vertex-ai/docs/release-notes#december_5_2025"
+    }
+  },
+  {
+    "title": "DeepSeek-V3.2-Specialeで複雑な設計",
+    "news_highlight": "DeepSeek-V3.2-Specialeは推論能力に特化し、複雑なタスクで高い性能を発揮。",
+    "problem_context": "複雑なシステム設計やアルゴリズム考案が難しい。",
+    "recommended_ai": {
+      "model": "DeepSeek-V3.2-Speciale",
+      "reason": "複雑な推論タスクに特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のアーキテクチャ設計を検討する時",
+      "複雑なアルゴリズムの実装方針を決定する時",
+      "既存システムのパフォーマンスボトルネックを特定し改善策を練る時"
+    ],
+    "steps": [
+      "1. 設計したいシステムの概要と要件を整理する。",
+      "2. DeepSeek-V3.2-Specialeに現在の課題と目標を提示する。",
+      "3. 提案されたアーキテクチャやアルゴリズムの概要をレビューする。",
+      "4. 提案を基に詳細設計を進めるか、追加の質問で深掘りする。"
+    ],
+    "prompt": "マイクロサービスアーキテクチャで、リアルタイムデータ処理と認証機能を備えたECサイトのバックエンド設計を提案してください。スケーラビリティとセキュリティを考慮してください。",
+    "tags": [
+      "設計",
+      "アーキテクチャ",
+      "アルゴリズム",
+      "推論"
+    ],
+    "id": "20251209_010538_02",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "DeepSeek-V3.2およびV3.2-Specialeがリリース",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2"
+    }
+  },
+  {
+    "title": "Claude Opus 4.5で複雑な機能実装",
+    "news_highlight": "Claude Opus 4.5はコーディング、エージェント、コンピューター利用能力を強化し、複雑なタスクを効率化。",
+    "problem_context": "複数ファイルにまたがる機能実装が手間。",
+    "recommended_ai": {
+      "model": "Claude Opus 4.5",
+      "reason": "複雑なコーディングとエージェント機能に優れる",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のプロトタイプを素早く作成したい時",
+      "既存コードベースに新しいモジュールを追加する時",
+      "複数のファイルにまたがる修正を一貫して行いたい時"
+    ],
+    "steps": [
+      "実装したい機能の要件を詳細に記述する。",
+      "関連する既存のコードファイルやAPI仕様をAIに提供する。",
+      "AIに機能の実装コードとテストコードの生成を依頼する。",
+      "生成されたコードをレビューし、必要に応じて修正・テストする。"
+    ],
+    "prompt": "PythonとFastAPIを使って、ユーザー認証とTODOリスト管理のAPIを実装してください。データベースはSQLiteを使用し、CRUD操作と認証トークン発行を含めてください。",
+    "tags": [
+      "コード生成",
+      "API開発",
+      "エージェント"
+    ],
+    "id": "20251209_010548_03",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Claude Opus 4.5がリリース",
+      "url": "https://www.anthropic.com/news/claude-opus-4-5"
+    }
+  },
+  {
+    "title": "GPT-5.1-Codex-Maxで複数ファイル修正",
+    "news_highlight": "GPT-5.1-Codex-Maxは高速化とインテリジェンス向上で、エージェント型コーディングを強化。",
+    "problem_context": "複数ファイルにまたがる複雑なコード修正に時間がかかる。",
+    "recommended_ai": {
+      "model": "GPT-5.1-Codex-Max",
+      "reason": "高速かつインテリジェントなエージェント型モデル。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模なリファクタリングで複数のファイルを変更する必要がある時",
+      "新機能追加に伴い、既存の複数コンポーネントを修正する時",
+      "共通ロジックの変更が複数のモジュールに影響を与える場合"
+    ],
+    "steps": [
+      "修正対象のプロジェクトディレクトリ全体をAIに提供する",
+      "修正したい機能やバグ、変更の意図を具体的に指示する",
+      "AIが提案する変更内容（複数ファイル）を確認し、適用する",
+      "変更後のコードをテストし、動作を確認する"
+    ],
+    "prompt": "このプロジェクトで、ユーザー認証ロジックをJWTからOAuth2に変更してください。関連する全てのファイル（APIエンドポイント、ミドルウェア、フロントエンドの認証処理）を修正し、変更点と理由を説明してください。",
+    "tags": [
+      "コード修正",
+      "リファクタリング",
+      "エージェント",
+      "設計"
+    ],
+    "id": "20251209_010600_04",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "GPT-5.1-Codex-MaxがOpenAI APIで利用可能に",
+      "url": "https://www.sdtimes.com/ai/this-week-in-ai-updates-anthropic-acquires-bun-gpt-5-1-codex-max-added-to-api-and-more-december-5-2025/"
+    }
+  },
+  {
     "title": "Mistral 3でセキュアなコードレビューを自動化",
     "problem_context": "PRのコードレビューに時間がかかり、見落としが発生しやすい。外部AIにコードを渡すセキュリティ懸念もある。",
     "recommended_ai": {
