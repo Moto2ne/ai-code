@@ -265,7 +265,7 @@ def collect_news(max_retries=3):
 【必須条件】
 - 各ニュースは2025年12月の「具体的な技術リリース・アップデート」であること
 - URLは必ず https:// で始まる実際のURLであること
-- 5件選定すること
+- 3件選定すること
 - 余計な説明は不要、上記形式のリストのみ出力"""
     
     for attempt in range(max_retries):
