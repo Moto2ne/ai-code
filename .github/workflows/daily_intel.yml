@@ -54,8 +54,11 @@ jobs:
           if git diff --quiet data/ai_tactics.json; then
             echo "📭 新しいAI戦術はありませんでした"
           else
+            # リモートの変更を取得してマージ
+            git pull --rebase origin main || true
+            
             git add data/ai_tactics.json
-            git commit -m "自動更新: $(date +%Y-%m-%d) のAI戦術を追加"
+            git commit -m "🤖 自動更新: $(date +%Y-%m-%d) のAI戦術を追加"
             git push
             echo "✅ 新しいAI戦術をコミットしました"
           fi
