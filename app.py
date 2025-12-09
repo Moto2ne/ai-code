@@ -176,7 +176,7 @@ col_title, col_guide = st.columns([4, 1])
 with col_title:
     st.markdown("""
     <div style="margin-bottom: 1rem;">
-        <h1 style="font-size: 1.8rem; margin: 0; color: #1a253a;">📰毎朝6時AIニュース</h1>
+        <h1 style="font-size: 1.8rem; margin: 0; color: #1a253a;">📰毎朝6時のAIニュース</h1>
         <p style="color: #666; margin-top: 0.5rem;">最新情報を自動収集 → 使える場面・プロンプトに変換</p>
     </div>
     """, unsafe_allow_html=True)
