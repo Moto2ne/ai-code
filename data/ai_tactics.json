@@ -100,5 +100,107 @@
       "title": "Grok 4.20がリリース予定、既存モデルを上回る性能",
       "url": "https://gadgets360.com/ai/news/elon-musk-grok-420-ai-model-release-timeline-4711813"
     }
+  },
+  {
+    "title": "Gemini 3 ProでUIデザインレビュー",
+    "news_highlight": "Gemini 3 Proは高度な画像理解とマルチモーダル推論で、複雑な視覚情報を解析",
+    "problem_context": "UIデザインのアクセシビリティや実装上の課題特定",
+    "recommended_ai": {
+      "model": "Gemini 3 Pro",
+      "reason": "高度な画像理解と推論能力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "デザイナーから受け取ったUIモックアップのレビュー",
+      "既存システムのUI改善提案",
+      "アクセシビリティガイドラインへの準拠チェック"
+    ],
+    "steps": [
+      "1. レビューしたいUIデザインの画像を用意する",
+      "2. Gemini 3 Proのインターフェースに画像をアップロードする",
+      "3. プロンプトを入力し、レビューを依頼する",
+      "4. AIの提案を基にUIデザインを改善し、実装に反映する"
+    ],
+    "prompt": "このUIデザイン画像について、アクセシビリティ、実装の容易さ、ユーザー体験の観点からレビューし、具体的な改善提案をMarkdown形式で記述してください。",
+    "tags": [
+      "UI/UX",
+      "デザインレビュー",
+      "アクセシビリティ",
+      "画像解析"
+    ],
+    "id": "20251209_013513_01",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "GoogleがGemini 3 Proを発表、ビジョンAIの最前線を拓く。",
+      "url": "https://blog.google/technology/developers/gemini-3-pro-vision/"
+    }
+  },
+  {
+    "title": "NeptuneでGPTモデル挙動を可視化",
+    "news_highlight": "OpenAIがNeptune買収、モデル挙動可視化・実験追跡ツールを強化へ",
+    "problem_context": "AIモデルの出力が不安定、挙動が不明瞭",
+    "recommended_ai": {
+      "model": "Neptune",
+      "reason": "モデル挙動の可視化と実験追跡に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プロンプトのA/Bテスト結果を比較したい時",
+      "ファインチューニングの各エポックでのモデル性能変化を追跡したい時",
+      "特定の入力でモデルが誤動作する原因を調査したい時"
+    ],
+    "steps": [
+      "1. Neptuneアカウントをセットアップし、OpenAI APIキーを設定する",
+      "2. プロンプトとモデルパラメータをNeptuneでログ記録するコードを実装する",
+      "3. 異なるプロンプトやパラメータでモデルを実行し、結果をNeptuneに送信する",
+      "4. Neptune UIでモデルの出力、評価指標、メタデータを比較分析する"
+    ],
+    "prompt": "PythonでOpenAI APIとNeptuneを連携し、プロンプトとモデル出力を記録するコードを生成してください。実験名、プロンプト、モデル名、出力、評価指標を含めてください。",
+    "tags": [
+      "MLOps",
+      "実験管理",
+      "プロンプトエンジニアリング",
+      "デバッグ"
+    ],
+    "id": "20251209_013525_02",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "OpenAIがNeptune買収、モデル挙動可視化・実験追跡ツール強化へ。",
+      "url": "https://openai.com/index/openai-to-acquire-neptune"
+    }
+  },
+  {
+    "title": "AgentCore GatewayでAPI連携設計",
+    "news_highlight": "AgentCore GatewayがAPI Gatewayをサポート、AIエージェントのツール連携を効率化",
+    "problem_context": "AIエージェントと既存APIの連携複雑性",
+    "recommended_ai": {
+      "model": "AgentCore Gateway",
+      "reason": "API連携を効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントが既存システムと連携する機能開発時",
+      "複数のAPIを組み合わせるエージェントの設計時",
+      "エージェントのAPI呼び出しロジックをテストする時"
+    ],
+    "steps": [
+      "1. AgentCore Gatewayで新しいエージェントを作成する。",
+      "2. 既存のAPI Gatewayエンドポイントをツールとして登録する。",
+      "3. エージェントのプロンプトでAPI呼び出しの意図を記述する。",
+      "4. エージェントの動作をテストし、API連携を確認する。"
+    ],
+    "prompt": "AgentCore Gatewayで、API Gatewayのエンドポイントをツールとして登録し、ユーザーの問い合わせに応じてそのAPIを呼び出すエージェントを構築してください。",
+    "tags": [
+      "API連携",
+      "AIエージェント",
+      "AWS",
+      "開発効率化"
+    ],
+    "id": "20251209_013532_03",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "AWSがAIエージェントのツール連携を効率化、API Gatewayと接続。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/streamline-ai-agent-tool-interactions-connect-api-gateway-to-agentcore-gateway-with-mcp/"
+    }
   }
 ]
