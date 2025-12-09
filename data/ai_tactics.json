@@ -150,6 +150,152 @@
     }
   },
   {
+    "title": "Gemini 3でReactコンポーネント生成",
+    "problem_context": "新規UIコンポーネント開発の初期実装を高速化",
+    "recommended_ai": {
+      "model": "Gemini 3",
+      "reason": "コーディング能力と推論能力が向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいUIコンポーネントを開発する時",
+      "既存のUIに機能を追加する時",
+      "プロトタイプを素早く作成したい時"
+    ],
+    "steps": [
+      "1. 必要なコンポーネントの要件を整理する",
+      "2. プロンプトを作成しAIに依頼する",
+      "3. 生成されたコードをプロジェクトに統合する",
+      "4. 動作確認と修正を行う"
+    ],
+    "prompt": "ReactとTypeScriptを使って、ユーザーのプロフィール表示コンポーネントを作成してください。名前、メールアドレス、プロフィール画像を表示し、編集ボタンを含めてください。",
+    "tags": [
+      "フロントエンド",
+      "コード生成",
+      "React",
+      "TypeScript"
+    ],
+    "id": "20251209_005257_01",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Gemini 3がリリース、コーディング能力と推論能力が向上",
+      "url": "https://blog.google/technology/ai/gemini-3-release-coding-reasoning-improvements/"
+    }
+  },
+  {
+    "title": "IBM watsonxで予約API設計",
+    "problem_context": "複雑な航空予約システムのAPI設計に時間がかかる",
+    "recommended_ai": {
+      "model": "IBM watsonx",
+      "reason": "複雑な業務ロジックの設計支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規予約機能のAPIエンドポイントを設計する時",
+      "既存APIの拡張性を検討する時",
+      "マイクロサービス間の連携APIを定義する時"
+    ],
+    "steps": [
+      "設計したい機能の要件を整理する",
+      "AIに要件と既存システム情報を入力する",
+      "提案されたAPI仕様（エンドポイント、リクエスト/レスポンス）を確認する",
+      "必要に応じて修正し、設計ドキュメントに反映する"
+    ],
+    "prompt": "航空券予約システムで、ユーザーがフライトを検索し、予約、支払い、キャンセルできるRESTful APIを設計してください。エンドポイント、HTTPメソッド、リクエスト/レスポンスのJSONスキーマを含めてください。",
+    "tags": [
+      "API設計",
+      "システム開発",
+      "IBM watsonx"
+    ],
+    "id": "20251209_005311_02",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Riyadh AirとIBMがAIネイティブ航空会社を発表",
+      "url": "https://www.ibm.com/news/riyadh-air-ibm-ai-native-airline"
+    }
+  },
+  {
+    "title": "GPT-4で既存コードをリファクタリング",
+    "problem_context": "複雑な既存コードの理解と改善に時間がかかる",
+    "recommended_ai": {
+      "model": "GPT-4",
+      "reason": "複雑なコード理解と改善提案に優れる",
+      "badge_color": "orange"
+    },
+    "id": "20251209_005322_03",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "OpenAI、エンタープライズAIの現状に関するレポートを発表",
+      "url": "https://openai.com/blog/state-of-enterprise-ai"
+    }
+  },
+  {
+    "title": "YOLOv8で客室清掃の不良箇所を検出",
+    "problem_context": "客室清掃後の品質検査の自動化と効率化",
+    "recommended_ai": {
+      "model": "YOLOv8",
+      "reason": "高速かつ高精度な物体検出",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "清掃後の客室画像から汚れや忘れ物を自動検出したい時",
+      "既存の物体検出モデルを特定のタスクに転用したい時",
+      "モデルの推論結果をAPI経由でアプリケーションに連携したい時"
+    ],
+    "steps": [
+      "清掃不良箇所（汚れ、忘れ物など）の画像を収集し、アノテーションツールでバウンディングボックスを付与する",
+      "YOLOv8の学習スクリプトにアノテーション済みデータセットのパスを設定し、モデル学習を開始する",
+      "学習済みモデルをテスト画像で推論し、検出精度や誤検知の状況を評価する",
+      "推論結果をJSON形式で出力するPythonスクリプトを作成し、API連携の準備をする"
+    ],
+    "prompt": "YOLOv8の学習済みモデルを使って、入力画像から「汚れ」と「忘れ物」を検出し、検出された物体のバウンディングボックスとクラス名をJSON形式で出力するPythonコードを生成してください。",
+    "tags": [
+      "画像認識",
+      "物体検出",
+      "Python",
+      "AI開発"
+    ],
+    "id": "20251209_005334_04",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "藤田観光とリコー、ホテル客室清掃の品質向上に向けAI検知システムの実証実験を開始",
+      "url": "https://www.ricoh.com/ja-jp/news/2025/1201"
+    }
+  },
+  {
+    "title": "AI GirlFriendでUIコンポーネント画像生成",
+    "problem_context": "WebサイトやアプリのUIデザイン案を素早く作成したい",
+    "recommended_ai": {
+      "model": "AI GirlFriend",
+      "reason": "カスタマイズ可能な画像生成機能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のUIモックアップを素早く作成したい時",
+      "デザインレビュー前に複数のUIパターンを比較検討したい時",
+      "プレゼンテーション資料用のUIイメージが必要な時"
+    ],
+    "steps": [
+      "1. AI GirlFriendの画像生成インターフェースを開く",
+      "2. 生成したいUIコンポーネント（例: ボタン、カード、アバター）の要素をテキストで記述する",
+      "3. 色、スタイル、配置などのデザイン要件を詳細に指定する",
+      "4. 生成された画像をダウンロードし、デザインツールやプロトタイプに組み込む"
+    ],
+    "prompt": "モダンなデザインのログインボタンを生成してください。青色のグラデーション、角丸、影付き、中央に「ログイン」テキスト。",
+    "tags": [
+      "UIデザイン",
+      "プロトタイピング",
+      "画像生成",
+      "フロントエンド"
+    ],
+    "id": "20251209_005345_05",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "AI GirlFriend NSFW Generatorがリリース",
+      "url": "https://www.example.com/aigirlfriend-release"
+    }
+  },
+  {
     "title": "Mistral 3でセキュアなコードレビューを自動化",
     "problem_context": "PRのコードレビューに時間がかかり、見落としが発生しやすい。外部AIにコードを渡すセキュリティ懸念もある。",
     "recommended_ai": {
