@@ -296,6 +296,176 @@
     }
   },
   {
+    "title": "Gemini 3 Proで技術課題を迅速解決",
+    "news_highlight": "Gemini 3 ProがGoogle Searchにグローバル展開、高度なAI検索で情報精度向上。",
+    "problem_context": "複雑な技術課題の調査に時間がかかる。",
+    "recommended_ai": {
+      "model": "Gemini 3 Pro (Google Search経由)",
+      "reason": "高度なAI検索で関連情報が効率的に見つかる。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "特定のエラーメッセージの解決策を調査する時",
+      "新しいライブラリやフレームワークの導入方法を調べる時",
+      "特定の設計パターンやアーキテクチャの比較検討をする時"
+    ],
+    "steps": [
+      "Google Searchを開き、具体的なエラーメッセージや技術課題を入力する。",
+      "検索結果のGemini 3 Proによる要約や関連性の高い情報を確認する。",
+      "提示された解決策やコード例を開発環境で試す。",
+      "必要に応じて追加の質問を検索し、理解を深める。"
+    ],
+    "prompt": "KubernetesでPodがPending状態から進まない場合の一般的な原因とデバッグ手順を教えてください。",
+    "tags": [
+      "情報検索",
+      "デバッグ",
+      "設計調査",
+      "学習"
+    ],
+    "id": "20251209_010305_01",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Gemini 3 ProがGoogle Searchにグローバル展開",
+      "url": "https://blog.google/products/search/gemini-3-pro-google-search/"
+    }
+  },
+  {
+    "title": "GeminiでAndroidアプリのバグ修正",
+    "news_highlight": "Pixel 2025年12月アップデートで30以上のバグ修正と改善が提供開始。",
+    "problem_context": "Androidアプリのバグ特定と効率的な修正。",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "Android開発のコード理解と修正提案に優れる。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Androidアプリのクラッシュログから原因を特定したい時",
+      "特定の機能がPixelデバイスで動作しない原因を調べたい時",
+      "既存コードのパフォーマンス改善案を検討したい時"
+    ],
+    "steps": [
+      "クラッシュログやエラーメッセージをコピーする。",
+      "問題が発生しているKotlin/Javaコードを特定しコピーする。",
+      "Geminiにログとコードを貼り付け、修正案を依頼する。",
+      "提案された修正を適用し、Pixelデバイスで動作確認する。"
+    ],
+    "prompt": "Android KotlinコードのNullPointerExceptionを修正してください。エラーログ: `java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference`。コード: `val textView = findViewById<TextView>(R.id.myTextView); textView.setText(\"Hello\");`",
+    "tags": [
+      "Android開発",
+      "デバッグ",
+      "Kotlin",
+      "バグ修正"
+    ],
+    "id": "20251209_010315_02",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Google Pixel 2025年12月アップデート配信開始",
+      "url": "https://www.macotakara.jp/news/entry/1185670"
+    }
+  },
+  {
+    "title": "Claude CodeでBunベースのJS開発加速",
+    "news_highlight": "Claude Codeが年間売上高10億ドル達成、Anthropicが高速JSランタイムBunを買収",
+    "problem_context": "JavaScript/TypeScript開発の効率化と品質向上",
+    "recommended_ai": {
+      "model": "Claude Code",
+      "reason": "JS/TS開発支援を強化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Bunを活用した新規JavaScript/TypeScriptプロジェクトの立ち上げ時",
+      "既存のJS/TSコードをBun環境に最適化する際",
+      "Bunの高速なテストランナーやバンドラーを利用したコード生成時"
+    ],
+    "steps": [
+      "Bunがインストールされた開発環境を準備する",
+      "Claude Codeにプロジェクトの要件や既存コードの改善点を伝える",
+      "Claude Codeが生成したBunベースのコードや設定ファイルを検証する",
+      "Bunコマンド（`bun run`, `bun test`, `bun build`など）でコードを実行・テストする"
+    ],
+    "prompt": "BunとTypeScriptを使って、シンプルなWebサーバーを構築してください。ポート3000で'/hello'エンドポイントが'Hello Bun!'と応答するように実装してください。",
+    "tags": [
+      "JavaScript",
+      "TypeScript",
+      "Bun",
+      "コード生成",
+      "Web開発"
+    ],
+    "id": "20251209_010325_03",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Anthropic、JavaScriptランタイムBunを買収、Claude Codeが年間売上高10億ドル達成",
+      "url": "https://www.iret.media/news/weekly-ai-news-dec-1-2025/"
+    }
+  },
+  {
+    "title": "Amazon SageMaker AIでモデル高速ファインチューニング",
+    "news_highlight": "SageMakerサーバーレスカスタマイズでAIモデルのファインチューニングを数日から数時間に短縮",
+    "problem_context": "AIモデルのファインチューニング時間とコストの削減",
+    "recommended_ai": {
+      "model": "Amazon SageMaker AI",
+      "reason": "サーバーレスで高速ファインチューニング",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "特定の業務データでAIモデルの精度を向上させたい時",
+      "新しいデータセットでモデルを素早く再学習させたい時",
+      "インフラ管理なしでモデルのカスタマイズを試したい時"
+    ],
+    "steps": [
+      "1. ファインチューニング用データセットをAmazon S3にアップロードする。",
+      "2. SageMakerコンソールまたはSDKでサーバーレスジョブを設定する。",
+      "3. ベースモデルとS3データセットを指定し、ファインチューニングジョブを開始する。",
+      "4. 完了後、ファインチューニングされたモデルをデプロイし、APIで性能を検証する。"
+    ],
+    "prompt": "PythonとSageMaker SDKを使って、S3パス`s3://my-finetune-data/`のデータで`meta-llama/Llama-2-7b-hf`モデルをファインチューニングするサーバーレスジョブのコードを生成してください。",
+    "tags": [
+      "ファインチューニング",
+      "サーバーレス",
+      "SageMaker",
+      "MLOps",
+      "モデル開発"
+    ],
+    "id": "20251209_010337_04",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Amazon SageMaker AI、サーバーレスカスタマイズ機能でモデルファインチューニングを加速",
+      "url": "https://aws.amazon.com/jp/blogs/aws/amazon-sagemaker-ai-new-serverless-customization-accelerates-model-fine-tuning/"
+    }
+  },
+  {
+    "title": "Z-Imageで多言語対応の画像を生成",
+    "news_highlight": "Z-Imageは60億パラメータでフォトリアル画像とバイリンガルテキスト描画を両立、GitHub/Hugging Faceで公開。",
+    "problem_context": "多言語テキスト入り高品質画像の生成が困難",
+    "recommended_ai": {
+      "model": "Z-Image",
+      "reason": "フォトリアル画像と多言語テキスト描画",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プロダクトのマーケティング素材作成時",
+      "多言語対応UIのモックアップ作成時",
+      "技術ブログの図解やバナー作成時"
+    ],
+    "steps": [
+      "1. Z-Imageリポジトリをクローンし環境構築",
+      "2. 日本語と英語を含む画像生成プロンプトを作成",
+      "3. Z-Imageでプロンプトを実行し画像を生成",
+      "4. 生成画像を評価し、必要に応じてプロンプトを調整"
+    ],
+    "prompt": "Generate a photorealistic image of a product packaging for a new energy drink. The label should clearly display '超エナジー' and 'Super Energy' in a bold, modern font.",
+    "tags": [
+      "画像生成",
+      "テキスト描画"
+    ],
+    "id": "20251209_010346_05",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "オープンソース画像生成AI基盤モデル「Z-Image」公開",
+      "url": "https://www.cgworld.jp/news/20251209-z-image.html"
+    }
+  },
+  {
     "title": "Mistral 3でセキュアなコードレビューを自動化",
     "problem_context": "PRのコードレビューに時間がかかり、見落としが発生しやすい。外部AIにコードを渡すセキュリティ懸念もある。",
     "recommended_ai": {
