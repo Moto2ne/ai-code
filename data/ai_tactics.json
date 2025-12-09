@@ -102,5 +102,108 @@
       "title": "OpenAIが実験追跡・モデル監視ツールNeptuneを買収し開発基盤強化。",
       "url": "https://openai.com/index/openai-to-acquire-neptune"
     }
+  },
+  {
+    "title": "Gemini 3でAPI設計を効率化",
+    "news_highlight": "Gemini 3は複雑な推論とマルチモーダル対応を強化、開発タスクの精度と速度を向上",
+    "problem_context": "複雑なAPI設計や既存システムへの統合に課題",
+    "recommended_ai": {
+      "model": "Gemini 3",
+      "reason": "高度な推論とマルチモーダル対応",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のAPI設計を検討する時",
+      "既存のコードベースに新しい機能を統合する時",
+      "複雑なバグの原因特定と修正案を検討する時"
+    ],
+    "steps": [
+      "1. 実装したい機能の要件を具体的に記述する。",
+      "2. 関連する既存のコードスニペットや設計図をAIに提示する。",
+      "3. AIにAPI設計の提案、または既存コードへの統合方法を依頼する。",
+      "4. 提案された設計やコードをレビューし、必要に応じて調整・実装する。"
+    ],
+    "prompt": "PythonとFastAPIを使って、ユーザー認証と投稿管理機能のRESTful API設計を提案してください。エンドポイント、リクエスト/レスポンスのスキーマを含めてください。",
+    "tags": [
+      "API設計",
+      "コード生成",
+      "設計レビュー",
+      "リファクタリング"
+    ],
+    "id": "20251209_210743_01",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "GoogleがGemini 3やNano Banana Proなど最新AIモデルを発表。",
+      "url": "https://blog.google/technology/ai/google-ai-updates-november-2025/"
+    }
+  },
+  {
+    "title": "Apriel-1.6-15b-ThinkerでUI/UX設計レビュー",
+    "news_highlight": "Apriel-1.6-15b-Thinkerは画像とテキストを統合理解、複雑な設計レビューを効率化",
+    "problem_context": "複雑なUI/UX設計の視覚的レビューに時間がかかる",
+    "recommended_ai": {
+      "model": "Apriel-1.6-15b-Thinker",
+      "reason": "マルチモーダルで視覚情報分析",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "デザイナーが作成したUIモックアップのレビュー時",
+      "既存システムの画面キャプチャから改善点を検討する時",
+      "技術ドキュメント内の図やグラフの意味を理解したい時"
+    ],
+    "steps": [
+      "レビューしたいUIモックアップや画面キャプチャを準備する。",
+      "その画像をApriel-1.6-15b-Thinkerにアップロードする。",
+      "プロンプトで具体的なレビュー観点や質問を指示する。",
+      "AIの分析結果と提案を元に、設計改善やドキュメント理解を進める。"
+    ],
+    "prompt": "このUIモックアップについて、アクセシビリティとユーザーフローの観点から改善点を提案してください。特に、主要な操作ボタンの配置と視認性について詳しく分析してください。",
+    "tags": [
+      "マルチモーダルAI",
+      "UI/UXレビュー",
+      "設計支援",
+      "画像分析"
+    ],
+    "id": "20251209_210754_02",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Hugging Faceが新マルチモーダルAI「Apriel-1.6-15b-Thinker」を発表。",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/apriel-1p6-15b-thinker"
+    }
+  },
+  {
+    "title": "AWS AIエージェントでAPI連携設計",
+    "news_highlight": "AWS AIエージェントがAPI Gatewayと連携強化、企業データ活用したエージェント開発効率向上",
+    "problem_context": "AIエージェントのAPI連携や企業データ活用が複雑",
+    "recommended_ai": {
+      "model": "Amazon Bedrock Agents",
+      "reason": "API Gateway連携で外部システム統合が容易に",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "社内システムAPI経由でデータ取得し、レポートを自動生成したい時",
+      "顧客情報APIを操作し、AIエージェントで問い合わせ対応を自動化したい時",
+      "複数のマイクロサービスAPIを統合し、複雑なビジネスプロセスを自動化したい時"
+    ],
+    "steps": [
+      "1. Amazon Bedrock Agentsで新規エージェントを作成する。",
+      "2. API Gatewayで公開されている社内APIのOpenAPIスキーマを準備する。",
+      "3. エージェントの「アクショングループ」にAPI Gatewayエンドポイントとスキーマを登録する。",
+      "4. エージェントのプロンプトにAPI利用シナリオを指示し、テスト実行する。"
+    ],
+    "prompt": "顧客管理API（API Gateway経由）を利用して、顧客ID 'CUST001' の最新の注文履歴を取得し、その結果を要約して報告してください。",
+    "tags": [
+      "AWS",
+      "AIエージェント",
+      "API Gateway",
+      "Bedrock",
+      "開発効率"
+    ],
+    "id": "20251209_210804_03",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "AWSがAIエージェントのAPI Gateway連携を強化し開発効率向上。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/streamline-ai-agent-tool-interactions-connect-api-gateway-to-agentcore-gateway-with-mcp/"
+    }
   }
 ]
