@@ -1,5 +1,155 @@
 [
   {
+    "title": "AI戦術",
+    "problem_context": "AI技術の活用",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "高性能",
+      "badge_color": "orange"
+    },
+    "prompt": "最新のAI技術を活用して効率化を図ってください。",
+    "tags": [
+      "AI",
+      "自動生成"
+    ],
+    "id": "20251209_003053_01",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "The state of enterprise AIレポート公開",
+      "url": "https://openai.com/blog/the-state-of-enterprise-ai"
+    }
+  },
+  {
+    "title": "Gemini 3/AI Studioでアプリプロトタイプを高速生成",
+    "problem_context": "新規アプリのUI/UXプロトタイプ開発に時間がかかる。",
+    "recommended_ai": {
+      "model": "Gemini 3",
+      "reason": "プログラミング能力向上と迅速な生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のUI/UXを素早く試したい時",
+      "技術検証用のミニマムなアプリを構築したい時",
+      "顧客にデモを見せるためのモックアップが必要な時"
+    ],
+    "steps": [
+      "AI StudioのBuild機能で、アプリの目的と主要機能を記述。",
+      "Gemini 3が生成したUIとコードの初期案を確認。",
+      "AI Studio上で、生成されたコードやデザインを調整・修正。",
+      "プロトタイプをエクスポートし、動作検証または共有。"
+    ],
+    "prompt": "{言語}と{フレームワーク}を使って、ユーザー認証と商品一覧表示機能を持つシンプルなWebアプリのプロトタイプを生成してください。",
+    "tags": [
+      "プロトタイプ",
+      "Web開発",
+      "高速開発",
+      "UI/UX"
+    ],
+    "id": "20251209_003105_02",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Gemini 3発表、AI StudioにBuild機能追加",
+      "url": "https://blog.google/technology/ai/gemini-3-ai-studio-build-feature/"
+    }
+  },
+  {
+    "title": "IBM WatsonxでAIネイティブ設計加速",
+    "problem_context": "AIネイティブシステム設計の複雑性軽減",
+    "recommended_ai": {
+      "model": "IBM Watsonx",
+      "reason": "大規模言語モデルで設計を支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規AIサービスアーキテクチャを検討したい時",
+      "AI機能拡張の設計課題を解決したい時",
+      "複雑なAIワークフローを設計したい時"
+    ],
+    "steps": [
+      "AIネイティブシステムの要件を具体的に定義する",
+      "Watsonxに要件を入力し初期アーキテクチャ案を生成させる",
+      "生成案を基に技術的実現性や拡張性を評価・修正する",
+      "最終設計ドキュメントを生成・レビューし開発へ移行する"
+    ],
+    "prompt": "航空会社の顧客体験を刷新するAIネイティブシステムのアーキテクチャを設計してください。パーソナライズされたフライト情報、リアルタイムサポート、予測メンテナンス機能を組み込み、スケーラビリティとセキュリティを考慮してください。",
+    "tags": [
+      "システム設計",
+      "AIアーキテクチャ"
+    ],
+    "id": "20251209_003115_03",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Riyadh Air、IBMと提携し世界初のAIネイティブ航空会社を発表",
+      "url": "https://www.ibm.com/news/press-release/riyadh-air-ibm-partner-to-launch-worlds-first-ai-native-airline"
+    }
+  },
+  {
+    "title": "GeminiでPixelセキュリティ/機能改善コード生成",
+    "problem_context": "Androidアプリのセキュリティと機能改善",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "最新のAndroid情報を学習",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Pixelアップデートで修正された脆弱性への対応コードを生成したい時",
+      "Pixelアップデートで追加された新機能APIの利用例を生成したい時",
+      "既存のAndroidアプリコードのセキュリティレビューを効率化したい時"
+    ],
+    "steps": [
+      "Pixel Update Bulletinから関連するCVE IDや新機能APIを特定。",
+      "既存のAndroidアプリコードから関連する箇所を抽出。",
+      "Geminiに脆弱性情報/API概要とコードを渡し、修正案/実装例を生成させる。",
+      "生成されたコードをレビューし、テスト環境で動作確認と統合。"
+    ],
+    "prompt": "Pixel Update Bulletinで言及されたセキュリティ脆弱性CVE-{CVE_ID}への対応、または新機能API『{API名}』の活用方法について、以下のAndroid {言語}コードを修正/拡張する具体的なコード例を生成してください。コード: {コード}",
+    "tags": [
+      "Android",
+      "セキュリティ",
+      "コード生成",
+      "API活用"
+    ],
+    "id": "20251209_003130_04",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Pixel Update Bulletin—December 2025",
+      "url": "https://android-developers.googleblog.com/2025/12/pixel-update-bulletin-december-2025.html"
+    }
+  },
+  {
+    "title": "Gemini 3でコード生成とレビューを効率化",
+    "problem_context": "開発初期のコード作成やレビューに時間を要する",
+    "recommended_ai": {
+      "model": "Gemini 3",
+      "reason": "高度なコード理解と生成、レビュー能力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "特定の機能を持つコードスニペットを迅速に生成したい時",
+      "既存コードの潜在的なバグや改善点をレビューしたい時",
+      "新しいAPIやライブラリの利用例を素早く知りたい時"
+    ],
+    "steps": [
+      "実装したい機能やレビュー対象のコードを明確にする。",
+      "Gemini 3にプロンプトを入力し、コード生成またはレビューを依頼する。",
+      "生成されたコードやレビュー結果を開発環境で検証・調整する。",
+      "得られた知見をチーム内で共有し、開発プロセスに組み込む。"
+    ],
+    "prompt": "{言語}で、以下の要件を満たすコードを生成してください。また、既存コード{コード}の潜在的なバグと改善点を指摘してください。",
+    "tags": [
+      "コード生成",
+      "コードレビュー",
+      "開発効率化",
+      "LLM"
+    ],
+    "id": "20251209_003143_05",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "2025年12月AI市場更新：Nano Banana Pro、Gemini 3、Kimi、阿里Z Imageなど",
+      "url": "https://lerler.tech/2025-12-ai-market-update/"
+    }
+  },
+  {
     "title": "Mistral 3でセキュアなコードレビューを自動化",
     "problem_context": "PRのコードレビューに時間がかかり、見落としが発生しやすい。外部AIにコードを渡すセキュリティ懸念もある。",
     "recommended_ai": {
