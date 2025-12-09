@@ -26,7 +26,7 @@ jobs:
       - name: 必要なライブラリのインストール
         run: |
           pip install --upgrade pip
-          pip install google-genai python-dotenv requests
+          pip install google-genai python-dotenv requests feedparser
       
       - name: ニュース収集を実行
         env:

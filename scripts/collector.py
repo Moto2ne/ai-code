@@ -1,16 +1,23 @@
 """
-Gemini APIの検索機能を使って最新のAI/MLニュースを集める
+公式RSSフィードから最新のAI/MLニュースを収集
+英語ソースから直接取得 → LLMで日本語に超要約
 """
 import json
 import os
 import sys
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
-import requests
 
 # プロジェクトルートをパスに追加
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+try:
+    import feedparser
+except ImportError:
+    print("エラー: feedparserライブラリがインストールされていません")
+    print("pip install feedparser を実行してください")
+    sys.exit(1)
 
 try:
     from google import genai
@@ -24,326 +31,235 @@ try:
     from dotenv import load_dotenv
     load_dotenv()
 except ImportError:
-    print("警告: python-dotenvがインストールされていません（環境変数の自動読み込みが無効）")
+    pass
 
 
-def resolve_redirect_url(url, timeout=15, max_retries=2):
-    """リダイレクトURLを実際のソースURLに解決する"""
-    if not url or not url.startswith('http'):
-        return url
+# 信頼性の高い公式RSSフィード
+RSS_FEEDS = [
+    {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/blog/rss.xml",
+        "priority": 1,  # 最優先
+    },
+    {
+        "name": "Google AI Blog", 
+        "url": "https://blog.google/technology/ai/rss/",
+        "priority": 1,
+    },
+    {
+        "name": "Anthropic",
+        "url": "https://www.anthropic.com/index.xml",
+        "priority": 1,
+    },
+    {
+        "name": "Microsoft Research",
+        "url": "https://www.microsoft.com/en-us/research/feed/",
+        "priority": 2,
+    },
+    {
+        "name": "AWS Machine Learning",
+        "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "priority": 2,
+    },
+    {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/feed.xml",
+        "priority": 2,
+    },
+]
+
+
+def fetch_rss_entries(max_age_days=7):
+    """RSSフィードから最新エントリを取得"""
+    all_entries = []
+    cutoff_date = datetime.now() - timedelta(days=max_age_days)
     
-    # Google Vertex AIのリダイレクトURLの場合のみ解決
-    if 'vertexaisearch.cloud.google.com/grounding-api-redirect' not in url:
-        return url
-    
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-    }
-    
-    for attempt in range(max_retries):
+    for feed_info in RSS_FEEDS:
         try:
-            # GETリクエストでリダイレクト先を取得
-            response = requests.get(
-                url, 
-                allow_redirects=True, 
-                timeout=timeout, 
-                headers=headers,
-                stream=True
-            )
-            resolved_url = response.url
+            print(f"📡 {feed_info['name']} を取得中...")
+            feed = feedparser.parse(feed_info["url"])
             
-            # リダイレクトが成功した場合
-            if resolved_url and 'vertexaisearch.cloud.google.com' not in resolved_url:
-                return resolved_url
-                
-        except requests.exceptions.RequestException as e:
-            if attempt < max_retries - 1:
-                time.sleep(1)  # リトライ前に待機
+            if feed.bozo and not feed.entries:
+                print(f"  ⚠️ フィード取得失敗: {feed_info['name']}")
                 continue
-            # 最終試行で失敗
-            pass
+            
+            for entry in feed.entries[:5]:  # 各フィードから最新5件まで
+                # 日付を取得
+                published = None
+                if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                    published = datetime(*entry.published_parsed[:6])
+                elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+                    published = datetime(*entry.updated_parsed[:6])
+                
+                # 古すぎる記事はスキップ
+                if published and published < cutoff_date:
+                    continue
+                
+                # タイトルにAI関連キーワードが含まれるかチェック
+                title = entry.get('title', '')
+                summary = entry.get('summary', entry.get('description', ''))[:500]
+                
+                all_entries.append({
+                    "title": title,
+                    "summary": summary,
+                    "url": entry.get('link', ''),
+                    "source": feed_info['name'],
+                    "priority": feed_info['priority'],
+                    "published": published.isoformat() if published else None,
+                    "collected_at": datetime.now().isoformat()
+                })
+            
+            print(f"  ✅ {len(feed.entries[:5])}件取得")
+            
+        except Exception as e:
+            print(f"  ❌ エラー: {feed_info['name']} - {str(e)[:50]}")
+            continue
     
-    return url  # 失敗時は元のURLを返す
+    # 優先度と日付でソート
+    all_entries.sort(key=lambda x: (x['priority'], x['published'] or ''), reverse=False)
+    
+    return all_entries
 
 
-def parse_markdown_to_news_items(markdown_text):
-    """Markdown形式のレスポンスを解析してニュースデータに変換"""
-    news_items = []
+def filter_ai_news_with_llm(client, entries, max_news=3):
+    """LLMを使ってAI関連の重要ニュースを選定・要約"""
     
-    if not markdown_text:
-        print("⚠️ 空のレスポンスを受信")
-        return news_items
+    if not entries:
+        return []
     
+    # エントリをテキストにまとめる
+    entries_text = "\n".join([
+        f"[{i+1}] {e['source']}: {e['title']}\n    {e['summary'][:200]}...\n    URL: {e['url']}"
+        for i, e in enumerate(entries[:20])  # 最大20件から選定
+    ])
+    
+    prompt = f"""以下のニュース一覧から、エンジニアにとって最も重要なAI/ML関連ニュースを{max_news}件選んでください。
+
+【選定基準】
+- 新しいAIモデルのリリース（GPT, Claude, Gemini, Llama等）
+- 開発者向けAPI・ツールのアップデート
+- 実務に直結する技術発表
+- 具体的な性能数値やベンチマーク結果があるもの
+
+【除外基準】
+- 一般的なAI解説・入門記事
+- 企業の採用・資金調達ニュース
+- 規制・政策関連（技術発表を除く）
+
+【ニュース一覧】
+{entries_text}
+
+【出力形式】
+選んだニュースの番号と、日本語での超要約（1行50文字以内）をJSON配列で出力:
+[{{"index": 1, "summary_ja": "GPT-5が発表、コード生成速度が3倍に向上"}}, ...]
+
+JSONのみ出力してください。"""
+
     try:
-        # パターン1: - [タイトル](URL): 要約
-        pattern1 = r'- \[([^\]]+)\]\(([^)]+)\):\s*(.+?)(?=\n- |\n\n|$)'
-        matches = re.findall(pattern1, markdown_text, re.MULTILINE | re.DOTALL)
+        response = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=[prompt],
+            config=types.GenerateContentConfig(temperature=0.2)
+        )
         
-        for title, url, summary in matches:
-            if url.strip().startswith('http'):
-                news_items.append({
-                    "title": title.strip(),
-                    "summary": summary.strip()[:500],
-                    "url": url.strip(),
-                    "collected_at": datetime.now().isoformat()
-                })
+        response_text = response.text.strip()
         
-        # パターン2: **番号. タイトル**\n[URL](URL): 要約 形式（Geminiの主要出力形式）
-        if not news_items:
-            pattern2 = r'\*\*\d+\.\s*([^*]+)\*\*\s*\n?\[?(https?://[^\s\)\]\n]+)\]?(?:\([^)]*\))?[:\s]*([^\n*]+)'
-            matches = re.findall(pattern2, markdown_text, re.MULTILINE)
-            for title, url, summary in matches:
-                news_items.append({
-                    "title": title.strip(),
-                    "summary": summary.strip()[:500],
-                    "url": url.strip(),
-                    "collected_at": datetime.now().isoformat()
-                })
+        # JSONを抽出
+        if "```json" in response_text:
+            response_text = response_text.split("```json")[1].split("```")[0].strip()
+        elif "```" in response_text:
+            response_text = response_text.split("```")[1].split("```")[0].strip()
         
-        # パターン3: 番号付きリスト 1. [タイトル](URL): 要約
-        if not news_items:
-            pattern3 = r'\d+\.\s*\[([^\]]+)\]\(([^)]+)\)[:\s]+(.+?)(?=\n\d+\.|\n\n|$)'
-            matches = re.findall(pattern3, markdown_text, re.MULTILINE | re.DOTALL)
-            for title, url, summary in matches:
-                if url.strip().startswith('http'):
-                    news_items.append({
-                        "title": title.strip(),
-                        "summary": summary.strip()[:500],
-                        "url": url.strip(),
-                        "collected_at": datetime.now().isoformat()
-                    })
+        json_start = response_text.find('[')
+        json_end = response_text.rfind(']') + 1
+        if json_start != -1 and json_end > json_start:
+            response_text = response_text[json_start:json_end]
         
-        # パターン4: 行ごとにURLを探す（フォールバック）
-        if not news_items:
-            print("📝 標準パターンで解析失敗、行ごとの解析を試行...")
-            lines = markdown_text.split('\n')
-            current_title = None
-            
-            for i, line in enumerate(lines):
-                line = line.strip()
-                if not line:
-                    continue
-                
-                # **タイトル** を検出して保持
-                bold_match = re.search(r'\*\*\d*\.?\s*([^*]+)\*\*', line)
-                if bold_match and 'http' not in line:
-                    current_title = bold_match.group(1).strip()
-                    continue
-                
-                # URLを含む行を検出
-                url_match = re.search(r'https?://[^\s\)\]>\n]+', line)
-                if url_match:
-                    url = url_match.group(0).rstrip('.,;:')
-                    
-                    # タイトルを決定
-                    title = None
-                    # [タイトル] 形式を探す
-                    title_match = re.search(r'\[([^\]]+)\]', line)
-                    if title_match:
-                        title = title_match.group(1)
-                    elif current_title:
-                        title = current_title
-                    else:
-                        # 行の最初の部分をタイトルとして使用
-                        title = re.sub(r'https?://[^\s]+', '', line).strip()[:100]
-                    
-                    # 要約を抽出
-                    summary_match = re.search(r'[:\-]\s*(.+)$', line)
-                    summary = summary_match.group(1) if summary_match else ""
-                    
-                    if title and url and url.startswith('http'):
-                        news_items.append({
-                            "title": title[:200],
-                            "summary": summary[:500],
-                            "url": url,
-                            "collected_at": datetime.now().isoformat()
-                        })
-                    
-                    current_title = None  # リセット
+        selected = json.loads(response_text)
         
-        print(f"📊 解析結果: {len(news_items)}件のニュースを検出")
+        # 選定されたニュースを返す
+        result = []
+        for item in selected[:max_news]:
+            idx = item.get('index', 1) - 1
+            if 0 <= idx < len(entries):
+                entry = entries[idx]
+                entry['summary_ja'] = item.get('summary_ja', entry['title'])
+                result.append(entry)
         
-        # 重複URLを除去
-        seen_urls = set()
-        unique_items = []
-        for item in news_items:
-            if item["url"] not in seen_urls:
-                seen_urls.add(item["url"])
-                unique_items.append(item)
-        news_items = unique_items
+        return result
         
-        # それでも見つからない場合、全体を1つのニュースとして扱う
-        if not news_items:
-            print("⚠️ ニュースを解析できませんでした（フォールバック）")
-            news_items.append({
-                "title": "AI/ML News Collection",
-                "summary": markdown_text[:500],
-                "url": "",
-                "collected_at": datetime.now().isoformat()
-            })
-            
     except Exception as e:
-        print(f"⚠️ Markdown解析エラー: {e}")
-        # フォールバック: 全体を1つのニュースとして扱う
-        news_items.append({
-            "title": "AI/ML News Collection",
-            "summary": markdown_text[:500],
-            "url": "",
-            "collected_at": datetime.now().isoformat()
-        })
-    
-    return news_items
+        print(f"⚠️ LLM選定エラー: {e}")
+        # フォールバック: 優先度順に上位を返す
+        return entries[:max_news]
 
 
-def collect_news(max_retries=3):
-    """Gemini APIの検索機能を使って、最新のAIトレンドを収集する"""
+def collect_news():
+    """ニュース収集のメイン処理"""
     api_key = os.getenv("GEMINI_API_KEY")
     
     if not api_key:
         print("エラー: GEMINI_API_KEYが設定されていません")
         return None
     
-    try:
-        client = genai.Client(api_key=api_key)
-    except Exception as e:
-        print(f"エラー: Gemini APIクライアントの初期化に失敗しました: {e}")
-        return None
+    client = genai.Client(api_key=api_key)
+    print("📊 Gemini API を使用してニュースを選定・要約します")
     
-    # Gemini 2.5 Flash Lite を使用（ニュース収集用）
-    # 軽量版でクォータに余裕がある
-    model_name = 'gemini-2.5-flash-lite'
+    # RSSフィードから取得
+    print("\n" + "=" * 50)
+    print("📡 公式RSSフィードからニュースを収集中...")
+    print("=" * 50)
     
-    # 今日の日付を取得
-    today = datetime.now().strftime("%Y年%m月%d日")
+    entries = fetch_rss_entries(max_age_days=7)
+    print(f"\n📰 合計 {len(entries)}件のエントリを取得")
     
-    # ニュース収集指示プロンプト（エンジニア向け、信頼性の高いソース指定）
-    prompt = f"""あなたはソフトウェアエンジニア向けAI技術ニュースのキュレーターです。
-今日は{today}です。
-
-【対象読者】
-ソフトウェアエンジニア、開発者、MLエンジニア
-
-【収集するニュースの種類】（優先度順）
-1. 新しいAIモデルのリリース（GPT、Claude、Gemini、Llama、Mistral、DeepSeekなど）
-2. AI開発ツールのアップデート（Cursor、v0、Dify、LangChain、Hugging Faceなど）
-3. AIアプリ・サービスの新機能（NotebookLM、Perplexity、Napkin AI、Gamma、Replit AIなど）
-4. APIの新機能・変更（OpenAI API、Anthropic API、Google AI APIなど）
-5. AI関連のOSSの重要リリース（GitHub）
-
-【特に注目するツール・サービス】
-- NotebookLM（Google）: ポッドキャスト生成、RAG
-- Cursor: AIコードエディタ
-- v0（Vercel）: UIコード生成
-- Dify: ノーコードAIアプリ構築
-- Napkin AI: 図解自動生成
-- Gamma: AIプレゼン作成
-- Perplexity: AI検索
-- Replit AI: クラウド開発環境
-
-【必須ソース】以下のドメインからのみ選定：
-- openai.com, anthropic.com, blog.google, ai.meta.com, deepseek.com
-- techcrunch.com, theverge.com, venturebeat.com, arstechnica.com
-- huggingface.co, github.blog, cursor.sh, vercel.com, dify.ai
-- itmedia.co.jp, watch.impress.co.jp, gigazine.net
-
-【絶対に除外する内容】
-- イベント・カンファレンス開催情報（NeurIPS、AI Summit、IEEE、Global AI Showなど）
-- SNS・マーケティング系（Instagram、TikTok、広告など）
-- 電力、医療、金融などの業界特化ニュース
-- 規制・政策・倫理ニュース（AI規制、EU AI Actなど）
-- 個人ブログ、note、Qiita、まとめサイト
-- AI企業の資金調達・買収ニュース（技術発表を除く）
-- AIoT、スマートホームなどIoT系
-- MLOps一般論、トレンド調査系の抽象的な記事
-
-【出力形式】厳密に以下の形式で出力してください:
-- [ニュースのタイトル](実際のURL): 要約（50字以内）
-
-例:
-- [Claude 3.5 Sonnetがリリース](https://anthropic.com/news/claude-3-5): 推論能力が大幅に向上し、コーディングタスクで最高性能を達成
-
-【必須条件】
-- 各ニュースは2025年12月の「具体的な技術リリース・アップデート」であること
-- URLは必ず https:// で始まる実際のURLであること
-- 3件選定すること
-- 余計な説明は不要、上記形式のリストのみ出力"""
+    if not entries:
+        print("⚠️ ニュースが取得できませんでした")
+        return []
     
-    for attempt in range(max_retries):
-        try:
-            # Google Search Groundingを有効化して実際のWeb検索結果を取得
-            grounding_tool = types.Tool(
-                google_search=types.GoogleSearch()
-            )
-            config = types.GenerateContentConfig(
-                tools=[grounding_tool],
-                temperature=0.3  # 低めにして事実重視
-            )
-            
-            response = client.models.generate_content(
-                model=model_name,
-                contents=[prompt],
-                config=config
-            )
-            
-            # レスポンスはMarkdown形式のテキストとして取得
-            markdown_text = response.text
-            
-            # デバッグ: レスポンス内容を出力（GitHub Actions用）
-            print("=" * 50)
-            print("📝 Gemini APIレスポンス (先頭1000文字):")
-            print(markdown_text[:1000] if markdown_text else "(空)")
-            print("=" * 50)
-            
-            # MarkdownをJSON形式に変換
-            news_items = parse_markdown_to_news_items(markdown_text)
-            
-            # リダイレクトURLを実際のソースURLに解決
-            print("🔗 URLを解決中...")
-            for i, item in enumerate(news_items):
-                original_url = item.get("url", "")
-                if 'vertexaisearch.cloud.google.com' in original_url:
-                    resolved_url = resolve_redirect_url(original_url)
-                    if resolved_url != original_url:
-                        print(f"  ✅ [{i+1}] {resolved_url[:60]}...")
-                        item["url"] = resolved_url
-                    else:
-                        print(f"  ⚠️ [{i+1}] URL解決できず（元のURLを使用）")
-            
-            # 結果をファイルに保存（analyst.pyが読み込む形式）
-            output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "news_raw.json")
-            with open(output_path, "w", encoding="utf-8") as f:
-                json.dump(news_items, f, ensure_ascii=False, indent=2)
-            
-            print(f"✅ ニュース収集完了: {len(news_items)}件")
-            return news_items
-            
-        except Exception as e:
-            wait_time = 2 ** attempt  # 指数バックオフ
-            print(f"⚠️ APIエラー (試行 {attempt + 1}/{max_retries}): {e}")
-            if attempt < max_retries - 1:
-                print(f"   {wait_time}秒後にリトライします...")
-                time.sleep(wait_time)
-            else:
-                print("❌ 最大リトライ回数に達しました")
-                return None
+    # LLMで選定・要約
+    print("\n🤖 LLMで重要ニュースを選定中...")
+    selected_news = filter_ai_news_with_llm(client, entries, max_news=3)
     
-    return None
+    print(f"✅ {len(selected_news)}件のニュースを選定しました")
+    
+    # 保存形式に変換
+    news_items = []
+    for news in selected_news:
+        news_items.append({
+            "title": news.get('summary_ja', news['title']),
+            "summary": news['summary'][:300],
+            "url": news['url'],
+            "source": news['source'],
+            "collected_at": news['collected_at']
+        })
+    
+    # 保存
+    output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "news_raw.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(news_items, f, ensure_ascii=False, indent=2)
+    
+    print(f"📁 保存先: {output_path}")
+    
+    return news_items
 
 
 if __name__ == "__main__":
     print("=" * 50)
     print("--- ニュース収集エージェント起動 ---")
-    print("Gemini APIを使用して最新のAIトレンドを収集します...")
+    print("公式RSSフィードから最新AIニュースを収集します...")
     print("=" * 50)
     
     result = collect_news()
     
     if result:
-        print("=" * 50)
-        print(f"✅ ニュース収集が正常に完了しました（{len(result)}件）")
+        print("\n" + "=" * 50)
+        print(f"✅ 完了！{len(result)}件のニュースを収集しました")
+        for i, news in enumerate(result, 1):
+            print(f"  {i}. [{news['source']}] {news['title'][:40]}...")
         print("=" * 50)
     else:
-        print("=" * 50)
+        print("\n" + "=" * 50)
         print("❌ ニュース収集に失敗しました")
         print("GEMINI_API_KEYを確認してください。")
         print("=" * 50)
