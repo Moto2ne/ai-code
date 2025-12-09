@@ -101,6 +101,11 @@ def render_tactic_card(item, is_new=False):
     expander_title = f"{fire_badge}{completed_badge}{date_display} {title[:50]}{'...' if len(title) > 50 else ''}"
     
     with st.expander(f"**{expander_title}**"):
+        # 📰 ニュース要点（最初に表示）
+        news_highlight = item.get("news_highlight", "")
+        if news_highlight:
+            st.info(f"📰 **{news_highlight}**")
+        
         # 推奨AIとリンク（最重要 - 一番上に配置）
         recommended_ai = item.get("recommended_ai")
         if recommended_ai:
@@ -126,7 +131,7 @@ def render_tactic_card(item, is_new=False):
         
         # 済チェックボックス（タグサイズ）
         st.checkbox(
-            "試した",
+            "見た",
             value=is_completed,
             key=f"done_{item_id}",
             on_change=lambda iid=item_id: (
@@ -214,7 +219,7 @@ if not filtered:
 else:
     status_parts = [f"📚 全{len(filtered)}件"]
     if completed_count > 0:
-        status_parts.append(f"✅ 試した: {completed_count}件")
+        status_parts.append(f"✅ 見た: {completed_count}件")
     st.caption(" | ".join(status_parts))
     
     # 今日の戦術と過去の戦術を分離
