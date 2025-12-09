@@ -1,0 +1,106 @@
+[
+  {
+    "title": "Gemini 3 Proで手書きUIをコード化",
+    "news_highlight": "Gemini 3 ProはビジョンAI特化の最新モデル。画像理解能力が大幅に進化。",
+    "problem_context": "手書きUIからコード化する手間を削減したい。",
+    "recommended_ai": {
+      "model": "Gemini 3 Pro",
+      "reason": "画像理解に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "手書きのワイヤーフレームからHTML/CSSの骨格を生成したい時",
+      "デザイン案の画像から初期の実装コードを得たい時",
+      "既存のUI画像から類似のコンポーネントコードを生成したい時"
+    ],
+    "steps": [
+      "1. 手書きのUIデザインを写真に撮るかスキャンする。",
+      "2. Gemini 3 Proのインターフェースに画像をアップロードする。",
+      "3. 「この手書きUIデザインの画像を基に、HTMLとCSSのコードを生成してください。」とプロンプトを入力。",
+      "4. 生成されたコードを開発環境に適用し、必要に応じて修正する。"
+    ],
+    "prompt": "この手書きUIデザインの画像を基に、HTMLとCSSのコードを生成してください。セマンティックなマークアップとモダンなCSSを使用してください。",
+    "tags": [
+      "コード生成",
+      "フロントエンド",
+      "UI/UX",
+      "設計"
+    ],
+    "id": "20251209_014119_01",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "GoogleがビジョンAI特化の最新モデル「Gemini 3 Pro」を発表。",
+      "url": "https://blog.google/technology/developers/gemini-3-pro-vision/"
+    }
+  },
+  {
+    "title": "ClaudeでLlama 3をコード生成特化",
+    "news_highlight": "Hugging FaceがClaude 3 Opusを教師にOSS LLMをファインチューニングし、専門タスクの精度を向上",
+    "problem_context": "OSS LLMの特定ドメイン知識を強化したい",
+    "recommended_ai": {
+      "model": "Claude 3 Opus",
+      "reason": "高品質な教師データ生成に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "特定のフレームワークに特化したコードスニペットを生成したい時",
+      "社内DSLや独自APIの利用例を自動生成したい時",
+      "既存コードベースの特定パターンを学習させ、類似コードを生成したい時"
+    ],
+    "steps": [
+      "Claude 3 Opusに、ファインチューニングしたいOSS LLMのターゲットタスクに関する高品質なデータセットを生成させる。",
+      "生成されたデータセット（プロンプトと応答のペア）をレビューし、品質と多様性を確認、必要に応じて修正する。",
+      "Hugging Face Transformersライブラリなどを用いて、OSS LLM（例: Llama 3）を準備する。",
+      "準備したデータセットでOSS LLMをファインチューニングし、特定タスクに特化したモデルを作成する。",
+      "ファインチューニング後のモデルを評価し、実務での利用を検討する。"
+    ],
+    "prompt": "あなたはTypeScriptとReactの専門家です。ログインフォームのコードスニペットを生成してください。メールアドレスとパスワード入力、送信ボタンを含めてください。",
+    "tags": [
+      "ファインチューニング",
+      "OSS LLM",
+      "コード生成",
+      "データセット作成",
+      "Claude"
+    ],
+    "id": "20251209_014132_02",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "Hugging FaceがClaudeでOSS LLMをファインチューニング。",
+      "url": "https://huggingface.co/blog/hf-skills-training"
+    }
+  },
+  {
+    "title": "NeptuneでML実験を効率化",
+    "news_highlight": "OpenAIがNeptune買収でML実験追跡・モデル監視機能を強化、開発基盤を大幅改善。",
+    "problem_context": "MLモデルの実験管理と再現性確保が困難。",
+    "recommended_ai": {
+      "model": "Neptune.ai",
+      "reason": "実験追跡とモデル監視に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいハイパーパラメータでモデルを再学習する時",
+      "過去の実験結果を比較して最適なモデルを選ぶ時",
+      "本番環境でモデルの性能劣化を検知したい時"
+    ],
+    "steps": [
+      "1. Neptuneクライアントをプロジェクトに導入",
+      "2. 学習コードにNeptuneログ記録APIを追加",
+      "3. モデル学習を実行し、メトリクスやアーティファクトを自動記録",
+      "4. Neptune UIで実験結果を比較分析し、最適なモデルを特定"
+    ],
+    "prompt": "PythonのMLプロジェクトにNeptune.aiを導入する手順と、学習メトリクス、モデルアーティファクトを記録するコードスニペットを生成してください。",
+    "tags": [
+      "MLOps",
+      "実験管理",
+      "モデル監視",
+      "再現性"
+    ],
+    "id": "20251209_014142_03",
+    "date": "2025-12-09",
+    "source_news": {
+      "title": "OpenAIが実験追跡・モデル監視ツールNeptuneを買収し開発基盤強化。",
+      "url": "https://openai.com/index/openai-to-acquire-neptune"
+    }
+  }
+]
