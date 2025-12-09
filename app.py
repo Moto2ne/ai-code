@@ -1,7 +1,6 @@
 import streamlit as st
 import json
 import os
-import urllib.parse
 from datetime import datetime, timedelta
 
 from styles import get_custom_css
@@ -165,15 +164,14 @@ def render_tactic_card(item, is_new=False):
             st.markdown("**💡 このプロンプトをコピーしてAIに貼り付け:**")
             st.code(prompt, language="markdown")
         
-        # ソースニュース表示（Google検索リダイレクトで確実に表示）
+        # ソースニュース表示（公式RSSからの直リンク）
         source_news = item.get("source_news")
         if source_news:
             news_title = source_news.get("title", "")
-            if news_title:
-                search_query_encoded = urllib.parse.quote(news_title)
-                google_search_url = f"https://www.google.com/search?q={search_query_encoded}"
-                display_title = news_title[:25] + "..." if len(news_title) > 25 else news_title
-                st.caption(f"[🔍 「{display_title}」を検索 ↗]({google_search_url})")
+            source_url = source_news.get("url", "")
+            if source_url and source_url.startswith("http"):
+                display_title = news_title[:30] + "..." if len(news_title) > 30 else news_title
+                st.caption(f"[📰 {display_title} ↗]({source_url})")
 
 
 # ナレッジデータを読み込む
