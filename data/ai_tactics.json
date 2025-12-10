@@ -1,5 +1,107 @@
 [
   {
+    "title": "Gemini 3でAPI設計をレビュー",
+    "news_highlight": "新AIモデルGemini 3発表。複雑な推論・計画立案能力が向上と示唆。",
+    "problem_context": "既存APIの設計品質を向上させたい。",
+    "recommended_ai": {
+      "model": "Gemini 3",
+      "reason": "複雑な推論・計画立案に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規APIエンドポイントの設計案を検討する時",
+      "既存APIのパフォーマンス改善点を洗い出す時",
+      "APIのセキュリティ脆弱性がないか確認したい時"
+    ],
+    "steps": [
+      "設計中のAPI仕様書（OpenAPI Specなど）を準備する。",
+      "Gemini 3にAPI仕様書の内容を貼り付ける。",
+      "プロンプトを送信し、レビュー結果と改善提案を受け取る。",
+      "提案された改善点を基に設計を見直し、実装に反映する。"
+    ],
+    "prompt": "以下のOpenAPI仕様書をレビューし、RESTful原則、セキュリティ、パフォーマンスの観点から改善提案をしてください。特に認証とエラーハンドリングに注目してください。",
+    "tags": [
+      "API設計",
+      "レビュー",
+      "Gemini 3",
+      "アーキテクチャ"
+    ],
+    "id": "20251210_091604_01",
+    "date": "2025-12-10",
+    "source_news": {
+      "title": "GoogleがGemini 3やNano Banana Proなど新AIモデルを発表。",
+      "url": "https://blog.google/technology/ai/google-ai-updates-november-2025/"
+    }
+  },
+  {
+    "title": "GPT-5で会話型UIのプロトタイプ設計",
+    "news_highlight": "GPT-5搭載会話AIが質問、要約、推薦で不動産検索を革新、実用化",
+    "problem_context": "複雑な会話型UIの設計とプロトタイプ作成",
+    "recommended_ai": {
+      "model": "GPT-5",
+      "reason": "会話理解と応答生成に優れる",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい会話型UIのユーザーフローを設計する時",
+      "ユーザーからの質問に対するAIの応答文言を生成する時",
+      "既存の検索機能を会話型インターフェースに移行する際の設計検討"
+    ],
+    "steps": [
+      "会話型UIの目的とターゲットユーザーを定義する",
+      "AIに主要なユーザーシナリオと対話フローを記述する",
+      "AIが生成した対話フローと応答例を確認する",
+      "必要に応じて修正し、プロトタイプに組み込む"
+    ],
+    "prompt": "不動産検索の会話型AIアシスタントを設計してください。ユーザーの曖昧な質問を明確化し、物件を要約し、パーソナライズされた推薦を行う対話フローと応答例を生成してください。",
+    "tags": [
+      "会話型AI",
+      "UI/UX設計",
+      "プロトタイピング",
+      "GPT-5"
+    ],
+    "id": "20251210_091615_02",
+    "date": "2025-12-10",
+    "source_news": {
+      "title": "GPT-5搭載会話AIが不動産検索を革新、実用化事例。",
+      "url": "https://openai.com/index/scout24"
+    }
+  },
+  {
+    "title": "Amazon Nova Lite 2.0で複雑な要件を設計",
+    "news_highlight": "Amazon Nova Lite 2.0は複雑な顧客対応シナリオで高い推論能力を発揮。",
+    "problem_context": "曖昧な顧客要件を具体的な設計に落とし込む",
+    "recommended_ai": {
+      "model": "Amazon Nova Lite 2.0",
+      "reason": "複雑な推論能力に優れる",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客からの曖昧な要望を技術要件に変換したい時",
+      "複数の制約が絡む機能の設計方針を検討したい時",
+      "既存システムの複雑な挙動を理解し、改善案を検討したい時"
+    ],
+    "steps": [
+      "1. 顧客からの要望や既存システムの仕様を箇条書きでまとめる",
+      "2. Nova Lite 2.0にそれらの情報を入力し、設計上の課題や考慮点を質問する",
+      "3. 提案された設計方針や技術的な選択肢を評価し、具体的な設計案を作成する",
+      "4. 作成した設計案を元に、さらに詳細な質問や代替案の検討を依頼する"
+    ],
+    "prompt": "以下の顧客要望と制約事項を元に、Webアプリケーションのバックエンド設計における主要な考慮点と、推奨される技術スタック（言語、フレームワーク、DB）を提案してください。要望: リアルタイムデータ更新、高可用性、将来的な機能拡張性。制約: コスト効率、既存システムとの連携。",
+    "tags": [
+      "設計",
+      "要件定義",
+      "アーキテクチャ",
+      "推論"
+    ],
+    "id": "20251210_091627_03",
+    "date": "2025-12-10",
+    "source_news": {
+      "title": "Amazon Nova Lite 2.0が複雑な顧客対応で高い推論能力。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/real-world-reasoning-how-amazon-nova-lite-2-0-handles-complex-customer-support-scenarios/"
+    }
+  },
+  {
     "title": "Gemini 3 Proで手書きUIをコード化",
     "news_highlight": "Gemini 3 ProはビジョンAI特化の最新モデル。画像理解能力が大幅に進化。",
     "problem_context": "手書きUIからコード化する手間を削減したい。",
