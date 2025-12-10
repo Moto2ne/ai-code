@@ -6,7 +6,7 @@ import json
 import os
 import sys
 import re
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import time
 
 # プロジェクトルートをパスに追加
@@ -106,7 +106,7 @@ def fetch_rss_entries(max_age_days=7):
                     "source": feed_info['name'],
                     "priority": feed_info['priority'],
                     "published": published.isoformat() if published else None,
-                    "collected_at": datetime.now().isoformat()
+                    "collected_at": datetime.now(timezone(timedelta(hours=9))).isoformat()
                 })
             
             print(f"  ✅ {len(feed.entries[:5])}件取得")

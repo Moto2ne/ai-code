@@ -1,7 +1,7 @@
 import streamlit as st
 import json
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 from styles import get_custom_css
 
@@ -20,7 +20,9 @@ def is_today(date_str):
     """日付が今日かどうかを判定"""
     if not date_str:
         return False
-    today = datetime.now().strftime("%Y-%m-%d")
+    # JSTで現在時刻を取得
+    JST = timezone(timedelta(hours=9))
+    today = datetime.now(JST).strftime("%Y-%m-%d")
     return date_str == today
 
 

@@ -5,7 +5,7 @@ Google Gemini API を使用
 import json
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 import time
 
 # プロジェクトルートをパスに追加
@@ -212,9 +212,10 @@ def analyze_and_generate_tactics():
         
         if tactic_data:
             # タイムスタンプベースのユニークID（同日複数回実行でも重複しない）
-            timestamp_id = datetime.now().strftime("%Y%m%d_%H%M%S") + f"_{idx:02d}"
+            JST = timezone(timedelta(hours=9))
+            timestamp_id = datetime.now(JST).strftime("%Y%m%d_%H%M%S") + f"_{idx:02d}"
             tactic_data["id"] = timestamp_id
-            tactic_data["date"] = datetime.now().strftime("%Y-%m-%d")
+            tactic_data["date"] = datetime.now(JST).strftime("%Y-%m-%d")
             
             # ソース情報を追加
             tactic_data["source_news"] = {
