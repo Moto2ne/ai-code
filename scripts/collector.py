@@ -244,7 +244,7 @@ def collect_news():
         return []
     
     # LLMで選定・要約
-    print("\n🤖 LLMで重要ニュースを選定中...")
+    print("\nLLMで重要ニュースを選定中...")
     selected_news = filter_ai_news_with_llm(client, entries, max_news=3)
     
     print(f"✅ {len(selected_news)}件のニュースを選定しました")

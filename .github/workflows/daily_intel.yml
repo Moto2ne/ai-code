@@ -62,7 +62,7 @@ jobs:
             git add data/ai_tactics.json
             git add assets/images/*.png 2>/dev/null || true
             
-            git commit -m "🤖 自動更新: $(date +%Y-%m-%d) のAI戦術と画像を追加"
+            git commit -m " 自動更新: $(date +%Y-%m-%d) のAI戦術と画像を追加"
             git push
             echo "✅ 新しいAI戦術と画像をコミットしました"
           fi

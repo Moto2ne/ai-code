@@ -354,7 +354,7 @@ def render_sidebar():
         if st.button("🏠 ホーム", use_container_width=True, key="nav_home"):
             st.switch_page("app.py")
         
-        if st.button("🤖 AI早わかりガイド", use_container_width=True, key="nav_ai_guide"):
+        if st.button("AI早わかりガイド", use_container_width=True, key="nav_ai_guide"):
             st.switch_page("pages/ai_guide.py")
         
         st.markdown("### 📊 市場調査レポート")

@@ -50,7 +50,7 @@ with st.expander("🏭 設備老朽化と未然のトラブル防止", expanded=
     AIを活用した**予知保全**は、不具合の兆候を事前に検知し、未然にトラブルを防ぐことで、企業の業績へのダメージを回避する。
     """)
 
-with st.expander("🤖 生成AIの活用と業務効率化", expanded=True):
+with st.expander("生成AIの活用と業務効率化", expanded=True):
     st.markdown("""
     生成AIは保守業務の効率化を大きく推進している。
     

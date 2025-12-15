@@ -124,7 +124,7 @@ if image_path and os.path.exists(os.path.join(os.path.dirname(os.path.dirname(__
                 border-radius: 12px;
                 margin-bottom: 2rem;
             ">
-                🤖
+                
             </div>
             """,
             unsafe_allow_html=True
@@ -145,7 +145,7 @@ else:
             border-radius: 12px;
             margin-bottom: 2rem;
         ">
-            🤖
+            
         </div>
         """,
         unsafe_allow_html=True
