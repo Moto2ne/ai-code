@@ -51,15 +51,18 @@ jobs:
           git config user.name "AI Staff Officer"
           git config user.email "ai-staff@tactical-intel.ai"
           
-          # AI戦術ファイルの変更をチェック
-          if git diff --quiet data/ai_tactics.json; then
+          # AI戦術ファイルと画像の変更をチェック
+          if git diff --quiet data/ai_tactics.json && [ -z "$(git ls-files --others --exclude-standard assets/images/)" ]; then
             echo "📭 新しいAI戦術はありませんでした"
           else
             # リモートの変更を取得してマージ
             git pull --rebase origin main || true
             
+            # AI戦術ファイルと生成された画像をステージング
             git add data/ai_tactics.json
-            git commit -m "🤖 自動更新: $(date +%Y-%m-%d) のAI戦術を追加"
+            git add assets/images/*.png 2>/dev/null || true
+            
+            git commit -m "🤖 自動更新: $(date +%Y-%m-%d) のAI戦術と画像を追加"
             git push
-            echo "✅ 新しいAI戦術をコミットしました"
+            echo "✅ 新しいAI戦術と画像をコミットしました"
           fi
