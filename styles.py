@@ -353,6 +353,9 @@ def render_sidebar():
         if st.button("🔧 AI保守基盤", use_container_width=True, key="nav_maintenance"):
             st.switch_page("pages/maintenance_ai_info.py")
         
+        if st.button("💰 AIモデル性能と価格", use_container_width=True, key="nav_pricing"):
+            st.switch_page("pages/ai_pricing_info.py")
+        
         st.markdown("---")
         st.markdown(
             """
