@@ -1,0 +1,8 @@
+[client]
+# サイドバーを常に展開状態に保つ
+showSidebarNavigation = true
+
+[ui]
+# サイドバーのデフォルト状態を展開に設定
+hideTopBar = false
+hideSidebarNav = false

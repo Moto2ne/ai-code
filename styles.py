@@ -8,6 +8,18 @@ def get_custom_css():
     return """
 <style>
     /* ============================================
+       サイドバーを常に表示
+       ============================================ */
+    section[data-testid="stSidebar"] {
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    section[data-testid="stSidebar"][aria-expanded="false"] {
+        margin-left: 0 !important;
+    }
+    
+    /* ============================================
        カラーパレット定義
        ============================================ */
     :root {
