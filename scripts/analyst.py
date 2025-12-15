@@ -179,10 +179,11 @@ def generate_image_prompt(news_item):
     """ニュースから画像生成用プロンプトを作成"""
     news_title = news_item.get('title', '')
     
-    # Imagen用の画像生成プロンプト（英語）
+    # Imagen用の画像生成プロンプト（英語のみ、テキストなし）
     image_prompt = f"""A modern, professional tech illustration representing: {news_title}. 
-Include: Abstract AI/neural network elements, geometric shapes, tech icons.
-Mood: Innovative, cutting-edge, professional.
+Style: Abstract AI/neural network elements, geometric shapes, tech icons, glowing circuits.
+Mood: Innovative, cutting-edge, professional, futuristic.
+IMPORTANT: Do NOT include any text, letters, words, numbers, or characters in the image. Pure visual elements only. No typography.
 Format: 16:9 landscape, high quality, suitable for article header."""
     
     return image_prompt
