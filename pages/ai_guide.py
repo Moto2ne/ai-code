@@ -118,6 +118,11 @@ with st.expander("🟣 **Claude** (Anthropic) - コーディング最強", expan
         
         **弱点:** Web検索できない、画像生成できない
         """)
+        
+        # Anthropic企業情報へのリンク
+        if st.button("📊 Anthropicの詳細な企業情報を見る", key="anthropic_detail", use_container_width=True):
+            st.switch_page("pages/anthropic_info.py")
+            
     with col2:
         st.link_button("🚀 Claude を開く", "https://claude.ai/new", type="primary", use_container_width=True)
         st.caption("無料: Sonnet 4が使える")
