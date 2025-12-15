@@ -26,7 +26,7 @@ jobs:
       - name: 必要なライブラリのインストール
         run: |
           pip install --upgrade pip
-          pip install google-genai python-dotenv requests feedparser
+          pip install -r requirements.txt
       
       - name: ニュース収集を実行
         env:
@@ -38,6 +38,7 @@ jobs:
       - name: 戦術分析を実行
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           echo "🎯 戦術分析を開始..."
           python scripts/analyst.py
