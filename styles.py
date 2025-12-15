@@ -296,6 +296,20 @@ def get_custom_css():
         color: var(--deep-navy);
     }
     
+    /* 記事本文のフォントサイズを大きく（本文テキストのみ） */
+    .main p, .main li, .main td, .main th, .main span, .main div {
+        font-size: 1.35rem !important;
+        line-height: 1.9 !important;
+    }
+    
+    .main ul, .main ol {
+        margin-left: 1.5rem !important;
+    }
+    
+    .main table {
+        font-size: 1.3rem !important;
+    }
+    
     /* ============================================
        スクロールバーカスタマイズ（オプション）
        ============================================ */

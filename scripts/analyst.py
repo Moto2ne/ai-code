@@ -1,12 +1,14 @@
 """
 集めたニュースを戦術データに変換する
-Google Gemini API を使用
+Google Gemini API + Anthropic Claude API を使用
 """
 import json
 import os
 import sys
 from datetime import datetime, timedelta, timezone
 import time
+from PIL import Image
+from io import BytesIO
 
 # プロジェクトルートをパスに追加
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -25,6 +27,15 @@ try:
     load_dotenv()
 except ImportError:
     pass
+
+# Anthropic Claude APIライブラリのインポート
+try:
+    import anthropic
+    ANTHROPIC_AVAILABLE = True
+except ImportError:
+    print("警告: anthropicライブラリがインストールされていません")
+    print("pip install anthropic を実行してください")
+    ANTHROPIC_AVAILABLE = False
 
 
 def analyze_news_to_tactic(client, news_item, max_retries=3):
@@ -162,18 +173,179 @@ JSONのみ出力してください。"""
                 time.sleep(wait_time)
     
     return None
+
+
+def generate_image_prompt(news_item):
+    """ニュースから画像生成用プロンプトを作成"""
+    news_title = news_item.get('title', '')
+    
+    # Imagen用の画像生成プロンプト（英語）
+    image_prompt = f"""A modern, professional tech illustration representing: {news_title}. 
+Include: Abstract AI/neural network elements, geometric shapes, tech icons.
+Mood: Innovative, cutting-edge, professional.
+Format: 16:9 landscape, high quality, suitable for article header."""
+    
+    return image_prompt
+
+
+def generate_article_image(client, news_item, article_id, max_retries=3):
+    """Gemini Imagen 4.0で記事のヘッダー画像を生成"""
+    try:
+        # 画像生成プロンプトを作成
+        prompt = generate_image_prompt(news_item)
+        
+        print(f"   🎨 画像生成中...")
+        
+        # Imagen 4.0で画像生成
+        response = client.models.generate_images(
+            model='imagen-4.0-generate-001',
+            prompt=prompt,
+            config=types.GenerateImagesConfig(
+                number_of_images=1,
+            )
+        )
+        
+        # 最初の画像を取得
+        if response.generated_images:
+            generated_image = response.generated_images[0]
+            
+            # 画像を保存
+            images_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "images")
+            os.makedirs(images_dir, exist_ok=True)
+            
+            image_filename = f"{article_id}.png"
+            image_path = os.path.join(images_dir, image_filename)
+            
+            # PIL Imageオブジェクトを保存（拡張子から自動判定）
+            generated_image.image.save(image_path)
+            
+            print(f"   ✅ 画像保存: {image_filename}")
+            
+            # 相対パスを返す
+            return f"assets/images/{image_filename}"
+        else:
+            print(f"   ⚠️ 画像生成失敗: レスポンスが空")
+            return None
+            
+    except Exception as e:
+        print(f"   ⚠️ 画像生成エラー: {str(e)[:80]}")
+        return None
+
+
+def generate_deep_article(claude_client, news_item, max_retries=3):
+    """ニュースから深掘り記事を生成（Claude claude-sonnet-4-5-20250929使用）"""
+    
+    if claude_client is None:
+        print("   ⚠️ Claude APIが利用不可のため記事生成をスキップ")
+        return None
+    
+    news_title = news_item.get('title', 'N/A')
+    news_summary = news_item.get('summary', 'N/A')
+    news_url = news_item.get('url', '')
+    
+    prompt_text = f"""あなたはAI技術ライターです。以下のニュースを元に、技術者・ビジネスパーソン向けの深掘り解説記事を作成してください。
+
+【ニュース】
+タイトル: {news_title}
+要約: {news_summary}
+URL: {news_url}
+
+【記事構成】
+
+### 概要
+このニュースの重要性とビジネス価値を2-3行で（150-200文字）
+
+### 技術詳細
+- 主要な機能・特徴を3-4項目
+- スペックや数値データ
+- 従来技術との違いを簡潔に
+
+### 従来ソリューションとの比較
+**必須**: Markdown表形式で3-4つのソリューションを比較
+- 比較項目: 構築期間、初期コスト、データ統合、保守性、セキュリティなど
+- 具体的な数値や期間を含める
+- 新技術の優位性が明確になるように
+
+例:
+| 項目 | 新技術 | 従来ソリューションA | 従来ソリューションB |
+|------|--------|---------------------|---------------------|
+| 構築期間 | 数日 | 1-3ヶ月 | 3-6ヶ月 |
+
+### ビジネス活用シーン
+実務での活用方法を2-3個（各2-3行、具体例付き）
+
+### 導入ステップ
+簡潔な3-4ステップの手順
+
+### まとめ
+重要ポイントと今後の展望を2-3行（100-150文字）
+
+【スタイル要件】
+- 読みやすく構造化された文章
+- 箇条書きと表形式を効果的に使用
+- 総文字数1000-1500文字
+- Markdown形式
+
+Markdown記事のみ返してください。JSONや説明文は不要です。"""
+
+    for attempt in range(max_retries):
+        try:
+            response = claude_client.messages.create(
+                model='claude-sonnet-4-5-20250929',
+                max_tokens=8192,
+                messages=[
+                    {"role": "user", "content": prompt_text}
+                ]
+            )
+            
+            article_text = response.content[0].text.strip()
+            
+            # マークダウンコードブロックを除去（もしあれば）
+            if article_text.startswith("```markdown"):
+                article_text = article_text[11:].strip()
+            elif article_text.startswith("```"):
+                article_text = article_text[3:].strip()
+            if article_text.endswith("```"):
+                article_text = article_text[:-3].strip()
+            
+            # 最初の見出し（# で始まる行）を削除（重複を防ぐ）
+            lines = article_text.split('\n')
+            if lines and lines[0].startswith('# '):
+                lines = lines[1:]  # 最初の見出しを削除
+                article_text = '\n'.join(lines).strip()
+            
+            return article_text
+            
+        except Exception as e:
+            wait_time = 5 + (5 * attempt)
+            print(f"  ⚠️ Claude記事生成エラー (試行 {attempt + 1}/{max_retries}): {str(e)[:80]}")
+            if attempt < max_retries - 1:
+                print(f"     {wait_time}秒後にリトライします...")
+                time.sleep(wait_time)
+    
+    return None
+
     
 def analyze_and_generate_tactics():
     """ニュースを戦術に変換するメイン処理"""
-    api_key = os.getenv("GEMINI_API_KEY")
+    gemini_api_key = os.getenv("GEMINI_API_KEY")
+    anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
     
-    if not api_key:
+    if not gemini_api_key:
         print("エラー: GEMINI_API_KEYが設定されていません")
         return None
     
-    # Gemini APIクライアントを初期化
-    client = genai.Client(api_key=api_key)
-    print("📊 Gemini API (gemini-2.5-flash) を使用します")
+    # Gemini APIクライアントを初期化（戦術生成・画像生成用）
+    gemini_client = genai.Client(api_key=gemini_api_key)
+    print("📊 Gemini API (gemini-2.5-flash) を戦術生成に使用")
+    
+    # Claude APIクライアントを初期化（記事生成用）
+    claude_client = None
+    if ANTHROPIC_AVAILABLE and anthropic_api_key:
+        claude_client = anthropic.Anthropic(api_key=anthropic_api_key)
+        print("📝 Claude API (claude-sonnet-4-5-20250929) を記事生成に使用")
+    else:
+        print("⚠️ Claude APIが利用不可（ANTHROPIC_API_KEY未設定またはライブラリなし）")
     
     # ニュースデータを読み込む
     news_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "news_raw.json")
@@ -208,7 +380,8 @@ def analyze_and_generate_tactics():
     for idx, news in enumerate(valid_news, 1):
         print(f"🔄 [{idx}/{len(valid_news)}] {news.get('title', 'N/A')[:40]}...")
         
-        tactic_data = analyze_news_to_tactic(client, news)
+        # 戦術データを生成（Gemini使用）
+        tactic_data = analyze_news_to_tactic(gemini_client, news)
         
         if tactic_data:
             # タイムスタンプベースのユニークID（同日複数回実行でも重複しない）
@@ -223,14 +396,31 @@ def analyze_and_generate_tactics():
                 "url": news.get("url", "")
             }
             
+            # 深掘り記事を生成（Claude使用）
+            print(f"   📝 Claude記事生成中...")
+            article_content = generate_deep_article(claude_client, news)
+            if article_content:
+                tactic_data["article"] = article_content
+                print(f"   ✅ → {tactic_data.get('title', 'N/A')[:50]} (+記事)")
+            else:
+                tactic_data["article"] = None
+                print(f"   ✅ → {tactic_data.get('title', 'N/A')[:50]} (記事生成失敗)")
+            
+            # 記事用画像を生成
+            # 記事用画像を生成（Gemini Imagen使用）
+            image_path = generate_article_image(gemini_client, news, timestamp_id)
+            if image_path:
+                tactic_data["image_path"] = image_path
+            else:
+                tactic_data["image_path"] = None
+            
             tactics.append(tactic_data)
-            print(f"   ✅ → {tactic_data.get('title', 'N/A')[:50]}")
         else:
             print(f"   ❌ スキップ")
         
         # レート制限対策（十分に待機）
         if idx < len(valid_news):
-            time.sleep(2)
+            time.sleep(3)  # 記事生成があるので少し長めに
     
     # 結果をファイルに保存
     output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "new_tactics.json")

@@ -68,6 +68,24 @@ RSS_FEEDS = [
     },
 ]
 
+# 日替わりフォーカステーマ（曜日/日付でローテーション）
+DAILY_FOCUS = [
+    "モデルリリース・ベンチマーク",
+    "API・ツール・SDK",
+    "オープンソース・Hugging Face",
+    "マルチモーダル・Vision",
+    "Agent・自律型AI",
+    "効率化・量子化・Edge AI",
+    "セキュリティ・安全性",
+]
+
+def get_today_focus():
+    """JSTで今日のフォーカステーマを取得"""
+    jst = timezone(timedelta(hours=9))
+    today = datetime.now(jst).day
+    focus = DAILY_FOCUS[today % len(DAILY_FOCUS)]
+    return focus
+
 
 def fetch_rss_entries(max_age_days=7):
     """RSSフィードから最新エントリを取得"""
@@ -127,6 +145,10 @@ def filter_ai_news_with_llm(client, entries, max_news=3):
     if not entries:
         return []
     
+    # 今日のフォーカステーマを取得
+    today_focus = get_today_focus()
+    print(f"🎯 今日のフォーカス: {today_focus}")
+    
     # エントリをテキストにまとめる
     entries_text = "\n".join([
         f"[{i+1}] {e['source']}: {e['title']}\n    {e['summary'][:200]}...\n    URL: {e['url']}"
@@ -134,6 +156,10 @@ def filter_ai_news_with_llm(client, entries, max_news=3):
     ])
     
     prompt = f"""以下のニュース一覧から、エンジニアにとって最も重要なAI/ML関連ニュースを{max_news}件選んでください。
+
+【今日のフォーカステーマ】
+⭐ {today_focus}
+上記テーマに関連するニュースがあれば優先的に選んでください。ただし、該当がなければ他の重要ニュースでOKです。
 
 【選定基準】
 - 新しいAIモデルのリリース（GPT, Claude, Gemini, Llama等）
