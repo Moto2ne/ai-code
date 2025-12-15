@@ -4,17 +4,20 @@ import os
 import base64
 from datetime import datetime, timedelta, timezone
 
-from styles import get_custom_css
+from styles import get_custom_css, render_sidebar
 
 # ページ設定
 st.set_page_config(
     page_title="記事詳細 | AI Daily News",
     layout="wide",
-    initial_sidebar_state="collapsed"
+    initial_sidebar_state="expanded"
 )
 
 # カスタムCSS適用
 st.markdown(get_custom_css(), unsafe_allow_html=True)
+
+# サイドバーナビゲーション
+render_sidebar()
 
 
 @st.cache_data(ttl=300)

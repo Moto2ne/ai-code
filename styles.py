@@ -330,3 +330,36 @@ def get_custom_css():
 </style>
 """
 
+
+def render_sidebar():
+    """共通サイドバーナビゲーションを描画"""
+    import streamlit as st
+    
+    with st.sidebar:
+        st.markdown("## 📚 メニュー")
+        st.markdown("---")
+        
+        if st.button("🏠 ホーム", use_container_width=True, key="nav_home"):
+            st.switch_page("app.py")
+        
+        if st.button("🤖 AI早わかりガイド", use_container_width=True, key="nav_ai_guide"):
+            st.switch_page("pages/ai_guide.py")
+        
+        st.markdown("### 📊 市場調査レポート")
+        
+        if st.button("🏢 Anthropic企業情報", use_container_width=True, key="nav_anthropic"):
+            st.switch_page("pages/anthropic_info.py")
+        
+        if st.button("🔧 AI保守基盤", use_container_width=True, key="nav_maintenance"):
+            st.switch_page("pages/maintenance_ai_info.py")
+        
+        st.markdown("---")
+        st.markdown(
+            """
+            <div style="color: #888; font-size: 0.8rem; text-align: center;">
+                毎朝6時に自動更新<br>
+                Powered by Gemini AI
+            </div>
+            """,
+            unsafe_allow_html=True
+        )

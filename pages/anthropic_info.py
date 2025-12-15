@@ -5,20 +5,19 @@ import os
 # プロジェクトルートをパスに追加
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from styles import get_custom_css
+from styles import get_custom_css, render_sidebar
 
 st.set_page_config(
     page_title="Anthropic企業情報 | AI Daily News",
     layout="wide",
-    initial_sidebar_state="collapsed"
+    initial_sidebar_state="expanded"
 )
 
 # カスタムCSS適用
 st.markdown(get_custom_css(), unsafe_allow_html=True)
 
-# 戻るボタン
-if st.button("⬅️ AI早わかりガイドに戻る", use_container_width=False):
-    st.switch_page("pages/ai_guide.py")
+# サイドバーナビゲーション
+render_sidebar()
 
 st.markdown("# 市場調査レポート：ANTHROPIC")
 

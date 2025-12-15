@@ -1,6 +1,19 @@
 import streamlit as st
+import sys
+import os
 
-st.set_page_config(page_title="AI早わかりガイド", layout="wide", initial_sidebar_state="collapsed")
+# プロジェクトルートをパスに追加
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from styles import get_custom_css, render_sidebar
+
+st.set_page_config(page_title="AI早わかりガイド", layout="wide", initial_sidebar_state="expanded")
+
+# カスタムCSS適用
+st.markdown(get_custom_css(), unsafe_allow_html=True)
+
+# サイドバーナビゲーション
+render_sidebar()
 
 st.markdown("""
 <style>
