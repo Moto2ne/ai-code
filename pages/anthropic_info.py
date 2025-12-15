@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from styles import get_custom_css, render_sidebar
 
+# ページ設定（サイドバーを常に展開）
 st.set_page_config(
     page_title="Anthropic企業情報 | AI Daily News",
     layout="wide",

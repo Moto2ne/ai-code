@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 
 from styles import get_custom_css, render_sidebar
 
-# ページ設定
+# ページ設定（サイドバーを常に展開）
 st.set_page_config(
     page_title="記事詳細 | AI Daily News",
     layout="wide",
