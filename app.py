@@ -86,11 +86,11 @@ st.markdown(
 # データ読み込み
 knowledge_base = load_knowledge_base()
 
-# 今日のニュースのみフィルタ
-today_news = [item for item in knowledge_base if is_today(item.get("date", ""))]
+# 全記事を日付降順で表示
+all_news = sorted(knowledge_base, key=lambda x: x.get("date", ""), reverse=True)
 
-if not today_news:
-    st.info("📭 本日のニュースはまだありません。毎朝6時に更新されます。")
+if not all_news:
+    st.info("📭 記事がまだありません。毎朝6時に更新されます。")
     st.stop()
 
 # カードグリッド表示
@@ -98,7 +98,7 @@ st.markdown("---")
 
 cols = st.columns(3)
 
-for idx, item in enumerate(today_news):
+for idx, item in enumerate(all_news):
     with cols[idx % 3]:
         # 画像パスがあればそれを使用、なければグラデーション
         image_path = item.get("image_path")
