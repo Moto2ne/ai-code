@@ -7,8 +7,7 @@ import os
 import sys
 from datetime import datetime, timedelta, timezone
 import time
-from PIL import Image
-from io import BytesIO
+# グラデーション設定はJSON内に保存し、フロントエンドで適用
 
 # プロジェクトルートをパスに追加
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -175,62 +174,43 @@ JSONのみ出力してください。"""
     return None
 
 
-def generate_image_prompt(news_item):
-    """ニュースから画像生成用プロンプトを作成"""
-    news_title = news_item.get('title', '')
-    
-    # Imagen用の画像生成プロンプト（英語のみ、テキストなし）
-    image_prompt = f"""A modern, professional tech illustration representing: {news_title}. 
-Style: Abstract AI/neural network elements, geometric shapes, tech icons, glowing circuits.
-Mood: Innovative, cutting-edge, professional, futuristic.
-IMPORTANT: Do NOT include any text, letters, words, numbers, or characters in the image. Pure visual elements only. No typography.
-Format: 16:9 landscape, high quality, suitable for article header."""
-    
-    return image_prompt
+# グラデーションとアイコンの設定マッピング
+GRADIENT_THEMES = [
+    {"gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", "icon": "🤖"},  # Purple AI
+    {"gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)", "icon": "🧠"},  # Pink Brain
+    {"gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)", "icon": "💡"},  # Blue Cyan
+    {"gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)", "icon": "⚡"},  # Green Teal
+    {"gradient": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)", "icon": "🔥"},  # Pink Yellow
+    {"gradient": "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)", "icon": "✨"},  # Soft Pastel
+    {"gradient": "linear-gradient(135deg, #5ee7df 0%, #b490ca 100%)", "icon": "🚀"},  # Teal Purple
+    {"gradient": "linear-gradient(135deg, #d299c2 0%, #fef9d7 100%)", "icon": "💎"},  # Rose Cream
+    {"gradient": "linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)", "icon": "🌐"},  # Sky Blue
+    {"gradient": "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)", "icon": "🎯"},  # Peach
+]
 
-
-def generate_article_image(client, news_item, article_id, max_retries=3):
-    """Gemini Imagen 4.0で記事のヘッダー画像を生成"""
-    try:
-        # 画像生成プロンプトを作成
-        prompt = generate_image_prompt(news_item)
-        
-        print(f"   🎨 画像生成中...")
-        
-        # Imagen 4.0で画像生成
-        response = client.models.generate_images(
-            model='imagen-4.0-generate-001',
-            prompt=prompt,
-            config=types.GenerateImagesConfig(
-                number_of_images=1,
-            )
-        )
-        
-        # 最初の画像を取得
-        if response.generated_images:
-            generated_image = response.generated_images[0]
-            
-            # 画像を保存
-            images_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "images")
-            os.makedirs(images_dir, exist_ok=True)
-            
-            image_filename = f"{article_id}.png"
-            image_path = os.path.join(images_dir, image_filename)
-            
-            # PIL Imageオブジェクトを保存（拡張子から自動判定）
-            generated_image.image.save(image_path)
-            
-            print(f"   ✅ 画像保存: {image_filename}")
-            
-            # 相対パスを返す
-            return f"assets/images/{image_filename}"
-        else:
-            print(f"   ⚠️ 画像生成失敗: レスポンスが空")
-            return None
-            
-    except Exception as e:
-        print(f"   ⚠️ 画像生成エラー: {str(e)[:80]}")
-        return None
+def get_visual_theme(news_item, index):
+    """ニュースからビジュアルテーマ（グラデーション・アイコン）を決定"""
+    tags = news_item.get('tags', [])
+    title = news_item.get('title', '').lower()
+    
+    # タグ・タイトルに基づいてテーマを選択
+    if any(kw in title for kw in ['gpt', 'openai', 'chatgpt']):
+        return {"gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)", "icon": "🤖"}
+    elif any(kw in title for kw in ['gemini', 'google', 'bard']):
+        return {"gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)", "icon": "✨"}
+    elif any(kw in title for kw in ['claude', 'anthropic']):
+        return {"gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)", "icon": "🧠"}
+    elif any(kw in title for kw in ['llama', 'meta']):
+        return {"gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)", "icon": "🦙"}
+    elif any(kw in title for kw in ['code', 'coding', 'developer', 'プログラミング']):
+        return {"gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)", "icon": "💻"}
+    elif any(kw in title for kw in ['image', '画像', 'vision', 'イメージ']):
+        return {"gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)", "icon": "🎨"}
+    elif any(kw in title for kw in ['agent', 'エージェント', 'workflow']):
+        return {"gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)", "icon": "🚀"}
+    else:
+        # デフォルト: インデックスに基づいてローテーション
+        return GRADIENT_THEMES[index % len(GRADIENT_THEMES)]
 
 
 def generate_deep_article(claude_client, news_item, max_retries=3):
@@ -407,13 +387,10 @@ def analyze_and_generate_tactics():
                 tactic_data["article"] = None
                 print(f"   ✅ → {tactic_data.get('title', 'N/A')[:50]} (記事生成失敗)")
             
-            # 記事用画像を生成
-            # 記事用画像を生成（Gemini Imagen使用）
-            image_path = generate_article_image(gemini_client, news, timestamp_id)
-            if image_path:
-                tactic_data["image_path"] = image_path
-            else:
-                tactic_data["image_path"] = None
+            # ビジュアルテーマを設定（グラデーション + アイコン）
+            visual_theme = get_visual_theme(tactic_data, idx)
+            tactic_data["visual_theme"] = visual_theme
+            print(f"   🎨 テーマ設定: {visual_theme['icon']}")
             
             tactics.append(tactic_data)
         else:

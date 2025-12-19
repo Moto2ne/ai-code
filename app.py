@@ -100,22 +100,12 @@ cols = st.columns(3)
 
 for idx, item in enumerate(all_news):
     with cols[idx % 3]:
-        # 画像パスがあればそれを使用、なければグラデーション
-        image_path = item.get("image_path")
+        # ビジュアルテーマを取得（グラデーション + アイコン）
+        visual_theme = item.get("visual_theme", {})
+        gradient = visual_theme.get("gradient", "linear-gradient(135deg, #667eea 0%, #764ba2 100%)")
+        icon = visual_theme.get("icon", "🤖")
         
-        if image_path and os.path.exists(image_path):
-            # 実際の画像を表示
-            try:
-                with open(image_path, "rb") as f:
-                    img_data = f.read()
-                img_b64 = base64.b64encode(img_data).decode()
-                image_html = f'<img src="data:image/png;base64,{img_b64}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px 12px 0 0;">'
-            except:
-                # 画像読み込み失敗時はグラデーション
-                image_html = '<div style="height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; font-weight: bold; border-radius: 12px 12px 0 0;"></div>'
-        else:
-            # デフォルトのグラデーション
-            image_html = '<div style="height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; font-weight: bold; border-radius: 12px 12px 0 0;"></div>'
+        image_html = f'<div style="height: 200px; background: {gradient}; display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem; border-radius: 12px 12px 0 0;">{icon}</div>'
         
         title = item.get("title", "")[:60]
         title_ellipsis = "..." if len(item.get("title", "")) > 60 else ""

@@ -86,70 +86,30 @@ if not article:
     st.error("記事が見つかりません。")
     st.stop()
 
-# ヘッダー画像（実際の画像 or グラデーション）
-image_path = article.get("image_path")
+# ヘッダービジュアル（グラデーション + アイコン）
+visual_theme = article.get("visual_theme", {})
+gradient = visual_theme.get("gradient", "linear-gradient(135deg, #667eea 0%, #764ba2 100%)")
+icon = visual_theme.get("icon", "🤖")
 
-if image_path and os.path.exists(os.path.join(os.path.dirname(os.path.dirname(__file__)), image_path)):
-    # 実際の画像を表示
-    full_image_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), image_path)
-    try:
-        with open(full_image_path, "rb") as f:
-            img_data = f.read()
-        img_b64 = base64.b64encode(img_data).decode()
-        st.markdown(
-            f"""
-            <div style="
-                border-radius: 12px;
-                overflow: hidden;
-                margin-bottom: 2rem;
-            ">
-                <img src="data:image/png;base64,{img_b64}" style="width: 100%; height: 400px; object-fit: cover;">
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-    except:
-        # 画像読み込み失敗時はグラデーション
-        st.markdown(
-            f"""
-            <div style="
-                height: 250px;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                font-size: 4rem;
-                font-weight: bold;
-                border-radius: 12px;
-                margin-bottom: 2rem;
-            ">
-                
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-else:
-    # デフォルトのグラデーション
-    st.markdown(
-        f"""
-        <div style="
-            height: 250px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 4rem;
-            font-weight: bold;
-            border-radius: 12px;
-            margin-bottom: 2rem;
-        ">
-            
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+st.markdown(
+    f"""
+    <div style="
+        height: 300px;
+        background: {gradient};
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 6rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    ">
+        {icon}
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # 記事メタ情報
 st.caption(f"📅 {article.get('date', '')} | 📰 AI Daily News")
