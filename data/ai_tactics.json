@@ -1,5 +1,124 @@
 [
   {
+    "title": "OptiMindで数理最適化モデルを生成",
+    "news_highlight": "OptiMindは小型LLMで、自然言語から数理最適化の定式化を効率化し、定式化時間を短縮。",
+    "problem_context": "複雑な業務課題の数理最適化モデル作成が困難。",
+    "recommended_ai": {
+      "model": "OptiMind",
+      "reason": "自然言語から数理最適化モデルを生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規プロジェクトで数理最適化の適用可能性を検討する時",
+      "既存の最適化モデルを改善・拡張する時",
+      "非専門家が最適化モデルのアイデアを素早く検証したい時"
+    ],
+    "steps": [
+      "1. 解決したい業務課題を自然言語で具体的に記述する。",
+      "2. OptiMindにその記述を入力し、数理最適化の定式化を依頼する。",
+      "3. 生成された定式化（目的関数、制約条件など）を確認し、必要に応じて修正する。",
+      "4. 定式化を最適化ソルバーに入力し、結果を評価する。"
+    ],
+    "prompt": "「物流コストを最小化するため、配送センターから各店舗への最適な配送ルートを決定する数理最適化モデルを定式化してください。車両積載量、配送時間窓、店舗の需要を考慮してください。」",
+    "tags": [
+      "数理最適化",
+      "LLM",
+      "業務効率化",
+      "モデル生成"
+    ],
+    "id": "20260119_060719_01",
+    "date": "2026-01-19",
+    "source_news": {
+      "title": "OptiMind: 小型LLMが数理最適化を効率化、実務課題解決へ",
+      "url": "https://www.microsoft.com/en-us/research/blog/optimind-a-small-language-model-with-optimization-expertise/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "AmazonのマルチエージェントAIでコードレビュー",
+    "news_highlight": "AmazonのマルチエージェントAIは投薬エラー33%減、開発労力80%減を達成。",
+    "problem_context": "開発効率とコード品質の同時向上",
+    "recommended_ai": {
+      "model": "AmazonのマルチエージェントAI (ファインチューニング済み)",
+      "reason": "複雑なタスクで高精度と効率を実現",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエスト前のコードレビュー支援",
+      "既存レガシーコードのリファクタリング提案",
+      "複雑なシステム設計における潜在バグ検出"
+    ],
+    "steps": [
+      "1. 修正したいコードブロックを選択する。",
+      "2. AIツールにコードを貼り付け、改善点を依頼する。",
+      "3. AIの提案をレビューし、必要に応じて修正を加える。",
+      "4. 提案されたコードをテスト環境で検証する。"
+    ],
+    "prompt": "以下のJavaScriptコードについて、潜在的なバグ、パフォーマンス改善点、およびセキュリティ脆弱性を特定し、具体的な修正案とリファクタリング後のコードを提示してください。",
+    "tags": [
+      "コードレビュー",
+      "リファクタリング",
+      "バグ検出",
+      "品質向上",
+      "開発効率"
+    ],
+    "id": "20260119_060747_02",
+    "date": "2026-01-19",
+    "source_news": {
+      "title": "Amazonがマルチエージェントの高度なファインチューニングで効率化",
+      "url": "https://aws.amazon.com/blogs/machine-learning/advanced-fine-tuning-techniques-for-multi-agent-orchestration-patterns-from-amazon-at-scale/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Bedrock AgentCoreとGitHub ActionsでAIエージェントデプロイ自動化",
+    "news_highlight": "GitHub ActionsでBedrock AgentCoreへのAIエージェントデプロイを自動化、スケーラブルかつセキュアな運用を実現",
+    "problem_context": "AIエージェントのデプロイ非効率、セキュリティ課題",
+    "recommended_ai": {
+      "model": "Bedrock AgentCore, GitHub Actions",
+      "reason": "AIエージェントのデプロイを自動化し、運用効率とセキュリティを向上。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIエージェント機能を本番環境にリリースする時",
+      "AIエージェントのバージョンアップをデプロイする時",
+      "複数のAIエージェント環境にデプロイする時"
+    ],
+    "steps": [
+      "GitHubリポジトリにAIエージェントのコードをコミット",
+      "`.github/workflows`にGitHub ActionsのYAMLファイルを作成",
+      "YAMLファイルにBedrock AgentCoreへのデプロイステップを記述",
+      "プッシュまたはプルリクエストのマージで自動デプロイをトリガー"
+    ],
+    "prompt": "Bedrock AgentCoreにAIエージェントをデプロイするGitHub ActionsワークフローYAMLを生成。Pythonベースのエージェントで、AWS認証情報を使用。",
+    "tags": [
+      "CI/CD",
+      "デプロイ自動化",
+      "AIエージェント",
+      "AWS Bedrock",
+      "GitHub Actions"
+    ],
+    "id": "20260119_060812_03",
+    "date": "2026-01-19",
+    "source_news": {
+      "title": "Bedrock AgentCoreへのAIエージェントデプロイをGitHub Actionsで自動化し効率化",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-ai-agents-on-amazon-bedrock-agentcore-using-github-actions/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Amazonのマルチエージェントファインチューニングでコードレビュー",
     "news_highlight": "Amazonのファインチューニングで投薬エラー33%減、エンジニア作業80%削減",
     "problem_context": "複雑なコードの潜在バグや非効率性を発見したい",
