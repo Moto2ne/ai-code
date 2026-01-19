@@ -1,5 +1,124 @@
 [
   {
+    "title": "AWS Bedrock AgentCoreでAIエージェント自動デプロイ",
+    "news_highlight": "GitHub ActionsでAWS Bedrock AgentCoreへのAIエージェント自動デプロイを実現、エンタープライズセキュリティを強化。",
+    "problem_context": "AIエージェントの安全かつ効率的なデプロイ",
+    "recommended_ai": {
+      "model": "AWS Bedrock AgentCore",
+      "reason": "AIエージェントの実行環境とセキュリティ",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新機能を持つAIエージェントを本番環境に安全にデプロイしたい時",
+      "AIエージェントのデプロイプロセスを標準化し、手動ミスを削減したい時",
+      "セキュリティ要件を満たしたCI/CDパイプラインを構築したい時"
+    ],
+    "steps": [
+      "GitHubリポジトリにAIエージェントのコードとデプロイスクリプトを配置する。",
+      "`.github/workflows`ディレクトリにGitHub Actionsワークフローファイルを作成する。",
+      "AWS Bedrock AgentCoreへのデプロイに必要なIAMロールとポリシーを設定する。",
+      "ワークフローファイルにAWS認証情報とデプロイコマンドを記述し、プッシュで自動実行をテストする。"
+    ],
+    "prompt": "GitHub ActionsワークフローでAWS Bedrock AgentCoreにAIエージェントをデプロイするYAMLファイルを生成してください。Pythonベースのエージェントを想定し、セキュリティ強化のためIAMロールを利用してください。",
+    "tags": [
+      "CI/CD",
+      "AWS",
+      "セキュリティ",
+      "デプロイ"
+    ],
+    "id": "20260120_060848_01",
+    "date": "2026-01-20",
+    "source_news": {
+      "title": "AWS Bedrock AgentCoreへのAIエージェント自動デプロイ、エンタープライズセキュリティを強化。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-ai-agents-on-amazon-bedrock-agentcore-using-github-actions/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Bedrockでデバイスログ異常検知",
+    "news_highlight": "Palo AltoがBedrockでデバイスセキュリティログ分析強化、潜在問題の早期検出を実現",
+    "problem_context": "デバイスログから潜在問題を早期発見し対応時間を確保",
+    "recommended_ai": {
+      "model": "Bedrock",
+      "reason": "ログ分析と異常検知に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "本番環境のデバイスログから異常な挙動を検知したい時",
+      "セキュリティインシデントの予兆を早期に発見したい時",
+      "新しいデバイスの導入後に潜在的な問題を監視したい時"
+    ],
+    "steps": [
+      "デバイスログをBedrockに連携するデータレイクに集約する",
+      "Bedrockの基盤モデルにログ分析のプロンプトを入力する",
+      "異常検知のルールや閾値を設定し、アラート通知を設定する",
+      "検知された異常ログを基に、専門家が詳細調査を開始する"
+    ],
+    "prompt": "以下のデバイスログデータから、過去1時間以内に発生した異常なアクセスパターンやエラー増加傾向を特定し、その原因と影響範囲を分析してください。ログデータ: [ここにログデータを貼り付ける]",
+    "tags": [
+      "ログ分析",
+      "異常検知",
+      "セキュリティ",
+      "オブザーバビリティ",
+      "AWS"
+    ],
+    "id": "20260120_060914_02",
+    "date": "2026-01-20",
+    "source_news": {
+      "title": "Palo AltoがBedrockでデバイスセキュリティログ分析強化、潜在問題の早期検出へ。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-palo-alto-networks-enhanced-device-security-infra-log-analysis-with-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "マルチエージェントAIで投薬指示をレビュー",
+    "news_highlight": "マルチエージェントAIの高度なファインチューニングで投薬エラー33%削減、人間労力80%削減。",
+    "problem_context": "複雑な医療指示の誤解によるエラーを削減",
+    "recommended_ai": {
+      "model": "ファインチューニングされたマルチエージェントAI",
+      "reason": "専門知識を統合し高精度な判断",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "医療システム開発で処方箋ロジックを検証する時",
+      "既存システムの医療関連コードの潜在バグを特定する時",
+      "新機能開発で医療ガイドライン遵守を事前確認する時"
+    ],
+    "steps": [
+      "1. 処方箋データ（患者情報、薬剤、投与量、頻度）をJSON形式で準備",
+      "2. 関連する医療ガイドラインや禁忌情報をテキストで用意",
+      "3. AIにプロンプトとデータを入力し、潜在的なエラーや矛盾を分析依頼",
+      "4. AIの指摘に基づき、処方箋ロジックやコードを修正しテスト"
+    ],
+    "prompt": "以下の処方箋データと医療ガイドラインを基に、潜在的な投薬エラーや矛盾点を指摘し、改善案を提案してください。処方箋データ: {\"medication\": \"DrugX\", \"dosage\": \"10mg\"}, ガイドライン: \"DrugXは腎機能障害患者には禁忌\"",
+    "tags": [
+      "医療AI",
+      "ファインチューニング",
+      "エラー削減",
+      "コードレビュー",
+      "設計支援"
+    ],
+    "id": "20260120_060942_03",
+    "date": "2026-01-20",
+    "source_news": {
+      "title": "マルチエージェントの高度なファインチューニングで投薬エラー33%削減。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/advanced-fine-tuning-techniques-for-multi-agent-orchestration-patterns-from-amazon-at-scale/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "OptiMindで数理最適化モデルを生成",
     "news_highlight": "OptiMindは小型LLMで、自然言語から数理最適化の定式化を効率化し、定式化時間を短縮。",
     "problem_context": "複雑な業務課題の数理最適化モデル作成が困難。",
