@@ -1,5 +1,83 @@
 [
   {
+    "title": "KaggleベンチマークでGeminiがモデル改善案を生成",
+    "news_highlight": "Kaggleにコミュニティベンチマークが導入され、モデル評価が客観的に促進される。",
+    "problem_context": "モデルの性能改善点特定と最適化の効率化",
+    "recommended_ai": {
+      "model": "Gemini 1.5 Pro",
+      "reason": "複雑なベンチマーク結果の分析と改善提案",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Kaggleコンペで提出モデルの性能を向上させたい時",
+      "既存の機械学習モデルのボトルネックを特定したい時",
+      "新しいモデルアーキテクチャの設計指針を得たい時"
+    ],
+    "steps": [
+      "1. Kaggleのコミュニティベンチマークでモデルを評価し、結果レポートをダウンロードする",
+      "2. ダウンロードしたレポート（CSV, JSONなど）の内容をコピーする",
+      "3. Geminiにレポート内容とモデルのコードの一部を貼り付け、改善点を質問する",
+      "4. Geminiの提案に基づき、コードを修正し、再度ベンチマークで評価する"
+    ],
+    "prompt": "Kaggleベンチマーク結果と現在のモデルコードを提示します。結果から性能改善に繋がる具体的なコード修正案と、データ前処理の最適化案を提案してください。",
+    "tags": [
+      "Kaggle",
+      "モデル評価",
+      "性能改善",
+      "機械学習"
+    ],
+    "id": "20260121_060934_01",
+    "date": "2026-01-21",
+    "source_news": {
+      "title": "Kaggleにコミュニティベンチマークを導入、モデル評価を促進。",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-community-benchmarks/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "OptiMindで数理最適化問題を定式化",
+    "news_highlight": "OptiMindは自然言語のビジネス課題を数理最適化の定式化に変換し、定式化時間を短縮。",
+    "problem_context": "複雑なビジネス課題の数理定式化が困難",
+    "recommended_ai": {
+      "model": "OptiMind",
+      "reason": "自然言語から数理定式化へ変換",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規最適化問題の初期定式化を検討する時",
+      "既存の数理モデルの改善点を探る時",
+      "数理最適化の専門家でないが、最適化を導入したい時"
+    ],
+    "steps": [
+      "最適化したいビジネス課題を自然言語で具体的に記述する。",
+      "OptiMindにその記述を入力し、数理定式化を生成させる。",
+      "生成された定式化を最適化ソルバーで実行可能な形式に調整する。",
+      "定式化の妥当性を検証し、必要に応じて修正・改善する。"
+    ],
+    "prompt": "以下のビジネス課題を数理最適化問題として定式化してください。目的関数、制約条件、変数を明確に記述してください。課題：工場Aと工場Bで製品XとYを生産し、総利益を最大化したい。各工場の生産能力、製品ごとの生産時間、利益、需要を考慮してください。",
+    "tags": [
+      "数理最適化",
+      "定式化",
+      "業務効率化",
+      "設計"
+    ],
+    "id": "20260121_060959_02",
+    "date": "2026-01-21",
+    "source_news": {
+      "title": "数理最適化に特化した小型言語モデルOptiMindを発表。",
+      "url": "https://www.microsoft.com/en-us/research/blog/optimind-a-small-language-model-with-optimization-expertise/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
     "title": "AWS Bedrock AgentCoreでAIエージェント自動デプロイ",
     "news_highlight": "GitHub ActionsでAWS Bedrock AgentCoreへのAIエージェント自動デプロイを実現、エンタープライズセキュリティを強化。",
     "problem_context": "AIエージェントの安全かつ効率的なデプロイ",
