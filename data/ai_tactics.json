@@ -1,5 +1,126 @@
 [
   {
+    "title": "Amazon Bedrock Knowledge BasesでマルチモーダルRAG設計",
+    "news_highlight": "Amazon Bedrock Knowledge Basesにマルチモーダル検索が導入され、RAGアプリ構築を強力に支援",
+    "problem_context": "RAGアプリで非テキスト情報を効率的に検索したい",
+    "recommended_ai": {
+      "model": "Amazon Bedrock Knowledge Bases",
+      "reason": "マルチモーダル検索でRAGアプリの精度向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "RAGアプリで画像やPDF内の図表を検索対象に含めたい時",
+      "製品マニュアルからテキストと関連図解を同時に検索したい時",
+      "顧客サポートでユーザーの画像質問に回答するRAGを設計する時"
+    ],
+    "steps": [
+      "1. Bedrock Knowledge Basesで新規ナレッジベースを作成",
+      "2. マルチモーダルコンテンツをS3バケットにアップロード",
+      "3. ナレッジベース設定で適切な処理戦略を選択",
+      "4. RAGアプリからマルチモーダルクエリを送信し結果を検証"
+    ],
+    "prompt": "Amazon Bedrock Knowledge Basesで、画像とテキストを組み合わせたマルチモーダルRAGアプリケーションを構築するための設定手順を教えてください。",
+    "tags": [
+      "RAG",
+      "マルチモーダル",
+      "Amazon Bedrock",
+      "ナレッジベース",
+      "設計"
+    ],
+    "id": "20260122_061338_01",
+    "date": "2026-01-22",
+    "source_news": {
+      "title": "Amazon Bedrock Knowledge Basesにマルチモーダル検索が導入され、RAGアプリ構築を支援。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-multimodal-retrieval-for-amazon-bedrock-knowledge-bases/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Llama 4とStrands Agentsで動画処理設計",
+    "news_highlight": "Llama 4とBedrock、Strands Agentsで動画内容を自動分析・理解",
+    "problem_context": "複雑な動画コンテンツの自動分析と理解",
+    "recommended_ai": {
+      "model": "Llama 4, Strands Agents, Amazon Bedrock",
+      "reason": "マルチエージェント動画処理に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規動画処理システムのアーキテクチャ設計時",
+      "既存の動画分析パイプラインをAIで強化したい時",
+      "動画からの特定イベント検出ロジックを開発する時"
+    ],
+    "steps": [
+      "Strands Agentsの環境構築手順を確認する",
+      "BedrockでLlama 4モデルのAPIアクセスを設定する",
+      "Strands Agentsで動画処理エージェントの役割を定義する",
+      "定義したエージェント間の連携ロジックを実装する"
+    ],
+    "prompt": "Strands AgentsとLlama 4、Amazon Bedrockを用いたマルチエージェント動画処理ワークフローの初期設計を提案してください。動画のシーン分類、オブジェクト検出、感情分析を行うエージェントの役割と連携方法を含めてください。",
+    "tags": [
+      "マルチエージェント",
+      "動画処理",
+      "Llama 4",
+      "Bedrock",
+      "Strands Agents",
+      "AI設計"
+    ],
+    "id": "20260122_061403_02",
+    "date": "2026-01-22",
+    "source_news": {
+      "title": "Llama 4とBedrockでStrands Agentsを使い、マルチエージェント動画処理を構築。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/using-strands-agents-to-create-a-multi-agent-solution-with-metas-llama-4-and-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
+      "icon": "🦙"
+    }
+  },
+  {
+    "title": "Bedrock AgentCoreで自律エージェント設計",
+    "news_highlight": "Bedrock AgentCoreはエピソード記憶とリフレクションで経験学習、ベンチマークで顕著な改善",
+    "problem_context": "エージェントが過去の失敗から学習できない",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "エピソード記憶とリフレクション機能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複雑なタスクを自動化するエージェントの設計",
+      "ユーザーのフィードバックを元に改善するチャットボットの開発",
+      "長期的なプロジェクト管理を支援するAIアシスタントの構築"
+    ],
+    "steps": [
+      "1. Bedrock AgentCoreでエージェントの初期設計を行う。",
+      "2. エージェントの実行ログから「エピソード記憶」として保存すべき情報を定義する。",
+      "3. リフレクションモジュールに、エピソード記憶を元に改善点を分析させるプロンプトを設定する。",
+      "4. エージェントをテスト実行し、改善された振る舞いを評価する。"
+    ],
+    "prompt": "Amazon Bedrock AgentCoreで、ユーザーからの問い合わせ履歴をエピソード記憶として活用し、回答精度を向上させるエージェントの設計を提案してください。特に、失敗事例からの学習メカニズムを詳細に記述してください。",
+    "tags": [
+      "エージェント",
+      "AI設計",
+      "機械学習",
+      "Bedrock",
+      "自律学習"
+    ],
+    "id": "20260122_061429_03",
+    "date": "2026-01-22",
+    "source_news": {
+      "title": "Amazon Bedrock AgentCoreのエピソード記憶で、経験から学習するエージェントを構築。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-agents-to-learn-from-experiences-using-amazon-bedrock-agentcore-episodic-memory/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "KaggleベンチマークでGeminiがモデル改善案を生成",
     "news_highlight": "Kaggleにコミュニティベンチマークが導入され、モデル評価が客観的に促進される。",
     "problem_context": "モデルの性能改善点特定と最適化の効率化",
