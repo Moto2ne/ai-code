@@ -1,5 +1,122 @@
 [
   {
+    "title": "Waypoint-1で短尺動画コンテンツ生成",
+    "news_highlight": "Overworldがリアルタイム動画拡散モデルWaypoint-1を発表。低遅延での動画生成が可能。",
+    "problem_context": "プロモーション用短尺動画の迅速な作成",
+    "recommended_ai": {
+      "model": "Waypoint-1",
+      "reason": "リアルタイム動画生成に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プロモーション用短尺動画の迅速な作成",
+      "UI/UXデザインの動的モックアップ生成",
+      "ゲーム内イベントの告知動画を自動生成"
+    ],
+    "steps": [
+      "1. 生成したい動画のシナリオとテキストプロンプトを準備する。",
+      "2. Waypoint-1のAPIまたはUIにプロンプトを入力する。",
+      "3. 生成された動画を確認し、必要に応じてプロンプトを調整する。",
+      "4. 生成された動画をアプリケーションやウェブサイトに組み込む。"
+    ],
+    "prompt": "「未来的な都市の風景を背景に、AIアシスタントがユーザーに話しかける10秒間のプロモーション動画を生成してください。スタイルはサイバーパンク調で。」",
+    "tags": [
+      "動画生成",
+      "リアルタイムAI",
+      "コンテンツ作成"
+    ],
+    "id": "20260123_061025_01",
+    "date": "2026-01-23",
+    "source_news": {
+      "title": "Overworldがリアルタイム動画拡散モデルWaypoint-1を発表。",
+      "url": "https://huggingface.co/blog/waypoint-1"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Differential Transformer V2でAPI推論最適化",
+    "news_highlight": "Differential Transformer V2は推論効率を向上させ、リソース消費を削減",
+    "problem_context": "AIモデルの推論コストとレイテンシの課題",
+    "recommended_ai": {
+      "model": "Differential Transformer V2",
+      "reason": "推論効率とリソース最適化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "リアルタイム応答が必要なAPI開発",
+      "エッジデバイスへのAIモデルデプロイ",
+      "大規模データに対する高速バッチ処理"
+    ],
+    "steps": [
+      "1. 既存のTransformerモデルの推論性能を計測する",
+      "2. Differential Transformer V2のAPI/ライブラリを調査する",
+      "3. 既存モデルをDifferential Transformer V2に置き換えて実装する",
+      "4. 新モデルの推論速度とリソース消費を比較評価する"
+    ],
+    "prompt": "Differential Transformer V2を前提に、リアルタイム応答が必要なテキスト分類APIのPythonコードを設計してください。推論効率とリソース最適化を考慮してください。",
+    "tags": [
+      "Transformer",
+      "推論最適化",
+      "API開発",
+      "MLOps"
+    ],
+    "id": "20260123_061052_02",
+    "date": "2026-01-23",
+    "source_news": {
+      "title": "Microsoftが新しいTransformerモデルDifferential Transformer V2を発表。",
+      "url": "https://huggingface.co/blog/microsoft/diff-attn-v2"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "GPT-4oでAssetOpsBench対応エージェント開発",
+    "news_highlight": "AssetOpsBench発表。産業用AIエージェントの信頼性・効率性を評価する新基準。",
+    "problem_context": "産業用AIエージェントの性能評価基準が不明確",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "エージェントの推論・コード生成に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "産業用AIエージェントのプロトタイプ開発時",
+      "既存AIエージェントのAssetOpsBench準拠度評価時",
+      "AssetOpsBenchのタスクを自動化するスクリプト作成時"
+    ],
+    "steps": [
+      "AssetOpsBenchの評価タスク定義を確認する。",
+      "GPT-4oにタスクの要件と期待される出力を提示する。",
+      "GPT-4oが生成したエージェントロジックやコードを実装する。",
+      "AssetOpsBench環境で実装したエージェントをテストし、結果を評価する。"
+    ],
+    "prompt": "AssetOpsBenchの『設備異常検知』タスクに対応するPythonコードを生成してください。入力はセンサーデータ、出力は異常の種類と推奨処置です。",
+    "tags": [
+      "AIエージェント",
+      "ベンチマーク",
+      "産業AI",
+      "コード生成",
+      "評価"
+    ],
+    "id": "20260123_061124_03",
+    "date": "2026-01-23",
+    "source_news": {
+      "title": "AIエージェントの産業応用向けベンチマークAssetOpsBenchを発表。",
+      "url": "https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "Amazon Bedrock Knowledge BasesでマルチモーダルRAG設計",
     "news_highlight": "Amazon Bedrock Knowledge Basesにマルチモーダル検索が導入され、RAGアプリ構築を強力に支援",
     "problem_context": "RAGアプリで非テキスト情報を効率的に検索したい",
