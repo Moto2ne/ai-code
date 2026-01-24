@@ -1,5 +1,128 @@
 [
   {
+    "title": "Codex CLIでマルチステップコード生成",
+    "news_highlight": "Codex CLIがResponses APIでモデル・ツール・プロンプトを連携し、エージェントループでコードタスクのパフォーマンスを最適化する技術詳細を公開。",
+    "problem_context": "複雑なコードタスクの自動化と精度向上",
+    "recommended_ai": {
+      "model": "Codex CLI",
+      "reason": "エージェントループで複雑なタスクを自動化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のプロトタイプコードを複数ファイルで生成したい時",
+      "既存コードベースに合わせたリファクタリング案を段階的に検討したい時",
+      "特定のAPI仕様に基づいたテストコードを自動生成したい時"
+    ],
+    "steps": [
+      "Codex CLIが利用可能な環境を準備する。",
+      "実装したい機能の概要と、必要なファイル構成を定義する。",
+      "Codex CLIに最初のプロンプトを送信し、コード生成を開始する。",
+      "生成されたコードをレビューし、次のステップの指示をCodex CLIに与え、改善を繰り返す。",
+      "最終的に生成されたコードを統合し、テスト環境で検証する。"
+    ],
+    "prompt": "TypeScriptとReactで、ユーザー認証機能を持つダッシュボード画面を生成してください。ログイン、登録、ログアウト機能を含め、API連携のモックも作成してください。",
+    "tags": [
+      "コード生成",
+      "エージェント",
+      "CLI",
+      "オーケストレーション",
+      "開発効率"
+    ],
+    "id": "20260125_061059_01",
+    "date": "2026-01-25",
+    "source_news": {
+      "title": "OpenAIがCodexエージェントループの技術詳細を公開",
+      "url": "https://openai.com/index/unrolling-the-codex-agent-loop"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
+    "title": "ArgosでAIモデルの幻覚をデバッグ",
+    "news_highlight": "ArgosはAIエージェントの幻覚を減らす新RL技術で、推論と観察の一致を評価し信頼性とデータ効率を向上。",
+    "problem_context": "AIエージェントの幻覚による不正確な出力と信頼性不足。",
+    "recommended_ai": {
+      "model": "Argos",
+      "reason": "幻覚を減らし信頼性向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "画像認識AIの誤検出をデバッグする時",
+      "マルチモーダルAIの出力が現実と乖離していないか検証する時",
+      "限られたデータで信頼性の高いAIモデルを開発する時"
+    ],
+    "steps": [
+      "AIモデルの不審な出力（推論）を特定する",
+      "その出力に至った入力データ（観察）と中間推論ステップを収集する",
+      "推論と観察の間に矛盾がないか、手動または補助ツールで詳細に分析する",
+      "矛盾点に基づき、モデルの学習データやアーキテクチャの改善点を設計する"
+    ],
+    "prompt": "この画像認識モデルが「犬」と誤検出した理由を分析してください。入力画像とモデルの各層の活性化マップ、最終出力の確率分布を提供します。推論と観察の不一致点を特定し、改善策を提案してください。",
+    "tags": [
+      "AIデバッグ",
+      "RL",
+      "マルチモーダルAI",
+      "信頼性",
+      "モデル評価"
+    ],
+    "id": "20260125_061126_02",
+    "date": "2026-01-25",
+    "source_news": {
+      "title": "MSがAIエージェントの幻覚を減らす新RL技術Argosを発表",
+      "url": "https://www.microsoft.com/en-us/research/blog/multimodal-reinforcement-learning-with-agentic-verifier-for-ai-agents/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "AWS Bedrock AgentCoreでIaCテンプレート生成",
+    "news_highlight": "AWS Bedrock AgentCoreがCDK, Terraform, CloudFormationに対応し、エージェント構築をIaCで自動化可能に。",
+    "problem_context": "BedrockエージェントのIaC定義を効率化したい。",
+    "recommended_ai": {
+      "model": "Claude 3.5 Sonnet",
+      "reason": "高精度なIaCコード生成に強み。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規BedrockエージェントのIaC定義を始める時",
+      "既存エージェント設定をIaCに移行する時",
+      "複数の環境にエージェントをデプロイする時"
+    ],
+    "steps": [
+      "1. Bedrockエージェントの要件（機能、APIスキーマ、Lambda関数名）を整理する。",
+      "2. 選択したIaCフレームワーク（CDK/Terraform/CloudFormation）と要件をAIに提示する。",
+      "3. AIが生成したIaCテンプレートをレビューし、必要に応じて修正する。",
+      "4. テンプレートをデプロイし、エージェントの動作を確認する。"
+    ],
+    "prompt": "AWS CDK (TypeScript) を使用して、Amazon Bedrock AgentCoreのエージェント定義を生成してください。エージェント名 'MySalesAgent'、基盤モデル 'anthropic.claude-3-sonnet-20240229-v1:0'、アクショングループとしてLambda関数 'MySalesLambda' を設定してください。",
+    "tags": [
+      "IaC",
+      "AWS Bedrock",
+      "AgentCore",
+      "CDK",
+      "Terraform",
+      "CloudFormation",
+      "コード生成"
+    ],
+    "id": "20260125_061154_03",
+    "date": "2026-01-25",
+    "source_news": {
+      "title": "AWS Bedrock AgentCoreがIaCに対応、エージェント構築効率化",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-ai-agents-with-amazon-bedrock-agentcore-using-aws-cloudformation/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GPT-5/Sora 2でUIデモ動画生成",
     "news_highlight": "HiggsfieldがGPT-5/Sora 2でテキストから高品質な動画を生成、マルチモーダル応用を加速。",
     "problem_context": "新機能のUI/UXを素早く共有したい",
