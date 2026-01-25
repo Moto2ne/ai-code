@@ -1,5 +1,124 @@
 [
   {
+    "title": "ArgosでマルチモーダルRLの幻覚をデバッグ",
+    "news_highlight": "Argosは推論と観察の一致を評価し、マルチモーダルRLの幻覚を削減、データ効率を向上。",
+    "problem_context": "マルチモーダルRLの幻覚とデータ非効率性",
+    "recommended_ai": {
+      "model": "Argos",
+      "reason": "幻覚削減とデータ効率向上に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "マルチモーダルRLモデルの学習データセットを準備する時",
+      "マルチモーダルRLエージェントの異常な挙動を分析する時",
+      "強化学習環境でのエージェントの推論プロセスを可視化したい時"
+    ],
+    "steps": [
+      "1. マルチモーダルRLエージェントの推論ログと観察データを収集する。",
+      "2. Argosの評価フレームワークに沿ってデータを整形する。",
+      "3. Argosを用いてエージェントの推論と観察の一致度を評価する。",
+      "4. 評価結果に基づき、幻覚の原因となる推論ステップやデータセットの問題点を特定し、モデルを修正する。"
+    ],
+    "prompt": "Argosの分析により、エージェントが特定の視覚入力に対して誤った推論を行っていることが判明しました。このRLエージェントの報酬関数と状態表現を修正するPythonコードを提案してください。",
+    "tags": [
+      "マルチモーダルRL",
+      "幻覚",
+      "デバッグ",
+      "データ効率",
+      "強化学習"
+    ],
+    "id": "20260126_060738_01",
+    "date": "2026-01-26",
+    "source_news": {
+      "title": "マルチモーダルRLのArgosが幻覚を減らしデータ効率を向上。",
+      "url": "https://www.microsoft.com/en-us/research/blog/multimodal-reinforcement-learning-with-agentic-verifier-for-ai-agents/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Differential Transformer V2で推論コードを最適化",
+    "news_highlight": "推論速度を最大2倍、メモリ使用量を30%削減し、基盤モデルの効率化に貢献。",
+    "problem_context": "大規模AIモデルの推論遅延や高コストを解消",
+    "recommended_ai": {
+      "model": "Differential Transformer V2",
+      "reason": "基盤モデルの効率化に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "リアルタイム処理が必要なAPIの推論コードを高速化したい時",
+      "既存のTransformerベースモデルのメモリ使用量を削減したい時",
+      "新しいAIモデルの設計段階で効率的なアーキテクチャを検討したい時"
+    ],
+    "steps": [
+      "既存の推論コードをDifferential Transformer V2に提示する。",
+      "効率化の目標（例: 速度、メモリ）を明確に伝える。",
+      "Differential Transformer V2から提案された最適化コードを確認する。",
+      "提案されたコードをテスト環境で評価し、導入を検討する。"
+    ],
+    "prompt": "以下のPython推論コードをDifferential Transformer V2のアーキテクチャを考慮し、推論速度を20%向上させるように最適化してください。",
+    "tags": [
+      "Transformer",
+      "最適化",
+      "基盤モデル",
+      "効率化",
+      "Python"
+    ],
+    "id": "20260126_060810_02",
+    "date": "2026-01-26",
+    "source_news": {
+      "title": "Differential Transformer V2発表、基盤モデルの効率化に貢献。",
+      "url": "https://huggingface.co/blog/microsoft/diff-attn-v2"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Waypoint-1でインタラクティブUIプロトタイプ生成",
+    "news_highlight": "Waypoint-1はリアルタイム対話型ビデオ拡散モデルで、即座に視覚的フィードバックを提供。",
+    "problem_context": "UI/UXのインタラクティブなプロトタイプ作成に時間がかかる。",
+    "recommended_ai": {
+      "model": "Waypoint-1",
+      "reason": "リアルタイム対話型で高速プロトタイピング",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のUIフローを素早く視覚化したい時",
+      "ユーザーテスト用のインタラクティブなモックアップを作成したい時",
+      "デザインレビューで動的なUIの動きを共有したい時"
+    ],
+    "steps": [
+      "Waypoint-1のAPIまたはUIにアクセスする。",
+      "作成したいUIの要素、インタラクション、シナリオをテキストで記述する。",
+      "リアルタイムで生成されるビデオプロトタイプを確認し、修正指示を出す。",
+      "生成されたビデオプロトタイプをチームやステークホルダーと共有する。"
+    ],
+    "prompt": "ユーザーがログインボタンをクリックすると、ローディングアニメーションが表示され、その後ダッシュボード画面に遷移するインタラクティブなUIプロトタイプビデオを生成してください。",
+    "tags": [
+      "UI/UX",
+      "プロトタイピング",
+      "ビデオ生成",
+      "フロントエンド"
+    ],
+    "id": "20260126_060834_03",
+    "date": "2026-01-26",
+    "source_news": {
+      "title": "Waypoint-1発表、リアルタイム対話型ビデオ拡散モデル。",
+      "url": "https://huggingface.co/blog/waypoint-1"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Codex CLIでマルチステップコード生成",
     "news_highlight": "Codex CLIがResponses APIでモデル・ツール・プロンプトを連携し、エージェントループでコードタスクのパフォーマンスを最適化する技術詳細を公開。",
     "problem_context": "複雑なコードタスクの自動化と精度向上",
