@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-4oでAssetOpsBench評価基準を適用",
+    "news_highlight": "産業用AIエージェントの性能評価基準「AssetOpsBench」発表、信頼性向上へ",
+    "problem_context": "産業用AIエージェントの信頼性・性能評価が困難",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "複雑な産業タスク理解と推論能力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "産業用AIエージェントの要件定義時",
+      "AIエージェントの設計レビュー時",
+      "AIエージェントのテストケース作成時"
+    ],
+    "steps": [
+      "1. AssetOpsBenchの評価項目と基準を調査する。",
+      "2. 開発中のAIエージェントの設計書を準備する。",
+      "3. AIにAssetOpsBench基準に基づいた設計レビューを依頼する。",
+      "4. AIの提案を元に設計を改善し、テスト計画を策定する。"
+    ],
+    "prompt": "AssetOpsBenchの評価項目を参考に、開発中の産業用AIエージェントの設計書をレビューし、改善点を提案してください。",
+    "tags": [
+      "AIエージェント",
+      "ベンチマーク",
+      "産業応用",
+      "品質保証"
+    ],
+    "id": "20260128_060747_01",
+    "date": "2026-01-28",
+    "source_news": {
+      "title": "AIエージェントの産業応用向けベンチマーク「AssetOpsBench」を発表。",
+      "url": "https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Alyahでアラビア語LLMを評価・改善",
+    "news_highlight": "アラビア語LLMのエミラティ方言能力を評価する新ベンチマーク「Alyah」を発表。",
+    "problem_context": "アラビア語エミラティ方言のLLM性能評価が困難。",
+    "recommended_ai": {
+      "model": "Alyah",
+      "reason": "特定方言の評価指標を提供",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "アラビア語（エミラティ方言）対応チャットボットの品質保証",
+      "既存LLMのエミラティ方言対応度を検証したい時",
+      "エミラティ方言のデータセットの品質を評価したい時"
+    ],
+    "steps": [
+      "評価対象のLLMとAlyahベンチマークの実行環境を準備",
+      "Alyahベンチマークを対象LLMに対して実行し、スコアを取得",
+      "低スコアだったエミラティ方言の質問とLLMの応答を特定",
+      "特定した質問と応答を元に、LLMのプロンプトやファインチューニングデータを改善"
+    ],
+    "prompt": "Alyahベンチマークで低スコアだったエミラティ方言の質問「こんにちは、元気ですか？」に対し、LLMが「お元気ですか？」と回答しました。より自然で適切なエミラティ方言の応答を生成するためのプロンプト改善案を3つ提案してください。",
+    "tags": [
+      "LLM評価",
+      "多言語対応",
+      "ファインチューニング",
+      "プロンプトエンジニアリング"
+    ],
+    "id": "20260128_060817_02",
+    "date": "2026-01-28",
+    "source_news": {
+      "title": "アラビア語LLMのエミラティ方言能力を評価する新ベンチマーク「Alyah」を発表。",
+      "url": "https://huggingface.co/blog/tiiuae/emirati-benchmarks"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Codex CLIで開発ワークフローを最適化",
+    "news_highlight": "Codexエージェントの技術詳細公開、CLIがモデル・ツール・プロンプトを連携し性能最適化",
+    "problem_context": "AIモデル・ツール連携の複雑さ解消、性能最適化",
+    "recommended_ai": {
+      "model": "Codexエージェント",
+      "reason": "モデル連携と性能最適化に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数のAIモデルやツールを組み合わせて複雑なコードを生成したい時",
+      "既存コードの性能ボトルネックをAIで特定し、改善策を実装したい時",
+      "異なるAPIやサービスを連携させる統合テストコードを自動生成したい時"
+    ],
+    "steps": [
+      "1. 複雑な開発タスクを分解し、各ステップで利用するAIモデルやツールを特定する。",
+      "2. Codex CLIの構成ファイルで、モデル、ツール、プロンプトの連携フローを定義する。",
+      "3. タスク全体を指示するプロンプトをCodex CLIに渡して実行する。",
+      "4. CLIが出力したコードや分析結果をレビューし、必要に応じて調整・デプロイする。"
+    ],
+    "prompt": "TypeScriptとReactで、複数の外部API（例: GitHub API, Jira API）からデータを取得し、ダッシュボードに表示するコンポーネントを生成してください。エラーハンドリングも考慮してください。",
+    "tags": [
+      "コード生成",
+      "性能最適化",
+      "エージェントAI",
+      "CLIツール"
+    ],
+    "id": "20260128_060844_03",
+    "date": "2026-01-28",
+    "source_news": {
+      "title": "OpenAIがCodexエージェントの技術詳細を公開、モデル連携や性能最適化を解説。",
+      "url": "https://openai.com/index/unrolling-the-codex-agent-loop"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
     "title": "ArgosでマルチモーダルAIの信頼性評価",
     "news_highlight": "ArgosはAIの視覚的幻覚を削減し、マルチモーダルRLの信頼性を向上させる新技術。",
     "problem_context": "マルチモーダルAIの出力における視覚的幻覚と信頼性不足",
