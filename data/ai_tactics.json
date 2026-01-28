@@ -1,5 +1,126 @@
 [
   {
+    "title": "GPT-5.2内蔵PrismでLaTeX技術文書を効率化",
+    "news_highlight": "GPT-5.2内蔵の無料LaTeXワークスペースPrismが、執筆・共同作業・推論を支援。",
+    "problem_context": "LaTeXでの技術文書作成やレビューに時間がかかる。",
+    "recommended_ai": {
+      "model": "GPT-5.2 (Prism内蔵)",
+      "reason": "LaTeXに特化し、執筆・推論を支援。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "LaTeXで技術仕様書や論文のドラフトを作成する時",
+      "既存のLaTeXドキュメントの表現や論理構成を改善したい時",
+      "複雑な数式や図のLaTeXコードを生成したい時"
+    ],
+    "steps": [
+      "1. PrismワークスペースでLaTeXドキュメントを開く。",
+      "2. AIアシスタント機能（GPT-5.2）を呼び出す。",
+      "3. プロンプトを入力し、提案されたLaTeXコードや文章を適用する。",
+      "4. 生成された内容をレビューし、必要に応じて修正する。"
+    ],
+    "prompt": "以下の日本語の説明に基づいて、このセクションのLaTeXコードを生成してください。数式環境と図のプレースホルダーを含め、専門的なトーンで記述してください。",
+    "tags": [
+      "LaTeX",
+      "ドキュメント生成",
+      "レビュー",
+      "GPT-5.2"
+    ],
+    "id": "20260129_061251_01",
+    "date": "2026-01-29",
+    "source_news": {
+      "title": "GPT-5.2内蔵のLaTeXワークスペースPrism発表。研究者の執筆・共同作業を支援。",
+      "url": "https://openai.com/index/introducing-prism"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCoreでAIエージェントをIaC管理",
+    "news_highlight": "Amazon Bedrock AgentCoreがIaC対応し、CloudFormation/CDK/TerraformでAIエージェントを構築可能に",
+    "problem_context": "AIエージェントのデプロイと管理の自動化",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "IaCでAIエージェントを構築可能に",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIエージェント環境を迅速に構築したい時",
+      "既存のAIエージェント設定をバージョン管理したい時",
+      "複数の環境（開発/ステージング/本番）に同じAIエージェントをデプロイしたい時"
+    ],
+    "steps": [
+      "1. CloudFormation/CDK/Terraformテンプレートを準備する",
+      "2. AIエージェントの定義（基盤モデル、アクショングループ等）をテンプレートに記述する",
+      "3. IaCツール（AWS CLI, cdk deploy, terraform apply）でデプロイを実行する",
+      "4. デプロイされたAIエージェントの動作をテストする"
+    ],
+    "prompt": "Amazon Bedrock AgentCoreでClaude 3 Sonnetを使用し、Lambda関数をアクショングループとするAIエージェントのCloudFormationテンプレートを生成してください。",
+    "tags": [
+      "IaC",
+      "CloudFormation",
+      "CDK",
+      "Terraform",
+      "AIエージェント",
+      "デプロイ"
+    ],
+    "id": "20260129_061315_02",
+    "date": "2026-01-29",
+    "source_news": {
+      "title": "Amazon Bedrock AgentCoreがIaCに対応。CloudFormation等でAIエージェント構築可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-ai-agents-with-amazon-bedrock-agentcore-using-aws-cloudformation/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "GPT-4oでAppSync Events AIゲートウェイ設計",
+    "news_highlight": "AWS AppSync EventsでサーバーレスAIゲートウェイ構築、AWSサービスと統合し堅牢性を向上",
+    "problem_context": "AIモデル利用時のセキュリティ、スケーラビリティ、コスト管理",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "最新の高性能モデルで、幅広いAIタスクに対応可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIモデルを既存システムに安全に組み込みたい時",
+      "複数のAIサービスへのアクセスを統一的に管理したい時",
+      "AI APIの認証・認可・レート制限を設計する時"
+    ],
+    "steps": [
+      "1. AppSyncスキーマを定義し、AIモデルのAPIエンドポイントをマッピングする",
+      "2. Lambdaリゾルバを作成し、AIモデルへのリクエスト変換・応答処理を実装する",
+      "3. IAMロールを設定し、LambdaからAIモデルへの安全なアクセスを許可する",
+      "4. AppSyncの認証・認可機能（Cognito, IAMなど）を設定し、ゲートウェイを保護する"
+    ],
+    "prompt": "AWS AppSync EventsでサーバーレスAIゲートウェイ設計を提案。GPT-4oをバックエンドとし、認証、認可、レート制限、エラーハンドリングの具体的な実装案を提示してください。",
+    "tags": [
+      "AWS AppSync",
+      "サーバーレス",
+      "AIゲートウェイ",
+      "アーキテクチャ",
+      "API管理",
+      "セキュリティ"
+    ],
+    "id": "20260129_061346_03",
+    "date": "2026-01-29",
+    "source_news": {
+      "title": "AWS AppSync EventsでサーバーレスAIゲートウェイ構築。堅牢なアーキテクチャ設計を解説。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-serverless-ai-gateway-architecture-with-aws-appsync-events/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "GPT-4oでAssetOpsBench評価基準を適用",
     "news_highlight": "産業用AIエージェントの性能評価基準「AssetOpsBench」発表、信頼性向上へ",
     "problem_context": "産業用AIエージェントの信頼性・性能評価が困難",
