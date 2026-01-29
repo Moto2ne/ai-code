@@ -1,5 +1,124 @@
 [
   {
+    "title": "ClaudeでCUDAカーネル生成",
+    "news_highlight": "ClaudeがCUDAカーネルを生成し、オープンモデルの学習を高速化",
+    "problem_context": "CUDAカーネル開発の複雑さと時間消費",
+    "recommended_ai": {
+      "model": "Claude",
+      "reason": "CUDAカーネル生成に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいGPUアルゴリズムを試したい時",
+      "既存のPython/PyTorchコードをCUDAで高速化したい時",
+      "オープンソースAIモデルのカスタムレイヤーをCUDAで実装したい時"
+    ],
+    "steps": [
+      "1. 高速化したい計算ロジック（Python/擬似コード）を準備する",
+      "2. ClaudeにCUDAカーネル生成を依頼する",
+      "3. 生成されたCUDAカーネルをプロジェクトに組み込む",
+      "4. パフォーマンスを測定し、必要に応じてClaudeに最適化を依頼する"
+    ],
+    "prompt": "与えられたPythonの行列乗算ロジックを、NVIDIA GPUで実行可能な高性能CUDAカーネルとして生成してください。共有メモリとスレッドブロックの最適化を考慮してください。",
+    "tags": [
+      "CUDA",
+      "GPUプログラミング",
+      "高性能計算",
+      "AIモデル最適化",
+      "コード生成"
+    ],
+    "id": "20260130_061139_01",
+    "date": "2026-01-30",
+    "source_news": {
+      "title": "ClaudeでCUDAカーネルを生成し、オープンモデルを教育",
+      "url": "https://huggingface.co/blog/upskill"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "DaggrでAIワークフローを効率的にデバッグ",
+    "news_highlight": "DaggrはAIアプリのワークフロー構築・デバッグを支援、ステップごとの入出力可視化でエラー特定を効率化。",
+    "problem_context": "複雑なAIワークフローのデバッグが困難",
+    "recommended_ai": {
+      "model": "Daggr",
+      "reason": "ワークフローの可視化とデバッグ",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数のAIモデル連携アプリのエラー調査時",
+      "AIワークフローの特定ステップの挙動確認時",
+      "新規AIワークフローの設計とテスト時"
+    ],
+    "steps": [
+      "1. Daggrに既存のAIワークフローをインポートまたは新規作成する",
+      "2. ワークフローの各ステップにテストデータを投入し実行する",
+      "3. DaggrのUIで各ステップの入出力と中間結果を確認する",
+      "4. エラー発生箇所を特定し、関連するコードや設定を修正する"
+    ],
+    "prompt": "このAIワークフローの実行ログを解析し、各ステップの入出力とエラー箇所を特定してください。特にパフォーマンスボトルネックも指摘してください。",
+    "tags": [
+      "AIワークフロー",
+      "デバッグ",
+      "開発効率化",
+      "MMLOps"
+    ],
+    "id": "20260130_061205_02",
+    "date": "2026-01-30",
+    "source_news": {
+      "title": "AIアプリのワークフロー構築・デバッグツールDaggr発表",
+      "url": "https://huggingface.co/blog/daggr"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "エミラティ方言ベンチマークでLLM改善",
+    "news_highlight": "アラビア語LLMのエミラティ方言に特化した初の評価ベンチマークが発表された。",
+    "problem_context": "アラビア語LLMのエミラティ方言対応度評価が困難",
+    "recommended_ai": {
+      "model": "エミラティ方言評価ベンチマーク",
+      "reason": "特定方言の性能を客観的に評価",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "アラビア語LLM開発者が特定方言の性能を検証したい時",
+      "多言語対応アプリでアラビア語エミラティ方言の品質を保証したい時",
+      "既存LLMをエミラティ方言向けにファインチューニングする際の評価指標として"
+    ],
+    "steps": [
+      "開発中のアラビア語LLMモデルの出力を準備する",
+      "エミラティ方言評価ベンチマークの公開リポジトリから評価スクリプトを入手する",
+      "準備したLLM出力データとベンチマークスクリプトを実行し評価レポートを生成する",
+      "レポート結果を分析しエミラティ方言におけるLLMの弱点を特定し改善計画を立てる"
+    ],
+    "prompt": "エミラティ方言で、ドバイの観光名所について500文字で説明してください。若者向けのカジュアルなトーンでお願いします。",
+    "tags": [
+      "LLM",
+      "アラビア語",
+      "ベンチマーク",
+      "評価",
+      "方言"
+    ],
+    "id": "20260130_061235_03",
+    "date": "2026-01-30",
+    "source_news": {
+      "title": "アラビア語LLMのエミラティ方言評価ベンチマーク発表",
+      "url": "https://huggingface.co/blog/tiiuae/emirati-benchmarks"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5.2内蔵PrismでLaTeX技術文書を効率化",
     "news_highlight": "GPT-5.2内蔵の無料LaTeXワークスペースPrismが、執筆・共同作業・推論を支援。",
     "problem_context": "LaTeXでの技術文書作成やレビューに時間がかかる。",
