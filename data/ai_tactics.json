@@ -1,5 +1,122 @@
 [
   {
+    "title": "UniRGで医療画像レポート生成を効率化",
+    "news_highlight": "UniRGがマルチモーダル強化学習で多様な医療画像レポート生成性能を向上させる",
+    "problem_context": "医療画像レポートの多様な形式への対応不足",
+    "recommended_ai": {
+      "model": "UniRG",
+      "reason": "医療画像レポート生成に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "医療画像診断レポートの初稿自動生成",
+      "既存レポートの形式統一と情報抽出",
+      "新規疾患の画像所見レポートテンプレート作成"
+    ],
+    "steps": [
+      "医療画像データと既存レポートのペアを準備",
+      "UniRGモデルに画像とレポート形式の指示を入力",
+      "生成されたレポート初稿を専門医がレビュー",
+      "レビュー結果をフィードバックしモデルを再学習"
+    ],
+    "prompt": "以下の胸部X線画像と過去のレポート形式を参考に、新しい患者の医療画像レポートを生成してください。所見、診断、推奨事項を含めてください。",
+    "tags": [
+      "医療AI",
+      "画像診断",
+      "強化学習",
+      "自然言語生成"
+    ],
+    "id": "20260131_061158_01",
+    "date": "2026-01-31",
+    "source_news": {
+      "title": "マルチモーダル強化学習で医療画像レポート生成を効率化",
+      "url": "https://www.microsoft.com/en-us/research/blog/unirg-scaling-medical-imaging-report-generation-with-multimodal-reinforcement-learning/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "Genieでインタラクティブ世界を設計",
+    "news_highlight": "Google Genieが無限にインタラクティブな3D世界を生成、物理演算も対応",
+    "problem_context": "ゲームレベルや仮想環境の初期設計に時間がかかる",
+    "recommended_ai": {
+      "model": "Genie",
+      "reason": "インタラクティブな世界生成に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ゲーム開発者が新しいレベルの初期プロトタイプを素早く作成したい時",
+      "UI/UXデザイナーがインタラクティブな仮想空間でユーザーフローを検証したい時",
+      "ロボット工学者が特定のシナリオを持つシミュレーション環境を生成したい時"
+    ],
+    "steps": [
+      "Genieのインターフェースを開く",
+      "生成したい世界のコンセプトやルールをテキストで入力",
+      "Genieが生成したインタラクティブな世界をプレビュー",
+      "生成された世界を基に、具体的なアセット配置やスクリプトを調整"
+    ],
+    "prompt": "ファンタジーRPGのダンジョンレベルを生成してください。プレイヤーは宝箱を探し、モンスターと戦い、パズルを解く必要があります。",
+    "tags": [
+      "ゲーム開発",
+      "プロトタイピング",
+      "仮想環境",
+      "レベルデザイン"
+    ],
+    "id": "20260131_061227_02",
+    "date": "2026-01-31",
+    "source_news": {
+      "title": "Googleが無限にインタラクティブな世界を生成するGenieを発表",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "GPT-5/Codexで大規模データ分析スクリプト生成",
+    "news_highlight": "GPT-5/Codex活用で大規模データから数分で信頼できる洞察を生成、社内データエージェント公開",
+    "problem_context": "大規模データからの迅速な洞察抽出が困難",
+    "recommended_ai": {
+      "model": "GPT-5 / Codex (社内データエージェント)",
+      "reason": "大規模データ分析とコード生成に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ログデータから特定のエラーパターンを抽出するスクリプトが必要な時",
+      "データベースのパフォーマンスボトルネックを特定するSQLクエリを生成したい時",
+      "A/Bテスト結果の統計的有意性を評価するPythonスクリプトを作成したい時"
+    ],
+    "steps": [
+      "分析したいデータセットのスキーマ情報とサンプルデータを準備する",
+      "解決したい課題（例: エラー原因特定、パフォーマンスボトルネック）を具体的に記述する",
+      "AIにデータ分析スクリプト（SQL, Pythonなど）の生成を依頼する",
+      "生成されたスクリプトを実行し、結果を検証・デバッグする"
+    ],
+    "prompt": "以下のログデータスキーマとサンプルデータに基づき、過去24時間で最も頻繁に発生したエラータイプとその件数を特定するPythonスクリプトを生成してください。エラーメッセージのパターンも考慮してください。",
+    "tags": [
+      "データ分析",
+      "コード生成",
+      "デバッグ",
+      "パフォーマンス最適化"
+    ],
+    "id": "20260131_061254_03",
+    "date": "2026-01-31",
+    "source_news": {
+      "title": "OpenAIがGPT-5活用した社内データエージェントを公開",
+      "url": "https://openai.com/index/inside-our-in-house-data-agent"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "ClaudeでCUDAカーネル生成",
     "news_highlight": "ClaudeがCUDAカーネルを生成し、オープンモデルの学習を高速化",
     "problem_context": "CUDAカーネル開発の複雑さと時間消費",
