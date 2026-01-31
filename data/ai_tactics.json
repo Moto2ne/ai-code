@@ -1,5 +1,122 @@
 [
   {
+    "title": "SageMakerでModelOpsテンプレートを設計",
+    "news_highlight": "SageMakerがS3テンプレートでModelOpsワークフローを簡素化、Service Catalogより効率化",
+    "problem_context": "ModelOpsパイプライン構築の複雑さを解消",
+    "recommended_ai": {
+      "model": "Amazon SageMaker",
+      "reason": "ModelOpsワークフローを簡素化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規MLモデルのデプロイパイプラインを迅速に構築したい時",
+      "既存ModelOpsパイプラインを標準化・自動化したい時",
+      "複数のプロジェクトでModelOps設定を再利用したい時"
+    ],
+    "steps": [
+      "1. ModelOpsパイプラインの要件を定義（データソース、モデルタイプ、デプロイ環境など）",
+      "2. 定義した要件に基づき、SageMaker S3テンプレートのPythonコードをAIに生成依頼",
+      "3. 生成されたテンプレートをS3バケットに保存し、SageMaker Studioから呼び出す",
+      "4. パイプラインパラメータを設定し、実行してデプロイと運用を検証"
+    ],
+    "prompt": "SageMaker ModelOpsパイプライン用のS3テンプレートをPython SDKで記述してください。データ準備、トレーニング、モデル評価、モデル登録、デプロイのステップを含めてください。",
+    "tags": [
+      "ModelOps",
+      "SageMaker",
+      "S3",
+      "テンプレート",
+      "MLパイプライン"
+    ],
+    "id": "20260201_060838_01",
+    "date": "2026-02-01",
+    "source_news": {
+      "title": "SageMakerでS3テンプレートを使いModelOpsを簡素化",
+      "url": "https://aws.amazon.com/blogs/machine-learning/simplify-modelops-with-amazon-sagemaker-ai-projects-using-amazon-s3-based-templates/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Amazon BedrockでAgentic AI評価",
+    "news_highlight": "PushpayがAmazon Bedrockでカスタム評価FWを構築、継続的なAgentic AI品質保証を実現",
+    "problem_context": "Agentic AIの品質評価と継続的な改善が困難",
+    "recommended_ai": {
+      "model": "Amazon Bedrock",
+      "reason": "Agentic AIの評価FW構築を支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAgentic AI機能のリリース前テスト時",
+      "既存Agentic AIのパフォーマンス劣化を検知したい時",
+      "Agentic AIのプロンプト変更による影響を確認したい時"
+    ],
+    "steps": [
+      "1. Bedrockで評価したいAgentic AIの入出力ログを収集する",
+      "2. カスタム評価FWに評価基準（例: 関連性、安全性）と期待出力を定義する",
+      "3. Bedrockの評価機能でAgentic AIの出力と期待出力を比較分析する",
+      "4. 評価レポートに基づき、Agentic AIのプロンプトやツールを改善する"
+    ],
+    "prompt": "Agentic AIの出力評価基準として、関連性、正確性、安全性、一貫性を定義し、各基準の具体的な評価項目とスコアリング方法を提案してください。",
+    "tags": [
+      "Agentic AI",
+      "評価",
+      "品質保証",
+      "Bedrock"
+    ],
+    "id": "20260201_060903_02",
+    "date": "2026-02-01",
+    "source_news": {
+      "title": "Bedrockで信頼性の高いAgentic AIを構築・評価",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-reliable-agentic-ai-solution-with-amazon-bedrock-learn-from-pushpays-journey-on-genai-evaluation/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "GPT-5/Codexでログ分析スクリプト生成",
+    "news_highlight": "GPT-5とCodexが大規模データセットを数分で推論し、信頼性の高い洞察を提供。",
+    "problem_context": "膨大なログからの障害原因特定が困難。",
+    "recommended_ai": {
+      "model": "GPT-5",
+      "reason": "大規模データ推論とコード生成に強み。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "本番環境の障害発生時にログから原因を特定したい時",
+      "システムパフォーマンスのボトルネックを特定したい時",
+      "特定のユーザー行動パターンをログから分析したい時"
+    ],
+    "steps": [
+      "分析したいログデータの一部（数行〜数十行）を準備する。",
+      "分析の目的（例: エラーログの集計、特定のユーザーの行動追跡）を明確にする。",
+      "AIにログデータと目的を提示し、Pythonスクリプトの生成を依頼する。",
+      "生成されたスクリプトをローカルで実行し、結果を検証する。"
+    ],
+    "prompt": "以下のログデータから、最も頻繁に発生しているエラーメッセージとその回数を集計するPythonスクリプトを生成してください。ログフォーマットはJSONです。",
+    "tags": [
+      "ログ分析",
+      "コード生成",
+      "障害対応"
+    ],
+    "id": "20260201_060931_03",
+    "date": "2026-02-01",
+    "source_news": {
+      "title": "OpenAIがGPT-5で社内データエージェントを構築",
+      "url": "https://openai.com/index/inside-our-in-house-data-agent"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "UniRGで医療画像レポート生成を効率化",
     "news_highlight": "UniRGがマルチモーダル強化学習で多様な医療画像レポート生成性能を向上させる",
     "problem_context": "医療画像レポートの多様な形式への対応不足",
