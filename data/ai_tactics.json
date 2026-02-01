@@ -1,5 +1,125 @@
 [
   {
+    "title": "ClaudeでCUDAカーネル生成と最適化",
+    "news_highlight": "ClaudeがCUDAカーネルを生成し、オープンモデルの学習効率を向上させる技術を発表。",
+    "problem_context": "CUDAカーネル開発の専門知識不足と開発時間短縮。",
+    "recommended_ai": {
+      "model": "Claude",
+      "reason": "複雑なCUDAコードを自動生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "MLモデルのカスタムレイヤーをGPUで高速化したい時",
+      "既存のPyTorch/TensorFlow演算のボトルネックをCUDAで最適化したい時",
+      "新しいGPUアルゴリズムのプロトタイプを素早く作成したい時"
+    ],
+    "steps": [
+      "最適化したい計算ロジック（Python/擬似コード）を準備する",
+      "ClaudeにCUDAカーネル生成を依頼する",
+      "生成されたカーネルを既存のMLフレームワークに組み込みテストする",
+      "パフォーマンスを測定し、必要に応じてClaudeに改善を依頼する"
+    ],
+    "prompt": "以下のPythonコードをCUDAカーネルに変換し、PyTorchから呼び出せるようにしてください。特に、テンソル操作の最適化に注力してください。",
+    "tags": [
+      "CUDA",
+      "GPUプログラミング",
+      "機械学習",
+      "最適化",
+      "コード生成"
+    ],
+    "id": "20260202_061001_01",
+    "date": "2026-02-02",
+    "source_news": {
+      "title": "ClaudeでCUDAカーネルを生成し、オープンモデルを教育する技術を発表。",
+      "url": "https://huggingface.co/blog/upskill"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "DaggrでLLMアプリのフローを可視化・デバッグ",
+    "news_highlight": "Hugging FaceがLLMアプリの視覚的チェーン・検査ツール「Daggr」を発表。",
+    "problem_context": "LLMアプリの複雑な処理フローのデバッグが困難。",
+    "recommended_ai": {
+      "model": "Daggr",
+      "reason": "LLMアプリの可視化・デバッグに特化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "LLMアプリケーションのプロトタイプ開発時、処理の流れを確認したい時",
+      "本番稼働中のLLMアプリで予期せぬ出力が発生し、原因を特定したい時",
+      "複数のLLMツールやAPIを連携させた複雑なワークフローを設計する時"
+    ],
+    "steps": [
+      "1. 既存のLLMアプリケーションコード（LangChain/LlamaIndexなど）をDaggrにインポートまたは接続する",
+      "2. DaggrのGUI上で、アプリケーションの各ステップがどのようにチェーンされているか視覚的に確認する",
+      "3. アプリケーションを実行し、各ステップの中間入力・出力をリアルタイムで検査し、問題箇所を特定する",
+      "4. 問題特定後、コードを修正し、Daggrで再度実行して修正が正しく反映されたか検証する"
+    ],
+    "prompt": "LangChainで開発中のLLMアプリケーションのPythonコードをDaggrにインポートし、視覚的なフローと中間結果を検査してください。",
+    "tags": [
+      "LLM開発",
+      "デバッグ",
+      "可視化",
+      "ワークフロー",
+      "Hugging Face"
+    ],
+    "id": "20260202_061026_02",
+    "date": "2026-02-02",
+    "source_news": {
+      "title": "Hugging Faceがアプリを視覚的にチェーン・検査する開発ツール「Daggr」を発表。",
+      "url": "https://huggingface.co/blog/daggr"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Hugging Faceでロボット行動計画を生成",
+    "news_highlight": "Hugging FaceがNVIDIA Cosmos Policyと連携し、高度なロボット制御技術を導入。",
+    "problem_context": "ロボットの複雑な行動計画作成が困難。",
+    "recommended_ai": {
+      "model": "Hugging Face",
+      "reason": "ロボット行動計画生成に活用",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいロボットタスクの行動シーケンスを設計する時",
+      "既存のロボット行動ポリシーを最適化したい時",
+      "シミュレーション環境でロボットの挙動をテストする前"
+    ],
+    "steps": [
+      "1. ロボットの目標と利用可能なアクションリストを定義する。",
+      "2. Hugging Faceのモデルに目標とアクションを渡し、行動計画を生成させる。",
+      "3. 生成された計画をNVIDIA Cosmos Policy環境でシミュレーションする。",
+      "4. シミュレーション結果を評価し、必要に応じて計画を修正・再生成する。"
+    ],
+    "prompt": "ロボットが「A地点からB地点へ荷物を運ぶ」という目標を達成するための行動計画を、利用可能なアクション（移動、把持、解放）を使ってステップバイステップで生成してください。",
+    "tags": [
+      "ロボット制御",
+      "行動計画",
+      "シミュレーション",
+      "Hugging Face",
+      "NVIDIA Cosmos Policy"
+    ],
+    "id": "20260202_061052_03",
+    "date": "2026-02-02",
+    "source_news": {
+      "title": "Hugging FaceがNVIDIA Cosmos Policyによる高度なロボット制御技術を紹介。",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-policy-for-robot-control"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "SageMakerでModelOpsテンプレートを設計",
     "news_highlight": "SageMakerがS3テンプレートでModelOpsワークフローを簡素化、Service Catalogより効率化",
     "problem_context": "ModelOpsパイプライン構築の複雑さを解消",
