@@ -1,5 +1,123 @@
 [
   {
+    "title": "GPT-5, Codexで大規模データ分析と洞察抽出",
+    "news_highlight": "GPT-5とCodexが大規模データセットを数分で分析、信頼性の高い洞察を提供",
+    "problem_context": "大規模データから迅速かつ信頼性の高い洞察抽出",
+    "recommended_ai": {
+      "model": "GPT-5, Codex",
+      "reason": "大規模データ推論とコード生成に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "データ分析基盤のログから異常原因を特定したい時",
+      "データベースのパフォーマンスボトルネックを特定したい時",
+      "新機能開発のためのユーザー行動データを分析したい時"
+    ],
+    "steps": [
+      "分析したい大規模データセット（ログ、DBスナップショット等）を準備する。",
+      "データセットのスキーマ情報や関連するクエリ例をAIに提供する。",
+      "分析目的と質問をAIに提示し、データエージェントに分析を依頼する。",
+      "AIが生成した洞察やSQLクエリ、コードを検証し、必要に応じて深掘り質問をする。"
+    ],
+    "prompt": "以下の大規模データセットから、[具体的な分析目的]に関する信頼性の高い洞察を数分で抽出してください。データスキーマと関連クエリ例も参照し、SQLクエリやPythonコードで分析結果を示してください。",
+    "tags": [
+      "データ分析",
+      "大規模データ",
+      "GPT-5",
+      "Codex",
+      "データエージェント"
+    ],
+    "id": "20260204_061548_01",
+    "date": "2026-02-04",
+    "source_news": {
+      "title": "OpenAIがGPT-5活用し社内データエージェント構築",
+      "url": "https://openai.com/index/inside-our-in-house-data-agent"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Codexアプリで多エージェント並列開発",
+    "news_highlight": "macOS向けCodexアプリ、多エージェント・並列ワークフローで複雑な開発を支援",
+    "problem_context": "複雑な開発タスクの効率化と品質向上",
+    "recommended_ai": {
+      "model": "Codexアプリ",
+      "reason": "多エージェントと並列処理",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能の設計から実装までを一貫して進めたい時",
+      "大規模なリファクタリング案を複数同時に検討したい時",
+      "複数の技術スタックを跨ぐ複雑なバグを特定したい時"
+    ],
+    "steps": [
+      "Codexアプリで新規プロジェクトを開始し、開発要件を詳細に入力する",
+      "アプリ内でフロントエンド、バックエンド、DB担当エージェントを起動し、並列でコード生成を指示する",
+      "生成されたコードを統合し、テストエージェントに自動テストとデバッグを依頼する",
+      "提案された修正案や改善点をレビューし、最終的なコードをコミットする"
+    ],
+    "prompt": "ReactとNode.js、PostgreSQLを使ったECサイトのバックエンドAPIとフロントエンドUIを、多エージェントで並列生成してください。",
+    "tags": [
+      "コード生成",
+      "設計",
+      "並列処理",
+      "多エージェント"
+    ],
+    "id": "20260204_061615_02",
+    "date": "2026-02-04",
+    "source_news": {
+      "title": "macOS向けCodexアプリ発表、AIコーディングを多エージェントで支援",
+      "url": "https://openai.com/index/introducing-the-codex-app"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
+    "title": "AWS Bedrock AgentCoreでAIエージェント設計",
+    "news_highlight": "AWS Bedrock AgentCoreが企業向けAIエージェント構築の9つのベストプラクティスを提供",
+    "problem_context": "企業向けAIエージェントの設計品質向上",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "企業向けAIエージェント構築に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規AIエージェントの機能設計時",
+      "既存AIエージェントの機能拡張時",
+      "エージェントのAPI連携ロジック検討時"
+    ],
+    "steps": [
+      "構築したいAIエージェントの目的と主要機能を定義する。",
+      "エージェントが実行すべき外部システム連携（APIなど）を特定する。",
+      "特定した連携について、API仕様書や既存コードを参照する。",
+      "以下のプロンプトで、AgentCoreのアクション定義を依頼する。"
+    ],
+    "prompt": "AWS Bedrock AgentCoreのベストプラクティスに基づき、顧客情報管理システムAPI（GET /customers/{id}, POST /customers）と連携するAIエージェントのアクション定義をJSON形式で設計してください。入力と出力のスキーマを含めてください。",
+    "tags": [
+      "AIエージェント",
+      "Bedrock",
+      "設計",
+      "API連携"
+    ],
+    "id": "20260204_061645_03",
+    "date": "2026-02-04",
+    "source_news": {
+      "title": "AWS Bedrock AgentCoreで企業向けAIエージェント構築のベストプラクティス",
+      "url": "https://aws.amazon.com/blogs/machine-learning/ai-agents-in-enterprises-best-practices-with-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "ClaudeでCUDAカーネル生成と最適化",
     "news_highlight": "ClaudeがCUDAカーネルを生成し、オープンモデルの学習効率を向上させる技術を発表。",
     "problem_context": "CUDAカーネル開発の専門知識不足と開発時間短縮。",
