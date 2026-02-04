@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-5/Codexでデータ分析スクリプト生成",
+    "news_highlight": "GPT-5とCodexが数分で大量データから信頼性の高い洞察を提供。",
+    "problem_context": "大量データからの洞察抽出に時間と手間がかかる。",
+    "recommended_ai": {
+      "model": "GPT-5",
+      "reason": "大規模データ処理とコード生成に強み。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "本番環境のログからエラー原因を特定したい時",
+      "A/Bテスト結果のデータから有意差を分析したい時",
+      "データベースのパフォーマンスデータからボトルネックを特定したい時"
+    ],
+    "steps": [
+      "1. 分析対象のデータセット（CSV, JSONなど）のサンプルを準備する。",
+      "2. AIにデータの形式と分析目的（例: 「エラー発生頻度」「ユーザー行動パターン」）を伝える。",
+      "3. AIが生成したデータ分析スクリプト（Python/Pandasなど）を実行し、結果を確認する。",
+      "4. 得られた洞察を基に、次のアクション（コード修正、機能改善など）を検討する。"
+    ],
+    "prompt": "以下のCSVデータから、ユーザーごとの平均滞在時間を計算し、上位5名のユーザーIDと時間を表示するPythonスクリプトを生成してください。データはuser_id, timestamp, event_typeの形式です。",
+    "tags": [
+      "データ分析",
+      "スクリプト生成",
+      "Python",
+      "効率化"
+    ],
+    "id": "20260205_061521_01",
+    "date": "2026-02-05",
+    "source_news": {
+      "title": "OpenAIがGPT-5活用しデータ分析を効率化する社内AIエージェントを発表。",
+      "url": "https://openai.com/index/inside-our-in-house-data-agent"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Codexアプリで複雑な機能実装を自動化",
+    "news_highlight": "Codexアプリは複数エージェント、並列ワークフロー、長時間タスクで開発効率化",
+    "problem_context": "大規模な機能開発の効率化と自動化",
+    "recommended_ai": {
+      "model": "Codex app",
+      "reason": "複数エージェントで複雑なタスクを自動化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能開発で複数のファイルにまたがるコードを生成したい時",
+      "大規模なコードベースのリファクタリング計画を立て実行したい時",
+      "複雑なバグの根本原因を特定し、複数ファイルの修正案を得たい時"
+    ],
+    "steps": [
+      "1. Codexアプリを起動し、開発中のプロジェクトディレクトリを読み込ませる",
+      "2. 実装したい機能の要件（例: ユーザー管理機能）を自然言語で詳細に記述",
+      "3. アプリ内で「複数エージェントによるコード生成とテスト生成の並列実行」を指示",
+      "4. 生成されたコードとテストをレビューし、IDEで統合・テストを実行"
+    ],
+    "prompt": "Python/FastAPIでユーザー認証とCRUD操作を持つバックエンドAPIを、React/TypeScriptで対応するフロントエンドを生成してください。バリデーションとエラーハンドリングを含めてください。",
+    "tags": [
+      "コード生成",
+      "開発効率化",
+      "並列処理",
+      "macOS"
+    ],
+    "id": "20260205_061549_02",
+    "date": "2026-02-05",
+    "source_news": {
+      "title": "OpenAIがAIコーディングと開発を効率化するCodexアプリを発表。",
+      "url": "https://openai.com/index/introducing-the-codex-app"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCoreでAIエージェント設計",
+    "news_highlight": "Amazon Bedrock AgentCoreで企業向けAIエージェント構築、9つのベストプラクティス公開",
+    "problem_context": "複雑な企業向けAIエージェントを効率的に設計したい",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "企業向けAIエージェント構築に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIエージェントの初期設計を行う時",
+      "既存のAIエージェントの動作を改善したい時",
+      "エージェントのタスク分割やツール連携を検討する時"
+    ],
+    "steps": [
+      "構築したいAIエージェントの目的と主要タスクを定義する。",
+      "AgentCoreのベストプラクティスを参考に、エージェントの構成案を記述する。",
+      "AgentCoreのコンソールでエージェントのスキーマ（API定義、関数）を設定する。",
+      "初期プロンプトとツール連携を実装し、テスト環境で動作検証を行う。"
+    ],
+    "prompt": "Amazon Bedrock AgentCoreを利用した企業向けAIエージェントの設計を支援してください。顧客サポート業務を自動化するエージェントの主要タスクと必要なツールをリストアップしてください。",
+    "tags": [
+      "AIエージェント",
+      "Amazon Bedrock",
+      "設計",
+      "実装"
+    ],
+    "id": "20260205_061613_03",
+    "date": "2026-02-05",
+    "source_news": {
+      "title": "AWSが企業向けAIエージェント構築のベストプラクティスを公開。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/ai-agents-in-enterprises-best-practices-with-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GPT-5, Codexで大規模データ分析と洞察抽出",
     "news_highlight": "GPT-5とCodexが大規模データセットを数分で分析、信頼性の高い洞察を提供",
     "problem_context": "大規模データから迅速かつ信頼性の高い洞察抽出",
