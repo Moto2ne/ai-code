@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-4oでセキュリティコードレビュー",
+    "news_highlight": "OpenAIがサイバー向け信頼アクセス導入、AI悪用リスクを大幅低減",
+    "problem_context": "コードのセキュリティ脆弱性を見落とさず防止したい",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "最新モデルで高度なセキュリティ分析が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエスト前のセキュリティ脆弱性チェック",
+      "新規API設計時のセキュリティリスク評価",
+      "既存システムのセキュリティポリシー適合性確認"
+    ],
+    "steps": [
+      "レビュー対象のコードスニペットを準備する",
+      "GPT-4oにコードとセキュリティ要件を提示する",
+      "AIからの脆弱性指摘と改善提案を確認する",
+      "提案された修正を適用し、テストする"
+    ],
+    "prompt": "以下のPythonコードに潜在するセキュリティ脆弱性を特定し、OWASP Top 10の観点から改善提案をしてください。コード: [ここにコードを貼り付け]",
+    "tags": [
+      "セキュリティ",
+      "コードレビュー",
+      "脆弱性分析",
+      "GPT-4o"
+    ],
+    "id": "20260206_061246_01",
+    "date": "2026-02-06",
+    "source_news": {
+      "title": "OpenAIがサイバー向け信頼アクセス導入、悪用防止強化。",
+      "url": "https://openai.com/index/trusted-access-for-cyber"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-5.3-Codexで複雑な機能実装",
+    "news_highlight": "GPT-5.3-Codexは最先端コーディング性能と推論・専門知識を兼ね備えたエージェント型モデル。",
+    "problem_context": "複雑な要件の機能実装に時間がかかる",
+    "recommended_ai": {
+      "model": "GPT-5.3-Codex",
+      "reason": "エージェント型で推論・専門知識が強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能の設計と実装を効率化したい時",
+      "既存システムの複雑なバグを特定し修正したい時",
+      "大規模なリファクタリング計画を立てたい時"
+    ],
+    "steps": [
+      "1. 実装したい機能の要件定義を詳細に記述する",
+      "2. 既存の関連コードやAPI仕様をAIに提供する",
+      "3. AIが提案する設計案とコードを確認し、必要に応じて修正を依頼する",
+      "4. 生成されたコードをテスト環境で実行し、動作検証を行う"
+    ],
+    "prompt": "ユーザー管理システムに多要素認証機能を追加してください。既存の認証フローとデータベーススキーマを考慮し、設計とTypeScriptでの実装コードを提案してください。",
+    "tags": [
+      "コード生成",
+      "設計",
+      "エージェント",
+      "TypeScript"
+    ],
+    "id": "20260206_061311_02",
+    "date": "2026-02-06",
+    "source_news": {
+      "title": "GPT-5.3-Codex発表、高性能エージェント型コーディングモデル。",
+      "url": "https://openai.com/index/gpt-5-3-codex-system-card"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Pazaで低リソース言語ASR設計",
+    "news_highlight": "Pazaは39のアフリカ言語をカバーする初の低リソース言語ASRベンチマークPazaBenchを発表。",
+    "problem_context": "多様な言語話者への音声UI対応",
+    "recommended_ai": {
+      "model": "Paza",
+      "reason": "低リソース言語ASRに特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "アフリカ言語話者向け音声UI開発",
+      "多言語コールセンターのASR導入",
+      "教育コンテンツの音声認識字幕生成"
+    ],
+    "steps": [
+      "1. 対象言語の音声データ準備",
+      "2. Paza API/SDKのドキュメント確認",
+      "3. Pazaを用いて音声認識コード実装",
+      "4. 認識結果を評価し、精度を改善"
+    ],
+    "prompt": "Paza APIを使用して、ハウサ語の音声ファイル（.wav）をテキストに変換するPythonコードを生成してください。エラーハンドリングも考慮してください。",
+    "tags": [
+      "ASR",
+      "多言語",
+      "音声認識",
+      "低リソース言語"
+    ],
+    "id": "20260206_061338_03",
+    "date": "2026-02-06",
+    "source_news": {
+      "title": "低リソース言語向けASRモデルPaza発表、初のベンチマーク。",
+      "url": "https://www.microsoft.com/en-us/research/blog/paza-introducing-automatic-speech-recognition-benchmarks-and-models-for-low-resource-languages/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5/Codexでデータ分析スクリプト生成",
     "news_highlight": "GPT-5とCodexが数分で大量データから信頼性の高い洞察を提供。",
     "problem_context": "大量データからの洞察抽出に時間と手間がかかる。",
