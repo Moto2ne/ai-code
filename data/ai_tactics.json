@@ -1,5 +1,120 @@
 [
   {
+    "title": "GPT-5で実験的コード最適化",
+    "news_highlight": "GPT-5とクラウド自動化で閉ループ実験によりコスト40%削減",
+    "problem_context": "開発プロセスの最適化とコスト削減",
+    "recommended_ai": {
+      "model": "GPT-5",
+      "reason": "閉ループ最適化能力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新機能の複数実装案から最適なものを自動選定したい時",
+      "既存コードのパフォーマンスボトルネックを特定したい時",
+      "テストケースを自動生成し、コード改善を評価したい時"
+    ],
+    "steps": [
+      "最適化したいコードと目標（例: 実行速度）を定義する",
+      "GPT-5に複数の改善案を生成させ、テストコードも依頼する",
+      "生成されたコードとテストを自動実行し、結果を収集する",
+      "テスト結果をGPT-5にフィードバックし、さらなる改善案を依頼する"
+    ],
+    "prompt": "以下のPythonコードの実行速度を改善する複数の代替実装を提案してください。各実装には簡単なベンチマークコードも添付してください。",
+    "tags": [
+      "コード最適化",
+      "自動実験",
+      "パフォーマンスチューニング",
+      "GPT-5"
+    ],
+    "id": "20260207_061307_01",
+    "date": "2026-02-07",
+    "source_news": {
+      "title": "GPT-5が細胞フリータンパク質合成コストを40%削減。",
+      "url": "https://openai.com/index/gpt-5-lowers-protein-synthesis-cost"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "PazaBenchでASRモデルを評価",
+    "news_highlight": "PazaBenchは39のアフリカ言語、52モデルを対象とした初の低リソース言語ASRベンチマーク",
+    "problem_context": "低リソース言語のASRモデル選定が困難",
+    "recommended_ai": {
+      "model": "PazaBench",
+      "reason": "低リソース言語ASRの性能比較が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規プロジェクトで低リソース言語ASRモデルを選定する時",
+      "既存のASRモデルの性能改善を検討する時",
+      "多言語対応の音声アプリケーションを開発する時"
+    ],
+    "steps": [
+      "1. PazaBenchの公開リソース（論文、GitHubなど）を確認する",
+      "2. 評価したい低リソース言語がPazaBenchの対象に含まれるか確認する",
+      "3. PazaBenchの評価スクリプトやデータセットを用いて、候補モデルの性能を測定する",
+      "4. 測定結果をPazaBenchのリーダーボードと比較し、最適なモデルを選定する"
+    ],
+    "prompt": "PazaBenchの評価結果データ（JSON形式）を元に、特定の低リソース言語で最も高精度なASRモデルを選定し、その選定理由と実装時の注意点を教えてください。",
+    "tags": [
+      "ASR",
+      "多言語"
+    ],
+    "id": "20260207_061333_02",
+    "date": "2026-02-07",
+    "source_news": {
+      "title": "MSが低リソース言語ASRモデルPazaとベンチマークPazaBench発表。",
+      "url": "https://www.microsoft.com/en-us/research/blog/paza-introducing-automatic-speech-recognition-benchmarks-and-models-for-low-resource-languages/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Nemotron ColEmbed V2で設計図を検索",
+    "news_highlight": "Nemotron ColEmbed V2は画像とテキストの関連度認識を強化し、検索結果の関連性を向上",
+    "problem_context": "既存システムの設計意図を素早く理解したい",
+    "recommended_ai": {
+      "model": "Nemotron ColEmbed V2",
+      "reason": "マルチモーダル検索に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存システムのアーキテクチャ図とコードの関連性を理解したい時",
+      "複雑な技術資料（図とテキスト混在）から特定情報を抽出したい時",
+      "新機能開発で既存の類似設計パターンを検索したい時"
+    ],
+    "steps": [
+      "検索対象となる設計図、コード、ドキュメントを準備する",
+      "Nemotron ColEmbed V2のAPIまたはツールに、検索したいキーワードと関連する画像を入力する",
+      "AIが提示する関連性の高い設計図、コードスニペット、ドキュメントを確認する",
+      "抽出された情報をもとに、設計やデバッグ作業を進める"
+    ],
+    "prompt": "添付のアーキテクチャ図におけるマイクロサービス間の認証フローに関する設計詳細と関連コードを抽出してください。",
+    "tags": [
+      "マルチモーダルAI",
+      "検索",
+      "設計",
+      "ドキュメント理解"
+    ],
+    "id": "20260207_061401_03",
+    "date": "2026-02-07",
+    "source_news": {
+      "title": "Nemotron ColEmbed V2がマルチモーダル検索性能を向上。",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-colembed-v2"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-4oでセキュリティコードレビュー",
     "news_highlight": "OpenAIがサイバー向け信頼アクセス導入、AI悪用リスクを大幅低減",
     "problem_context": "コードのセキュリティ脆弱性を見落とさず防止したい",
