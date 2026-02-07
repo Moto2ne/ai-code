@@ -1,5 +1,123 @@
 [
   {
+    "title": "OpenAI Frontierで開発ワークフロー自動化",
+    "news_highlight": "OpenAI Frontierは、共有コンテキスト、権限管理、ガバナンスを備え、AIエージェント構築・管理を企業向けに提供。",
+    "problem_context": "複数の開発タスク連携と自動化の複雑さ",
+    "recommended_ai": {
+      "model": "OpenAI Frontier",
+      "reason": "AIエージェント構築・管理に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエスト作成時に自動でコードレビューとテストケース生成を依頼したい時",
+      "新機能開発時に既存ドキュメントの関連箇所を自動更新したい時",
+      "バグ修正時に影響範囲分析と修正案の初期検討を自動化したい時"
+    ],
+    "steps": [
+      "OpenAI Frontier上で「コードレビュー＆テスト生成エージェント」を定義する。",
+      "エージェントにコードリポジトリとCI/CDツールへのアクセス権限を付与する。",
+      "プルリクエスト作成をトリガーとしてエージェントが起動するよう設定する。",
+      "エージェントがコードレビューコメントとテストケースを自動生成し、PRに提案する。"
+    ],
+    "prompt": "このプルリクエストの変更内容を分析し、コーディング規約に沿ったレビューコメントと、変更をカバーするTypeScriptのJestテストケースを生成してください。",
+    "tags": [
+      "AIエージェント",
+      "開発プロセス自動化",
+      "CI/CD",
+      "コードレビュー"
+    ],
+    "id": "20260208_061128_01",
+    "date": "2026-02-08",
+    "source_news": {
+      "title": "OpenAI Frontier発表、AIエージェント構築・管理の企業向けプラットフォーム",
+      "url": "https://openai.com/index/introducing-openai-frontier"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-5で開発プロセスを最適化",
+    "news_highlight": "GPT-5と自動化で無細胞タンパク質合成コストを40%削減、閉ループ実験で実現",
+    "problem_context": "開発プロセスの非効率性、リソースコストの増大",
+    "recommended_ai": {
+      "model": "GPT-5",
+      "reason": "閉ループ実験と最適化に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "CI/CDパイプラインのボトルネックを特定し改善したい時",
+      "クラウドインフラのコスト最適化案を検討したい時",
+      "A/Bテストのパラメータを効率的に決定したい時"
+    ],
+    "steps": [
+      "最適化したいシステム（例: CI/CDパイプライン）の現状データ（ログ、リソース使用量など）を収集する。",
+      "GPT-5に現状データと目標（例: 実行時間20%削減）を提示し、具体的な改善案を複数依頼する。",
+      "GPT-5が提案した改善案をシステムに適用し、結果を計測する。",
+      "計測結果をGPT-5にフィードバックし、次の改善サイクルを依頼する。"
+    ],
+    "prompt": "現在のCI/CDパイプラインの実行ログとリソース使用状況データです。実行時間を20%削減するための具体的な改善策を複数提案してください。各策の期待効果も示してください。",
+    "tags": [
+      "最適化",
+      "自動化",
+      "CI/CD",
+      "コスト削減",
+      "実験"
+    ],
+    "id": "20260208_061154_02",
+    "date": "2026-02-08",
+    "source_news": {
+      "title": "GPT-5がタンパク質合成コストを40%削減、新モデル発表",
+      "url": "https://openai.com/index/gpt-5-lowers-protein-synthesis-cost"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Pazaで低リソース言語ASRを実装",
+    "news_highlight": "Pazaは低リソース言語向けASRモデル、PazaBenchは39のアフリカ言語をカバーする初のリーダーボード",
+    "problem_context": "低リソース言語の音声認識精度が低い",
+    "recommended_ai": {
+      "model": "Paza / PazaBench",
+      "reason": "低リソース言語に特化し、性能を可視化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "多言語対応アプリの音声入力機能を実装する時",
+      "既存ASRの低リソース言語での認識精度を改善したい時",
+      "低リソース言語向けASRモデルの性能を比較検討する時"
+    ],
+    "steps": [
+      "PazaBenchで対象言語のASRモデル性能スコアを確認する",
+      "PazaBenchで高評価のモデル（Paza含む）のAPI/SDKを調査する",
+      "選択したモデルをアプリケーションに統合するサンプルコードを生成する",
+      "統合後、実際の音声データで認識精度をテストし評価する"
+    ],
+    "prompt": "PythonとFlaskを使って、PazaBenchで高評価のASRモデル（例: Paza）を統合し、指定された低リソース言語（例: Swahili）の音声ファイルをテキストに変換するAPIエンドポイントを作成してください。",
+    "tags": [
+      "ASR",
+      "多言語対応",
+      "音声認識",
+      "ベンチマーク"
+    ],
+    "id": "20260208_061222_03",
+    "date": "2026-02-08",
+    "source_news": {
+      "title": "Microsoftが低リソース言語向けASRモデルとベンチマークPazaを発表",
+      "url": "https://www.microsoft.com/en-us/research/blog/paza-introducing-automatic-speech-recognition-benchmarks-and-models-for-low-resource-languages/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5で実験的コード最適化",
     "news_highlight": "GPT-5とクラウド自動化で閉ループ実験によりコスト40%削減",
     "problem_context": "開発プロセスの最適化とコスト削減",
