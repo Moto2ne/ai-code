@@ -1,5 +1,123 @@
 [
   {
+    "title": "Holo2でUI多言語テキスト生成",
+    "news_highlight": "Holo2モデルがHugging FaceでUIローカライゼーション分野でトップ評価を獲得。",
+    "problem_context": "UIテキストの多言語対応が非効率。",
+    "recommended_ai": {
+      "model": "Holo2 (Hugging Face)",
+      "reason": "UIローカライゼーションに特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のUIテキストを多言語化する時",
+      "既存UIの表現を特定の言語向けに調整する時",
+      "多言語対応のテストデータを作成する時"
+    ],
+    "steps": [
+      "翻訳したいUIテキスト（日本語）を準備する。",
+      "ターゲット言語（例: 英語、中国語）を指定する。",
+      "Holo2モデルにテキストとターゲット言語を渡し、翻訳を依頼する。",
+      "生成された多言語テキストをUIに適用し、表示を確認する。"
+    ],
+    "prompt": "以下の日本語UIテキストを英語、中国語（簡体字）、韓国語に翻訳し、各言語の文化に合わせた自然な表現に調整してください。テキスト: '設定を保存'",
+    "tags": [
+      "ローカライゼーション",
+      "UI/UX",
+      "多言語対応",
+      "テキスト生成"
+    ],
+    "id": "20260209_061153_01",
+    "date": "2026-02-09",
+    "source_news": {
+      "title": "Hugging FaceでHolo2モデルがUIローカライゼーションでトップに",
+      "url": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Nemotron ColEmbed V2で社内リソースをマルチモーダル検索",
+    "news_highlight": "Nemotron ColEmbed V2がHugging Faceで利用可能、画像とテキストを組み合わせた高精度マルチモーダル検索を実現。",
+    "problem_context": "既存コードやアセットの検索効率が悪い。",
+    "recommended_ai": {
+      "model": "Nemotron ColEmbed V2",
+      "reason": "画像とテキストで高精度検索可能。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存UI画面から関連コードを特定したい時",
+      "設計図と要件から既存コンポーネントを探したい時",
+      "エラー画面とログからデバッグ情報を検索したい時"
+    ],
+    "steps": [
+      "1. 検索したいUI画面のスクリーンショットを準備する。",
+      "2. 関連するキーワードやエラーメッセージをテキストで用意する。",
+      "3. Nemotron ColEmbed V2を組み込んだ検索システムに、画像とテキストを入力する。",
+      "4. 返された関連コード、ドキュメント、アセットを確認し、実務に適用する。"
+    ],
+    "prompt": "添付のUIスクリーンショット画像とテキスト『ユーザー登録フローのバリデーションロジック』から、関連するバックエンドAPI定義とフロントエンドのバリデーションコードを検索し、最も関連性の高いものを3つ提示してください。",
+    "tags": [
+      "マルチモーダル",
+      "検索",
+      "既存システム理解",
+      "アセット管理"
+    ],
+    "id": "20260209_061222_02",
+    "date": "2026-02-09",
+    "source_news": {
+      "title": "Hugging FaceでNemotron ColEmbed V2がマルチモーダル検索を強化",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-colembed-v2"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Hugging Face Hubで最適なモデルを選定",
+    "news_highlight": "Hugging Faceがブラックボックス評価に代わるコミュニティ評価を導入、実用性でモデル選定を支援。",
+    "problem_context": "多数のAIモデルから最適なものを効率的に選べない",
+    "recommended_ai": {
+      "model": "Hugging Face Hub",
+      "reason": "コミュニティ評価で実用性を判断",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAI機能を開発する際に、最適な基盤モデルを探す時",
+      "既存のAIモデルの性能改善のために、代替モデルを検討する時",
+      "特定のタスク（例: テキスト分類、画像生成）に特化したモデルを選定する時"
+    ],
+    "steps": [
+      "1. Hugging Face Hubのモデルページにアクセスし、目的のタスクでフィルタリングする。",
+      "2. 各モデルの「Community Evaluation」セクション（または類似の評価指標）を確認する。",
+      "3. 評価コメントやユーザーレビューを参考に、実務での適用可能性や潜在的な課題を把握する。",
+      "4. 候補モデルを絞り込み、小規模なデータセットで実際にテストし、最終的な選定を行う。"
+    ],
+    "prompt": "Hugging Face Hubで選定した`bert-base-uncased`モデルを、Pythonの`transformers`ライブラリでテキスト分類タスクに利用するコードを生成してください。",
+    "tags": [
+      "モデル選定",
+      "Hugging Face",
+      "コミュニティ評価",
+      "LLM活用",
+      "Python"
+    ],
+    "id": "20260209_061253_03",
+    "date": "2026-02-09",
+    "source_news": {
+      "title": "Hugging Faceがブラックボックス評価に代わるコミュニティ評価を発表",
+      "url": "https://huggingface.co/blog/community-evals"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "OpenAI Frontierで開発ワークフロー自動化",
     "news_highlight": "OpenAI Frontierは、共有コンテキスト、権限管理、ガバナンスを備え、AIエージェント構築・管理を企業向けに提供。",
     "problem_context": "複数の開発タスク連携と自動化の複雑さ",
