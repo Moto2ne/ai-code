@@ -1,5 +1,126 @@
 [
   {
+    "title": "Nemotron ColEmbed V2で検索システムを改善",
+    "news_highlight": "Nemotron ColEmbed V2は検索精度15%向上、埋め込み生成速度2倍を実現",
+    "problem_context": "既存検索の精度不足やマルチモーダル活用が課題",
+    "recommended_ai": {
+      "model": "Nemotron ColEmbed V2",
+      "reason": "マルチモーダル検索に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "画像とテキストを組み合わせた商品検索機能の実装",
+      "社内ドキュメント検索で、図表とテキストを横断的に検索",
+      "ユーザー行動履歴からパーソナライズされたコンテンツ推薦",
+      "類似画像や関連テキストの自動タグ付けシステム構築"
+    ],
+    "steps": [
+      "Nemotron ColEmbed V2のAPIキーを取得",
+      "検索対象の画像とテキストデータを準備",
+      "APIで各データの埋め込みベクトルを生成",
+      "生成された埋め込みベクトルをベクトルデータベースに保存",
+      "ユーザーからの検索クエリ（テキスト/画像）の埋め込みを生成",
+      "ベクトルデータベースで類似度検索を実行し、結果を提示"
+    ],
+    "prompt": "ユーザーが入力したテキストクエリと、アップロードされた画像を組み合わせて、最も関連性の高い商品情報を検索し、その結果をJSON形式で返してください。",
+    "tags": [
+      "マルチモーダル",
+      "検索",
+      "埋め込み",
+      "レコメンデーション"
+    ],
+    "id": "20260210_061820_01",
+    "date": "2026-02-10",
+    "source_news": {
+      "title": "マルチモーダル検索モデルNemotron ColEmbed V2発表",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-colembed-v2"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "GPT-5で実験コードを最適化",
+    "news_highlight": "GPT-5とクラウド自動化で細胞フリータンパク質合成コストを40%削減",
+    "problem_context": "実験パラメータの最適化に時間がかかる",
+    "recommended_ai": {
+      "model": "GPT-5",
+      "reason": "自律的な閉ループ実験で最適化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "アルゴリズムのパラメータを最適化したい時",
+      "A/Bテストの設計を効率化したい時",
+      "機械学習モデルのハイパーパラメータ調整を自動化したい時"
+    ],
+    "steps": [
+      "1. 最適化したいコードの目標と評価指標を定義する",
+      "2. 現在のコードとパラメータ範囲をAIに提示する",
+      "3. AIが提案するパラメータ変更案を適用し実行する",
+      "4. 実行結果をAIにフィードバックし、次の最適化を依頼する",
+      "5. 目標達成まで3-4を繰り返す"
+    ],
+    "prompt": "与えられたPython関数のパフォーマンスを最大化するパラメータの組み合わせを提案してください。評価指標は実行時間です。現在のパラメータと過去の実行結果を参考にしてください。",
+    "tags": [
+      "コード最適化",
+      "自動実験",
+      "パラメータ調整",
+      "AIアシスタント"
+    ],
+    "id": "20260210_061845_02",
+    "date": "2026-02-10",
+    "source_news": {
+      "title": "GPT-5が細胞フリータンパク質合成コストを40%削減",
+      "url": "https://openai.com/index/gpt-5-lowers-protein-synthesis-cost"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Transformers.js v4で推論性能を比較検証",
+    "news_highlight": "Transformers.js v4プレビュー版がNPM公開、Web環境での推論最適化を検証可能",
+    "problem_context": "WebアプリでのAIモデル推論のパフォーマンス課題",
+    "recommended_ai": {
+      "model": "Transformers.js v4",
+      "reason": "最新のWeb推論最適化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存のWeb AI機能をv4へ移行する際の性能評価",
+      "新しいAIモデルをWebアプリに組み込む前の性能検証",
+      "WebブラウザでのAI推論の応答速度を改善したい時"
+    ],
+    "steps": [
+      "既存のTransformers.js v3プロジェクトを用意する。",
+      "v4プレビュー版をインストールし、同じモデルで推論コードを記述する。",
+      "v3とv4それぞれの推論実行時間を計測し、パフォーマンスを比較する。",
+      "結果を基に、v4への移行計画や新機能導入の可否を検討する。"
+    ],
+    "prompt": "Transformers.js v3とv4で、'Xenova/distilbert-base-uncased-finetuned-sst-2-english'モデルの感情分析タスクをそれぞれ100回実行し、平均推論時間を計測するJavaScriptコードを生成してください。",
+    "tags": [
+      "Web AI",
+      "パフォーマンス",
+      "JavaScript",
+      "プロトタイピング"
+    ],
+    "id": "20260210_061911_03",
+    "date": "2026-02-10",
+    "source_news": {
+      "title": "Transformers.js v4プレビュー版がNPMで公開",
+      "url": "https://huggingface.co/blog/transformersjs-v4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Holo2でUI多言語テキスト生成",
     "news_highlight": "Holo2モデルがHugging FaceでUIローカライゼーション分野でトップ評価を獲得。",
     "problem_context": "UIテキストの多言語対応が非効率。",
