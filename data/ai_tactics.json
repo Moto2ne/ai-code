@@ -1,5 +1,122 @@
 [
   {
+    "title": "Transformers.js v4でブラウザAI推論",
+    "news_highlight": "Transformers.js v4がNPM公開、ブラウザ/Node.jsでAIモデルを直接実行可能に。",
+    "problem_context": "WebアプリでAIモデルを直接実行したい。",
+    "recommended_ai": {
+      "model": "Transformers.js v4",
+      "reason": "ブラウザ/Node.jsでAI実行可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Webアプリケーションでリアルタイムなテキスト処理を行いたい時",
+      "ユーザーのデバイス上で完結するAI機能を提供し、サーバー負荷を軽減したい時",
+      "オフライン環境でも動作するAI機能をWebアプリに組み込みたい時"
+    ],
+    "steps": [
+      "1. `npm install @xenova/transformers` を実行し、Transformers.jsをプロジェクトに追加する。",
+      "2. 実行したいAIモデル（例: 感情分析モデル）をHugging Face Hubから選定する。",
+      "3. JavaScriptコードで `pipeline` 関数をインポートし、モデルをロードして推論を実行する。",
+      "4. WebブラウザまたはNode.js環境でアプリケーションを実行し、AI機能を確認する。"
+    ],
+    "prompt": "Transformers.js v4を使って、ブラウザ上でテキストの感情分析を行うJavaScriptコードを生成してください。入力フィールドと結果表示を含めてください。",
+    "tags": [
+      "Web開発",
+      "AI推論",
+      "JavaScript",
+      "ブラウザAI"
+    ],
+    "id": "20260212_061740_01",
+    "date": "2026-02-12",
+    "source_news": {
+      "title": "Transformers.js v4がNPM公開、ブラウザ/Node.jsでAI実行。",
+      "url": "https://huggingface.co/blog/transformersjs-v4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "BedrockでIoT通知フィルタリングロジック生成",
+    "news_highlight": "SwannがBedrockでIoTに生成AI提供、インテリジェント通知フィルタリングとコスト最適化を実現。",
+    "problem_context": "IoTデバイスからの大量通知を効率的に処理したい",
+    "recommended_ai": {
+      "model": "Amazon Bedrock",
+      "reason": "IoT通知フィルタリングとコスト最適化に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "IoTデバイスの異常検知ルールを迅速に作成したい時",
+      "大量のIoTアラートから重要なものだけを抽出するロジックを設計する時",
+      "通知システムの運用コストを削減するためのフィルタリング戦略を検討する時"
+    ],
+    "steps": [
+      "Bedrockコンソールで新しいモデル（例: Claude 3 Sonnet）を選択する。",
+      "IoTデバイスから受信する通知データのサンプル（JSON形式など）を準備する。",
+      "Bedrockのプロンプトに、フィルタリングしたい条件と出力形式を具体的に記述する。",
+      "生成されたフィルタリングロジック（Pythonスクリプトなど）をテスト環境で検証し、デプロイする。"
+    ],
+    "prompt": "IoTデバイスのセンサーデータ（JSON形式）から、温度が30度以上、湿度が80%以上の異常通知のみを抽出するPython関数を生成してください。",
+    "tags": [
+      "IoT",
+      "Bedrock",
+      "通知フィルタリング",
+      "コスト最適化",
+      "Python"
+    ],
+    "id": "20260212_061806_02",
+    "date": "2026-02-12",
+    "source_news": {
+      "title": "SwannがBedrockでIoTに生成AI提供、コスト最適化も。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/swann-provides-generative-ai-to-millions-of-iot-devices-using-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Nemotron 3 Nano 30B MoEでコード生成",
+    "news_highlight": "Nemotron 3 Nano 30B MoE（3B active parameters）がSageMaker JumpStartでGA",
+    "problem_context": "新規機能のコード生成を効率化したい",
+    "recommended_ai": {
+      "model": "NVIDIA Nemotron 3 Nano 30B MoE",
+      "reason": "SageMaker JumpStartで手軽に利用",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規APIエンドポイントのコードを生成したい時",
+      "特定の機能を持つUIコンポーネントを生成したい時",
+      "既存コードに合わせたテストコードを生成したい時"
+    ],
+    "steps": [
+      "SageMaker JumpStartでNemotron 3 Nano 30B MoEをデプロイ",
+      "デプロイしたエンドポイントにプロンプトを送信",
+      "生成されたコードを開発環境にコピー",
+      "コードをテストし、必要に応じて修正"
+    ],
+    "prompt": "PythonとFastAPIを使って、ユーザー登録APIを生成してください。メールアドレスとパスワードを受け取り、データベースに保存する処理を含めてください。",
+    "tags": [
+      "コード生成",
+      "API開発",
+      "SageMaker"
+    ],
+    "id": "20260212_061832_03",
+    "date": "2026-02-12",
+    "source_news": {
+      "title": "Nemotron 3 Nano 30B MoEがSageMaker JumpStartで利用可能。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-nano-30b-is-now-available-in-amazon-sagemaker-jumpstart/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5で実験計画を最適化",
     "news_highlight": "GPT-5と自律ラボが閉ループ実験でタンパク質合成コストを40%削減",
     "problem_context": "R&Dプロセスの効率化とコスト削減",
