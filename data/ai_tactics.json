@@ -1,5 +1,121 @@
 [
   {
+    "title": "GPT-5.3-Codex-Sparkでリアルタイムコード生成",
+    "news_highlight": "GPT-5.3-Codex-Sparkはリアルタイムコード生成15倍高速化、128kコンテキスト対応",
+    "problem_context": "開発速度向上と大規模コードの理解",
+    "recommended_ai": {
+      "model": "GPT-5.3-Codex-Spark",
+      "reason": "リアルタイム性と大規模コンテキスト",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能開発時の高速なプロトタイピング",
+      "既存のレガシーコードベースのリファクタリング",
+      "複雑なエラー発生時の即時デバッグ支援"
+    ],
+    "steps": [
+      "1. 新規ファイルに実装したい機能の概要をコメントで記述",
+      "2. GPT-5.3-Codex-Sparkにリアルタイムでコード生成を依頼",
+      "3. 生成されたコードをIDEで確認し、必要に応じて修正・追記",
+      "4. 生成されたコードをテストし、動作を確認"
+    ],
+    "prompt": "TypeScriptとReactで、ユーザー認証機能を持つダッシュボードコンポーネントを生成してください。ログイン状態管理も考慮してください。",
+    "tags": [
+      "コード生成",
+      "リアルタイム",
+      "大規模コンテキスト",
+      "開発効率"
+    ],
+    "id": "20260213_061453_01",
+    "date": "2026-02-13",
+    "source_news": {
+      "title": "GPT-5.3-Codex-Spark発表、リアルタイムコード生成15倍高速化。",
+      "url": "https://openai.com/index/introducing-gpt-5-3-codex-spark"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "OpenAIモデルで多言語UIテキスト生成",
+    "news_highlight": "OpenAIがAIの安全性維持しつつローカライズする手法を公開。多言語対応、地域法規制、文化適応を強化。",
+    "problem_context": "多言語対応アプリのUIテキスト作成・レビュー",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "多言語対応と文脈理解に優れる",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のUIテキストを多言語で作成する時",
+      "既存UIテキストの地域ごとの文化適合性をレビューする時",
+      "法規制に準拠した免責事項やプライバシーポリシーの草案を作成する時"
+    ],
+    "steps": [
+      "1. ターゲット言語と地域を指定する",
+      "2. 既存のUIテキストまたは機能要件をAIに提示する",
+      "3. AIが生成したテキスト案をレビューし、必要に応じて修正を指示する",
+      "4. 最終的なテキストを開発に組み込み、QAで確認する"
+    ],
+    "prompt": "以下の日本語UIテキストを、英語（米国向け）とドイツ語（ドイツ向け）に翻訳し、各地域の文化や慣習に合わせた自然な表現に調整してください。安全性に関する注意点も考慮してください。「設定を保存しました」",
+    "tags": [
+      "ローカライズ",
+      "多言語対応",
+      "UI/UX",
+      "テキスト生成"
+    ],
+    "id": "20260213_061848_02",
+    "date": "2026-02-13",
+    "source_news": {
+      "title": "OpenAI、AIの安全性維持しつつローカライズする手法を公開。",
+      "url": "https://openai.com/index/our-approach-to-localization"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Gemini 3 Deep Thinkで難解バグ解析",
+    "news_highlight": "Googleが新モデルGemini 3 Deep Thinkを発表、複雑な問題解決能力を強化",
+    "problem_context": "複雑なバグの根本原因特定に時間がかかる",
+    "recommended_ai": {
+      "model": "Gemini 3 Deep Think",
+      "reason": "高度な推論で複雑な問題を解決",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "本番環境で再現しない複雑なバグに直面した時",
+      "複数のマイクロサービスにまたがる連携バグを調査する時",
+      "レガシーコードベースの予期せぬ挙動を解析する時"
+    ],
+    "steps": [
+      "1. バグが発生したコードブロックと関連するログを収集する",
+      "2. エラーメッセージ、スタックトレース、再現手順をまとめる",
+      "3. Gemini 3 Deep Thinkにそれらの情報を入力し、バグの原因と修正案を依頼する",
+      "4. 提案された修正案を検証し、テスト環境で動作確認する"
+    ],
+    "prompt": "以下のコードとログから、バグの根本原因を特定し、具体的な修正案を提案してください。コード: `[コード]` ログ: `[ログ]` エラー: `[エラーメッセージ]`",
+    "tags": [
+      "デバッグ",
+      "バグ解析",
+      "トラブルシューティング"
+    ],
+    "id": "20260213_061915_03",
+    "date": "2026-02-13",
+    "source_news": {
+      "title": "Google、新モデルGemini 3 Deep Thinkを発表。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
     "title": "Transformers.js v4でブラウザAI推論",
     "news_highlight": "Transformers.js v4がNPM公開、ブラウザ/Node.jsでAIモデルを直接実行可能に。",
     "problem_context": "WebアプリでAIモデルを直接実行したい。",
