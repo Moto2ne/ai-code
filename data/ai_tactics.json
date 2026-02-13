@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-5.3-Codex-Sparkで高速コード生成",
+    "news_highlight": "GPT-5.3-Codex-Sparkはコード生成15倍高速化、128kコンテキスト対応のリアルタイムモデル",
+    "problem_context": "開発速度の向上と初期コードの品質確保",
+    "recommended_ai": {
+      "model": "GPT-5.3-Codex-Spark",
+      "reason": "高速コード生成と大規模コンテキスト",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能開発で初期コードを素早く作成したい時",
+      "既存コードのリファクタリング案を検討したい時",
+      "特定のアルゴリズム実装で最適なコードパターンを知りたい時"
+    ],
+    "steps": [
+      "1. ChatGPT ProでGPT-5.3-Codex-Sparkを選択する",
+      "2. 実装したい機能の要件を具体的に記述する",
+      "3. 生成されたコードをIDEに貼り付け、動作確認する",
+      "4. 必要に応じて修正や追加の指示を行う"
+    ],
+    "prompt": "PythonでREST APIのエンドポイントを実装してください。ユーザー登録とログイン機能を含み、FastAPIを使用してください。",
+    "tags": [
+      "コード生成",
+      "リアルタイム",
+      "高速化",
+      "開発効率"
+    ],
+    "id": "20260214_061643_01",
+    "date": "2026-02-14",
+    "source_news": {
+      "title": "OpenAIがGPT-5.3-Codex-Sparkを発表、コード生成15倍高速化",
+      "url": "https://openai.com/index/introducing-gpt-5-3-codex-spark"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Gemini 3 Deep ThinkでAPI設計",
+    "news_highlight": "Gemini 3 Deep Thinkは複雑な工学課題解決に特化、高度な推論で設計を支援",
+    "problem_context": "複雑なシステム設計の課題を解決したい",
+    "recommended_ai": {
+      "model": "Gemini 3 Deep Think",
+      "reason": "高度な推論能力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規マイクロサービスAPIの設計を検討する時",
+      "既存APIのパフォーマンス改善策を検討する時",
+      "複雑なビジネスロジックをAPIに落とし込む時"
+    ],
+    "steps": [
+      "設計したいAPIの要件を整理する。",
+      "既存の関連するシステム構成図やデータモデルを用意する。",
+      "AIに要件と既存情報を提示し、API設計案を依頼する。",
+      "提案された設計案をレビューし、必要に応じて修正・詳細化する。"
+    ],
+    "prompt": "ユーザー管理APIのRESTful設計案を提案してください。認証方式、エンドポイント、リクエスト/レスポンスのJSONスキーマ、エラーハンドリングを含めてください。パフォーマンスとセキュリティを考慮してください。",
+    "tags": [
+      "設計",
+      "API",
+      "アーキテクチャ",
+      "最適化"
+    ],
+    "id": "20260214_061709_02",
+    "date": "2026-02-14",
+    "source_news": {
+      "title": "Googleが新モデルGemini 3 Deep Thinkを発表、研究・工学を推進",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "Nemotron 3 Nano 30BでPythonコード生成",
+    "news_highlight": "NVIDIA Nemotron 3 Nano 30BがSageMaker JumpStartに登場。3Bアクティブパラメータで高速推論が可能。",
+    "problem_context": "小規模モデルで高速なコード生成・要約が必要",
+    "recommended_ai": {
+      "model": "NVIDIA Nemotron 3 Nano 30B",
+      "reason": "3Bパラメータで高速推論",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "開発中の機能のコードスニペットを生成したい時",
+      "既存コードの特定関数のドキュメントを自動生成したい時",
+      "プルリクエストの変更点を簡潔に要約したい時"
+    ],
+    "steps": [
+      "1. AWS SageMaker JumpStartでNemotron 3 Nano 30Bをデプロイ",
+      "2. 推論エンドポイントのURLと認証情報を取得",
+      "3. 開発環境からAPIリクエストを送信し、コード生成を依頼",
+      "4. 生成されたコードをテスト環境で検証し統合"
+    ],
+    "prompt": "PythonでREST APIのエンドポイントを実装するコードを生成してください。ユーザー認証とデータ取得機能を含めてください。",
+    "tags": [
+      "コード生成",
+      "SageMaker",
+      "LLM",
+      "Python"
+    ],
+    "id": "20260214_061735_03",
+    "date": "2026-02-14",
+    "source_news": {
+      "title": "NVIDIA Nemotron 3 Nano 30BがAWS SageMaker JumpStartに登場",
+      "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-nano-30b-is-now-available-in-amazon-sagemaker-jumpstart/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5.3-Codex-Sparkでリアルタイムコード生成",
     "news_highlight": "GPT-5.3-Codex-Sparkはリアルタイムコード生成15倍高速化、128kコンテキスト対応",
     "problem_context": "開発速度向上と大規模コードの理解",
