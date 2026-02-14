@@ -1,6 +1,123 @@
 [
   {
     "title": "GPT-5.3-Codex-Sparkで高速コード生成",
+    "news_highlight": "GPT-5.3-Codex-Sparkはコード生成15倍高速化、128kコンテキスト対応",
+    "problem_context": "大規模コードベースでの開発速度向上",
+    "recommended_ai": {
+      "model": "GPT-5.3-Codex-Spark",
+      "reason": "高速生成と大規模コンテキスト",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のプロトタイプを素早く作成したい時",
+      "既存のレガシーコードを新しい技術スタックに移行する際",
+      "複雑なアルゴリズムの実装で初期コードのたたき台が欲しい時"
+    ],
+    "steps": [
+      "1. 新規機能の要件を具体的に定義する",
+      "2. 定義した要件と使用する技術スタックをAIに提示する",
+      "3. AIが生成したコードを開発環境にコピー＆ペーストする",
+      "4. 生成コードをテストし、必要に応じて手動で調整・最適化する"
+    ],
+    "prompt": "PythonとFastAPIを使って、ユーザー認証（登録、ログイン、ログアウト）のAPIエンドポイントを実装してください。JWT認証を使用し、データベースはPostgreSQLを想定します。",
+    "tags": [
+      "コード生成",
+      "プロトタイピング",
+      "高速開発"
+    ],
+    "id": "20260215_060957_01",
+    "date": "2026-02-15",
+    "source_news": {
+      "title": "GPT-5.3-Codex-Spark発表、コード生成15倍高速化、128kコンテキスト。",
+      "url": "https://openai.com/index/introducing-gpt-5-3-codex-spark"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Hugging Face Transformers.js v4でWebアプリにAI機能実装",
+    "news_highlight": "Transformers.js v4がNPM公開、JS/TSでWebGPU/WASM活用しオフラインAI推論可能に。",
+    "problem_context": "WebアプリにAI機能を低遅延で組み込みたい。",
+    "recommended_ai": {
+      "model": "Hugging Face Transformers.js v4",
+      "reason": "JS/TSで高速なオフライン推論が可能。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザー入力テキストの感情分析をクライアントサイドで実行したい時",
+      "Node.jsバックエンドでテキスト要約APIをオフラインで提供したい時",
+      "Webブラウザで画像内のオブジェクトをリアルタイムで検出したい時"
+    ],
+    "steps": [
+      "`npm install @xenova/transformers`でライブラリをプロジェクトに追加。",
+      "利用したいモデル（例: `Xenova/distilbert-base-uncased-finetuned-sst-2-english`）を特定。",
+      "JavaScript/TypeScriptコードで`pipeline`関数をインポートしモデルをロード。",
+      "入力データを与えて`pipeline`を実行し、推論結果を取得。"
+    ],
+    "prompt": "Hugging Face Transformers.js v4を使って、ユーザーが入力した日本語テキストの感情をポジティブ/ネガティブで判定するWebフロントエンドコードをReactで作成してください。",
+    "tags": [
+      "JavaScript",
+      "TypeScript",
+      "WebAI",
+      "オフラインAI",
+      "フロントエンド"
+    ],
+    "id": "20260215_061022_02",
+    "date": "2026-02-15",
+    "source_news": {
+      "title": "Hugging Face Transformers.js v4がNPMで公開。",
+      "url": "https://huggingface.co/blog/transformersjs-v4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Codexで既存コードのテストを自動生成",
+    "news_highlight": "OpenAIがCodex/SoraのAPIアクセスをスケーリング、レート制限・使用量追跡・クレジットで継続利用可能に。",
+    "problem_context": "既存コードのテストカバレッジ向上",
+    "recommended_ai": {
+      "model": "Codex",
+      "reason": "安定したAPIアクセスで大規模コードに対応",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "レガシーコードにテストを追加したい時",
+      "新機能開発でテストコード作成を効率化したい時",
+      "プルリクエスト前にテストの網羅性を高めたい時"
+    ],
+    "steps": [
+      "テストを追加したい関数またはクラスのコードをコピーする。",
+      "そのコードの依存関係や期待される動作を特定する。",
+      "AIにプロンプトを貼り付け、テストコード生成を依頼する。",
+      "生成されたテストコードをプロジェクトに追加し、実行して検証する。"
+    ],
+    "prompt": "以下のPython関数に対して、pytestフレームワークを使用した網羅的なテストコードを生成してください。特にエッジケースとエラーハンドリングを考慮してください。",
+    "tags": [
+      "コード生成",
+      "テスト",
+      "Python",
+      "API"
+    ],
+    "id": "20260215_061052_03",
+    "date": "2026-02-15",
+    "source_news": {
+      "title": "OpenAI、Codex/SoraのAPIアクセスをスケーリングする新システム。",
+      "url": "https://openai.com/index/beyond-rate-limits"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
+    "title": "GPT-5.3-Codex-Sparkで高速コード生成",
     "news_highlight": "GPT-5.3-Codex-Sparkはコード生成15倍高速化、128kコンテキスト対応のリアルタイムモデル",
     "problem_context": "開発速度の向上と初期コードの品質確保",
     "recommended_ai": {
