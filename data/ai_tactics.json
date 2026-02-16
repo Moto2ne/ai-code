@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-5.3-Codex-Sparkで高速コード生成",
+    "news_highlight": "GPT-5.3-Codex-Sparkは15倍高速なコード生成、128kコンテキスト対応。",
+    "problem_context": "開発速度向上と大規模コード理解の課題解決。",
+    "recommended_ai": {
+      "model": "GPT-5.3-Codex-Spark",
+      "reason": "リアルタイム性と高速生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい機能のプロトタイプを素早く作成したい時",
+      "既存の複雑なコードベースに新機能を追加する時",
+      "大規模なリファクタリングでコードの整合性を保ちたい時"
+    ],
+    "steps": [
+      "1. 新規機能の要件を具体的に定義する。",
+      "2. 関連する既存コード（最大128kトークン）をコピーする。",
+      "3. AIに要件と既存コードを渡し、新規機能のコード生成を依頼する。",
+      "4. 生成されたコードをレビューし、テスト環境で動作確認する。"
+    ],
+    "prompt": "以下の要件と既存のTypeScriptコードを考慮し、新しいユーザー認証機能を実装してください。既存コード: [ここに既存コードを貼り付け]。要件: ユーザー名とパスワードによるログイン、トークンベースの認証。",
+    "tags": [
+      "コード生成",
+      "高速開発",
+      "プロトタイピング",
+      "大規模コンテキスト"
+    ],
+    "id": "20260217_061149_01",
+    "date": "2026-02-17",
+    "source_news": {
+      "title": "OpenAIが新コーディングモデルGPT-5.3-Codex-Sparkを発表、15倍高速化。",
+      "url": "https://openai.com/index/introducing-gpt-5-3-codex-spark"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Gemini 3 Deep Thinkで複雑アルゴリズム設計",
+    "news_highlight": "複雑な科学・工学課題の解決を加速、高度な推論能力で研究推進。",
+    "problem_context": "高度な推論が必要なアルゴリズム設計の効率化",
+    "recommended_ai": {
+      "model": "Gemini 3 Deep Think",
+      "reason": "高度な推論と問題解決能力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい研究分野でのアルゴリズム設計を始める時",
+      "既存の複雑なアルゴリズムの性能改善を検討する時",
+      "複数の技術要素が絡むシステム設計の初期段階"
+    ],
+    "steps": [
+      "1. 解決したい科学・工学的な問題と制約条件を明確にする。",
+      "2. 問題の概要、入力、期待される出力、性能要件をAIに提示する。",
+      "3. AIが提案したアルゴリズムの設計思想と主要ロジックを確認する。",
+      "4. 提案されたアルゴリズムを基にプロトタイプ実装し、検証する。"
+    ],
+    "prompt": "与えられた制約と要件に基づき、効率的でスケーラブルなデータ処理アルゴリズムを設計してください。Pythonでの実装例と時間計算量も提示してください。",
+    "tags": [
+      "アルゴリズム設計",
+      "研究開発",
+      "Python",
+      "最適化"
+    ],
+    "id": "20260217_061213_02",
+    "date": "2026-02-17",
+    "source_news": {
+      "title": "Googleが新AIモデルGemini 3 Deep Thinkを発表、科学・研究・工学を推進。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "Nemotron 3 Nano 30BでPythonコード生成",
+    "news_highlight": "NVIDIA Nemotron 3 Nano 30B (3Bパラメータ)がSageMaker JumpStartで利用可能に。",
+    "problem_context": "定型的なPythonコード作成の効率化",
+    "recommended_ai": {
+      "model": "NVIDIA Nemotron 3 Nano 30B",
+      "reason": "SageMaker JumpStartで手軽に利用可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能開発でボイラープレートコードが必要な時",
+      "既存のPythonスクリプトを改善したい時",
+      "単体テストコードを効率的に書きたい時"
+    ],
+    "steps": [
+      "1. SageMaker JumpStartでNemotron 3 Nano 30Bをデプロイ",
+      "2. デプロイされたエンドポイントの推論コードをコピー",
+      "3. 開発環境でプロンプトと推論コードを実行",
+      "4. 生成されたコードを検証し、プロジェクトに統合"
+    ],
+    "prompt": "Pythonで、指定されたS3バケットからファイルをダウンロードし、ローカルに保存する関数を記述してください。エラーハンドリングも追加してください。",
+    "tags": [
+      "コード生成",
+      "SageMaker",
+      "LLM",
+      "Python"
+    ],
+    "id": "20260217_061238_03",
+    "date": "2026-02-17",
+    "source_news": {
+      "title": "NVIDIA Nemotron 3 Nano 30BがAmazon SageMaker JumpStartで利用可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-nano-30b-is-now-available-in-amazon-sagemaker-jumpstart/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Hugging Face Transformers.js v4でWebアプリにAI機能追加",
     "news_highlight": "Transformers.js v4がNPM公開、ブラウザ/Node.jsでHugging Faceモデルを直接実行可能に。",
     "problem_context": "WebアプリにAI機能を低コスト・高速で組み込みたい。",
