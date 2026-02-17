@@ -1,5 +1,124 @@
 [
   {
+    "title": "Bedrock AgentCoreで自律エージェント設計",
+    "news_highlight": "Bedrock AgentCoreがcontext message strategyで自律エージェントの継続通信を維持",
+    "problem_context": "自律型AIエージェントのセッション維持が困難",
+    "recommended_ai": {
+      "model": "Bedrock AgentCore",
+      "reason": "長期稼働エージェント構築に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客サポートチャットボットのセッション維持",
+      "長期プロジェクト管理エージェントの状態管理",
+      "複雑なワークフロー自動化エージェントの継続実行"
+    ],
+    "steps": [
+      "1. Bedrock AgentCoreで新規エージェントプロジェクトを作成",
+      "2. エージェントの目的と長期的な状態管理要件を定義",
+      "3. context message strategyを考慮したエージェントのステップとツールを設計",
+      "4. 継続的なセッション維持のためのメッセージングロジックを実装",
+      "5. エージェントの長期稼働テストとデバッグ"
+    ],
+    "prompt": "Bedrock AgentCoreで顧客サポート用の自律型AIエージェントを設計してください。context message strategyを用いて、ユーザーとの長期的な会話状態を維持するロジックを含めてください。",
+    "tags": [
+      "自律型AI",
+      "エージェント",
+      "Bedrock",
+      "状態管理",
+      "アーキテクチャ設計"
+    ],
+    "id": "20260218_061630_01",
+    "date": "2026-02-18",
+    "source_news": {
+      "title": "Bedrock AgentCoreで長期間稼働する自律型AIエージェント構築法",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-long-running-mcp-servers-on-amazon-bedrock-agentcore-with-strands-agents-integration/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Bedrock AgentCoreでWebスクレイピング自動化",
+    "news_highlight": "Bedrock AgentCoreがプロキシ、ブラウザプロファイル、拡張機能でWebブラウジングを詳細制御。",
+    "problem_context": "複雑なWebサイトからのデータ抽出が困難。",
+    "recommended_ai": {
+      "model": "Bedrock AgentCore",
+      "reason": "ブラウザ制御機能でWeb操作を自動化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "競合サイトからの価格情報収集",
+      "自社Webサービスの定期的なUIテスト",
+      "社内システムのデータ入力自動化"
+    ],
+    "steps": [
+      "1. Bedrock AgentCoreでエージェントを作成する。",
+      "2. 必要なWebサイトにアクセスするためのプロキシを設定する。",
+      "3. データ抽出用のブラウザ拡張機能をエージェントに組み込む。",
+      "4. 抽出したいデータ構造と操作手順をエージェントに指示する。"
+    ],
+    "prompt": "ECサイトから商品名、価格、在庫状況を抽出し、CSV形式で出力してください。ログインが必要な場合、提供された認証情報を使用し、特定のブラウザプロファイルで実行してください。",
+    "tags": [
+      "Webスクレイピング",
+      "自動化",
+      "データ抽出",
+      "テスト自動化"
+    ],
+    "id": "20260218_061656_02",
+    "date": "2026-02-18",
+    "source_news": {
+      "title": "Bedrock AgentCoreでAIエージェントのブラウジングを詳細制御",
+      "url": "https://aws.amazon.com/blogs/machine-learning/customize-ai-agent-browsing-with-proxies-profiles-and-extensions-in-amazon-bedrock-agentcore-browser/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "OpenEnvでAIエージェントの動作検証",
+    "news_highlight": "OpenEnvはツール利用AIエージェントの実環境での動作を評価する新手法",
+    "problem_context": "AIエージェントの実環境での信頼性検証が困難",
+    "recommended_ai": {
+      "model": "OpenEnv",
+      "reason": "AIエージェントの動作を客観的に評価",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "開発中のAIエージェントが本番環境で期待通りに動作するか確認したい時",
+      "AIエージェントが特定のツール連携でエラーを出す原因を特定したい時",
+      "複数のAIエージェント候補から実用性の高いものを選定したい時"
+    ],
+    "steps": [
+      "1. OpenEnvの評価環境をセットアップする。",
+      "2. 評価したいAIエージェントと、利用するツール群をOpenEnvに登録する。",
+      "3. AIエージェントに実行させたいタスクシナリオを定義する。",
+      "4. OpenEnvで評価を実行し、エージェントのツール利用ログと結果を分析する。"
+    ],
+    "prompt": "OpenEnvで、AIエージェントがGitリポジトリからコードをクローンし、指定されたブランチに切り替えるタスクを評価してください。",
+    "tags": [
+      "AIエージェント",
+      "テスト",
+      "評価",
+      "デバッグ"
+    ],
+    "id": "20260218_061724_03",
+    "date": "2026-02-18",
+    "source_news": {
+      "title": "ツール利用AIエージェントの実環境での評価手法OpenEnv",
+      "url": "https://huggingface.co/blog/openenv-turing"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GPT-5.3-Codex-Sparkで高速コード生成",
     "news_highlight": "GPT-5.3-Codex-Sparkは15倍高速なコード生成、128kコンテキスト対応。",
     "problem_context": "開発速度向上と大規模コード理解の課題解決。",
