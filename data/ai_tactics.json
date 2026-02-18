@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-5.3-Codex-Sparkで高速コード生成",
+    "news_highlight": "GPT-5.3-Codex-Sparkはコード生成15倍高速化、128kコンテキスト対応",
+    "problem_context": "開発速度の向上と複雑なコード生成",
+    "recommended_ai": {
+      "model": "GPT-5.3-Codex-Spark",
+      "reason": "高速生成と大コンテキスト",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のプロトタイプを素早く作成したい時",
+      "既存コードベースに合わせた新しいコンポーネントを生成したい時",
+      "複雑なアルゴリズムの実装で詰まった時"
+    ],
+    "steps": [
+      "新規機能の要件を具体的に記述する",
+      "GPT-5.3-Codex-Sparkに要件を貼り付け、コード生成を依頼する",
+      "生成されたコードをIDEにコピーし、動作確認を行う",
+      "必要に応じて、さらに具体的な指示を与えてコードを修正・改善する"
+    ],
+    "prompt": "PythonとFastAPIを使って、ユーザー認証機能（登録、ログイン、ログアウト）を持つAPIエンドポイントを実装してください。データベースはPostgreSQLを使用し、SQLAlchemy ORMで操作してください。",
+    "tags": [
+      "コード生成",
+      "開発効率化",
+      "リアルタイムコーディング",
+      "大規模コンテキスト"
+    ],
+    "id": "20260219_061820_01",
+    "date": "2026-02-19",
+    "source_news": {
+      "title": "GPT-5.3-Codex-Spark発表、コード生成15倍高速化",
+      "url": "https://openai.com/index/introducing-gpt-5-3-codex-spark"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "NVIDIA Nemotron 2 Nano 9Bで組み込み日本語処理",
+    "news_highlight": "NVIDIA Nemotron 2 Nano 9BはEdge AI向け小型日本語LLMで、デバイス上推論に対応。",
+    "problem_context": "組み込みデバイスの日本語処理をオフライン化したい",
+    "recommended_ai": {
+      "model": "NVIDIA Nemotron 2 Nano 9B",
+      "reason": "Edge AIと日本語処理に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "オフラインで動作する組み込みデバイスの日本語UIを開発する時",
+      "IoTデバイスで日本語の音声コマンドをローカルで解析するロジックを設計する時",
+      "プライバシー要件の高い環境でデバイス内完結の日本語テキスト処理を実装する時"
+    ],
+    "steps": [
+      "Nemotron 2 Nano 9Bをターゲットデバイスにデプロイする環境を準備する",
+      "処理したい日本語テキストと期待する出力形式を具体的に定義する",
+      "定義した要件に基づき、AIにPythonでの処理ロジック生成を依頼する",
+      "生成されたコードをデバイス上でテストし、パフォーマンスと精度を評価する"
+    ],
+    "prompt": "組み込みLinuxデバイス向けに、日本語のユーザー入力から特定のコマンドを抽出するPythonコードを生成してください。入力例: '電気を消して'、出力例: {'action': 'turn_off', 'target': 'light'}",
+    "tags": [
+      "Edge AI",
+      "組み込み",
+      "日本語LLM",
+      "Python"
+    ],
+    "id": "20260219_061847_02",
+    "date": "2026-02-19",
+    "source_news": {
+      "title": "NVIDIA Nemotron 2 Nano 9B発表、Edge AI向け小型日本語LLM",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-nano-9b-v2-japanese-ja"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Claudeで大規模コード生成を高速化",
+    "news_highlight": "Codex/Claudeの推論速度が最大30%向上、大規模コード生成のレイテンシを短縮",
+    "problem_context": "複雑なコード生成の遅延とリソース消費",
+    "recommended_ai": {
+      "model": "Claude",
+      "reason": "長文処理とコード生成に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模な既存プロジェクトに新機能を追加する際",
+      "複雑なアルゴリズムの実装を検討する際",
+      "複数のファイルにまたがるリファクタリングを行う際"
+    ],
+    "steps": [
+      "既存のコードベースの関連ファイルをAIに提供する。",
+      "追加したい機能やリファクタリングの要件を具体的に記述する。",
+      "AIが生成したコードをレビューし、必要に応じて修正を指示する。",
+      "生成されたコードをテスト環境で検証する。"
+    ],
+    "prompt": "以下の既存コードベースに、ユーザー認証機能を実装してください。ユーザー登録、ログイン、パスワードリセットの各フローを含め、セキュリティを考慮した実装をお願いします。",
+    "tags": [
+      "コード生成",
+      "性能最適化",
+      "大規模開発",
+      "Claude"
+    ],
+    "id": "20260219_061914_03",
+    "date": "2026-02-19",
+    "source_news": {
+      "title": "Codex/Claude向けカスタムカーネルで性能最適化",
+      "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
     "title": "Bedrock AgentCoreで自律エージェント設計",
     "news_highlight": "Bedrock AgentCoreがcontext message strategyで自律エージェントの継続通信を維持",
     "problem_context": "自律型AIエージェントのセッション維持が困難",
