@@ -1,5 +1,122 @@
 [
   {
+    "title": "ChatGPTで機密コードのセキュリティレビュー",
+    "news_highlight": "ChatGPTにロックダウンモード導入、プロンプト攻撃・データ流出対策を強化",
+    "problem_context": "機密情報を扱うAI利用時の情報漏洩リスク低減",
+    "recommended_ai": {
+      "model": "ChatGPT",
+      "reason": "セキュリティ機能強化のため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "機密性の高いプロジェクトコードのセキュリティレビュー",
+      "個人情報を含むテストデータの生成仕様検討",
+      "顧客情報を含む要件定義書のセキュリティ分析"
+    ],
+    "steps": [
+      "ChatGPTのロックダウンモードが有効になっていることを確認する",
+      "レビューしたい機密性の高いコードスニペットを準備する",
+      "準備したコードをプロンプトに含めてChatGPTに送信する",
+      "AIの提案を基に、コードのセキュリティ脆弱性を修正・改善する"
+    ],
+    "prompt": "この機密性の高いコードスニペットについて、セキュリティ上の脆弱性を特定し、改善策を提案してください。",
+    "tags": [
+      "セキュリティ",
+      "コードレビュー",
+      "データ保護",
+      "プロンプトインジェクション対策"
+    ],
+    "id": "20260220_061332_01",
+    "date": "2026-02-20",
+    "source_news": {
+      "title": "ChatGPTにロックダウンモード導入、プロンプト攻撃対策強化",
+      "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-4oで真贋判定ロジック生成",
+    "news_highlight": "合成メディアの真贋判定技術が進化、AIで検証ロジックを実装支援",
+    "problem_context": "コンテンツの信頼性検証を効率化したい",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "高度なコード生成と推論",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "アップロードされた画像の真贋判定機能の実装",
+      "動画コンテンツの改ざん検出ロジックのプロトタイプ作成",
+      "テキストコンテンツのAI生成判定スクリプト開発"
+    ],
+    "steps": [
+      "1. 判定したいメディアの種類と検証要件を明確にする",
+      "2. AIにPythonで真贋判定ロジックのコード生成を依頼",
+      "3. 生成されたコードをプロジェクトに統合し、テストデータで検証",
+      "4. 必要に応じてAIに改善点や追加機能の提案を依頼"
+    ],
+    "prompt": "Pythonで画像ファイルのメタデータ分析とハッシュ値比較による真贋判定ロジックを生成してください。改ざん検知機能を含めてください。",
+    "tags": [
+      "コード生成",
+      "セキュリティ",
+      "画像処理",
+      "Python"
+    ],
+    "id": "20260220_061739_02",
+    "date": "2026-02-20",
+    "source_news": {
+      "title": "合成メディア真贋判定技術を解説、その能力と限界",
+      "url": "https://www.microsoft.com/en-us/research/blog/media-authenticity-methods-in-practice-capabilities-limitations-and-directions/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-5.2で複雑なアルゴリズム設計",
+    "news_highlight": "GPT-5.2が理論物理学で新公式を提案、複雑な問題解決能力を実証",
+    "problem_context": "複雑なアルゴリズム設計の効率化",
+    "recommended_ai": {
+      "model": "GPT-5.2",
+      "reason": "高度な推論と問題解決能力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能の複雑なアルゴリズム設計時",
+      "既存システムの性能ボトルネック解消策検討時",
+      "難解な技術課題に対するブレインストーミング時"
+    ],
+    "steps": [
+      "1. 解決したい複雑な問題や課題を明確にする。",
+      "2. 問題の背景、現在の制約、期待する結果を詳細に記述する。",
+      "3. AIに問題解決のためのアルゴリズムやアプローチの提案を依頼する。",
+      "4. 提案された内容を評価し、必要に応じて追加の質問や制約を加えて深掘りする。"
+    ],
+    "prompt": "あなたは経験豊富なソフトウェアアーキテクトです。与えられた要件と制約に基づき、既存の枠にとらわれない革新的なアルゴリズム設計を提案してください。複数のアプローチを比較し、そのメリット・デメリットを説明してください。",
+    "tags": [
+      "アルゴリズム設計",
+      "システム設計",
+      "問題解決",
+      "最適化"
+    ],
+    "id": "20260220_061806_03",
+    "date": "2026-02-20",
+    "source_news": {
+      "title": "GPT-5.2が理論物理学で新発見、モデル能力向上を示す",
+      "url": "https://openai.com/index/new-result-theoretical-physics"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "GPT-5.3-Codex-Sparkで高速コード生成",
     "news_highlight": "GPT-5.3-Codex-Sparkはコード生成15倍高速化、128kコンテキスト対応",
     "problem_context": "開発速度の向上と複雑なコード生成",
