@@ -1,5 +1,122 @@
 [
   {
+    "title": "GeminiでゲームBGMをプロトタイピング",
+    "news_highlight": "GeminiがLyria 3で音楽生成機能を追加、表現力が向上し多様なジャンルに対応。",
+    "problem_context": "ゲームやアプリのBGM/SE選定に時間。",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "高度な音楽生成と表現力。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ゲーム開発でBGMの初期アイデアを素早く試したい時",
+      "アプリのUI/UXサウンドのバリエーションを検討したい時",
+      "動画コンテンツの短いジングルや効果音を生成したい時"
+    ],
+    "steps": [
+      "1. Geminiの音楽生成機能にアクセスする。",
+      "2. ジャンル、ムード、楽器、テンポなどの要件をプロンプトに入力する。",
+      "3. 生成された音楽を試聴し、プロジェクトの雰囲気に合うか確認する。",
+      "4. 必要に応じてプロンプトを調整し、複数のバリエーションを生成する。"
+    ],
+    "prompt": "ゲームの戦闘シーンに合う、オーケストラ風でテンポの速いBGMを生成してください。勇壮で緊張感のある雰囲気で、ループ可能な構成にしてください。",
+    "tags": [
+      "音楽生成",
+      "プロトタイピング",
+      "ゲーム開発",
+      "コンテンツ制作"
+    ],
+    "id": "20260221_060943_01",
+    "date": "2026-02-21",
+    "source_news": {
+      "title": "Geminiが音楽生成機能を追加、Lyria 3で表現力向上。",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "GGML/llama.cppでローカルAI推論",
+    "news_highlight": "GGML/llama.cppがHFに統合、ローカルLLM推論を高速化し開発を促進",
+    "problem_context": "ローカルでのLLM実行環境構築が複雑",
+    "recommended_ai": {
+      "model": "GGML/llama.cpp",
+      "reason": "軽量・高速なローカル推論",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "オフライン環境でAIチャットボットを動かしたい時",
+      "機密データを外部に送らずにAI処理したい時",
+      "エッジデバイスでAIモデルを動かしたい時"
+    ],
+    "steps": [
+      "1. Hugging FaceでGGML/llama.cpp対応のモデルを検索する",
+      "2. llama.cppリポジトリをクローンし、ビルドする",
+      "3. ダウンロードしたモデルファイルをllama.cppの実行ファイルでロードする",
+      "4. ローカル環境で推論を実行し、既存アプリケーションに統合する"
+    ],
+    "prompt": "Pythonでllama.cppを使ってローカルでテキスト生成AIを動かすサンプルコードを書いてください。モデルパスとプロンプトは変数で指定できるようにしてください。",
+    "tags": [
+      "ローカルAI",
+      "LLM",
+      "推論",
+      "HuggingFace"
+    ],
+    "id": "20260221_061008_02",
+    "date": "2026-02-21",
+    "source_news": {
+      "title": "GGMLとllama.cppがHFに統合、ローカルAI開発を促進。",
+      "url": "https://huggingface.co/blog/ggml-joins-hf"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
+      "icon": "🦙"
+    }
+  },
+  {
+    "title": "SageMaker AIで推論エンドポイントを設計",
+    "news_highlight": "SageMaker AIが2025年にトレーニングと推論の価格性能を大幅向上",
+    "problem_context": "本番環境のAI推論コストとレイテンシを最適化したい",
+    "recommended_ai": {
+      "model": "Amazon SageMaker AI",
+      "reason": "推論の価格性能が向上し、コスト効率が良い",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIモデルを本番環境にデプロイする際の設計",
+      "既存のAI推論エンドポイントのコスト削減を検討する時",
+      "リアルタイム推論のレイテンシ要件を満たしつつコストを抑えたい時"
+    ],
+    "steps": [
+      "デプロイしたいモデルの要件（QPS, レイテンシ, メモリ）を整理する。",
+      "SageMakerの推論エンドポイント設定ドキュメントを参照する。",
+      "AIに要件を伝え、最適なインスタンスタイプとデプロイ戦略を提案させる。",
+      "提案された設定でテストデプロイを行い、性能とコストを検証する。"
+    ],
+    "prompt": "SageMakerでPyTorchモデルをリアルタイム推論エンドポイントとしてデプロイするためのCloudFormationテンプレートを生成してください。月間100万リクエスト、平均レイテンシ50ms以下、コストを最小化する設定を含めてください。",
+    "tags": [
+      "SageMaker",
+      "推論",
+      "コスト最適化",
+      "デプロイ"
+    ],
+    "id": "20260221_061036_03",
+    "date": "2026-02-21",
+    "source_news": {
+      "title": "SageMaker AI、トレーニングと推論の価格性能が大幅向上。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-in-2025-a-year-in-review-part-1-flexible-training-plans-and-improvements-to-price-performance-for-inference-workloads/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "ChatGPTで機密コードのセキュリティレビュー",
     "news_highlight": "ChatGPTにロックダウンモード導入、プロンプト攻撃・データ流出対策を強化",
     "problem_context": "機密情報を扱うAI利用時の情報漏洩リスク低減",
