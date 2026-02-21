@@ -1,5 +1,125 @@
 [
   {
+    "title": "GPT-4oでGradioアプリのUIを高速生成",
+    "news_highlight": "Gradioのgr.HTMLで生のHTMLを直接表示可能、カスタムUI統合で開発効率向上",
+    "problem_context": "Gradio標準UIの限界、外部コンポーネント統合の困難さ",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "Gradioコード生成とUI設計支援に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Gradioアプリに特定のCSSスタイルやJavaScriptコンポーネントを組み込みたい時",
+      "既存のHTMLテンプレートや外部ウィジェットをGradioアプリ内で表示したい時",
+      "AIモデルの出力結果をよりリッチな形式（グラフ、表など）で表示したい時"
+    ],
+    "steps": [
+      "GradioアプリのUIをカスタマイズしたい箇所を特定する。",
+      "GPT-4oにgr.HTMLを使ったカスタムHTMLコードの生成を依頼する。",
+      "生成されたHTMLコードをGradioアプリのgr.HTMLコンポーネントに組み込む。",
+      "アプリを実行し、期待通りにカスタムUIが表示されるか確認する。"
+    ],
+    "prompt": "Gradioアプリでgr.HTMLを使い、青い背景色と中央に\"Hello, Gradio!\"と表示されるdiv要素を含むカスタムHTMLコードを生成してください。",
+    "tags": [
+      "Gradio",
+      "Web開発",
+      "UI/UX",
+      "コード生成",
+      "Python"
+    ],
+    "id": "20260222_060913_01",
+    "date": "2026-02-22",
+    "source_news": {
+      "title": "Gradioのgr.HTMLでWebアプリを効率的に開発",
+      "url": "https://huggingface.co/blog/gradio-html-one-shot-apps"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Flyte SDKでEKS上のMLワークフロー構築",
+    "news_highlight": "Union.ai 2.0がFlyte Python SDKによるEKS上でのAI/MLワークフローのオーケストレーションとスケーリングを可能に。",
+    "problem_context": "EKS上でのMLワークフロー構築の複雑性",
+    "recommended_ai": {
+      "model": "Flyte SDK",
+      "reason": "EKS上のMLワークフローを効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規MLパイプラインをEKSにデプロイする時",
+      "既存のMLワークフローのスケーラビリティを改善したい時",
+      "MLパイプラインの実行状況を監視・管理したい時"
+    ],
+    "steps": [
+      "Flyte Python SDKをインストールする",
+      "Flyteプロジェクトのディレクトリを作成し、ワークフローコードを記述する",
+      "`flytectl register`コマンドでワークフローをUnion.ai 2.0に登録する",
+      "`flytectl launch`コマンドでEKS上でワークフローを実行する"
+    ],
+    "prompt": "Flyte Python SDKを使って、EKS上で動くシンプルな画像分類MLワークフローを構築するPythonコードを生成してください。データ前処理、モデル学習、推論のステップを含めてください。",
+    "tags": [
+      "MLパイプライン",
+      "EKS",
+      "Flyte",
+      "Python",
+      "ワークフローオーケストレーション"
+    ],
+    "id": "20260222_060937_02",
+    "date": "2026-02-22",
+    "source_news": {
+      "title": "Flyte SDKでEKS上のAI/MLワークフローを構築",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-ai-workflows-on-amazon-eks-with-union-ai-and-flyte/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "UnslothでAIモデルを無料ファインチューニング",
+    "news_highlight": "UnslothとHF Jobsの無料枠でAIモデルを高速ファインチューニング、GPUコストゼロ",
+    "problem_context": "AIモデルのファインチューニングのGPUコストが高い",
+    "recommended_ai": {
+      "model": "Unsloth",
+      "reason": "高速・低メモリでモデルを無料ファインチューニング",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存LLMを自社データで特化させたい時",
+      "プロジェクトの初期段階でモデル性能を検証したい時",
+      "GPU予算が限られている中でモデル改善を試みたい時"
+    ],
+    "steps": [
+      "ファインチューニング用データセットをHugging Face Hubにアップロードする",
+      "Hugging Face Jobsで無料GPUインスタンスを選択しノートブックを起動する",
+      "Unslothを使ったファインチューニングスクリプトをノートブックに記述する",
+      "スクリプトを実行し、学習済みモデルをHugging Face Hubに保存する"
+    ],
+    "prompt": "Unslothを使って、`mistralai/Mistral-7B-Instruct-v0.2`モデルを`my_dataset.jsonl`で3エポックファインチューニングするPythonスクリプトを生成してください。",
+    "tags": [
+      "AIモデル学習",
+      "コスト削減",
+      "LLMファインチューニング",
+      "Unsloth",
+      "HF Jobs"
+    ],
+    "id": "20260222_061004_03",
+    "date": "2026-02-22",
+    "source_news": {
+      "title": "UnslothとHF JobsでAIモデルを無料で学習",
+      "url": "https://huggingface.co/blog/unsloth-jobs"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GeminiでゲームBGMをプロトタイピング",
     "news_highlight": "GeminiがLyria 3で音楽生成機能を追加、表現力が向上し多様なジャンルに対応。",
     "problem_context": "ゲームやアプリのBGM/SE選定に時間。",
