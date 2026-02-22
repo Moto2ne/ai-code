@@ -1,5 +1,122 @@
 [
   {
+    "title": "GradioでWebアプリUIを迅速構築",
+    "news_highlight": "Gradioが`gr.HTML`を導入し、既存HTMLでWebアプリUIを簡単に作成可能に。",
+    "problem_context": "既存HTML資産を活かしたUI開発の効率化",
+    "recommended_ai": {
+      "model": "Gradio",
+      "reason": "HTML埋め込みでUI開発を簡素化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存のHTMLテンプレートをGradioアプリに組み込みたい時",
+      "AIモデルのデモUIを素早く作成したいが、複雑なフロントエンドは避けたい時",
+      "インタラクティブなデータ可視化をGradioアプリに埋め込みたい時"
+    ],
+    "steps": [
+      "1. 既存のHTMLコードまたは生成したいHTMLコードを用意する",
+      "2. GradioアプリケーションのPythonスクリプトを開く",
+      "3. `gr.HTML()`コンポーネントをインスタンス化し、HTML文字列を引数として渡す",
+      "4. `gr.Interface`または`gr.Blocks`に`gr.HTML`コンポーネントを追加し、実行する"
+    ],
+    "prompt": "Gradioで`gr.HTML`を使って、以下のHTMLコードを埋め込んだWebアプリを作成してください。`<h1>Hello Gradio!</h1><p>Welcome to my app.</p>`",
+    "tags": [
+      "UI開発",
+      "Gradio",
+      "Webアプリ",
+      "プロトタイピング"
+    ],
+    "id": "20260223_060956_01",
+    "date": "2026-02-23",
+    "source_news": {
+      "title": "Gradioのgr.HTMLでWebアプリを簡単に作成可能に。",
+      "url": "https://huggingface.co/blog/gradio-html-one-shot-apps"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "GPT-4oでAIエージェントの失敗原因を診断",
+    "news_highlight": "エンタープライズAIエージェントの失敗原因を診断する新手法が発表、デバッグ工数を最大30%削減",
+    "problem_context": "AIエージェントの複雑な挙動によるデバッグ困難",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "高度な推論と分析能力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "開発中のAIエージェントが期待通りに動作しない時",
+      "運用中のAIエージェントが異常終了や誤動作を起こした時",
+      "AIエージェントのパフォーマンス低下の原因を特定したい時"
+    ],
+    "steps": [
+      "1. 失敗したAIエージェントのログ、入力、出力、実行トレースを収集する。",
+      "2. 収集した情報をGPT-4oに提示し、診断を依頼する。",
+      "3. GPT-4oの診断結果に基づき、コードや設定の修正箇所を特定する。",
+      "4. 修正を適用し、AIエージェントの動作を再テストする。"
+    ],
+    "prompt": "AIエージェントの実行ログ、入力、出力、関連コードを分析し、失敗の根本原因と修正案を特定してください。",
+    "tags": [
+      "AIエージェント",
+      "デバッグ",
+      "トラブルシューティング",
+      "品質保証"
+    ],
+    "id": "20260223_061024_02",
+    "date": "2026-02-23",
+    "source_news": {
+      "title": "エンタープライズAIエージェントの失敗原因を診断する新手法。",
+      "url": "https://huggingface.co/blog/ibm-research/itbenchandmast"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-4oで合成ペルソナ生成しデータ拡張",
+    "news_highlight": "合成ペルソナで日本のAI開発のデータ不足を解消、プライバシー保護し多様なデータセットを確保。",
+    "problem_context": "日本のAI開発におけるデータ不足とプライバシー課題",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "多様なペルソナを生成可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIモデルの学習データが不足している時",
+      "既存モデルのバイアスを軽減したい時",
+      "プライバシーに配慮したデータセットを作成したい時"
+    ],
+    "steps": [
+      "1. 開発中のAIモデルが扱うユーザー属性を特定する",
+      "2. 特定した属性に基づき、合成ペルソナの要件（年齢、性別、興味など）を定義する",
+      "3. AIに定義した要件と生成したいペルソナ数を渡し、合成ペルソナデータを生成させる",
+      "4. 生成されたペルソナデータをAIモデルの学習データとして組み込み、モデルを再学習・評価する"
+    ],
+    "prompt": "日本の20代女性、都内在住、IT企業勤務、趣味は旅行とカフェ巡り、という設定で、50人分の合成ペルソナデータをJSON形式で生成してください。各ペルソナには、氏名、年齢、職業、趣味、購買傾向を含めてください。",
+    "tags": [
+      "データ拡張",
+      "プライバシー保護",
+      "AI学習",
+      "データ生成"
+    ],
+    "id": "20260223_061052_03",
+    "date": "2026-02-23",
+    "source_news": {
+      "title": "合成ペルソナで日本のAI開発のデータ不足を解消。",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata-ja"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "GPT-4oでGradioアプリのUIを高速生成",
     "news_highlight": "Gradioのgr.HTMLで生のHTMLを直接表示可能、カスタムUI統合で開発効率向上",
     "problem_context": "Gradio標準UIの限界、外部コンポーネント統合の困難さ",
