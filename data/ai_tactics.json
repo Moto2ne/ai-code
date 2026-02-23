@@ -1,5 +1,122 @@
 [
   {
+    "title": "GeminiでゲームBGMプロトタイプ生成",
+    "news_highlight": "GeminiがLyria 3技術で音楽生成に対応、多様なジャンルとムードのBGMを生成可能。",
+    "problem_context": "ゲーム開発におけるBGM制作の時間とコスト削減。",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "音楽生成機能が利用可能。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ゲームの新しいステージやイベントのBGMを検討する時",
+      "ゲームのプロトタイプに仮のBGMを組み込みたい時",
+      "ゲームデザイナーにBGMの方向性を提案する時"
+    ],
+    "steps": [
+      "1. Geminiの音楽生成機能にアクセスする。",
+      "2. 生成したいBGMのジャンル、ムード、長さ、楽器構成などの要件を具体的に記述する。",
+      "3. 生成された複数のBGM候補を試聴し、最適なものを選ぶ。",
+      "4. 選んだBGMをゲームのプロトタイプに組み込み、動作を確認する。"
+    ],
+    "prompt": "「ファンタジーRPGの戦闘シーンに合う、オーケストラ調で壮大なBGMを30秒間生成してください。テンポは速めで、緊張感のある雰囲気を希望します。」",
+    "tags": [
+      "ゲーム開発",
+      "BGM生成",
+      "プロトタイピング",
+      "オーディオ"
+    ],
+    "id": "20260224_062159_01",
+    "date": "2026-02-24",
+    "source_news": {
+      "title": "Geminiが音楽生成に対応、表現の幅を拡大。",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "GPT-4oで合成メディア検出ロジック設計",
+    "news_highlight": "合成メディアの真偽検証が喫緊の課題。AIは検出精度85%だが、新たな生成手法で常に更新が必要。",
+    "problem_context": "合成メディアの真偽検証システムの開発",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "多モーダルデータ解析と高度な推論が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい合成メディア検出アルゴリズムを検討する時",
+      "既存のコンテンツ認証APIに真偽検証機能を追加する時",
+      "生成AIが作成したコンテンツの信頼性を評価する時"
+    ],
+    "steps": [
+      "1. 検証したいメディアの種類（画像、動画、音声）を特定",
+      "2. 既存の真偽検証技術（例: メタデータ分析、デジタルウォーターマーク）の限界を整理",
+      "3. AIに、特定メディアの合成検出ロジックの設計方針を依頼",
+      "4. 提案されたロジックを基にPoCコードを作成し、検出精度を評価"
+    ],
+    "prompt": "画像、動画、音声の合成メディア検出ロジックを設計してください。既存技術の限界を考慮し、AIを活用した検出手法の具体的な実装方針と、その評価指標を提案してください。",
+    "tags": [
+      "合成メディア",
+      "真偽検証",
+      "AIセキュリティ",
+      "コンテンツ認証"
+    ],
+    "id": "20260224_062227_02",
+    "date": "2026-02-24",
+    "source_news": {
+      "title": "合成メディアの真偽検証技術を解説、課題と方向性。",
+      "url": "https://www.microsoft.com/en-us/research/blog/media-authenticity-methods-in-practice-capabilities-limitations-and-directions/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Hugging Face smolagentsでAIエージェント設計",
+    "news_highlight": "Hugging Face smolagentsは数行のPythonコードでマルチモデルAIエージェントを簡単に構築・実行可能",
+    "problem_context": "複雑なAIエージェントの迅速なプロトタイピング",
+    "recommended_ai": {
+      "model": "Hugging Face smolagents",
+      "reason": "マルチモデルエージェントを容易に構築",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIエージェントのアイデアを迅速に検証したい時",
+      "既存のアプリケーションに自律的なタスク実行機能を追加したい時",
+      "複数のAIモデルを連携させるエージェントを開発したい時"
+    ],
+    "steps": [
+      "1. `pip install smolagents` を実行しライブラリをインストール",
+      "2. エージェントの目的と使用するモデルをPythonコードで定義",
+      "3. 定義したエージェントを実行し、動作を確認",
+      "4. エージェントの出力やログを分析し、改善点を特定"
+    ],
+    "prompt": "PythonでHugging Face smolagentsを使って、ウェブから情報を収集し要約するマルチモデルAIエージェントの基本コードを生成してください。",
+    "tags": [
+      "AIエージェント",
+      "Python",
+      "オープンソース",
+      "プロトタイピング"
+    ],
+    "id": "20260224_062253_03",
+    "date": "2026-02-24",
+    "source_news": {
+      "title": "Hugging Face smolagentsでマルチモデルAIエージェント構築。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-ai-with-multi-model-framework-using-hugging-face-smolagents-on-aws/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GradioでWebアプリUIを迅速構築",
     "news_highlight": "Gradioが`gr.HTML`を導入し、既存HTMLでWebアプリUIを簡単に作成可能に。",
     "problem_context": "既存HTML資産を活かしたUI開発の効率化",
