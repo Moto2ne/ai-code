@@ -1,5 +1,122 @@
 [
   {
+    "title": "OpenAI Agentで企業向けエージェント設計",
+    "news_highlight": "OpenAIが企業向けAgentのパイロットから本番移行をセキュア・スケーラブルに支援するパートナー発表。",
+    "problem_context": "企業向けAIエージェントの設計・実装が複雑",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "複雑なエージェント設計を支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規AIエージェントのアーキテクチャ設計時",
+      "既存システムと連携するエージェントのAPI設計時",
+      "エージェントのタスクフローを定義する時"
+    ],
+    "steps": [
+      "1. 開発するエージェントの目的と主要タスクを定義する",
+      "2. 既存システムとの連携要件やデータフローを整理する",
+      "3. 定義した情報をプロンプトに含め、AIに設計案を依頼する",
+      "4. 提案された設計案をレビューし、必要に応じて修正・詳細化する"
+    ],
+    "prompt": "企業向けカスタマーサポートAIエージェントのアーキテクチャを設計してください。既存CRMシステムと連携し、ユーザーの問い合わせ履歴を参照、FAQ応答、チケット発行機能を持ちます。",
+    "tags": [
+      "AIエージェント",
+      "システム設計",
+      "GPT-4o",
+      "エンタープライズAI"
+    ],
+    "id": "20260225_061559_01",
+    "date": "2026-02-25",
+    "source_news": {
+      "title": "OpenAI、企業向けAgentデプロイ支援パートナーを発表",
+      "url": "https://openai.com/index/frontier-alliance-partners"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-4oで企業Agentの失敗原因を診断",
+    "news_highlight": "IT-Benchで企業Agentの失敗原因を特定、実運用課題を浮き彫りに",
+    "problem_context": "企業Agentの運用失敗原因を特定し改善",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "複雑な問題分析に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "開発中のAIエージェントが期待通りに動作しない時",
+      "既存のAIエージェントのパフォーマンスが低下した時",
+      "AIエージェントの設計段階で潜在的なリスクを評価したい時"
+    ],
+    "steps": [
+      "失敗したAIエージェントのログやエラーメッセージを収集する",
+      "エージェントの設計ドキュメントや関連コードを用意する",
+      "AIにログ、エラー、設計、コードを提示し、失敗原因の分析を依頼する",
+      "AIの提案に基づき、設計やコードを修正し、再テストする"
+    ],
+    "prompt": "以下の企業Agentのログ、設計、コードを分析し、失敗原因と具体的な改善策を提案してください。ログ: [ログ内容] 設計: [設計概要] コード: [関連コード]",
+    "tags": [
+      "AIエージェント",
+      "デバッグ",
+      "運用改善",
+      "設計レビュー"
+    ],
+    "id": "20260225_061625_02",
+    "date": "2026-02-25",
+    "source_news": {
+      "title": "IBMらがIT-Benchで企業Agent失敗原因を診断",
+      "url": "https://huggingface.co/blog/ibm-research/itbenchandmast"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "OpenAIの指摘でAI生成コードのデバッグ精度向上",
+    "news_highlight": "OpenAIはSWE-bench Verifiedの評価中止、Pro推奨でAIコード生成の信頼性向上",
+    "problem_context": "AI生成コードの品質がベンチマークと乖離",
+    "recommended_ai": {
+      "model": "OpenAI",
+      "reason": "信頼性の高い評価基準を提示",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIが生成した複雑なロジックのコードをデバッグする時",
+      "AIが提案したリファクタリングコードをレビューする時",
+      "新しいAIモデルを導入する前に、そのコード生成能力を評価する時"
+    ],
+    "steps": [
+      "AIモデルに特定の機能のコード生成を依頼する。",
+      "生成されたコードをローカル環境で実行し、エラーや予期せぬ動作がないか確認する。",
+      "エラーが発生した場合、AIモデルにエラーメッセージとコードを渡し、修正を依頼する。",
+      "修正されたコードを再度テストし、SWE-bench Proの評価基準を参考に、より厳密なテストケースで検証する。"
+    ],
+    "prompt": "このPythonコードのバグを修正してください。SWE-bench Proの評価基準を意識し、堅牢性と効率性を高める修正案を提案してください。",
+    "tags": [
+      "コードデバッグ",
+      "AI評価",
+      "品質保証",
+      "プロンプトエンジニアリング"
+    ],
+    "id": "20260225_061655_03",
+    "date": "2026-02-25",
+    "source_news": {
+      "title": "OpenAI、SWE-bench Verifiedの評価中止とProを推奨",
+      "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "GeminiでゲームBGMプロトタイプ生成",
     "news_highlight": "GeminiがLyria 3技術で音楽生成に対応、多様なジャンルとムードのBGMを生成可能。",
     "problem_context": "ゲーム開発におけるBGM制作の時間とコスト削減。",
