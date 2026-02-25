@@ -1,5 +1,124 @@
 [
   {
+    "title": "GGML/llama.cppでローカルLLM推論",
+    "news_highlight": "Hugging FaceにGGML/llama.cpp統合、CPUでLLM高速実行、メモリ効率化",
+    "problem_context": "GPUなしでLLMをローカル実行したい",
+    "recommended_ai": {
+      "model": "GGML/llama.cpp",
+      "reason": "ローカル環境での効率的なLLM実行",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "開発PCで手軽にLLMを試したい時",
+      "オフライン環境でLLMを使いたい時",
+      "機密データをクラウドに送らずにLLM処理したい時"
+    ],
+    "steps": [
+      "Hugging Face Transformersをインストール",
+      "GGML対応モデルをHugging Face Hubから選択",
+      "ローカル環境でモデルをロードし推論を実行",
+      "パフォーマンスを評価し量子化設定を調整"
+    ],
+    "prompt": "PythonでREST APIのエンドポイントを設計してください。ユーザー認証とデータ取得機能を含めてください。",
+    "tags": [
+      "ローカルAI",
+      "LLM",
+      "推論",
+      "効率化",
+      "CPU"
+    ],
+    "id": "20260226_061618_01",
+    "date": "2026-02-26",
+    "source_news": {
+      "title": "GGMLとllama.cppがHFに統合、ローカルAI効率化を推進。",
+      "url": "https://huggingface.co/blog/ggml-joins-hf"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
+      "icon": "🦙"
+    }
+  },
+  {
+    "title": "オープンソースVLMでJetsonデプロイ最適化",
+    "news_highlight": "JetsonでオープンソースVLMのデプロイを加速、エッジAI推論性能を向上。",
+    "problem_context": "JetsonでのVLMデプロイの複雑さ、推論遅延",
+    "recommended_ai": {
+      "model": "オープンソースVLM",
+      "reason": "Jetsonでの高性能推論、柔軟なカスタマイズ性",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Jetson向けVLMアプリケーションのプロトタイプ開発時",
+      "既存VLMモデルをJetson向けに最適化してデプロイする時",
+      "エッジデバイスでリアルタイム画像解析とテキスト生成を組み合わせる時"
+    ],
+    "steps": [
+      "JetsonデバイスにVLM実行環境をセットアップする",
+      "オープンソースVLMモデルを選択し、Jetson向けに量子化/最適化する",
+      "最適化されたモデルをJetsonにデプロイし、推論コードを実装する",
+      "デプロイしたVLMの性能をベンチマークし、ボトルネックを特定する"
+    ],
+    "prompt": "Jetson Nano上で動作するVision-Language Model (VLM) のデプロイ手順と、画像入力からテキスト出力を得るPythonコード例を生成してください。モデルの量子化と最適化についても触れてください。",
+    "tags": [
+      "Edge AI",
+      "VLM",
+      "Jetson",
+      "デプロイ",
+      "最適化"
+    ],
+    "id": "20260226_061645_02",
+    "date": "2026-02-26",
+    "source_news": {
+      "title": "オープンソースVLMをJetsonにデプロイ、Edge AIを加速。",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-on-jetson"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "vLLMでLoRAモデル推論を最適化",
+    "news_highlight": "vLLMがMoEモデル向けmulti-LoRA推論を実装、カーネル最適化で推論効率を大幅向上。",
+    "problem_context": "複数のLoRAモデル推論の性能低下とメモリ消費",
+    "recommended_ai": {
+      "model": "vLLM",
+      "reason": "LoRA推論を最適化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数のLoRAモデルを同時に運用し、推論速度が低下している時",
+      "新しいLoRAモデルを開発し、既存のLLMサービスに効率的に組み込みたい時",
+      "MoEモデルの推論コストを削減し、スループットを向上させたい時"
+    ],
+    "steps": [
+      "1. 既存のLLM推論環境でvLLMがサポートするモデルか確認する。",
+      "2. vLLMをインストールし、既存のLoRAモデルをvLLMの形式に変換する。",
+      "3. vLLMのmulti-LoRA機能を有効にして推論サーバーを起動する。",
+      "4. 既存のアプリケーションからvLLMのエンドポイントを呼び出し、性能を評価する。"
+    ],
+    "prompt": "vLLMでLlama-3-8BベースのLoRAモデルを複数同時にロードし、推論サーバーを起動するPythonコードを生成してください。各LoRAモデルのパスを指定できるようにしてください。",
+    "tags": [
+      "LLM",
+      "推論最適化",
+      "LoRA",
+      "vLLM"
+    ],
+    "id": "20260226_061712_03",
+    "date": "2026-02-26",
+    "source_news": {
+      "title": "vLLMでファインチューンモデルを効率提供、推論を最適化。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/efficiently-serve-dozens-of-fine-tuned-models-with-vllm-on-amazon-sagemaker-ai-and-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "OpenAI Agentで企業向けエージェント設計",
     "news_highlight": "OpenAIが企業向けAgentのパイロットから本番移行をセキュア・スケーラブルに支援するパートナー発表。",
     "problem_context": "企業向けAIエージェントの設計・実装が複雑",
