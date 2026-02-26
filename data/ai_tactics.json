@@ -1,5 +1,123 @@
 [
   {
+    "title": "GPT-4oでセキュリティ脆弱性を検出",
+    "news_highlight": "OpenAIが最新レポートで悪意あるAI利用の検出・防御策を報告。GPT-4oは256Kコンテキストでセキュリティ分析を強化。",
+    "problem_context": "AI悪用によるシステム脆弱性を見落とす",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "広範なコンテキストで詳細分析",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前にコードのセキュリティレビューをしたい時",
+      "外部ライブラリ導入前に潜在的な脆弱性を確認したい時",
+      "既存システムのセキュリティ監査で疑わしいパターンを検出したい時"
+    ],
+    "steps": [
+      "レビューしたいコードスニペットまたは設定ファイルをコピーする",
+      "GPT-4oに貼り付け、『このコードに潜在的なセキュリティ脆弱性がないか、悪意あるAI利用の観点から分析してください。特にプロンプトインジェクション、データ漏洩、不正アクセスにつながる可能性のある箇所を指摘し、具体的な修正案を提示してください。』と指示する",
+      "GPT-4oの提案を基にコードを修正する",
+      "修正後、再度テストを行い、意図しない副作用がないか確認する"
+    ],
+    "prompt": "以下のコードに潜在的なセキュリティ脆弱性がないか、悪意あるAI利用の観点から分析してください。プロンプトインジェクション、データ漏洩、不正アクセスにつながる可能性を指摘し、具体的な修正案を提示してください：[ここにコードを貼り付け]",
+    "tags": [
+      "セキュリティ",
+      "コードレビュー",
+      "脆弱性検出",
+      "GPT-4o"
+    ],
+    "id": "20260227_061640_01",
+    "date": "2026-02-27",
+    "source_news": {
+      "title": "悪意あるAI利用の現状と検出・防御策をOpenAIが報告。",
+      "url": "https://openai.com/index/disrupting-malicious-ai-uses"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "OpenAIの知見でコード品質を評価",
+    "news_highlight": "SWE-benchは信頼性低下、OpenAIは新ベンチマークSWE-bench Proを推奨",
+    "problem_context": "既存ベンチマークの信頼性低下による誤評価",
+    "recommended_ai": {
+      "model": "SWE-bench Pro",
+      "reason": "より正確なコード品質評価",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AI生成コードの品質を客観的に評価したい時",
+      "新しいAIモデル導入前の性能比較をしたい時",
+      "既存コードベースの技術的負債を特定したい時"
+    ],
+    "steps": [
+      "評価したいコードリポジトリを準備する",
+      "SWE-bench Proの環境をセットアップする",
+      "評価対象のコードをSWE-bench Proに投入し実行する",
+      "出力された詳細なレポートを基にコードを改善する"
+    ],
+    "prompt": "このPythonコードを、一般的なベンチマークでは見落とされがちなエッジケースや潜在的な脆弱性の観点からレビューし、改善案を提示してください。",
+    "tags": [
+      "コードレビュー",
+      "品質保証",
+      "AI活用",
+      "ベンチマーク"
+    ],
+    "id": "20260227_061707_02",
+    "date": "2026-02-27",
+    "source_news": {
+      "title": "OpenAIがSWE-benchの信頼性低下を指摘、新ベンチマークを推奨。",
+      "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "vLLMでMoEモデルの効率的推論",
+    "news_highlight": "vLLMがMoEモデルのmulti-LoRA推論をカーネル最適化で効率化、デプロイコスト削減",
+    "problem_context": "MoEモデル推論コスト高と複数LoRA管理の複雑さ",
+    "recommended_ai": {
+      "model": "vLLM",
+      "reason": "MoEモデル推論を効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "MoEモデルを本番環境へデプロイする際",
+      "複数LoRAを持つMoEモデルの性能評価時",
+      "MoEモデルの推論APIを開発する際"
+    ],
+    "steps": [
+      "1. vLLMをインストールする",
+      "2. MoEモデルと複数のLoRAアダプターを準備する",
+      "3. vLLMでモデルとLoRAをロードし推論を実行する",
+      "4. 推論スループットやレイテンシを測定し評価する"
+    ],
+    "prompt": "vLLMでMixtral 8x7B MoEモデルと複数のLoRAアダプターを効率的にロードし、推論を実行するPythonコード例を生成してください。",
+    "tags": [
+      "vLLM",
+      "MoE",
+      "LoRA",
+      "推論最適化",
+      "デプロイ"
+    ],
+    "id": "20260227_061733_03",
+    "date": "2026-02-27",
+    "source_news": {
+      "title": "vLLMでMoEモデルを効率的に提供する技術と最適化を解説。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/efficiently-serve-dozens-of-fine-tuned-models-with-vllm-on-amazon-sagemaker-ai-and-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GGML/llama.cppでローカルLLM推論",
     "news_highlight": "Hugging FaceにGGML/llama.cpp統合、CPUでLLM高速実行、メモリ効率化",
     "problem_context": "GPUなしでLLMをローカル実行したい",
