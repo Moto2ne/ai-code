@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-4oで規制文書を要約",
+    "news_highlight": "OpenAIがDraftNEPABench導入。AIエージェントがNEPAドラフト作成時間を削減する可能性を示唆。",
+    "problem_context": "複雑な規制文書の理解と要約に時間がかかる。",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "大規模なテキスト処理と要約能力に優れる。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいプロジェクトの規制要件を理解する時",
+      "既存システムの設計書を短時間で把握したい時",
+      "プルリクエストのレビューで関連ドキュメントを素早く確認したい時"
+    ],
+    "steps": [
+      "要約したい規制文書や設計書の内容をコピーする。",
+      "GPT-4oのチャットインターフェースに貼り付ける。",
+      "プロンプトを入力して要約を依頼する。",
+      "出力された要約を確認し、不明点があれば追加で質問する。"
+    ],
+    "prompt": "以下の連邦政府の規制文書を、主要な要件と影響範囲に焦点を当てて、箇条書きで100字程度に要約してください。",
+    "tags": [
+      "ドキュメント理解",
+      "要約",
+      "規制対応",
+      "情報収集"
+    ],
+    "id": "20260228_061203_01",
+    "date": "2026-02-28",
+    "source_news": {
+      "title": "OpenAI、AIエージェントの性能評価ベンチマークを導入",
+      "url": "https://openai.com/index/pacific-northwest-national-laboratory"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Nano Banana 2でUI/UX画像を高速生成",
+    "news_highlight": "Nano Banana 2は高性能かつ高速な画像生成を実現、テキストから画像を生成",
+    "problem_context": "デザインリソース不足やコンテンツ視覚化の課題",
+    "recommended_ai": {
+      "model": "Nano Banana 2",
+      "reason": "高速かつ高品質な画像生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Webサイトやアプリのモックアップ作成時",
+      "技術ブログやドキュメントに挿入する図の作成時",
+      "プレゼンテーション資料のビジュアル強化時"
+    ],
+    "steps": [
+      "1. 必要な画像の説明テキストを準備する",
+      "2. Nano Banana 2のインターフェースにテキストを入力する",
+      "3. 生成された画像をレビューし、必要に応じて調整する",
+      "4. 生成画像をプロジェクトに組み込む"
+    ],
+    "prompt": "Webサイトのログイン画面用アイコンセットを生成してください。ユーザー、パスワード、メール、設定のアイコンを含めてください。",
+    "tags": [
+      "画像生成",
+      "UI/UX",
+      "デザイン",
+      "プロトタイピング"
+    ],
+    "id": "20260228_061228_02",
+    "date": "2026-02-28",
+    "source_news": {
+      "title": "Google、高性能かつ高速な画像生成モデルNano Banana 2を発表",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "vLLMでMoEモデルの高速推論を実装",
+    "news_highlight": "vLLMがMoEモデル向けmulti-LoRA推論をカーネル最適化で高速化、リソース効率向上。",
+    "problem_context": "複数LoRAモデルの推論遅延とGPUコスト増大",
+    "recommended_ai": {
+      "model": "vLLM",
+      "reason": "MoEモデルの高速推論と効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数の専門モデルを単一エンドポイントで提供したい時",
+      "GPUリソースを最大限活用し、推論コストを削減したい時",
+      "リアルタイム応答が求められるAIアプリケーションを開発する時"
+    ],
+    "steps": [
+      "既存のLoRAファインチューンモデル群を準備する。",
+      "vLLMをセットアップし、MoEモデルとLoRAアダプターをロードする。",
+      "vLLMのmulti-LoRA推論機能を活用してリクエストを送信する。",
+      "推論速度とGPU使用率をモニタリングし、パフォーマンスを評価する。"
+    ],
+    "prompt": "vLLMでMixture of Expertsモデルと複数のLoRAアダプターを効率的にデプロイするためのPythonスクリプトと設定例を生成してください。",
+    "tags": [
+      "LLM推論",
+      "GPU最適化",
+      "MoEモデル",
+      "ファインチューニング"
+    ],
+    "id": "20260228_061254_03",
+    "date": "2026-02-28",
+    "source_news": {
+      "title": "AWS、vLLMで多数のファインチューンモデルを高速提供",
+      "url": "https://aws.amazon.com/blogs/machine-learning/efficiently-serve-dozens-of-fine-tuned-models-with-vllm-on-amazon-sagemaker-ai-and-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-4oでセキュリティ脆弱性を検出",
     "news_highlight": "OpenAIが最新レポートで悪意あるAI利用の検出・防御策を報告。GPT-4oは256Kコンテキストでセキュリティ分析を強化。",
     "problem_context": "AI悪用によるシステム脆弱性を見落とす",
