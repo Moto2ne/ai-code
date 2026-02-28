@@ -1,5 +1,125 @@
 [
   {
+    "title": "Amazon Bedrockエージェントで複雑なワークフロー設計",
+    "news_highlight": "Amazon BedrockエージェントがStateful Runtimeで複数ステップAIワークフローの永続的なオーケストレーション、メモリ、セキュアな実行を実現。",
+    "problem_context": "複数ステップAIワークフローのコンテキスト維持と実行管理",
+    "recommended_ai": {
+      "model": "Amazon Bedrockエージェント",
+      "reason": "永続的な状態管理と複数ステップ実行が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数ステップにわたる顧客対応ボットの構築",
+      "複雑なデータ処理パイプラインの自動化",
+      "開発ワークフローにおける複数ツール連携の自動化"
+    ],
+    "steps": [
+      "1. Bedrockコンソールで新規エージェントを作成",
+      "2. エージェント設定でStateful Runtimeを有効化",
+      "3. 実行したいタスクに応じたツール（Lambda/API）を定義し登録",
+      "4. 複数ステップのワークフローを設計し、エージェントに指示"
+    ],
+    "prompt": "ユーザーの過去の注文履歴を検索し、その情報に基づいて最適な関連商品を3つ提案し、提案後、ユーザーのフィードバックを待機してください。",
+    "tags": [
+      "AIエージェント",
+      "ワークフロー自動化",
+      "状態管理",
+      "Bedrock"
+    ],
+    "id": "20260301_060832_01",
+    "date": "2026-03-01",
+    "source_news": {
+      "title": "Amazon Bedrockエージェント向けStateful Runtime導入、永続的なAIワークフロー実現。",
+      "url": "https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "vLLMでSageMaker/Bedrock上のMoEモデルを効率提供",
+    "news_highlight": "vLLMがSageMaker/BedrockでMoEモデルのmulti-LoRA推論をカーネル最適化し効率提供",
+    "problem_context": "MoEモデルの推論コストとレイテンシを削減したい",
+    "recommended_ai": {
+      "model": "vLLM",
+      "reason": "MoEモデルの効率的な推論を実現",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模なMoEモデルを本番環境にデプロイする際",
+      "複数のLoRAアダプターを持つMoEモデルの推論性能を改善したい時",
+      "SageMaker/Bedrock上でMoEモデルの運用コストを最適化したい時"
+    ],
+    "steps": [
+      "vLLMの最新バージョンをインストールまたはアップデートする",
+      "MoEモデルと複数のLoRAアダプターを準備する",
+      "vLLMのドキュメントを参照し、multi-LoRA推論設定を適用する",
+      "SageMaker/Bedrock環境にvLLMサービスをデプロイし、性能を評価する"
+    ],
+    "prompt": "vLLMでMixture of Experts (MoE) モデルと複数のLoRAアダプターを効率的にデプロイするための設定例をPythonコードで提示してください。",
+    "tags": [
+      "vLLM",
+      "MoE",
+      "LoRA",
+      "SageMaker",
+      "Bedrock",
+      "推論最適化",
+      "MLOps"
+    ],
+    "id": "20260301_060855_02",
+    "date": "2026-03-01",
+    "source_news": {
+      "title": "vLLMでSageMaker/Bedrock上のMoEモデルを効率的に提供、カーネル最適化。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/efficiently-serve-dozens-of-fine-tuned-models-with-vllm-on-amazon-sagemaker-ai-and-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Nano Banana 2で画像素材を生成・編集",
+    "news_highlight": "Googleの画像生成・編集モデル「Nano Banana 2」が開発者向けに公開。",
+    "problem_context": "画像素材の作成・編集コスト削減、デザイン試行",
+    "recommended_ai": {
+      "model": "Nano Banana 2",
+      "reason": "画像生成・編集に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Webサイトのモックアップに使うアイコンや背景画像を生成したい時",
+      "アプリのUI要素（ボタン、バナーなど）のバリエーションを素早く作成したい時",
+      "既存の製品写真から不要なオブジェクトを削除したり、背景を変更したい時"
+    ],
+    "steps": [
+      "1. 必要な画像の種類や内容を具体的に記述する。",
+      "2. Nano Banana 2のAPIまたはSDKを通じてプロンプトを送信する。",
+      "3. 生成された画像をダウンロードし、プロジェクトに組み込む。",
+      "4. 必要に応じて、生成された画像をさらに編集・調整する。"
+    ],
+    "prompt": "Webサイトのヒーローセクション用背景画像を生成。テーマは「未来都市の夜景」、青と紫のネオンカラー基調、高層ビル群と飛行ドローンを含めてください。",
+    "tags": [
+      "画像生成",
+      "画像編集",
+      "UI/UXデザイン",
+      "アセット作成"
+    ],
+    "id": "20260301_060920_03",
+    "date": "2026-03-01",
+    "source_news": {
+      "title": "Googleが画像生成・編集モデル「Nano Banana 2」を開発者向けに公開。",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
     "title": "GPT-4oで規制文書を要約",
     "news_highlight": "OpenAIがDraftNEPABench導入。AIエージェントがNEPAドラフト作成時間を削減する可能性を示唆。",
     "problem_context": "複雑な規制文書の理解と要約に時間がかかる。",
