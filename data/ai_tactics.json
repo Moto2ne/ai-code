@@ -1,5 +1,124 @@
 [
   {
+    "title": "Nano Banana 2でUIアセットを高速生成",
+    "news_highlight": "Nano Banana 2は高解像度画像生成・編集APIを開発者向けにリリース、既存画像からのスタイル転送やオブジェクト削除に対応",
+    "problem_context": "デザインアセット作成の手間と時間を削減したい",
+    "recommended_ai": {
+      "model": "Nano Banana 2",
+      "reason": "高精度な画像生成・編集API",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Webサイトのアイコンやバナー画像を生成したい時",
+      "モバイルアプリのUIコンポーネントのモックアップを作成したい時",
+      "既存の製品画像から不要な要素を削除したい時"
+    ],
+    "steps": [
+      "1. 必要な画像の種類と内容を具体的に記述する",
+      "2. Nano Banana 2のAPIにプロンプトと設定を送信する",
+      "3. 生成された画像をダウンロードし、デザインツールで確認する",
+      "4. 必要に応じてプロンプトを調整し、再生成を繰り返す"
+    ],
+    "prompt": "Webサイトのヒーローセクション用バナー画像を生成してください。テーマは「未来都市のテクノロジー」、サイズは1920x1080、青と紫を基調としたSF風でお願いします。",
+    "tags": [
+      "画像生成",
+      "UI/UXデザイン",
+      "アセット生成",
+      "API活用"
+    ],
+    "id": "20260303_061522_01",
+    "date": "2026-03-03",
+    "source_news": {
+      "title": "Googleが画像生成・編集AI「Nano Banana 2」を開発者向けにリリース",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Nano Banana 2でUIアセットを高速生成",
+    "news_highlight": "Nano Banana 2は画像生成が高速・高性能化し、開発ワークフローを加速",
+    "problem_context": "UI/UXデザインのアセット作成に時間がかかる",
+    "recommended_ai": {
+      "model": "Nano Banana 2",
+      "reason": "高速・高性能な画像生成が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プロトタイプ作成時のアイコンやイラスト生成",
+      "Webサイトの背景画像やバナーのアイデア出し",
+      "技術ドキュメント用の図解やイメージ作成"
+    ],
+    "steps": [
+      "1. 必要な画像の種類とスタイルを明確にする",
+      "2. Nano Banana 2のインターフェースにプロンプトを入力",
+      "3. 生成された画像をレビューし、必要に応じてプロンプトを調整",
+      "4. 最終画像をダウンロードし、プロジェクトに組み込む"
+    ],
+    "prompt": "モダンなWebサイト用のログインボタンアイコンを生成してください。青と白を基調とし、シンプルなデザインで。",
+    "tags": [
+      "画像生成",
+      "UI/UX",
+      "デザインアセット",
+      "プロトタイピング"
+    ],
+    "id": "20260303_061547_02",
+    "date": "2026-03-03",
+    "source_news": {
+      "title": "Googleの画像生成AI「Nano Banana 2」が高速・高性能化",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "オープンソースVLMでJetson推論最適化",
+    "news_highlight": "NVIDIA JetsonでオープンソースVLMを最適化し、リアルタイム推論性能を最大25%向上",
+    "problem_context": "エッジデバイスでのVLM推論性能不足",
+    "recommended_ai": {
+      "model": "オープンソースVLM",
+      "reason": "エッジAIでの効率的な推論",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "工場ラインでの製品異常自動検知と報告",
+      "スマートカメラによる不審行動のリアルタイム解析",
+      "建設現場での作業員安全監視と危険予測"
+    ],
+    "steps": [
+      "1. JetsonデバイスにNVIDIA JetPack SDKをインストールする",
+      "2. LLaVAなどオープンソースVLMを選定し、モデルファイルをダウンロードする",
+      "3. VLMモデルをONNX形式に変換し、Jetson向けにTensorRTで最適化する",
+      "4. 最適化されたモデルを使った推論コードをPythonで実装する",
+      "5. Jetson上で推論を実行し、レイテンシとスループットを測定・チューニングする"
+    ],
+    "prompt": "NVIDIA Jetson Orin NanoでLLaVAモデルをONNX形式に変換し、TensorRTで最適化するPythonスクリプトを生成してください。入力は画像パス、出力は検出結果と説明文です。",
+    "tags": [
+      "エッジAI",
+      "VLM",
+      "NVIDIA Jetson",
+      "デプロイ",
+      "最適化"
+    ],
+    "id": "20260303_061613_03",
+    "date": "2026-03-03",
+    "source_news": {
+      "title": "オープンソースVLMをNVIDIA Jetsonにデプロイする方法を解説",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-on-jetson"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Llama-3-VでJetson推論最適化",
     "news_highlight": "オープンソースVLMをNVIDIA Jetsonにデプロイし、エッジデバイスでのリアルタイム推論を実現。",
     "problem_context": "エッジデバイスでVLMを高速に動かしたい。",
