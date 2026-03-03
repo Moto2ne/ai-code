@@ -1,5 +1,125 @@
 [
   {
+    "title": "CORPGENでプロジェクトドキュメントを自動生成",
+    "news_highlight": "Microsoftが実務向けAIエージェント「CORPGEN」を発表。複数の相互依存タスクを横断処理し、知識労働者の生産性を向上。",
+    "problem_context": "複数の関連タスクの連携とドキュメント作成の効率化",
+    "recommended_ai": {
+      "model": "CORPGEN",
+      "reason": "実務タスク連携に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能開発時の設計書とテスト計画書を同時に作成する時",
+      "既存システムの改修に伴う影響範囲分析と関連ドキュメント更新を行う時",
+      "週次進捗報告書と関連するタスクリスト、課題リストを自動生成する時"
+    ],
+    "steps": [
+      "1. プロジェクトの概要と目的をCORPGENに入力する。",
+      "2. 必要なドキュメント（設計書、テスト計画書、進捗報告書など）の種類を指定する。",
+      "3. 既存のコードベースや関連資料（あれば）をCORPGENに参照させる。",
+      "4. 生成されたドキュメントを確認し、必要に応じて修正指示を出す。"
+    ],
+    "prompt": "新規機能「ユーザー認証モジュール」の開発について、以下の情報を元に、設計書、テスト計画書、および週次進捗報告書のドラフトを生成してください。既存の認証API仕様書も参照してください。",
+    "tags": [
+      "ドキュメント生成",
+      "タスク連携",
+      "プロジェクト管理",
+      "AIエージェント"
+    ],
+    "id": "20260304_061520_01",
+    "date": "2026-03-04",
+    "source_news": {
+      "title": "Microsoftが実務向けAIエージェント「CORPGEN」を発表。",
+      "url": "https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "ClaudeとLangGraphで会話AIエージェントを設計",
+    "news_highlight": "AWS BedrockのClaudeとLangGraphをSageMaker AIで統合し、会話AIエージェントの設計・管理を効率化",
+    "problem_context": "複雑な会話AIエージェントの設計と運用",
+    "recommended_ai": {
+      "model": "Claude (via Amazon Bedrock)",
+      "reason": "高度な対話エージェント構築に適している",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複雑な多段階対話フローを持つチャットボットのプロトタイプ開発",
+      "既存のLLMアプリケーションにツール利用（Function Calling）を追加する際",
+      "会話AIエージェントの対話履歴と状態管理ロジックを設計する時"
+    ],
+    "steps": [
+      "1. LangGraphの基本的なグラフ構造（ノード、エッジ）を定義する。",
+      "2. 各ノードでBedrockのClaudeを呼び出すロジックを実装する。",
+      "3. SageMaker AIのMLflowでエージェントの実行履歴と評価指標を追跡する設定を行う。",
+      "4. 定義したLangGraphエージェントをテストし、対話フローを検証する。"
+    ],
+    "prompt": "LangGraphを使って、ユーザーの質問に応じて外部APIを呼び出すClaudeベースの会話AIエージェントのPythonコードを生成してください。天気予報APIをツールとして組み込んでください。",
+    "tags": [
+      "LangGraph",
+      "Claude",
+      "Bedrock",
+      "SageMaker",
+      "会話AI",
+      "エージェント"
+    ],
+    "id": "20260304_061547_02",
+    "date": "2026-03-04",
+    "source_news": {
+      "title": "AWSがLangGraphとSageMakerでClaude会話AIエージェント構築法を解説。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-serverless-conversational-ai-agent-using-claude-with-langgraph-and-managed-mlflow-on-amazon-sagemaker-ai/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Amazon BedrockでエージェントAIを開発",
+    "news_highlight": "LendiがAmazon BedrockでエージェントAI導入、住宅ローン手続きを自動化し大幅効率化",
+    "problem_context": "複雑な業務プロセスの自動化と効率化",
+    "recommended_ai": {
+      "model": "Amazon Bedrock",
+      "reason": "エージェントAI構築に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規事業で複雑なワークフローを自動化したい時",
+      "既存システムの複数API連携を効率化したい時",
+      "ユーザーからの問い合わせに自動で対応するボットを開発する時"
+    ],
+    "steps": [
+      "1. 自動化したい業務フローを詳細に定義する",
+      "2. 業務に必要な既存のAPIやツールを特定し、機能と入出力を整理する",
+      "3. Amazon Bedrockでエージェントを作成し、定義したツールを登録する",
+      "4. エージェントの動作をテストし、期待通りにタスクが実行されるか検証・改善する"
+    ],
+    "prompt": "顧客からの住宅ローン申請を受け付け、必要書類の収集、審査状況の確認、顧客への進捗通知を行うエージェントAIの設計を提案してください。必要なツールとステップを具体的に記述してください。",
+    "tags": [
+      "エージェントAI",
+      "自動化",
+      "Bedrock",
+      "ワークフロー",
+      "設計"
+    ],
+    "id": "20260304_061612_03",
+    "date": "2026-03-04",
+    "source_news": {
+      "title": "LendiがBedrockでエージェントAI導入、住宅ローン手続き効率化。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-lendi-revamped-the-refinance-journey-for-its-customers-using-agentic-ai-in-12-weeks-using-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Nano Banana 2でUIアセットを高速生成",
     "news_highlight": "Nano Banana 2は高解像度画像生成・編集APIを開発者向けにリリース、既存画像からのスタイル転送やオブジェクト削除に対応",
     "problem_context": "デザインアセット作成の手間と時間を削減したい",
