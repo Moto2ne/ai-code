@@ -1,5 +1,122 @@
 [
   {
+    "title": "Gemini 3.1 Flash-Liteで軽量APIを設計",
+    "news_highlight": "Gemini 3.1 Flash-Liteは低リソース環境向け軽量モデル、高速応答と低コストを実現。",
+    "problem_context": "低リソース環境でのAI機能実装",
+    "recommended_ai": {
+      "model": "Gemini 3.1 Flash-Lite",
+      "reason": "軽量で高速、低コスト",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "エッジデバイス向け推論コードを最適化したい時",
+      "モバイルアプリのバックエンドAPIを設計する時",
+      "低コストでAI機能をプロトタイピングしたい時"
+    ],
+    "steps": [
+      "APIの要件（機能、入出力）を整理する。",
+      "AIにAPIエンドポイントの設計案とコード生成を依頼する。",
+      "生成された設計案とコードをレビューし、必要に応じて修正する。",
+      "軽量モデルの特性を活かした最適化ポイントをAIに質問する。"
+    ],
+    "prompt": "PythonとFastAPIを使って、ユーザー認証とデータ取得を行う軽量なREST APIの設計案とコードを生成してください。低リソース環境での動作を考慮してください。",
+    "tags": [
+      "API設計",
+      "軽量モデル",
+      "FastAPI",
+      "Python"
+    ],
+    "id": "20260305_061407_01",
+    "date": "2026-03-05",
+    "source_news": {
+      "title": "Gemini 3.1 Flash-Lite発表、スケーラブルなAI向け軽量モデル。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "GPT-4oでTransformer MoE設計を検討",
+    "news_highlight": "MoE技術によりTransformerモデルの推論コストを最大5倍削減、処理速度を2倍向上",
+    "problem_context": "大規模Transformerの推論コストと速度の課題",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "最新のAI技術の設計支援に優れる",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいモデルアーキテクチャを設計する際",
+      "既存モデルの推論効率を改善したい時",
+      "特定のタスクに特化したモデルを構築する際"
+    ],
+    "steps": [
+      "1. 既存のTransformerモデルのボトルネック（例: 推論時間、メモリ使用量）を特定する",
+      "2. GPT-4oにMoE導入による効率化の可能性について相談する",
+      "3. 提案されたMoEアーキテクチャの設計案（ルーター、エキスパート数など）をレビューする",
+      "4. 設計案に基づき、PoC（概念実証）のためのコード実装計画を立てる"
+    ],
+    "prompt": "既存のTransformerモデルの推論効率を改善するため、MoE（Mixture-of-Experts）アーキテクチャ導入の具体的な設計案を提案してください。特に、ルーターの設計とエキスパートの選定基準について詳しく解説してください。",
+    "tags": [
+      "Transformer",
+      "MoE",
+      "モデル最適化",
+      "アーキテクチャ設計"
+    ],
+    "id": "20260305_061433_02",
+    "date": "2026-03-05",
+    "source_news": {
+      "title": "TransformerにおけるMoE技術解説、モデル効率化に貢献。",
+      "url": "https://huggingface.co/blog/moe-transformers"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Phi-4でUIスクリーンショットからコード生成",
+    "news_highlight": "Phi-4は15Bパラメータのオープンなマルチモーダル推論モデルで、画像理解に基づくコード生成が可能。",
+    "problem_context": "UI設計から実装への変換を迅速化したい。",
+    "recommended_ai": {
+      "model": "Phi-4-reasoning-vision-15B",
+      "reason": "マルチモーダルで画像からの推論に強み。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "デザイナーからのUIモックアップをコード化する時",
+      "既存のWebサイトやアプリのUIを再実装する時",
+      "アイデア段階のUIスケッチからプロトタイプを素早く作成する時"
+    ],
+    "steps": [
+      "UIのスクリーンショットまたはモックアップ画像を準備する。",
+      "Phi-4が利用可能な環境（HuggingFaceなど）に画像をアップロードする。",
+      "生成したいコードの種類（React, Vue, HTML/CSSなど）と要件をプロンプトで指示する。",
+      "Phi-4が生成したコードを確認し、必要に応じて修正・調整する。"
+    ],
+    "prompt": "このUIスクリーンショットを元に、ReactとTailwind CSSでコンポーネントコードを生成してください。ボタンはクリック可能に、入力フィールドは編集可能にしてください。",
+    "tags": [
+      "コード生成",
+      "UI/UX",
+      "フロントエンド",
+      "マルチモーダル"
+    ],
+    "id": "20260305_061458_03",
+    "date": "2026-03-05",
+    "source_news": {
+      "title": "Microsoftが15BのオープンなマルチモーダルモデルPhi-4を発表。",
+      "url": "https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "CORPGENでプロジェクトドキュメントを自動生成",
     "news_highlight": "Microsoftが実務向けAIエージェント「CORPGEN」を発表。複数の相互依存タスクを横断処理し、知識労働者の生産性を向上。",
     "problem_context": "複数の関連タスクの連携とドキュメント作成の効率化",
