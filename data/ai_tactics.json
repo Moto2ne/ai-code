@@ -1,5 +1,104 @@
 [
   {
+    "title": "GPT-5.4で大規模コードベースを理解",
+    "news_highlight": "GPT-5.4は最先端のコーディングと1Mトークン対応でプロの作業を効率化。",
+    "problem_context": "複雑なコードベースの迅速な理解と改修",
+    "recommended_ai": {
+      "model": "GPT-5.4",
+      "reason": "最先端のコーディングと1Mトークン対応",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規プロジェクト参加時にコードベース全体を素早く把握したい時",
+      "複数のファイルにまたがる複雑なバグの原因を特定したい時",
+      "レガシーシステムで特定の機能実装を調査したい時"
+    ],
+    "steps": [
+      "関連する複数のコードファイルをAIに提示する",
+      "「この機能の全体像と主要な処理フローを説明してください。」と依頼する",
+      "AIの回答を元に、不明点や深掘りしたい箇所を質問する",
+      "理解した内容をドキュメントにまとめるか、次の開発タスクに進む"
+    ],
+    "prompt": "以下の複数のファイルから、`UserAuthenticationService`の主要な処理フローと依存関係を詳細に説明してください。",
+    "tags": [
+      "コード分析",
+      "大規模言語モデル",
+      "開発効率化",
+      "コード理解"
+    ],
+    "id": "20260306_061526_01",
+    "date": "2026-03-06",
+    "source_news": {
+      "title": "OpenAIがGPT-5.4を発表、最先端のコーディングと1Mトークン対応",
+      "url": "https://openai.com/index/introducing-gpt-5-4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "OpenAIモデルで推論過程をデバッグ",
+    "news_highlight": "OpenAIがCoT-Control導入、推論モデルの思考制御困難を発見し監視可能性を強化",
+    "problem_context": "AIの推論過程が不透明でデバッグ困難",
+    "recommended_ai": {
+      "model": "OpenAIモデル (GPT-4oなど)",
+      "reason": "思考過程の可視化に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIが意図しないコードを生成した際の原因究明",
+      "AIが生成した設計案の論理的妥当性検証",
+      "AIによるセキュリティ脆弱性分析の信頼性評価"
+    ],
+    "steps": [
+      "1. AIにCoTを明示的に出力させるプロンプトを準備",
+      "2. AIにタスクとCoT出力プロンプトを送信",
+      "3. AIのCoT出力を分析し、誤った推論ステップを特定",
+      "4. 特定した問題点に基づき、プロンプトを修正・再実行"
+    ],
+    "prompt": "以下の要件を満たすPythonコードを生成してください。思考の連鎖（Chain of Thought）を段階的に示し、最終的な結論を出力してください。",
+    "tags": [
+      "AIデバッグ",
+      "プロンプトエンジニアリング",
+      "AI安全性",
+      "CoT"
+    ],
+    "id": "20260306_061551_02",
+    "date": "2026-03-06",
+    "source_news": {
+      "title": "推論モデルの思考制御困難がAI安全策に寄与するとOpenAIが発表",
+      "url": "https://openai.com/index/reasoning-models-chain-of-thought-controllability"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-5.4でコードのセキュリティレビュー",
+    "news_highlight": "GPT-5.4システムカード公開、モデルの振る舞いと安全対策を詳細に記述",
+    "problem_context": "生成コードの潜在的なセキュリティ脆弱性",
+    "recommended_ai": {
+      "model": "GPT-5.4",
+      "reason": "詳細な安全性情報活用",
+      "badge_color": "orange"
+    },
+    "id": "20260306_061623_03",
+    "date": "2026-03-06",
+    "source_news": {
+      "title": "GPT-5.4のシステムカード公開、モデル特性と安全性を詳述",
+      "url": "https://openai.com/index/gpt-5-4-thinking-system-card"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "Gemini 3.1 Flash-Liteで軽量APIを設計",
     "news_highlight": "Gemini 3.1 Flash-Liteは低リソース環境向け軽量モデル、高速応答と低コストを実現。",
     "problem_context": "低リソース環境でのAI機能実装",
