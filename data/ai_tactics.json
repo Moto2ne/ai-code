@@ -1,5 +1,123 @@
 [
   {
+    "title": "GPT-5.4で大規模コードのデバッグ",
+    "news_highlight": "GPT-5.4は最先端のコーディング能力と1Mトークンコンテキストで複雑なバグを解決。",
+    "problem_context": "複数ファイルに跨る複雑なバグ",
+    "recommended_ai": {
+      "model": "GPT-5.4",
+      "reason": "1Mトークンで広範囲を分析",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "本番環境で発生した原因不明のエラーを調査する時",
+      "複数のモジュールが絡み合う複雑なバグを修正する時",
+      "レガシーコードのデバッグで全体像を把握したい時"
+    ],
+    "steps": [
+      "エラーが発生している主要なファイルと関連する依存ファイル群を特定する。",
+      "これらのファイルのコード全体とエラーメッセージ、スタックトレースをコピーする。",
+      "GPT-5.4に貼り付け、「このコードベースで発生しているエラーの原因を特定し、修正案を提示してください。」と依頼する。",
+      "提案された修正案を適用し、テストを実行してバグが解決したか確認する。"
+    ],
+    "prompt": "以下のコードとエラーメッセージから、バグの原因を特定し、修正案を提示してください。関連するファイル群とスタックトレースも提供します。",
+    "tags": [
+      "デバッグ",
+      "エラー解決",
+      "大規模コード",
+      "GPT-5.4"
+    ],
+    "id": "20260307_061234_01",
+    "date": "2026-03-07",
+    "source_news": {
+      "title": "GPT-5.4発表、コード生成・ツール利用・1Mトークン対応",
+      "url": "https://openai.com/index/introducing-gpt-5-4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Phi-4-reasoning-vision-15BでUIレビュー",
+    "news_highlight": "Phi-4-reasoning-vision-15Bは15Bパラメータのオープンなマルチモーダル推論モデル",
+    "problem_context": "UIの視覚的な問題とコードの乖離を特定したい",
+    "recommended_ai": {
+      "model": "Phi-4-reasoning-vision-15B",
+      "reason": "画像とコードの関連付けに強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "開発中のUIスクリーンショットから改善点を洗い出す時",
+      "UIの表示バグ発生時にスクリーンショットと関連コードから原因を特定する時",
+      "既存UIのスクリーンショットから機能仕様書や操作手順書を作成する時"
+    ],
+    "steps": [
+      "レビューしたいUIのスクリーンショットを準備する",
+      "関連するフロントエンドコード（HTML, CSS, JSなど）をコピーする",
+      "AIにスクリーンショットとコードを渡し、改善点やバグの原因を尋ねる",
+      "提案された改善策や修正コードを適用し、テストする"
+    ],
+    "prompt": "このUIスクリーンショットとHTML/CSSコードを見てください。視覚的な問題点や改善点を指摘し、具体的な修正コードを提案してください。",
+    "tags": [
+      "UIレビュー",
+      "マルチモーダル",
+      "コード改善",
+      "デバッグ"
+    ],
+    "id": "20260307_061258_02",
+    "date": "2026-03-07",
+    "source_news": {
+      "title": "MicrosoftがPhi-4-reasoning-vision-15Bを公開",
+      "url": "https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "Codex Securityで脆弱性検出・修正",
+    "news_highlight": "Codex SecurityはAIアプリの脆弱性を高精度で検出し、検証、パッチ適用まで自動化",
+    "problem_context": "複雑なAIアプリの脆弱性を見逃しがち",
+    "recommended_ai": {
+      "model": "Codex Security",
+      "reason": "高精度な脆弱性検出と修正",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードの脆弱性をチェックしたい時",
+      "本番環境デプロイ前にAIアプリ全体のセキュリティ診断をしたい時",
+      "既存のAIアプリケーションに新たな脆弱性がないか定期的に確認したい時"
+    ],
+    "steps": [
+      "1. 診断したいAIアプリケーションのプロジェクトルートを指定する",
+      "2. Codex Securityを実行し、脆弱性スキャンを開始する",
+      "3. 検出された脆弱性の詳細レポートを確認し、修正案をレビューする",
+      "4. 提案されたパッチを適用し、再度スキャンして修正を確認する"
+    ],
+    "prompt": "このAIアプリケーションプロジェクト全体を分析し、潜在的なセキュリティ脆弱性を検出、検証し、修正パッチを提案してください。",
+    "tags": [
+      "セキュリティ",
+      "脆弱性検出",
+      "AIアプリケーション",
+      "コードレビュー",
+      "自動修正"
+    ],
+    "id": "20260307_061322_03",
+    "date": "2026-03-07",
+    "source_news": {
+      "title": "OpenAIがAIアプリの脆弱性検出ツールCodex Security発表",
+      "url": "https://openai.com/index/codex-security-now-in-research-preview"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
     "title": "GPT-5.4で大規模コードベースを理解",
     "news_highlight": "GPT-5.4は最先端のコーディングと1Mトークン対応でプロの作業を効率化。",
     "problem_context": "複雑なコードベースの迅速な理解と改修",
