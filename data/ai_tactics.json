@@ -1,5 +1,123 @@
 [
   {
+    "title": "Phi-4-reasoning-visionでUIバグ解析",
+    "news_highlight": "Phi-4-reasoning-vision-15B公開、150億パラメータのオープンウェイトマルチモーダル推論モデル",
+    "problem_context": "画像とテキスト情報からデバッグや改善",
+    "recommended_ai": {
+      "model": "Phi-4-reasoning-vision-15B",
+      "reason": "マルチモーダル推論に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "UIのスクリーンショットからバグの原因を特定したい時",
+      "既存のUIデザインから改善点を提案してほしい時",
+      "画像とテキスト情報からコードの仕様を明確にしたい時"
+    ],
+    "steps": [
+      "1. 問題のUIスクリーンショットと関連するエラーメッセージを準備",
+      "2. Hugging FaceのPhi-4-reasoning-vision-15BモデルのAPIを呼び出す",
+      "3. スクリーンショットとエラーメッセージをプロンプトと共にモデルに送信",
+      "4. モデルの推論結果（原因分析、修正コード）を確認し、適用"
+    ],
+    "prompt": "このUIのスクリーンショットと以下のエラーメッセージを考慮し、バグの原因と修正コードを提案してください。エラーメッセージ: [ここにエラーメッセージを貼り付け]",
+    "tags": [
+      "マルチモーダル",
+      "デバッグ",
+      "UI/UX",
+      "コード生成"
+    ],
+    "id": "20260309_060927_01",
+    "date": "2026-03-09",
+    "source_news": {
+      "title": "Phi-4-reasoning-vision公開、Hugging Faceで利用可能なオープンウェイトマルチモーダルモデル",
+      "url": "https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "Modular Diffusersで拡散モデルを効率開発",
+    "news_highlight": "Hugging Face Modular Diffusersが拡散モデルのモジュール化を推進、開発効率を大幅向上",
+    "problem_context": "拡散モデルの複雑な開発・実験を簡素化したい",
+    "recommended_ai": {
+      "model": "Modular Diffusers (Hugging Face)",
+      "reason": "拡散モデル開発をモジュール化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい拡散モデルのアーキテクチャを試したい時",
+      "既存の拡散モデルにカスタムレイヤーを追加したい時",
+      "拡散モデルのトレーニングパイプラインを迅速に構築したい時"
+    ],
+    "steps": [
+      "1. Modular Diffusersのドキュメントで利用可能なモジュールを確認する。",
+      "2. 目的の拡散モデル構成に必要なモジュール（例: UNet, Scheduler, VAE）を選択する。",
+      "3. 選択したモジュールを組み合わせてモデルのコードを生成する。",
+      "4. 生成されたモデルコードをテストし、必要に応じてカスタマイズする。"
+    ],
+    "prompt": "Modular DiffusersでUNetとDDPMスケジューラを組み合わせた拡散モデルの基本構造をPythonで記述してください。VAEはデフォルトを使用。",
+    "tags": [
+      "拡散モデル",
+      "Hugging Face",
+      "AI開発",
+      "モジュール化"
+    ],
+    "id": "20260309_060952_02",
+    "date": "2026-03-09",
+    "source_news": {
+      "title": "Hugging FaceがModular Diffusersを発表、拡散モデル開発を効率化",
+      "url": "https://huggingface.co/blog/modular-diffusers"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "GPT-5.4で大規模コードのリファクタリング",
+    "news_highlight": "GPT-5.4は最先端のコーディング性能と1Mトークンコンテキストを提供",
+    "problem_context": "複雑な既存コードの品質向上と保守性改善",
+    "recommended_ai": {
+      "model": "GPT-5.4",
+      "reason": "大規模コード理解と高精度な生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "レガシーコードの保守・改善を行う時",
+      "大規模なプルリクエストのレビュー前にコード品質を高めたい時",
+      "複数のファイルにまたがる機能のリファクタリング計画を立てる時"
+    ],
+    "steps": [
+      "1. リファクタリングしたい機能に関連する全ファイルの内容をコピーする",
+      "2. 現在の課題と目標（例: 可読性向上、パフォーマンス改善）を明確にする",
+      "3. AIにコピーしたコードと課題・目標を渡し、改善案とリファクタリング後のコードを依頼する",
+      "4. 提案されたコードと改善点をレビューし、必要に応じてテストを実施する"
+    ],
+    "prompt": "以下のTypeScriptとReactのコードを、可読性と保守性を向上させるようにリファクタリングしてください。コンポーネントの責務分割と命名規則に注意。コード: [ここにコードを貼り付け]",
+    "tags": [
+      "リファクタリング",
+      "コード品質",
+      "大規模コード",
+      "TypeScript",
+      "React"
+    ],
+    "id": "20260309_061018_03",
+    "date": "2026-03-09",
+    "source_news": {
+      "title": "OpenAIがGPT-5.4を発表、コーディング性能とコンテキストが大幅向上",
+      "url": "https://openai.com/index/introducing-gpt-5-4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "Codex Securityで脆弱性を自動修正",
     "news_highlight": "Codex Securityはプロジェクト文脈分析で複雑な脆弱性を高信頼性・低ノイズで検出・修正",
     "problem_context": "セキュリティ脆弱性の見落としと修正工数",
