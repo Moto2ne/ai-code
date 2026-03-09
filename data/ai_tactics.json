@@ -1,5 +1,104 @@
 [
   {
+    "title": "GPT-5.4で安全なコードレビュー",
+    "news_highlight": "GPT-5.4システムカード公開でモデルの振る舞いが明確化、信頼性向上。",
+    "problem_context": "セキュリティ脆弱性や倫理的問題のあるコードを見落とす。",
+    "recommended_ai": {
+      "model": "GPT-5.4",
+      "reason": "システムカードで安全性が強化されたため。",
+      "badge_color": "orange"
+    },
+    "id": "20260310_061402_01",
+    "date": "2026-03-10",
+    "source_news": {
+      "title": "OpenAIが次期モデルGPT-5.4のシステムカードを公開。",
+      "url": "https://openai.com/index/gpt-5-4-thinking-system-card"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Phi-4-reasoning-visionでUI改善案生成",
+    "news_highlight": "Phi-4-reasoning-vision-15Bは150億パラメータのオープンなマルチモーダル推論モデル。",
+    "problem_context": "UI/UXの改善点特定と具体的な提案",
+    "recommended_ai": {
+      "model": "Phi-4-reasoning-vision-15B",
+      "reason": "画像とテキストで推論可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新機能のUIデザインレビュー時",
+      "既存画面のユーザビリティ改善検討時",
+      "競合サービスのUI分析時"
+    ],
+    "steps": [
+      "改善したいUIのスクリーンショットを準備",
+      "スクリーンショットをAIにアップロード",
+      "改善要望や目的をプロンプトに入力",
+      "AIの提案を基にUIデザインを修正"
+    ],
+    "prompt": "このUIスクリーンショットについて、ユーザー体験を向上させるための具体的な改善案を3つ提案してください。特に、情報配置と操作性に着目してください。",
+    "tags": [
+      "UI/UX",
+      "デザイン",
+      "レビュー",
+      "マルチモーダル"
+    ],
+    "id": "20260310_061426_02",
+    "date": "2026-03-10",
+    "source_news": {
+      "title": "MSがオープンなマルチモーダル推論モデルPhi-4-reasoning-visionを発表。",
+      "url": "https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "Hugging Face DiffusersでDiffusionモデルをカスタマイズ",
+    "news_highlight": "Hugging FaceがDiffusionモデルをU-Net, VAEなどモジュール化し、コンポーネントの交換・再利用を容易に",
+    "problem_context": "Diffusionモデルのカスタマイズが複雑で時間がかかる",
+    "recommended_ai": {
+      "model": "Hugging Face Diffusers",
+      "reason": "モジュール化で開発効率向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存のDiffusionモデルの特定コンポーネントを改善したい時",
+      "異なるDiffusionモデルのコンポーネントを組み合わせて新しいモデルを試したい時",
+      "特定用途に特化したDiffusionモデルを効率的に構築したい時"
+    ],
+    "steps": [
+      "1. Diffusersライブラリの最新版をインストールする。",
+      "2. 既存のDiffusionモデルをロードし、U-NetやVAEなどのコンポーネントを抽出する。",
+      "3. 別のモデルや自作のコンポーネントと交換し、新しいパイプラインを構築する。",
+      "4. 構築したパイプラインで画像を生成し、性能を評価する。"
+    ],
+    "prompt": "Hugging Face Diffusersを使って、Stable Diffusion v1.5のU-NetをLoRAでファインチューニングしたU-Netに置き換え、新しいテキストto画像生成パイプラインを構築するPythonコードを生成してください。",
+    "tags": [
+      "Diffusionモデル",
+      "画像生成",
+      "Hugging Face",
+      "MLOps"
+    ],
+    "id": "20260310_061451_03",
+    "date": "2026-03-10",
+    "source_news": {
+      "title": "Hugging FaceがDiffusionモデルのモジュール化ツールを発表。",
+      "url": "https://huggingface.co/blog/modular-diffusers"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Phi-4-reasoning-visionでUIバグ解析",
     "news_highlight": "Phi-4-reasoning-vision-15B公開、150億パラメータのオープンウェイトマルチモーダル推論モデル",
     "problem_context": "画像とテキスト情報からデバッグや改善",
