@@ -1,5 +1,121 @@
 [
   {
+    "title": "Granite 4.0 1BでEdgeデバイス音声認識",
+    "news_highlight": "Edge AI向け小型多言語音声モデルGranite 4.0 1B発表。低リソース環境で高精度音声認識を実現。",
+    "problem_context": "Edgeデバイスでの音声認識機能実装の課題。",
+    "recommended_ai": {
+      "model": "Granite 4.0 1B",
+      "reason": "Edge AI向け小型多言語音声モデル",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "組み込みシステムでオフライン音声コマンドを実装したい時。",
+      "IoTデバイスで多言語対応の音声インターフェースを開発する時。",
+      "ネットワーク帯域が限られた環境でリアルタイム音声処理が必要な時。"
+    ],
+    "steps": [
+      "ターゲットEdgeデバイスのOSとハードウェア情報を確認する。",
+      "Granite 4.0 1BのSDKまたはAPIドキュメントを入手する。",
+      "提供されたサンプルコードを参考に、音声入力からテキスト変換までの基本処理を実装する。",
+      "多言語対応が必要な場合、言語設定やモデル切り替えのロジックを追加する。"
+    ],
+    "prompt": "Raspberry Pi 4上でPythonとGranite 4.0 1Bモデルを使用して、マイク入力から英語と日本語の音声をテキストに変換するサンプルコードを生成してください。",
+    "tags": [
+      "Edge AI",
+      "音声認識",
+      "多言語"
+    ],
+    "id": "20260312_061417_01",
+    "date": "2026-03-12",
+    "source_news": {
+      "title": "Edge AI向け小型多言語音声モデルGranite 4.0 1B発表。",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-speech"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "NVIDIA Nemotron 3 Nanoでテストコード生成",
+    "news_highlight": "NVIDIA Nemotron 3 NanoがBedrockで利用可能。フルマネージド、サーバーレスで提供。",
+    "problem_context": "新機能やバグ修正後のテストコード作成を効率化。",
+    "recommended_ai": {
+      "model": "NVIDIA Nemotron 3 Nano",
+      "reason": "Bedrockで手軽に利用可能、軽量モデルで高速。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい関数やクラスの基本的なテストケースを素早く生成したい時",
+      "既存のコードに回帰テストを追加したいが、どこから手をつければ良いか迷う時",
+      "特定のエッジケースに対するテストコードのアイデアが欲しい時"
+    ],
+    "steps": [
+      "テストしたい関数やクラスのコードをコピーする。",
+      "BedrockのNemotron 3 Nanoにプロンプトとコードを貼り付ける。",
+      "生成されたテストコードを確認し、テストフレームワークに合わせて調整する。",
+      "テストを実行し、必要に応じて修正・追加する。"
+    ],
+    "prompt": "以下のPython関数に対するpytestのテストコードを生成してください。主要なユースケースとエッジケースをカバーし、アサーションを含めてください。",
+    "tags": [
+      "コード生成",
+      "テストコード",
+      "Bedrock",
+      "開発効率"
+    ],
+    "id": "20260312_061446_02",
+    "date": "2026-03-12",
+    "source_news": {
+      "title": "NVIDIA Nemotron 3 NanoがBedrockで利用可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/run-nvidia-nemotron-3-nano-as-a-fully-managed-serverless-model-on-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Ulysses SPが実現するLLMで大規模コード分析",
+    "news_highlight": "Ulysses SPにより数百万トークン対応LLMの学習が効率化、大規模コンテキスト処理が可能に。",
+    "problem_context": "巨大なコードベースやログの全体像把握が困難。",
+    "recommended_ai": {
+      "model": "Ulysses SP",
+      "reason": "大規模コンテキスト処理に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "数万行のレガシーコードの全体構造を理解したい時",
+      "複数ファイルにまたがるバグの原因を特定したい時",
+      "大規模システムのログから異常パターンを検出したい時"
+    ],
+    "steps": [
+      "関連する全てのコードファイルと設定ファイルをAIにアップロードする。",
+      "目的（例: 「このシステムの認証フローを説明してください」）を明確に指示する。",
+      "AIの分析結果を基に、不明点や深掘りしたい箇所を質問する。",
+      "提案された改善点や構造図をレビューし、実務に適用する。"
+    ],
+    "prompt": "このリポジトリ全体のコードを分析し、主要なモジュール間の依存関係とデータフローをMarkdown形式で説明してください。特に認証機能に焦点を当ててください。",
+    "tags": [
+      "コード分析",
+      "大規模コンテキスト",
+      "システム理解",
+      "レガシーコード"
+    ],
+    "id": "20260312_061519_03",
+    "date": "2026-03-12",
+    "source_news": {
+      "title": "数百万トークン対応LLMの効率的学習技術Ulysses SP発表。",
+      "url": "https://huggingface.co/blog/ulysses-sp"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Codex Securityで脆弱性を自動修正",
     "news_highlight": "Codex Securityはプロジェクト文脈を分析し、複雑な脆弱性を高精度で検知・修正",
     "problem_context": "複雑な脆弱性の見落としと修正工数",
