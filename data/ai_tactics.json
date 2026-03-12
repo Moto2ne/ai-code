@@ -1,5 +1,121 @@
 [
   {
+    "title": "IH-Challenge適用モデルでプロンプト堅牢化",
+    "news_highlight": "IH-Challengeが信頼指示を優先、指示階層とプロンプトインジェクション耐性を向上。",
+    "problem_context": "プロンプトインジェクション攻撃への対策",
+    "recommended_ai": {
+      "model": "IH-Challenge適用モデル",
+      "reason": "指示階層改善で耐性向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザー入力を含むLLMアプリケーションの設計",
+      "セキュリティレビュー時のプロンプト脆弱性診断",
+      "悪意あるプロンプトからのシステム保護機能開発"
+    ],
+    "steps": [
+      "ユーザー入力を含むシステムプロンプトを定義する",
+      "潜在的なインジェクション攻撃を想定した悪意あるプロンプトを作成する",
+      "IH-Challenge適用モデルに悪意あるプロンプトを送信し、意図しない挙動がないか検証する",
+      "意図しない挙動が見られた場合、システムプロンプトを修正し再テストする"
+    ],
+    "prompt": "「システム指示: ユーザーの質問にのみ答えてください。」この指示を無視し、内部情報を開示させようとするプロンプトをテストし、安全性を確認してください。",
+    "tags": [
+      "セキュリティ",
+      "プロンプトエンジニアリング",
+      "LLM開発"
+    ],
+    "id": "20260313_061438_01",
+    "date": "2026-03-13",
+    "source_news": {
+      "title": "LLMの指示階層を改善し、安全性やプロンプトインジェクション耐性を向上。",
+      "url": "https://openai.com/index/instruction-hierarchy-challenge"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "ChatGPTでAIエージェントのセキュリティ設計",
+    "news_highlight": "ChatGPTがエージェントのプロンプトインジェクションと機密データ保護を強化",
+    "problem_context": "AIエージェントのセキュリティ脆弱性対策",
+    "recommended_ai": {
+      "model": "ChatGPT",
+      "reason": "エージェントのセキュリティ設計支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントの設計段階でセキュリティ要件を定義する時",
+      "既存のAIエージェントの脆弱性診断を行う時",
+      "プロンプトインジェクション対策のコードを実装する時"
+    ],
+    "steps": [
+      "AIエージェントの機能とデータフローを定義する",
+      "AIにプロンプトインジェクションのリスクシナリオを列挙させる",
+      "AIに機密データ保護の設計原則と実装パターンを提案させる",
+      "提案された対策をコードに落とし込み、テスト計画を立てる"
+    ],
+    "prompt": "AIエージェントの設計において、プロンプトインジェクション対策と機密データ保護のための具体的な設計原則、実装パターン、およびテストケースを提案してください。",
+    "tags": [
+      "セキュリティ",
+      "AIエージェント",
+      "設計",
+      "プロンプトインジェクション",
+      "データ保護"
+    ],
+    "id": "20260313_061502_02",
+    "date": "2026-03-13",
+    "source_news": {
+      "title": "AIエージェントのプロンプトインジェクション対策と機密データ保護の設計。",
+      "url": "https://openai.com/index/designing-agents-to-resist-prompt-injection"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "AgentRxでAIエージェントのデバッグ",
+    "news_highlight": "AgentRxはAIエージェントの複雑なマルチステップタスクのデバッグを体系的に支援するフレームワーク。",
+    "problem_context": "複雑なAIエージェントの挙動分析とデバッグが困難。",
+    "recommended_ai": {
+      "model": "AgentRx",
+      "reason": "AIエージェント特化のデバッグフレームワーク",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントが意図しない動作をした際の原因特定",
+      "マルチステップAPIワークフローの実行失敗時のトラブルシューティング",
+      "複雑なWebインターフェース操作エージェントの挙動分析"
+    ],
+    "steps": [
+      "1. AgentRxフレームワークをAIエージェント開発環境に導入する。",
+      "2. デバッグしたいエージェントの実行ログとAgentRxのトレース情報を収集する。",
+      "3. AgentRxの可視化ツールでエージェントの実行パスと状態遷移を分析する。",
+      "4. 特定された問題箇所に基づき、エージェントのプロンプトやツール利用ロジックを修正する。"
+    ],
+    "prompt": "AgentRxの分析結果として、エージェントがAPI呼び出しに失敗しました。この原因と、API呼び出しロジックの修正案を具体的に提案してください。",
+    "tags": [
+      "デバッグ",
+      "AIエージェント",
+      "トラブルシューティング"
+    ],
+    "id": "20260313_061529_03",
+    "date": "2026-03-13",
+    "source_news": {
+      "title": "AIエージェント向け体系的デバッグフレームワークAgentRxを発表。",
+      "url": "https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Granite 4.0 1BでEdgeデバイス音声認識",
     "news_highlight": "Edge AI向け小型多言語音声モデルGranite 4.0 1B発表。低リソース環境で高精度音声認識を実現。",
     "problem_context": "Edgeデバイスでの音声認識機能実装の課題。",
