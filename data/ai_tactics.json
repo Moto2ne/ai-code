@@ -1,5 +1,125 @@
 [
   {
+    "title": "OpenAI APIでエージェントがコード自動修正",
+    "news_highlight": "OpenAI APIがResponses API、shell tool、hosted containersでエージェントに安全なコード実行環境を提供。",
+    "problem_context": "複雑なバグの特定と修正に時間がかかる",
+    "recommended_ai": {
+      "model": "OpenAI API (Responses API, shell tool, hosted containers)",
+      "reason": "エージェントがコード実行環境を持つため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "テストが失敗したコードの原因究明と修正",
+      "CI/CDパイプラインで発生したエラーの自動解析",
+      "開発環境のセットアップスクリプトの自動生成と実行"
+    ],
+    "steps": [
+      "OpenAI API経由でエージェントにエラーログと関連コードを渡す",
+      "エージェントにshell toolでコードを実行させ、問題を特定させる",
+      "エージェントが提案する修正コードをレビューする",
+      "修正コードを適用し、エージェントにhosted containersで再テストさせる"
+    ],
+    "prompt": "以下のエラーログとソースコードを分析し、shell toolで問題を特定してください。修正コードを提案し、hosted containersで実行してテスト結果を報告してください。",
+    "tags": [
+      "デバッグ",
+      "自動修正",
+      "エージェント",
+      "CI/CD"
+    ],
+    "id": "20260315_061140_01",
+    "date": "2026-03-15",
+    "source_news": {
+      "title": "OpenAIがAPI経由でエージェントにコンピュータ環境を提供、安全な実行が可能に。",
+      "url": "https://openai.com/index/equip-responses-api-computer-environment"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Bedrock AgentCoreでAIエージェントの振る舞いを設計",
+    "news_highlight": "Bedrock AgentCoreにポリシー機能追加、AIエージェントの安全な制御を推論とは独立した決定論的レイヤーで実現。",
+    "problem_context": "AIエージェントの予期せぬ動作や情報漏洩を防止",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "AIエージェントの安全な制御に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントが機密情報にアクセスしないよう制御したい時",
+      "AIエージェントが特定の外部APIを呼び出さないよう制限したい時",
+      "AIエージェントの応答内容に倫理的・法的制約を課したい時"
+    ],
+    "steps": [
+      "AWSコンソールでBedrock AgentCoreのエージェント設定画面を開く。",
+      "対象エージェントの「ポリシー」セクションに移動し、新規ポリシーを作成する。",
+      "エージェントが実行可能なアクションやアクセス可能なリソースをJSON形式で定義する。",
+      "ポリシーをエージェントに適用し、定義した制約が機能するかテストする。"
+    ],
+    "prompt": "Amazon Bedrock AgentCoreで、エージェントがS3バケット`my-sensitive-data`への書き込み操作を禁止するポリシーをJSON形式で生成してください。",
+    "tags": [
+      "AIエージェント",
+      "セキュリティ",
+      "コンプライアンス",
+      "AWS"
+    ],
+    "id": "20260315_061209_02",
+    "date": "2026-03-15",
+    "source_news": {
+      "title": "Bedrock AgentCoreにポリシー機能追加、AIエージェントの安全な制御を実現。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/secure-ai-agents-with-policy-in-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Bedrock推論の運用可視化と設計改善",
+    "news_highlight": "Bedrock推論向けにCloudWatch新指標TTFTとEstimatedTPMQuotaUsageが追加され、運用可視性が向上。",
+    "problem_context": "Bedrock推論のパフォーマンスとクォータ利用状況の把握が困難。",
+    "recommended_ai": {
+      "model": "Amazon CloudWatch",
+      "reason": "Bedrock推論の運用監視に特化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Bedrockを利用したアプリケーションのレイテンシ改善時",
+      "BedrockのAPI呼び出しがクォータ上限に近づいていないか確認する時",
+      "Bedrock利用コストの最適化を検討する時",
+      "新しいBedrockモデルを導入する際の性能評価時"
+    ],
+    "steps": [
+      "AWSマネジメントコンソールでCloudWatchを開く",
+      "「メトリクス」セクションで「Bedrock」を選択し、新しい指標（TimeToFirstToken, EstimatedTPMQuotaUsage）を探す",
+      "監視したい指標を選択し、グラフ表示で現在の状況を確認する",
+      "「アラーム」タブから、特定のしきい値でアラームを設定し、運用チームに通知されるようにする"
+    ],
+    "prompt": "BedrockのTimeToFirstTokenが平均500ms、最大1200msを記録しています。このデータに基づき、Bedrockアプリケーションの応答速度を改善するための具体的な設計変更案を3つ提案してください。",
+    "tags": [
+      "Bedrock",
+      "CloudWatch",
+      "監視",
+      "パフォーマンス",
+      "コスト最適化",
+      "設計"
+    ],
+    "id": "20260315_061236_03",
+    "date": "2026-03-15",
+    "source_news": {
+      "title": "Bedrock推論向けにCloudWatch新指標追加、TTFT等で運用可視性が向上。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/improve-operational-visibility-for-inference-workloads-on-amazon-bedrock-with-new-cloudwatch-metrics-for-ttft-and-estimated-quota-consumption/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GeminiでSheetsデータ分析と整形",
     "news_highlight": "GeminiがGoogle SheetsでSOTA性能達成。データ整理、分析、視覚化、プロジェクト管理の新機能を追加。",
     "problem_context": "スプレッドシートのデータ分析・整形が非効率",
