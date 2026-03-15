@@ -1,5 +1,123 @@
 [
   {
+    "title": "Hugging Faceで大規模コードベース分析",
+    "news_highlight": "Hugging Faceが数百万トークン対応のLLM並列学習技術を発表、大規模モデルの効率的な学習・利用を可能に。",
+    "problem_context": "大規模コードベースの理解とリファクタリング",
+    "recommended_ai": {
+      "model": "Hugging Face Transformers",
+      "reason": "大規模モデルの効率的な利用・ファインチューニングが可能に。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "レガシーシステムの大規模なコードリファクタリング計画立案",
+      "複数ファイルにまたがる機能の依存関係分析",
+      "プロジェクト全体のコーディング規約違反の一括検出"
+    ],
+    "steps": [
+      "Hugging Faceの並列学習技術でファインチューニングされた、または大規模コンテキスト対応のLLMを用意する。",
+      "分析したいコードベース全体をAIに読み込ませる。",
+      "具体的なタスク（例: 特定の機能に関連する全ファイルのリストアップ）をプロンプトで指示する。",
+      "AIの分析結果を基に、リファクタリング計画や修正案を検討する。"
+    ],
+    "prompt": "以下の大規模コードベース全体を分析し、特定の機能『ユーザー認証』に関連する全てのファイルと、それらのファイル間の依存関係を詳細にリストアップしてください。",
+    "tags": [
+      "コード分析",
+      "リファクタリング",
+      "LLM活用",
+      "Hugging Face"
+    ],
+    "id": "20260316_061118_01",
+    "date": "2026-03-16",
+    "source_news": {
+      "title": "Hugging Faceが数百万トークン対応のLLM並列学習技術を発表。",
+      "url": "https://huggingface.co/blog/ulysses-sp"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Granite 4.0でエッジASR開発",
+    "news_highlight": "Hugging Face Granite 4.0はエッジ向け多言語ASR、低遅延・高精度を実現",
+    "problem_context": "エッジデバイスでの多言語音声認識の精度と速度",
+    "recommended_ai": {
+      "model": "Granite 4.0",
+      "reason": "エッジ向け多言語ASRに最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "オフライン環境での音声入力機能実装",
+      "スマートデバイス向け音声コマンド認識",
+      "産業用機器の音声操作インターフェース開発"
+    ],
+    "steps": [
+      "1. Hugging Face Transformersライブラリをインストールする",
+      "2. Granite 4.0モデルとプロセッサをロードする",
+      "3. 音声ファイルを読み込み、モデルに入力する",
+      "4. モデルの出力をデコードし、テキストとして利用する"
+    ],
+    "prompt": "PythonとHugging Face Transformersライブラリを使用し、Granite 4.0モデルをロードして`sample.wav`をテキストに変換するコードを生成してください。",
+    "tags": [
+      "ASR",
+      "エッジAI",
+      "多言語",
+      "Python",
+      "HuggingFace"
+    ],
+    "id": "20260316_061144_02",
+    "date": "2026-03-16",
+    "source_news": {
+      "title": "Hugging Faceがエッジ向け多言語ASRモデルGranite 4.0を発表。",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-speech"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Hugging Face Hubで学習ログを管理",
+    "news_highlight": "Hugging Face Hubにストレージバケット機能が追加され、任意のファイルをモデル/データセットリポジトリで管理可能に。",
+    "problem_context": "モデル学習ログや評価結果の管理・共有が煩雑。",
+    "recommended_ai": {
+      "model": "Hugging Face Hub",
+      "reason": "モデル関連ファイルの一元管理が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "モデル学習の進捗をチームで共有したい時",
+      "過去の学習結果や評価指標を比較したい時",
+      "学習パイプラインの中間成果物を保存したい時"
+    ],
+    "steps": [
+      "1. Hugging Face Hubにモデルまたはデータセットリポジトリを作成する。",
+      "2. Pythonの学習スクリプトに`huggingface_hub`ライブラリをインポートする。",
+      "3. 学習完了後、ログファイル（例: CSV, JSON）を生成する。",
+      "4. `HfApi().upload_file()` を使用し、生成したログファイルをリポジトリにアップロードする。"
+    ],
+    "prompt": "PythonでHugging Face Hubのストレージバケットに学習ログ（CSV形式）をアップロードするコードを生成してください。リポジトリIDとファイルパスを指定できるようにしてください。",
+    "tags": [
+      "MLOps",
+      "HuggingFace",
+      "データ管理",
+      "学習ログ"
+    ],
+    "id": "20260316_061216_03",
+    "date": "2026-03-16",
+    "source_news": {
+      "title": "Hugging Face Hubにストレージバケット機能が追加。",
+      "url": "https://huggingface.co/blog/storage-buckets"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "OpenAI APIでエージェントがコード自動修正",
     "news_highlight": "OpenAI APIがResponses API、shell tool、hosted containersでエージェントに安全なコード実行環境を提供。",
     "problem_context": "複雑なバグの特定と修正に時間がかかる",
