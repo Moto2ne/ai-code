@@ -1,5 +1,122 @@
 [
   {
+    "title": "Gemini in Sheetsでテストデータ生成",
+    "news_highlight": "GeminiがGoogle Sheetsに新ベータ機能として統合され、SOTA性能を達成",
+    "problem_context": "テストデータ作成の手間と品質の課題を解決",
+    "recommended_ai": {
+      "model": "Gemini in Sheets",
+      "reason": "スプレッドシートでSOTA性能を発揮",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "テストケース作成時に多様なデータを生成したい時",
+      "APIのモックデータやダミーデータを素早く用意したい時",
+      "データベースの初期データを効率的に作成したい時"
+    ],
+    "steps": [
+      "1. Google Sheetsを開き、新しいシートを作成する。",
+      "2. Geminiサイドバー（または機能）を起動する。",
+      "3. 生成したいデータの要件をプロンプトに入力する。",
+      "4. 生成されたデータをコピーし、開発環境で利用する。"
+    ],
+    "prompt": "ユーザー管理システムのテストデータとして、名前、メールアドレス、パスワード（ハッシュ化済み）、登録日、アクティブ状態の5列を持つCSVデータを100件生成してください。",
+    "tags": [
+      "データ生成",
+      "テスト",
+      "スプレッドシート"
+    ],
+    "id": "20260317_061831_01",
+    "date": "2026-03-17",
+    "source_news": {
+      "title": "GeminiがGoogle SheetsでSOTA性能達成、実務応用を強化。",
+      "url": "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "OpenAIエージェントで開発環境自動化",
+    "news_highlight": "OpenAIがResponses APIでエージェントランタイムを提供、シェルツールとコンテナで安全なファイル/ツール/状態管理を実現。",
+    "problem_context": "複雑な開発タスクの自動化と安全な実行",
+    "recommended_ai": {
+      "model": "OpenAI Agent Runtime",
+      "reason": "安全なコンテナでツール実行可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいプロジェクトの初期セットアップを自動化したい時",
+      "CI/CDパイプラインで複雑なテストを自動実行したい時",
+      "開発環境で特定のスクリプトを安全に実行したい時"
+    ],
+    "steps": [
+      "1. OpenAI Agent Runtime APIのドキュメントを確認し、エージェント定義を作成する。",
+      "2. エージェント定義に、必要なファイル操作やシェルコマンドをツールとして組み込む。",
+      "3. Responses APIを通じてエージェントを実行し、結果を監視する。",
+      "4. エージェントの実行ログや出力に基づき、定義を改善・調整する。"
+    ],
+    "prompt": "新しいPythonプロジェクトの仮想環境をセットアップし、requirements.txtから依存ライブラリをインストールしてください。",
+    "tags": [
+      "エージェント",
+      "自動化",
+      "CI/CD",
+      "開発環境"
+    ],
+    "id": "20260317_061858_02",
+    "date": "2026-03-17",
+    "source_news": {
+      "title": "OpenAIがエージェントランタイムを構築、APIで安全な実行環境を提供。",
+      "url": "https://openai.com/index/equip-responses-api-computer-environment"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "AWS Disaggregated InferenceでLLM推論コスト最適化",
+    "news_highlight": "AWS Disaggregated InferenceはLLM推論を最適化。disaggregated serving, intelligent scheduling, expert parallelismでコスト削減と性能向上。",
+    "problem_context": "大規模LLM推論のコストとレイテンシ課題",
+    "recommended_ai": {
+      "model": "AWS Disaggregated Inference",
+      "reason": "LLM推論の効率とコストを改善",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "LLMを本番環境にデプロイする際のインフラ設計時",
+      "既存のLLMアプリケーションの推論コストを削減したい時",
+      "LLMアプリケーションの応答速度を改善したい時"
+    ],
+    "steps": [
+      "1. 現在のLLM推論インフラのコストと性能を計測する。",
+      "2. AWS Disaggregated Inferenceのドキュメントで各機能の概要を理解する。",
+      "3. AWSコンソールでDisaggregated Inferenceの利用可能性と設定オプションを確認する。",
+      "4. 小規模なPoC環境でDisaggregated Inferenceを適用し、性能とコストの変化を評価する。"
+    ],
+    "prompt": "AWS Disaggregated Inferenceのdisaggregated serving, intelligent request scheduling, expert parallelismの概念を、既存のLLM推論アーキテクチャに適用する際の設計上の考慮点を教えてください。",
+    "tags": [
+      "LLM",
+      "推論最適化",
+      "AWS",
+      "コスト削減",
+      "インフラ設計"
+    ],
+    "id": "20260317_061924_03",
+    "date": "2026-03-17",
+    "source_news": {
+      "title": "AWSがLLM推論を最適化するDisaggregated Inferenceを発表。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-disaggregated-inference-on-aws-powered-by-llm-d/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Hugging Faceで大規模コードベース分析",
     "news_highlight": "Hugging Faceが数百万トークン対応のLLM並列学習技術を発表、大規模モデルの効率的な学習・利用を可能に。",
     "problem_context": "大規模コードベースの理解とリファクタリング",
