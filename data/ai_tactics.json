@@ -1,5 +1,123 @@
 [
   {
+    "title": "GPT-5.4 mini/nanoでAgentスクリプト生成",
+    "news_highlight": "GPT-5.4 mini/nanoはAgentワークロード向けに高速化・最適化、コーディング・ツール利用に特化",
+    "problem_context": "Agentのコード生成・実行速度の向上",
+    "recommended_ai": {
+      "model": "GPT-5.4 mini/nano",
+      "reason": "Agentワークロードに最適化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Agentが実行するPythonスクリプトを自動生成したい時",
+      "既存のAgentコードのパフォーマンス改善案が欲しい時",
+      "Agentが利用する外部API呼び出し関数を生成したい時"
+    ],
+    "steps": [
+      "1. Agentに実行させたいタスクを明確にする",
+      "2. タスク内容と必要な情報をプロンプトに記述",
+      "3. GPT-5.4 mini/nanoにスクリプト生成を依頼",
+      "4. 生成されたスクリプトをテストし、Agentに組み込む"
+    ],
+    "prompt": "Agentが実行するPythonスクリプトを生成してください。目的はWebサイトから最新ニュース記事のタイトルとURLをスクレイピングし、CSVファイルに保存することです。requestsとBeautifulSoupを使用してください。",
+    "tags": [
+      "Agent開発",
+      "コード生成",
+      "Python",
+      "API連携",
+      "最適化"
+    ],
+    "id": "20260318_061806_01",
+    "date": "2026-03-18",
+    "source_news": {
+      "title": "GPT-5.4 mini/nano発表、Agentワークロード向けに高速化・最適化。",
+      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "AgentRxでAIエージェントのデバッグ効率化",
+    "news_highlight": "AgentRxはAI Agentの多段階APIワークフローのデバッグと信頼性を向上",
+    "problem_context": "AI Agentの複雑な動作のデバッグが困難",
+    "recommended_ai": {
+      "model": "AgentRx",
+      "reason": "AI Agentのデバッグに特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントが期待通りに動作しない時",
+      "複雑なAPI連携でエラーが発生した時",
+      "AIエージェントの意思決定プロセスを理解したい時"
+    ],
+    "steps": [
+      "AgentRxをプロジェクトに導入する",
+      "AIエージェントの実行ログをAgentRxで収集する",
+      "AgentRxの可視化ツールで実行パスを分析する",
+      "特定のステップでエラーや予期せぬ動作を特定し修正する"
+    ],
+    "prompt": "AgentRxのデバッグコンセプトに基づき、Pythonで実装されたAI Agentの多段階API呼び出しにおける各ステップの状態を記録し、エラー発生時にその前後をトレースするデバッグコードを生成してください。",
+    "tags": [
+      "AI Agent",
+      "デバッグ",
+      "信頼性",
+      "フレームワーク"
+    ],
+    "id": "20260318_061832_02",
+    "date": "2026-03-18",
+    "source_news": {
+      "title": "AI Agent向けデバッグフレームワークAgentRx発表。信頼性向上へ。",
+      "url": "https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "OpenAI ChatGPT Agentのセキュリティ設計",
+    "news_highlight": "OpenAIがChatGPT Agentのプロンプトインジェクション対策技術を公開、危険なアクションと機密データ保護を強化。",
+    "problem_context": "AI Agentのプロンプトインジェクション脆弱性対策",
+    "recommended_ai": {
+      "model": "ChatGPT",
+      "reason": "プロンプトインジェクション対策の知見が豊富",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AI Agentのセキュリティ設計を行う時",
+      "既存のAI Agentのプロンプトインジェクション脆弱性をレビューする時",
+      "AI Agentの安全なプロンプトを設計する時"
+    ],
+    "steps": [
+      "開発中のAI Agentの機能とデータアクセス権限を定義する。",
+      "OpenAIの公開情報を参考に、潜在的なプロンプトインジェクション攻撃パターンをリストアップする。",
+      "AIにAgentの設計書と攻撃パターンを渡し、対策案を検討させる。",
+      "提案された対策を実装し、テストする。"
+    ],
+    "prompt": "あなたはセキュリティ専門家です。以下のAI Agentの機能とデータアクセス権限を考慮し、プロンプトインジェクション攻撃から保護するための具体的な設計原則と対策案を提案してください。Agent機能: [機能詳細]、データアクセス: [アクセス権限]",
+    "tags": [
+      "セキュリティ",
+      "AI Agent",
+      "プロンプトインジェクション",
+      "設計"
+    ],
+    "id": "20260318_061859_03",
+    "date": "2026-03-18",
+    "source_news": {
+      "title": "AI Agentのプロンプトインジェクション対策、OpenAIが技術詳細公開。",
+      "url": "https://openai.com/index/designing-agents-to-resist-prompt-injection"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "Gemini in Sheetsでテストデータ生成",
     "news_highlight": "GeminiがGoogle Sheetsに新ベータ機能として統合され、SOTA性能を達成",
     "problem_context": "テストデータ作成の手間と品質の課題を解決",
