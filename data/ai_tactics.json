@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-5.4 miniでGo言語APIエンドポイント生成",
+    "news_highlight": "GPT-5.4 mini/nanoは小型高速化、コーディング/API/エージェント向けに最適化。",
+    "problem_context": "新規APIエンドポイントの初期実装を迅速に作成したい。",
+    "recommended_ai": {
+      "model": "GPT-5.4 mini",
+      "reason": "小型高速でコーディングに最適化されているため。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能開発でAPIエンドポイントのひな形を作成する時",
+      "既存のAPIに類似した新しいエンドポイントを追加する時",
+      "特定のデータモデルに対応するCRUD操作のコードを生成する時"
+    ],
+    "steps": [
+      "1. 開発中のGoプロジェクトを開く",
+      "2. 新規APIの要件（エンドポイント名、HTTPメソッド、リクエスト/レスポンス構造）を整理する",
+      "3. 整理した要件をプロンプトに含めてGPT-5.4 miniに送信する",
+      "4. 生成されたコードをプロジェクトに組み込み、必要に応じて修正・テストする"
+    ],
+    "prompt": "Go言語とGinフレームワークを使って、/users/{id}エンドポイントのGETリクエストを処理するAPIを作成してください。ユーザーIDに基づいてユーザー情報を返す処理を含めてください。",
+    "tags": [
+      "コード生成",
+      "Go",
+      "API開発",
+      "高速化"
+    ],
+    "id": "20260319_061701_01",
+    "date": "2026-03-19",
+    "source_news": {
+      "title": "GPT-5.4 mini/nano発表、小型高速化でAPI/エージェント向け。",
+      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Nemotron 3 Nano 4BでエッジAI推論実装",
+    "news_highlight": "Nemotron 3 Nano 4Bは効率的なローカルAI向け4Bパラメータ小型モデル。",
+    "problem_context": "エッジデバイスのAI推論性能不足やプライバシー懸念を解消。",
+    "recommended_ai": {
+      "model": "Nemotron 3 Nano 4B",
+      "reason": "ローカル推論に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "工場ラインでリアルタイム異常検知をエッジデバイスで行う時",
+      "顧客の個人情報をデバイス内で処理し、プライバシーを保護したい時",
+      "ネットワーク接続が不安定な環境でAIアシスタント機能を実装する時"
+    ],
+    "steps": [
+      "1. Nemotron 3 Nano 4Bモデルファイルをダウンロードする",
+      "2. 対象のエッジデバイスにモデルをデプロイするスクリプトを作成する",
+      "3. デバイス上で推論を実行するPythonアプリケーションコードを記述する",
+      "4. 推論結果を評価し、性能最適化のためのコード修正を行う"
+    ],
+    "prompt": "Nemotron 3 Nano 4Bを組み込むためのPythonコードを生成してください。入力はセンサーデータ、出力は異常検知結果です。",
+    "tags": [
+      "エッジAI",
+      "ローカル推論",
+      "プライバシー",
+      "小型モデル"
+    ],
+    "id": "20260319_061728_02",
+    "date": "2026-03-19",
+    "source_news": {
+      "title": "Nemotron 3 Nano 4B発表、効率的なローカルAI向け小型モデル。",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-4b"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Holotron-12Bで複数ファイル横断コード修正",
+    "news_highlight": "Holotron-12Bは高スループットなAIエージェントモデル、複数ファイル横断タスクを高速処理",
+    "problem_context": "複数ファイルにまたがる複雑なコード修正に時間がかかる",
+    "recommended_ai": {
+      "model": "Holotron-12B",
+      "reason": "高スループットなエージェント",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存機能のバグ修正で、複数の関連ファイルにわたる変更が必要な時",
+      "新機能追加時に、影響範囲が広く複数モジュールのコード修正が必要な時",
+      "大規模リファクタリングで、特定のパターンを複数のファイルに適用したい時"
+    ],
+    "steps": [
+      "修正対象のディレクトリと、修正内容の概要を準備する",
+      "Holotron-12Bに、修正対象のコードベースと修正指示を与える",
+      "Holotron-12Bが提案する複数ファイルの修正案を確認する",
+      "提案されたコードをテストし、必要に応じて微調整して適用する"
+    ],
+    "prompt": "このディレクトリ内のファイル群を分析し、ユーザー認証ロジックをOAuth2に移行してください。関連する全てのファイルに変更を適用し、具体的なコード修正案を提示してください。",
+    "tags": [
+      "コード修正",
+      "リファクタリング",
+      "エージェントAI",
+      "高スループット"
+    ],
+    "id": "20260319_061757_03",
+    "date": "2026-03-19",
+    "source_news": {
+      "title": "Holotron-12B発表、高スループットなAIエージェントモデル。",
+      "url": "https://huggingface.co/blog/Hcompany/holotron-12b"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5.4 mini/nanoでAgentスクリプト生成",
     "news_highlight": "GPT-5.4 mini/nanoはAgentワークロード向けに高速化・最適化、コーディング・ツール利用に特化",
     "problem_context": "Agentのコード生成・実行速度の向上",
