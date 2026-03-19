@@ -1,5 +1,122 @@
 [
   {
+    "title": "OpenAI GPTでAI生成コードをデバッグ",
+    "news_highlight": "OpenAIがAIエージェントの誤動作監視にchain-of-thoughtモニタリングを導入し、安全性強化。",
+    "problem_context": "AI生成コードの潜在バグや脆弱性を特定",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "高度なコード理解と推論力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIが生成したコードのレビュー時",
+      "AIが提案した修正の安全性確認時",
+      "AIが関与するシステムの障害発生時"
+    ],
+    "steps": [
+      "AIが生成したコード、またはAIが関与するシステムの疑わしいコードを準備。",
+      "AIにそのコードと、期待する動作・現在の問題点を提示。",
+      "AIにコードの潜在的なバグや脆弱性、または誤動作の原因を分析させ、修正案と「なぜその修正が必要か」の思考プロセスを提示させる。",
+      "AIの思考プロセスを検証し、修正案を適用後、テストを実施。"
+    ],
+    "prompt": "以下のPythonコードについて、潜在的なバグやセキュリティ脆弱性を特定し、修正案を提示してください。また、なぜその修正が必要なのか、思考プロセスも詳細に説明してください。",
+    "tags": [
+      "コードレビュー",
+      "デバッグ",
+      "AI安全性",
+      "脆弱性分析"
+    ],
+    "id": "20260320_061622_01",
+    "date": "2026-03-20",
+    "source_news": {
+      "title": "OpenAIがAIエージェントの誤動作監視で安全性強化。",
+      "url": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-5.4 miniで高速APIクライアント生成",
+    "news_highlight": "GPT-5.4 mini/nanoはコーディング、ツール利用、高ボリュームAPIワークロードに最適化。",
+    "problem_context": "新規API連携時のクライアントコード作成を迅速化",
+    "recommended_ai": {
+      "model": "GPT-5.4 mini",
+      "reason": "コーディングとツール利用に最適化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい外部APIと連携する際に、クライアントコードを素早く生成したい時",
+      "既存のAPIクライアントコードを特定の言語/フレームワークに変換したい時",
+      "APIのレスポンスモデルに基づいてデータ構造を自動生成したい時"
+    ],
+    "steps": [
+      "連携したいAPIのOpenAPI/Swagger仕様書またはエンドポイントURLを準備する。",
+      "AIにAPI仕様と希望する言語/フレームワークを伝える。",
+      "生成されたクライアントコードをプロジェクトに組み込み、テストする。",
+      "必要に応じて、AIにエラーハンドリングや認証部分の追加を依頼する。"
+    ],
+    "prompt": "指定されたOpenAPI仕様書に基づき、PythonのFastAPIでREST APIクライアントを生成してください。認証はBearerトークンを使用。",
+    "tags": [
+      "API連携",
+      "コード生成",
+      "Python",
+      "FastAPI"
+    ],
+    "id": "20260320_061646_02",
+    "date": "2026-03-20",
+    "source_news": {
+      "title": "GPT-5.4 mini/nano発表、コーディング等に最適化。",
+      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "LLMでSpeculative Decodingを最適化",
+    "news_highlight": "Speculative DecodingによりLLMの推論速度が大幅向上、新ベンチマークで検証",
+    "problem_context": "LLMの推論遅延によるユーザー体験悪化",
+    "recommended_ai": {
+      "model": "Speculative Decoding対応LLM",
+      "reason": "推論速度向上でリアルタイム性改善",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "リアルタイム対話型AIの応答速度改善",
+      "大量のテキスト処理バッチジョブの実行時間短縮",
+      "API経由のLLM利用におけるレイテンシ削減"
+    ],
+    "steps": [
+      "1. 「Speculative Decoding」をサポートするLLMモデルやフレームワーク（例: vLLM, TGIなど）を選定する。",
+      "2. 既存のLLMアプリケーションの推論部分を、選定したフレームワークに移行・再構築する。",
+      "3. 移行後、推論速度（TTFT, TBT）を計測し、改善効果を評価する。",
+      "4. 評価結果に基づき、モデルのチューニングやデプロイ設定を最適化する。"
+    ],
+    "prompt": "PythonとFastAPIで構築された既存のLLM推論APIのコードを、vLLMライブラリとSpeculative Decodingを活用して高速化するリファクタリング案を提示してください。",
+    "tags": [
+      "LLM",
+      "推論最適化",
+      "パフォーマンス",
+      "レイテンシ"
+    ],
+    "id": "20260320_061719_03",
+    "date": "2026-03-20",
+    "source_news": {
+      "title": "LLM推論速度向上「Speculative Decoding」の新ベンチマーク。",
+      "url": "https://huggingface.co/blog/nvidia/speed-bench"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
     "title": "GPT-5.4 miniでGo言語APIエンドポイント生成",
     "news_highlight": "GPT-5.4 mini/nanoは小型高速化、コーディング/API/エージェント向けに最適化。",
     "problem_context": "新規APIエンドポイントの初期実装を迅速に作成したい。",
