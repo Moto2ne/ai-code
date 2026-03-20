@@ -1,5 +1,120 @@
 [
   {
+    "title": "GPT-5.4 mini/nanoで高速コードレビュー",
+    "news_highlight": "GPT-5.4 mini/nanoはコーディング最適化された高速版、API/サブエージェント向け",
+    "problem_context": "大規模コードベースの高速な品質チェック",
+    "recommended_ai": {
+      "model": "GPT-5.4 mini/nano",
+      "reason": "コーディング最適化と高速性",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードをレビューしたい時",
+      "既存のレガシーコードの改善点を素早く見つけたい時",
+      "新しいライブラリ導入時のコード規約適合性を確認したい時"
+    ],
+    "steps": [
+      "1. レビューしたいコードブロックをコピーする",
+      "2. AIチャットに貼り付け、プロンプトを入力する",
+      "3. AIの提案を読み、改善点や潜在バグを確認する",
+      "4. 提案された修正を適用し、テストを実行する"
+    ],
+    "prompt": "以下のTypeScriptコードをレビューし、パフォーマンス、セキュリティ、可読性の観点から改善点を提案してください。潜在的なバグも指摘してください。",
+    "tags": [
+      "コードレビュー",
+      "パフォーマンス改善",
+      "セキュリティ",
+      "デバッグ"
+    ],
+    "id": "20260321_061249_01",
+    "date": "2026-03-21",
+    "source_news": {
+      "title": "GPT-5.4 mini/nano発表、コーディング等に最適化された高速版",
+      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Holotron-12Bで並列タスク処理を最適化",
+    "news_highlight": "Holotron-12Bは高スループットAIエージェント、並列処理性能を大幅向上",
+    "problem_context": "AIエージェントの処理遅延やリソース不足を解消",
+    "recommended_ai": {
+      "model": "Holotron-12B",
+      "reason": "高スループットで並列処理に強い",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数のマイクロサービス連携処理を高速化したい時",
+      "CI/CDパイプラインで並列テストを効率化したい時",
+      "大量のログデータからリアルタイムで異常検知したい時"
+    ],
+    "steps": [
+      "1. Holotron-12BのAPIキーを取得し、開発環境に設定する",
+      "2. 並列処理したいタスク群を定義した設定ファイル（例: YAML）を作成する",
+      "3. Holotron-12BのSDK/APIを使い、設定ファイルを指定して処理をキックする",
+      "4. 処理結果を監視し、パフォーマンスボトルネックがあれば設定を調整する"
+    ],
+    "prompt": "以下の複数のAPIレスポンスデータを並列で解析し、共通するパターンと異常値を特定してください。結果は要約と詳細リストで出力。",
+    "tags": [
+      "高スループット",
+      "AIエージェント"
+    ],
+    "id": "20260321_061317_02",
+    "date": "2026-03-21",
+    "source_news": {
+      "title": "Holotron-12Bリリース、高スループットなAIエージェント",
+      "url": "https://huggingface.co/blog/Hcompany/holotron-12b"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "SageMaker AIエンドポイントのメトリクスで異常検知",
+    "news_highlight": "SageMaker AIエンドポイントがメトリクス強化、発行頻度設定可能で詳細な可視性を提供",
+    "problem_context": "本番環境のAIモデル性能監視、異常検知の効率化",
+    "recommended_ai": {
+      "model": "SageMaker AIエンドポイント",
+      "reason": "運用改善と可視性向上に直結",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "本番環境でのAIモデルの推論性能をリアルタイムで監視したい時",
+      "推論遅延やエラー率の異常を早期に検知したい時",
+      "リソース使用率のボトルネックを特定し、コスト最適化を図りたい時"
+    ],
+    "steps": [
+      "1. SageMakerエンドポイントのコンソールで「Monitoring」タブを開き、メトリクス発行頻度を設定する。",
+      "2. CloudWatchで監視したいメトリクス（CPU利用率、メモリ利用率、推論レイテンシなど）を選択し、アラームを設定する。",
+      "3. アラームが発動した場合、CloudWatch Logsと強化されたメトリクスデータを収集する。",
+      "4. 収集したデータを基に、AIモデル（例: Claude, GPT）に異常原因の分析と改善策を依頼する。"
+    ],
+    "prompt": "SageMakerエンドポイントのCPU使用率が急増し、推論レイテンシも悪化しています。提供されたCloudWatchメトリクスとログデータから、考えられる原因と具体的な対処法を複数提案してください。",
+    "tags": [
+      "MLOps",
+      "運用監視",
+      "SageMaker",
+      "トラブルシューティング"
+    ],
+    "id": "20260321_061345_03",
+    "date": "2026-03-21",
+    "source_news": {
+      "title": "SageMaker AIエンドポイントのメトリクス強化、運用改善へ",
+      "url": "https://aws.amazon.com/blogs/machine-learning/enhanced-metrics-for-amazon-sagemaker-ai-endpoints-deeper-visibility-for-better-performance/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "OpenAI GPTでAI生成コードをデバッグ",
     "news_highlight": "OpenAIがAIエージェントの誤動作監視にchain-of-thoughtモニタリングを導入し、安全性強化。",
     "problem_context": "AI生成コードの潜在バグや脆弱性を特定",
