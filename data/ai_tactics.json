@@ -1,5 +1,123 @@
 [
   {
+    "title": "GPT-5.4 mini/nanoでAPI連携コード高速生成",
+    "news_highlight": "GPT-5.4 mini/nanoはコーディング・API向けに高速化、高ボリュームワークロードに最適",
+    "problem_context": "API連携コードの生成遅延と効率性不足を解消",
+    "recommended_ai": {
+      "model": "GPT-5.4 mini/nano",
+      "reason": "高速・高効率なコード生成とAPI利用",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大量のAPIコールを処理するバックエンドサービスの開発時",
+      "既存のコードベースを高速にリファクタリングしたい時",
+      "複数の外部ツールを連携させる自動化スクリプトを作成する時"
+    ],
+    "steps": [
+      "開発中のAPI連携コードまたはリファクタリング対象のコードを準備する。",
+      "GPT-5.4 mini/nanoのAPIエンドポイントに接続設定を行う。",
+      "最適化したいコードやAPI仕様をプロンプトとして送信する。",
+      "生成された高速化・効率化されたコードをテスト環境で検証する。"
+    ],
+    "prompt": "以下のPythonコードを、高速化とメモリ効率を考慮してリファクタリングしてください。特にAPIコール部分の最適化に焦点を当ててください。元のコード: [ここにコードを貼り付け]",
+    "tags": [
+      "コード生成",
+      "API開発",
+      "リファクタリング",
+      "自動化"
+    ],
+    "id": "20260322_061026_01",
+    "date": "2026-03-22",
+    "source_news": {
+      "title": "GPT-5.4 mini/nano発表、コーディング・API向けに高速化。",
+      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "SageMakerでAIエンドポイント性能監視を最適化",
+    "news_highlight": "SageMaker AIエンドポイントが強化メトリクスと発行頻度設定に対応し、詳細な可視性を実現。",
+    "problem_context": "本番AIエンドポイントの性能問題特定が困難。",
+    "recommended_ai": {
+      "model": "Claude 3.5 Sonnet",
+      "reason": "監視設定コード生成と分析に強い。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "本番環境のAIエンドポイントでレイテンシが増加した時",
+      "SageMakerエンドポイントの監視ダッシュボードを改善したい時",
+      "モデルのデプロイ後に性能劣化がないか確認したい時"
+    ],
+    "steps": [
+      "1. SageMakerエンドポイントのCloudWatchメトリクス設定画面を開く。",
+      "2. 強化されたメトリクスの有効化と発行頻度を設定する。",
+      "3. CloudWatch Logsからエンドポイントのログとメトリクスデータを取得する。",
+      "4. AIにメトリクスデータと問題点を提示し、改善策やアラート設定案を依頼する。"
+    ],
+    "prompt": "SageMakerエンドポイントのCloudWatchメトリクスデータ（JSON形式）と、現在のレイテンシ増加の問題を提示します。このデータから原因を特定し、改善策とCloudWatchアラーム設定のTerraformコードを生成してください。",
+    "tags": [
+      "SageMaker",
+      "監視",
+      "デバッグ",
+      "CloudWatch",
+      "MLOps"
+    ],
+    "id": "20260322_061052_02",
+    "date": "2026-03-22",
+    "source_news": {
+      "title": "SageMaker AIエンドポイントのメトリクス強化で性能監視向上。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/enhanced-metrics-for-amazon-sagemaker-ai-endpoints-deeper-visibility-for-better-performance/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "NVIDIA Nemotron 3 Superでコード生成",
+    "news_highlight": "NVIDIA Nemotron 3 SuperがAmazon Bedrockで利用可能に。高性能LLMで開発効率向上。",
+    "problem_context": "新規機能のコード生成を効率化したい",
+    "recommended_ai": {
+      "model": "NVIDIA Nemotron 3 Super",
+      "reason": "高性能なコード生成能力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAPIエンドポイントのコードを生成したい時",
+      "既存の関数を別の言語やフレームワークに変換したい時",
+      "特定のアルゴリズムを実装するコードのひな形が欲しい時"
+    ],
+    "steps": [
+      "1. BedrockコンソールでNemotron 3 Superを選択",
+      "2. 実装したい機能の要件を具体的に記述",
+      "3. 生成されたコードを開発環境にコピー＆ペースト",
+      "4. コードをテストし、必要に応じて修正"
+    ],
+    "prompt": "PythonとFastAPIを使って、ユーザー認証（ログイン、登録）を行うAPIエンドポイントを生成してください。データベースはPostgreSQLを使用し、パスワードはハッシュ化してください。",
+    "tags": [
+      "コード生成",
+      "API開発",
+      "Bedrock",
+      "LLM"
+    ],
+    "id": "20260322_061116_03",
+    "date": "2026-03-22",
+    "source_news": {
+      "title": "NVIDIA Nemotron 3 SuperがAmazon Bedrockで利用可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/run-nvidia-nemotron-3-super-on-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5.4 mini/nanoで高速コードレビュー",
     "news_highlight": "GPT-5.4 mini/nanoはコーディング最適化された高速版、API/サブエージェント向け",
     "problem_context": "大規模コードベースの高速な品質チェック",
