@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-5.4 miniでAPI連携コード生成",
+    "news_highlight": "GPT-5.4 mini/nanoはコーディング・API向け小型高速版で、高ボリュームAPI処理に最適。",
+    "problem_context": "外部API連携のコード実装を高速化したい。",
+    "recommended_ai": {
+      "model": "GPT-5.4 mini",
+      "reason": "高速かつAPI利用に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい外部APIをシステムに組み込む際、初期実装を迅速に行いたい時",
+      "既存のAPI呼び出し部分をリファクタリングし、より堅牢にしたい時",
+      "マイクロサービス間でデータ形式を変換するアダプターを生成したい時"
+    ],
+    "steps": [
+      "連携したいAPIの公式ドキュメント（エンドポイント、リクエスト/レスポンス形式）を準備する。",
+      "AIにAPI仕様と、生成したい言語・フレームワーク、目的を伝える。",
+      "生成されたコードを開発環境に組み込み、テストを実行する。",
+      "テスト結果に基づき、必要に応じてコードを調整・最適化する。"
+    ],
+    "prompt": "以下のREST API仕様に基づき、PythonとFastAPIで非同期HTTPクライアントとデータモデルを生成してください。エンドポイントは/products、GETメソッドで商品リストを取得します。",
+    "tags": [
+      "API開発",
+      "コード生成",
+      "Python",
+      "FastAPI"
+    ],
+    "id": "20260323_061105_01",
+    "date": "2026-03-23",
+    "source_news": {
+      "title": "GPT-5.4 mini/nano発表、コーディング・API向け小型高速版。",
+      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Holotron-12Bで複数API設計",
+    "news_highlight": "Holotron-12Bは高スループットAIエージェントとして発表、複数タスクを効率処理。",
+    "problem_context": "複数のマイクロサービスAPI設計と実装の効率化。",
+    "recommended_ai": {
+      "model": "Holotron-12B",
+      "reason": "高スループットAIエージェント",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいマイクロサービス群のAPI仕様を設計する時",
+      "既存のAPI群をリファクタリングし、整合性を高める時",
+      "複数のAPIエンドポイントに対するクライアントコードを生成する時"
+    ],
+    "steps": [
+      "設計したいマイクロサービスの機能要件リストを準備する",
+      "Holotron-12Bに機能要件と既存のAPI設計ガイドラインを提示する",
+      "提案された複数のAPIエンドポイントの仕様（RESTful、GraphQLなど）を確認する",
+      "必要に応じて修正指示を出し、関連するクライアントコード生成を依頼する"
+    ],
+    "prompt": "以下の機能要件に基づき、RESTful APIの設計仕様（エンドポイント、メソッド、リクエスト/レスポンススキーマ）を複数提案してください。既存のAPI設計ガイドラインも考慮してください。",
+    "tags": [
+      "API設計",
+      "マイクロサービス",
+      "コード生成",
+      "エージェントAI"
+    ],
+    "id": "20260323_061131_02",
+    "date": "2026-03-23",
+    "source_news": {
+      "title": "Hugging FaceがHolotron-12B発表、高スループットAIエージェント。",
+      "url": "https://huggingface.co/blog/Hcompany/holotron-12b"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "NVIDIA Nemotron 3 Superで設計支援",
+    "news_highlight": "AWS BedrockでNVIDIA Nemotron 3 Superが利用可能に。高性能な推論と大規模コンテキストで複雑なタスクに対応。",
+    "problem_context": "複雑なシステム設計やアーキテクチャ検討に時間がかかる",
+    "recommended_ai": {
+      "model": "NVIDIA Nemotron 3 Super",
+      "reason": "高度な推論能力と大規模コンテキスト",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規サービスのアーキテクチャを検討する時",
+      "既存システムのマイクロサービス分割を計画する時",
+      "特定の技術スタックでの最適な設計パターンを知りたい時"
+    ],
+    "steps": [
+      "1. 設計したいシステムの概要、要件、制約をまとめる。",
+      "2. AWS BedrockコンソールでNemotron 3 Superを選択し、プロンプトを入力。",
+      "3. 提案された設計案やアーキテクチャ図のアイデアを確認。",
+      "4. 提案を基に、チームで議論し設計を具体化する。"
+    ],
+    "prompt": "新規ECサイトのマイクロサービスアーキテクチャを設計してください。主要機能、技術スタック（AWS Lambda, DynamoDB, React）を考慮し、スケーラビリティと保守性を重視してください。",
+    "tags": [
+      "アーキテクチャ設計",
+      "システム設計",
+      "AWS Bedrock",
+      "LLM活用"
+    ],
+    "id": "20260323_061155_03",
+    "date": "2026-03-23",
+    "source_news": {
+      "title": "AWS BedrockでNVIDIA Nemotron 3 Superが利用可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/run-nvidia-nemotron-3-super-on-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5.4 mini/nanoでAPI連携コード高速生成",
     "news_highlight": "GPT-5.4 mini/nanoはコーディング・API向けに高速化、高ボリュームワークロードに最適",
     "problem_context": "API連携コードの生成遅延と効率性不足を解消",
