@@ -1,5 +1,123 @@
 [
   {
+    "title": "OpenAI Coding Agentでコードレビュー強化",
+    "news_highlight": "OpenAIがchain-of-thought監視でコーディングAgentの安全性とリスク検出を強化",
+    "problem_context": "AI生成コードの潜在リスク特定と安全性確保",
+    "recommended_ai": {
+      "model": "OpenAI Coding Agent",
+      "reason": "chain-of-thought監視で安全性を高めるため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AI生成コードのセキュリティレビュー時",
+      "AIが提案した設計の潜在リスク評価時",
+      "AIデバッグ支援の副作用確認時"
+    ],
+    "steps": [
+      "開発中の機能のコード生成をAIに依頼する。",
+      "AIに生成コードの各部分の意図と潜在リスクを詳細に説明させる。",
+      "AIの説明からセキュリティ脆弱性やバグの可能性を特定する。",
+      "特定したリスクに基づき、AIにコード修正案を依頼し適用する。"
+    ],
+    "prompt": "以下のコードをレビューし、各行の意図、潜在的なセキュリティリスク、バグの可能性をchain-of-thought形式で詳細に説明してください。",
+    "tags": [
+      "コードレビュー",
+      "AI安全性",
+      "セキュリティ",
+      "デバッグ"
+    ],
+    "id": "20260325_061806_01",
+    "date": "2026-03-25",
+    "source_news": {
+      "title": "OpenAIが内部コーディングAgentの安全性監視方法を公開。",
+      "url": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCoreでSlack連携CDK生成",
+    "news_highlight": "Amazon Bedrock AgentCoreとSlack統合をAWS CDKで構築、3つのLambda関数を活用。",
+    "problem_context": "Bedrock AgentCoreとSlack連携のインフラ構築",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "Slack連携のインフラ構築を支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Bedrock AgentCoreとSlack連携の初期構築時",
+      "既存のCDKスタックにBedrock AgentCore連携を追加する時",
+      "Slackからの入力を処理するLambda関数の実装時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCoreとSlack連携の要件を定義する。",
+      "2. 以下のプロンプトをAIに渡し、AWS CDKコードとLambda関数コードを生成させる。",
+      "3. 生成されたコードをAWS CDKプロジェクトに組み込み、デプロイする。",
+      "4. SlackとBedrock AgentCoreの連携テストを実施し、必要に応じてコードを修正する。"
+    ],
+    "prompt": "AWS CDK (TypeScript) を使用して、Amazon Bedrock AgentCoreとSlackを統合するインフラを構築してください。3つのLambda関数（Slackイベント処理、AgentCore呼び出し、応答送信）を含めてください。",
+    "tags": [
+      "AWS CDK",
+      "Lambda",
+      "Slack",
+      "Bedrock AgentCore",
+      "インフラ構築"
+    ],
+    "id": "20260325_061833_02",
+    "date": "2026-03-25",
+    "source_news": {
+      "title": "Amazon Bedrock AgentCoreとSlackの統合方法を解説。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/integrating-amazon-bedrock-agentcore-with-slack/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "BedrockのClaudeで動的エンティティ認識",
+    "news_highlight": "BedrockのClaudeがツール利用で動的エンティティ認識を可能にし、事前設定や学習不要。",
+    "problem_context": "非構造化データからの情報抽出を効率化したい。",
+    "recommended_ai": {
+      "model": "Claude Tool use (on Amazon Bedrock)",
+      "reason": "動的エンティティ認識に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザーの自然言語からAPIパラメータを抽出する時",
+      "ログデータからエラー原因の情報を特定する時",
+      "技術ドキュメントから設定値を自動抽出する時"
+    ],
+    "steps": [
+      "抽出したいテキストとエンティティの型を定義する",
+      "Claude Tool useにテキストとツール定義を渡す",
+      "Claudeの出力から必要なエンティティ情報を取得する",
+      "抽出したエンティティを後続処理に利用する"
+    ],
+    "prompt": "以下の注文テキストから、製品名と数量を抽出してください。製品名は文字列、数量は整数で出力してください。テキスト: 'MacBook Proを2台注文したい。'",
+    "tags": [
+      "LLM",
+      "エンティティ認識",
+      "API開発",
+      "情報抽出"
+    ],
+    "id": "20260325_061902_03",
+    "date": "2026-03-25",
+    "source_news": {
+      "title": "BedrockのClaudeがツール利用で動的エンティティ認識。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-custom-entity-recognition-with-claude-tool-use-in-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
     "title": "GPT-5.4 miniでUI画像からReactコンポーネント生成",
     "news_highlight": "GPT-5.4 mini/nanoはコード・マルチモーダル推論を強化、小型・高速でAPI/サブエージェント向け。",
     "problem_context": "UIデザインからフロントエンドコードを素早く実装したい",
