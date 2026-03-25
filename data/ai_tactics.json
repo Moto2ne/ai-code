@@ -1,5 +1,122 @@
 [
   {
+    "title": "SageMakerでGPU予約し推論エンドポイントを効率デプロイ",
+    "news_highlight": "SageMakerでp-family GPU容量を予約し、AI推論エンドポイントを効率的にデプロイ可能",
+    "problem_context": "GPUリソース確保と推論エンドポイントの効率的デプロイ",
+    "recommended_ai": {
+      "model": "SageMaker",
+      "reason": "GPU容量予約とデプロイを統合",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模モデルの推論環境を構築する際",
+      "急なトラフィック増加に備えGPUリソースを確保したい時",
+      "推論コストを最適化しつつ安定稼働させたい時"
+    ],
+    "steps": [
+      "1. AWSマネジメントコンソールでSageMakerを開く。",
+      "2. 「トレーニングプラン」から「予約」を選択し、p-family GPU容量を検索。",
+      "3. 必要なGPUタイプと期間を指定し、推論用予約を作成。",
+      "4. 予約した容量に紐づけてSageMaker推論エンドポイントをデプロイ。"
+    ],
+    "prompt": "SageMakerで予約したp4d.24xlargeインスタンス向けに、PyTorchモデルの推論エンドポイントをデプロイするCloudFormationテンプレートを生成してください。",
+    "tags": [
+      "AWS",
+      "SageMaker",
+      "GPU",
+      "推論",
+      "デプロイ",
+      "リソース管理"
+    ],
+    "id": "20260326_061713_01",
+    "date": "2026-03-26",
+    "source_news": {
+      "title": "SageMakerでGPU容量を予約し、AI推論エンドポイントを効率的にデプロイ。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-sagemaker-ai-inference-endpoints-with-set-gpu-capacity-using-training-plans/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Hugging Face Transformersでドメイン特化埋め込みモデル構築",
+    "news_highlight": "既存の汎用埋め込みモデルを1日未満でドメイン特化型にファインチューニングする手法が発表された。",
+    "problem_context": "特定のドメインで埋め込みモデルの精度が低い",
+    "recommended_ai": {
+      "model": "Gemini 1.5 Pro",
+      "reason": "ファインチューニングコード生成に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "RAGシステムで検索精度を向上させたい時",
+      "特定の業界用語に特化した文書分類を行いたい時",
+      "類似商品推薦システムでドメイン特化の推薦精度を高めたい時"
+    ],
+    "steps": [
+      "ファインチューニングしたいドメインのテキストデータ（例: 質問と回答ペア、類似文書ペア）を準備する。",
+      "ベースとなる汎用埋め込みモデル（例: `sentence-transformers/all-MiniLM-L6-v2`）を選定する。",
+      "Gemini 1.5 Proに、選定したモデルとデータセットを用いたファインチューニングコード生成を依頼する。",
+      "生成されたPythonコードを実行し、ドメイン特化型埋め込みモデルを構築・評価する。"
+    ],
+    "prompt": "Hugging Face TransformersライブラリとSentence Transformersフレームワークを使用し、`sentence-transformers/all-MiniLM-L6-v2`モデルを、CSV形式の質問と回答ペアデータでファインチューニングするPythonコードを生成してください。コントラスト学習を適用し、評価指標としてコサイン類似度を使用してください。",
+    "tags": [
+      "埋め込みモデル",
+      "ファインチューニング",
+      "RAG",
+      "Hugging Face"
+    ],
+    "id": "20260326_061740_02",
+    "date": "2026-03-26",
+    "source_news": {
+      "title": "1日未満でドメイン特化型埋め込みモデルを構築する手法。",
+      "url": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Bedrock Claudeでエンティティ認識を加速",
+    "news_highlight": "BedrockでClaude Tool use導入、設定・学習不要で動的エンティティ認識を加速",
+    "problem_context": "非構造化データからのエンティティ抽出が困難",
+    "recommended_ai": {
+      "model": "Claude Tool use on Amazon Bedrock",
+      "reason": "設定不要で高精度なエンティティ認識",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ログから異常なIPアドレスやユーザー名を抽出したい時",
+      "顧客問い合わせから製品名、機能、感情を抽出したい時",
+      "技術仕様書からAPIエンドポイントやパラメータを抽出したい時"
+    ],
+    "steps": [
+      "1. BedrockコンソールでClaude Tool useを有効化する。",
+      "2. 抽出したい非構造化テキストを用意する。",
+      "3. 抽出したいエンティティの型と説明を定義する。",
+      "4. Claude Tool use APIを呼び出し、結果を処理する。"
+    ],
+    "prompt": "以下の顧客問い合わせから、製品名、問題の種類、緊急度をJSON形式で抽出してください。製品名は'product_name'、問題は'issue_type'、緊急度は'urgency'とします。",
+    "tags": [
+      "エンティティ認識",
+      "情報抽出"
+    ],
+    "id": "20260326_061806_03",
+    "date": "2026-03-26",
+    "source_news": {
+      "title": "BedrockでClaudeのツール利用を導入、エンティティ認識を加速。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-custom-entity-recognition-with-claude-tool-use-in-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
     "title": "OpenAI Coding Agentでコードレビュー強化",
     "news_highlight": "OpenAIがchain-of-thought監視でコーディングAgentの安全性とリスク検出を強化",
     "problem_context": "AI生成コードの潜在リスク特定と安全性確保",
