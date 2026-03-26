@@ -1,5 +1,108 @@
 [
   {
+    "title": "gpt-oss-safeguardでティーン向けコンテンツをモデレート",
+    "news_highlight": "OpenAIがgpt-oss-safeguardでティーン向けAI安全ポリシーを公開、年齢別リスクを軽減",
+    "problem_context": "AIコンテンツの年齢別リスク管理とモデレーション",
+    "recommended_ai": {
+      "model": "gpt-oss-safeguard",
+      "reason": "ティーン向け安全ポリシーを適用可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ティーン向けAIチャットボットの応答をレビューする時",
+      "AIが生成するコンテンツの安全性を確認する時",
+      "ユーザー生成コンテンツのモデレーション基準を設計する時"
+    ],
+    "steps": [
+      "1. gpt-oss-safeguardのAPIをプロジェクトに組み込む",
+      "2. モデレート対象のAI生成テキストやユーザープロンプトを用意する",
+      "3. gpt-oss-safeguard APIにコンテンツを送信し、安全スコアを取得",
+      "4. スコアに基づき、不適切なコンテンツをフィルタリングまたは警告表示"
+    ],
+    "prompt": "以下のAI生成テキストをティーン向け安全ポリシーで評価し、不適切箇所と修正案を提示してください。「{AI生成テキスト}」",
+    "tags": [
+      "AI安全性",
+      "モデレーション",
+      "コンテンツフィルタリング",
+      "GPT"
+    ],
+    "id": "20260327_061418_01",
+    "date": "2026-03-27",
+    "source_news": {
+      "title": "開発者向けにティーン向けAI安全ポリシーとツールを公開。",
+      "url": "https://openai.com/index/teen-safety-policies-gpt-oss-safeguard"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "AI戦術",
+    "problem_context": "AI技術の活用",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "高性能",
+      "badge_color": "orange"
+    },
+    "prompt": "最新のAI技術を活用して効率化を図ってください。",
+    "tags": [
+      "AI",
+      "自動生成"
+    ],
+    "id": "20260327_061442_02",
+    "date": "2026-03-27",
+    "source_news": {
+      "title": "AIの悪用・安全リスク特定のためバグバウンティ開始。",
+      "url": "https://openai.com/index/safety-bug-bounty"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Bedrock GuardrailsでAI応答の安全設計",
+    "news_highlight": "Bedrock Guardrailsが年齢・文脈対応の安全なAI応答を自動生成し、責任あるAIデプロイを支援。",
+    "problem_context": "不適切なAI応答によるリスクを低減したい。",
+    "recommended_ai": {
+      "model": "Bedrock Guardrails",
+      "reason": "不適切応答を自動で抑制",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザー向けAIチャットボットの応答を設計する時",
+      "社内向けAIアシスタントの出力が不適切でないか確認する時",
+      "特定の年齢層に合わせたAIコンテンツの安全性を検証する時"
+    ],
+    "steps": [
+      "1. Bedrock Guardrailsのポリシー設定画面を開く",
+      "2. ターゲットユーザーの年齢層や文脈に応じたルールを定義する",
+      "3. 不適切と判断されるキーワードや表現を登録する",
+      "4. 設定したGuardrailsをAIモデルに適用し、テストする"
+    ],
+    "prompt": "あなたは顧客サポートAIです。ユーザーの年齢層が10代であることを考慮し、不適切な言葉遣いを避け、親しみやすいトーンで質問に答えてください。質問：『このゲームは面白い？』",
+    "tags": [
+      "AI倫理",
+      "コンテンツモデレーション",
+      "AWS",
+      "セキュリティ"
+    ],
+    "id": "20260327_061507_03",
+    "date": "2026-03-27",
+    "source_news": {
+      "title": "Bedrock Guardrailsで年齢・文脈対応の安全なAIを構築。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-age-responsive-context-aware-ai-with-amazon-bedrock-guardrails/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "SageMakerでGPU予約し推論エンドポイントを効率デプロイ",
     "news_highlight": "SageMakerでp-family GPU容量を予約し、AI推論エンドポイントを効率的にデプロイ可能",
     "problem_context": "GPUリソース確保と推論エンドポイントの効率的デプロイ",
