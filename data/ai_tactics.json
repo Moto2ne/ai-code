@@ -1,5 +1,122 @@
 [
   {
+    "title": "Gemini 3.1 Flash Liveで音声UX設計",
+    "news_highlight": "Gemini 3.1 Flash LiveがオーディオAIを自然で信頼性高く改善。",
+    "problem_context": "アプリケーションの音声UXを向上させたい。",
+    "recommended_ai": {
+      "model": "Gemini 3.1 Flash Live",
+      "reason": "自然で信頼性の高い音声生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "アプリのチュートリアル音声生成",
+      "アクセシビリティ機能の読み上げ音声実装",
+      "ゲームキャラクターのセリフ生成"
+    ],
+    "steps": [
+      "1. 音声化したいテキストコンテンツを準備する。",
+      "2. Gemini 3.1 Flash Live APIにテキストを送信する。",
+      "3. 生成された音声ファイルをアプリケーションに組み込む。",
+      "4. ユーザーテストで音声の自然さを評価する。"
+    ],
+    "prompt": "以下のテキストを、自然な日本語の女性の声で読み上げる音声データを生成してください。『この機能は、あなたの生産性を劇的に向上させます。』",
+    "tags": [
+      "音声合成",
+      "UX改善",
+      "API利用"
+    ],
+    "id": "20260328_061636_01",
+    "date": "2026-03-28",
+    "source_news": {
+      "title": "Gemini 3.1 Flash Live発表、オーディオAIを自然で信頼性高く改善。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "GPT-4Vでロボット行動計画を改善",
+    "news_highlight": "ロボット操作VLM向け新ベンチマークGroundedPlanBench発表、行動・場所決定を評価",
+    "problem_context": "ロボットVLMの行動決定と場所決定の精度向上",
+    "recommended_ai": {
+      "model": "GPT-4V",
+      "reason": "複雑な視覚情報とテキストを理解し、計画を生成できるため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ロボットのタスク失敗原因を分析する時",
+      "新しいロボットタスクの行動シーケンスを設計する時",
+      "ロボットの誤った動作をデバッグする時"
+    ],
+    "steps": [
+      "ロボットが失敗したタスクの画像/動画とログを準備する",
+      "失敗時の状況と目標をテキストで具体的に記述する",
+      "VLMに画像/動画、テキスト、期待される行動を提示し、改善案を依頼する",
+      "VLMの提案を基にロボットの行動計画を修正し、テストする"
+    ],
+    "prompt": "このロボットがこの状況でこのタスクを失敗しました。画像とログを分析し、次に取るべき行動と場所を具体的に提案してください。",
+    "tags": [
+      "ロボティクス",
+      "VLM",
+      "行動計画",
+      "デバッグ"
+    ],
+    "id": "20260328_061702_02",
+    "date": "2026-03-28",
+    "source_news": {
+      "title": "ロボット操作VLM向け新ベンチマークGroundedPlanBench発表。",
+      "url": "https://www.microsoft.com/en-us/research/blog/groundedplanbench-spatially-grounded-long-horizon-task-planning-for-robot-manipulation/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-4oでロボット行動計画を修正",
+    "news_highlight": "視覚的インタラクティブ計画の新ベンチマークAsgardBench公開。ロボットが環境変化に対応し、行動計画をリアルタイムで修正する能力を評価。",
+    "problem_context": "ロボットが予期せぬ事態に対応できない",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "マルチモーダルで複雑な推論",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ロボットの異常検知・対応ロジックを開発する時",
+      "シミュレーション環境で多様な失敗シナリオをテストしたい時",
+      "エージェントの行動計画を動的に変更する設計をする時"
+    ],
+    "steps": [
+      "ロボットが直面した予期せぬ状況（例：マグカップが倒れた）をテキストと画像で詳細に記述する。",
+      "現在のロボットの行動計画と目標を明確に伝える。",
+      "GPT-4oに、状況を考慮した新たな行動計画と、それを実装するためのPythonコードの骨子を依頼する。",
+      "提案されたコードをシミュレーション環境でテストし、必要に応じて修正する。"
+    ],
+    "prompt": "ロボットがキッチンでマグカップを運搬中に倒してしまいました。現在の目標はキッチンを清潔に保つことです。この状況でロボットが取るべき行動計画と、そのためのPythonコードの骨子を生成してください。",
+    "tags": [
+      "ロボティクス",
+      "エージェントAI",
+      "行動計画",
+      "エラーハンドリング",
+      "Python"
+    ],
+    "id": "20260328_061731_03",
+    "date": "2026-03-28",
+    "source_news": {
+      "title": "視覚的インタラクティブ計画の新ベンチマークAsgardBench公開。",
+      "url": "https://www.microsoft.com/en-us/research/blog/asgardbench-a-benchmark-for-visually-grounded-interactive-planning/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "gpt-oss-safeguardでティーン向けコンテンツをモデレート",
     "news_highlight": "OpenAIがgpt-oss-safeguardでティーン向けAI安全ポリシーを公開、年齢別リスクを軽減",
     "problem_context": "AIコンテンツの年齢別リスク管理とモデレーション",
