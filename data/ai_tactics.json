@@ -1,5 +1,123 @@
 [
   {
+    "title": "Amazon Pollyでリアルタイム会話AIプロトタイプ開発",
+    "news_highlight": "Amazon Pollyが双方向ストリーミングAPIを導入、リアルタイムTTSで会話型AIを強化。",
+    "problem_context": "会話型AIの応答遅延と自然な対話の実現。",
+    "recommended_ai": {
+      "model": "Amazon Polly Bidirectional Streaming API",
+      "reason": "リアルタイムTTSで会話の遅延を解消。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客サポートチャットボットの音声応答をリアルタイム化したい時",
+      "音声アシスタントのプロトタイプで自然な対話フローを検証したい時",
+      "ゲーム内のNPCにリアルタイムで動的なセリフを話させたい時"
+    ],
+    "steps": [
+      "1. AWS SDKをプロジェクトに導入し、Pollyクライアントを初期化する。",
+      "2. Bidirectional Streaming APIを使用してテキストを送信するストリームを開く。",
+      "3. テキストデータをリアルタイムでストリームに書き込み、同時に音声データを受信する。",
+      "4. 受信した音声データを再生し、会話の遅延がないかテストする。"
+    ],
+    "prompt": "Amazon Polly Bidirectional Streaming APIを使って、ユーザーからのテキスト入力に応じてリアルタイムで音声応答を生成し再生するPythonコードを記述してください。",
+    "tags": [
+      "リアルタイムTTS",
+      "会話型AI",
+      "Amazon Polly",
+      "音声合成"
+    ],
+    "id": "20260329_061222_01",
+    "date": "2026-03-29",
+    "source_news": {
+      "title": "リアルタイム音声合成APIで会話型AIを強化",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-polly-bidirectional-streaming-real-time-speech-synthesis-for-conversational-ai/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Gemini 3.1 Flashで音声認識精度向上",
+    "news_highlight": "Gemini 3.1 FlashはオーディオAIをより自然で信頼性高く改善",
+    "problem_context": "既存音声認識の誤認識率が高い",
+    "recommended_ai": {
+      "model": "Gemini 3.1 Flash",
+      "reason": "オーディオAI改善のため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "音声コマンドシステムの誤認識を減らしたい時",
+      "議事録自動作成の認識精度を上げたい時",
+      "カスタマーサポートの音声ボットの応答を改善したい時"
+    ],
+    "steps": [
+      "1. 既存の音声認識ログから誤認識が多いフレーズを特定する",
+      "2. Gemini 3.1 Flash APIのドキュメントを確認し、音声認識の利用方法を把握する",
+      "3. 誤認識フレーズをGemini 3.1 Flashでテストし、認識結果を比較する",
+      "4. 改善が見られる場合、既存システムへのGemini 3.1 Flash導入を検討する"
+    ],
+    "prompt": "既存の音声認識システムで「会議の議事録」が「会議の疑似録」と誤認識されました。Gemini 3.1 Flashでこの誤認識を避けるためのAPI利用時の推奨設定や、考慮すべき点を提案してください。",
+    "tags": [
+      "音声認識",
+      "API連携",
+      "品質改善",
+      "Gemini"
+    ],
+    "id": "20260329_061250_02",
+    "date": "2026-03-29",
+    "source_news": {
+      "title": "Gemini 3.1 Flash Live: オーディオAIをより自然で信頼性高く改善",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "Bedrockマルチモーダルモデルで動画からの洞察抽出",
+    "news_highlight": "Bedrockマルチモーダルモデルが3つのアーキテクチャで動画理解を大規模化",
+    "problem_context": "大量の動画データから効率的に情報を抽出したい",
+    "recommended_ai": {
+      "model": "Amazon Bedrock マルチモーダルモデル",
+      "reason": "動画理解を大規模化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "監視カメラ映像から異常行動を検知したい時",
+      "製品デモ動画からユーザーの注目点を分析したい時",
+      "トレーニング動画から特定の作業手順を自動抽出したい時"
+    ],
+    "steps": [
+      "1. 分析したい動画ファイルをS3バケットにアップロードする",
+      "2. Bedrock APIを呼び出し、動画URLと分析タスク（例: オブジェクト検出）を指定する",
+      "3. APIレスポンスから抽出された洞察（例: タイムスタンプ、検出オブジェクト）を解析する",
+      "4. 抽出結果をデータベースに保存し、BIツールで可視化する"
+    ],
+    "prompt": "S3バケットにある動画ファイル`s3://my-bucket/video.mp4`から、特定のオブジェクト（例: 人、車）の出現時間と位置を抽出し、JSON形式で出力してください。",
+    "tags": [
+      "動画分析",
+      "マルチモーダル",
+      "Bedrock",
+      "AWS",
+      "データ抽出"
+    ],
+    "id": "20260329_061314_03",
+    "date": "2026-03-29",
+    "source_news": {
+      "title": "Bedrockマルチモーダルモデルで動画からの洞察抽出を大規模化",
+      "url": "https://aws.amazon.com/blogs/machine-learning/unlocking-video-insights-at-scale-with-amazon-bedrock-multimodal-models/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Gemini 3.1 Flash Liveで音声UX設計",
     "news_highlight": "Gemini 3.1 Flash LiveがオーディオAIを自然で信頼性高く改善。",
     "problem_context": "アプリケーションの音声UXを向上させたい。",
