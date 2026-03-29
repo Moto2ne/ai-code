@@ -1,5 +1,122 @@
 [
   {
+    "title": "Hugging Face EVAで音声エージェント評価",
+    "news_highlight": "Hugging Faceが音声エージェントの意図理解、応答適切性、会話の流れを多角的に評価する新フレームワークEVAを発表。",
+    "problem_context": "音声エージェントの客観的・総合的な評価が困難。",
+    "recommended_ai": {
+      "model": "Hugging Face EVA",
+      "reason": "音声エージェントの総合評価を標準化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "音声エージェントの新規開発時に性能目標を設定する時",
+      "既存の音声エージェントの改善点を特定する時",
+      "複数の音声エージェントモデルを比較選定する時"
+    ],
+    "steps": [
+      "1. 評価したい音声エージェントのログデータ（ユーザー発話、エージェント応答）を準備する。",
+      "2. EVAフレームワークの評価スクリプトをHugging Face Hubから取得する。",
+      "3. ログデータをEVAフレームワークに入力し、評価を実行する。",
+      "4. 出力された評価レポートを分析し、意図理解度や応答適切性などの改善点を特定する。"
+    ],
+    "prompt": "Hugging Face EVAの評価レポートから、意図理解度が低いと判明しました。この音声エージェントの意図理解モデルの改善策をPythonコードで提案してください。",
+    "tags": [
+      "音声AI",
+      "評価",
+      "品質保証",
+      "Hugging Face"
+    ],
+    "id": "20260330_061318_01",
+    "date": "2026-03-30",
+    "source_news": {
+      "title": "音声エージェント評価の新フレームワークEVAをHugging Faceが発表",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/eva"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "OpenClawでロボット制御コード生成",
+    "news_highlight": "Hugging Faceがロボット操作のオープンソースOpenClawを発表、汎用ロボット制御を支援",
+    "problem_context": "ロボット制御コードの記述が複雑で開発効率が低い",
+    "recommended_ai": {
+      "model": "OpenClaw",
+      "reason": "Hugging Face提供の汎用ロボット制御",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいロボットアームの制御プロトタイプを開発する時",
+      "ロボットの特定のタスクを自動化するアルゴリズムを検証する時",
+      "AIモデルと連携するロボットの動作をシミュレーションする時"
+    ],
+    "steps": [
+      "1. OpenClawの環境をローカルにセットアップする",
+      "2. AIにロボットのタスクと目標を具体的に記述して制御コードの生成を依頼する",
+      "3. 生成されたPythonコードをOpenClawのフレームワークに組み込む",
+      "4. シミュレーション環境または実機で動作検証を行い、必要に応じて調整する"
+    ],
+    "prompt": "OpenClawフレームワークとPythonを使用して、6軸ロボットアームが特定の物体をピックアップし、別の場所にプレースする制御コードを生成してください。",
+    "tags": [
+      "ロボット制御",
+      "オープンソース",
+      "Python",
+      "HuggingFace"
+    ],
+    "id": "20260330_061347_02",
+    "date": "2026-03-30",
+    "source_news": {
+      "title": "Hugging Faceがロボット操作のオープンソースプロジェクトOpenClawを発表",
+      "url": "https://huggingface.co/blog/liberate-your-openclaw"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Gemini 3.1 Flashで音声UIプロトタイプ生成",
+    "news_highlight": "Gemini 3.1 FlashでオーディオAIがより自然で高信頼に進化。",
+    "problem_context": "自然な音声UIのプロトタイプ作成が困難。",
+    "recommended_ai": {
+      "model": "Gemini 3.1 Flash",
+      "reason": "自然で高信頼なオーディオAI機能強化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "音声コマンド機能のプロトタイプを迅速に作成したい時",
+      "ユーザー向け音声ガイドのスクリプトと音声を生成したい時",
+      "既存アプリの音声応答をより自然に改善したい時"
+    ],
+    "steps": [
+      "音声UIで実現したい機能や対話シナリオをテキストで記述する。",
+      "Gemini 3.1 FlashのAPIまたはUIにシナリオをプロンプトとして入力する。",
+      "生成された音声応答や対話フローを確認し、必要に応じて調整する。",
+      "プロトタイプをチームやユーザーと共有し、フィードバックを得る。"
+    ],
+    "prompt": "スマートホームアプリの音声コマンドUIプロトタイプを作成してください。ユーザーが「電気をつけて」と言ったら「どの部屋の電気ですか？」と応答し、部屋名を言ったら「〇〇の電気をつけます」と応答するシナリオを生成してください。",
+    "tags": [
+      "音声UI",
+      "プロトタイピング",
+      "オーディオAI",
+      "UXデザイン"
+    ],
+    "id": "20260330_061412_03",
+    "date": "2026-03-30",
+    "source_news": {
+      "title": "Gemini 3.1 Flash Live発表、オーディオAIがより自然で高信頼に",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
     "title": "Amazon Pollyでリアルタイム会話AIプロトタイプ開発",
     "news_highlight": "Amazon Pollyが双方向ストリーミングAPIを導入、リアルタイムTTSで会話型AIを強化。",
     "problem_context": "会話型AIの応答遅延と自然な対話の実現。",
