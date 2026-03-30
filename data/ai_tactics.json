@@ -1,5 +1,121 @@
 [
   {
+    "title": "VLMでロボット空間計画の意思決定支援",
+    "news_highlight": "ロボット操作VLMの空間計画課題解決に向けた新ベンチマーク発表",
+    "problem_context": "VLMのロボット空間計画における意思決定の曖昧さ",
+    "recommended_ai": {
+      "model": "GPT-4V",
+      "reason": "高度な画像理解と推論で計画を補完",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ロボットの複雑なタスクシーケンスを設計する時",
+      "VLMが生成した行動計画の妥当性を検証する時",
+      "ロボットが予期せぬ状況で停止した原因を分析する時"
+    ],
+    "steps": [
+      "1. ロボットの現在の環境画像とVLMの計画出力を準備",
+      "2. GPT-4Vに画像と計画、タスク目標を提示",
+      "3. 計画の曖昧な点や改善点を具体的に質問",
+      "4. 提案された改善案をVLMの入力や後処理に適用しテスト"
+    ],
+    "prompt": "このロボット環境画像とVLMが生成した行動計画を見てください。タスク目標は「[目標]」です。計画で「何を」「どこで」実行するか曖昧な点を指摘し、具体的な改善案を提案してください。",
+    "tags": [
+      "ロボティクス",
+      "VLM",
+      "空間計画",
+      "意思決定",
+      "GPT-4V"
+    ],
+    "id": "20260331_062016_01",
+    "date": "2026-03-31",
+    "source_news": {
+      "title": "ロボット操作向けVLMの空間計画ベンチマーク発表",
+      "url": "https://www.microsoft.com/en-us/research/blog/groundedplanbench-spatially-grounded-long-horizon-task-planning-for-robot-manipulation/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "GPT-4Vでロボット行動計画を生成",
+    "news_highlight": "視覚ロボットの対話型計画ベンチマーク公開、動的環境での行動計画精度を評価",
+    "problem_context": "ロボットが動的環境で柔軟な行動計画を立てるのが困難",
+    "recommended_ai": {
+      "model": "GPT-4V",
+      "reason": "視覚情報とテキストでロボット行動計画を生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ロボットが予期せぬ障害物に出くわした際の回避行動を設計する時",
+      "ロボットが新しい物体を認識し、それに応じた操作手順を生成する時",
+      "ロボットのタスク実行中にエラーが発生し、リカバリープランを検討する時"
+    ],
+    "steps": [
+      "1. ロボットの現在の視覚情報（画像/動画）とタスク目標を準備する",
+      "2. 予期せぬ状況（例: マグカップが倒れた）をテキストで記述する",
+      "3. AIに視覚情報と状況、タスク目標を渡し、次の行動計画を依頼する",
+      "4. 提案された行動計画をロボットシミュレーターで検証する"
+    ],
+    "prompt": "この画像はロボットの現在の視点です。タスクは『キッチンを掃除する』です。マグカップが倒れました。次の最適な行動計画をステップバイステップで生成してください。",
+    "tags": [
+      "ロボット工学",
+      "マルチモーダルAI"
+    ],
+    "id": "20260331_062044_02",
+    "date": "2026-03-31",
+    "source_news": {
+      "title": "視覚に基づいたロボットの対話型計画ベンチマーク",
+      "url": "https://www.microsoft.com/en-us/research/blog/asgardbench-a-benchmark-for-visually-grounded-interactive-planning/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Gemini 3.1 Flashで音声UI設計",
+    "news_highlight": "Gemini 3.1 Flashで音声AIがより自然に、リアルタイム対話が強化",
+    "problem_context": "音声によるUI/UX設計の効率化",
+    "recommended_ai": {
+      "model": "Gemini 3.1 Flash",
+      "reason": "自然な音声AIが強化されたため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のUI/UXを音声でブレインストーミングしたい時",
+      "アクセシビリティ対応の音声インターフェースを設計する時",
+      "複雑なシステム設計のアイデアを口頭でAIに伝えたい時"
+    ],
+    "steps": [
+      "Gemini 3.1 Flashの音声入力機能を有効にする。",
+      "設計したいUI/UXのコンセプトを口頭でAIに説明する。",
+      "AIが生成した設計案（テキスト、コードの骨子など）を確認する。",
+      "必要に応じて音声でフィードバックし、設計を洗練させる。"
+    ],
+    "prompt": "ユーザーが音声で操作できるスマートホームデバイスのUI設計を提案してください。リビングの照明、エアコン、テレビの操作を含み、自然な対話フローとエラーハンドリングも考慮してください。",
+    "tags": [
+      "設計",
+      "音声AI",
+      "UI/UX",
+      "多モーダル"
+    ],
+    "id": "20260331_062110_03",
+    "date": "2026-03-31",
+    "source_news": {
+      "title": "Gemini 3.1 Flash Live発表、音声AIがより自然に",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
     "title": "Hugging Face EVAで音声エージェント評価",
     "news_highlight": "Hugging Faceが音声エージェントの意図理解、応答適切性、会話の流れを多角的に評価する新フレームワークEVAを発表。",
     "problem_context": "音声エージェントの客観的・総合的な評価が困難。",
