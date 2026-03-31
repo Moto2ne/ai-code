@@ -1,5 +1,124 @@
 [
   {
+    "title": "TRL v1.0でLLMをRLHFファインチューニング",
+    "news_highlight": "TRL v1.0がRLHF/DPOによるLLMファインチューニングを安定化、プロダクション利用可能に。",
+    "problem_context": "LLMの応答品質向上と特定タスクへの適応。",
+    "recommended_ai": {
+      "model": "TRL v1.0",
+      "reason": "LLMのRLHF/DPOファインチューニングに特化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存LLMの応答が自社製品に合わない時",
+      "ユーザーフィードバックでLLMの振る舞いを改善したい時",
+      "特定タスクでLLMの精度を向上させたい時"
+    ],
+    "steps": [
+      "1. TRLライブラリをインストールし、ベースLLMとデータセットを準備",
+      "2. RLHF/DPOトレーニング設定ファイルを記述",
+      "3. トレーニングスクリプトを実行し、モデルをファインチューニング",
+      "4. ファインチューニング後のモデルを評価し、デプロイ"
+    ],
+    "prompt": "TRLライブラリとDPOアルゴリズムを用いて、指定されたデータセットでMistral-7BモデルをファインチューニングするPythonスクリプトを生成してください。",
+    "tags": [
+      "LLM",
+      "ファインチューニング",
+      "RLHF",
+      "DPO"
+    ],
+    "id": "20260401_061823_01",
+    "date": "2026-04-01",
+    "source_news": {
+      "title": "Hugging FaceがAIポストトレーニングライブラリTRL v1.0をリリース。",
+      "url": "https://huggingface.co/blog/trl-v1"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "AWS Agentでセキュリティと運用自動化",
+    "news_highlight": "AWS Security AgentとDevOps Agentが一般提供、オンデマンド侵入テストと運用をAIで自動化",
+    "problem_context": "セキュリティ脆弱性の早期発見と運用効率化",
+    "recommended_ai": {
+      "model": "AWS Security Agent / AWS DevOps Agent",
+      "reason": "セキュリティテストと運用をAIで自動化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "本番デプロイ前のアプリケーション脆弱性診断",
+      "CI/CDパイプラインでの運用異常検知",
+      "クラウドインフラのセキュリティと運用最適化"
+    ],
+    "steps": [
+      "1. AWSコンソールで対象Agentを有効化",
+      "2. テスト/監視対象のAWSリソースを指定",
+      "3. Agentによる自動テスト/監視を開始",
+      "4. 生成されたレポートや提案に基づき改善"
+    ],
+    "prompt": "AWS Security AgentでWebアプリケーションの侵入テストを実行し、脆弱性レポートを生成。AWS DevOps AgentでLambda関数の異常を監視し、自動復旧スクリプトを設定してください。",
+    "tags": [
+      "セキュリティ",
+      "DevOps",
+      "AI",
+      "自動化",
+      "クラウド運用"
+    ],
+    "id": "20260401_061852_02",
+    "date": "2026-04-01",
+    "source_news": {
+      "title": "AWSがセキュリティテストとクラウド運用のAIエージェントを一般提供。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/aws-launches-frontier-agents-for-security-testing-and-cloud-operations/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCoreでFinOpsエージェント設計",
+    "news_highlight": "Amazon Bedrock AgentCoreでFinOpsエージェントを構築、複数AWSアカウントのコスト管理を自動化",
+    "problem_context": "複数AWSアカウントのコスト管理と最適化",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "FinOpsエージェント構築に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAWSプロジェクトのコスト見積もり時",
+      "月次AWS利用料の異常値を検知したい時",
+      "コスト最適化の提案を自動生成したい時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCoreで新しいエージェントを作成",
+      "2. AWS Cost Explorer APIを呼び出すAction Groupを定義",
+      "3. コスト最適化のナレッジベースを連携",
+      "4. エージェントの動作をテストしデプロイ"
+    ],
+    "prompt": "AWS Cost Explorer APIを利用し、複数アカウントの月次コストを分析し、コスト削減の提案を行うFinOpsエージェントを設計してください。",
+    "tags": [
+      "FinOps",
+      "AWS",
+      "コスト管理",
+      "エージェント",
+      "Bedrock"
+    ],
+    "id": "20260401_061917_03",
+    "date": "2026-04-01",
+    "source_news": {
+      "title": "Amazon Bedrock AgentCoreでFinOpsエージェントを構築する方法を解説。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-finops-agent-using-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "VLMでロボット空間計画の意思決定支援",
     "news_highlight": "ロボット操作VLMの空間計画課題解決に向けた新ベンチマーク発表",
     "problem_context": "VLMのロボット空間計画における意思決定の曖昧さ",
