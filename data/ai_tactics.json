@@ -1,5 +1,122 @@
 [
   {
+    "title": "Hugging Face TRL v1.0でRLHFモデル最適化",
+    "news_highlight": "Hugging Face TRL v1.0リリース、RLHFによるLLMファインチューニングを効率化",
+    "problem_context": "RLHFによるLLMの性能改善が困難",
+    "recommended_ai": {
+      "model": "Hugging Face TRL v1.0",
+      "reason": "強化学習とLLMの統合を簡素化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "LLMの応答品質をユーザーフィードバックで改善したい時",
+      "特定のタスクでLLMのハルシネーションを減らしたい時",
+      "LLMの安全性や倫理的振る舞いを強化したい時"
+    ],
+    "steps": [
+      "1. TRLライブラリを`pip install trl`でインストールする",
+      "2. 既存のHugging FaceモデルとRLHF用データセットを準備する",
+      "3. TRLのSFTTrainerやPPOTrainerを使ってRLHF設定を記述する",
+      "4. モデルをトレーニングし、評価指標に基づいて性能を検証する"
+    ],
+    "prompt": "Hugging Face TRL v1.0で`meta-llama/Llama-2-7b-hf`をRLHFファインチューニングするPythonコードを生成してください。SFTTrainerとPPOTrainerの基本設定を含めてください。",
+    "tags": [
+      "強化学習",
+      "LLM",
+      "ファインチューニング",
+      "HuggingFace"
+    ],
+    "id": "20260402_062110_01",
+    "date": "2026-04-02",
+    "source_news": {
+      "title": "Hugging Face TRLライブラリv1.0リリース、強化学習を強化。",
+      "url": "https://huggingface.co/blog/trl-v1"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "IBM Granite 4.0 Visionで画像解析",
+    "news_highlight": "IBM Granite 4.0 VisionがHugging Faceで公開、企業向け画像解析機能を提供",
+    "problem_context": "画像データからの情報抽出を効率化したい",
+    "recommended_ai": {
+      "model": "IBM Granite 4.0 Vision",
+      "reason": "高精度な画像解析が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "製品画像の不良箇所を自動検出したい時",
+      "顧客からのフィードバック画像から感情を分析したい時",
+      "ドキュメント画像から特定の情報を抽出したい時"
+    ],
+    "steps": [
+      "Hugging Face SpacesでIBM Granite 4.0 Visionのデモページにアクセスする",
+      "解析したい画像をアップロードする",
+      "モデルの出力（例: 物体検出、キャプション）を確認する",
+      "API連携を検討し、自社システムへの組み込み可能性を評価する"
+    ],
+    "prompt": "この画像について、写っている主要なオブジェクトとその状態を詳細に説明してください。また、この画像で最も重要な要素は何ですか？",
+    "tags": [
+      "画像解析",
+      "Vision AI",
+      "Hugging Face",
+      "企業AI"
+    ],
+    "id": "20260402_062137_02",
+    "date": "2026-04-02",
+    "source_news": {
+      "title": "Hugging FaceでIBM Granite 4.0 Vision公開、企業向け多機能AI。",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-vision"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "OpenClawでロボット制御コード生成",
+    "news_highlight": "Hugging FaceがOpenClawを公開、ロボット制御のオープンソースフレームワーク提供",
+    "problem_context": "ロボット制御開発の複雑性・高コスト",
+    "recommended_ai": {
+      "model": "OpenClaw",
+      "reason": "ロボット制御を簡素化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいロボットアームの動作シーケンスをプロトタイプしたい時",
+      "既存のロボット制御コードを特定のタスク向けにカスタマイズしたい時",
+      "ロボットのシミュレーション環境で動作検証を行いたい時"
+    ],
+    "steps": [
+      "OpenClawのGitHubリポジトリをクローンする。",
+      "提供されているサンプルコードを参考に、制御したいロボットのモデル定義を記述する。",
+      "OpenClawのAPIを使って、目的の動作シーケンスをPythonで記述する。",
+      "シミュレーション環境で動作を検証し、必要に応じてコードを調整する。"
+    ],
+    "prompt": "OpenClawとPyBullet/MuJoCoを使って、UR5eロボットアームが特定の物体を掴むためのPython制御コードを生成してください。逆運動学とパスプランニングを含めてください。",
+    "tags": [
+      "ロボット制御",
+      "オープンソース",
+      "HuggingFace",
+      "シミュレーション"
+    ],
+    "id": "20260402_062203_03",
+    "date": "2026-04-02",
+    "source_news": {
+      "title": "Hugging FaceがOpenClawを公開、ロボット制御のオープン化か。",
+      "url": "https://huggingface.co/blog/liberate-your-openclaw"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "TRL v1.0でLLMをRLHFファインチューニング",
     "news_highlight": "TRL v1.0がRLHF/DPOによるLLMファインチューニングを安定化、プロダクション利用可能に。",
     "problem_context": "LLMの応答品質向上と特定タスクへの適応。",
