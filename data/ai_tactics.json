@@ -1,5 +1,122 @@
 [
   {
+    "title": "Gemma 4でUIスケッチからコード生成",
+    "news_highlight": "Gemma 4はオンデバイス対応の最先端マルチモーダルAI",
+    "problem_context": "手書きUIスケッチをコード化する手間を削減",
+    "recommended_ai": {
+      "model": "Gemma 4",
+      "reason": "オンデバイスで画像処理が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のUIプロトタイプを素早く作成したい時",
+      "手書きのUIデザインをコードに変換したい時",
+      "既存画面の改善案を画像から検討したい時"
+    ],
+    "steps": [
+      "手書きまたはデジタルでUIスケッチを作成する",
+      "スケッチの画像をGemma 4にアップロードする",
+      "生成されたコードを開発環境に貼り付ける",
+      "コードをテストし、必要に応じて修正する"
+    ],
+    "prompt": "このUIスケッチを元に、ReactとTypeScriptでログイン画面のコードを生成してください。メールアドレス入力、パスワード入力、ログインボタンを含めてください。",
+    "tags": [
+      "コード生成",
+      "UI/UX",
+      "マルチモーダル",
+      "オンデバイス"
+    ],
+    "id": "20260403_061701_01",
+    "date": "2026-04-03",
+    "source_news": {
+      "title": "Gemma 4発表、オンデバイス対応の最先端マルチモーダルAI",
+      "url": "https://huggingface.co/blog/gemma4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "IBM Granite 4.0 3B Visionで文書解析",
+    "news_highlight": "IBM Granite 4.0 3B Visionは企業向け文書に特化した小型マルチモーダルAI",
+    "problem_context": "企業文書からの情報抽出や要約に時間がかかる",
+    "recommended_ai": {
+      "model": "IBM Granite 4.0 3B Vision",
+      "reason": "企業文書処理に特化し、マルチモーダル対応",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "契約書から特定条項を抽出したい時",
+      "技術仕様書から図と関連する説明をまとめて理解したい時",
+      "監査報告書からリスク要因と対応策を素早く把握したい時"
+    ],
+    "steps": [
+      "1. 処理したい企業文書（PDF/画像含む）を準備する。",
+      "2. Granite 4.0 3B Vision APIに文書をアップロードする。",
+      "3. 抽出したい情報や要約の指示をプロンプトで与える。",
+      "4. AIの出力結果をレビューし、必要に応じて調整する。"
+    ],
+    "prompt": "この技術仕様書（画像含む）から、主要な機能要件と関連する図のキャプションを抽出してリスト形式でまとめてください。",
+    "tags": [
+      "文書処理",
+      "情報抽出",
+      "マルチモーダル",
+      "企業AI"
+    ],
+    "id": "20260403_061727_02",
+    "date": "2026-04-03",
+    "source_news": {
+      "title": "IBM Granite 4.0 3B Vision、企業向け文書の小型マルチモーダルAI",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-vision"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "Veo 3.1 LiteでUIプロトタイプ動画生成",
+    "news_highlight": "Google Veo 3.1 Liteは高効率な動画生成モデルで、迅速なプロトタイピングを支援。",
+    "problem_context": "UI/UXの動きを素早く共有したい。",
+    "recommended_ai": {
+      "model": "Google Veo 3.1 Lite",
+      "reason": "高効率な動画生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のUIフローをチームに共有する時",
+      "デザインレビューでインタラクションの動きを説明する時",
+      "ユーザーテスト用のモックアップ動画を作成する時"
+    ],
+    "steps": [
+      "1. 既存のUIスクリーンショットやデザインファイルを準備する。",
+      "2. シナリオ（例: ログイン→ダッシュボード→設定）をテキストで記述する。",
+      "3. Veo 3.1 Liteに画像とシナリオを渡し、動画生成を依頼する。",
+      "4. 生成された動画を確認し、必要に応じて修正指示を出す。"
+    ],
+    "prompt": "ユーザーがログインし、ダッシュボードに移動し、設定画面を開く一連のUI操作を、提供されたスクリーンショットを元に動画で表現してください。スムーズなトランジションを含めてください。",
+    "tags": [
+      "動画生成",
+      "プロトタイピング",
+      "UI/UX",
+      "デザイン"
+    ],
+    "id": "20260403_061752_03",
+    "date": "2026-04-03",
+    "source_news": {
+      "title": "Google Veo 3.1 Lite発表、高効率な動画生成モデル",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Hugging Face TRL v1.0でRLHFモデル最適化",
     "news_highlight": "Hugging Face TRL v1.0リリース、RLHFによるLLMファインチューニングを効率化",
     "problem_context": "RLHFによるLLMの性能改善が困難",
