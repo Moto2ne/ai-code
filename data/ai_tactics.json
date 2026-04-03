@@ -1,5 +1,123 @@
 [
   {
+    "title": "GPT-5.4 miniで銀行向けAIエージェント開発",
+    "news_highlight": "GPT-4.1/GPT-5.4 mini/nanoが銀行サポートを低遅延・高信頼で自動化",
+    "problem_context": "銀行の顧客サポート業務の効率化と自動化",
+    "recommended_ai": {
+      "model": "GPT-5.4 mini",
+      "reason": "低遅延・高信頼で業務自動化に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客からの定型問い合わせ応答ロジック設計",
+      "既存FAQからAIエージェントの応答スクリプト生成",
+      "銀行業務フローの自動化スクリプト作成"
+    ],
+    "steps": [
+      "1. 自動化したい銀行業務フローを特定する",
+      "2. 関連する顧客問い合わせデータやFAQを準備する",
+      "3. AIエージェントの応答ロジックをプロンプトで定義する",
+      "4. 生成されたコードをテスト環境で検証しデプロイする"
+    ],
+    "prompt": "あなたは銀行の顧客サポートAIエージェントです。ユーザーからの問い合わせ『口座残高を知りたい』に対し、必要な情報（口座番号、本人確認）を尋ねる応答ロジックをPythonで生成してください。",
+    "tags": [
+      "AIエージェント",
+      "業務自動化",
+      "Python",
+      "金融"
+    ],
+    "id": "20260404_061517_01",
+    "date": "2026-04-04",
+    "source_news": {
+      "title": "OpenAIが新GPTモデルで銀行向けAIエージェントを実用化。",
+      "url": "https://openai.com/index/gradient-labs"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "AWS AIエージェントで開発環境を自動構築",
+    "news_highlight": "AWS AIエージェントがファイルシステム状態のセッション永続化とシェルコマンド実行機能を提供。",
+    "problem_context": "AIエージェントによる開発作業の継続性・自動化不足を解消",
+    "recommended_ai": {
+      "model": "AWS AIエージェント",
+      "reason": "新機能の提供元であり、直接利用可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIが生成したコードの動作確認を自動化したい時",
+      "AIに開発環境の初期設定や依存関係のインストールを任せたい時",
+      "AIに複数ステップにわたるコード修正とテストを継続的に実行させたい時"
+    ],
+    "steps": [
+      "AWS AIエージェントを設定し、永続化ストレージを有効化する。",
+      "エージェントに特定の開発環境（例: Node.jsプロジェクト）の構築を指示する。",
+      "エージェントがシェルコマンドで依存関係をインストールし、初期ファイルを生成する。",
+      "エージェントに生成されたコードのテスト実行を指示し、結果を確認する。"
+    ],
+    "prompt": "Node.jsプロジェクトを初期化し、`express`をインストールしてください。その後、`app.js`にHello Worldサーバーコードを生成し、`npm start`で実行してください。",
+    "tags": [
+      "AWS",
+      "AIエージェント",
+      "開発環境",
+      "自動化",
+      "シェル実行"
+    ],
+    "id": "20260404_061545_02",
+    "date": "2026-04-04",
+    "source_news": {
+      "title": "AWSがAIエージェントのセッション永続化とシェル実行機能を提供。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/persist-session-state-with-filesystem-configuration-and-execute-shell-commands/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "AWS Network FirewallでAIエージェントのアクセス設計",
+    "news_highlight": "AWS Network FirewallがAIエージェントの外部ドメインアクセスを許可リストで制限可能に",
+    "problem_context": "AIエージェントの外部アクセス制御が不十分",
+    "recommended_ai": {
+      "model": "Claude 3 Opus",
+      "reason": "AWSセキュリティ設定のベストプラクティスを提案",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェント利用サービスのセキュリティ設計時",
+      "AWS環境のネットワークセキュリティ監査時",
+      "コンプライアンス要件への対応計画時"
+    ],
+    "steps": [
+      "AIエージェントがアクセスする外部ドメインを特定する",
+      "AWS Network Firewallのポリシー設定画面を開く",
+      "許可リストに含めるドメインをSNIベースで設定する",
+      "設定をデプロイし、AIエージェントの動作をテストする"
+    ],
+    "prompt": "AWS Network FirewallでAIエージェント（AgentCoreリソース）がアクセスすべき外部ドメインの許可リストを作成するための設定例を、SNIフィルタリングを用いてJSON形式で提示してください。",
+    "tags": [
+      "AWS",
+      "Network Firewall",
+      "セキュリティ",
+      "AIエージェント"
+    ],
+    "id": "20260404_061612_03",
+    "date": "2026-04-04",
+    "source_news": {
+      "title": "AWSがAIエージェントのアクセスドメイン制御機能を提供。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/control-which-domains-your-ai-agents-can-access/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Gemma 4でUIスケッチからコード生成",
     "news_highlight": "Gemma 4はオンデバイス対応の最先端マルチモーダルAI",
     "problem_context": "手書きUIスケッチをコード化する手間を削減",
