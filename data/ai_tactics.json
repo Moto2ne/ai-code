@@ -1,5 +1,123 @@
 [
   {
+    "title": "GeminiでAgentCoreのアクセス制御を設計",
+    "news_highlight": "AWS Network FirewallがAgentCoreのインターネットアクセスをSNIでドメイン単位に制限可能",
+    "problem_context": "AIエージェントの不正アクセスやデータ漏洩リスク低減",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "セキュリティ設定のコード生成とレビューに最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIエージェントをデプロイする際のセキュリティ設定",
+      "既存のAIエージェントのセキュリティポリシーを強化する時",
+      "AWS Network Firewallのルール設定をレビューする時"
+    ],
+    "steps": [
+      "1. AgentCoreがアクセスするべきドメインリストを準備する",
+      "2. AWS Network Firewallの既存設定があればコピーする",
+      "3. AIに許可リストと現在の設定を渡し、SNIフィルタリングルール生成を依頼する",
+      "4. 提案されたルールを適用し、テスト環境で動作確認する"
+    ],
+    "prompt": "AgentCoreがアクセスする許可ドメインリスト[example.com, api.example.net]に基づき、AWS Network FirewallでSNIを利用したドメインレベルフィルタリングルールをJSON形式で生成してください。",
+    "tags": [
+      "セキュリティ",
+      "AWS",
+      "ネットワーク",
+      "AIエージェント"
+    ],
+    "id": "20260406_061332_01",
+    "date": "2026-04-06",
+    "source_news": {
+      "title": "AIエージェントのアクセスドメインを制御するセキュリティ機能",
+      "url": "https://aws.amazon.com/blogs/machine-learning/control-which-domains-your-ai-agents-can-access/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "GPT-5.4 mini/nanoでAIエージェント開発",
+    "news_highlight": "GPT-5.4 mini/nanoが低遅延・高信頼性AIエージェントで銀行業務自動化に成功。",
+    "problem_context": "顧客対応の遅延とヒューマンエラー削減",
+    "recommended_ai": {
+      "model": "GPT-5.4 mini/nano",
+      "reason": "低遅延・高信頼性エージェント",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客からの問い合わせ対応フローを設計する時",
+      "既存のチャットボットの応答速度と精度を改善する時",
+      "定型業務の自動化スクリプトをAIで強化する時"
+    ],
+    "steps": [
+      "1. 自動化したい業務プロセスを詳細に定義する",
+      "2. GPT-5.4 mini/nano APIを呼び出すためのPythonスクリプトを作成する",
+      "3. ユーザーからの入力と期待される出力のテストケースを準備する",
+      "4. スクリプトを実行し、遅延と応答の正確性を評価・改善する"
+    ],
+    "prompt": "銀行の顧客サポート向けAIエージェントのPythonコードを生成してください。顧客の口座残高照会と取引履歴確認に対応し、低遅延で高信頼性を実現するAPI連携を含めてください。",
+    "tags": [
+      "AIエージェント",
+      "自動化",
+      "低遅延",
+      "銀行業務",
+      "Python"
+    ],
+    "id": "20260406_061355_02",
+    "date": "2026-04-06",
+    "source_news": {
+      "title": "GPT-5.4 mini/nano活用事例、低遅延・高信頼性AIエージェント",
+      "url": "https://openai.com/index/gradient-labs"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Gemini APIでコストと信頼性を最適化",
+    "news_highlight": "Gemini APIにコストと信頼性のバランス調整機能「Dials」が追加",
+    "problem_context": "AI利用のコスト増大と信頼性要件の課題",
+    "recommended_ai": {
+      "model": "Gemini API",
+      "reason": "コストと信頼性の調整が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "本番環境でのAI推論コストを削減したい時",
+      "特定の機能でAI応答の安定性を高めたい時",
+      "開発・テスト環境でコストを抑えつつAIを活用したい時"
+    ],
+    "steps": [
+      "1. Gemini API呼び出しコードにDialsパラメータを追加",
+      "2. `cost_vs_quality`を`balanced`、`cost_optimized`、`quality_optimized`から選択",
+      "3. 各設定でAPI応答のレイテンシと精度を計測",
+      "4. アプリケーションの要件に最適なDials設定を適用"
+    ],
+    "prompt": "このシステム設計について、コスト効率を考慮した上で、主要なコンポーネントとそれらの連携方法を簡潔に説明してください。",
+    "tags": [
+      "API管理",
+      "コスト最適化",
+      "信頼性向上",
+      "AIインフラ"
+    ],
+    "id": "20260406_061419_03",
+    "date": "2026-04-06",
+    "source_news": {
+      "title": "Gemini APIでコストと信頼性のバランス調整機能を提供",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-flex-and-priority-inference/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
     "title": "Gemma 4でデバイス内マルチモーダル推論",
     "news_highlight": "Gemma 4はデバイス上で動作するマルチモーダルAI、オフライン利用可能",
     "problem_context": "デバイス上で画像/テキストを処理し、低遅延推論",
