@@ -1,5 +1,123 @@
 [
   {
+    "title": "Veo 3.1 Liteでプロモーション動画生成",
+    "news_highlight": "Veo 3.1 Liteはコスト効率に優れ、高品質なビデオを生成可能",
+    "problem_context": "動画コンテンツ制作のコストと時間削減",
+    "recommended_ai": {
+      "model": "Veo 3.1 Lite",
+      "reason": "コスト効率良く動画生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新機能のデモンストレーション動画を作成する時",
+      "マーケティングキャンペーン用の短い広告動画が必要な時",
+      "WebサイトやアプリのUI/UXモックアップ動画を素早く作りたい時"
+    ],
+    "steps": [
+      "1. 生成したい動画のシナリオとテキストプロンプトを準備する。",
+      "2. Veo 3.1 LiteのAPIまたはUIにプロンプトを入力し、動画生成を依頼する。",
+      "3. 生成された動画を確認し、必要に応じてプロンプトを調整して再生成する。",
+      "4. 完成した動画をダウンロードし、プロジェクトに組み込む。"
+    ],
+    "prompt": "未来的な都市の夜景を背景に、AIアシスタントがユーザーに話しかける短いプロモーションビデオを生成してください。テキストは『未来を、あなたの手に。』",
+    "tags": [
+      "ビデオ生成",
+      "プロモーション",
+      "コスト削減",
+      "AI活用"
+    ],
+    "id": "20260407_061740_01",
+    "date": "2026-04-07",
+    "source_news": {
+      "title": "Googleがコスト効率の良いビデオ生成モデルVeo 3.1 Liteをリリース。",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Granite 4.0 3B Visionで文書情報抽出",
+    "news_highlight": "Granite 4.0 3B Visionはエンタープライズ文書処理に特化、マルチモーダルで情報抽出・分類を強化",
+    "problem_context": "文書からの手動情報抽出や分類の非効率性",
+    "recommended_ai": {
+      "model": "Granite 4.0 3B Vision",
+      "reason": "文書処理特化、マルチモーダル対応",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "スキャンされた契約書から特定情報を抽出するAPI開発時",
+      "大量の請求書から項目を自動抽出しDBに登録する際",
+      "技術文書の画像から図表の説明文を抽出したい時"
+    ],
+    "steps": [
+      "1. 処理したい文書画像をGranite APIに送信",
+      "2. 抽出したい情報（例: 契約日、金額）をプロンプトで指定",
+      "3. API応答からJSON形式で抽出結果を取得",
+      "4. 取得したデータをDBに保存またはアプリケーションに表示"
+    ],
+    "prompt": "この請求書画像から、発行日、合計金額、支払期限をJSON形式で抽出してください。キー名はそれぞれ`issue_date`, `total_amount`, `due_date`としてください。",
+    "tags": [
+      "文書処理",
+      "情報抽出",
+      "API開発",
+      "マルチモーダル"
+    ],
+    "id": "20260407_061805_02",
+    "date": "2026-04-07",
+    "source_news": {
+      "title": "エンタープライズ向け文書処理に特化したマルチモーダルAIモデルGranite 4.0 3B Visionが発表。",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-vision"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "Gemma 4でデバイスAIアプリ開発",
+    "news_highlight": "Gemma 4はデバイス上で動作するマルチモーダルAIモデルで、低遅延な画像・音声処理を実現。",
+    "problem_context": "オフライン環境でのリアルタイムAI処理やプライバシー保護。",
+    "recommended_ai": {
+      "model": "Gemma 4",
+      "reason": "デバイス上でのマルチモーダル処理",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "スマートフォンアプリでのリアルタイム画像認識機能の実装",
+      "組み込みシステムでのオフライン音声コマンド処理",
+      "プライバシーが重要な環境でのローカルデータ解析"
+    ],
+    "steps": [
+      "Gemma 4のSDK/ライブラリをプロジェクトに導入する。",
+      "デバイス上で動作するモデルの推論コードを記述する。",
+      "入力データ（画像、音声など）をモデルに渡し、推論を実行する。",
+      "推論結果をアプリケーションに統合し、機能テストを行う。"
+    ],
+    "prompt": "AndroidアプリでGemma 4を利用し、カメラ入力からリアルタイムでオブジェクト検出を行うKotlinコードを生成してください。検出結果を画面に表示するUIも含めてください。",
+    "tags": [
+      "エッジAI",
+      "マルチモーダル",
+      "オフライン",
+      "リアルタイム",
+      "画像認識"
+    ],
+    "id": "20260407_061833_03",
+    "date": "2026-04-07",
+    "source_news": {
+      "title": "デバイス上で動作するマルチモーダルAIモデルGemma 4がリリース。",
+      "url": "https://huggingface.co/blog/gemma4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GeminiでAgentCoreのアクセス制御を設計",
     "news_highlight": "AWS Network FirewallがAgentCoreのインターネットアクセスをSNIでドメイン単位に制限可能",
     "problem_context": "AIエージェントの不正アクセスやデータ漏洩リスク低減",
