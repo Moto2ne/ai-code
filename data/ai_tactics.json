@@ -1,5 +1,123 @@
 [
   {
+    "title": "Gemini API Dialsでコストと信頼性調整",
+    "news_highlight": "Gemini API Dialsでコストと信頼性を調整する新機能が追加、開発者がAPI動作を制御可能に。",
+    "problem_context": "AI API利用コストとパフォーマンスの最適化。",
+    "recommended_ai": {
+      "model": "Gemini API (Dials機能)",
+      "reason": "コストと信頼性のバランスを調整可能。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "開発・テスト環境でのAPIコスト削減",
+      "本番環境でのAPI応答速度と安定性の向上",
+      "特定のユースケースでの最適なAPI設定の探索"
+    ],
+    "steps": [
+      "1. Gemini API Dialsのドキュメントを確認し、利用可能な設定を把握する。",
+      "2. 開発環境でAPI呼び出しを行う際、Dials設定を「コスト優先」に設定してテストする。",
+      "3. 本番環境でレイテンシが重要な機能に対し、Dials設定を「信頼性優先」に設定してデプロイする。",
+      "4. 異なるDials設定でA/Bテストを実施し、ビジネス要件に最適なバランスを見つける。"
+    ],
+    "prompt": "Gemini API Dialsでコスト優先設定を適用したPythonのAPI呼び出しコードを生成してください。`model_config`に`cost_priority`を設定する例を含めて。",
+    "tags": [
+      "API最適化",
+      "コスト管理",
+      "パフォーマンスチューニング",
+      "Gemini API"
+    ],
+    "id": "20260408_062144_01",
+    "date": "2026-04-08",
+    "source_news": {
+      "title": "Gemini APIでコストと信頼性を調整する新機能",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-flex-and-priority-inference/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "GPT-4oでGradioカスタムUI設計",
+    "news_highlight": "Gradioバックエンド強化でカスタムUI開発が容易に、より柔軟なUI構築が可能に",
+    "problem_context": "Gradio標準UIでは表現困難なカスタムUI開発",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "複雑なUIコード生成と設計支援に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Gradioデモに企業ブランドUIを適用したい時",
+      "特定の入力/表示形式をGradio標準外で実装したい時",
+      "既存WebフロントエンドとGradioを連携させたい時"
+    ],
+    "steps": [
+      "1. カスタムUIの要件とGradioの目的を定義",
+      "2. AIに要件を伝え、HTML/CSS/JSコード生成を依頼",
+      "3. 生成コードをGradioの`gr.HTML`等で組み込み",
+      "4. デモを実行し、UIの動作と表示を検証"
+    ],
+    "prompt": "Gradioアプリケーション用のカスタムUIをHTML/CSS/JavaScriptで作成してください。入力フィールド（テキスト）、送信ボタン、結果表示エリアを含み、企業ブランドカラー（#FF5733）を適用してください。",
+    "tags": [
+      "Gradio",
+      "UI/UX",
+      "コード生成",
+      "フロントエンド"
+    ],
+    "id": "20260408_062212_02",
+    "date": "2026-04-08",
+    "source_news": {
+      "title": "Gradioのバックエンド機能強化でカスタムUI開発が容易に",
+      "url": "https://huggingface.co/blog/introducing-gradio-server"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Gemma 4でオンデバイス画像解析アプリ開発",
+    "news_highlight": "Gemma 4はデバイス上でマルチモーダルAIを実現、リアルタイム処理とプライバシー保護を強化。",
+    "problem_context": "デバイス上で画像とテキストを連携させたい。",
+    "recommended_ai": {
+      "model": "Gemma 4",
+      "reason": "デバイス上でマルチモーダル推論",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "スマートフォンアプリで撮影画像から物体認識と説明生成",
+      "IoTデバイスでカメラ映像を解析し、状況に応じたテキスト通知",
+      "ARアプリで現実世界のオブジェクトを認識し、関連情報を表示"
+    ],
+    "steps": [
+      "1. Gemma 4のオンデバイスSDKをプロジェクトに組み込む。",
+      "2. カメラからの画像入力とユーザーからのテキスト入力を処理するコードを記述。",
+      "3. Gemma 4 APIを呼び出し、マルチモーダル推論を実行。",
+      "4. 推論結果（テキスト、アクション提案など）をアプリUIに反映しテスト。"
+    ],
+    "prompt": "Gemma 4のオンデバイスSDKを使用し、入力画像から主要な物体を検出し、その物体に関する説明文を生成するPythonコードを記述してください。画像入力とテキスト出力の処理を含めてください。",
+    "tags": [
+      "オンデバイスAI",
+      "マルチモーダル",
+      "画像認識",
+      "自然言語生成",
+      "エッジAI"
+    ],
+    "id": "20260408_062241_03",
+    "date": "2026-04-08",
+    "source_news": {
+      "title": "新AIモデルGemma 4発表、デバイス上でのマルチモーダルAI",
+      "url": "https://huggingface.co/blog/gemma4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
     "title": "Veo 3.1 Liteでプロモーション動画生成",
     "news_highlight": "Veo 3.1 Liteはコスト効率に優れ、高品質なビデオを生成可能",
     "problem_context": "動画コンテンツ制作のコストと時間削減",
