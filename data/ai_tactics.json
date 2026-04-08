@@ -1,5 +1,123 @@
 [
   {
+    "title": "Gemma 4でオンデバイスAIアプリ開発",
+    "news_highlight": "Gemma 4はオンデバイス対応のマルチモーダルAI、低リソース環境で動作",
+    "problem_context": "オフライン環境でのAI機能実装が困難",
+    "recommended_ai": {
+      "model": "Gemma 4",
+      "reason": "オンデバイスでマルチモーダル処理可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "オフラインで動作する画像認識アプリ開発",
+      "エッジデバイスでのリアルタイム物体検出",
+      "プライバシー重視のローカルAIアシスタント"
+    ],
+    "steps": [
+      "1. Gemma 4 SDKを開発環境にインストール",
+      "2. オンデバイス推論用のモデルをダウンロード",
+      "3. カメラ入力から画像データを取得",
+      "4. Gemma 4 APIで画像解析を実行し結果を表示"
+    ],
+    "prompt": "Gemma 4 SDKを使って、Androidアプリでカメラ入力からリアルタイムで物体を認識し、検出した物体の名前を画面に表示するPythonコードを生成してください。",
+    "tags": [
+      "オンデバイスAI",
+      "マルチモーダル",
+      "エッジAI",
+      "画像認識",
+      "モバイル開発"
+    ],
+    "id": "20260409_062145_01",
+    "date": "2026-04-09",
+    "source_news": {
+      "title": "Gemma 4発表、オンデバイス対応のマルチモーダルAI",
+      "url": "https://huggingface.co/blog/gemma4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "SafetensorsでPyTorchモデルのセキュリティ強化",
+    "news_highlight": "SafetensorsがPyTorch Foundationに加入し、モデル保存の標準化とセキュリティ強化を推進",
+    "problem_context": "PyTorchモデルの共有・デプロイ時のセキュリティと互換性",
+    "recommended_ai": {
+      "model": "Safetensors",
+      "reason": "モデルの安全性と互換性を確保",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "モデルを社内外で共有する際、悪意のあるコードが含まれていないか確認したい時",
+      "異なるPyTorchバージョンや環境でモデルをデプロイする際、互換性問題を避けたい時",
+      "CI/CDパイプラインでモデルのビルド・検証ステップにセキュリティチェックを組み込みたい時"
+    ],
+    "steps": [
+      "1. 既存のPyTorchモデルをSafetensors形式に変換するスクリプトを作成する",
+      "2. 変換したSafetensorsモデルの整合性を検証するコードを実装する",
+      "3. モデルのロード時にSafetensorsのセキュリティチェックを組み込む",
+      "4. CI/CDパイプラインにSafetensors形式での保存と検証ステップを追加する"
+    ],
+    "prompt": "PyTorchモデルをSafetensors形式で保存し、ロードするPythonコードを生成してください。モデルは`torch.nn.Linear(10, 2)`とします。",
+    "tags": [
+      "モデル保存",
+      "セキュリティ",
+      "PyTorch",
+      "MLOps"
+    ],
+    "id": "20260409_062211_02",
+    "date": "2026-04-09",
+    "source_news": {
+      "title": "SafetensorsがPyTorch Foundationに加入、モデル保存の標準化",
+      "url": "https://huggingface.co/blog/safetensors-joins-pytorch-foundation"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "On-the-Job Learning AIでコード改善",
+    "news_highlight": "AIエージェントが実行時に経験から学習し、タスク精度を継続的に向上させる新機能。",
+    "problem_context": "AIの出力が状況に合わない、過去のフィードバックが活かされない。",
+    "recommended_ai": {
+      "model": "On-the-Job Learning AI",
+      "reason": "実務経験から学習し改善",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "繰り返し発生する定型作業の自動化スクリプト作成",
+      "特定のプロジェクトのコーディング規約に合わせたコード生成",
+      "複雑なシステムのエラーログ分析と修正案提示"
+    ],
+    "steps": [
+      "特定のタスク（例: コード生成）をAIエージェントに依頼する。",
+      "AIエージェントの出力結果を確認し、必要に応じて手動で修正・改善する。",
+      "修正後のコードやフィードバックをAIエージェントに学習させる。",
+      "次回同じようなタスクを依頼する際に、改善されたAIエージェントの出力を利用する。"
+    ],
+    "prompt": "このPythonスクリプトのエラー修正案を提案し、その修正を今後の類似タスクに活かしてください。エラーメッセージと現在のコードを提供します。",
+    "tags": [
+      "AIエージェント",
+      "自己学習",
+      "コード改善",
+      "デバッグ"
+    ],
+    "id": "20260409_062240_03",
+    "date": "2026-04-09",
+    "source_news": {
+      "title": "AIエージェントの「On-the-Job Learning」技術を発表",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Gemini API Dialsでコストと信頼性調整",
     "news_highlight": "Gemini API Dialsでコストと信頼性を調整する新機能が追加、開発者がAPI動作を制御可能に。",
     "problem_context": "AI API利用コストとパフォーマンスの最適化。",
