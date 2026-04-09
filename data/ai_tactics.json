@@ -1,5 +1,126 @@
 [
   {
+    "title": "Sentence Transformersでマルチモーダル検索強化",
+    "news_highlight": "Sentence Transformersがマルチモーダル埋め込みとRerankerモデルを公開し、検索精度を向上。",
+    "problem_context": "既存検索のテキスト・画像複合検索精度が低い。",
+    "recommended_ai": {
+      "model": "Sentence Transformers",
+      "reason": "マルチモーダル対応で検索精度向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ECサイトの商品検索機能で、テキストと画像の両方から関連性の高い商品を特定するロジックを設計する時。",
+      "社内文書管理システムで、テキストと図表を含む文書の検索精度を向上させるアルゴリズムを実装する時。",
+      "コンテンツ推薦システムで、記事のテキストとサムネイル画像からユーザーの興味に合うコンテンツを推薦するAPIを開発する時。"
+    ],
+    "steps": [
+      "既存の検索システムにおけるテキストと画像の埋め込み処理部分を特定する。",
+      "Sentence Transformersのマルチモーダルモデルをインポートし、既存の埋め込みモデルと置き換える。",
+      "検索クエリとドキュメントの埋め込みベクトルを生成するコードを記述する。",
+      "Rerankerモデルを適用し、検索結果の順位付けロジックを実装する。",
+      "新しい検索ロジックをテストし、既存システムとの精度比較を行う。"
+    ],
+    "prompt": "Sentence Transformersのマルチモーダル埋め込みモデルとRerankerモデルを使って、ECサイトの商品検索機能を実装するPythonコードを生成してください。商品名と商品画像のURLを入力とし、検索クエリと最も関連性の高い商品を返す関数を含めてください。",
+    "tags": [
+      "検索",
+      "マルチモーダル",
+      "推薦",
+      "Python",
+      "機械学習"
+    ],
+    "id": "20260410_062133_01",
+    "date": "2026-04-10",
+    "source_news": {
+      "title": "Sentence Transformersでマルチモーダル埋め込み・Rerankerモデルを公開",
+      "url": "https://huggingface.co/blog/multimodal-sentence-transformers"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Amazon Bedrock Novaでインテント分類器開発",
+    "news_highlight": "Amazon BedrockでNovaモデルのファインチューニングが可能に。インテント分類器の例で実装をデモ。",
+    "problem_context": "汎用モデルでは精度が出ない特定タスクの解決",
+    "recommended_ai": {
+      "model": "Amazon Nova (via Bedrock)",
+      "reason": "特定タスクで高精度化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客サポートチャットボットの意図解釈精度向上",
+      "社内文書の自動分類システム構築時",
+      "特定の業界用語に特化したテキスト分析モデル開発時"
+    ],
+    "steps": [
+      "1. 特定タスク向けにラベル付けされたデータセットを準備する。",
+      "2. Amazon S3にファインチューニング用データセットをアップロードする。",
+      "3. Amazon BedrockコンソールでNovaモデルのファインチューニングジョブを作成し、S3パスを指定する。",
+      "4. ファインチューニング完了後、デプロイされたカスタムモデルをAPI経由でテストする。"
+    ],
+    "prompt": "インテント分類器のファインチューニング用データセットを作成したい。ユーザー発話例と対応する意図のペアをJSONL形式で20個生成してください。",
+    "tags": [
+      "ファインチューニング",
+      "LLM",
+      "Amazon Bedrock",
+      "Nova",
+      "NLP"
+    ],
+    "id": "20260410_062202_02",
+    "date": "2026-04-10",
+    "source_news": {
+      "title": "Amazon BedrockでNovaモデルのファインチューニングが可能に",
+      "url": "https://aws.amazon.com/blogs/machine-learning/customize-amazon-nova-models-with-amazon-bedrock-fine-tuning/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Bedrock AgentCoreでReact UIテスト自動化",
+    "news_highlight": "Bedrock AgentCoreがReactアプリにAIブラウザエージェントを埋込、AIがブラウザを駆動",
+    "problem_context": "ReactアプリのUIテストや操作の自動化が困難",
+    "recommended_ai": {
+      "model": "Bedrock AgentCore",
+      "reason": "ReactアプリにAIブラウザエージェントを埋込可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいUIコンポーネントの動作確認を自動化したい時",
+      "ユーザーからのバグレポートをAIに再現させたい時",
+      "複雑なユーザーフローのE2Eテストを自動化したい時"
+    ],
+    "steps": [
+      "Bedrock AgentCoreのセッションを開始し、Live View URLを生成する。",
+      "生成されたLive ViewストリームをReactアプリケーションに埋め込みレンダリングする。",
+      "AIエージェントにテストシナリオ（例: ログイン、商品検索、カート追加）を指示する。",
+      "AIがブラウザを操作し、その動作をReactアプリ上でリアルタイムに確認する。"
+    ],
+    "prompt": "Reactアプリで、ログインページにアクセスし、ユーザー名「testuser」、パスワード「password123」を入力してログインボタンをクリックしてください。その後、商品検索バーに「AIツール」と入力し、検索結果を表示してください。",
+    "tags": [
+      "UIテスト",
+      "E2Eテスト",
+      "自動化",
+      "React",
+      "Bedrock"
+    ],
+    "id": "20260410_062229_03",
+    "date": "2026-04-10",
+    "source_news": {
+      "title": "ReactアプリにBedrock AgentCoreのAIブラウザエージェントを埋込",
+      "url": "https://aws.amazon.com/blogs/machine-learning/embed-a-live-ai-browser-agent-in-your-react-app-with-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Gemma 4でオンデバイスAIアプリ開発",
     "news_highlight": "Gemma 4はオンデバイス対応のマルチモーダルAI、低リソース環境で動作",
     "problem_context": "オフライン環境でのAI機能実装が困難",
