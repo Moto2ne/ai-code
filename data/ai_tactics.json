@@ -1,5 +1,121 @@
 [
   {
+    "title": "Bedrock AgentCoreでステートフルAgent設計",
+    "news_highlight": "Bedrock AgentCoreがステートフルなクライアント機能で、実行中のユーザー入力、LLM動的生成、進捗ストリーミングに対応。",
+    "problem_context": "複雑な対話型AIエージェントの設計と実装",
+    "recommended_ai": {
+      "model": "Bedrock AgentCore",
+      "reason": "ステートフルなAgent実行に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザーとの多段階対話が必要なチャットボット開発時",
+      "長時間かかるバックグラウンド処理の進捗をリアルタイムでユーザーに通知したい時",
+      "ユーザーのフィードバックを基に動的にコンテンツを生成するシステムを構築する時"
+    ],
+    "steps": [
+      "Bedrock AgentCoreのステートフル機能のAPIドキュメントを確認する。",
+      "ユーザー入力とLLM応答の多段階処理フローを設計図として作成する。",
+      "AgentCore SDKを用いて、ユーザー入力待ちとLLM呼び出しを含むAgentロジックを実装する。",
+      "実装したAgentをデプロイし、複数のユーザー入力パターンで動作をテストする。"
+    ],
+    "prompt": "Bedrock AgentCoreで、ユーザーからの複数回の入力を受け付け、その都度LLMで応答を生成し、最終的な結果を返すステートフルなAgentのPythonコードを生成してください。",
+    "tags": [
+      "Agent開発",
+      "ステートフルAI",
+      "LLM",
+      "Bedrock"
+    ],
+    "id": "20260411_061640_01",
+    "date": "2026-04-11",
+    "source_news": {
+      "title": "Bedrock AgentCoreでステートフルなクライアント機能が導入され、複雑なAgent実行が可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-stateful-mcp-client-capabilities-on-amazon-bedrock-agentcore-runtime/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Bedrock AgentCoreでReactアプリにAIエージェントを埋め込む",
+    "news_highlight": "Bedrock AgentCoreがReactアプリへのライブAIブラウザAgent埋め込みを解説",
+    "problem_context": "WebアプリにAIによる自動操作機能を組み込みたい",
+    "recommended_ai": {
+      "model": "Bedrock AgentCore",
+      "reason": "ReactアプリにAIエージェントを統合",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザーサポートの自動化機能を実装する時",
+      "Webサイトの自動テストスクリプトを生成する時",
+      "複雑なフォーム入力やデータ収集を自動化する時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCoreでAIエージェントセッションを開始し、Live View URLを生成する",
+      "2. ReactアプリケーションにLive View URLを埋め込み、ストリームをレンダリングするコンポーネントを作成する",
+      "3. AIエージェントがブラウザを操作するための指示（プロンプト）を設計する",
+      "4. ReactアプリとAIエージェントを連携させ、ブラウザ自動操作機能をテストする"
+    ],
+    "prompt": "Reactアプリに埋め込んだLive Viewで、指定されたWebサイトのログインフォームにユーザー名'testuser'、パスワード'password123'を入力し、ログインボタンをクリックしてください。",
+    "tags": [
+      "AIエージェント",
+      "React"
+    ],
+    "id": "20260411_061704_02",
+    "date": "2026-04-11",
+    "source_news": {
+      "title": "Bedrock AgentCoreでライブAIブラウザAgentをReactアプリに埋め込む方法を解説。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/embed-a-live-ai-browser-agent-in-your-react-app-with-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "AWS Agent Registryでエージェントを共有・再利用",
+    "news_highlight": "AWS Agent Registryがプレビュー公開、企業内でAIエージェントの発見・共有・再利用を促進",
+    "problem_context": "企業内AIエージェントの散在と再利用の困難さ",
+    "recommended_ai": {
+      "model": "AWS Agent Registry (AgentCore)",
+      "reason": "企業内エージェントの一元管理と再利用",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいプロジェクトで既存のエージェント機能を活用したい時",
+      "チーム内で開発したエージェントを他チームと共有したい時",
+      "エージェントの機能拡張や改善を行う際、既存のツールやスキルを探したい時"
+    ],
+    "steps": [
+      "1. AWS Agent Registryにアクセスし、既存のエージェントを検索する。",
+      "2. 目的の機能を持つエージェント、ツール、スキルを発見する。",
+      "3. 発見したエージェントのドキュメントやAPI仕様を確認する。",
+      "4. 自身のプロジェクトにエージェントを統合し、テストする。"
+    ],
+    "prompt": "AWS Agent Registryで、既存のデータ分析エージェントのツールリストを提示してください。特にSQLクエリ実行機能を持つものを探しています。",
+    "tags": [
+      "エージェント開発",
+      "再利用",
+      "AWS",
+      "AgentCore",
+      "エンタープライズAI"
+    ],
+    "id": "20260411_061731_03",
+    "date": "2026-04-11",
+    "source_news": {
+      "title": "AWS Agent Registryがプレビュー公開、Agentの発見・共有・再利用を促進。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/the-future-of-managing-agents-at-scale-aws-agent-registry-now-in-preview/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Sentence Transformersでマルチモーダル検索強化",
     "news_highlight": "Sentence Transformersがマルチモーダル埋め込みとRerankerモデルを公開し、検索精度を向上。",
     "problem_context": "既存検索のテキスト・画像複合検索精度が低い。",
