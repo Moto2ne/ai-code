@@ -1,5 +1,124 @@
 [
   {
+    "title": "SafetensorsでPyTorchモデルを安全に保存",
+    "news_highlight": "SafetensorsがPyTorch Foundationに加入、モデルのロード速度向上と悪意あるコード実行リスクを低減。",
+    "problem_context": "PyTorchモデルのロード遅延やセキュリティリスクを解決。",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "PyTorchコード生成・レビューに強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存のPyTorchモデルをSafetensors形式に移行する時",
+      "Safetensors形式のモデルを安全にロードするコードを実装する時",
+      "モデルのロード・保存処理のパフォーマンスを改善したい時"
+    ],
+    "steps": [
+      "1. 既存のPyTorchモデルの保存コード（`torch.save`など）を用意する。",
+      "2. AIに、このモデルをSafetensors形式で保存するPythonコードの生成を依頼する。",
+      "3. 生成されたコードをプロジェクトに適用し、モデルの保存・ロード・推論をテストする。",
+      "4. 必要に応じて、AIにロード時間の短縮やメモリ使用量の最適化について追加で相談する。"
+    ],
+    "prompt": "PyTorchモデルの`state_dict`をSafetensors形式で保存し、その後ロードして推論を行うPythonコードを生成してください。モデルはResNet50とします。",
+    "tags": [
+      "PyTorch",
+      "Safetensors",
+      "モデル保存",
+      "セキュリティ",
+      "パフォーマンス"
+    ],
+    "id": "20260412_061345_01",
+    "date": "2026-04-12",
+    "source_news": {
+      "title": "SafetensorsがPyTorch Foundationに加入、モデルの効率的なロード・保存を推進。",
+      "url": "https://huggingface.co/blog/safetensors-joins-pytorch-foundation"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Waypoint-1.5でリアルタイム3Dシミュレーション",
+    "news_highlight": "Waypoint-1.5が汎用GPUで高忠実度インタラクティブ世界をリアルタイム生成可能に。",
+    "problem_context": "リアルタイム3Dシミュレーション開発の複雑性",
+    "recommended_ai": {
+      "model": "Waypoint-1.5",
+      "reason": "高忠実度インタラクティブ世界生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "仮想空間での製品プロトタイプ検証",
+      "自動運転シミュレーション環境の構築",
+      "建築・都市計画のリアルタイム可視化"
+    ],
+    "steps": [
+      "1. Waypoint-1.5 SDKを開発環境にセットアップ",
+      "2. シミュレーションしたい環境の要件（例: 都市、自然）を定義",
+      "3. 定義した要件に基づき、Waypoint-1.5のAPIを呼び出し、世界を生成",
+      "4. 生成された世界でインタラクションや物理挙動をテスト"
+    ],
+    "prompt": "リアルタイムでインタラクティブな都市環境シミュレーションを生成してください。交通量、歩行者の動き、昼夜の変化をパラメータとして設定可能にしてください。",
+    "tags": [
+      "3Dシミュレーション",
+      "リアルタイムレンダリング",
+      "仮想現実",
+      "ゲーム開発"
+    ],
+    "id": "20260412_061412_02",
+    "date": "2026-04-12",
+    "source_news": {
+      "title": "Waypoint-1.5が汎用GPUで高忠実度インタラクティブ世界を実現。",
+      "url": "https://huggingface.co/blog/waypoint-1-5"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Amazon Bedrock Novaで意図分類器をファインチューニング",
+    "news_highlight": "Amazon BedrockでNovaモデルのファインチューニングが完全実装可能に。意図分類器の例でデモ。",
+    "problem_context": "汎用モデルでは難しい特定の業務タスク精度向上",
+    "recommended_ai": {
+      "model": "Amazon Nova models",
+      "reason": "ファインチューニングで特定タスクに最適化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客からの問い合わせ内容を自動で分類したい時",
+      "社内文書から特定の情報（例: 契約の種類、製品名）を抽出したい時",
+      "ユーザーの入力から次に行うべきアクション（例: 予約、情報提供）を判断したい時"
+    ],
+    "steps": [
+      "BedrockコンソールでNovaモデルのファインチューニングジョブを設定する。",
+      "意図分類用のラベル付きデータセット（例: 問い合わせ文と意図）をS3にアップロードする。",
+      "ファインチューニングジョブを実行し、カスタムモデルをデプロイする。",
+      "デプロイしたカスタムモデルをAPI経由で呼び出し、分類精度を評価する。"
+    ],
+    "prompt": "Amazon BedrockでNovaモデルのファインチューニングジョブを設定するPythonコードを生成してください。入力データセットはS3パス's3://my-bucket/training-data/'、出力モデル名は'my-intent-classifier'とします。",
+    "tags": [
+      "ファインチューニング",
+      "意図分類",
+      "Bedrock",
+      "Nova",
+      "MLOps"
+    ],
+    "id": "20260412_061438_03",
+    "date": "2026-04-12",
+    "source_news": {
+      "title": "Amazon BedrockでNovaモデルのファインチューニングが可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/customize-amazon-nova-models-with-amazon-bedrock-fine-tuning/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Bedrock AgentCoreでステートフルAgent設計",
     "news_highlight": "Bedrock AgentCoreがステートフルなクライアント機能で、実行中のユーザー入力、LLM動的生成、進捗ストリーミングに対応。",
     "problem_context": "複雑な対話型AIエージェントの設計と実装",
