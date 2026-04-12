@@ -1,5 +1,124 @@
 [
   {
+    "title": "GPT-4oでmacOSアプリ署名スクリプトレビュー",
+    "news_highlight": "OpenAIがAxios攻撃に対応しmacOS証明書更新、ユーザーデータ侵害なし。",
+    "problem_context": "macOSアプリのコード署名プロセスの脆弱性特定",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "高度なセキュリティコード分析が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "macOSアプリのリリース前に署名スクリプトをレビューしたい時",
+      "CI/CDパイプラインのセキュリティ脆弱性を特定したい時",
+      "証明書ローテーションスクリプトの安全性を確認したい時"
+    ],
+    "steps": [
+      "1. 既存のmacOSアプリ署名スクリプト（例: shellスクリプト）を準備する",
+      "2. スクリプトの内容をGPT-4oに貼り付ける",
+      "3. 提案されたセキュリティ強化案や脆弱性修正をスクリプトに適用する",
+      "4. 更新したスクリプトでテスト署名を行い、動作と安全性を確認する"
+    ],
+    "prompt": "以下のmacOSアプリ署名シェルスクリプトをレビューし、サプライチェーン攻撃対策として強化すべきセキュリティ脆弱性や改善点を具体的に提案してください。",
+    "tags": [
+      "セキュリティ",
+      "macOS",
+      "CI/CD",
+      "コードレビュー"
+    ],
+    "id": "20260413_061511_01",
+    "date": "2026-04-13",
+    "source_news": {
+      "title": "OpenAI、Axios攻撃に対応し証明書更新、データ侵害なし。",
+      "url": "https://openai.com/index/axios-developer-tool-compromise"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-4oでSafetensors変換コード生成",
+    "news_highlight": "SafetensorsがPyTorch Foundationに加入、モデルロード速度を最大2倍高速化、セキュリティも強化",
+    "problem_context": "既存PyTorchモデルの安全性とロード速度改善",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "コード生成と変換に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存のPyTorchモデルをSafetensors形式に変換したい時",
+      "Safetensors形式のモデルをPyTorchでロードするコードが必要な時",
+      "モデルのセキュリティとロード効率を向上させたい時"
+    ],
+    "steps": [
+      "1. 変換したいPyTorchモデルのパスとモデルオブジェクトを準備する",
+      "2. AIにSafetensors形式への変換コード生成を依頼する",
+      "3. 生成されたコードを実行し、モデルをSafetensors形式で保存する",
+      "4. 保存したSafetensorsモデルをロードし、正しく動作するか確認する"
+    ],
+    "prompt": "PyTorchモデルをSafetensors形式に変換するPythonコードを生成してください。モデルは`model`変数に格納されており、`model.safetensors`として保存します。",
+    "tags": [
+      "PyTorch",
+      "Safetensors",
+      "モデル変換",
+      "セキュリティ",
+      "MLOps"
+    ],
+    "id": "20260413_061541_02",
+    "date": "2026-04-13",
+    "source_news": {
+      "title": "SafetensorsがPyTorch Foundationに加入、ML基盤強化。",
+      "url": "https://huggingface.co/blog/safetensors-joins-pytorch-foundation"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Amazon BedrockでNovaモデルをファインチューニング",
+    "news_highlight": "Amazon BedrockでNovaモデルのファインチューニングにより意図分類器の性能が向上",
+    "problem_context": "汎用LLMの精度不足、特定タスクへの最適化",
+    "recommended_ai": {
+      "model": "Amazon Nova models",
+      "reason": "Bedrockでファインチューニング可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客からの問い合わせ意図を自動分類したい時",
+      "特定の業界用語に特化したチャットボットを開発する時",
+      "既存のLLMが期待通りの応答をしない時"
+    ],
+    "steps": [
+      "1. BedrockコンソールでNovaモデルを選択し、ファインチューニング設定を開く",
+      "2. ファインチューニング用のデータセット（JSONL形式）を準備しS3にアップロード",
+      "3. Bedrockでファインチューニングジョブを開始し、カスタムモデルを作成",
+      "4. 作成したカスタムモデルをデプロイし、API経由で推論をテスト"
+    ],
+    "prompt": "以下のユーザー発言を読み、その意図を「予約」「キャンセル」「問い合わせ」のいずれかに分類し、JSON形式で出力してください。例: {'text': '明日の会議を予約したい', 'intent': '予約'}",
+    "tags": [
+      "Bedrock",
+      "Nova",
+      "ファインチューニング",
+      "意図分類",
+      "LLM"
+    ],
+    "id": "20260413_061608_03",
+    "date": "2026-04-13",
+    "source_news": {
+      "title": "BedrockでNovaモデルのファインチューニング、性能向上。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/customize-amazon-nova-models-with-amazon-bedrock-fine-tuning/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "SafetensorsでPyTorchモデルを安全に保存",
     "news_highlight": "SafetensorsがPyTorch Foundationに加入、モデルのロード速度向上と悪意あるコード実行リスクを低減。",
     "problem_context": "PyTorchモデルのロード遅延やセキュリティリスクを解決。",
