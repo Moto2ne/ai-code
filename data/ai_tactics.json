@@ -1,5 +1,124 @@
 [
   {
+    "title": "GPT-5.4でAIエージェントのロジック設計",
+    "news_highlight": "CloudflareがGPT-5.4とCodexをAgent Cloudに統合し、AIエージェント構築を高速化・安全化",
+    "problem_context": "AIエージェントの複雑なロジック設計と実装の効率化",
+    "recommended_ai": {
+      "model": "OpenAI GPT-5.4",
+      "reason": "高度な推論とコード生成で設計を支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規AIエージェントの機能要件定義時",
+      "既存エージェントの機能拡張や改善時",
+      "エージェントのテストシナリオ作成時"
+    ],
+    "steps": [
+      "開発したいAIエージェントの目的と主要機能を具体的に記述",
+      "AIにエージェントのコアロジック設計とPythonコード生成を依頼",
+      "提案された設計とコードをレビューし、必要に応じて修正・調整",
+      "生成されたコードをテスト環境でデプロイし、動作検証"
+    ],
+    "prompt": "顧客サポートAIエージェントのコアロジックをPythonで設計し、コードを生成してください。ユーザー質問理解、FAQ検索、担当者エスカレーション機能を含めてください。",
+    "tags": [
+      "AIエージェント",
+      "GPT-5.4",
+      "ロジック設計",
+      "コード生成",
+      "Cloudflare"
+    ],
+    "id": "20260414_062223_01",
+    "date": "2026-04-14",
+    "source_news": {
+      "title": "CloudflareがOpenAI GPT-5.4を統合しAIエージェントを強化",
+      "url": "https://openai.com/index/cloudflare-openai-agent-cloud"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Waypoint-1.5で対話AIの設計",
+    "news_highlight": "Waypoint-1.5はGPU活用で高精細な対話世界を実現、複雑なシナリオ対応。",
+    "problem_context": "複雑な対話ロジックの設計が困難",
+    "recommended_ai": {
+      "model": "Waypoint-1.5",
+      "reason": "高精細な対話設計に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ゲーム内のNPC対話フローを設計したい時",
+      "仮想アシスタントの複雑な応答シナリオを作成したい時",
+      "教育シミュレーションでユーザーとのインタラクションを強化したい時"
+    ],
+    "steps": [
+      "対話の目的と主要な登場人物を定義する。",
+      "AIに主要な対話フローの骨子を生成依頼する。",
+      "生成されたフローを元に、分岐や例外処理を追加する。",
+      "AIに特定のシーンでの詳細なセリフ例を生成依頼する。"
+    ],
+    "prompt": "あなたはゲーム開発者です。プレイヤーがNPC『賢者エルフ』に『古代の秘宝』について尋ねる対話シナリオを設計してください。賢者は最初は秘密主義ですが、特定のキーワードで情報を開示します。",
+    "tags": [
+      "対話AI",
+      "シナリオ設計",
+      "ゲーム開発",
+      "GPU活用"
+    ],
+    "id": "20260414_062248_02",
+    "date": "2026-04-14",
+    "source_news": {
+      "title": "Waypoint-1.5リリース、GPUで高精細な対話世界を実現",
+      "url": "https://huggingface.co/blog/waypoint-1-5"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Sentence Transformersでマルチモーダル検索",
+    "news_highlight": "Sentence Transformersがマルチモーダル埋め込みとリランカーモデルを発表、検索精度向上に貢献。",
+    "problem_context": "既存検索システムの精度不足、マルチモーダル情報活用。",
+    "recommended_ai": {
+      "model": "Sentence Transformers",
+      "reason": "マルチモーダル対応とリランク機能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "画像とテキストを組み合わせたコンテンツ検索",
+      "既存の検索結果の関連度を向上させたい時",
+      "類似する製品やドキュメントを効率的に発見したい時"
+    ],
+    "steps": [
+      "1. Sentence Transformersライブラリをインストールする",
+      "2. マルチモーダル埋め込みモデルをロードする",
+      "3. 検索対象のテキストと画像を埋め込みベクトルに変換する",
+      "4. ユーザーのクエリ（テキスト/画像）を埋め込みベクトルに変換し、類似度で初期検索を行う",
+      "5. リランカーモデルを用いて初期検索結果の順位を再調整し、最終結果を表示する"
+    ],
+    "prompt": "Sentence Transformersのマルチモーダル埋め込みモデルとリランカーモデルをPythonで利用し、画像とテキストの組み合わせで類似コンテンツを検索するコードを生成してください。",
+    "tags": [
+      "検索",
+      "マルチモーダル",
+      "リランカー",
+      "Python"
+    ],
+    "id": "20260414_062314_03",
+    "date": "2026-04-14",
+    "source_news": {
+      "title": "Sentence Transformersでマルチモーダル埋め込み・リランカーモデル発表",
+      "url": "https://huggingface.co/blog/multimodal-sentence-transformers"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-4oでmacOSアプリ署名スクリプトレビュー",
     "news_highlight": "OpenAIがAxios攻撃に対応しmacOS証明書更新、ユーザーデータ侵害なし。",
     "problem_context": "macOSアプリのコード署名プロセスの脆弱性特定",
