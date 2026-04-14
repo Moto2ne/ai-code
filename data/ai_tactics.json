@@ -1,5 +1,122 @@
 [
   {
+    "title": "Spring AI AgentCore SDKでAIエージェント開発",
+    "news_highlight": "Spring AI AgentCore SDKがGA、AWS Bedrock上で本番AIエージェント開発を加速",
+    "problem_context": "AIエージェント開発の複雑性、運用負荷を軽減",
+    "recommended_ai": {
+      "model": "Spring AI AgentCore SDK",
+      "reason": "本番AIエージェントを効率開発・運用",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規AIエージェント機能のプロトタイプ作成",
+      "既存システムへのAIエージェント機能の組み込み",
+      "AIエージェントのパフォーマンスチューニング"
+    ],
+    "steps": [
+      "1. Spring AI AgentCore SDKをプロジェクトに追加",
+      "2. AWS Bedrockと連携するAIエージェントの基本構造を定義",
+      "3. エージェントのタスク処理ロジックを実装",
+      "4. AgentCore Runtimeでデプロイし、動作確認"
+    ],
+    "prompt": "Spring AI AgentCore SDKとAWS Bedrockを使って、顧客からの問い合わせに自動応答するAIエージェントのJavaコードを生成してください。",
+    "tags": [
+      "AIエージェント",
+      "Spring AI",
+      "AWS Bedrock",
+      "Java"
+    ],
+    "id": "20260415_062254_01",
+    "date": "2026-04-15",
+    "source_news": {
+      "title": "AWS Bedrock向けSpring AI SDKがGA、AIエージェント開発を加速。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/spring-ai-sdk-for-amazon-bedrock-agentcore-is-now-generally-available/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "GPT-5.4/CodexでAIエージェントコード生成",
+    "news_highlight": "CloudflareがGPT-5.4/Codexを統合、AIエージェント構築を高速・安全に",
+    "problem_context": "AIエージェントのロジック開発と安全なデプロイ",
+    "recommended_ai": {
+      "model": "GPT-5.4/Codex",
+      "reason": "エージェントのコード生成とロジック設計",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "特定の業務を自動化するAIエージェントを開発する時",
+      "既存システムと連携するエージェントのAPIコードを生成したい時",
+      "エージェントのタスクフロー設計を効率化したい時"
+    ],
+    "steps": [
+      "1. Cloudflare Agent Cloudで新規エージェントプロジェクトを作成する",
+      "2. GPT-5.4/Codexにエージェントの目的とタスクフローを指示する",
+      "3. 生成されたコード（Python/JavaScriptなど）をAgent Cloudにデプロイする",
+      "4. Agent Cloudの監視機能でエージェントの動作をテスト・検証する"
+    ],
+    "prompt": "Pythonで、指定されたAPIからデータを取得し、特定の条件で処理を行うAIエージェントのコアロジックを生成してください。エラー処理も考慮。",
+    "tags": [
+      "AIエージェント",
+      "コード生成",
+      "自動化",
+      "Cloudflare"
+    ],
+    "id": "20260415_062320_02",
+    "date": "2026-04-15",
+    "source_news": {
+      "title": "CloudflareがGPT-5.4とCodexを統合、AIエージェント構築を支援。",
+      "url": "https://openai.com/index/cloudflare-openai-agent-cloud"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Sentence Transformersでマルチモーダル検索実装",
+    "news_highlight": "Hugging FaceがSentence Transformersでマルチモーダル埋め込み・リランカーモデルを発表",
+    "problem_context": "テキストと画像を含む複雑な検索精度向上",
+    "recommended_ai": {
+      "model": "Sentence Transformers",
+      "reason": "マルチモーダル対応で検索精度向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ECサイトの商品検索精度向上",
+      "社内文書の図表含む情報検索",
+      "推薦システムのアイテムマッチング強化"
+    ],
+    "steps": [
+      "1. Sentence Transformersをインストール",
+      "2. マルチモーダルモデルをロード",
+      "3. テキストと画像を埋め込みに変換",
+      "4. 埋め込みベクトルで類似度検索を実行"
+    ],
+    "prompt": "Sentence Transformersのマルチモーダル埋め込みモデルを使い、テキストと画像パスから埋め込みベクトルを生成するPythonコードを記述してください。",
+    "tags": [
+      "マルチモーダル",
+      "埋め込み",
+      "検索",
+      "リランカー"
+    ],
+    "id": "20260415_062347_03",
+    "date": "2026-04-15",
+    "source_news": {
+      "title": "Hugging FaceがSentence Transformersでマルチモーダル埋め込み・リランカーモデルを発表。",
+      "url": "https://huggingface.co/blog/multimodal-sentence-transformers"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5.4でAIエージェントのロジック設計",
     "news_highlight": "CloudflareがGPT-5.4とCodexをAgent Cloudに統合し、AIエージェント構築を高速化・安全化",
     "problem_context": "AIエージェントの複雑なロジック設計と実装の効率化",
