@@ -1,5 +1,126 @@
 [
   {
+    "title": "Sentence Transformersでマルチモーダル検索システム構築",
+    "news_highlight": "Sentence Transformersがマルチモーダル埋め込みモデルの学習・調整をサポートし、テキストと画像間のクロスモーダル検索を効率化",
+    "problem_context": "テキストと画像間の関連性評価が困難",
+    "recommended_ai": {
+      "model": "Sentence Transformers",
+      "reason": "マルチモーダル埋め込みの学習・調整に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "テキストクエリで画像データベースを検索したい時",
+      "商品レビューと商品画像を関連付けて表示したい時",
+      "社内ドキュメント内のテキストと図の関連性を分析したい時"
+    ],
+    "steps": [
+      "Sentence Transformersライブラリをインストールする。",
+      "テキストと画像のペアデータセットを準備する。",
+      "既存のマルチモーダルモデル（例: CLIP）をロードする。",
+      "準備したデータセットでモデルをファインチューニングする。",
+      "学習済みモデルでテキストと画像の埋め込みを生成し、類似度を計算する。"
+    ],
+    "prompt": "Sentence Transformersで、テキストと画像のペアデータセット`[(text, image_path), ...]`を用いてCLIPモデルをファインチューニングするPythonコードを生成してください。",
+    "tags": [
+      "埋め込み",
+      "マルチモーダル",
+      "検索",
+      "Python",
+      "機械学習"
+    ],
+    "id": "20260417_062146_01",
+    "date": "2026-04-17",
+    "source_news": {
+      "title": "Sentence Transformersでマルチモーダル埋め込みモデルを学習・調整",
+      "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "OpenAI Codexアプリで開発環境を自動設定",
+    "news_highlight": "macOS/Windows版Codexアプリがコンピュータ操作、ブラウジング、画像生成、記憶、プラグインに対応し、開発ワークフローを加速。",
+    "problem_context": "新規プロジェクトの環境構築や依存関係の解決",
+    "recommended_ai": {
+      "model": "OpenAI Codexアプリ",
+      "reason": "OS操作とブラウジングで自動化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい開発環境をセットアップする時",
+      "特定のライブラリやツールをインストールする時",
+      "プロジェクトの初期設定を自動化したい時"
+    ],
+    "steps": [
+      "Codexアプリを起動し、ターミナルアクセスを許可する。",
+      "必要な開発環境（例: Python 3.9, Poetry, Django）を指示する。",
+      "Codexが実行するコマンドを確認し、承認する。",
+      "エラーが発生した場合、修正を依頼し、再度実行させる。"
+    ],
+    "prompt": "macOSにPython 3.9とPoetryをインストールし、新しいDjangoプロジェクトを作成して初期設定を完了してください。必要な依存関係もインストールしてください。",
+    "tags": [
+      "環境構築",
+      "自動化",
+      "macOS",
+      "Windows"
+    ],
+    "id": "20260417_062217_02",
+    "date": "2026-04-17",
+    "source_news": {
+      "title": "OpenAI Codexアプリが画像生成・ブラウジング等に対応",
+      "url": "https://openai.com/index/codex-for-almost-everything"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "AWS Trainium2とvLLMでLLM推論を高速化",
+    "news_highlight": "AWS Trainium2とvLLMが投機的デコーディングでLLM推論を高速化し、トークンあたりのコストを削減",
+    "problem_context": "LLM推論のレイテンシとコストを削減したい",
+    "recommended_ai": {
+      "model": "vLLM on AWS Trainium2",
+      "reason": "投機的デコーディングで高速化とコスト削減",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "リアルタイム応答が求められるチャットボットの推論速度向上",
+      "大規模なLLMアプリケーションの運用コスト削減",
+      "バッチ処理でのLLM推論スループット最大化"
+    ],
+    "steps": [
+      "AWS Trainium2インスタンスをプロビジョニングする。",
+      "vLLMライブラリをインストールし、必要な依存関係を設定する。",
+      "デプロイしたいLLMモデルを選択し、モデルファイルを準備する。",
+      "vLLMのAPIサーバーを起動する際に、投機的デコーディングを有効にする設定を適用する。"
+    ],
+    "prompt": "AWS Trainium2インスタンスでvLLMを使用し、投機的デコーディングを有効にしてLLMをデプロイするPythonコードと設定例を生成してください。",
+    "tags": [
+      "LLM",
+      "推論最適化",
+      "AWS",
+      "Trainium",
+      "vLLM",
+      "コスト削減"
+    ],
+    "id": "20260417_062244_03",
+    "date": "2026-04-17",
+    "source_news": {
+      "title": "AWS TrainiumとvLLMでLLM推論を投機的デコーディングで高速化",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-decode-heavy-llm-inference-with-speculative-decoding-on-aws-trainium-and-vllm/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Waypoint-1.5で仮想環境を設計",
     "news_highlight": "Hugging Face Waypoint-1.5はGPU向け高精細インタラクティブ世界モデル",
     "problem_context": "複雑なシミュレーション環境構築の手間を削減",
