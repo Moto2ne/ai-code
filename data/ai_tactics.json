@@ -1,5 +1,121 @@
 [
   {
+    "title": "OpenAI Agent SDKで安全な自律エージェント開発",
+    "news_highlight": "Agent SDKがネイティブサンドボックスとハーネスを搭載し、安全な長時間実行エージェント開発を支援",
+    "problem_context": "自律エージェントのセキュリティと安定性確保が困難",
+    "recommended_ai": {
+      "model": "OpenAI Agent SDK",
+      "reason": "安全なエージェント開発を支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "エージェントが外部ツールやファイルシステムにアクセスする際のセキュリティ懸念を解消したい時",
+      "長時間実行されるエージェントの予期せぬ挙動を事前にテストしたい時",
+      "複数のファイルやAPIを連携させる複雑なエージェントのデバッグ効率を上げたい時"
+    ],
+    "steps": [
+      "1. Agent SDKで開発中のエージェントコードを準備する",
+      "2. SDKのネイティブサンドボックス環境でエージェントを実行する",
+      "3. モデルネイティブハーネスでエージェントの挙動を監視・評価する",
+      "4. 報告されたセキュリティリスクや異常終了箇所を修正する"
+    ],
+    "prompt": "Agent SDKのサンドボックス環境で、このエージェントコードを実行し、ファイルシステムアクセスと外部API呼び出しのセキュリティ脆弱性を特定してください。",
+    "tags": [
+      "エージェント開発",
+      "セキュリティ",
+      "デバッグ",
+      "自律型AI"
+    ],
+    "id": "20260418_062101_01",
+    "date": "2026-04-18",
+    "source_news": {
+      "title": "OpenAI、Agent SDKを強化し安全な自律型AI開発を支援",
+      "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-4oでLangChain Agentの失敗モードをVAKRA分析",
+    "news_highlight": "Agentの推論・ツール利用・失敗モードをVAKRAで分析し、デバッグ効率を向上させる新手法",
+    "problem_context": "Agentの予期せぬ挙動やエラーの原因特定が困難",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "複雑な推論と多角的な分析に優れる",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "開発中のAgentが期待通りに動作しない時",
+      "Agentが特定のツール利用でエラーを出す時",
+      "Agentのプロンプトやツール設計を改善したい時"
+    ],
+    "steps": [
+      "1. Agentの失敗ログとVAKRAフレームワークの定義（Vision, Audition, Kinesthetic, Reasoning, Action）を準備する。",
+      "2. 失敗したAgentの実行トレースをGPT-4oに提示する。",
+      "3. VAKRAフレームワークを用いて、どのフェーズで問題が発生したか分析を依頼する。",
+      "4. GPT-4oの分析結果に基づき、プロンプトやツールコードを修正し、Agentを再テストする。"
+    ],
+    "prompt": "以下のAgentの実行ログとVAKRAフレームワークの定義を参考に、どのVAKRAフェーズで問題が発生したか分析し、具体的な改善策を提案してください。ログ: [ここに実行ログを貼り付け] VAKRA: Vision, Audition, Kinesthetic, Reasoning, Action",
+    "tags": [
+      "Agent開発",
+      "デバッグ",
+      "エラー分析",
+      "プロンプトエンジニアリング"
+    ],
+    "id": "20260418_062131_02",
+    "date": "2026-04-18",
+    "source_news": {
+      "title": "Agentの推論・ツール利用・失敗モードをVAKRAで分析",
+      "url": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-5.4-Cyberで脆弱性コードレビュー",
+    "news_highlight": "GPT-5.4-Cyberをサイバー防衛に導入、AIセキュリティ能力を強化。",
+    "problem_context": "コードの潜在的なセキュリティ脆弱性を特定したい。",
+    "recommended_ai": {
+      "model": "GPT-5.4-Cyber",
+      "reason": "サイバー防衛に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードをレビューしたい時",
+      "既存のコードベースに潜む脆弱性を定期的にスキャンしたい時",
+      "セキュリティ監査前にコードの弱点を洗い出したい時"
+    ],
+    "steps": [
+      "1. レビューしたいコードファイルを開く",
+      "2. コード全体をコピーする",
+      "3. GPT-5.4-Cyberに貼り付け、脆弱性分析を依頼",
+      "4. 提案された修正案を適用し、テストする"
+    ],
+    "prompt": "以下のPythonコードのセキュリティ脆弱性を特定し、修正案を提示してください。特にOWASP Top 10の項目に注意して評価してください。",
+    "tags": [
+      "コードレビュー",
+      "セキュリティ",
+      "脆弱性診断"
+    ],
+    "id": "20260418_062201_03",
+    "date": "2026-04-18",
+    "source_news": {
+      "title": "OpenAI、GPT-5.4-Cyberをサイバー防衛に導入",
+      "url": "https://openai.com/index/scaling-trusted-access-for-cyber-defense"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "Sentence Transformersでマルチモーダル検索システム構築",
     "news_highlight": "Sentence Transformersがマルチモーダル埋め込みモデルの学習・調整をサポートし、テキストと画像間のクロスモーダル検索を効率化",
     "problem_context": "テキストと画像間の関連性評価が困難",
