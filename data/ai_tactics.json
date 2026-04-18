@@ -1,5 +1,125 @@
 [
   {
+    "title": "Amazon Bedrockでモデル蒸留による効率化",
+    "news_highlight": "Amazon BedrockでNova Premierの知識を小型モデルへ蒸留、推論コストとレイテンシを削減。",
+    "problem_context": "大規模モデルのAPIコスト高騰と推論遅延。",
+    "recommended_ai": {
+      "model": "Amazon Bedrock (Model Distillation機能)",
+      "reason": "大規模モデルの知識を効率的に転移可能。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "特定ドメインのテキスト分類モデルを軽量化したい時",
+      "エッジデバイスで動作するAIモデルのサイズを縮小したい時",
+      "大規模モデルのAPI利用料を削減しつつ性能を維持したい時"
+    ],
+    "steps": [
+      "1. Bedrockコンソールでモデル蒸留ジョブを設定する。",
+      "2. 教師モデル（例: Amazon Nova Premier）と生徒モデルを選択する。",
+      "3. 蒸留用のデータセットを準備し、S3にアップロードする。",
+      "4. ジョブを実行し、蒸留された小型モデルをデプロイする。",
+      "5. デプロイした小型モデルの性能とコストを評価する。"
+    ],
+    "prompt": "Amazon Bedrockのモデル蒸留機能で、Nova Premierから感情分析の知識を小型モデルに転移させるためのデータセット準備と設定ガイドラインを教えてください。",
+    "tags": [
+      "モデル蒸留",
+      "Amazon Bedrock",
+      "コスト最適化",
+      "推論高速化",
+      "LLM軽量化"
+    ],
+    "id": "20260419_061537_01",
+    "date": "2026-04-19",
+    "source_news": {
+      "title": "Amazon Bedrockでモデル蒸留を使い、大規模モデルを小型化し効率化。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/optimize-video-semantic-search-intent-with-amazon-nova-model-distillation-on-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Hugging Face MLXでApple Silicon推論コード生成",
+    "news_highlight": "Hugging FaceがMLXをサポートし、Apple SiliconでのAIモデル推論を効率化",
+    "problem_context": "Apple SiliconでのAIモデル推論パフォーマンス不足",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "MLXへの移行コード生成を支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存のTransformersコードをMLXへ移行したい時",
+      "Apple SiliconでAIモデルの推論速度を改善したい時",
+      "MLXを使ったApple Silicon向けAIアプリを開発する時"
+    ],
+    "steps": [
+      "1. 既存のTransformersモデルのPythonコードを用意する",
+      "2. AIにMLXフレームワークへの変換を依頼する",
+      "3. 提案されたMLXコードをApple Silicon環境で実行する",
+      "4. パフォーマンスを測定し、必要に応じてコードを調整する"
+    ],
+    "prompt": "以下のTransformersモデルのPythonコードを、Apple Siliconで効率的に動作するMLXフレームワークの推論コードに変換してください。`mlx.core`と`mlx.nn`を使用してください。",
+    "tags": [
+      "MLX",
+      "Apple Silicon",
+      "Hugging Face",
+      "AI推論",
+      "コード変換"
+    ],
+    "id": "20260419_061604_02",
+    "date": "2026-04-19",
+    "source_news": {
+      "title": "Hugging FaceがTransformersからMLXへ移行、Apple AI効率化。",
+      "url": "https://huggingface.co/blog/transformers-to-mlx"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "OpenAI Agents SDKでセキュアなエージェント開発",
+    "news_highlight": "Agents SDKがネイティブサンドボックスとモデルネイティブハーネスを搭載、セキュアな長期実行エージェント開発を支援。",
+    "problem_context": "エージェントのセキュリティと安定性確保",
+    "recommended_ai": {
+      "model": "OpenAI Agents SDK",
+      "reason": "セキュアな実行環境を提供",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数のツールやAPIを連携させるエージェントを開発する時",
+      "エージェントが外部システムにアクセスする際のセキュリティを確保したい時",
+      "長時間稼働するエージェントの安定性を検証したい時"
+    ],
+    "steps": [
+      "1. Agents SDKの最新バージョンをインストールする",
+      "2. 開発中のエージェントコードをサンドボックス環境で実行する設定を行う",
+      "3. モデルネイティブハーネスを利用して、エージェントのツール利用やファイル操作をテストする",
+      "4. セキュリティレポートと実行ログを確認し、脆弱性やエラーを修正する"
+    ],
+    "prompt": "OpenAI Agents SDKのネイティブサンドボックス機能を利用し、Pythonで記述されたファイル操作エージェントのセキュリティテスト計画を生成してください。",
+    "tags": [
+      "エージェント開発",
+      "セキュリティ",
+      "テスト",
+      "OpenAI"
+    ],
+    "id": "20260419_061630_03",
+    "date": "2026-04-19",
+    "source_news": {
+      "title": "OpenAIがAgents SDKを更新、セキュアな長期実行エージェント開発を支援。",
+      "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "OpenAI Agent SDKで安全な自律エージェント開発",
     "news_highlight": "Agent SDKがネイティブサンドボックスとハーネスを搭載し、安全な長時間実行エージェント開発を支援",
     "problem_context": "自律エージェントのセキュリティと安定性確保が困難",
