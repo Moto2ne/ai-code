@@ -1,5 +1,121 @@
 [
   {
+    "title": "GPT-5.4-Cyberで脆弱性コードを修正",
+    "news_highlight": "GPT-5.4-Cyber、サイバー防御向けに安全性強化、Trusted Accessで提供",
+    "problem_context": "既存コードのセキュリティ脆弱性を特定し修正する",
+    "recommended_ai": {
+      "model": "GPT-5.4-Cyber",
+      "reason": "サイバー防御に特化し安全性強化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードの脆弱性をチェックしたい時",
+      "セキュリティスキャンツールで検出された脆弱性の修正案が欲しい時",
+      "古いライブラリを含むコードのセキュリティリスクを評価したい時"
+    ],
+    "steps": [
+      "1. 脆弱性が疑われるコードブロックを特定する。",
+      "2. そのコードブロックと関連するセキュリティ要件をAIに提示する。",
+      "3. AIが提案する脆弱性修正案やセキュアな代替コードを確認する。",
+      "4. 提案された修正を適用し、テスト環境でセキュリティテストを実施する。"
+    ],
+    "prompt": "以下のPythonコードに潜在するセキュリティ脆弱性を特定し、OWASP Top 10の観点から修正案を提示してください。修正後のセキュアなコードも示してください。",
+    "tags": [
+      "セキュリティ",
+      "コードレビュー",
+      "脆弱性分析",
+      "DevSecOps"
+    ],
+    "id": "20260420_061600_01",
+    "date": "2026-04-20",
+    "source_news": {
+      "title": "GPT-5.4-Cyber発表、サイバー防御向けに安全性強化",
+      "url": "https://openai.com/index/scaling-trusted-access-for-cyber-defense"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "OpenAI Agents SDKで安全なエージェント開発",
+    "news_highlight": "OpenAI Agents SDKがネイティブサンドボックスとモデルネイティブハーネスを搭載し、安全なエージェント開発を支援。",
+    "problem_context": "エージェントのセキュリティと安定性の確保",
+    "recommended_ai": {
+      "model": "OpenAI Agents SDK",
+      "reason": "サンドボックスで安全な実行が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "エージェントが外部APIやファイルにアクセスする際のセキュリティ検証",
+      "長時間実行されるエージェントの安定性テストとデバッグ",
+      "開発中のエージェントが予期せぬ副作用を起こさないか確認"
+    ],
+    "steps": [
+      "1. Agents SDKを最新版に更新し、開発中のエージェントコードを準備する",
+      "2. エージェントをネイティブサンドボックス環境で実行する設定を構成する",
+      "3. エージェントに外部ツール連携やファイル操作を含むタスクを実行させる",
+      "4. サンドボックスの実行ログと出力を確認し、セキュリティ違反やエラーを特定する"
+    ],
+    "prompt": "このエージェントがサンドボックス環境で安全に動作するためのテストケースを生成してください。特にファイル操作と外部API呼び出しに焦点を当ててください。",
+    "tags": [
+      "エージェント開発",
+      "セキュリティ",
+      "サンドボックス",
+      "テスト"
+    ],
+    "id": "20260420_061626_02",
+    "date": "2026-04-20",
+    "source_news": {
+      "title": "Agents SDK更新、サンドボックスで安全なエージェント開発支援",
+      "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "CodexアプリでUIモックアップ生成",
+    "news_highlight": "CodexアプリがPC操作、画像生成、ブラウジング、記憶、プラグイン対応し開発を加速。",
+    "problem_context": "UI/UXのアイデアを素早く視覚化し、共有したい。",
+    "recommended_ai": {
+      "model": "Codexアプリ",
+      "reason": "画像生成機能でUIモックアップを迅速に作成。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "開発初期段階でUIのイメージを共有したい時",
+      "ユーザーからのフィードバックを元にUIを素早く修正したい時",
+      "デザイン案のバリエーションを複数生成したい時"
+    ],
+    "steps": [
+      "1. Codexアプリを起動し、生成したいUIの要件を自然言語で入力する。",
+      "2. アプリがUIモックアップ画像を生成する。",
+      "3. 生成された画像をレビューし、修正点や追加要素を指示する。",
+      "4. 最終的なモックアップをチームやクライアントと共有する。"
+    ],
+    "prompt": "モダンなデザインのログイン画面のモックアップ画像を生成してください。メールアドレス、パスワード入力欄、ログインボタンを含めてください。",
+    "tags": [
+      "UI/UX",
+      "プロトタイピング",
+      "画像生成"
+    ],
+    "id": "20260420_061655_03",
+    "date": "2026-04-20",
+    "source_news": {
+      "title": "Codexアプリ更新、PC操作・画像生成等で開発者支援強化",
+      "url": "https://openai.com/index/codex-for-almost-everything"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
     "title": "Amazon Bedrockでモデル蒸留による効率化",
     "news_highlight": "Amazon BedrockでNova Premierの知識を小型モデルへ蒸留、推論コストとレイテンシを削減。",
     "problem_context": "大規模モデルのAPIコスト高騰と推論遅延。",
