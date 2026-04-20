@@ -1,5 +1,104 @@
 [
   {
+    "title": "GPT-4でAIエージェントの課題分析",
+    "news_highlight": "VAKRAベンチマークでAIエージェントが複雑な推論タスクで成功率20%低下",
+    "problem_context": "AIエージェントの性能課題を特定し、改善策を見つける。",
+    "recommended_ai": {
+      "model": "GPT-4",
+      "reason": "複雑な推論と分析に優れる",
+      "badge_color": "orange"
+    },
+    "id": "20260421_062319_01",
+    "date": "2026-04-21",
+    "source_news": {
+      "title": "VAKRAベンチマークでAIエージェントの性能と課題を分析。",
+      "url": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "OpenAI Agents SDKでセキュアな自動化スクリプト生成",
+    "news_highlight": "OpenAI Agents SDKがネイティブサンドボックス実行とモデルネイティブハーネスを導入し、セキュアなエージェント開発を強化。",
+    "problem_context": "エージェントのセキュリティと信頼性の確保",
+    "recommended_ai": {
+      "model": "OpenAI Agents SDK",
+      "reason": "セキュアなエージェント開発を支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "エージェントに生成させたコードの安全性を確認したい時",
+      "複数のツールを連携する自動化スクリプトを作成したい時",
+      "本番環境で動作するエージェントの信頼性を高めたい時"
+    ],
+    "steps": [
+      "1. Agents SDKでエージェントを初期化する",
+      "2. エージェントに特定のタスク（例: Pythonスクリプト生成）を指示する",
+      "3. サンドボックス内で生成されたスクリプトを実行し、出力を確認する",
+      "4. ハーネス機能でエージェントの挙動を監視・デバッグする"
+    ],
+    "prompt": "Pythonでファイル操作を行うスクリプトを生成してください。生成後、サンドボックス内で実行し、結果を報告してください。",
+    "tags": [
+      "エージェント開発",
+      "セキュリティ",
+      "自動化",
+      "デバッグ"
+    ],
+    "id": "20260421_062349_02",
+    "date": "2026-04-21",
+    "source_news": {
+      "title": "OpenAIがAgents SDKを更新、セキュアなエージェント開発を強化。",
+      "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Gemini 3.1 Flash TTSでリアルタイム音声合成",
+    "news_highlight": "Gemini 3.1 Flash TTSは表現力豊かで高速な次世代音声合成モデル。",
+    "problem_context": "自然で高速な音声応答システムの開発",
+    "recommended_ai": {
+      "model": "Gemini 3.1 Flash TTS",
+      "reason": "表現力と高速性を両立",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "リアルタイムチャットボットの音声応答を実装する時",
+      "アクセシビリティ機能でテキストを自然に読み上げたい時",
+      "多言語コンテンツの音声ナレーションを生成する時"
+    ],
+    "steps": [
+      "1. Gemini 3.1 Flash TTS APIのドキュメントを確認する。",
+      "2. テキスト入力と音声出力のサンプルコードを実装する。",
+      "3. 生成された音声の自然さ、表現力、レイテンシを評価する。",
+      "4. 評価結果を基に、システムへの組み込み方法を設計する。"
+    ],
+    "prompt": "「こんにちは、今日の天気はどうですか？」というテキストを、女性の声で自然かつ感情豊かに読み上げるPythonコードを生成してください。",
+    "tags": [
+      "音声合成",
+      "リアルタイム",
+      "アクセシビリティ",
+      "API連携"
+    ],
+    "id": "20260421_062415_03",
+    "date": "2026-04-21",
+    "source_news": {
+      "title": "Googleが表現力豊かな次世代音声合成モデルGemini 3.1 Flash TTSを発表。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
     "title": "GPT-5.4-Cyberで脆弱性コードを修正",
     "news_highlight": "GPT-5.4-Cyber、サイバー防御向けに安全性強化、Trusted Accessで提供",
     "problem_context": "既存コードのセキュリティ脆弱性を特定し修正する",
