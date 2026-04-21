@@ -1,5 +1,124 @@
 [
   {
+    "title": "Codexアプリでエラーを自動デバッグ",
+    "news_highlight": "CodexアプリがPC操作、ブラウジング、プラグイン対応で開発ワークフローを加速",
+    "problem_context": "複雑なエラーの原因特定と修正に時間がかかる",
+    "recommended_ai": {
+      "model": "Codexアプリ",
+      "reason": "PC操作とブラウジングでデバッグを自動化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "テスト実行時に発生したエラーを即座に解決したい時",
+      "未知のエラーメッセージに遭遇し、原因が特定できない時",
+      "デバッグ環境のセットアップが面倒な時"
+    ],
+    "steps": [
+      "Codexアプリを開き、エラーが発生したプロジェクトのルートディレクトリを指定する。",
+      "エラーメッセージと関連するコードスニペットをCodexアプリに貼り付ける。",
+      "Codexアプリが提案した修正コードをレビューする。",
+      "Codexアプリに修正コードのテスト実行を指示し、結果を確認する"
+    ],
+    "prompt": "以下のエラーメッセージとコードスニペットを分析し、修正案を提示してください。修正後、`npm test`を実行し、その結果を報告してください。プロジェクトの言語はTypeScriptです。",
+    "tags": [
+      "デバッグ",
+      "エラー修正",
+      "自動化",
+      "開発効率"
+    ],
+    "id": "20260422_062123_01",
+    "date": "2026-04-22",
+    "source_news": {
+      "title": "Codexアプリが大幅更新、プラグイン等で開発者ワークフロー加速",
+      "url": "https://openai.com/index/codex-for-almost-everything"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
+    "title": "ToolSimulatorでAIエージェントのツールテスト",
+    "news_highlight": "Strands Evals内のToolSimulatorが、外部ツール連携AIエージェントの安全・大規模テストを実現",
+    "problem_context": "外部ツール連携AIエージェントの安全な大規模テストが困難",
+    "recommended_ai": {
+      "model": "ToolSimulator",
+      "reason": "外部ツール連携AIの安全な大規模テストに特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい外部APIと連携するAIエージェントの動作確認時",
+      "AIエージェントのプロンプト変更後のツール呼び出しロジック検証時",
+      "本番環境デプロイ前に、多数のシナリオでAIエージェントの安定性を確認する時"
+    ],
+    "steps": [
+      "1. ToolSimulator環境をセットアップする。",
+      "2. テストしたいAIエージェントと、連携する外部ツールのモックを定義する。",
+      "3. テストシナリオ（ユーザー入力、期待されるツール呼び出し、期待される出力）を記述する。",
+      "4. ToolSimulatorを実行し、エージェントのツール利用状況と応答を評価する。"
+    ],
+    "prompt": "ToolSimulatorでテストするAIエージェントのシナリオを生成してください。ユーザー入力、期待されるツール呼び出し、期待される出力をJSON形式で記述し、異常系も考慮してください。",
+    "tags": [
+      "AIエージェント",
+      "テスト",
+      "シミュレーション",
+      "LLM"
+    ],
+    "id": "20260422_062149_02",
+    "date": "2026-04-22",
+    "source_news": {
+      "title": "AIエージェントのツールテストを安全に大規模化するToolSimulator発表",
+      "url": "https://aws.amazon.com/blogs/machine-learning/toolsimulator-scalable-tool-testing-for-ai-agents/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCoreでAIエージェント設計",
+    "news_highlight": "AgentCoreはAIエージェントの構築・デプロイ・運用を加速し、高効率なオムニチャネルシステムを安全に実現。",
+    "problem_context": "複雑なAIエージェントの設計と実装を効率化。",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "AIエージェント構築・運用に特化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規AIエージェントのアーキテクチャ設計時",
+      "既存エージェントの機能拡張を検討する時",
+      "複数サービス連携が必要なエージェントを開発する時"
+    ],
+    "steps": [
+      "1. AgentCoreのコンソールを開く",
+      "2. 新規エージェント作成ウィザードを開始する",
+      "3. 目的と必要なツール（APIなど）を定義する",
+      "4. エージェントのフローとロジックをAgentCore上で設定する",
+      "5. 生成された設定やコードスニペットを確認し、必要に応じて修正する"
+    ],
+    "prompt": "オムニチャネル注文システム向けのAIエージェントを設計してください。在庫確認、注文処理、顧客通知の機能をAgentCoreのツールとして定義し、フローを記述してください。",
+    "tags": [
+      "AIエージェント",
+      "設計",
+      "Bedrock",
+      "AgentCore",
+      "開発"
+    ],
+    "id": "20260422_062216_03",
+    "date": "2026-04-22",
+    "source_news": {
+      "title": "Amazon Bedrock AgentCoreでAIエージェント構築・運用を加速",
+      "url": "https://aws.amazon.com/blogs/machine-learning/omnichannel-ordering-with-amazon-bedrock-agentcore-and-amazon-nova-2-sonic/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GPT-4でAIエージェントの課題分析",
     "news_highlight": "VAKRAベンチマークでAIエージェントが複雑な推論タスクで成功率20%低下",
     "problem_context": "AIエージェントの性能課題を特定し、改善策を見つける。",
