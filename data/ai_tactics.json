@@ -1,5 +1,120 @@
 [
   {
+    "title": "GPT-5.5で複雑なAPI設計と実装を高速化",
+    "news_highlight": "GPT-5.5は最先端モデルで複雑なコード生成・分析を高速化",
+    "problem_context": "複雑なシステム設計や実装に時間がかかる",
+    "recommended_ai": {
+      "model": "GPT-5.5",
+      "reason": "最先端モデルで複雑なタスクに強い",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規マイクロサービス開発で複雑なAPI設計と実装を素早く行いたい時",
+      "既存の複雑なシステム連携ロジックを理解し、改善案を検討する時",
+      "複数ファイルにまたがる大規模なコードベースの設計レビューを行う時"
+    ],
+    "steps": [
+      "1. 開発するAPIの要件（機能、入出力、エラー処理）を具体的に記述する",
+      "2. 関連する既存のシステム構成図やインターフェース定義をプロンプトに含める",
+      "3. GPT-5.5にAPI設計の提案と実装コードの生成を依頼する",
+      "4. 提案された設計とコードをレビューし、テスト環境で検証する"
+    ],
+    "prompt": "Go言語とgRPCを使って、複数のマイクロサービス間で非同期にデータを同期するAPIを設計し、具体的なコードを生成してください。エラーハンドリングと冪等性を考慮してください。",
+    "tags": [
+      "API設計",
+      "コード生成",
+      "マイクロサービス",
+      "高速化"
+    ],
+    "id": "20260424_062223_01",
+    "date": "2026-04-24",
+    "source_news": {
+      "title": "GPT-5.5発表、最先端モデルで複雑なタスクを高速化。",
+      "url": "https://openai.com/index/introducing-gpt-5-5"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Gemma 4 VLAでエッジAI推論最適化",
+    "news_highlight": "マルチモーダルGemma 4 VLAがJetson Orinで動作デモ、エッジ推論の可能性を拡大",
+    "problem_context": "エッジデバイスでのマルチモーダルAI実装の複雑さ",
+    "recommended_ai": {
+      "model": "Gemma 4 VLA",
+      "reason": "エッジでのマルチモーダル推論",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "エッジデバイス向け画像認識モデルの性能評価時",
+      "組み込みシステムでのリアルタイム物体検出機能開発時",
+      "低消費電力環境でのAIモデルデプロイ計画時"
+    ],
+    "steps": [
+      "1. Jetson Orin開発キットを準備し、Gemma 4 VLAのデモ環境をセットアップする。",
+      "2. サンプル画像や動画を入力し、モデルの推論速度と精度を測定する。",
+      "3. Jetson OrinのGPU使用率、メモリ使用量、消費電力をモニタリングする。",
+      "4. 測定結果を基に、実際のアプリケーションへの適用可能性と最適化ポイントを検討する。"
+    ],
+    "prompt": "Jetson Orin上でGemma 4 VLAを動作させるための環境構築手順と、推論性能を最大化するCUDA最適化のベストプラクティスを教えてください。",
+    "tags": [
+      "エッジAI",
+      "マルチモーダル"
+    ],
+    "id": "20260424_062247_02",
+    "date": "2026-04-24",
+    "source_news": {
+      "title": "マルチモーダルGemma 4 VLAがJetson Orinで動作デモ。",
+      "url": "https://huggingface.co/blog/nvidia/gemma4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Google TPU v8でエージェントAIを高速化",
+    "news_highlight": "Google TPU v8は2種の専門TPUでエージェントAIの複雑な推論を高速化",
+    "problem_context": "エージェントAIの推論レイテンシとコストが高い",
+    "recommended_ai": {
+      "model": "Google Cloud TPU v8",
+      "reason": "エージェントAIに特化し性能向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "エージェントAIの推論速度を改善したい時",
+      "複数のLLMを連携させるエージェントの性能を向上させたい時",
+      "強化学習ベースのエージェントを高速に学習させたい時"
+    ],
+    "steps": [
+      "1. 既存のエージェントAIモデルの計算ボトルネックを特定する。",
+      "2. Google Cloud PlatformでTPU v8インスタンスをプロビジョニングする。",
+      "3. モデルをTPU v8向けに最適化し、デプロイする。",
+      "4. レイテンシとスループットを測定し、性能改善を検証する。"
+    ],
+    "prompt": "TensorFlow/PyTorchで実装されたエージェントAIモデルをGoogle Cloud TPU v8で効率的に実行するための最適化戦略とコード例を提示してください。",
+    "tags": [
+      "エージェントAI",
+      "TPU",
+      "最適化",
+      "デプロイ"
+    ],
+    "id": "20260424_062316_03",
+    "date": "2026-04-24",
+    "source_news": {
+      "title": "エージェントAI時代向け、Googleが2種の専門TPUを発表。",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
     "title": "OpenAI Privacy FilterでPII検出・匿名化",
     "news_highlight": "OpenAI Privacy FilterはPII検出・匿名化のオープンウェイトモデルで、最先端の精度を実現",
     "problem_context": "PII漏洩リスク低減とデータプライバシー保護",
