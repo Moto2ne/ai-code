@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-5.5で複雑なコードを生成",
+    "news_highlight": "GPT-5.5はコード生成など複雑タスク向けに高速化・高性能化",
+    "problem_context": "複雑なロジックの実装に時間がかかる",
+    "recommended_ai": {
+      "model": "GPT-5.5",
+      "reason": "複雑なタスクに最適化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のプロトタイプコードを素早く作成したい時",
+      "複雑なアルゴリズムの実装方法が分からない時",
+      "既存のコードベースに合わせた新しいコンポーネントを生成したい時"
+    ],
+    "steps": [
+      "実装したい機能の要件を具体的に整理する",
+      "既存の関連コード（あれば）をAIに提示する",
+      "AIに要件と関連コードを基にコード生成を依頼する",
+      "生成されたコードを検証し、必要に応じて修正・調整する"
+    ],
+    "prompt": "TypeScriptとReactを使って、認証機能付きのユーザープロフィール編集画面を作成してください。APIエンドポイントは`/api/profile`とし、フォームバリデーションも実装してください。",
+    "tags": [
+      "コード生成",
+      "フロントエンド",
+      "TypeScript",
+      "React"
+    ],
+    "id": "20260425_062243_01",
+    "date": "2026-04-25",
+    "source_news": {
+      "title": "GPT-5.5発表、コード生成など複雑タスク向けに高速化・高性能化。",
+      "url": "https://openai.com/index/introducing-gpt-5-5"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Google Cloud TPUでAIエージェントのデプロイ最適化",
+    "news_highlight": "GoogleがAgent時代向けに2種類の第8世代TPUを発表、複雑なAI推論を高速化",
+    "problem_context": "AIエージェントの複雑な推論が遅い、コストが高い",
+    "recommended_ai": {
+      "model": "Google Cloud TPU",
+      "reason": "Agent向けに特化、高速化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントの推論環境をGoogle Cloud TPUに移行したい時",
+      "大規模なAIエージェントのデプロイプロセスを自動化したい時",
+      "リアルタイム応答が求められるAIエージェントのインフラを設計したい時"
+    ],
+    "steps": [
+      "既存のAIエージェントのモデルと推論コードを準備する。",
+      "Google Cloud SDKまたはGCPコンソールでTPU v8インスタンスをプロビジョニングする。",
+      "モデルをTPU向けに最適化（例: TensorFlow/JAXでTPU対応コードに修正、または既存のTPU対応ライブラリを利用）。",
+      "最適化されたモデルをTPU上でデプロイし、パフォーマンスとコストを評価する。"
+    ],
+    "prompt": "Google Cloud TPU v8インスタンスをプロビジョニングし、JAX/TensorFlowモデルをデプロイするためのgcloud CLIコマンドとPythonスクリプトを生成してください。分散学習設定を含めてください。",
+    "tags": [
+      "AIエージェント",
+      "TPU",
+      "デプロイ",
+      "GCP"
+    ],
+    "id": "20260425_062323_02",
+    "date": "2026-04-25",
+    "source_news": {
+      "title": "Agent時代向けにGoogleが2種類の専用TPUを発表。",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "Codexで開発ワークフロー自動化",
+    "news_highlight": "Codexプラグインとスキルでツール連携、データアクセス、ワークフロー自動化を強化し、タスク効率を向上。",
+    "problem_context": "開発タスクの自動化と効率化",
+    "recommended_ai": {
+      "model": "Codex",
+      "reason": "プラグインでツール連携強化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "外部APIからデータを取得し整形するスクリプトが必要な時",
+      "CI/CDパイプラインの一部を自動化したい時",
+      "複数のツールを連携させるGlueコードを書きたい時"
+    ],
+    "steps": [
+      "1. 自動化したいタスクと連携ツールを特定する。",
+      "2. Codexにタスク内容と連携ツールのAPI仕様を伝える。",
+      "3. Codexが生成したプラグイン/スキルコードを確認する。",
+      "4. 生成されたコードをテスト環境で実行し、動作検証する。"
+    ],
+    "prompt": "GitHub ActionsとSlackを連携させ、プルリクエストが作成されたらSlackチャンネルに通知するPythonスクリプトを生成してください。必要なAPI呼び出しを含めてください。",
+    "tags": [
+      "自動化",
+      "ツール連携",
+      "スクリプト生成",
+      "API連携"
+    ],
+    "id": "20260425_062350_03",
+    "date": "2026-04-25",
+    "source_news": {
+      "title": "Codexのプラグインとスキルでツール連携・自動化を強化。",
+      "url": "https://openai.com/academy/codex-plugins-and-skills"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
     "title": "GPT-5.5で複雑なAPI設計と実装を高速化",
     "news_highlight": "GPT-5.5は最先端モデルで複雑なコード生成・分析を高速化",
     "problem_context": "複雑なシステム設計や実装に時間がかかる",
