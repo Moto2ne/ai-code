@@ -1,5 +1,123 @@
 [
   {
+    "title": "GPT-5.5で複雑なバックエンドAPI生成",
+    "news_highlight": "GPT-5.5は高速・高性能化し、複雑なコーディング、研究、データ分析に対応",
+    "problem_context": "複雑なビジネスロジックを持つAPI実装に時間がかかる",
+    "recommended_ai": {
+      "model": "GPT-5.5",
+      "reason": "複雑なタスク処理に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のバックエンドAPIを設計・実装する時",
+      "既存システムの複雑なロジックをリファクタリングする時",
+      "複数のサービス連携が必要なAPIを開発する時"
+    ],
+    "steps": [
+      "1. 開発中のAPIの要件定義書や設計ドキュメントを用意する",
+      "2. AIにAPIの目的、必要なエンドポイント、データモデル、ビジネスロジックを具体的に指示する",
+      "3. 生成されたコードをローカル環境でテストし、要件との整合性を確認する",
+      "4. 必要に応じてAIに追加の指示を与え、コードを改善・調整する"
+    ],
+    "prompt": "PythonとFastAPIを使って、ユーザー認証（JWT）、商品管理（CRUD）、注文処理（非同期タスク）を含むRESTful APIを設計し、コードを生成してください。",
+    "tags": [
+      "コード生成",
+      "バックエンド",
+      "API設計",
+      "Python"
+    ],
+    "id": "20260426_061705_01",
+    "date": "2026-04-26",
+    "source_news": {
+      "title": "GPT-5.5発表、高速・高性能化し複雑タスクに対応",
+      "url": "https://openai.com/index/introducing-gpt-5-5"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GeminiでエージェントAIの設計とコード生成",
+    "news_highlight": "GoogleがエージェントAI向け第8世代TPU (8T/8i) を発表、複雑なAI推論を高速化",
+    "problem_context": "エージェントAIの複雑なロジック設計とデバッグ",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "複雑なエージェントAIの設計支援に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複雑なエージェントAIのタスクフローを設計したい時",
+      "エージェントAIが意図しない動作をした際のデバッグ支援",
+      "複数のツールを連携させるエージェントAIのコードを生成したい時"
+    ],
+    "steps": [
+      "1. エージェントAIの目的と利用するツールを定義する。",
+      "2. AIにタスクフローの設計案を依頼する。",
+      "3. 提案されたフローに基づき、各ステップのコード生成を依頼する。",
+      "4. 生成されたコードをテストし、必要に応じてデバッグ支援を依頼する。"
+    ],
+    "prompt": "ユーザーの意図を理解し、複数の外部APIを連携させてタスクを完了するPythonエージェントAIの設計と、そのためのコードを生成してください。",
+    "tags": [
+      "エージェントAI",
+      "設計",
+      "コード生成",
+      "デバッグ"
+    ],
+    "id": "20260426_061731_02",
+    "date": "2026-04-26",
+    "source_news": {
+      "title": "Google、エージェントAI向け新型TPU (8T/8i) 発表",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "Gemma 4 VLAでエッジデバイス画像解析",
+    "news_highlight": "Gemma 4 VLAがJetson Orin Nanoで動作、エッジAIでのマルチモーダル推論が可能に",
+    "problem_context": "エッジデバイスでの複雑な画像・テキスト解析の実現",
+    "recommended_ai": {
+      "model": "Gemma 4 VLA",
+      "reason": "Jetson Orin Nanoで動作し、エッジAIでのマルチモーダル処理が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "工場ラインでの製品異常検知と原因分析",
+      "スマート農業での作物病害診断と対策提案",
+      "監視カメラ映像からの特定行動（例: 転倒）検知と状況説明"
+    ],
+    "steps": [
+      "1. Jetson Orin NanoにGemma 4 VLA推論環境を構築する",
+      "2. カメラからリアルタイム画像データを取得し、モデルに入力する",
+      "3. モデルの出力（画像解析結果とテキスト説明）をシステムに連携する",
+      "4. 出力に基づき、アラート発報やロボット制御などのアクションを実行する"
+    ],
+    "prompt": "この製造ラインの画像で異常箇所を特定し、その原因と推奨される対処法を簡潔に説明してください。",
+    "tags": [
+      "Edge AI",
+      "マルチモーダル",
+      "画像認識",
+      "物体検出",
+      "Jetson"
+    ],
+    "id": "20260426_061801_03",
+    "date": "2026-04-26",
+    "source_news": {
+      "title": "Gemma 4 VLAがJetson Orin Nanoで動作、Edge AI進展",
+      "url": "https://huggingface.co/blog/nvidia/gemma4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
     "title": "GPT-5.5で複雑なコードを生成",
     "news_highlight": "GPT-5.5はコード生成など複雑タスク向けに高速化・高性能化",
     "problem_context": "複雑なロジックの実装に時間がかかる",
