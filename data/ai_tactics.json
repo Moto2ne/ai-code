@@ -1,5 +1,123 @@
 [
   {
+    "title": "OpenAI Privacy FilterでWebアプリのデータ保護",
+    "news_highlight": "OpenAI Privacy Filterは個人情報マスキングを自動化し、AI利用時のデータプライバシーリスクを低減する。",
+    "problem_context": "AI利用時の個人情報漏洩リスクとデータ保護の課題",
+    "recommended_ai": {
+      "model": "OpenAI Privacy Filter",
+      "reason": "AI入力データのプライバシー保護を自動化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザー生成コンテンツをAIで分析する前処理",
+      "顧客サポートチャットログをAIで要約する際の個人情報保護",
+      "医療データなど機密情報をAIで処理する際の匿名化"
+    ],
+    "steps": [
+      "1. WebアプリからAIに送信するデータを特定する。",
+      "2. OpenAI Privacy FilterのAPIまたはSDKを導入する。",
+      "3. フィルタリングルール（例: PII検出、マスキング設定）を定義する。",
+      "4. データをPrivacy Filter経由でAIモデルに送信し、結果を検証する。"
+    ],
+    "prompt": "以下の匿名化されたユーザーレビューから、製品の改善点を5つ具体的に提案してください。",
+    "tags": [
+      "プライバシー保護",
+      "データセキュリティ",
+      "Webアプリ開発",
+      "AI倫理"
+    ],
+    "id": "20260430_062941_01",
+    "date": "2026-04-30",
+    "source_news": {
+      "title": "OpenAI Privacy FilterでスケーラブルなWebアプリ構築法",
+      "url": "https://huggingface.co/blog/openai-privacy-filter-web-apps"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Nemotron 3 Nano Omniで画像付きエラーデバッグ",
+    "news_highlight": "NVIDIA Nemotron 3 Nano Omniは長文マルチモーダル対応の小型AIモデル",
+    "problem_context": "スクリーンショットとログからエラー原因を特定したい",
+    "recommended_ai": {
+      "model": "NVIDIA Nemotron 3 Nano Omni",
+      "reason": "長文マルチモーダル対応、小型",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "UIエラーのスクリーンショットとバックエンドログを合わせて分析",
+      "複雑なグラフや図を含むエラーレポートの理解",
+      "ユーザーからの画像付きバグレポートの初期分析"
+    ],
+    "steps": [
+      "1. エラーが発生している画面のスクリーンショットを準備する。",
+      "2. 関連するログファイルの内容をテキストとして準備する。",
+      "3. Nemotron 3 Nano OmniのAPIにスクリーンショットとログテキストを送信する。",
+      "4. プロンプトでエラーの原因と修正案を依頼する。",
+      "5. AIの提案を元に、デバッグ作業を進める。"
+    ],
+    "prompt": "添付のスクリーンショットと以下のログファイルの内容を分析し、エラーの原因と具体的な修正案を提案してください。",
+    "tags": [
+      "デバッグ",
+      "マルチモーダル",
+      "エラー解析"
+    ],
+    "id": "20260430_063012_02",
+    "date": "2026-04-30",
+    "source_news": {
+      "title": "NVIDIA Nemotron 3 Nano Omni発表、長文マルチモーダルAI",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "Hugging FaceでDeepInfra推論を最適化",
+    "news_highlight": "Hugging Face推論プロバイダーにDeepInfraが追加、高速・低コストなモデルデプロイが可能に。",
+    "problem_context": "AIモデルの推論コストとレイテンシを削減したい。",
+    "recommended_ai": {
+      "model": "DeepInfra (Hugging Face Inference Endpoints)",
+      "reason": "高速かつコスト効率の良い推論を提供",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "リアルタイム応答が求められるAIアプリケーションを開発する時",
+      "大規模なユーザーベースを持つAIサービスで推論コストを最適化したい時",
+      "Hugging Face Hubのモデルを本番環境に簡単にデプロイしたい時"
+    ],
+    "steps": [
+      "Hugging Face Hubでデプロイしたいモデルページを開く",
+      "「Deploy」タブから「Inference Endpoints」を選択する",
+      "プロバイダーとして「DeepInfra」を選択し、インスタンスタイプとリソースを設定する",
+      "エンドポイントをデプロイし、提供されるAPIエンドポイントで推論をテストする"
+    ],
+    "prompt": "Hugging Face Inference EndpointsでDeepInfraをプロバイダーとして、`bert-base-uncased`モデルをデプロイする手順を教えてください。最適なGPU構成とコスト削減のヒントを含めてください。",
+    "tags": [
+      "HuggingFace",
+      "DeepInfra",
+      "推論",
+      "デプロイ",
+      "コスト最適化"
+    ],
+    "id": "20260430_063040_03",
+    "date": "2026-04-30",
+    "source_news": {
+      "title": "Hugging Face推論プロバイダーにDeepInfraが追加",
+      "url": "https://huggingface.co/blog/inference-providers-deepinfra"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "SymphonyでIssue駆動開発を自動化",
     "news_highlight": "OpenAIのSymphonyはissueトラッカーを常時稼働エージェントシステム化し、生産性向上とコンテキストスイッチ削減を実現。",
     "problem_context": "Issue管理とタスク実行の断絶、コンテキストスイッチ",
