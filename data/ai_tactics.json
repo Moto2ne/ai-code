@@ -1,5 +1,110 @@
 [
   {
+    "title": "AI戦術",
+    "problem_context": "AI技術の活用",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "高性能",
+      "badge_color": "orange"
+    },
+    "prompt": "最新のAI技術を活用して効率化を図ってください。",
+    "tags": [
+      "AI",
+      "自動生成"
+    ],
+    "id": "20260501_062713_01",
+    "date": "2026-05-01",
+    "source_news": {
+      "title": "OpenAIモデル、Codex、Managed AgentsがAWSで利用可能に",
+      "url": "https://openai.com/index/openai-on-aws"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Nemotron 3 Nano Omniで長文コードをレビュー",
+    "news_highlight": "Nemotron 3 Nano Omniは長文対応マルチモーダルAIで、デバイス上での推論に最適化",
+    "problem_context": "大規模コードベースの理解とレビューの効率化",
+    "recommended_ai": {
+      "model": "Nemotron 3 Nano Omni",
+      "reason": "長文・マルチモーダル対応、デバイス推論向け",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストの長文コード変更点を素早く理解したい時",
+      "既存システムの複雑な機能のコードパスを追跡したい時",
+      "設計図と実装コードの整合性を確認したい時"
+    ],
+    "steps": [
+      "1. レビューしたいコードファイル群をNemotron 3 Nano Omniに入力する。",
+      "2. 関連する設計ドキュメントや図（画像）も入力する。",
+      "3. 特定の機能や変更点について質問する。",
+      "4. AIの分析結果と提案を基にコードを修正・議論する。"
+    ],
+    "prompt": "以下のコードベースと設計図を分析し、`UserAuthentication`モジュールのセキュリティ脆弱性がないかレビューしてください。改善提案もお願いします。",
+    "tags": [
+      "コードレビュー",
+      "設計",
+      "マルチモーダルAI"
+    ],
+    "id": "20260501_062739_02",
+    "date": "2026-05-01",
+    "source_news": {
+      "title": "NVIDIAが長文対応マルチモーダルAI「Nemotron 3 Nano Omni」発表",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCore GatewayでプライベートAPI連携設計",
+    "news_highlight": "Bedrock AgentCore GatewayがResource GatewayでプライベートAPIへ安全アクセス、ENI自動プロビジョニング",
+    "problem_context": "BedrockエージェントからVPC内プライベートリソースへの安全な接続設定",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore Gateway",
+      "reason": "プライベートリソース連携を簡素化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Bedrockエージェントが社内DBから情報を取得して応答する機能を開発する時",
+      "BedrockエージェントがVPC内のレガシーAPIを呼び出す必要がある時",
+      "Bedrockエージェントがプライベートな認証サービスと連携する設計をする時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCore Gatewayの設定画面を開く。",
+      "2. Resource Gatewayを有効化し、接続先のVPCとサブネット、セキュリティグループを指定する。",
+      "3. エージェントのAction Groupで、プライベートAPIのエンドポイントURLを設定する。",
+      "4. エージェントのテスト実行で、プライベートAPIへのアクセスが成功するか確認する。"
+    ],
+    "prompt": "Bedrock AgentCore GatewayでプライベートAPI（例: `https://my-private-api.example.com/data`）にアクセスするためのAction Group定義のYAMLを生成してください。認証はAPIキーを使用し、ヘッダーに`X-API-Key`を含めます。",
+    "tags": [
+      "AWS",
+      "Bedrock",
+      "AgentCore Gateway",
+      "VPC",
+      "セキュリティ",
+      "API連携",
+      "ENI"
+    ],
+    "id": "20260501_062806_03",
+    "date": "2026-05-01",
+    "source_news": {
+      "title": "Amazon Bedrock AgentCore Gatewayでプライベートリソースへ安全アクセス",
+      "url": "https://aws.amazon.com/blogs/machine-learning/configuring-amazon-bedrock-agentcore-gateway-for-secure-access-to-private-resources/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "OpenAI Privacy FilterでWebアプリのデータ保護",
     "news_highlight": "OpenAI Privacy Filterは個人情報マスキングを自動化し、AI利用時のデータプライバシーリスクを低減する。",
     "problem_context": "AI利用時の個人情報漏洩リスクとデータ保護の課題",
