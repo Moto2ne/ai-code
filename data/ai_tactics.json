@@ -1,5 +1,120 @@
 [
   {
+    "title": "Nemotron 3 Nano Omniで長文コードレビュー",
+    "news_highlight": "Nemotron 3 Nano Omniは長文コードや設計図のマルチモーダル解析に対応",
+    "problem_context": "大規模コードの品質維持と効率的なレビュー",
+    "recommended_ai": {
+      "model": "Nemotron 3 Nano Omni",
+      "reason": "長文・マルチモーダル解析に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分の大規模コードをレビューしたい時",
+      "既存の複雑なシステムコードの潜在バグを特定したい時",
+      "設計図と実装コードの整合性を確認したい時"
+    ],
+    "steps": [
+      "レビューしたいコードファイルを準備する",
+      "関連する設計図や仕様書（画像、PDFなど）を準備する",
+      "Nemotron 3 Nano Omniにコードと設計図をアップロードする",
+      "プロンプトでレビューを依頼し、提案された改善点をコードに適用する"
+    ],
+    "prompt": "以下のPythonコードと添付されたシステム設計図を分析し、パフォーマンス上のボトルネック、セキュリティ脆弱性、および設計との不整合を指摘してください。",
+    "tags": [
+      "コードレビュー",
+      "マルチモーダル",
+      "大規模コード",
+      "設計検証"
+    ],
+    "id": "20260502_062248_01",
+    "date": "2026-05-02",
+    "source_news": {
+      "title": "NVIDIA Nemotron 3 Nano Omni発表、長文マルチモーダルAI",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "DeepInfraでHugging Face推論API実装",
+    "news_highlight": "DeepInfraがHugging Face推論プロバイダーに追加、Hugging Faceモデルの推論をDeepInfraで実行可能に。",
+    "problem_context": "Hugging Faceモデルの推論API実装が複雑",
+    "recommended_ai": {
+      "model": "DeepInfra (Hugging Face Inference Endpoints)",
+      "reason": "高速かつコスト効率の良い推論提供",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Hugging Faceモデルを本番環境でAPIとして利用したい時",
+      "既存の推論APIのパフォーマンスを改善したい時",
+      "新しいHugging Faceモデルを迅速にデプロイしたい時"
+    ],
+    "steps": [
+      "1. Hugging Face Hubでデプロイしたいモデルを選択し、DeepInfraでエンドポイントを作成",
+      "2. 作成されたエンドポイントのURLとAPIキーを取得する",
+      "3. AIにプロンプトを渡し、推論コードを生成させる",
+      "4. 生成されたコードをアプリケーションに組み込み、テストする"
+    ],
+    "prompt": "Hugging Face Inference EndpointsでDeepInfraにデプロイした`bert-base-uncased`モデルの推論を行うPythonコードを生成してください。入力テキストは`Hello world`です。APIキーとエンドポイントURLは変数として扱ってください。",
+    "tags": [
+      "Hugging Face",
+      "DeepInfra"
+    ],
+    "id": "20260502_062318_02",
+    "date": "2026-05-02",
+    "source_news": {
+      "title": "DeepInfraがHugging Face推論プロバイダーに追加",
+      "url": "https://huggingface.co/blog/inference-providers-deepinfra"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "OpenAI Privacy Filterで機密データ保護",
+    "news_highlight": "OpenAI Privacy Filterが機密情報を自動匿名化し、大規模Webアプリのプライバシー保護を効率化。",
+    "problem_context": "AI利用時の機密情報漏洩リスクを低減",
+    "recommended_ai": {
+      "model": "OpenAI Privacy Filter",
+      "reason": "機密情報を自動匿名化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客サポートチャットボットで個人情報を扱う時",
+      "社内文書分析で機密情報を含むテキストを処理する時",
+      "医療データ分析で患者のプライバシーを保護する時"
+    ],
+    "steps": [
+      "1. OpenAI APIリクエスト送信前にPrivacy Filterを有効化する設定を確認。",
+      "2. フィルタリング対象となる機密情報のパターン（例: PII、PHI）を定義。",
+      "3. アプリケーションからAPIに送信するデータをPrivacy Filter経由で処理。",
+      "4. フィルタリング後のデータが意図通り匿名化されているかテスト。"
+    ],
+    "prompt": "「OpenAI Privacy Filterの導入を想定し、ユーザー入力から個人識別情報(PII)を自動検出・匿名化するPythonの前処理コードを生成してください。」",
+    "tags": [
+      "プライバシー保護",
+      "データセキュリティ",
+      "API連携",
+      "匿名化"
+    ],
+    "id": "20260502_062347_03",
+    "date": "2026-05-02",
+    "source_news": {
+      "title": "OpenAI Privacy FilterでスケーラブルなWebアプリ構築",
+      "url": "https://huggingface.co/blog/openai-privacy-filter-web-apps"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "AI戦術",
     "problem_context": "AI技術の活用",
     "recommended_ai": {
