@@ -1,5 +1,121 @@
 [
   {
+    "title": "Nemotron 3 Nano Omniで設計図からコード生成",
+    "news_highlight": "NVIDIAが長文対応マルチモーダルAI「Nemotron 3 Nano Omni」を発表。",
+    "problem_context": "複雑な設計図からのコード実装に時間がかかる。",
+    "recommended_ai": {
+      "model": "Nemotron 3 Nano Omni",
+      "reason": "長文・マルチモーダル対応で設計図を理解",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のプロトタイプを素早く作成したい時",
+      "複雑なシステム設計図からコードの骨格を生成したい時",
+      "既存の設計図を元に、新しいモジュールを開発する時"
+    ],
+    "steps": [
+      "1. 設計図（UML、フローチャートなど）の画像を準備する。",
+      "2. 関連する技術要件や制約事項をテキストでまとめる。",
+      "3. Nemotron 3 Nano Omniに画像とテキストを渡し、コード生成を依頼する。",
+      "4. 生成されたコードをレビューし、テスト環境で動作確認する。"
+    ],
+    "prompt": "このUMLクラス図と以下の要件に基づき、Pythonでクラスのスケルトンコードを生成してください。要件: データベース接続、非同期処理を考慮。",
+    "tags": [
+      "コード生成",
+      "設計",
+      "マルチモーダル",
+      "Python"
+    ],
+    "id": "20260503_061934_01",
+    "date": "2026-05-03",
+    "source_news": {
+      "title": "NVIDIAが長文対応マルチモーダルAI「Nemotron 3 Nano Omni」を発表。",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Granite 4.1の知見でLLM評価指標を改善",
+    "news_highlight": "IBMがGranite 4.1 LLM構築方法を公開、モデル評価・最適化の実用知見を提供。",
+    "problem_context": "自社LLMの性能評価が曖昧で改善が進まない。",
+    "recommended_ai": {
+      "model": "Llama 3",
+      "reason": "Granite 4.1の知見を適用し、Llama 3の評価・改善に役立てるため。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "自社でファインチューニングしたLLMの性能を客観的に評価したい時",
+      "特定のタスクで既存LLMの精度が頭打ちになった時",
+      "新しいLLMを導入する際の評価基準を策定したい時"
+    ],
+    "steps": [
+      "IBMが公開したGranite 4.1の構築方法に関するドキュメントから、評価指標とデータセット選定の知見を抽出する。",
+      "抽出した知見を基に、自社で利用中のLLM（例: Llama 3）の評価スクリプトやテストケースを見直す。",
+      "見直した評価基準でLLMを再評価し、具体的な性能ボトルネックを特定する。",
+      "特定されたボトルネックに基づき、ファインチューニングデータやプロンプトの改善計画を策定する。"
+    ],
+    "prompt": "Granite 4.1の構築方法で推奨される評価指標を参考に、Pythonでテキスト分類モデルのF1スコア、精度、再現率を計算し、結果をJSON形式で出力する関数を生成してください。",
+    "tags": [
+      "LLM評価",
+      "ファインチューニング",
+      "Python",
+      "データサイエンス"
+    ],
+    "id": "20260503_062005_02",
+    "date": "2026-05-03",
+    "source_news": {
+      "title": "IBMがGranite 4.1 LLMの構築方法を公開、実用的な知見を提供。",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-1"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "GPT-5で異常出力の原因特定",
+    "news_highlight": "GPT-5の「ゴブリン」挙動、人格駆動の癖の発生源と修正策がOpenAIにより解説。",
+    "problem_context": "AIモデルの意図しない奇妙な出力の発生。",
+    "recommended_ai": {
+      "model": "GPT-5",
+      "reason": "異常挙動の自己分析に活用",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIが意図しない人格的な応答をした時",
+      "AIがループしたり無意味なテキストを生成した時",
+      "AIの出力がプロダクション要件を満たさない時"
+    ],
+    "steps": [
+      "異常な出力が発生したプロンプトとAIの応答を記録する。",
+      "記録したプロンプトと応答をAIに提示し、なぜそのような出力になったのか分析を依頼する。",
+      "AIの分析結果に基づき、プロンプトの修正案やモデル設定の変更案を検討する。",
+      "修正案を適用し、再度テストして挙動が改善されたか確認する。"
+    ],
+    "prompt": "以下のプロンプトとAIの応答を分析し、なぜこのような奇妙な（ゴブリン的な）出力になったのか、その原因と修正策を具体的に説明してください。プロンプト: [ここにプロンプト] 応答: [ここにAIの応答]",
+    "tags": [
+      "デバッグ",
+      "プロンプトエンジニアリング",
+      "AIモデル挙動分析"
+    ],
+    "id": "20260503_062032_03",
+    "date": "2026-05-03",
+    "source_news": {
+      "title": "GPT-5の奇妙な挙動「ゴブリン」の発生源と修正策をOpenAIが解説。",
+      "url": "https://openai.com/index/where-the-goblins-came-from"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "Nemotron 3 Nano Omniで長文コードレビュー",
     "news_highlight": "Nemotron 3 Nano Omniは長文コードや設計図のマルチモーダル解析に対応",
     "problem_context": "大規模コードの品質維持と効率的なレビュー",
