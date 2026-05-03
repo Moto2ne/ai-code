@@ -1,5 +1,123 @@
 [
   {
+    "title": "Nemotron 3 Nano OmniでAgentの設計支援",
+    "news_highlight": "NVIDIA Nemotron 3 Nano Omniは長文・マルチモーダル対応、自律Agent開発を加速",
+    "problem_context": "Agent開発の複雑なロジック設計",
+    "recommended_ai": {
+      "model": "Nemotron 3 Nano Omni",
+      "reason": "Agent開発に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Agentの行動ロジックを設計する時",
+      "マルチモーダルな入力（画像＋テキスト）を処理するAgentを開発する時",
+      "長文の仕様書からAgentのタスクフローを抽出する時"
+    ],
+    "steps": [
+      "1. Agentの目的と制約を定義する。",
+      "2. Nemotron 3 Nano Omniに目的と制約、期待する入出力形式を提示する。",
+      "3. 提案されたAgentの行動フローやロジックをレビューする。",
+      "4. 必要に応じて修正し、Agentの実装に活用する。"
+    ],
+    "prompt": "あなたは自律Agentの設計者です。ユーザーの意図を理解し、適切なツールを選択してタスクを完了するAgentの行動ロジックを設計してください。目的: Webサイトの情報を収集し要約、制約: リアルタイム性、入出力: URLと要約",
+    "tags": [
+      "Agent開発",
+      "設計支援",
+      "マルチモーダル",
+      "長文処理"
+    ],
+    "id": "20260504_062040_01",
+    "date": "2026-05-04",
+    "source_news": {
+      "title": "NVIDIAが長文・マルチモーダル対応のAgent向け新モデルNemotron 3 Nano Omniを発表。",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "AWS SageMaker Agentic AIでデータ分析スクリプト生成",
+    "news_highlight": "AWS SageMaker上でAgentic AIがデータ分析をセルフサービス化、S3連携で効率化",
+    "problem_context": "データ分析コード作成の手間、結果解釈の複雑さ",
+    "recommended_ai": {
+      "model": "AWS SageMaker Agentic AI",
+      "reason": "データ分析の自動化と効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいデータセットの探索的データ分析（EDA）を行う時",
+      "特定のビジネス指標を可視化するレポートを作成する時",
+      "データ前処理のパイプラインを迅速に構築したい時"
+    ],
+    "steps": [
+      "1. 分析したいS3バケットのデータパスを指定する",
+      "2. Agentic AIに分析目的（例: '顧客の購買傾向を分析し、最も売れている商品を特定'）を指示する",
+      "3. AIが生成したデータ分析コード（Python/Rなど）と結果を確認する",
+      "4. 必要に応じてコードを修正し、SageMaker上で実行、結果を評価する"
+    ],
+    "prompt": "S3バケット's3://my-data-bucket/sales/'にあるCSVファイルから、顧客の購買傾向を分析し、Pythonで最も売れている商品トップ5を特定するコードを生成してください。",
+    "tags": [
+      "データ分析",
+      "SageMaker",
+      "Agentic AI",
+      "Python",
+      "S3"
+    ],
+    "id": "20260504_062106_02",
+    "date": "2026-05-04",
+    "source_news": {
+      "title": "AWSがSageMaker上でAgentic AIによるデータ分析を可能にするソリューションを発表。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/unleashing-agentic-ai-analytics-on-amazon-sagemaker-with-amazon-athena-and-amazon-quick/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "AI Agentで相互作用リスクを設計レビュー",
+    "news_highlight": "AI Agentの相互作用で発生するネットワークレベルリスクを特定、新アプローチを提唱",
+    "problem_context": "複数AI Agent連携時の予期せぬ挙動を特定",
+    "recommended_ai": {
+      "model": "AI Agent",
+      "reason": "複雑な相互作用リスクを分析するため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数のAI Agentを連携させるシステムを設計する時",
+      "既存のAgentシステムで予期せぬエラーや挙動が発生した時",
+      "新しいAgentの追加が既存システムに与える影響を評価する時"
+    ],
+    "steps": [
+      "1. 連携するAI Agentの役割と入出力を定義する",
+      "2. 各Agent間のデータフローと制御フローを記述する",
+      "3. AIに潜在的な相互作用リスクと脆弱性を分析させる",
+      "4. 提案されたリスク軽減策を設計に反映し、テストする"
+    ],
+    "prompt": "以下のAI Agent連携システム設計について、各Agent間の相互作用で発生しうる潜在的なリスクと、そのリスクを軽減するための設計上の考慮事項を具体的に提案してください。Agent A: ユーザー要求を解析しタスクを分割, Agent B: タスクを実行し結果を統合, データフロー: A→B(タスク), B→A(結果)",
+    "tags": [
+      "AI Agent",
+      "システム設計",
+      "リスク分析",
+      "セキュリティ"
+    ],
+    "id": "20260504_062133_03",
+    "date": "2026-05-04",
+    "source_news": {
+      "title": "Microsoftが大規模Agentネットワークの安全性と相互作用リスクを研究。",
+      "url": "https://www.microsoft.com/en-us/research/blog/red-teaming-a-network-of-agents-understanding-what-breaks-when-ai-agents-interact-at-scale/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Nemotron 3 Nano Omniで設計図からコード生成",
     "news_highlight": "NVIDIAが長文対応マルチモーダルAI「Nemotron 3 Nano Omni」を発表。",
     "problem_context": "複雑な設計図からのコード実装に時間がかかる。",
