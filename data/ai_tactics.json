@@ -1,5 +1,124 @@
 [
   {
+    "title": "OpenAIリアルタイム音声AIでWebRTC設計改善",
+    "news_highlight": "OpenAIがWebRTCスタック再構築で低遅延音声AIを大規模提供、会話のターンテーキングを改善",
+    "problem_context": "リアルタイム音声対話の遅延とスケーラビリティ",
+    "recommended_ai": {
+      "model": "OpenAIのリアルタイム音声AI技術",
+      "reason": "低遅延・大規模対応の知見活用",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存のWebRTC音声通信システムの遅延改善",
+      "大規模なリアルタイム音声サービス設計時",
+      "自然な会話フローを実現する音声UI開発"
+    ],
+    "steps": [
+      "現在のWebRTC音声通信システムのアーキテクチャ図を用意する。",
+      "OpenAIが公開したWebRTCスタック再構築に関する技術詳細記事を読み込む。",
+      "AIにアーキテクチャ図と記事の要点を渡し、遅延改善の設計案を依頼する。",
+      "提案された設計案を元に、実装計画を立てる。"
+    ],
+    "prompt": "OpenAIの低遅延WebRTC技術詳細を参考に、既存のリアルタイム音声通信システムの遅延を最小化し、スケーラビリティを向上させる設計改善案を提案してください。特にシグナリング、メディア、コーデック、バッファリング戦略に焦点を。",
+    "tags": [
+      "WebRTC",
+      "リアルタイム通信",
+      "音声AI",
+      "システム設計",
+      "低遅延"
+    ],
+    "id": "20260505_062944_01",
+    "date": "2026-05-05",
+    "source_news": {
+      "title": "OpenAIが低遅延音声AIを大規模提供する技術詳細を公開。",
+      "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Gemini APIで非同期処理を効率化",
+    "news_highlight": "Gemini APIにWebhooks導入、長時間ジョブの完了通知をリアルタイム受信、ポーリング不要で遅延と負荷を削減。",
+    "problem_context": "Gemini APIの非同期処理完了を効率的に検知したい",
+    "recommended_ai": {
+      "model": "Gemini API (Webhooks機能)",
+      "reason": "非同期処理のリアルタイム通知が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Gemini APIでの大規模なコンテンツ生成完了を検知する時",
+      "非同期で実行したデータ分析ジョブの結果を自動で取得したい時",
+      "ユーザーにAI生成コンテンツの準備完了を即座に通知したい時"
+    ],
+    "steps": [
+      "1. Webhooksイベントを受信するHTTPSエンドポイントを準備する",
+      "2. Gemini APIの非同期ジョブ実行時にWebhooks URLを指定する",
+      "3. エンドポイントでGeminiからのPOSTリクエストを受信し、ペイロードを解析する",
+      "4. 受信したイベントに基づいて後続処理（DB更新、通知など）を実装する"
+    ],
+    "prompt": "PythonとFlaskでGemini APIのWebhooksイベントを受信するエンドポイントを実装してください。セキュリティのために署名検証のロジックを含めてください。",
+    "tags": [
+      "Webhooks",
+      "非同期処理",
+      "API連携",
+      "リアルタイム通知"
+    ],
+    "id": "20260505_063011_02",
+    "date": "2026-05-05",
+    "source_news": {
+      "title": "Gemini APIにWebhooks導入、長時間ジョブの遅延と摩擦を削減。",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/event-driven-webhooks/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "Nemotron 3 Nano OmniでエッジAI実装",
+    "news_highlight": "NVIDIA Nemotron 3 Nano Omni発表、マルチモーダルAIを小型化しオンデバイス推論を強化。",
+    "problem_context": "エッジデバイスでのリアルタイムAI処理の課題解決",
+    "recommended_ai": {
+      "model": "NVIDIA Nemotron 3 Nano Omni",
+      "reason": "小型でオンデバイス動作可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "工場ラインで不良品画像をリアルタイム検知したい時",
+      "オフライン環境で技術文書の内容を素早く把握したい時",
+      "IoTデバイスに音声コマンド機能を組み込みたい時"
+    ],
+    "steps": [
+      "Nemotron 3 Nano OmniのSDKを開発環境にセットアップする",
+      "対象のエッジデバイスで推論を実行するコードを記述する",
+      "学習済みモデルをデバイスにデプロイし、推論速度と精度を評価する",
+      "結果を基にモデルの最適化やデバイスの選定を行う"
+    ],
+    "prompt": "NVIDIA Nemotron 3 Nano Omniを使って、エッジデバイス上で工場ラインの製品画像をリアルタイムで解析し、異常を検知するPythonコードを生成してください。",
+    "tags": [
+      "エッジAI",
+      "マルチモーダル",
+      "オンデバイス",
+      "リアルタイム",
+      "Python"
+    ],
+    "id": "20260505_063038_03",
+    "date": "2026-05-05",
+    "source_news": {
+      "title": "NVIDIA Nemotron 3 Nano Omni発表、マルチモーダルAIを小型化。",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Nemotron 3 Nano OmniでAgentの設計支援",
     "news_highlight": "NVIDIA Nemotron 3 Nano Omniは長文・マルチモーダル対応、自律Agent開発を加速",
     "problem_context": "Agent開発の複雑なロジック設計",
