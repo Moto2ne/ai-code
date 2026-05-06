@@ -1,5 +1,121 @@
 [
   {
+    "title": "GPT-5.5 InstantでAPI設計レビュー",
+    "news_highlight": "GPT-5.5 InstantはChatGPTのデフォルトモデルを更新、性能向上とハルシネーション削減。",
+    "problem_context": "AIによる設計案やレビューの信頼性を向上させたい",
+    "recommended_ai": {
+      "model": "GPT-5.5 Instant",
+      "reason": "ハルシネーション削減で信頼性向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規API設計の初期レビュー時",
+      "既存APIの改善案を検討する時",
+      "複雑なロジックの設計方針を相談する時"
+    ],
+    "steps": [
+      "1. 設計中のAPI仕様書（OpenAPIなど）を準備する。",
+      "2. AIにAPI仕様書を貼り付け、レビューを依頼する。",
+      "3. AIの指摘事項や改善提案を確認し、設計に反映する。",
+      "4. 必要に応じてAIと対話し、詳細を詰める。"
+    ],
+    "prompt": "以下のAPI仕様書をレビューし、潜在的な問題点、改善点、セキュリティ上の懸念を指摘してください。特に整合性と効率性に注目してください。",
+    "tags": [
+      "API設計",
+      "コードレビュー",
+      "品質向上"
+    ],
+    "id": "20260507_062956_01",
+    "date": "2026-05-07",
+    "source_news": {
+      "title": "GPT-5.5 Instant発表、ChatGPTの性能向上とハルシネーション削減。",
+      "url": "https://openai.com/index/gpt-5-5-instant"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-5.5 Instantで安全なコード生成",
+    "news_highlight": "GPT-5.5 Instantのシステムカード公開、高速応答と安全利用の詳細が明確に。",
+    "problem_context": "セキュリティ脆弱性の少ないコードを効率的に書きたい",
+    "recommended_ai": {
+      "model": "GPT-5.5 Instant",
+      "reason": "安全性ガイドラインが明確",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能開発でセキュリティを考慮したコードを生成する時",
+      "既存コードのセキュリティ脆弱性がないかレビューしたい時",
+      "特定のセキュリティ要件を満たすコードスニペットが必要な時"
+    ],
+    "steps": [
+      "1. 開発中の機能要件とセキュリティ要件を明確にする。",
+      "2. GPT-5.5 Instantに要件と既存コード（あれば）を提示し、安全なコード生成を依頼する。",
+      "3. 生成されたコードをセキュリティ観点からレビューし、必要に応じて修正を指示する。",
+      "4. 最終的なコードをテスト環境で動作確認し、脆弱性スキャンを実施する。"
+    ],
+    "prompt": "以下の機能要件とセキュリティ要件を満たすPythonのWeb APIエンドポイントを生成してください。SQLインジェクション対策と入力値検証を必ず含めてください。",
+    "tags": [
+      "コード生成",
+      "セキュリティ",
+      "レビュー",
+      "Python"
+    ],
+    "id": "20260507_063024_02",
+    "date": "2026-05-07",
+    "source_news": {
+      "title": "GPT-5.5 Instantのシステムカード公開、モデル詳細と安全性。",
+      "url": "https://openai.com/index/gpt-5-5-instant-system-card"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "OpenAI MRCプロトコルで分散学習コード最適化",
+    "news_highlight": "OpenAI MRCプロトコル発表、大規模AI学習の性能と安定性を向上させる新ネットワークプロトコル",
+    "problem_context": "大規模AI学習のネットワークボトルネック解消",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "分散学習コード設計に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模モデルの分散学習コードを設計する時",
+      "既存の分散学習コードのパフォーマンスを改善したい時",
+      "MLOpsパイプラインの学習ステージを最適化する時"
+    ],
+    "steps": [
+      "現在使用している分散学習フレームワーク（例: PyTorch Distributed）と学習コードを準備する。",
+      "AIにMRCプロトコルの特性を考慮した最適化ポイントを質問する。",
+      "AIの提案に基づき、コードのデータロード、通信、同期部分を修正する。",
+      "修正後のコードで学習を実行し、性能と安定性を評価する。"
+    ],
+    "prompt": "PyTorch DistributedDataParallelを使用しています。OpenAI MRCプロトコルの特性を最大限に活かすため、データロード、通信、同期処理の最適化戦略を提案してください。具体的なコード例も示してください。",
+    "tags": [
+      "分散学習",
+      "MLOps",
+      "パフォーマンス最適化",
+      "ネットワークプロトコル"
+    ],
+    "id": "20260507_063054_03",
+    "date": "2026-05-07",
+    "source_news": {
+      "title": "OpenAIがMRCプロトコル発表、大規模AI学習の性能と安定性向上。",
+      "url": "https://openai.com/index/mrc-supercomputer-networking"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "LLMでAIエージェント連携リスクを評価",
     "news_highlight": "Microsoft Researchが複数AIエージェント連携時のネットワークリスクを特定、新安全対策を研究",
     "problem_context": "複数AIエージェント連携システムの潜在リスク特定",
