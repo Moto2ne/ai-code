@@ -1,5 +1,122 @@
 [
   {
+    "title": "Gemini APIで長時間ジョブのリアルタイム処理",
+    "news_highlight": "Gemini APIにWebhooksが追加され、長時間ジョブの完了通知をリアルタイム化",
+    "problem_context": "長時間ジョブの完了通知遅延とポーリング負荷",
+    "recommended_ai": {
+      "model": "Gemini API",
+      "reason": "Webhooks機能追加",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "長時間AI推論完了後のユーザー通知",
+      "バッチ処理完了後の自動後続処理トリガー",
+      "大規模データ処理の進捗状況リアルタイム監視"
+    ],
+    "steps": [
+      "1. Gemini APIの長時間ジョブ呼び出しコードを特定。",
+      "2. Webhookエンドポイント（例: /api/gemini-callback）を実装。",
+      "3. Gemini API呼び出し時にWebhook URLを設定し、ジョブを実行。",
+      "4. Webhookエンドポイントでイベントを受信し、後続処理を自動実行。"
+    ],
+    "prompt": "Python FlaskでGemini APIからのPOSTリクエストを受け取るWebhookエンドポイントを作成。リクエストボディをログに出力し、200 OKを返してください。",
+    "tags": [
+      "Webhooks",
+      "非同期処理",
+      "API連携",
+      "リアルタイム通知"
+    ],
+    "id": "20260508_062613_01",
+    "date": "2026-05-08",
+    "source_news": {
+      "title": "Gemini APIにWebhooks追加、長時間ジョブの遅延を削減",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/event-driven-webhooks/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "OpenAI音声APIでリアルタイム音声翻訳",
+    "news_highlight": "OpenAI APIの新リアルタイム音声モデルは推論、翻訳、文字起こしに対応し、より自然な音声AI体験を実現。",
+    "problem_context": "多言語対応アプリの音声UI開発効率化",
+    "recommended_ai": {
+      "model": "OpenAIリアルタイム音声モデル",
+      "reason": "高精度なリアルタイム音声処理",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "多言語会議のリアルタイム通訳機能の実装",
+      "音声コマンドによるアプリケーション操作の精度向上",
+      "顧客サポートチャットボットの音声応答機能強化"
+    ],
+    "steps": [
+      "OpenAI APIキーを取得し、開発環境に設定する。",
+      "音声入力ストリームをOpenAI音声APIに送信するコードを記述する。",
+      "APIからのリアルタイム応答（翻訳/文字起こし/推論結果）を処理する。",
+      "ユーザーインターフェースに結果を表示し、動作をテストする。"
+    ],
+    "prompt": "PythonでOpenAIリアルタイム音声APIを使い、マイク入力音声をリアルタイムで英語に翻訳し、翻訳結果をテキストとして表示するコードを生成してください。",
+    "tags": [
+      "音声AI",
+      "リアルタイム処理",
+      "API連携",
+      "多言語対応"
+    ],
+    "id": "20260508_062639_02",
+    "date": "2026-05-08",
+    "source_news": {
+      "title": "OpenAI APIに新リアルタイム音声モデル、音声AI体験を向上",
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCoreで自律エージェント設計",
+    "news_highlight": "Amazon Bedrock AgentCore PaymentsでAIエージェントが外部サービス利用料を即時支払い可能に。",
+    "problem_context": "AIエージェントの外部サービス利用コスト管理",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "決済機能が統合されたため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントが外部APIを利用する際の支払い処理を自動化したい時",
+      "AIエージェントにクラウドサービス利用料を自動で支払わせたい時",
+      "AIエージェントの自律的なタスク実行におけるコスト管理を効率化したい時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCoreでエージェントを定義する。",
+      "2. 外部サービス利用に必要なAPIやリソースを特定する。",
+      "3. AgentCore Paymentsで支払い方法と予算を設定する。",
+      "4. エージェントの実行ログと支払い履歴を監視し、コストを最適化する。"
+    ],
+    "prompt": "Amazon Bedrock AgentCoreで、外部API（例: 翻訳API）を利用し、その利用料をAgentCore Paymentsで自動支払いするエージェントの設計概要をJSON形式で記述してください。",
+    "tags": [
+      "AIエージェント",
+      "コスト管理",
+      "API連携",
+      "Bedrock"
+    ],
+    "id": "20260508_062705_03",
+    "date": "2026-05-08",
+    "source_news": {
+      "title": "Amazon Bedrock AgentCoreに決済機能、AIエージェントが支払い可能に",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GPT-5.5 InstantでAPI設計レビュー",
     "news_highlight": "GPT-5.5 InstantはChatGPTのデフォルトモデルを更新、性能向上とハルシネーション削減。",
     "problem_context": "AIによる設計案やレビューの信頼性を向上させたい",
