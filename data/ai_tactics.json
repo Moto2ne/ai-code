@@ -1,5 +1,106 @@
 [
   {
+    "title": "vLLM V1で強化学習モデルをデプロイ",
+    "news_highlight": "vLLM V1が強化学習の正確性を向上、RLHFモデルの推論品質が安定",
+    "problem_context": "強化学習モデルの推論品質を向上",
+    "recommended_ai": {
+      "model": "vLLM V1",
+      "reason": "強化学習モデルの推論精度向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "RLHFでファインチューニングしたモデルを本番環境にデプロイする時",
+      "強化学習で生成されたテキストの品質が不安定な時",
+      "複数の強化学習モデルの推論性能を比較評価する時"
+    ],
+    "steps": [
+      "1. 既存のvLLM環境をV1にアップデートする。",
+      "2. 強化学習でファインチューニングされたモデルをvLLM V1でロードする。",
+      "3. モデルにプロンプトを与え、推論結果の品質を評価する。",
+      "4. 以前のバージョンや他の推論エンジンと比較し、品質向上を確認する。"
+    ],
+    "prompt": "vLLM V1でデプロイしたモデルに対し、以下の顧客問い合わせに最適な回答を生成してください。『製品Aの返品方法を教えてください。』",
+    "tags": [
+      "LLM推論",
+      "強化学習",
+      "モデルデプロイ",
+      "品質向上"
+    ],
+    "id": "20260509_062800_01",
+    "date": "2026-05-09",
+    "source_news": {
+      "title": "vLLMがV1に進化、強化学習の正確性を向上。",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "GPT-4oでMoE的振る舞いを設計",
+    "news_highlight": "MoEの新手法により、エキスパートモジュールのルーティング精度が向上し、特定タスクへの適応性が高まる",
+    "problem_context": "特定タスクでLLMの出力精度が低い",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "MoEの概念をプロンプトで模倣し、専門性を引き出すため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "特定のプログラミング言語/フレームワークに特化したコードを生成したい時",
+      "特定のドメイン知識に基づいたテキストを生成したい時",
+      "既存のコードベースのスタイルガイドに沿ったレビューやリファクタリングを行いたい時"
+    ],
+    "steps": [
+      "1. 対象とするタスクの専門知識やスタイルガイドを定義する。",
+      "2. GPT-4oに、その専門知識を持つ「エキスパート」としての役割を指示するプロンプトを作成する。",
+      "3. タスクの入力データと共にプロンプトを送信し、出力を得る。",
+      "4. 出力が期待通りか評価し、必要に応じてプロンプトを調整する。"
+    ],
+    "prompt": "あなたはセキュリティ監査のエキスパートです。以下のPythonコードについて、OWASP Top 10の脆弱性観点からレビューし、修正案を提示してください。",
+    "tags": [
+      "プロンプトエンジニアリング",
+      "モデルカスタマイズ"
+    ],
+    "id": "20260509_062836_02",
+    "date": "2026-05-09",
+    "source_news": {
+      "title": "Mixture of Experts (MoE)でモジュール性を高める新手法。",
+      "url": "https://huggingface.co/blog/allenai/emo"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "AI戦術",
+    "problem_context": "AI技術の活用",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "高性能",
+      "badge_color": "orange"
+    },
+    "prompt": "最新のAI技術を活用して効率化を図ってください。",
+    "tags": [
+      "AI",
+      "自動生成"
+    ],
+    "id": "20260509_062901_03",
+    "date": "2026-05-09",
+    "source_news": {
+      "title": "サイバーセキュリティ向け小型特化モデルCyberSecQwen-4B発表。",
+      "url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/cybersecqwen-4b"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Gemini APIで長時間ジョブのリアルタイム処理",
     "news_highlight": "Gemini APIにWebhooksが追加され、長時間ジョブの完了通知をリアルタイム化",
     "problem_context": "長時間ジョブの完了通知遅延とポーリング負荷",
