@@ -1,5 +1,121 @@
 [
   {
+    "title": "Amazon Bedrock AgentCoreで自律決済エージェント設計",
+    "news_highlight": "Amazon Bedrock AgentCore PaymentsがAIエージェントの自律決済を可能にし、自律型AI実現へ。",
+    "problem_context": "AIエージェントの自律的なリソース利用と支払い管理",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "新機能の直接的な利用と設計支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "外部API利用時に自動で課金処理を行うエージェントを設計する時",
+      "クラウドサービスのリソースを自律的にプロビジョニングし、支払いを行うシステムを構築する時",
+      "AIエージェントの費用対効果を最大化する支払いロジックを検討する時"
+    ],
+    "steps": [
+      "Amazon Bedrock AgentCore Paymentsのドキュメントを確認する。",
+      "エージェントが利用する外部サービスと支払いフローを定義する。",
+      "支払いロジックとセキュリティ要件をAIに提示し、アーキテクチャ設計を依頼する。",
+      "提案された設計に基づき、プロトタイプ実装とテストを行う。"
+    ],
+    "prompt": "Amazon Bedrock AgentCore Paymentsを利用し、外部APIを自律的に利用・課金するAIエージェントのアーキテクチャ設計を提案してください。セキュリティとエラーハンドリングを考慮してください。",
+    "tags": [
+      "エージェント開発",
+      "アーキテクチャ設計",
+      "コスト管理"
+    ],
+    "id": "20260511_062225_01",
+    "date": "2026-05-11",
+    "source_news": {
+      "title": "AIエージェントが支払いを行うBedrock AgentCore Paymentsを発表。自律型AIの実現へ。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "OpenAI APIリアルタイム音声モデルで音声UI設計",
+    "news_highlight": "OpenAI APIにリアルタイム音声モデル追加、音声認識・翻訳・文字起こしを強化",
+    "problem_context": "リアルタイム音声処理の遅延と精度不足",
+    "recommended_ai": {
+      "model": "OpenAI APIリアルタイム音声モデル",
+      "reason": "リアルタイム性でUX向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "音声コマンドでアプリを操作したい時",
+      "多言語ユーザーとリアルタイムで会話したい時",
+      "会議の音声を即座にテキスト化したい時"
+    ],
+    "steps": [
+      "OpenAI APIキーを設定する",
+      "音声入力用のマイクとWeb Audio APIを準備する",
+      "リアルタイム音声ストリームをAPIに送信するコードを書く",
+      "APIからのテキスト出力をUIに表示し、応答処理を実装する"
+    ],
+    "prompt": "JavaScriptとWeb Audio APIを使って、マイクからのリアルタイム音声ストリームをOpenAI APIに送信し、認識結果をコンソールに出力するコードを生成してください。",
+    "tags": [
+      "音声認識",
+      "リアルタイム",
+      "API連携",
+      "UI/UX"
+    ],
+    "id": "20260511_062251_02",
+    "date": "2026-05-11",
+    "source_news": {
+      "title": "OpenAI APIにリアルタイム音声モデル追加。音声認識・翻訳・文字起こしを強化。",
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-5.5-Cyberで脆弱性コードを修正",
+    "news_highlight": "GPT-5.5とGPT-5.5-Cyberがサイバーセキュリティ脆弱性研究を加速、重要インフラ保護を支援",
+    "problem_context": "コードのセキュリティ脆弱性を迅速に特定・修正したい",
+    "recommended_ai": {
+      "model": "GPT-5.5-Cyber",
+      "reason": "サイバーセキュリティ特化モデル",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエスト前のセキュリティコードレビュー時",
+      "既存システムの脆弱性診断で発見された問題の修正時",
+      "新しい機能開発におけるセキュアコーディングの確認時"
+    ],
+    "steps": [
+      "1. 脆弱性が疑われるコードスニペットを特定する",
+      "2. コードと関連する脆弱性情報（CVEなど）をAIに提示する",
+      "3. AIから提案された修正案やセキュアな実装パターンを確認する",
+      "4. 提案された修正を適用し、テスト環境でセキュリティテストを実施する"
+    ],
+    "prompt": "以下のPythonコードに存在するSQLインジェクション脆弱性を特定し、安全な修正案を提示してください。修正後のコード例も示してください。",
+    "tags": [
+      "セキュリティ",
+      "脆弱性",
+      "コードレビュー",
+      "修正"
+    ],
+    "id": "20260511_062316_03",
+    "date": "2026-05-11",
+    "source_news": {
+      "title": "GPT-5.5とGPT-5.5-Cyberでサイバーセキュリティの脆弱性研究を加速。",
+      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "VLMをInferentia2で推論最適化",
     "news_highlight": "Vision-languageモデルをAWS Inferentia2で低コストかつ高精度にデプロイ",
     "problem_context": "大規模VLMの推論コスト削減とパフォーマンス向上",
