@@ -1,5 +1,122 @@
 [
   {
+    "title": "vLLMでLLM推論を最適化",
+    "news_highlight": "vLLM V1がLLM推論効率を最大化、RLタスクでの応答正確性を強化",
+    "problem_context": "LLM推論コスト高騰とRL応答の不安定性",
+    "recommended_ai": {
+      "model": "vLLM",
+      "reason": "LLM推論効率とRL精度を両立",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プロダクション環境のLLM API応答速度を改善したい時",
+      "LLMベースの強化学習エージェントの推論精度を高めたい時",
+      "多数のユーザーが利用するLLMアプリケーションのコストを削減したい時"
+    ],
+    "steps": [
+      "既存のLLM推論コード（例: Hugging Face Transformers）を特定する",
+      "`pip install vllm`でvLLMをインストールし、モデルをロードする",
+      "`vllm.LLM`で推論を実行するコードに書き換える",
+      "書き換えたコードでパフォーマンスとRLタスクの正確性を評価する"
+    ],
+    "prompt": "既存のHugging Face Transformers推論コードをvLLMに移行するPythonコードを生成してください。モデルは`meta-llama/Llama-2-7b-hf`を使用し、バッチ推論の例を含めてください。",
+    "tags": [
+      "LLM最適化",
+      "推論効率",
+      "強化学習",
+      "Python"
+    ],
+    "id": "20260512_063520_01",
+    "date": "2026-05-12",
+    "source_news": {
+      "title": "LLM推論効率化ライブラリvLLMがV1に進化、RLにおける正確性を重視。",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "EMOの思想でGPT-4oをモジュール活用",
+    "news_highlight": "MoEアーキテクチャのEMO発表、大規模モデルの効率化・モジュール化に貢献。",
+    "problem_context": "複雑な開発タスクの効率的な分割と実行",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "高い汎用性とAPI連携の容易さ",
+      "badge_color": "blue"
+    },
+    "use_cases": [
+      "複雑な機能のコード生成",
+      "大規模なリファクタリング計画",
+      "複数技術スタックにまたがる設計レビュー"
+    ],
+    "steps": [
+      "1. 複雑なタスクを複数の小さなサブタスクに分解する。",
+      "2. 各サブタスクに最適なプロンプトを作成する。",
+      "3. GPT-4oに各サブタスクを順次実行させる。",
+      "4. 各サブタスクの結果を統合し、最終成果物を作成する。"
+    ],
+    "prompt": "あなたはシステム設計のエキスパートです。ユーザー管理機能の設計を、DBスキーマ、APIエンドポイント、フロントエンドコンポーネントの3つのモジュールに分割し、それぞれの設計概要を提示してください。",
+    "tags": [
+      "システム設計",
+      "タスク分割",
+      "プロンプトエンジニアリング",
+      "GPT-4o"
+    ],
+    "id": "20260512_063555_02",
+    "date": "2026-05-12",
+    "source_news": {
+      "title": "MoEアーキテクチャのEMO発表、大規模モデルの効率化・モジュール化に貢献。",
+      "url": "https://huggingface.co/blog/allenai/emo"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-5.5-Cyberで脆弱性コードレビュー",
+    "news_highlight": "GPT-5.5とGPT-5.5-Cyberがサイバーセキュリティ分野の効率化を推進、脆弱性調査を加速。",
+    "problem_context": "サイバーセキュリティの脆弱性特定と対策に時間がかかる",
+    "recommended_ai": {
+      "model": "GPT-5.5-Cyber",
+      "reason": "サイバーセキュリティ特化で高精度",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードをセキュリティレビューしたい時",
+      "既存システムに潜在する脆弱性を特定したい時",
+      "インシデント発生時に疑わしいコードの安全性を迅速に評価したい時"
+    ],
+    "steps": [
+      "レビューしたいコードスニペットを準備する",
+      "GPT-5.5-Cyberにコードを貼り付ける",
+      "潜在的な脆弱性とその修正案を依頼する",
+      "提案された修正案をレビューし、必要に応じて適用する"
+    ],
+    "prompt": "以下のPythonコードに潜在的なセキュリティ脆弱性がないか分析し、具体的な修正案を提示してください。",
+    "tags": [
+      "サイバーセキュリティ",
+      "脆弱性分析",
+      "コードレビュー",
+      "GPT-5.5-Cyber"
+    ],
+    "id": "20260512_063620_03",
+    "date": "2026-05-12",
+    "source_news": {
+      "title": "OpenAIがGPT-5.5とGPT-5.5-Cyberを発表、サイバーセキュリティ分野の効率化を推進。",
+      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "Amazon Bedrock AgentCoreで自律決済エージェント設計",
     "news_highlight": "Amazon Bedrock AgentCore PaymentsがAIエージェントの自律決済を可能にし、自律型AI実現へ。",
     "problem_context": "AIエージェントの自律的なリソース利用と支払い管理",
