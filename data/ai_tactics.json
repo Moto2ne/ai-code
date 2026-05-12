@@ -1,5 +1,123 @@
 [
   {
+    "title": "AIエージェントでコード品質を改善",
+    "news_highlight": "AIエージェントは指示通りにタスク実行は可能だが、最適化によるユーザー状況改善は苦手",
+    "problem_context": "AIの最適化提案能力の限界を克服したい",
+    "recommended_ai": {
+      "model": "AIエージェント",
+      "reason": "最適化の意図を汲む指示が重要",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードをレビューしたい時",
+      "既存機能のパフォーマンス改善案を検討したい時",
+      "設計レビューでAIに多角的な視点からの指摘を求めたい時"
+    ],
+    "steps": [
+      "1. 改善したいコードや設計ドキュメントを準備する",
+      "2. AIエージェントに具体的な改善目標と評価基準を明確に指示する",
+      "3. AIから提案された改善案を人間が最終確認し、意図と合致するか評価する",
+      "4. 提案を基にコードを修正し、テストを実行する"
+    ],
+    "prompt": "このPythonコードのパフォーマンスを改善してください。特に、ループ処理とデータベースアクセス部分に焦点を当て、具体的な改善案と理由を提示してください。",
+    "tags": [
+      "コードレビュー",
+      "パフォーマンス最適化",
+      "設計支援"
+    ],
+    "id": "20260513_063412_01",
+    "date": "2026-05-13",
+    "source_news": {
+      "title": "AIエージェントの倫理的行動を測る新ベンチマーク発表",
+      "url": "https://www.microsoft.com/en-us/research/blog/socialreasoning-bench-measuring-whether-ai-agents-act-in-users-best-interests/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Fine-Tuning FLOPs MeterでLLM FLOPs追跡",
+    "news_highlight": "Fine-Tuning FLOPs MeterがLLMファインチューニングのFLOPsを追跡、EU AI Act対応を支援",
+    "problem_context": "LLMのEU AI Actコンプライアンス判断を支援",
+    "recommended_ai": {
+      "model": "Fine-Tuning FLOPs Meter",
+      "reason": "LLMの計算資源を可視化し、EU AI Act対応を支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "LLMファインチューニングの計算コストを把握したい時",
+      "EU AI Actの規制準拠を確認したい時",
+      "モデルの環境負荷を評価したい時"
+    ],
+    "steps": [
+      "1. Amazon SageMaker AI環境をセットアップ",
+      "2. Fine-Tuning FLOPs Meterをインストール",
+      "3. ファインチューニングスクリプトにFLOPs追跡コードを組み込む",
+      "4. FLOPsレポートを生成し、コンプライアンスを評価"
+    ],
+    "prompt": "Amazon SageMaker AI上でFine-Tuning FLOPs Meterを使い、LLMファインチューニング中のFLOPsを追跡するPythonコードを生成してください。",
+    "tags": [
+      "LLM",
+      "ファインチューニング",
+      "EU AI Act",
+      "SageMaker"
+    ],
+    "id": "20260513_063440_02",
+    "date": "2026-05-13",
+    "source_news": {
+      "title": "EU AI Act対応のLLMファインチューニング技術を解説",
+      "url": "https://aws.amazon.com/blogs/machine-learning/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "vLLM V1でLLM推論の品質向上",
+    "news_highlight": "vLLM V1がRLモデルの推論正確性を向上、出力品質と信頼性を強化",
+    "problem_context": "LLM推論の出力品質が不安定",
+    "recommended_ai": {
+      "model": "vLLM V1",
+      "reason": "RLモデルの正確性向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "RLHFでファインチューニングしたモデルのデプロイ",
+      "複雑なビジネスロジックを含むプロンプトの実行",
+      "ユーザーからの多様な質問に対する応答生成",
+      "コード生成やデータ抽出など、正確性が求められるタスク"
+    ],
+    "steps": [
+      "既存のvLLM環境をV1にアップデートする。",
+      "RLHFでファインチューニングしたモデルをvLLM V1でデプロイする。",
+      "複雑なプロンプトで推論を実行し、出力品質を評価する。",
+      "以前のバージョンと比較し、出力の正確性や指示追従性の改善を確認する。"
+    ],
+    "prompt": "以下の顧客レビューを感情分析し、ポジティブ、ネガティブ、中立のいずれかを判定してください。判定理由も簡潔に記述してください。",
+    "tags": [
+      "LLM推論",
+      "RLHF",
+      "モデルデプロイ",
+      "品質改善",
+      "Python"
+    ],
+    "id": "20260513_063506_03",
+    "date": "2026-05-13",
+    "source_news": {
+      "title": "vLLMがV1に更新、RLにおける正確性を重視",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "vLLMでLLM推論を最適化",
     "news_highlight": "vLLM V1がLLM推論効率を最大化、RLタスクでの応答正確性を強化",
     "problem_context": "LLM推論コスト高騰とRL応答の不安定性",
