@@ -1,5 +1,123 @@
 [
   {
+    "title": "SageMaker Training Compilerで学習高速化",
+    "news_highlight": "SageMaker Training Compilerが学習時間を最大50%短縮、コストを最大30%削減。",
+    "problem_context": "大規模MLモデル学習の計算コストと時間。",
+    "recommended_ai": {
+      "model": "Amazon SageMaker Training Compiler",
+      "reason": "学習コードを自動で最適化し高速化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模な基盤モデルの学習時間を短縮したい時",
+      "MLモデル学習のクラウド費用を削減したい時",
+      "ハイパーパラメータチューニングの試行回数を増やしたい時"
+    ],
+    "steps": [
+      "1. 既存のSageMaker学習スクリプト（PyTorch/TensorFlow）を開く。",
+      "2. SageMaker Estimatorの初期化時に`compiler_config=sagemaker.compiler.CompilerConfig()`を追加。",
+      "3. 学習ジョブを実行し、最適化前後の学習時間とコストを比較する。",
+      "4. 最適化されたモデルの性能を評価し、本番環境にデプロイする。"
+    ],
+    "prompt": "SageMaker Python SDKでPyTorchモデルを学習する際、Training Compilerを有効にするEstimatorの設定コードを生成してください。必要なインポートと引数を含めてください。",
+    "tags": [
+      "AWS",
+      "SageMaker",
+      "MLOps",
+      "学習最適化",
+      "コスト削減"
+    ],
+    "id": "20260515_063157_01",
+    "date": "2026-05-15",
+    "source_news": {
+      "title": "AWSでの基盤モデル学習・推論の効率化ツールを発表。",
+      "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Bedrock AgentCoreでAIエージェントの安全な情報収集",
+    "news_highlight": "Bedrock AgentCoreはChromeポリシーでAIエージェントのブラウジングを特定サイトに制限、セッション記録で監視可能。",
+    "problem_context": "AIエージェントの意図しない情報アクセスを防止したい。",
+    "recommended_ai": {
+      "model": "Bedrock AgentCore",
+      "reason": "ブラウジング制御機能が提供されるため。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "社内ドキュメントから特定の技術情報を抽出する時",
+      "外部APIの公式ドキュメントから仕様を調査する時",
+      "特定の技術ブログから最新のベストプラクティスを収集する時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCoreで新しいAIエージェントを構成する。",
+      "2. Chrome Enterpriseポリシーを設定し、エージェントがアクセスできるURLを特定のドメインに制限する。",
+      "3. エージェントに特定のウェブサイトから情報を抽出するタスクを指示する。",
+      "4. セッション記録を確認し、エージェントが制限された範囲内で動作していることを検証する。"
+    ],
+    "prompt": "指定された社内Wikiサイトから、最新の認証プロトコルに関する情報を抽出し、主要な変更点と推奨される実装方法を要約してください。",
+    "tags": [
+      "AIエージェント",
+      "セキュリティ",
+      "情報抽出",
+      "Bedrock"
+    ],
+    "id": "20260515_063223_02",
+    "date": "2026-05-15",
+    "source_news": {
+      "title": "Bedrock AgentCoreでAIエージェントのブラウジングを制御可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Codexで安全なコード実行環境を構築",
+    "news_highlight": "Codex向けWindowsサンドボックス技術公開、ファイル/NW制限で安全なコード実行",
+    "problem_context": "AI生成コード実行時のセキュリティリスク低減",
+    "recommended_ai": {
+      "model": "Codex",
+      "reason": "安全な実行環境を提供",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AI生成コードの安全な動作検証",
+      "未知のコードスニペットの挙動分析",
+      "自動テスト環境でのAIコード実行"
+    ],
+    "steps": [
+      "Codexに特定の機能を持つコード生成を依頼する。",
+      "生成されたコードをサンドボックス環境にデプロイする。",
+      "サンドボックス内でコードを実行し、挙動を観察する。",
+      "実行ログや出力を分析し、セキュリティリスクがないか確認する。"
+    ],
+    "prompt": "Pythonで、指定されたディレクトリ内の全ファイルを読み込み、特定のキーワードを検索するスクリプトを生成してください。ファイルアクセスは制限された環境を想定。",
+    "tags": [
+      "セキュリティ",
+      "コード生成",
+      "サンドボックス",
+      "Windows"
+    ],
+    "id": "20260515_063251_03",
+    "date": "2026-05-15",
+    "source_news": {
+      "title": "Windows版Codex向け安全なサンドボックス構築技術を公開。",
+      "url": "https://openai.com/index/building-codex-windows-sandbox"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
     "title": "GridSFMで電力潮流予測モデル構築",
     "news_highlight": "GridSFM発表、ミリ秒で交流最適潮流予測、電力網の効率とコストを改善",
     "problem_context": "電力系統のリアルタイム潮流予測の遅延",
