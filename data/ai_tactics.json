@@ -1,5 +1,125 @@
 [
   {
+    "title": "Hugging FaceでAWS SageMaker推論",
+    "news_highlight": "AWS SageMakerでHugging Faceモデルの学習・推論が可能、デプロイが容易に",
+    "problem_context": "Hugging FaceモデルのAWS本番デプロイが複雑",
+    "recommended_ai": {
+      "model": "Hugging Face Transformers",
+      "reason": "AWS SageMakerと連携し、デプロイ・運用を簡素化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ファインチューニングしたHugging Faceモデルを本番環境にデプロイしたい時",
+      "Hugging Face HubのモデルをAPIとして提供したい時",
+      "低レイテンシでAIモデルの推論サービスを構築したい時"
+    ],
+    "steps": [
+      "Hugging Faceモデルを選択し、必要であればファインチューニングする",
+      "AWS SageMaker SDKを使ってHugging Face Estimatorを定義する",
+      "SageMakerのトレーニングジョブを起動し、モデルを学習させる",
+      "学習済みモデルをSageMakerのエンドポイントとしてデプロイする",
+      "デプロイされたエンドポイントに推論リクエストを送信し動作確認"
+    ],
+    "prompt": "PythonとAWS SageMaker SDKを使って、Hugging Faceの`distilbert-base-uncased`モデルをSageMakerエンドポイントとしてデプロイするコードを生成してください。推論スクリプトも合わせて含めてください。",
+    "tags": [
+      "AWS",
+      "SageMaker",
+      "Hugging Face",
+      "推論",
+      "デプロイ"
+    ],
+    "id": "20260516_062746_01",
+    "date": "2026-05-16",
+    "source_news": {
+      "title": "AWSでの基盤モデル学習・推論にHugging Face活用",
+      "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "GitHub Copilotで推論バッチ処理を非同期化",
+    "news_highlight": "連続バッチ処理を非同期化し、GPU利用率向上と推論スループット最大2倍を実現",
+    "problem_context": "AI推論のGPUリソースが非効率、レイテンシが高い",
+    "recommended_ai": {
+      "model": "GitHub Copilot",
+      "reason": "既存コードの非同期化を効率的に支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存の同期推論バッチ処理を非同期化したい時",
+      "推論サーバーのGPU利用率を向上させたい時",
+      "推論APIのレスポンスタイムを改善したい時"
+    ],
+    "steps": [
+      "非同期化したい推論バッチ処理のPythonコードを開く",
+      "非同期処理を導入したい箇所でGitHub Copilotにコード提案を依頼",
+      "Copilotが提案したasyncioベースの非同期コードをレビューし適用",
+      "性能テストを実施し、スループットとレイテンシの改善を確認"
+    ],
+    "prompt": "このPythonの推論バッチ処理コードをasyncioを使って非同期化してください。複数の推論リクエストを並行処理できるように修正し、GPU利用効率を高めてください。",
+    "tags": [
+      "Python",
+      "非同期処理",
+      "推論最適化",
+      "MLOps"
+    ],
+    "id": "20260516_062813_02",
+    "date": "2026-05-16",
+    "source_news": {
+      "title": "連続バッチ処理の非同期化で推論効率を向上",
+      "url": "https://huggingface.co/blog/continuous_async"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Granite R2で多言語セマンティック検索",
+    "news_highlight": "IBM Granite R2は高性能オープン多言語埋め込みモデルで、セマンティック検索に最適。",
+    "problem_context": "多言語コンテンツの意味検索精度を向上させたい。",
+    "recommended_ai": {
+      "model": "Granite R2",
+      "reason": "多言語対応の高性能埋め込みモデル。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "多言語対応のドキュメント検索機能を開発したい時",
+      "ユーザーが入力した自然言語で製品を検索したい時",
+      "既存のキーワード検索の関連性を改善したい時"
+    ],
+    "steps": [
+      "検索対象の多言語テキストデータを準備する。",
+      "Granite R2 APIまたはライブラリでテキストを埋め込みベクトルに変換する。",
+      "ベクトルデータベースに埋め込みをインデックス化し保存する。",
+      "ユーザーの検索クエリをGranite R2で埋め込み、類似検索を実行する。",
+      "検索結果を関連性の高い順に表示する機能を実装する。"
+    ],
+    "prompt": "PythonとSentence Transformersライブラリ（Granite R2を想定）を使って、テキストリストからセマンティック検索を行うコードを生成してください。検索クエリと類似度上位3件を返す関数を含めてください。",
+    "tags": [
+      "セマンティック検索",
+      "埋め込みモデル",
+      "Python",
+      "多言語"
+    ],
+    "id": "20260516_062843_03",
+    "date": "2026-05-16",
+    "source_news": {
+      "title": "IBMの高性能オープン多言語埋め込みモデルGranite R2公開",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "SageMaker Training Compilerで学習高速化",
     "news_highlight": "SageMaker Training Compilerが学習時間を最大50%短縮、コストを最大30%削減。",
     "problem_context": "大規模MLモデル学習の計算コストと時間。",
