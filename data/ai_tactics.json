@@ -1,5 +1,125 @@
 [
   {
+    "title": "Stream Vision AgentsとNova 2 Sonicで音声AIエージェント構築",
+    "news_highlight": "Stream Vision AgentsとAmazon Nova 2 Sonicでリアルタイム音声AIエージェントを数分で本番環境対応可能に",
+    "problem_context": "リアルタイム音声AIエージェントの開発時間短縮",
+    "recommended_ai": {
+      "model": "Stream Vision Agents, Amazon Nova 2 Sonic",
+      "reason": "リアルタイム音声AIエージェント構築を迅速化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客サポート向け音声ボットのプロトタイプ開発",
+      "社内業務効率化のための音声インターフェース実装",
+      "既存アプリケーションへの音声対話機能追加"
+    ],
+    "steps": [
+      "1. Stream Vision AgentsのGitHubリポジトリをクローンする。",
+      "2. Amazon BedrockとNova 2 SonicのAPIキーを設定する。",
+      "3. 提供されているサンプルコードを参考に音声エージェントをデプロイする。",
+      "4. リアルタイム音声対話の動作をテストし、応答速度を評価する。"
+    ],
+    "prompt": "Stream Vision AgentsとAmazon Nova 2 Sonicを使って、顧客からの問い合わせにリアルタイムで応答する音声AIエージェントのPythonコードを生成してください。Amazon BedrockのClaude 3 HaikuをバックエンドLLMとして使用し、簡単なFAQ応答機能を実装してください。",
+    "tags": [
+      "音声AI",
+      "リアルタイム",
+      "エージェント",
+      "Amazon Bedrock",
+      "Nova 2 Sonic",
+      "Stream Vision Agents"
+    ],
+    "id": "20260517_062153_01",
+    "date": "2026-05-17",
+    "source_news": {
+      "title": "Stream Vision AgentsとNova 2 Sonicでリアルタイム音声AIエージェントを構築。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "GPT-5.5で社内ドキュメントからAPI設計",
+    "news_highlight": "GPT-5.5がOfficeQA ProでSOTA達成、企業向けエージェントワークフローに導入",
+    "problem_context": "膨大な社内ドキュメントからの情報抽出とAPI設計",
+    "recommended_ai": {
+      "model": "GPT-5.5",
+      "reason": "複雑なビジネス文書理解に優れる",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAPIを設計する際、既存のサービス仕様書から必要なエンティティやビジネスルールを抽出したい時",
+      "複数の社内ドキュメントに散らばる情報を統合し、APIエンドポイントの設計案を作成したい時",
+      "既存システムの機能拡張で、関連するドキュメントを基にRESTful APIの設計を検討したい時"
+    ],
+    "steps": [
+      "1. API設計に必要な社内ドキュメント（例: サービス仕様書）の内容をテキスト化する",
+      "2. 設計したいAPIの目的と概要を明確にする",
+      "3. GPT-5.5にドキュメントを基にしたAPI設計を依頼する",
+      "4. 提案されたAPI設計案をレビューし、修正する"
+    ],
+    "prompt": "以下の社内ドキュメントを参考に、商品情報管理APIのRESTfulな設計をJSON形式で提案してください。エンドポイント、リクエスト/レスポンスのスキーマを含めてください。ドキュメント: [ドキュメント内容]",
+    "tags": [
+      "API設計",
+      "ドキュメント理解",
+      "情報抽出",
+      "エンタープライズ"
+    ],
+    "id": "20260517_062224_02",
+    "date": "2026-05-17",
+    "source_news": {
+      "title": "DatabricksがGPT-5.5を導入、OfficeQA ProでSOTA達成。",
+      "url": "https://openai.com/index/databricks"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Granite R2で多言語検索を強化",
+    "news_highlight": "IBMが多言語埋め込みモデルGranite R2を公開、高精度な多言語テキスト理解を実現",
+    "problem_context": "多言語コンテンツのセマンティック検索精度向上",
+    "recommended_ai": {
+      "model": "Granite R2",
+      "reason": "高精度な多言語埋め込みを提供",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "多言語対応のセマンティック検索システムを開発する時",
+      "グローバルユーザー向けRAGシステムを構築する時",
+      "多言語の顧客フィードバックを分析する時"
+    ],
+    "steps": [
+      "多言語ドキュメントをGranite R2で埋め込みベクトル化する。",
+      "生成されたベクトルをベクトルデータベースにインデックス化する。",
+      "ユーザーの多言語クエリをGranite R2でベクトル化する。",
+      "クエリベクトルでベクトルDBを検索し、関連情報を取得する。"
+    ],
+    "prompt": "PythonとLangChainを使い、Granite R2で多言語テキストの埋め込みベクトルを生成し、ChromaDBに保存するコードを書いてください。日本語と英語のサンプルテキストを含めてください。",
+    "tags": [
+      "多言語",
+      "埋め込み",
+      "RAG",
+      "セマンティック検索",
+      "ベクトルDB"
+    ],
+    "id": "20260517_062253_03",
+    "date": "2026-05-17",
+    "source_news": {
+      "title": "IBMが多言語埋め込みモデルGranite R2を公開、高精度。",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Hugging FaceでAWS SageMaker推論",
     "news_highlight": "AWS SageMakerでHugging Faceモデルの学習・推論が可能、デプロイが容易に",
     "problem_context": "Hugging FaceモデルのAWS本番デプロイが複雑",
