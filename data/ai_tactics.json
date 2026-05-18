@@ -1,5 +1,124 @@
 [
   {
+    "title": "GPT-5.5で設計ドキュメントを生成",
+    "news_highlight": "GPT-5.5が企業向けエージェントに導入、OfficeQA ProベンチマークでSOTA達成。",
+    "problem_context": "複雑な設計ドキュメント作成の手間を削減",
+    "recommended_ai": {
+      "model": "GPT-5.5",
+      "reason": "企業向け文書理解に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新機能開発時の設計書ドラフト作成",
+      "既存機能改修時の設計書更新",
+      "プルリクエスト提出前の設計整合性確認"
+    ],
+    "steps": [
+      "1. 作成したい設計ドキュメントの種類と範囲を定義する。",
+      "2. 関連する要件定義書、API仕様、既存コードスニペットを準備する。",
+      "3. 準備した情報をプロンプトに含め、GPT-5.5に設計ドキュメントの生成を依頼する。",
+      "4. 生成されたドラフトをレビューし、必要に応じて修正・加筆する。"
+    ],
+    "prompt": "以下の要件定義書と既存のAPI仕様を基に、新しいユーザー管理機能のマイクロサービス設計ドキュメントを作成してください。主要なコンポーネント、データモデル、APIエンドポイント、認証認可の考慮事項を含めてください。",
+    "tags": [
+      "設計",
+      "ドキュメント生成",
+      "アーキテクチャ",
+      "要件定義"
+    ],
+    "id": "20260519_063300_01",
+    "date": "2026-05-19",
+    "source_news": {
+      "title": "GPT-5.5が企業向けエージェントに導入、ベンチマークでSOTA達成。",
+      "url": "https://openai.com/index/databricks"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GridSFMで電力網の最適潮流を予測",
+    "news_highlight": "GridSFMがAC最適潮流をミリ秒で予測、電力網の効率化とコスト削減に貢献",
+    "problem_context": "電力網の最適潮流計算の高速化と効率化",
+    "recommended_ai": {
+      "model": "GridSFM",
+      "reason": "ミリ秒予測で電力網を効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "電力系統の運用計画策定時",
+      "新規設備導入時の影響評価時",
+      "系統障害時の復旧シミュレーション時"
+    ],
+    "steps": [
+      "1. 電力系統の現状データを収集",
+      "2. GridSFM APIにデータを送信",
+      "3. 最適潮流予測結果を受信",
+      "4. 予測結果に基づき運用計画を策定"
+    ],
+    "prompt": "現在の電力系統データ（系統図、負荷、発電量、送電線容量）をJSONで入力します。AC最適潮流を予測し、各ノードの電圧、潮流、損失を計算結果として出力してください。",
+    "tags": [
+      "電力",
+      "最適化",
+      "シミュレーション",
+      "基盤モデル"
+    ],
+    "id": "20260519_063327_02",
+    "date": "2026-05-19",
+    "source_news": {
+      "title": "電力網向け小型基盤モデルGridSFM発表、ミリ秒予測で効率化。",
+      "url": "https://www.microsoft.com/en-us/research/blog/gridsfm-a-new-small-foundation-model-for-the-electric-grid/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Llama 3推論の非同期バッチ処理設計",
+    "news_highlight": "連続バッチ処理の非同期化により、LLM推論スループットを最大2倍向上、レイテンシを30%削減。",
+    "problem_context": "LLM推論の処理速度が遅く、コストが高い。",
+    "recommended_ai": {
+      "model": "Llama 3",
+      "reason": "推論対象モデルの効率化に直結",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大量のテキスト生成ジョブを高速化したい時",
+      "リアルタイム応答が求められるLLMチャットボットのバックエンド",
+      "複数のユーザーからのLLMリクエストを同時に処理するAPIサーバー"
+    ],
+    "steps": [
+      "既存のLLM推論バッチ処理コード（Python, Node.js等）を特定する。",
+      "非同期処理ライブラリ（Pythonならasyncio、Node.jsならPromise.all）を導入する。",
+      "バッチ内の各推論リクエストを非同期関数としてラップする。",
+      "非同期実行機能（例: asyncio.gather）で並行処理し、結果を収集する。",
+      "変更後のコードでパフォーマンス計測を行い、スループットとレイテンシの改善を確認する。"
+    ],
+    "prompt": "Pythonで、複数のLLM推論リクエストを非同期に処理する連続バッチ処理のコードを生成してください。`asyncio`と`httpx`を使用し、並行処理を最大化してください。",
+    "tags": [
+      "LLM",
+      "推論最適化",
+      "非同期処理",
+      "Python",
+      "パフォーマンス"
+    ],
+    "id": "20260519_063357_03",
+    "date": "2026-05-19",
+    "source_news": {
+      "title": "連続バッチ処理の非同期化でLLM推論を効率化。",
+      "url": "https://huggingface.co/blog/continuous_async"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
+      "icon": "🦙"
+    }
+  },
+  {
     "title": "GPT-5.5で企業ドキュメントから情報抽出",
     "news_highlight": "GPT-5.5がOfficeQA ProでSOTA達成、企業エージェントに導入。",
     "problem_context": "社内ドキュメントからの情報検索が非効率。",
