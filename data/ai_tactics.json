@@ -1,5 +1,123 @@
 [
   {
+    "title": "Codexでオンプレミス向けセキュアコード生成",
+    "news_highlight": "Codexがオンプレミス/ハイブリッド環境に展開、セキュアなAIコーディングを支援",
+    "problem_context": "機密データを含む環境でのAIコード生成のセキュリティ",
+    "recommended_ai": {
+      "model": "Codex",
+      "reason": "オンプレミスでセキュアに利用可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "社内機密情報を含むシステム向けコードを生成する時",
+      "外部ネットワーク接続が制限された環境でコードレビューする時",
+      "オンプレミス環境でセキュリティ基準に沿ったAPI設計を行う時"
+    ],
+    "steps": [
+      "Dell経由でCodexをオンプレミス環境にセットアップする",
+      "社内開発ツールからCodex APIへセキュアに接続する",
+      "機密情報を含むモジュールのコード生成をCodexに依頼する",
+      "生成されたコードを社内セキュリティ基準でレビューし適用する"
+    ],
+    "prompt": "社内人事システム向けに、従業員IDとパスワードを安全に処理するPythonの認証モジュールを生成してください。OWASP Top 10の脆弱性対策を考慮してください。",
+    "tags": [
+      "オンプレミス",
+      "セキュリティ",
+      "コード生成",
+      "AIエージェント",
+      "Dell"
+    ],
+    "id": "20260520_063718_01",
+    "date": "2026-05-20",
+    "source_news": {
+      "title": "OpenAIとDellがCodexをオンプレミスに展開、AIコーディングエージェントのセキュアなデプロイを支援。",
+      "url": "https://openai.com/index/dell-codex-enterprise-partnership"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
+    "title": "Content CredentialsでAI生成コンテンツ識別UI設計",
+    "news_highlight": "OpenAIがContent CredentialsとSynthIDでAI生成メディアの来歴を保証し、透明性を向上。",
+    "problem_context": "AI生成コンテンツの信頼性確保と透明性欠如。",
+    "recommended_ai": {
+      "model": "Content Credentials / SynthID",
+      "reason": "AI生成コンテンツの識別と信頼性向上。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザーにAI生成コンテンツであることを明示したい時",
+      "AI生成コンテンツの信頼性を担保する機能を実装する時",
+      "メディアコンテンツの来歴情報を表示するUIを設計する時"
+    ],
+    "steps": [
+      "1. AI生成コンテンツの識別情報を取得するAPI/SDKの仕様を確認",
+      "2. 取得した識別情報に基づき、UIに『AI生成』ラベルを表示する設計",
+      "3. ユーザーが来歴情報を確認できる詳細画面のモックアップ作成",
+      "4. 開発チームと連携し、実装計画を策定"
+    ],
+    "prompt": "AI生成画像にContent Credentialsが付与されていると仮定し、その情報を元にユーザーインターフェースで『AI生成』と表示するReactコンポーネントのコードを生成してください。",
+    "tags": [
+      "UI/UX設計",
+      "コンテンツ来歴",
+      "信頼性",
+      "React"
+    ],
+    "id": "20260520_063747_02",
+    "date": "2026-05-20",
+    "source_news": {
+      "title": "OpenAIがAIコンテンツ来歴技術を推進、安全で透明なAIエコシステムへ。",
+      "url": "https://openai.com/index/advancing-content-provenance"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "LLMで設定ファイルの変更差分をレビュー",
+    "news_highlight": "LLMによる文書破損に警鐘。委任されたワークフローでの信頼性低下リスクを指摘。",
+    "problem_context": "LLM生成コード/設定ファイルの意図せぬ変更",
+    "recommended_ai": {
+      "model": "LLM",
+      "reason": "文書生成・比較能力に優れる",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "LLMが生成した設定ファイルを適用する前",
+      "LLMが既存コードを修正した際の変更点確認",
+      "LLMが生成したSQLクエリの安全性確認"
+    ],
+    "steps": [
+      "1. LLMに設定ファイル生成/修正を依頼",
+      "2. LLMの出力と元のファイル（または期待する形式）の差分を取得",
+      "3. 差分をLLMに渡し、意図しない変更がないかレビューを依頼",
+      "4. LLMのレビュー結果と差分を人間が最終確認"
+    ],
+    "prompt": "以下の差分をレビューし、意図しない変更や潜在的な問題がないか指摘してください。特にセキュリティやパフォーマンスへの影響に注意してください。\n\n[差分テキスト]",
+    "tags": [
+      "コードレビュー",
+      "セキュリティ",
+      "設定ファイル",
+      "差分比較"
+    ],
+    "id": "20260520_063816_03",
+    "date": "2026-05-20",
+    "source_news": {
+      "title": "MicrosoftがAI委任の信頼性研究を発表、LLMによる文書破損に警鐘。",
+      "url": "https://www.microsoft.com/en-us/research/blog/further-notes-on-our-recent-research-on-ai-delegation-and-long-horizon-reliability/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5.5で設計ドキュメントを生成",
     "news_highlight": "GPT-5.5が企業向けエージェントに導入、OfficeQA ProベンチマークでSOTA達成。",
     "problem_context": "複雑な設計ドキュメント作成の手間を削減",
