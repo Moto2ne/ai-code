@@ -1,5 +1,120 @@
 [
   {
+    "title": "オープンエージェントでコードレビュー",
+    "news_highlight": "オープンエージェントの性能比較リーダーボード発表、タスク遂行能力がスコア化され比較可能に",
+    "problem_context": "プルリクエストのコード品質を向上させたい",
+    "recommended_ai": {
+      "model": "オープンエージェント",
+      "reason": "リーダーボードで高評価",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードをレビューしたい時",
+      "チームメンバーのコードレビューを効率化したい時",
+      "既存コードの潜在的なバグや改善点を特定したい時"
+    ],
+    "steps": [
+      "1. レビューしたいコードをコピーする",
+      "2. オープンエージェントにコードとレビュー観点を提示",
+      "3. エージェントの提案をレビューし、コードに適用",
+      "4. 修正後のコードをテスト環境で検証"
+    ],
+    "prompt": "以下のPythonコードをレビューし、バグ、セキュリティ脆弱性、改善点を指摘してください。また、よりPythonicな書き方を提案してください。コード: [ここにコードを貼り付け]",
+    "tags": [
+      "コードレビュー",
+      "品質向上"
+    ],
+    "id": "20260521_063943_01",
+    "date": "2026-05-21",
+    "source_news": {
+      "title": "オープンエージェントの性能を比較するリーダーボードを発表",
+      "url": "https://huggingface.co/blog/ibm-research/open-agent-leaderboard"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Ettin Rerankerで検索結果を最適化",
+    "news_highlight": "Ettin Rerankerモデルファミリーは検索結果の関連性ランキングを大幅向上、複雑なクエリにも対応。",
+    "problem_context": "検索結果の関連性が低く、情報発見に時間がかかる。",
+    "recommended_ai": {
+      "model": "Ettin Reranker",
+      "reason": "検索結果の関連性を高める",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "社内ドキュメント検索の精度を上げたい時",
+      "顧客向けFAQシステムの回答精度を向上させたい時",
+      "大規模なデータセットから特定の情報を効率的に見つけたい時"
+    ],
+    "steps": [
+      "既存の検索システムから検索クエリと上位N件の検索結果を準備する。",
+      "Ettin Reranker APIにクエリと検索結果を送信し、再ランキングされた結果を受け取る。",
+      "再ランキングされた結果をユーザーインターフェースに表示する。",
+      "ユーザーからのフィードバックを収集し、モデルの性能改善に活用する。"
+    ],
+    "prompt": "Ettin Reranker APIに、クエリ「最新のAI技術トレンド」とドキュメントリスト「[doc_id_1: 'AIの進化', doc_id_2: '機械学習の基礎', doc_id_3: 'ディープラーニング応用']」を渡し、再ランキング結果を返してください。",
+    "tags": [
+      "検索",
+      "ランキング",
+      "情報検索",
+      "RAG"
+    ],
+    "id": "20260521_064009_02",
+    "date": "2026-05-21",
+    "source_news": {
+      "title": "新しいEttin Rerankerモデルファミリーを公開",
+      "url": "https://huggingface.co/blog/ettin-reranker"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "OlmoEarth v1.1で地球観測モデルを効率化",
+    "news_highlight": "OlmoEarth v1.1は地球観測データ処理速度を25%向上させ、モデル構築の効率を改善",
+    "problem_context": "複雑な地球観測データの解析コード生成とモデル構築の効率化",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "OlmoEarth v1.1のSDK利用コード生成に最適。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "OlmoEarth v1.1のAPI/SDKを使ったデータ解析スクリプトを迅速に作成したい時",
+      "地球観測モデルの特定のパラメータ設定やアルゴリズム選択について助言が欲しい時",
+      "OlmoEarth v1.1で生成された解析結果の可視化コードを効率的に作成したい時"
+    ],
+    "steps": [
+      "OlmoEarth v1.1の公式ドキュメントやAPIリファレンスを確認する",
+      "実行したい地球観測タスク（例: 植生指数計算）を具体的に定義する",
+      "GPT-4oにOlmoEarth v1.1のSDKを使ったPythonコード生成を依頼する",
+      "生成されたコードをテストし、必要に応じて修正・デバッグする"
+    ],
+    "prompt": "OlmoEarth v1.1のPython SDKを使用し、Sentinel-2衛星画像から特定の地域（例: 日本の富士山周辺）の植生指数（NDVI）を計算し、結果をGeoTIFF形式で出力するコードを生成してください。",
+    "tags": [
+      "地球観測",
+      "データ解析",
+      "Python",
+      "SDK"
+    ],
+    "id": "20260521_064042_03",
+    "date": "2026-05-21",
+    "source_news": {
+      "title": "OlmoEarth v1.1リリース、効率的な地球観測モデル",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Codexでオンプレミス向けセキュアコード生成",
     "news_highlight": "Codexがオンプレミス/ハイブリッド環境に展開、セキュアなAIコーディングを支援",
     "problem_context": "機密データを含む環境でのAIコード生成のセキュリティ",
