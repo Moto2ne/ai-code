@@ -1,5 +1,124 @@
 [
   {
+    "title": "Amazon Bedrock AgentCoreで長文ドキュメント処理",
+    "news_highlight": "Amazon Bedrock AgentCoreでRLMを実装し、LLMのコンテキスト窓の制約を克服",
+    "problem_context": "LLMのコンテキスト窓制限による長文処理の課題",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore Code Interpreter",
+      "reason": "RLM実装で長文処理を可能にする",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "長い技術仕様書から特定の情報を抽出したい時",
+      "大量のログファイルからエラーパターンを分析したい時",
+      "複数のドキュメントを横断して要約を作成したい時"
+    ],
+    "steps": [
+      "1. Amazon Bedrock AgentCore Code Interpreterをセットアップする",
+      "2. Strands Agents SDKをプロジェクトに統合する",
+      "3. 処理したい長文ドキュメントをAgentCoreにアップロードする",
+      "4. RLM実装用のプロンプトをAgentCore Code Interpreterに送信し、処理を実行する"
+    ],
+    "prompt": "Strands Agents SDKとAmazon Bedrock AgentCore Code Interpreterを使って、提供された技術仕様書から主要な機能要件を抽出し、箇条書きで要約してください。",
+    "tags": [
+      "LLM",
+      "Bedrock",
+      "AgentCore",
+      "RLM",
+      "ドキュメント処理"
+    ],
+    "id": "20260522_063708_01",
+    "date": "2026-05-22",
+    "source_news": {
+      "title": "Amazon Bedrock AgentCoreでLLMのコンテキスト窓の壁を破る",
+      "url": "https://aws.amazon.com/blogs/machine-learning/break-the-context-window-barrier-with-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "PaddleOCR 3.5でOCR/文書解析を効率化",
+    "news_highlight": "PaddleOCR 3.5がTransformers採用でOCR/文書解析を効率化、精度向上",
+    "problem_context": "既存OCRの精度不足、処理速度の遅延",
+    "recommended_ai": {
+      "model": "PaddleOCR 3.5",
+      "reason": "Transformersで高精度・高速化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "スキャンした請求書から項目を自動抽出したい時",
+      "手書き書類のテキストデータをデジタル化したい時",
+      "大量のPDF文書から特定情報を検索・抽出したい時"
+    ],
+    "steps": [
+      "1. PaddleOCR 3.5をインストールする。",
+      "2. 解析したい画像/PDFファイルを準備する。",
+      "3. 以下のプロンプトを参考にPythonスクリプトを作成する。",
+      "4. スクリプトを実行し、抽出されたテキストや構造化データを確認する。"
+    ],
+    "prompt": "PaddleOCR 3.5を使って、指定された画像ファイルからテキストを抽出し、その結果をJSON形式で出力するPythonコードを生成してください。",
+    "tags": [
+      "OCR",
+      "文書解析",
+      "Python",
+      "Transformers",
+      "画像処理"
+    ],
+    "id": "20260522_063734_02",
+    "date": "2026-05-22",
+    "source_news": {
+      "title": "PaddleOCR 3.5発表、TransformersでOCR/文書解析を効率化",
+      "url": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Ettin Rerankerで検索・推薦精度向上",
+    "news_highlight": "Ettin Rerankerファミリーが検索・推薦結果の関連性を向上、精度を最適化",
+    "problem_context": "検索・推薦システムの精度不足を解消",
+    "recommended_ai": {
+      "model": "Ettin Rerankerファミリー",
+      "reason": "検索・推薦性能に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ECサイトの商品検索結果の関連性を高めたい時",
+      "コンテンツプラットフォームのユーザーへの記事推薦精度を上げたい時",
+      "社内文書検索システムの検索品質を改善したい時"
+    ],
+    "steps": [
+      "Ettin RerankerのAPIドキュメントを確認する。",
+      "既存の検索・推薦システムから上位N件の候補を取得する。",
+      "取得した候補をEttin Reranker APIに渡し、再ランキング結果を受け取る。",
+      "再ランキングされた結果をユーザーに表示し、A/Bテストで効果を検証する。"
+    ],
+    "prompt": "Ettin Reranker APIを組み込み、検索クエリと候補リストを再ランキングするPython関数を実装してください。エラーハンドリングも考慮してください。",
+    "tags": [
+      "検索",
+      "推薦システム",
+      "API連携",
+      "Python"
+    ],
+    "id": "20260522_063800_03",
+    "date": "2026-05-22",
+    "source_news": {
+      "title": "Ettin Rerankerファミリー登場、検索・推薦性能向上に貢献",
+      "url": "https://huggingface.co/blog/ettin-reranker"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "オープンエージェントでコードレビュー",
     "news_highlight": "オープンエージェントの性能比較リーダーボード発表、タスク遂行能力がスコア化され比較可能に",
     "problem_context": "プルリクエストのコード品質を向上させたい",
