@@ -1,5 +1,123 @@
 [
   {
+    "title": "PaddleOCR 3.5で文書解析モデルを改善",
+    "news_highlight": "PaddleOCR 3.5はTransformer導入でOCR/文書解析精度向上、多言語対応も強化。",
+    "problem_context": "既存OCRの精度不足や多言語対応の課題解決。",
+    "recommended_ai": {
+      "model": "PaddleOCR 3.5",
+      "reason": "Transformerで高精度OCR/文書解析。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "スキャンした契約書から特定情報を抽出したい時",
+      "画像内のテキストを多言語で認識・翻訳したい時",
+      "大量のPDF文書から構造化データを自動生成したい時"
+    ],
+    "steps": [
+      "1. PaddleOCR 3.5の環境をセットアップする。",
+      "2. 解析したい画像またはPDFファイルを準備する。",
+      "3. 以下のプロンプトを参考にPythonスクリプトを作成・実行する。",
+      "4. 出力されたテキストデータや構造化データを業務システムに連携する。"
+    ],
+    "prompt": "以下の画像ファイルから日本語テキストを抽出し、各テキストボックスの座標と認識結果をJSON形式で出力してください。モデルはTransformerベースのものを利用してください。",
+    "tags": [
+      "OCR",
+      "文書解析",
+      "Transformer",
+      "Python",
+      "データ抽出"
+    ],
+    "id": "20260524_062325_01",
+    "date": "2026-05-24",
+    "source_news": {
+      "title": "PaddleOCR 3.5リリース、TransformerでOCR/文書解析。",
+      "url": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "OlmoEarth v1.1連携コードをGPT-4oで生成",
+    "news_highlight": "OlmoEarth v1.1リリース、地球観測データの効率的な処理・分析を可能に。",
+    "problem_context": "複雑な地球観測データ処理コード作成",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "高度なコード生成と理解力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "OlmoEarth v1.1のデータ解析スクリプトを作成する時",
+      "地球観測データの可視化ツールを開発する時",
+      "衛星画像の前処理ロジックを実装する時"
+    ],
+    "steps": [
+      "1. OlmoEarth v1.1のデータ仕様やAPIドキュメントを確認する。",
+      "2. GPT-4oに、目的のデータ処理内容とOlmoEarth v1.1の仕様を伝える。",
+      "3. 生成されたPythonコードを開発環境で実行し、テストする。",
+      "4. 結果が期待通りでない場合、GPT-4oにデバッグや改善を依頼する。"
+    ],
+    "prompt": "OlmoEarth v1.1から取得したNetCDF形式の衛星画像データをPythonのxarrayで読み込み、指定範囲の平均気温を計算するコードを生成してください。",
+    "tags": [
+      "コード生成",
+      "データ解析",
+      "Python",
+      "地球観測"
+    ],
+    "id": "20260524_062354_02",
+    "date": "2026-05-24",
+    "source_news": {
+      "title": "OlmoEarth v1.1リリース、効率的な地球観測モデル。",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Bedrock AgentCoreで長文ドキュメント分析",
+    "news_highlight": "Bedrock AgentCore Code InterpreterがRLMでLLMのコンテキスト窓制限を打破し、長文処理を可能に。",
+    "problem_context": "LLMのコンテキスト窓制限による長文処理の困難さ",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore Code Interpreter",
+      "reason": "長文ドキュメント処理に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模なコードベースの全体像を把握したい時",
+      "複数の技術仕様書から関連情報を抽出したい時",
+      "複雑なシステム設計ドキュメントをレビューしたい時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCore Code Interpreterを有効化し、必要な権限を設定する。",
+      "2. 処理したい長文ドキュメント群をS3バケットに整理して配置する。",
+      "3. Strands Agents SDKまたはAWS CLI/SDK経由でAgentCoreに処理タスクを定義する。",
+      "4. AgentCoreにドキュメントの要約や特定情報の抽出を指示し、結果を取得する。"
+    ],
+    "prompt": "S3バケット'my-project-docs'内の全設計ドキュメントを分析し、主要な技術スタックと各モジュールの依存関係をリストアップしてください。",
+    "tags": [
+      "LLM",
+      "長文処理",
+      "ドキュメント分析",
+      "AWS"
+    ],
+    "id": "20260524_062421_03",
+    "date": "2026-05-24",
+    "source_news": {
+      "title": "Bedrock AgentCoreでLLMのコンテキスト窓制限を打破。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/break-the-context-window-barrier-with-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Hugging Face TransformersでPaddleOCR 3.5活用",
     "news_highlight": "PaddleOCR 3.5がHugging Face Transformersで利用可能に、高精度OCR/文書解析を統合",
     "problem_context": "画像からのテキスト抽出や文書構造解析の効率化",
