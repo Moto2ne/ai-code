@@ -1,5 +1,123 @@
 [
   {
+    "title": "GPT-5.5でコード生成を調整",
+    "news_highlight": "GPT-5.5がローカル・クラウド・オープンソース開発でコード生成を調整",
+    "problem_context": "開発ワークフロー間のコード生成の非効率性",
+    "recommended_ai": {
+      "model": "GPT-5.5",
+      "reason": "開発ワークフロー調整に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ローカル開発コードをクラウド環境へ連携したい時",
+      "オープンソース開発で複数のAI生成コードを統合したい時",
+      "異なる開発フェーズでAIエージェントの出力を調整したい時"
+    ],
+    "steps": [
+      "1. 開発ワークフローの各フェーズでAIエージェントを設定する",
+      "2. GPT-5.5を調整役として、各エージェントの役割と連携方法を定義する",
+      "3. ローカルで生成したコードをクラウド環境にデプロイする際、GPT-5.5に調整を依頼する",
+      "4. オープンソースプロジェクトでAI生成コードの競合解決をGPT-5.5に依頼する"
+    ],
+    "prompt": "ローカルで生成したPythonコードをAWS LambdaにデプロイするTerraformコードに変換し、必要なIAMロールとAPI Gateway設定を調整してください。",
+    "tags": [
+      "コード生成",
+      "ワークフロー",
+      "エージェント",
+      "クラウド開発",
+      "オープンソース"
+    ],
+    "id": "20260528_063928_01",
+    "date": "2026-05-28",
+    "source_news": {
+      "title": "GPT-5.5がオープンソース開発で活用され、コード生成を調整。",
+      "url": "https://openai.com/index/warp"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "MagenticLiteでローカルファイル操作自動化",
+    "news_highlight": "MagenticLiteは小型モデル向けエージェントでブラウザとローカルFSを単一ワークフローで連携",
+    "problem_context": "ブラウザとローカルFSを跨ぐ定型作業の自動化",
+    "recommended_ai": {
+      "model": "MagenticLite",
+      "reason": "ブラウザとローカルFS連携で自動化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "開発環境の初期設定スクリプトを自動生成したい時",
+      "Webサイトから情報を収集しローカルファイルに保存したい時",
+      "テスト結果をブラウザで確認しローカルにレポートを生成したい時"
+    ],
+    "steps": [
+      "MagenticLite環境をセットアップする",
+      "自動化したいブラウザとローカルFS操作のタスクを定義する",
+      "定義したタスクをプロンプトとしてMagenticLiteに指示する",
+      "MagenticLiteが実行した結果をレビューし、必要に応じて修正する"
+    ],
+    "prompt": "指定されたURLから特定の情報を抽出し、その内容をローカルのCSVファイルに保存してください。ファイル名は'extracted_data.csv'とします。",
+    "tags": [
+      "エージェント",
+      "自動化",
+      "ファイル操作",
+      "ブラウザ操作"
+    ],
+    "id": "20260528_063956_02",
+    "date": "2026-05-28",
+    "source_news": {
+      "title": "小型モデル向けエージェントシステムMagenticLiteと新モデルFara1.5発表。",
+      "url": "https://www.microsoft.com/en-us/research/blog/magenticlite-magenticbrain-fara1-5-an-agentic-experience-optimized-for-small-models/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Nemotron-Labs DiffusionでAPIドキュメント生成",
+    "news_highlight": "Nemotron-Labs Diffusionが超高速テキスト生成を実現、ドキュメント作成時間を大幅短縮。",
+    "problem_context": "API仕様書作成の手間と時間",
+    "recommended_ai": {
+      "model": "Nemotron-Labs Diffusion",
+      "reason": "超高速テキスト生成に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規API開発後の仕様書作成",
+      "既存APIの機能追加時のドキュメント更新",
+      "マイクロサービス間のAPI連携仕様書作成"
+    ],
+    "steps": [
+      "APIのエンドポイント、リクエスト/レスポンススキーマを準備",
+      "AIにAPI仕様書生成を依頼するプロンプトを入力",
+      "生成されたドキュメントを確認し、必要に応じて修正",
+      "チームメンバーと共有し、フィードバックを反映"
+    ],
+    "prompt": "以下のAPI仕様に基づいて、Markdown形式でREST APIドキュメントを作成してください。エンドポイント: /users/{id}, メソッド: GET, パラメータ: id (integer), レスポンス: Userオブジェクト (JSON)。",
+    "tags": [
+      "APIドキュメント",
+      "テキスト生成",
+      "開発効率",
+      "自動化"
+    ],
+    "id": "20260528_064023_03",
+    "date": "2026-05-28",
+    "source_news": {
+      "title": "Nemotron-Labs Diffusion言語モデルで超高速テキスト生成を実現。",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Vegaでゼロ知識証明を実装",
     "news_highlight": "Vegaがゼロ知識証明で認証情報を必要な部分のみ共有する単一証明に変換、実アプリ性能を実現。",
     "problem_context": "デジタルIDのプライバシーとセキュリティ確保",
