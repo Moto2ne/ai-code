@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-5.5とWarpで開発ワークフロー自動化",
+    "news_highlight": "WarpがGPT-5.5でローカル・クラウド・オープンソース開発のコーディングエージェントを調整",
+    "problem_context": "分散した開発タスクとエージェント連携が複雑",
+    "recommended_ai": {
+      "model": "GPT-5.5",
+      "reason": "コーディングエージェント調整に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数のリポジトリにまたがる機能開発を自動化したい時",
+      "ローカル環境とクラウド環境で連携するテストを自動化したい時",
+      "オープンソースプロジェクトで複数のタスクを並行して進める時"
+    ],
+    "steps": [
+      "Warpをインストールし、GPT-5.5 APIキーを設定する。",
+      "ローカル環境でのコード生成エージェントのタスクをWarpに定義する。",
+      "クラウド環境でのテスト・デプロイエージェントのタスクをWarpに定義する。",
+      "定義したワークフローをWarpで実行し、進捗と結果を監視する。"
+    ],
+    "prompt": "ローカルでTypeScriptのAPIエンドポイントを開発し、クラウドでテストを実行、その結果をGitHubのIssueに自動報告するエージェント連携を構築してください。",
+    "tags": [
+      "エージェント連携",
+      "ワークフロー自動化",
+      "コード生成",
+      "テスト"
+    ],
+    "id": "20260529_064422_01",
+    "date": "2026-05-29",
+    "source_news": {
+      "title": "GPT-5.5でオープンソースのコーディングエージェントを構築",
+      "url": "https://openai.com/index/warp"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Claude Opus 4.8でBedrockエージェント設計",
+    "news_highlight": "Claude Opus 4.8がAWS Bedrockで利用可能に、複雑な推論とエージェント構築を強化",
+    "problem_context": "複雑なAIエージェントの設計と実装が困難",
+    "recommended_ai": {
+      "model": "Claude Opus 4.8",
+      "reason": "高度な推論と計画能力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIエージェントのタスク分解と実行計画を立てたい時",
+      "既存のBedrockエージェントのプロンプトチェーンを最適化したい時",
+      "複雑なビジネスロジックを持つエージェントの設計をレビューしたい時"
+    ],
+    "steps": [
+      "開発中のエージェントが解決すべき具体的なタスクを記述する。",
+      "タスク達成に利用可能なツール（API、DBアクセスなど）をリストアップする。",
+      "Claude Opus 4.8に、タスク分解、ツール利用計画、エラーハンドリングを含むエージェントの設計案を依頼する。",
+      "提案された設計案を元に、AWS Bedrock上でエージェントのプロトタイプを実装し、テストする。"
+    ],
+    "prompt": "あなたは熟練したAIエージェント設計者です。以下のタスクを達成するためのエージェントの設計案をPython擬似コードで提案してください。タスク: [具体的なタスク]。利用可能なツール: [ツールリスト]。",
+    "tags": [
+      "エージェント設計",
+      "AWS Bedrock",
+      "コード生成",
+      "推論最適化"
+    ],
+    "id": "20260529_064450_02",
+    "date": "2026-05-29",
+    "source_news": {
+      "title": "Claude Opus 4.8がAWS Bedrockで利用可能に",
+      "url": "https://aws.amazon.com/blogs/machine-learning/claude-opus-4-8-is-now-available-on-aws/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "TRL Delta Weight Syncで大規模モデル学習パイプラインを設計",
+    "news_highlight": "TRL Delta Weight Syncが1兆パラメータモデルの重み同期を効率化、学習時間を大幅短縮。",
+    "problem_context": "大規模モデルのファインチューニングや継続的学習のコストと時間。",
+    "recommended_ai": {
+      "model": "TRL Delta Weight Sync",
+      "reason": "大規模モデルの学習効率を最大化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模言語モデルの継続的ファインチューニングパイプラインを構築する時",
+      "新しいデータセットで既存モデルを効率的に更新したい時",
+      "分散環境でのモデル学習スクリプトを最適化したい時"
+    ],
+    "steps": [
+      "TRLライブラリの最新バージョンをインストールする。",
+      "Delta Weight Syncを活用したファインチューニングのサンプルコードを検索する。",
+      "既存の学習スクリプトでDelta Weight Syncを有効にする設定を追加する。",
+      "ファインチューニングを実行し、学習時間とリソース消費を評価する。"
+    ],
+    "prompt": "Hugging Face TRLライブラリを使って、1兆パラメータ規模のモデルを効率的にファインチューニングするPythonスクリプトを生成してください。Delta Weight Syncの利用を考慮してください。",
+    "tags": [
+      "MLOps",
+      "ファインチューニング",
+      "分散学習",
+      "大規模モデル"
+    ],
+    "id": "20260529_064527_03",
+    "date": "2026-05-29",
+    "source_news": {
+      "title": "TRLのDelta Weight Syncで1兆パラメータを効率同期",
+      "url": "https://huggingface.co/blog/delta-weight-sync"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5.5でコード生成を調整",
     "news_highlight": "GPT-5.5がローカル・クラウド・オープンソース開発でコード生成を調整",
     "problem_context": "開発ワークフロー間のコード生成の非効率性",
