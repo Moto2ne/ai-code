@@ -1,5 +1,121 @@
 [
   {
+    "title": "Hugging Face Accelerateで分散学習を最適化",
+    "news_highlight": "Hugging Faceが兆パラメータモデルの分散学習・推論を効率化する同期技術を発表",
+    "problem_context": "大規模モデルの学習・推論におけるリソース効率の課題",
+    "recommended_ai": {
+      "model": "Hugging Face Accelerate",
+      "reason": "分散学習・推論の効率化に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模言語モデルの分散学習環境を構築する時",
+      "複数のGPU/TPUを使ってモデルの推論速度を向上させたい時",
+      "メモリ制約のある環境で大規模モデルを動かしたい時"
+    ],
+    "steps": [
+      "既存のPyTorch/TensorFlow学習スクリプトを開く",
+      "ターミナルで`accelerate config`を実行し、分散環境設定を行う",
+      "スクリプト内で`Accelerator`オブジェクトを初期化し、モデル・オプティマイザ・データローダーをラップする",
+      "`accelerate launch your_script.py`コマンドでスクリプトを実行し、性能を評価する"
+    ],
+    "prompt": "PyTorchの学習スクリプトをHugging Face AccelerateでマルチGPU対応に修正してください。モデル、オプティマイザ、データローダーをラップするコードを含めてください。",
+    "tags": [
+      "分散学習",
+      "大規模モデル",
+      "GPU最適化",
+      "Hugging Face"
+    ],
+    "id": "20260530_064023_01",
+    "date": "2026-05-30",
+    "source_news": {
+      "title": "Hugging Faceが兆パラメータモデルの効率的な同期技術を発表。",
+      "url": "https://huggingface.co/blog/delta-weight-sync"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Hugging Face Agentsでインフラ自動化",
+    "news_highlight": "Hugging Faceが企業ITエージェントの初のベンチマークを公開、自律的なITタスク実行能力を評価",
+    "problem_context": "AIによる自律的なITタスク実行の信頼性評価",
+    "recommended_ai": {
+      "model": "Hugging Face Agents",
+      "reason": "自律的タスク実行能力を評価",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "インフラ設定スクリプトの自動生成",
+      "ログ分析と問題特定のためのスクリプト作成",
+      "CI/CDパイプラインの自動化スクリプト生成"
+    ],
+    "steps": [
+      "1. 実行したいITタスクの要件を明確にする。",
+      "2. Hugging Face Agentsのインターフェースでタスクを記述する。",
+      "3. 生成されたスクリプトやコマンドを確認する。",
+      "4. テスト環境でスクリプトを実行し、動作を検証する。"
+    ],
+    "prompt": "AWS EC2インスタンスを起動し、NginxをインストールしてWebサーバーを構築するBashスクリプトを生成してください。セキュリティグループはHTTP(80)を許可してください。",
+    "tags": [
+      "エージェントAI",
+      "インフラ自動化",
+      "スクリプト生成",
+      "DevOps"
+    ],
+    "id": "20260530_064050_02",
+    "date": "2026-05-30",
+    "source_news": {
+      "title": "Hugging Faceが企業ITエージェントの初のベンチマーク結果を公開。",
+      "url": "https://huggingface.co/blog/ibm-research/itbench-aa"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Gemini OmniでTypeScriptコード生成",
+    "news_highlight": "Gemini Omniが9種のデモで多様な開発タスクを支援",
+    "problem_context": "新規機能のTypeScriptコードを迅速に作成したい",
+    "recommended_ai": {
+      "model": "Gemini Omni",
+      "reason": "高度な推論で複雑なコード生成に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規APIエンドポイントの実装",
+      "既存コードのリファクタリング",
+      "テストコードの作成"
+    ],
+    "steps": [
+      "1. 機能要件を具体的に記述する",
+      "2. AIにコード生成を依頼する",
+      "3. 生成されたコードをレビューし、必要に応じて修正する",
+      "4. テスト環境で動作確認を行う"
+    ],
+    "prompt": "TypeScriptとExpressを使って、ユーザー登録API（POST /users）のコードを生成してください。バリデーションとDB保存処理を含めてください。",
+    "tags": [
+      "コード生成",
+      "TypeScript",
+      "API開発"
+    ],
+    "id": "20260530_064118_03",
+    "date": "2026-05-30",
+    "source_news": {
+      "title": "Googleが新AIモデルGemini Omniと3.5のデモを9種公開。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
     "title": "GPT-5.5とWarpで開発ワークフロー自動化",
     "news_highlight": "WarpがGPT-5.5でローカル・クラウド・オープンソース開発のコーディングエージェントを調整",
     "problem_context": "分散した開発タスクとエージェント連携が複雑",
