@@ -1,5 +1,122 @@
 [
   {
+    "title": "Gemini OmniでUIスケッチからコード生成",
+    "news_highlight": "Gemini Omniが手書きUIからコード生成、マルチモーダルで設計を効率化。",
+    "problem_context": "UI設計から実装への変換コストが高い。",
+    "recommended_ai": {
+      "model": "Gemini Omni",
+      "reason": "マルチモーダル対応で画像入力可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "手書きのUIスケッチからHTML/CSS/JSコードを生成したい時",
+      "既存のWebサイトのスクリーンショットから類似のコンポーネントコードを生成したい時",
+      "Figmaを使わずに素早くプロトタイプを作成したい時"
+    ],
+    "steps": [
+      "手書きのUIスケッチや既存UIのスクリーンショットを準備する。",
+      "Gemini Omniに画像をアップロードする。",
+      "生成したいコードの種類（例: Reactコンポーネント）を指定するプロンプトを入力する。",
+      "生成されたコードを開発環境に貼り付け、動作を確認する。"
+    ],
+    "prompt": "この手書きのUIスケッチを元に、ReactとTailwind CSSを使ってログインフォームのコンポーネントを生成してください。入力フィールドはメールアドレスとパスワード、ボタンは「ログイン」としてください。",
+    "tags": [
+      "コード生成",
+      "フロントエンド",
+      "UI/UX",
+      "マルチモーダル"
+    ],
+    "id": "20260531_062633_01",
+    "date": "2026-05-31",
+    "source_news": {
+      "title": "Gemini Omniと3.5のデモ9種公開、マルチモーダルAIの活用例を示す。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "GPT-4oで既存システムコードを部分修正",
+    "news_highlight": "AIエージェントが企業ITベンチマークで50%以下の性能、複雑なタスク完遂に課題。",
+    "problem_context": "既存システムの複雑なコード修正が困難",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "最新モデルで理解力が高いため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存のレガシーコードの特定部分を理解したい時",
+      "バグ修正で影響範囲を特定したい時",
+      "特定の機能のテストコードを生成したい時"
+    ],
+    "steps": [
+      "修正したい既存コードブロックを特定する。",
+      "そのコードブロックと関連するエラーメッセージや要件を準備する。",
+      "AIにコードブロックと要件を提示し、修正案を依頼する。",
+      "AIの提案をレビューし、必要に応じて手動で修正・テストする。"
+    ],
+    "prompt": "以下の既存のTypeScriptコードを、指定された要件に基づいて修正してください。変更点と理由も説明してください。コード: [既存コード] 要件: [修正要件]",
+    "tags": [
+      "コード修正",
+      "レガシーコード",
+      "デバッグ",
+      "GPT-4o"
+    ],
+    "id": "20260531_062700_02",
+    "date": "2026-05-31",
+    "source_news": {
+      "title": "AIエージェント初の企業ITベンチマークでフロンティアモデルが50%以下。",
+      "url": "https://huggingface.co/blog/ibm-research/itbench-aa"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Hugging Face Transformersで大規模モデル推論最適化",
+    "news_highlight": "Hugging Faceが1兆パラメータモデルの推論効率化技術を発表、リソース消費を大幅削減。",
+    "problem_context": "大規模AIモデルの推論コストとレイテンシが高い。",
+    "recommended_ai": {
+      "model": "Hugging Face Transformers (with Optimum)",
+      "reason": "最新の効率化技術を統合し、推論を高速化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "本番環境で大規模言語モデルの推論速度を改善したい時",
+      "限られたGPUリソースで大規模モデルをデプロイしたい時",
+      "エッジデバイス向けにモデルを最適化したい時"
+    ],
+    "steps": [
+      "1. Hugging Face Transformersで既存モデルをロードする。",
+      "2. Optimumライブラリを使用して、モデルをONNX RuntimeやTensorRT向けに変換する。",
+      "3. 変換したモデルで推論を実行し、速度とメモリ使用量をベンチマークする。",
+      "4. 結果を分析し、必要に応じて量子化やプルーニングを適用する。"
+    ],
+    "prompt": "Hugging Faceの`bert-base-uncased`モデルをONNX形式に変換し、推論速度を最適化するPythonコードを生成してください。Optimumライブラリを使用してください。",
+    "tags": [
+      "推論最適化",
+      "Hugging Face",
+      "大規模モデル",
+      "デプロイ"
+    ],
+    "id": "20260531_062729_03",
+    "date": "2026-05-31",
+    "source_news": {
+      "title": "Hugging Faceが1兆パラメータモデル効率化技術を発表。",
+      "url": "https://huggingface.co/blog/delta-weight-sync"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Hugging Face Accelerateで分散学習を最適化",
     "news_highlight": "Hugging Faceが兆パラメータモデルの分散学習・推論を効率化する同期技術を発表",
     "problem_context": "大規模モデルの学習・推論におけるリソース効率の課題",
