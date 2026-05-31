@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-5.5/Codexでコード生成を高速化",
+    "news_highlight": "GPT-5.5とCodexの連携でコード生成と実験実行を高速化",
+    "problem_context": "開発速度向上、実験サイクル短縮",
+    "recommended_ai": {
+      "model": "GPT-5.5 & Codex",
+      "reason": "コード生成と実験を高速化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい機能のプロトタイプを素早く作成したい時",
+      "既存コードのテストケースを効率的に生成したい時",
+      "特定のアルゴリズムやロジックの実装案を複数検討したい時"
+    ],
+    "steps": [
+      "実装したい機能や解決したい課題を具体的に定義する。",
+      "既存の関連コードやAPI仕様をAIに提供する。",
+      "GPT-5.5/Codexにコード生成を依頼し、複数の実装案やテストコードを生成させる。",
+      "生成されたコードを評価し、必要に応じて修正・統合してテストする。"
+    ],
+    "prompt": "Pythonで、与えられた数値リストの平均値を計算する関数を生成してください。入力値のバリデーションとエラーハンドリングを含めてください。",
+    "tags": [
+      "コード生成",
+      "プロトタイピング",
+      "テストコード",
+      "開発効率"
+    ],
+    "id": "20260601_062634_01",
+    "date": "2026-06-01",
+    "source_news": {
+      "title": "GPT-5.5とCodexでコード生成を高速化",
+      "url": "https://openai.com/index/braintrust"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Gemini 3.5で大規模システム設計レビュー",
+    "news_highlight": "Gemini Omniはリアルタイムマルチモーダル推論を強化、Gemini 3.5は長文コンテキストでの高速なコード生成と複雑な推論能力を向上",
+    "problem_context": "複雑なシステム設計の整合性・堅牢性を評価",
+    "recommended_ai": {
+      "model": "Gemini 3.5",
+      "reason": "長文処理と複雑な推論に優れる",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規システム設計のアーキテクチャレビュー",
+      "既存システムの拡張性・保守性評価",
+      "マイクロサービス間のAPI設計整合性チェック"
+    ],
+    "steps": [
+      "1. 設計ドキュメント（例: 概要設計書、API仕様書）をテキスト形式で準備する",
+      "2. レビューしたい特定の観点（例: 拡張性、セキュリティ、パフォーマンス）を明確にする",
+      "3. Gemini 3.5にドキュメントと観点を入力し、潜在的な問題点と改善提案を依頼する",
+      "4. 提案された改善点をチームで議論し、設計に反映する"
+    ],
+    "prompt": "以下のシステム設計ドキュメントをレビューし、セキュリティ、スケーラビリティ、保守性の観点から潜在的な脆弱性や改善点を特定してください。具体的な提案もお願いします。",
+    "tags": [
+      "システム設計",
+      "アーキテクチャ",
+      "レビュー",
+      "ドキュメント分析"
+    ],
+    "id": "20260601_062705_02",
+    "date": "2026-06-01",
+    "source_news": {
+      "title": "Gemini Omniと3.5の最新デモを公開",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "Data Formulator 0.7で企業データ分析を効率化",
+    "news_highlight": "Data Formulator 0.7がAIデータ分析を強化、企業データをAI対応ワークスペースで分析可能に。",
+    "problem_context": "企業データのAI分析準備と可視化の複雑さ",
+    "recommended_ai": {
+      "model": "Data Formulator 0.7",
+      "reason": "AI対応ワークスペースでデータ分析を効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい企業データセットの傾向を素早く把握したい時",
+      "AIモデル開発のためのデータ前処理と特徴量エンジニアリングを行う時",
+      "ビジネス部門からの特定データに関するインサイト抽出依頼に対応する時"
+    ],
+    "steps": [
+      "1. Data Formulator 0.7に分析対象の企業データをインポートする。",
+      "2. AI対応ワークスペースでデータの品質チェックと前処理を実行する。",
+      "3. AI分析機能を用いて、データ内のパターンや相関関係を探索する。",
+      "4. 分析結果をダッシュボードやレポートとして可視化し、関係者と共有する。"
+    ],
+    "prompt": "顧客購買履歴データセットから、リピート率向上に繋がる主要な要因をAIで分析し、その結果を可視化してください。",
+    "tags": [
+      "データ分析",
+      "AI",
+      "可視化",
+      "データ前処理"
+    ],
+    "id": "20260601_062730_03",
+    "date": "2026-06-01",
+    "source_news": {
+      "title": "Data Formulator 0.7でAIデータ分析強化",
+      "url": "https://www.microsoft.com/en-us/research/blog/data-formulator-0-7-ai-powered-data-analytics-for-enterprise-data/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Gemini OmniでUIスケッチからコード生成",
     "news_highlight": "Gemini Omniが手書きUIからコード生成、マルチモーダルで設計を効率化。",
     "problem_context": "UI設計から実装への変換コストが高い。",
