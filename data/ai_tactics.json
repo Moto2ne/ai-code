@@ -1,5 +1,121 @@
 [
   {
+    "title": "NVIDIA Cosmos 3で物理ベース設計を最適化",
+    "news_highlight": "NVIDIA Cosmos 3、初のオープンな物理AIモデル発表。物理シミュレーションと設計を革新。",
+    "problem_context": "物理法則に基づいた設計の最適化と検証",
+    "recommended_ai": {
+      "model": "NVIDIA Cosmos 3",
+      "reason": "物理シミュレーションと設計支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新製品の構造設計における強度検証",
+      "ロボットアームの動作シミュレーションと最適化",
+      "流体解析を伴う部品の形状設計"
+    ],
+    "steps": [
+      "設計対象の物理的要件と制約を明確化",
+      "NVIDIA Cosmos 3に要件を入力し、設計案を生成依頼",
+      "生成された設計案の物理シミュレーション結果を確認",
+      "必要に応じてパラメータを調整し、再生成を依頼"
+    ],
+    "prompt": "最大応力200MPa以下、変形量0.1mm以下の鋼鉄製ブラケットを設計してください。荷重は1000N、固定箇所は2点とします。",
+    "tags": [
+      "物理シミュレーション",
+      "設計最適化",
+      "AIモデル活用"
+    ],
+    "id": "20260602_071035_01",
+    "date": "2026-06-02",
+    "source_news": {
+      "title": "NVIDIA Cosmos 3、初のオープンな物理AIモデル発表",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Mellum2でコードレビュー効率化",
+    "news_highlight": "JetBrainsがMoEモデルMellum2を発表、コード生成・補完・レビューを強化しIDEに統合",
+    "problem_context": "コードレビューの品質と速度向上",
+    "recommended_ai": {
+      "model": "Mellum2",
+      "reason": "IDE連携で高精度なコード分析",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードをレビューしたい時",
+      "チームメンバーのコードレビューを効率化したい時",
+      "複雑なロジックの潜在的なバグを見つけたい時"
+    ],
+    "steps": [
+      "1. JetBrains IDEでレビューしたいコードファイルを開く",
+      "2. Mellum2のコードレビュー機能を起動（例: 右クリックメニューから「Mellum2でレビュー」を選択）",
+      "3. 提案された改善点、潜在的なバグ、セキュリティ脆弱性を確認",
+      "4. 修正案を適用し、テストを実行して動作を確認"
+    ],
+    "prompt": "このTypeScriptコードの潜在的なバグ、改善点、セキュリティ脆弱性を指摘し、より効率的で読みやすい修正案を提案してください。",
+    "tags": [
+      "コードレビュー",
+      "IDE",
+      "MoE",
+      "JetBrains"
+    ],
+    "id": "20260602_071100_02",
+    "date": "2026-06-02",
+    "source_news": {
+      "title": "JetBrainsが12BのMoEモデルMellum2を発表",
+      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "OpenVINOでエッジAIモデルを最適化",
+    "news_highlight": "Reachy Miniが完全ローカルAI化を実現、クラウド不要でリアルタイム推論が可能に",
+    "problem_context": "エッジデバイスでのAI推論性能不足を解消したい",
+    "recommended_ai": {
+      "model": "OpenVINO",
+      "reason": "エッジAI推論を最適化し高速化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "組み込みシステムでAIモデルをデプロイする時",
+      "ネットワーク接続が不安定な環境でAI機能を提供したい時",
+      "リアルタイム性が求められるロボット制御AIを開発する時"
+    ],
+    "steps": [
+      "1. 既存のAIモデル（例: TensorFlow, PyTorchモデル）を準備する。",
+      "2. OpenVINO Model OptimizerでモデルをIR形式に変換する。",
+      "3. OpenVINO Runtime APIを使用して、変換したモデルをアプリケーションに組み込む。",
+      "4. ターゲットデバイス上で推論性能と精度を評価する。"
+    ],
+    "prompt": "OpenVINO Model Optimizerを使用して、TensorFlowで学習した画像分類モデルをIR形式に変換する手順を教えてください。Pythonスクリプト例を含めてください。",
+    "tags": [
+      "エッジAI",
+      "ローカルAI",
+      "推論最適化",
+      "ロボティクス"
+    ],
+    "id": "20260602_071128_03",
+    "date": "2026-06-02",
+    "source_news": {
+      "title": "ロボットReachy Miniが完全ローカルAI化を実現",
+      "url": "https://huggingface.co/blog/local-reachy-mini-conversation"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5.5/Codexでコード生成を高速化",
     "news_highlight": "GPT-5.5とCodexの連携でコード生成と実験実行を高速化",
     "problem_context": "開発速度向上、実験サイクル短縮",
