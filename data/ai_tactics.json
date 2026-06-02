@@ -1,5 +1,122 @@
 [
   {
+    "title": "Gemini OmniでUI画面からコード生成",
+    "news_highlight": "Gemini Omni/3.5がマルチモーダル機能強化、画像入力で高精度応答。",
+    "problem_context": "既存UI画面のコンポーネントを再利用したい。",
+    "recommended_ai": {
+      "model": "Gemini Omni",
+      "reason": "マルチモーダル対応で画像理解。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存のUI画面を新しいフレームワークで再実装したい時",
+      "デザインカンプ（画像）からフロントエンドコードを生成したい時",
+      "既存UIの改善点をコードレベルで提案してほしい時"
+    ],
+    "steps": [
+      "再利用したいUI画面のスクリーンショットを撮る",
+      "Gemini Omniにスクリーンショットをアップロードする",
+      "ターゲットとする技術スタック（例: React, Tailwind CSS）を指定し、コード生成を依頼する",
+      "生成されたコードをローカルでテストし、必要に応じて修正する"
+    ],
+    "prompt": "このUI画面のスクリーンショットを元に、ReactとTailwind CSSで同様のコンポーネントを生成してください。機能はダミーで構いません。",
+    "tags": [
+      "コード生成",
+      "UI/UX",
+      "フロントエンド",
+      "マルチモーダル"
+    ],
+    "id": "20260603_070048_01",
+    "date": "2026-06-03",
+    "source_news": {
+      "title": "GoogleがGemini Omniと3.5のデモを公開、マルチモーダル機能に注目。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "NVIDIA Cosmos 3で物理シミュレーション環境生成",
+    "news_highlight": "NVIDIA Cosmos 3発表、初のオープンな物理AI向けマルチモーダルモデルでシミュレーションを加速。",
+    "problem_context": "複雑な物理シミュレーション環境構築が手間。",
+    "recommended_ai": {
+      "model": "NVIDIA Cosmos 3",
+      "reason": "物理AIに特化し、マルチモーダル対応。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい製品の物理挙動を検証したい時",
+      "ロボットの動作テスト環境を素早く構築したい時",
+      "仮想工場で生産ラインの最適化を試したい時"
+    ],
+    "steps": [
+      "1. シミュレーションしたい物理環境の要件（オブジェクト、材質、重力など）をテキストで記述する。",
+      "2. Cosmos 3にプロンプトを入力し、シミュレーション環境構築コードを生成させる。",
+      "3. 生成されたPythonコード（例: PyBullet, Isaac Sim向け）をシミュレータで実行する。",
+      "4. シミュレーション結果を検証し、必要に応じてコードを調整する。"
+    ],
+    "prompt": "PyBulletで、重力0.98m/s^2、摩擦係数0.5の仮想環境を構築し、直径0.1mの鉄球と1m四方の木製ブロックを配置するPythonコードを生成してください。",
+    "tags": [
+      "物理シミュレーション",
+      "ロボティクス",
+      "デジタルツイン",
+      "コード生成"
+    ],
+    "id": "20260603_070118_02",
+    "date": "2026-06-03",
+    "source_news": {
+      "title": "NVIDIA Cosmos 3発表、初のオープンな物理AI向けマルチモーダルモデル。",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "OpenAI CodexでAPI連携コード生成",
+    "news_highlight": "OpenAI Codexが新プラグインで多様な業務・ツールに対応、API連携コード生成を効率化",
+    "problem_context": "外部API連携コード作成の手間と複雑さ",
+    "recommended_ai": {
+      "model": "OpenAI Codex",
+      "reason": "プラグインで外部API連携強化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい外部サービスと連携する時",
+      "既存のAPIクライアントを更新する時",
+      "特定のAPIエンドポイントの利用方法が不明な時"
+    ],
+    "steps": [
+      "1. 連携したいAPIのドキュメントURLまたはOpenAPIスキーマを準備",
+      "2. 開発中のプロジェクトの言語とフレームワークを指定",
+      "3. CodexにAPIクライアントコードの生成を依頼",
+      "4. 生成されたコードをプロジェクトに組み込み、テスト"
+    ],
+    "prompt": "指定されたOpenAPIスキーマに基づき、TypeScriptとReact Queryを使用して、ユーザー管理APIのクライアントコードを生成してください。",
+    "tags": [
+      "API連携",
+      "コード生成",
+      "TypeScript",
+      "React Query"
+    ],
+    "id": "20260603_070147_03",
+    "date": "2026-06-03",
+    "source_news": {
+      "title": "OpenAI Codexが新プラグインで多様な業務・ツールに対応。",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "NVIDIA Cosmos 3で物理ベース設計を最適化",
     "news_highlight": "NVIDIA Cosmos 3、初のオープンな物理AIモデル発表。物理シミュレーションと設計を革新。",
     "problem_context": "物理法則に基づいた設計の最適化と検証",
