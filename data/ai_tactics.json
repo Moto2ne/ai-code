@@ -1,5 +1,125 @@
 [
   {
+    "title": "Neuron Agentic DevelopmentでTrainium最適化",
+    "news_highlight": "Neuron Agentic DevelopmentがAWS Trainium/Inferentiaの最適化を加速",
+    "problem_context": "AWS Trainium/Inferentiaのモデル最適化が複雑",
+    "recommended_ai": {
+      "model": "Neuron Agentic Development",
+      "reason": "Trainium/Inferentiaに特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Trainium/Inferentia向けモデルの性能最適化時",
+      "既存モデルをTrainium/Inferentiaへ移行する時",
+      "推論レイテンシを削減したい時"
+    ],
+    "steps": [
+      "最適化対象のモデルコードとデータセットを準備する",
+      "Neuron Agentic Development環境をセットアップする",
+      "エージェントにTrainium向け最適化タスクを指示する",
+      "提案された最適化を適用し性能を評価する"
+    ],
+    "prompt": "このPyTorchモデルをAWS Trainium向けに最適化し、Neuron SDKを使った推論性能を最大化するコード変更を提案してください。",
+    "tags": [
+      "AWS",
+      "Trainium",
+      "Inferentia",
+      "最適化",
+      "AIエージェント"
+    ],
+    "id": "20260611_064444_01",
+    "date": "2026-06-11",
+    "source_news": {
+      "title": "AIエージェントがAWS Trainium最適化を加速する開発手法を発表。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/stop-hand-tuning-kernels-how-neuron-agentic-development-accelerates-aws-trainium-optimizations/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Bedrock AgentCore Browser Toolでポータル操作エージェント設計",
+    "news_highlight": "Bedrock AgentCore Browser Toolでライブポータル連携、Strands SDKでドメイン推論",
+    "problem_context": "保険請求受付の自動化と手動ポータル操作の削減",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore Browser Tool",
+      "reason": "ライブポータル操作を自動化するため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "保険請求処理の自動化ワークフローを設計する時",
+      "外部Webポータルへのデータ入力タスクを自動化する時",
+      "既存システムのUI操作をAIエージェントに任せたい時"
+    ],
+    "steps": [
+      "1. Amazon Bedrock AgentCore Browser Toolを有効化する。",
+      "2. ターゲットとなる保険会社のWebポータルURLと操作手順を定義する。",
+      "3. Strands Agents SDKで保険請求のドメイン知識と推論ロジックを実装する。",
+      "4. Bedrock AgentCore Browser ToolとStrands Agents SDKを連携させ、FNOL受付エージェントをデプロイする。"
+    ],
+    "prompt": "Bedrock AgentCore Browser Toolを使って、保険会社のWebポータルでFNOL（初回通知）を自動入力するエージェントの設計概要を提示してください。必要なステップとデータ項目を具体的に記述してください。",
+    "tags": [
+      "エージェントAI",
+      "自動化",
+      "Bedrock",
+      "保険",
+      "RPA"
+    ],
+    "id": "20260611_064509_02",
+    "date": "2026-06-11",
+    "source_news": {
+      "title": "Bedrock AgentCore Browser Toolでインテリジェントな保険請求受付エージェントを構築。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/hands-free-first-notice-of-loss-using-strands-agents-and-amazon-bedrock-agentcore-browser-tool-for-intelligent-claims-intake/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Whisperで多言語音声認識を実装",
+    "news_highlight": "音声エージェントの多言語対応性能がベンチマークで評価され、主要言語で高精度を達成。",
+    "problem_context": "多言語対応音声入力の精度向上と実装",
+    "recommended_ai": {
+      "model": "OpenAI Whisper",
+      "reason": "多言語対応と高精度ASR",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "多言語対応の音声入力UIを開発する時",
+      "会議の議事録を多言語で自動生成したい時",
+      "既存システムに音声コマンド機能を追加する時"
+    ],
+    "steps": [
+      "1. 音声入力が必要な機能の要件を定義する",
+      "2. Whisper APIまたはOSSモデルを導入する",
+      "3. ユーザーの言語を自動判別または選択させるロジックを実装する",
+      "4. 認識結果を元に後続処理を実装し、テストする"
+    ],
+    "prompt": "ユーザーが話した音声をテキストに変換し、その言語を自動判別してください。対応言語は日本語、英語、中国語、韓国語です。Pythonコードで実装してください。",
+    "tags": [
+      "音声認識",
+      "多言語",
+      "ASR",
+      "Python",
+      "Whisper"
+    ],
+    "id": "20260611_064926_03",
+    "date": "2026-06-11",
+    "source_news": {
+      "title": "音声エージェントの多言語対応性能をベンチマークで評価。",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Hugging Face Spacesで3Dギャラリー構築",
     "news_highlight": "Hugging Face Spaces上でエージェントが3Dギャラリーを自律構築、コンテンツ生成・配置を自動化",
     "problem_context": "3Dコンテンツの生成・配置・ギャラリー構築の手間を削減",
@@ -19399,122 +19519,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
       "icon": "🚀"
-    }
-  },
-  {
-    "title": "Bedrock AgentCoreでIDP自動構築",
-    "news_highlight": "Bedrock AgentCore等でStrands SDKと連携し、IDPソリューションをプログラムで自動構築。",
-    "problem_context": "IDPソリューションの迅速な開発",
-    "recommended_ai": {
-      "model": "Amazon Bedrock AgentCore",
-      "reason": "IDPソリューション自動構築",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "契約書から特定情報を抽出するシステムを設計する時",
-      "請求書処理の自動化ワークフローを実装する時",
-      "新規IDPソリューションのアーキテクチャを検討する時"
-    ],
-    "steps": [
-      "1. 構築したいIDPソリューションの要件（抽出情報、処理フロー）を定義する",
-      "2. Bedrock AgentCore, Knowledge Base, Data Automationの連携方法をAIに質問する",
-      "3. Strands SDKを利用した具体的な実装コードの生成を依頼する",
-      "4. 生成されたコードや設計案をレビューし、テスト環境で検証する"
-    ],
-    "prompt": "Strands SDK、Amazon Bedrock AgentCore、Knowledge Base、Data Automationを連携し、契約書から顧客名と契約日を抽出するIDPソリューションのPythonコードを生成してください。",
-    "tags": [
-      "IDP",
-      "Bedrock",
-      "コード生成"
-    ],
-    "id": "20251225_060848_03",
-    "date": "2025-12-25",
-    "source_news": {
-      "title": "Bedrock AgentCore等でIDPソリューションを自動構築。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/programmatically-creating-an-idp-solution-with-amazon-bedrock-data-automation/"
-    },
-    "article": "## 概要\n\nAWSがAmazon Bedrock Data Automation、Bedrock AgentCore、Bedrock Knowledge Baseを組み合わせた、プログラマティックなIDP（Intelligent Document Processing）ソリューションの構築方法を公開しました。Jupyter notebook経由でマルチモーダルな文書処理を自動化できることで、従来数ヶ月要した文書処理システムの開発期間を大幅に短縮し、技術者が迅速にAI駆動の文書処理システムをプロトタイピングできる環境を提供します。\n\n## 技術詳細\n\n### 主要な機能・特徴\n\n- **Bedrock Data Automation (BDA)**: 画像、PDF、動画などのマルチモーダルデータから自動的に構造化情報を抽出。テンプレート不要で多様な文書形式に対応\n- **Bedrock AgentCore**: エージェント機能により、文書処理タスクを自動的に計画・実行。複数のツールやKnowledge Baseとの連携をオーケストレーション\n- **Strands SDK統合**: プログラマティックなワークフロー構築を実現し、Jupyter notebook上でインタラクティブな開発が可能\n- **ナレッジベース連携**: Amazon Bedrock Knowledge Baseと統合し、抽出データの意味的検索や文脈理解を強化\n\n### スペックと従来技術との違い\n\n- Jupyter notebookベースの開発環境により、コード数行でIDP環境を立ち上げ可能\n- 事前学習不要でゼロショット処理に対応し、新しい文書タイプへの適応が即座に可能\n- AWSマネージドサービスとして、インフラ管理の負担を削減\n- APIファーストアプローチで既存システムへの組み込みが容易\n\n## 従来ソリューションとの比較\n\n| 項目 | Bedrock IDP | 商用OCRソリューション | オンプレミスIDP | オープンソース構築 |\n|------|-------------|---------------------|----------------|------------------|\n| 構築期間 | 数日～1週間 | 2～4週間 | 3～6ヶ月 | 1～3ヶ月 |\n| 初期コスト | 従量課金のみ | $50,000～$200,000 | $100,000～$500,000 | 開発工数のみ |\n| マルチモーダル対応 | ネイティブ対応 | 限定的 | カスタム開発必要 | 個別統合必要 |\n| 保守性 | AWSが自動更新 | ベンダー依存 | 社内リソース必要 | コミュニティ依存 |\n| スケーラビリティ | 自動スケール | 制限あり | ハードウェア制約 | 手動調整必要 |\n| AI精度向上 | 継続的改善 | 定期アップデート | 手動再学習 | 手動再学習 |\n\n## ビジネス活用シーン\n\n### 金融機関の書類審査自動化\n銀行の融資審査部門で、顧客から提出される決算書、給与明細、契約書などの多様な書類を自動処理。従来手作業で2～3日要していた書類チェックを数時間に短縮し、審査精度も向上。Bedrock Knowledge Baseと連携することで、過去の審査基準や規制要件との照合も自動化できます。\n\n### 医療機関の診療記録デジタル化\n紙カルテ、検査画像レポート、処方箋などの異なる形式の医療文書を統一的に処理。手書き文字や医療専門用語を含む複雑な文書も高精度で抽出し、電子カルテシステムへ自動入力。医療スタッフの事務作業を週20時間以上削減した事例も報告されています。\n\n### 物流企業の伝票処理\n配送伝票、インボイス、税関書類などの多言語・多形式文書を一元処理。1日数万件の文書を自動処理し、データ入力コストを70%削減。AgentCore機能により、不備のある伝票を自動検出して担当者に通知する仕組みも構築可能です。\n\n## 導入ステップ\n\n1. **環境準備**: AWSアカウントでBedrock APIアクセスを有効化し、Jupyter notebook環境（SageMaker NotebookまたはローカルPC）をセットアップ\n2. **ソリューション実装**: 公開されているサンプルnotebookを使用してStrands SDKとBedrock AgentCoreを統合し、処理対象の文書タイプに応じたワークフローを定義\n3. **Knowledge Base構築**: 抽出データの精度向上のため、業界固有の用語集やサンプル文書をBedrock Knowledge Baseに登録\n4. **運用開始**: 少量の実文書でテスト後、APIエンドポイントを既存システムと連携し、段階的に処理量を拡大\n\n## まとめ\n\nBedrock AgentCoreを活用したIDP自動構築は、文書処理システムの開発期間とコストを劇的に削減します。マルチモーダル対応とプログラマティックな実装により、ビジネス要件の変化に柔軟に対応できる点が大きな強みです。今後、より高度なエージェント機能の追加により、文書処理の自動化範囲がさらに拡大することが期待されます。",
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "GeminiでAI生成動画識別コード生成",
-    "news_highlight": "GeminiアプリでSynthIDによるAI生成動画の検証が可能に、コンテンツ透明性向上",
-    "problem_context": "アプリケーションでのAI生成コンテンツ識別",
-    "recommended_ai": {
-      "model": "Gemini",
-      "reason": "AI生成コンテンツ識別機能を持つ",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ユーザー投稿動画のAI生成判定ロジックを実装する時",
-      "自社AIモデルの出力動画がAI生成と識別されるか検証する時",
-      "コンテンツモデレーション機能にAI生成識別を組み込む時"
-    ],
-    "steps": [
-      "1. 識別したい動画ファイルのパスを用意する",
-      "2. GeminiにAI生成動画識別APIの利用方法を問い合わせるプロンプトを入力する",
-      "3. Geminiが生成したコードスニペットを開発環境にコピーする",
-      "4. 生成されたコードをテストし、アプリケーションに組み込む"
-    ],
-    "prompt": "Gemini APIまたは関連SDKを使用して、指定された動画ファイルがAIによって生成されたものであるかを識別するPythonコードスニペットを生成してください。識別結果と信頼度を出力してください。",
-    "tags": [
-      "動画処理",
-      "AI識別",
-      "Python",
-      "API連携"
-    ],
-    "id": "20251224_060813_01",
-    "date": "2025-12-24",
-    "source_news": {
-      "title": "GeminiアプリでAI生成動画の検証が可能に、透明性向上。",
-      "url": "https://blog.google/technology/ai/verify-google-ai-videos-gemini-app/"
-    },
-    "article": "## 概要\n\nGoogleが、AI生成コンテンツの透明性を高める重要な一歩を踏み出した。Geminiアプリに動画検証機能を追加し、ユーザーがGoogle AIで作成・編集された動画を簡単に識別できるようにした。ディープフェイクや誤情報対策が急務となる中、この技術はメディア業界やコンテンツ制作現場における信頼性確保の新しいスタンダードとなる可能性を秘めている。\n\n## 技術詳細\n\n### 主要な機能・特徴\n\n- **SynthID透かし技術**: 動画にデジタル透かしを埋め込み、視覚的な品質を損なうことなくAI生成コンテンツを追跡可能にする\n- **Geminiアプリ統合検証**: アプリ内で動画をアップロードするだけで、Google AIによる生成・編集の有無を即座に確認できる\n- **C2PA準拠のメタデータ**: Content Credentials（コンテンツ認証情報）規格に対応し、動画の作成履歴と編集プロセスを記録\n- **非破壊検出**: 動画の圧縮や再エンコードを経ても透かし情報が保持され、検証精度が維持される\n\n### 従来技術との違い\n\n従来のメタデータベースの検証は容易に削除・改ざんが可能だったが、SynthIDは動画のピクセルレベルに情報を埋め込むため、高い耐改ざん性を実現。また、専用ツール不要でGeminiアプリから直接検証できる利便性が画期的である。\n\n## 従来ソリューションとの比較\n\n| 項目 | SynthID + Gemini検証 | メタデータベース検証 | ブロックチェーン認証 | 手動確認プロセス |\n|------|---------------------|---------------------|---------------------|-----------------|\n| 検証時間 | 数秒 | 数秒（改ざん時無効） | 1-2分 | 数時間～数日 |\n| 初期コスト | 無料（Geminiアプリ利用） | 低コスト | 高コスト（10-50万円） | 人件費のみ |\n| 耐改ざん性 | 高（ピクセルレベル埋め込み） | 低（容易に削除可能） | 高（不可逆記録） | 低（主観的判断） |\n| 導入期間 | 即時 | 1-2週間 | 1-3ヶ月 | - |\n| 互換性 | Google AI製品に限定 | 広範囲（規格次第） | 限定的 | 全コンテンツ対応 |\n| 保守性 | 自動更新 | 定期的な規格更新必要 | システム管理必要 | スキル依存 |\n\n## ビジネス活用シーン\n\n### メディア企業における誤情報対策\nニュース配信前に受領した動画素材をGeminiアプリで検証し、AI生成コンテンツを明示的にラベリング。報道の信頼性を維持しながら、視聴者に正確な情報源を提供できる。例えば、災害報道で提供された映像の真正性を数秒で確認し、フェイク動画の拡散を防止する。\n\n### マーケティング・広告業界でのコンプライアンス対応\n広告審査プロセスにAI生成動画の検証を組み込み、各国の広告規制に準拠したラベリングを自動化。クライアントへの納品物にコンテンツ認証情報を付与することで、透明性の高いクリエイティブ制作体制を構築できる。\n\n### 教育・研究機関でのリテラシー向上\n学生にAI生成コンテンツの識別方法を実践的に教育する教材として活用。実際の動画を用いた演習で、デジタルリテラシーとメディア批判能力を育成し、情報社会における判断力を養う。\n\n## 導入ステップ\n\n1. **Geminiアプリのインストール**: GoogleアカウントでGeminiアプリにアクセスし、最新版に更新\n2. **検証対象動画の準備**: 確認したい動画ファイルを用意（Google Veoなど対応AI製品で生成されたもの）\n3. **動画のアップロードと検証**: Geminiアプリ内で動画をアップロードし、検証機能を実行\n4. **結果の確認と記録**: 表示されたContent Credentialsを確認し、必要に応じて認証情報を保存・共有\n\n## まとめ\n\nAI生成動画の検証機能は、コンテンツの透明性確保において重要なインフラとなる。現時点ではGoogle AI製品に限定されるが、C2PA準拠により業界標準化の動きが加速すれば、メディア・広告・教育など多岐にわたる分野でAI時代の信頼性担保の基盤技術となるだろう。",
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
-    }
-  },
-  {
-    "title": "NeMo EvaluatorでLLM性能を評価",
-    "news_highlight": "NeMo EvaluatorでNemotron 3 Nanoをベンチマーク評価、LLM選定の客観的指標を提供",
-    "problem_context": "自社システム向けLLMの客観的な性能評価が困難",
-    "recommended_ai": {
-      "model": "NeMo Evaluator",
-      "reason": "LLMの性能を客観的に測定できるため",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "自社システムに最適なLLMを選定する時",
-      "ファインチューニング後のLLMの性能変化を測定する時",
-      "複数のLLM候補の優劣を客観的に比較したい時"
-    ],
-    "steps": [
-      "1. NeMo Evaluatorの環境をセットアップする",
-      "2. 評価したいLLMと評価データセットを準備する",
-      "3. NeMo Evaluatorでベンチマーク評価ジョブを実行する",
-      "4. 評価結果レポートを分析し、LLMの性能を比較検討する"
-    ],
-    "prompt": "NeMo EvaluatorでNVIDIA Nemotron 3 NanoをMMLUベンチマークで評価し、詳細なレポートを生成してください。",
-    "tags": [
-      "LLM評価",
-      "ベンチマーク",
-      "モデル選定",
-      "NVIDIA"
-    ],
-    "id": "20251224_060853_02",
-    "date": "2025-12-24",
-    "source_news": {
-      "title": "NVIDIA Nemotron 3 NanoをNeMo Evaluatorでベンチマーク評価。",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-evaluation-recipe"
-    },
-    "article": "## 概要\n\nNVIDIAが4億パラメータの超軽量LLM「Nemotron 3 Nano」を発表し、独自のNeMo Evaluatorによる包括的評価手法を公開しました。エッジデバイスやリソース制約環境での高品質なAI推論を実現する本技術は、オンデバイスAIの民主化と企業の運用コスト削減に大きなインパクトをもたらします。\n\n## 技術詳細\n\n### 主要な機能・特徴\n\n- **超小型モデル構成**: 4億パラメータでGPT-2レベルのアーキテクチャを採用し、メモリフットプリントを大幅削減\n- **NeMo Evaluator統合**: 多様なベンチマーク（MMLU、GSM8K、HumanEval等）を自動実行する統合評価フレームワークを提供\n- **再現可能な評価レシピ**: 評価プロセス全体をコード化し、カスタムデータセットでの評価や比較実験が容易に実施可能\n- **最適化された推論性能**: TensorRTとの統合により、CPUおよびGPU環境で高速推論を実現\n\n### スペック詳細\n\n- モデルサイズ: 4億パラメータ\n- 対応タスク: テキスト生成、質問応答、コード生成、推論タスク\n- 評価ベンチマーク: MMLU、HellaSwag、ARC、TruthfulQA、GSM8K、HumanEval\n- 推奨動作環境: 8GB以上のメモリ、NVIDIA GPU（オプション）\n\n### 従来技術との違い\n\n従来の数十億～数百億パラメータモデルと異なり、リソース効率を重視した設計により、エッジデバイスでの実行を前提とした実用性を実現しています。\n\n## 従来ソリューションとの比較\n\n| 項目 | Nemotron 3 Nano | 中規模LLM（7B-13B） | クラウドAPI型 | カスタム開発 |\n|------|-----------------|---------------------|---------------|--------------|\n| 構築期間 | 数時間～1日 | 1-2週間 | 即時 | 3-6ヶ月 |\n| 初期コスト | 無料（OSS） | $5,000-20,000 | 従量課金 | $50,000-500,000 |\n| 推論コスト | ほぼゼロ | $0.1-0.5/1Kトークン | $0.5-2/1Kトークン | 運用コスト大 |\n| レイテンシ | 10-50ms | 100-500ms | 500-2000ms | 可変 |\n| データプライバシー | 完全オンプレミス | オンプレミス可 | クラウド依存 | 完全制御可 |\n| カスタマイズ性 | 中程度 | 高い | 低い | 最高 |\n\n## ビジネス活用シーン\n\n### エッジAIアプリケーション\n\nIoTデバイスやスマートフォンアプリに組み込み、ネットワーク接続なしでリアルタイム応答を実現。例: 製造現場での品質検査支援、医療機器での診断補助など、低レイテンシと高プライバシーが求められる環境に最適です。\n\n### プロトタイピングと評価基準の標準化\n\n新規AI製品開発時の初期検証として、NeMo Evaluatorを用いた標準的な性能評価プロセスを確立。複数モデルの客観的比較により、適切なモデル選定期間を従来の数週間から数日に短縮できます。\n\n### コスト最適化戦略\n\nクラウドAPIの高額な推論コストを削減するため、簡易タスクをNanoモデルで処理し、複雑なタスクのみ大規模モデルに振り分けるハイブリッド構成を実現。月間数百万リクエストで70-80%のコスト削減が期待できます。\n\n## 導入ステップ\n\n1. **環境準備**: Hugging FaceからNemotron 3 Nanoモデルをダウンロードし、NeMo Evaluatorをインストール（pip経由で5分程度）\n\n2. **評価実行**: 提供される評価レシピを使用して、自社ユースケースに適したベンチマークを実行し、性能を確認\n\n3. **統合・最適化**: アプリケーションにモデルを統合し、TensorRTで推論を最適化、必要に応じてファインチューニング実施\n\n4. **本番デプロイ**: エッジデバイスまたはオンプレミス環境にデプロイし、モニタリング体制を構築\n\n## まとめ\n\nNemotron 3 Nanoは、軽量性と実用性を両立した次世代エッジAIの基盤技術として注目されます。標準化された評価フレームワークの提供により、企業のAI導入ハードルを大幅に下げ、オンデバイスAI市場の拡大を加速させるでしょう。",
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
