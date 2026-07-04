@@ -1,5 +1,123 @@
 [
   {
+    "title": "Memoraで長期コードリファクタリング",
+    "news_highlight": "MemoraはAIエージェントの記憶を効率化し、長期・複雑なタスクでのコンテキスト再読み込みを不要にする。",
+    "problem_context": "AIエージェントのコンテキスト喪失による非効率性",
+    "recommended_ai": {
+      "model": "Memora",
+      "reason": "長期記憶と効率的なコンテキスト管理",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模なコードベースのリファクタリング計画",
+      "複数ファイルにまたがる機能追加時の整合性チェック",
+      "長期プロジェクトのアーキテクチャ設計支援"
+    ],
+    "steps": [
+      "リファクタリング対象のプロジェクト全体をAIエージェントに読み込ませる。",
+      "「このプロジェクトの技術的負債を解消するためのリファクタリング計画を提案してください。」と指示。",
+      "提案された計画に基づき、「〇〇モジュールのリファクタリングコードを生成してください。」と依頼。",
+      "生成されたコードをレビューし、テスト環境で検証する。"
+    ],
+    "prompt": "このプロジェクトの既存コードを分析し、パフォーマンス改善と保守性向上のためのリファクタリング計画を詳細に提案してください。",
+    "tags": [
+      "リファクタリング",
+      "AIエージェント",
+      "長期記憶",
+      "コード品質"
+    ],
+    "id": "20260705_062315_01",
+    "date": "2026-07-05",
+    "source_news": {
+      "title": "AIエージェントの記憶を効率化する新メモリ表現Memora",
+      "url": "https://www.microsoft.com/en-us/research/blog/memora-a-harmonic-memory-representation-balancing-abstraction-and-specificity/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Gemma 4でリアルタイム音声AIを設計",
+    "news_highlight": "Gemma 4とCerebrasがリアルタイム音声AIの推論を効率化、低遅延を実現",
+    "problem_context": "リアルタイム音声処理の遅延とリソース消費",
+    "recommended_ai": {
+      "model": "Gemma 4",
+      "reason": "リアルタイム音声AIに特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "音声アシスタントの応答速度を改善したい時",
+      "エッジデバイス向け音声認識を実装する時",
+      "リアルタイム音声対話システムの設計を行う時"
+    ],
+    "steps": [
+      "既存の音声処理パイプラインのボトルネックを特定する。",
+      "Gemma 4のAPIドキュメントや関連ライブラリを調査する。",
+      "Gemma 4を組み込んだプロトタイプを実装し、レイテンシを計測する。",
+      "計測結果に基づき、システム設計を最適化する。"
+    ],
+    "prompt": "リアルタイム音声認識と音声合成を組み合わせた対話AIシステムのアーキテクチャ設計を提案してください。Gemma 4の利用を前提とし、低遅延と高効率を重視した構成を記述してください。",
+    "tags": [
+      "音声AI",
+      "リアルタイム",
+      "設計",
+      "Gemma"
+    ],
+    "id": "20260705_062343_02",
+    "date": "2026-07-05",
+    "source_news": {
+      "title": "Gemma 4とCerebrasがリアルタイム音声AIを効率化",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "AWS AgentCoreでメタデータフィルタリング設計",
+    "news_highlight": "AgentCoreがメモリ効率的な構造化フィルタリングでメタデータ管理を強化、マルチエージェント/テナント対応",
+    "problem_context": "複雑なLLMエージェントのメタデータ管理を効率化",
+    "recommended_ai": {
+      "model": "AWS AgentCore",
+      "reason": "メタデータ管理に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数のLLMエージェント間の情報共有を設計する時",
+      "テナントごとに異なるデータアクセス権限を実装する時",
+      "RAGシステムの検索精度を向上させるフィルタリングを検討する時"
+    ],
+    "steps": [
+      "1. AgentCoreのドキュメントで構造化フィルタリングのAPIを確認する。",
+      "2. 既存のLLMエージェントのメタデータスキーマを定義する。",
+      "3. AgentCoreのフィルタリング機能を用いてメタデータ検索クエリを実装する。",
+      "4. マルチエージェント/マルチテナント環境での動作をテストする。"
+    ],
+    "prompt": "AWS AgentCoreでマルチテナント環境向けに、ユーザーIDとドキュメントタイプでフィルタリングするメタデータ構造と検索クエリのPythonコードを生成してください。",
+    "tags": [
+      "AWS",
+      "AgentCore",
+      "LLM",
+      "RAG",
+      "メタデータ"
+    ],
+    "id": "20260705_062407_03",
+    "date": "2026-07-05",
+    "source_news": {
+      "title": "AWSがAgentCoreメモリの効率的な構造化フィルタリングを発表",
+      "url": "https://aws.amazon.com/blogs/machine-learning/structured-memory-filtering-with-metadata-in-agentcore-memory/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "MemoraでAIエージェントの長期記憶を実装",
     "news_highlight": "MemoraがAIエージェントの記憶問題を解決し、複雑なタスクのコンテキスト再読み込み非効率性を改善",
     "problem_context": "AIエージェントの長期記憶不足による非効率性",
@@ -19381,124 +19499,6 @@
     "source_news": {
       "title": "Bedrock AgentCoreへのAIエージェントデプロイをGitHub Actionsで自動化し効率化",
       "url": "https://aws.amazon.com/blogs/machine-learning/deploy-ai-agents-on-amazon-bedrock-agentcore-using-github-actions/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Amazonのマルチエージェントファインチューニングでコードレビュー",
-    "news_highlight": "Amazonのファインチューニングで投薬エラー33%減、エンジニア作業80%削減",
-    "problem_context": "複雑なコードの潜在バグや非効率性を発見したい",
-    "recommended_ai": {
-      "model": "Amazonのマルチエージェントファインチューニング技術",
-      "reason": "特定ドメイン知識で高精度化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プルリクエストを出す前に自分のコードをレビューしたい時",
-      "既存システムのパフォーマンスボトルネックを特定したい時",
-      "セキュリティ脆弱性がないかコードを自動検査したい時"
-    ],
-    "steps": [
-      "1. レビューしたいコードブロックを選択する",
-      "2. 関連する設計ドキュメントや要件定義を準備する",
-      "3. AIにコードとドキュメントを渡し、レビューを依頼する",
-      "4. AIの提案を基にコードを修正し、テストを実行する"
-    ],
-    "prompt": "以下のPythonコードについて、パフォーマンス改善点、潜在的なバグ、セキュリティ脆弱性を特定し、具体的な修正案を提案してください。関連する設計ドキュメントも参照してください。",
-    "tags": [
-      "コードレビュー",
-      "ファインチューニング",
-      "品質向上",
-      "効率化"
-    ],
-    "id": "20260118_060712_01",
-    "date": "2026-01-18",
-    "source_news": {
-      "title": "Amazonがマルチエージェントの高度なファインチューニング技術を公開",
-      "url": "https://aws.amazon.com/blogs/machine-learning/advanced-fine-tuning-techniques-for-multi-agent-orchestration-patterns-from-amazon-at-scale/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "GitHub ActionsでBedrock AgentCoreデプロイ自動化",
-    "news_highlight": "GitHub ActionsでBedrock AgentCoreへのAIエージェントデプロイを自動化、スケーラブルかつセキュアに",
-    "problem_context": "AIエージェントのデプロイ作業の自動化と安定化",
-    "recommended_ai": {
-      "model": "GitHub Actions + Bedrock AgentCore",
-      "reason": "デプロイ自動化、スケーラブル、セキュア運用",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいAIエージェントを本番環境にリリースする時",
-      "AIエージェントのバージョンアップを頻繁に行う時",
-      "複数のAIエージェントを効率的に管理・デプロイしたい時"
-    ],
-    "steps": [
-      "Bedrock AgentCoreでAIエージェントの定義と設定を準備する",
-      "AIエージェントのコードをGitHubリポジトリにプッシュする",
-      "GitHub Actionsのワークフローファイル（.github/workflows/*.yml）を作成する",
-      "ワークフローファイルにBedrock AgentCoreへのデプロイステップとAWS認証情報の設定を記述する",
-      "ワークフローをトリガーし、AIエージェントの自動デプロイを確認する"
-    ],
-    "prompt": "GitHub Actionsのワークフローを作成してください。Pythonで書かれたAIエージェントをBedrock AgentCoreにデプロイするステップを含め、必要なAWS認証情報の設定も記述してください。",
-    "tags": [
-      "CI/CD",
-      "AIエージェント",
-      "AWS Bedrock",
-      "デプロイ自動化"
-    ],
-    "id": "20260118_060739_02",
-    "date": "2026-01-18",
-    "source_news": {
-      "title": "GitHub ActionsでBedrock AgentCoreにAIエージェントをデプロイ",
-      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-ai-agents-on-amazon-bedrock-agentcore-using-github-actions/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Strands Agentsでテストケース生成を加速",
-    "news_highlight": "Strands Agentsが人間中心アプローチと構造化出力でテストケース生成を加速し、ハルシネーションを大幅削減",
-    "problem_context": "テストケース作成の工数削減と品質向上",
-    "recommended_ai": {
-      "model": "Strands Agents",
-      "reason": "テスト生成とハルシネ削減に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規機能のテストケースを効率的に作成したい時",
-      "既存コードの網羅的なテストケースを追加したい時",
-      "複雑なロジックのテストパターンを洗い出したい時"
-    ],
-    "steps": [
-      "1. テスト対象の関数やAPI仕様を準備する",
-      "2. Strands Agentsにコードと期待する入出力例を提示する",
-      "3. 生成されたテストケース（例: Pythonのpytest）を確認する",
-      "4. テストを実行し、不足や誤りがあれば手動で修正する"
-    ],
-    "prompt": "このPython関数`def calculate_discount(price, discount_rate): return price * (1 - discount_rate)`に対して、正常系、異常系、境界値のテストケースをpytest形式で生成してください。",
-    "tags": [
-      "テスト生成",
-      "品質保証",
-      "AI活用",
-      "開発効率化"
-    ],
-    "id": "20260118_060804_03",
-    "date": "2026-01-18",
-    "source_news": {
-      "title": "AmazonがStrands Agentsでテストケース生成を加速、ハルシネ削減",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-the-amazon-amet-payments-team-accelerates-test-case-generation-with-strands-agents/"
     },
     "article": null,
     "visual_theme": {
