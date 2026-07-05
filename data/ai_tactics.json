@@ -1,5 +1,125 @@
 [
   {
+    "title": "GPT-4oで大規模ログからインフラバグ特定",
+    "news_highlight": "OpenAIが大規模コアダンプ解析で18年来のインフラバグとハードウェア障害を修正",
+    "problem_context": "稀なインフラクラッシュの原因特定と修正",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "複雑なログ解析とパターン認識",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "原因不明のシステムクラッシュログを解析する時",
+      "大量のサーバーログから異常パターンを抽出したい時",
+      "稀に発生するバグの再現条件や修正案を検討する時"
+    ],
+    "steps": [
+      "1. クラッシュ時の関連ログファイル（コアダンプ、システムログなど）を収集する",
+      "2. 収集したログから個人情報や機密情報を匿名化・削除する",
+      "3. 匿名化したログをGPT-4oに貼り付け、エラーパターンと潜在原因を質問する",
+      "4. GPT-4oの提案に基づき、具体的な修正案や追加調査を実施する"
+    ],
+    "prompt": "以下のシステムクラッシュログを解析し、考えられる根本原因と修正案を複数提示してください。特にハードウェア障害とソフトウェアバグの可能性に焦点を当ててください。ログ: [ここに匿名化したログを貼り付ける]",
+    "tags": [
+      "デバッグ",
+      "ログ解析",
+      "インフラ",
+      "バグ修正"
+    ],
+    "id": "20260706_062653_01",
+    "date": "2026-07-06",
+    "source_news": {
+      "title": "OpenAIが大規模分析で18年来のインフラバグを修正。",
+      "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Claude 3でA2AゲートウェイのCDKコード生成",
+    "news_highlight": "AWSが単一ドメインで複数AIエージェントをパスルーティングするサーバーレスA2Aゲートウェイを構築",
+    "problem_context": "複数AIエージェントのデプロイ・ルーティング・アクセス制御の複雑さ",
+    "recommended_ai": {
+      "model": "Claude 3 Opus",
+      "reason": "複雑なインフラコード生成に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規A2Aゲートウェイのインフラコード（CDK）を設計・生成したい時",
+      "パスベースルーティングを処理するLambda関数のロジックを実装したい時",
+      "既存ゲートウェイに新しいエージェントを追加する際のコード修正案が欲しい時"
+    ],
+    "steps": [
+      "1. A2Aゲートウェイの要件（エージェント数、ルーティングパス、認証方式）を整理する。",
+      "2. AIにCDK (TypeScript) テンプレートの生成を依頼する。",
+      "3. 生成されたコードをレビューし、AWS環境にデプロイする。",
+      "4. Lambda関数のルーティングロジックをAIに生成させ、テストする。"
+    ],
+    "prompt": "AWS CDK (TypeScript) で、API Gateway (パス /agents/{agentId}) と Lambda 関数で構成されるサーバーレスA2Aゲートウェイのコードを生成してください。Lambdaは{agentId}に基づきリクエストを転送するロジックを含めてください。",
+    "tags": [
+      "AWS",
+      "サーバーレス",
+      "API Gateway",
+      "Lambda",
+      "CDK",
+      "AIエージェント"
+    ],
+    "id": "20260706_062722_02",
+    "date": "2026-07-06",
+    "source_news": {
+      "title": "AWSがエージェント発見・ルーティング・アクセス制御のA2Aゲートウェイを構築。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-a-serverless-a2a-gateway-for-agent-discovery-routing-and-access-control/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "BedrockでGPT OSSを使い、GovCloud向けコードレビュー",
+    "news_highlight": "BedrockでGPT OSS (120B/20B) とNVIDIA NemotronがAWS GovCloudで利用可能に。",
+    "problem_context": "GovCloud環境でのセキュアなAIモデル活用",
+    "recommended_ai": {
+      "model": "GPT OSS (120B)",
+      "reason": "GovCloudで利用可能、高精度",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "GovCloudプロジェクトのコードをレビューしたい時",
+      "機密情報を含む技術文書を作成する時",
+      "セキュリティガイドラインに沿ったコードを生成したい時"
+    ],
+    "steps": [
+      "レビューしたいGovCloud向けコードを準備する",
+      "AWS GovCloud環境のBedrock APIを呼び出す",
+      "GPT OSSモデルにコードとレビュー指示を送信する",
+      "モデルからのレビュー結果を適用し、テストする"
+    ],
+    "prompt": "以下のPythonコードについて、AWS GovCloudのセキュリティ要件とベストプラクティスに準拠しているかレビューし、改善点を提案してください。",
+    "tags": [
+      "GovCloud",
+      "セキュリティ",
+      "コードレビュー",
+      "Bedrock",
+      "LLM"
+    ],
+    "id": "20260706_062749_03",
+    "date": "2026-07-06",
+    "source_news": {
+      "title": "BedrockでNVIDIA NemotronとGPT OSSがAWS GovCloudで利用可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/run-nvidia-nemotron-and-openai-gpt-oss-models-on-amazon-bedrock-in-aws-govcloud-us/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "Memoraで長期コードリファクタリング",
     "news_highlight": "MemoraはAIエージェントの記憶を効率化し、長期・複雑なタスクでのコンテキスト再読み込みを不要にする。",
     "problem_context": "AIエージェントのコンテキスト喪失による非効率性",
@@ -19380,125 +19500,6 @@
     "source_news": {
       "title": "マルチエージェントの高度なファインチューニングで投薬エラー33%削減。",
       "url": "https://aws.amazon.com/blogs/machine-learning/advanced-fine-tuning-techniques-for-multi-agent-orchestration-patterns-from-amazon-at-scale/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "OptiMindで数理最適化モデルを生成",
-    "news_highlight": "OptiMindは小型LLMで、自然言語から数理最適化の定式化を効率化し、定式化時間を短縮。",
-    "problem_context": "複雑な業務課題の数理最適化モデル作成が困難。",
-    "recommended_ai": {
-      "model": "OptiMind",
-      "reason": "自然言語から数理最適化モデルを生成",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規プロジェクトで数理最適化の適用可能性を検討する時",
-      "既存の最適化モデルを改善・拡張する時",
-      "非専門家が最適化モデルのアイデアを素早く検証したい時"
-    ],
-    "steps": [
-      "1. 解決したい業務課題を自然言語で具体的に記述する。",
-      "2. OptiMindにその記述を入力し、数理最適化の定式化を依頼する。",
-      "3. 生成された定式化（目的関数、制約条件など）を確認し、必要に応じて修正する。",
-      "4. 定式化を最適化ソルバーに入力し、結果を評価する。"
-    ],
-    "prompt": "「物流コストを最小化するため、配送センターから各店舗への最適な配送ルートを決定する数理最適化モデルを定式化してください。車両積載量、配送時間窓、店舗の需要を考慮してください。」",
-    "tags": [
-      "数理最適化",
-      "LLM",
-      "業務効率化",
-      "モデル生成"
-    ],
-    "id": "20260119_060719_01",
-    "date": "2026-01-19",
-    "source_news": {
-      "title": "OptiMind: 小型LLMが数理最適化を効率化、実務課題解決へ",
-      "url": "https://www.microsoft.com/en-us/research/blog/optimind-a-small-language-model-with-optimization-expertise/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "AmazonのマルチエージェントAIでコードレビュー",
-    "news_highlight": "AmazonのマルチエージェントAIは投薬エラー33%減、開発労力80%減を達成。",
-    "problem_context": "開発効率とコード品質の同時向上",
-    "recommended_ai": {
-      "model": "AmazonのマルチエージェントAI (ファインチューニング済み)",
-      "reason": "複雑なタスクで高精度と効率を実現",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プルリクエスト前のコードレビュー支援",
-      "既存レガシーコードのリファクタリング提案",
-      "複雑なシステム設計における潜在バグ検出"
-    ],
-    "steps": [
-      "1. 修正したいコードブロックを選択する。",
-      "2. AIツールにコードを貼り付け、改善点を依頼する。",
-      "3. AIの提案をレビューし、必要に応じて修正を加える。",
-      "4. 提案されたコードをテスト環境で検証する。"
-    ],
-    "prompt": "以下のJavaScriptコードについて、潜在的なバグ、パフォーマンス改善点、およびセキュリティ脆弱性を特定し、具体的な修正案とリファクタリング後のコードを提示してください。",
-    "tags": [
-      "コードレビュー",
-      "リファクタリング",
-      "バグ検出",
-      "品質向上",
-      "開発効率"
-    ],
-    "id": "20260119_060747_02",
-    "date": "2026-01-19",
-    "source_news": {
-      "title": "Amazonがマルチエージェントの高度なファインチューニングで効率化",
-      "url": "https://aws.amazon.com/blogs/machine-learning/advanced-fine-tuning-techniques-for-multi-agent-orchestration-patterns-from-amazon-at-scale/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Bedrock AgentCoreとGitHub ActionsでAIエージェントデプロイ自動化",
-    "news_highlight": "GitHub ActionsでBedrock AgentCoreへのAIエージェントデプロイを自動化、スケーラブルかつセキュアな運用を実現",
-    "problem_context": "AIエージェントのデプロイ非効率、セキュリティ課題",
-    "recommended_ai": {
-      "model": "Bedrock AgentCore, GitHub Actions",
-      "reason": "AIエージェントのデプロイを自動化し、運用効率とセキュリティを向上。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいAIエージェント機能を本番環境にリリースする時",
-      "AIエージェントのバージョンアップをデプロイする時",
-      "複数のAIエージェント環境にデプロイする時"
-    ],
-    "steps": [
-      "GitHubリポジトリにAIエージェントのコードをコミット",
-      "`.github/workflows`にGitHub ActionsのYAMLファイルを作成",
-      "YAMLファイルにBedrock AgentCoreへのデプロイステップを記述",
-      "プッシュまたはプルリクエストのマージで自動デプロイをトリガー"
-    ],
-    "prompt": "Bedrock AgentCoreにAIエージェントをデプロイするGitHub ActionsワークフローYAMLを生成。Pythonベースのエージェントで、AWS認証情報を使用。",
-    "tags": [
-      "CI/CD",
-      "デプロイ自動化",
-      "AIエージェント",
-      "AWS Bedrock",
-      "GitHub Actions"
-    ],
-    "id": "20260119_060812_03",
-    "date": "2026-01-19",
-    "source_news": {
-      "title": "Bedrock AgentCoreへのAIエージェントデプロイをGitHub Actionsで自動化し効率化",
-      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-ai-agents-on-amazon-bedrock-agentcore-using-github-actions/"
     },
     "article": null,
     "visual_theme": {
