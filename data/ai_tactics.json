@@ -1,5 +1,122 @@
 [
   {
+    "title": "Gemini 1.5 Proでゲノム解析コード生成",
+    "news_highlight": "GeneBench-Proはゲノミクス・生物学AI性能を複雑な実世界データで評価する新ベンチマーク",
+    "problem_context": "科学研究データの解析効率化",
+    "recommended_ai": {
+      "model": "Gemini 1.5 Pro",
+      "reason": "長文・複雑データ理解に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ゲノム配列データからの特定遺伝子領域抽出",
+      "生物学的論文からの関連情報抽出と要約",
+      "複雑な実験プロトコルの設計支援"
+    ],
+    "steps": [
+      "解析したいゲノムデータや論文を準備",
+      "Gemini 1.5 Proにデータを入力し、解析タスクを指示",
+      "出力された結果（コード、要約、設計案）を確認",
+      "必要に応じて修正・検証し、実務に適用"
+    ],
+    "prompt": "与えられたゲノム配列データから、特定の遺伝子マーカー（例: BRCA1）に関連する領域を抽出し、その機能的意味を簡潔に説明するPythonコードを生成してください。",
+    "tags": [
+      "ゲノム解析",
+      "生物情報学",
+      "AI支援",
+      "データ処理"
+    ],
+    "id": "20260707_063558_01",
+    "date": "2026-07-07",
+    "source_news": {
+      "title": "科学研究向けAI性能を測る新ベンチマーク「GeneBench-Pro」発表。",
+      "url": "https://openai.com/index/introducing-genebench-pro"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "GPT-4oでJavaコード移行を支援",
+    "news_highlight": "Java移行AIエージェント評価の新ベンチマークScarfBench登場、移行精度向上に貢献",
+    "problem_context": "複雑なJavaコード移行の効率化と品質向上",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "大規模コード理解と生成に優れる",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Java 8からJava 17へのバージョンアップ時のコード修正",
+      "Spring Frameworkのバージョンアップに伴うAPI変更対応",
+      "レガシーなJavaコードをモダンな書き方にリファクタリング"
+    ],
+    "steps": [
+      "移行対象のJavaコード（メソッド、クラス単位）を特定する",
+      "移行先のJavaバージョンやフレームワークの情報を準備する",
+      "AIに移行を依頼するプロンプトを作成し、コードと情報を入力する",
+      "AIが提案した移行コードをレビューし、テスト環境で動作確認する"
+    ],
+    "prompt": "Java 8で書かれた以下のコードをJava 17に移行してください。Stream APIやOptionalを活用し、モダンな書き方にリファクタリングしてください。コード: [ここにコードを貼り付け]",
+    "tags": [
+      "Java",
+      "コード移行",
+      "リファクタリング",
+      "AIエージェント"
+    ],
+    "id": "20260707_063625_02",
+    "date": "2026-07-07",
+    "source_news": {
+      "title": "Java移行AIエージェント評価の新ベンチマーク「ScarfBench」登場。",
+      "url": "https://huggingface.co/blog/ibm-research/scarfbench"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "SkillOptでAIエージェントのスキルを最適化",
+    "news_highlight": "SkillOptがAIエージェントのスキル編集を訓練プロセス化し、性能を自動向上。",
+    "problem_context": "AIエージェントのスキル調整が非効率",
+    "recommended_ai": {
+      "model": "SkillOpt",
+      "reason": "スキル編集を訓練化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントの振る舞いを改善したい時",
+      "エージェントのタスク遂行精度を高めたい時",
+      "手動でのプロンプト調整に限界を感じた時"
+    ],
+    "steps": [
+      "1. 既存のAIエージェントのスキル定義（プロンプトや関数呼び出し）を特定する。",
+      "2. SkillOptツールにエージェントのスキル定義と改善したい振る舞いの目標（例: 成功率80%以上）を入力する。",
+      "3. SkillOptが生成した訓練データや最適化されたスキル定義をエージェントに適用する。",
+      "4. 適用後、エージェントの性能を評価し、必要に応じてSkillOptで再訓練を繰り返す。"
+    ],
+    "prompt": "AIエージェントの現在のスキル定義と、達成したい目標性能（例: 顧客問い合わせ対応の成功率90%）を入力し、最適化されたスキル定義を生成してください。",
+    "tags": [
+      "AIエージェント",
+      "プロンプト最適化",
+      "性能改善",
+      "MLOps"
+    ],
+    "id": "20260707_063652_03",
+    "date": "2026-07-07",
+    "source_news": {
+      "title": "AIエージェントのスキルを訓練可能にし、性能向上させる技術。",
+      "url": "https://www.microsoft.com/en-us/research/blog/skillopt-agent-skills-as-trainable-parameters/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GPT-4oで大規模ログからインフラバグ特定",
     "news_highlight": "OpenAIが大規模コアダンプ解析で18年来のインフラバグとハードウェア障害を修正",
     "problem_context": "稀なインフラクラッシュの原因特定と修正",
@@ -19386,125 +19503,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "AWS Bedrock AgentCoreでAIエージェント自動デプロイ",
-    "news_highlight": "GitHub ActionsでAWS Bedrock AgentCoreへのAIエージェント自動デプロイを実現、エンタープライズセキュリティを強化。",
-    "problem_context": "AIエージェントの安全かつ効率的なデプロイ",
-    "recommended_ai": {
-      "model": "AWS Bedrock AgentCore",
-      "reason": "AIエージェントの実行環境とセキュリティ",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新機能を持つAIエージェントを本番環境に安全にデプロイしたい時",
-      "AIエージェントのデプロイプロセスを標準化し、手動ミスを削減したい時",
-      "セキュリティ要件を満たしたCI/CDパイプラインを構築したい時"
-    ],
-    "steps": [
-      "GitHubリポジトリにAIエージェントのコードとデプロイスクリプトを配置する。",
-      "`.github/workflows`ディレクトリにGitHub Actionsワークフローファイルを作成する。",
-      "AWS Bedrock AgentCoreへのデプロイに必要なIAMロールとポリシーを設定する。",
-      "ワークフローファイルにAWS認証情報とデプロイコマンドを記述し、プッシュで自動実行をテストする。"
-    ],
-    "prompt": "GitHub ActionsワークフローでAWS Bedrock AgentCoreにAIエージェントをデプロイするYAMLファイルを生成してください。Pythonベースのエージェントを想定し、セキュリティ強化のためIAMロールを利用してください。",
-    "tags": [
-      "CI/CD",
-      "AWS",
-      "セキュリティ",
-      "デプロイ"
-    ],
-    "id": "20260120_060848_01",
-    "date": "2026-01-20",
-    "source_news": {
-      "title": "AWS Bedrock AgentCoreへのAIエージェント自動デプロイ、エンタープライズセキュリティを強化。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-ai-agents-on-amazon-bedrock-agentcore-using-github-actions/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Bedrockでデバイスログ異常検知",
-    "news_highlight": "Palo AltoがBedrockでデバイスセキュリティログ分析強化、潜在問題の早期検出を実現",
-    "problem_context": "デバイスログから潜在問題を早期発見し対応時間を確保",
-    "recommended_ai": {
-      "model": "Bedrock",
-      "reason": "ログ分析と異常検知に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "本番環境のデバイスログから異常な挙動を検知したい時",
-      "セキュリティインシデントの予兆を早期に発見したい時",
-      "新しいデバイスの導入後に潜在的な問題を監視したい時"
-    ],
-    "steps": [
-      "デバイスログをBedrockに連携するデータレイクに集約する",
-      "Bedrockの基盤モデルにログ分析のプロンプトを入力する",
-      "異常検知のルールや閾値を設定し、アラート通知を設定する",
-      "検知された異常ログを基に、専門家が詳細調査を開始する"
-    ],
-    "prompt": "以下のデバイスログデータから、過去1時間以内に発生した異常なアクセスパターンやエラー増加傾向を特定し、その原因と影響範囲を分析してください。ログデータ: [ここにログデータを貼り付ける]",
-    "tags": [
-      "ログ分析",
-      "異常検知",
-      "セキュリティ",
-      "オブザーバビリティ",
-      "AWS"
-    ],
-    "id": "20260120_060914_02",
-    "date": "2026-01-20",
-    "source_news": {
-      "title": "Palo AltoがBedrockでデバイスセキュリティログ分析強化、潜在問題の早期検出へ。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-palo-alto-networks-enhanced-device-security-infra-log-analysis-with-amazon-bedrock/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
-    }
-  },
-  {
-    "title": "マルチエージェントAIで投薬指示をレビュー",
-    "news_highlight": "マルチエージェントAIの高度なファインチューニングで投薬エラー33%削減、人間労力80%削減。",
-    "problem_context": "複雑な医療指示の誤解によるエラーを削減",
-    "recommended_ai": {
-      "model": "ファインチューニングされたマルチエージェントAI",
-      "reason": "専門知識を統合し高精度な判断",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "医療システム開発で処方箋ロジックを検証する時",
-      "既存システムの医療関連コードの潜在バグを特定する時",
-      "新機能開発で医療ガイドライン遵守を事前確認する時"
-    ],
-    "steps": [
-      "1. 処方箋データ（患者情報、薬剤、投与量、頻度）をJSON形式で準備",
-      "2. 関連する医療ガイドラインや禁忌情報をテキストで用意",
-      "3. AIにプロンプトとデータを入力し、潜在的なエラーや矛盾を分析依頼",
-      "4. AIの指摘に基づき、処方箋ロジックやコードを修正しテスト"
-    ],
-    "prompt": "以下の処方箋データと医療ガイドラインを基に、潜在的な投薬エラーや矛盾点を指摘し、改善案を提案してください。処方箋データ: {\"medication\": \"DrugX\", \"dosage\": \"10mg\"}, ガイドライン: \"DrugXは腎機能障害患者には禁忌\"",
-    "tags": [
-      "医療AI",
-      "ファインチューニング",
-      "エラー削減",
-      "コードレビュー",
-      "設計支援"
-    ],
-    "id": "20260120_060942_03",
-    "date": "2026-01-20",
-    "source_news": {
-      "title": "マルチエージェントの高度なファインチューニングで投薬エラー33%削減。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/advanced-fine-tuning-techniques-for-multi-agent-orchestration-patterns-from-amazon-at-scale/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
     }
   }
 ]
