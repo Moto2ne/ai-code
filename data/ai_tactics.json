@@ -1,5 +1,123 @@
 [
   {
+    "title": "Gemini APIでバックグラウンドタスク設計",
+    "news_highlight": "Gemini APIのManaged Agentsが拡張、バックグラウンドタスクや非同期処理に対応。",
+    "problem_context": "複雑な非同期処理の自動化が困難。",
+    "recommended_ai": {
+      "model": "Gemini API Managed Agents",
+      "reason": "バックグラウンドタスクに特化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザーからの問い合わせに自動で長時間応答するチャットボット開発",
+      "定期的に外部APIからデータを取得しDBに保存する処理の実装",
+      "長時間かかるデータ分析ジョブの実行と結果通知の自動化"
+    ],
+    "steps": [
+      "1. Gemini APIのManaged Agentsを有効化する。",
+      "2. バックグラウンドで実行したいタスクの仕様を定義する。",
+      "3. 定義したタスクをManaged Agentsにデプロイする。",
+      "4. タスクの実行状況をモニタリングし、必要に応じて調整する。"
+    ],
+    "prompt": "Gemini APIのManaged Agentsで、ユーザーからの問い合わせに対して非同期で外部システムと連携し、結果を通知するバックグラウンドタスクを設計してください。",
+    "tags": [
+      "API連携",
+      "自動化",
+      "非同期処理",
+      "エージェント"
+    ],
+    "id": "20260708_063318_01",
+    "date": "2026-07-08",
+    "source_news": {
+      "title": "Gemini APIのManaged Agents機能が拡張、バックグラウンドタスク等に対応",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "Hugging FaceモデルでSkyPilotクラウド推論",
+    "news_highlight": "Hugging FaceがSkyPilot連携でクラウドAIワークロード実行、ゼロエグレスストレージでデータ転送コストを大幅削減。",
+    "problem_context": "大規模AIモデルのクラウド間データ転送コスト削減",
+    "recommended_ai": {
+      "model": "Hugging Face / SkyPilot",
+      "reason": "クラウドコスト最適化とデータ転送費削減",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数のクラウドプロバイダーでAIモデルをデプロイしたい時",
+      "大規模データセットを扱うAIモデルのトレーニングコストを削減したい時",
+      "クラウドベンダーロックインを避け、柔軟なインフラを利用したい時"
+    ],
+    "steps": [
+      "SkyPilot CLIをインストールし、クラウドプロバイダー認証を設定する",
+      "Hugging Face Hubからデプロイしたいモデルを選択する",
+      "SkyPilot YAML設定ファイルを作成し、モデルとリソースを指定する",
+      "`sky launch your_config.yaml`コマンドでワークロードを実行し、コストを監視する"
+    ],
+    "prompt": "Hugging Faceの`distilbert-base-uncased`モデルをSkyPilotでAWSにデプロイするYAML設定を生成。ゼロエグレスストレージを考慮し、推論エンドポイントを構築してください。",
+    "tags": [
+      "クラウドAI",
+      "コスト最適化",
+      "MLOps",
+      "Hugging Face",
+      "SkyPilot"
+    ],
+    "id": "20260708_063346_02",
+    "date": "2026-07-08",
+    "source_news": {
+      "title": "Hugging FaceがSkyPilot連携でAIワークロードをクラウド実行、ゼロエグレスストレージを提供",
+      "url": "https://huggingface.co/blog/skypilot-hf-storage"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Hugging FaceモデルをSageMaker Studioでデプロイ",
+    "news_highlight": "Hugging FaceモデルをAmazon SageMaker Studioへワンクリックでデプロイ可能、MLOpsを効率化",
+    "problem_context": "Hugging Faceモデルのデプロイ環境構築の手間",
+    "recommended_ai": {
+      "model": "Hugging Faceモデル",
+      "reason": "ワンクリックデプロイで効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいHugging Faceモデルを素早く検証したい時",
+      "プロトタイプとしてAI機能を素早く検証したい時",
+      "既存アプリケーションにAI推論機能を統合したい時"
+    ],
+    "steps": [
+      "1. SageMaker StudioのHugging Face Hub統合を開く",
+      "2. デプロイしたいHugging Faceモデルを選択する",
+      "3. 「ワンクリックデプロイ」ボタンをクリックする",
+      "4. デプロイされたエンドポイントをアプリケーションから呼び出す"
+    ],
+    "prompt": "SageMaker StudioにデプロイしたHugging Faceモデルのエンドポイントを呼び出すPythonコードを生成してください。入力データはJSON形式です。",
+    "tags": [
+      "Hugging Face",
+      "SageMaker",
+      "MLOps",
+      "デプロイ"
+    ],
+    "id": "20260708_063410_03",
+    "date": "2026-07-08",
+    "source_news": {
+      "title": "Hugging FaceモデルをAmazon SageMaker Studioへワンクリックでデプロイ可能に",
+      "url": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Gemini 1.5 Proでゲノム解析コード生成",
     "news_highlight": "GeneBench-Proはゲノミクス・生物学AI性能を複雑な実世界データで評価する新ベンチマーク",
     "problem_context": "科学研究データの解析効率化",
@@ -19385,124 +19503,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
       "icon": "🦙"
-    }
-  },
-  {
-    "title": "Bedrock AgentCoreで自律エージェント設計",
-    "news_highlight": "Bedrock AgentCoreはエピソード記憶とリフレクションで経験学習、ベンチマークで顕著な改善",
-    "problem_context": "エージェントが過去の失敗から学習できない",
-    "recommended_ai": {
-      "model": "Amazon Bedrock AgentCore",
-      "reason": "エピソード記憶とリフレクション機能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "複雑なタスクを自動化するエージェントの設計",
-      "ユーザーのフィードバックを元に改善するチャットボットの開発",
-      "長期的なプロジェクト管理を支援するAIアシスタントの構築"
-    ],
-    "steps": [
-      "1. Bedrock AgentCoreでエージェントの初期設計を行う。",
-      "2. エージェントの実行ログから「エピソード記憶」として保存すべき情報を定義する。",
-      "3. リフレクションモジュールに、エピソード記憶を元に改善点を分析させるプロンプトを設定する。",
-      "4. エージェントをテスト実行し、改善された振る舞いを評価する。"
-    ],
-    "prompt": "Amazon Bedrock AgentCoreで、ユーザーからの問い合わせ履歴をエピソード記憶として活用し、回答精度を向上させるエージェントの設計を提案してください。特に、失敗事例からの学習メカニズムを詳細に記述してください。",
-    "tags": [
-      "エージェント",
-      "AI設計",
-      "機械学習",
-      "Bedrock",
-      "自律学習"
-    ],
-    "id": "20260122_061429_03",
-    "date": "2026-01-22",
-    "source_news": {
-      "title": "Amazon Bedrock AgentCoreのエピソード記憶で、経験から学習するエージェントを構築。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-agents-to-learn-from-experiences-using-amazon-bedrock-agentcore-episodic-memory/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "KaggleベンチマークでGeminiがモデル改善案を生成",
-    "news_highlight": "Kaggleにコミュニティベンチマークが導入され、モデル評価が客観的に促進される。",
-    "problem_context": "モデルの性能改善点特定と最適化の効率化",
-    "recommended_ai": {
-      "model": "Gemini 1.5 Pro",
-      "reason": "複雑なベンチマーク結果の分析と改善提案",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "Kaggleコンペで提出モデルの性能を向上させたい時",
-      "既存の機械学習モデルのボトルネックを特定したい時",
-      "新しいモデルアーキテクチャの設計指針を得たい時"
-    ],
-    "steps": [
-      "1. Kaggleのコミュニティベンチマークでモデルを評価し、結果レポートをダウンロードする",
-      "2. ダウンロードしたレポート（CSV, JSONなど）の内容をコピーする",
-      "3. Geminiにレポート内容とモデルのコードの一部を貼り付け、改善点を質問する",
-      "4. Geminiの提案に基づき、コードを修正し、再度ベンチマークで評価する"
-    ],
-    "prompt": "Kaggleベンチマーク結果と現在のモデルコードを提示します。結果から性能改善に繋がる具体的なコード修正案と、データ前処理の最適化案を提案してください。",
-    "tags": [
-      "Kaggle",
-      "モデル評価",
-      "性能改善",
-      "機械学習"
-    ],
-    "id": "20260121_060934_01",
-    "date": "2026-01-21",
-    "source_news": {
-      "title": "Kaggleにコミュニティベンチマークを導入、モデル評価を促進。",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-community-benchmarks/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
-    }
-  },
-  {
-    "title": "OptiMindで数理最適化問題を定式化",
-    "news_highlight": "OptiMindは自然言語のビジネス課題を数理最適化の定式化に変換し、定式化時間を短縮。",
-    "problem_context": "複雑なビジネス課題の数理定式化が困難",
-    "recommended_ai": {
-      "model": "OptiMind",
-      "reason": "自然言語から数理定式化へ変換",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規最適化問題の初期定式化を検討する時",
-      "既存の数理モデルの改善点を探る時",
-      "数理最適化の専門家でないが、最適化を導入したい時"
-    ],
-    "steps": [
-      "最適化したいビジネス課題を自然言語で具体的に記述する。",
-      "OptiMindにその記述を入力し、数理定式化を生成させる。",
-      "生成された定式化を最適化ソルバーで実行可能な形式に調整する。",
-      "定式化の妥当性を検証し、必要に応じて修正・改善する。"
-    ],
-    "prompt": "以下のビジネス課題を数理最適化問題として定式化してください。目的関数、制約条件、変数を明確に記述してください。課題：工場Aと工場Bで製品XとYを生産し、総利益を最大化したい。各工場の生産能力、製品ごとの生産時間、利益、需要を考慮してください。",
-    "tags": [
-      "数理最適化",
-      "定式化",
-      "業務効率化",
-      "設計"
-    ],
-    "id": "20260121_060959_02",
-    "date": "2026-01-21",
-    "source_news": {
-      "title": "数理最適化に特化した小型言語モデルOptiMindを発表。",
-      "url": "https://www.microsoft.com/en-us/research/blog/optimind-a-small-language-model-with-optimization-expertise/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
