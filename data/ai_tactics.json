@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-5.6で複雑なシステム設計",
+    "news_highlight": "性能とコスト効率が向上し、複雑なタスクへの対応力が大幅強化",
+    "problem_context": "複雑な要件のシステム設計が困難",
+    "recommended_ai": {
+      "model": "GPT-5.6",
+      "reason": "性能とコスト効率が向上し複雑なタスクに対応",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規マイクロサービスアーキテクチャを検討する時",
+      "既存システムのボトルネックを特定し改善策を練る時",
+      "複数の技術スタックを跨ぐ大規模なリファクタリング計画を立てる時"
+    ],
+    "steps": [
+      "1. 現行システムの概要と解決したい課題、目標性能を整理する",
+      "2. AIに課題と目標を提示し、設計案や最適化戦略の提案を依頼する",
+      "3. AIが提案した設計案や戦略をチームでレビューし、実現可能性を評価する",
+      "4. 提案を基に具体的な実装計画とタスク分解を行い、開発を開始する"
+    ],
+    "prompt": "マイクロサービスアーキテクチャで、高負荷に耐えるECサイトのバックエンド設計を提案してください。データベース選定、API設計、スケーラビリティ考慮を含めてください。",
+    "tags": [
+      "システム設計",
+      "アーキテクチャ",
+      "最適化",
+      "高難度タスク"
+    ],
+    "id": "20260710_063355_01",
+    "date": "2026-07-10",
+    "source_news": {
+      "title": "GPT-5.6発表、性能とコスト効率が向上し、より複雑なタスクに対応。",
+      "url": "https://openai.com/index/gpt-5-6"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "ChatGPT Workで開発タスクを自動実行",
+    "news_highlight": "ChatGPT Workがアプリ連携で複数ツールを跨ぎ、長時間タスクを自動実行し、目標達成まで自律的に作業。",
+    "problem_context": "複数アプリ連携の定型作業や長時間タスクの自動化",
+    "recommended_ai": {
+      "model": "ChatGPT Work",
+      "reason": "アプリ連携と長時間タスクの自動実行に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規プロジェクトの環境構築と初期設定を自動化したい時",
+      "既存システムのAPI仕様変更に伴うテストコードの自動生成と実行",
+      "バグ報告から修正、テスト、デプロイまでの一連のフローを自動化したい時"
+    ],
+    "steps": [
+      "1. ChatGPT Workに実行させたいタスクの最終目標と手順を指示する。",
+      "2. 必要なアプリケーション（IDE, Gitクライアント, テストツール等）への連携を設定する。",
+      "3. ChatGPT Workがタスクを自動実行するのを見守る。",
+      "4. 完了した作業や生成された成果物を確認し、必要に応じて微調整する。"
+    ],
+    "prompt": "GitHubからリポジトリをクローンし、Docker Composeで開発環境を構築、テストを実行して結果をSlackに通知してください。",
+    "tags": [
+      "自動化",
+      "エージェント",
+      "アプリ連携",
+      "開発効率化"
+    ],
+    "id": "20260710_063425_02",
+    "date": "2026-07-10",
+    "source_news": {
+      "title": "ChatGPT Work発表、アプリ連携で長時間タスクを自動実行。",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "vLLMでLLM推論を高速化",
+    "news_highlight": "vLLMはトランスフォーマーモデルの推論を高速化し、スループットとレイテンシを大幅改善",
+    "problem_context": "LLM推論のレイテンシとコストを削減したい",
+    "recommended_ai": {
+      "model": "vLLM",
+      "reason": "高速推論バックエンドを提供",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "本番環境のLLMアプリケーションの応答速度を改善したい時",
+      "LLMのAPIコストを削減しつつスループットを上げたい時",
+      "複数のLLMリクエストを効率的にバッチ処理したい時"
+    ],
+    "steps": [
+      "1. 既存のLLM推論コードでvLLMがサポートするモデル（例: Llama, Mistral）を使用しているか確認する。",
+      "2. vLLMライブラリをインストールし、既存の推論コードをvLLMのAPI（例: `vllm.LLM`）に置き換える。",
+      "3. 置き換え後、ベンチマークテストを実行し、スループットとレイテンシの改善を確認する。",
+      "4. 必要に応じて、GPUリソースやバッチサイズを調整し、最適な設定を見つける。"
+    ],
+    "prompt": "vLLMを使ってLlama 3モデルの推論を高速化するPythonコードを生成してください。バッチ処理の例を含めてください。",
+    "tags": [
+      "LLM推論",
+      "高速化",
+      "バックエンド",
+      "パフォーマンス"
+    ],
+    "id": "20260710_063450_03",
+    "date": "2026-07-10",
+    "source_news": {
+      "title": "vLLMトランスフォーマーの高速バックエンド、推論性能を向上。",
+      "url": "https://huggingface.co/blog/native-speed-vllm-transformers-backend"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Hugging Face TransformersでvLLM推論最適化",
     "news_highlight": "Hugging FaceがvLLM統合でTransformer推論スループットを大幅向上",
     "problem_context": "LLM推論の低速化と高コストを解決",
@@ -19386,122 +19503,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
       "icon": "🚀"
-    }
-  },
-  {
-    "title": "Waypoint-1でリアルタイム動画UI設計",
-    "news_highlight": "Waypoint-1はリアルタイム動画拡散モデルで、インタラクティブな新体験を提供。",
-    "problem_context": "ユーザー体験を向上させる動的な動画コンテンツ作成。",
-    "recommended_ai": {
-      "model": "Waypoint-1",
-      "reason": "リアルタイム動画生成に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "インタラクティブな動画コンテンツのUI/UXを設計する時",
-      "ゲームやメタバースで動的な背景動画を生成する時",
-      "ライブ配信でリアルタイムエフェクトを実装する時"
-    ],
-    "steps": [
-      "Waypoint-1のAPIドキュメントを確認する",
-      "動画生成をトリガーするUI要素（ボタン、スライダーなど）を設計する",
-      "生成された動画を埋め込むためのフロントエンドコンポーネントを実装する",
-      "リアルタイム性を確保するためのパフォーマンス最適化を検討する"
-    ],
-    "prompt": "ユーザー入力に応じてリアルタイムで動画を生成・表示するWebアプリケーションのフロントエンド設計を提案してください。ReactとTypeScriptを使用し、主要なコンポーネント構成とデータフローを示してください。",
-    "tags": [
-      "動画生成",
-      "リアルタイム",
-      "UI/UX",
-      "フロントエンド"
-    ],
-    "id": "20260124_060927_03",
-    "date": "2026-01-24",
-    "source_news": {
-      "title": "Waypoint-1発表、リアルタイム動画拡散モデルで新体験。",
-      "url": "https://huggingface.co/blog/waypoint-1"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "Waypoint-1で短尺動画コンテンツ生成",
-    "news_highlight": "Overworldがリアルタイム動画拡散モデルWaypoint-1を発表。低遅延での動画生成が可能。",
-    "problem_context": "プロモーション用短尺動画の迅速な作成",
-    "recommended_ai": {
-      "model": "Waypoint-1",
-      "reason": "リアルタイム動画生成に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プロモーション用短尺動画の迅速な作成",
-      "UI/UXデザインの動的モックアップ生成",
-      "ゲーム内イベントの告知動画を自動生成"
-    ],
-    "steps": [
-      "1. 生成したい動画のシナリオとテキストプロンプトを準備する。",
-      "2. Waypoint-1のAPIまたはUIにプロンプトを入力する。",
-      "3. 生成された動画を確認し、必要に応じてプロンプトを調整する。",
-      "4. 生成された動画をアプリケーションやウェブサイトに組み込む。"
-    ],
-    "prompt": "「未来的な都市の風景を背景に、AIアシスタントがユーザーに話しかける10秒間のプロモーション動画を生成してください。スタイルはサイバーパンク調で。」",
-    "tags": [
-      "動画生成",
-      "リアルタイムAI",
-      "コンテンツ作成"
-    ],
-    "id": "20260123_061025_01",
-    "date": "2026-01-23",
-    "source_news": {
-      "title": "Overworldがリアルタイム動画拡散モデルWaypoint-1を発表。",
-      "url": "https://huggingface.co/blog/waypoint-1"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Differential Transformer V2でAPI推論最適化",
-    "news_highlight": "Differential Transformer V2は推論効率を向上させ、リソース消費を削減",
-    "problem_context": "AIモデルの推論コストとレイテンシの課題",
-    "recommended_ai": {
-      "model": "Differential Transformer V2",
-      "reason": "推論効率とリソース最適化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "リアルタイム応答が必要なAPI開発",
-      "エッジデバイスへのAIモデルデプロイ",
-      "大規模データに対する高速バッチ処理"
-    ],
-    "steps": [
-      "1. 既存のTransformerモデルの推論性能を計測する",
-      "2. Differential Transformer V2のAPI/ライブラリを調査する",
-      "3. 既存モデルをDifferential Transformer V2に置き換えて実装する",
-      "4. 新モデルの推論速度とリソース消費を比較評価する"
-    ],
-    "prompt": "Differential Transformer V2を前提に、リアルタイム応答が必要なテキスト分類APIのPythonコードを設計してください。推論効率とリソース最適化を考慮してください。",
-    "tags": [
-      "Transformer",
-      "推論最適化",
-      "API開発",
-      "MLOps"
-    ],
-    "id": "20260123_061052_02",
-    "date": "2026-01-23",
-    "source_news": {
-      "title": "Microsoftが新しいTransformerモデルDifferential Transformer V2を発表。",
-      "url": "https://huggingface.co/blog/microsoft/diff-attn-v2"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
