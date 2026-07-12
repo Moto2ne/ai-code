@@ -1,5 +1,121 @@
 [
   {
+    "title": "GPT-4oで生物学的脅威リスク評価",
+    "news_highlight": "OpenAIがAIの安全性向上へ生物学的脅威バグ報奨金を開始",
+    "problem_context": "AIモデルの生物学的脅威リスクを特定する",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "最新モデルで多角的な評価が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "医療・バイオ系AIの出力レビュー時",
+      "AIモデルの倫理的安全性テスト時",
+      "新規AI機能のリリース前チェック時"
+    ],
+    "steps": [
+      "1. 開発中のAIアプリケーションの出力例を準備する",
+      "2. 生物学的脅威に関連する可能性のあるシナリオを想定する",
+      "3. GPT-4oに想定シナリオと出力例を提示し、リスク評価を依頼する",
+      "4. GPT-4oの評価に基づき、モデルの調整やガードレールの実装を検討する"
+    ],
+    "prompt": "以下のAI出力が生物学的脅威（誤情報拡散、悪用可能性）につながるリスクを評価し、具体的な懸念点と改善策を提案してください。出力: [AIの出力テキスト]",
+    "tags": [
+      "AI安全性",
+      "リスク評価",
+      "倫理AI",
+      "GPT-4o"
+    ],
+    "id": "20260713_065632_01",
+    "date": "2026-07-13",
+    "source_news": {
+      "title": "OpenAIがAIの安全性向上へ生物学的脅威バグ報奨金を開始",
+      "url": "https://openai.com/index/bio-bug-bounty"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-5.6で既存コードを最適化",
+    "news_highlight": "GPT-5.6は性能と費用対効果が向上し、より高度な作業に対応",
+    "problem_context": "複雑なコードのパフォーマンス改善",
+    "recommended_ai": {
+      "model": "GPT-5.6",
+      "reason": "高度な最適化提案が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "パフォーマンスボトルネックの解消が必要な時",
+      "大規模なリファクタリングを計画する時",
+      "コードレビューで改善点を具体的に指摘したい時"
+    ],
+    "steps": [
+      "1. 最適化したいコードブロックを選択する。",
+      "2. パフォーマンス要件や制約を明確にする。",
+      "3. GPT-5.6にコードと要件を渡し、最適化案を依頼する。",
+      "4. 提案されたコードをテストし、効果を検証する。"
+    ],
+    "prompt": "以下のPythonコードのパフォーマンスを最大化してください。特にメモリ使用量と実行速度を改善する具体的なリファクタリング案と修正コードを提示してください。",
+    "tags": [
+      "コード最適化",
+      "リファクタリング",
+      "パフォーマンス改善"
+    ],
+    "id": "20260713_065658_02",
+    "date": "2026-07-13",
+    "source_news": {
+      "title": "OpenAIが新モデルGPT-5.6を発表、性能と費用対効果向上",
+      "url": "https://openai.com/index/gpt-5-6"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "ChatGPT Workでアプリ連携デバッグ",
+    "news_highlight": "ChatGPT Workがアプリ連携し、自律的に複数アプリ横断タスクを長時間実行可能に",
+    "problem_context": "複数アプリ横断の複雑なデバッグ作業の効率化",
+    "recommended_ai": {
+      "model": "ChatGPT Work",
+      "reason": "複数アプリ連携で自律実行可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数のログファイルとIDEを横断してエラー原因を特定したい時",
+      "APIドキュメントとコードを比較し、実装ミスを検出したい時",
+      "テスト環境で発生したバグを再現し、修正パッチを適用したい時"
+    ],
+    "steps": [
+      "1. ChatGPT WorkにIDE、ログツール、ドキュメントツールへのアクセスを許可する",
+      "2. エラーメッセージと再現手順をChatGPT Workに指示する",
+      "3. ChatGPT Workが提案する修正案をレビューし、テスト環境で検証する",
+      "4. 修正が正しいことを確認後、コードベースに適用する"
+    ],
+    "prompt": "ログファイル、IDE、APIドキュメントを参照し、このエラーメッセージの原因を特定し、修正コードを提案してください。再現手順は「ユーザーがログインボタンをクリックすると500エラー」です。",
+    "tags": [
+      "デバッグ",
+      "自動化",
+      "エージェント",
+      "IDE連携"
+    ],
+    "id": "20260713_065722_03",
+    "date": "2026-07-13",
+    "source_news": {
+      "title": "ChatGPTがアプリ連携し自律的にタスクをこなすエージェントに進化",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "Unsloth量子化モデルをSageMakerで効率デプロイ",
     "news_highlight": "Unsloth量子化モデルをSageMakerへ効率デプロイする4パターンを解説",
     "problem_context": "量子化モデルのSageMakerへの効率的なデプロイ",
@@ -19380,125 +19496,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
       "icon": "💻"
-    }
-  },
-  {
-    "title": "Amazon Bedrock AgentCoreでAIエージェントをIaC構築",
-    "news_highlight": "Amazon Bedrock AgentCoreがAWS CDK, Terraform, CloudFormationに対応し、AIエージェント構築をIaCで効率化。",
-    "problem_context": "AIエージェントの手動設定によるミスや非効率性",
-    "recommended_ai": {
-      "model": "Amazon Bedrock AgentCore",
-      "reason": "IaCでエージェントの定義・デプロイが可能に",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいAIエージェントをIaCで迅速にプロビジョニングしたい時",
-      "既存のAIエージェント設定をバージョン管理し、変更履歴を追跡したい時",
-      "開発・ステージング・本番環境でAIエージェントを再現性高くデプロイしたい時"
-    ],
-    "steps": [
-      "1. 既存のAIエージェント定義をIaCテンプレートに変換する。",
-      "2. IaCテンプレート（例: AWS CDKコード）をバージョン管理システムにコミットする。",
-      "3. CI/CDパイプラインでIaCテンプレートをデプロイする。",
-      "4. デプロイされたAIエージェントの動作を確認する。"
-    ],
-    "prompt": "AWS CDK (TypeScript) を使用して、Amazon Bedrock AgentCoreで新しいAIエージェントを定義するコードを生成してください。エージェント名は'MySalesAgent'、基盤モデルは'anthropic.claude-3-sonnet-20240229-v1:0'とします。",
-    "tags": [
-      "IaC",
-      "AIエージェント",
-      "AWS",
-      "開発効率化"
-    ],
-    "id": "20260127_061113_03",
-    "date": "2026-01-27",
-    "source_news": {
-      "title": "Amazon Bedrock AgentCoreがIaCに対応、AIエージェント構築を効率化。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-ai-agents-with-amazon-bedrock-agentcore-using-aws-cloudformation/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "ArgosでマルチモーダルRLの幻覚をデバッグ",
-    "news_highlight": "Argosは推論と観察の一致を評価し、マルチモーダルRLの幻覚を削減、データ効率を向上。",
-    "problem_context": "マルチモーダルRLの幻覚とデータ非効率性",
-    "recommended_ai": {
-      "model": "Argos",
-      "reason": "幻覚削減とデータ効率向上に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "マルチモーダルRLモデルの学習データセットを準備する時",
-      "マルチモーダルRLエージェントの異常な挙動を分析する時",
-      "強化学習環境でのエージェントの推論プロセスを可視化したい時"
-    ],
-    "steps": [
-      "1. マルチモーダルRLエージェントの推論ログと観察データを収集する。",
-      "2. Argosの評価フレームワークに沿ってデータを整形する。",
-      "3. Argosを用いてエージェントの推論と観察の一致度を評価する。",
-      "4. 評価結果に基づき、幻覚の原因となる推論ステップやデータセットの問題点を特定し、モデルを修正する。"
-    ],
-    "prompt": "Argosの分析により、エージェントが特定の視覚入力に対して誤った推論を行っていることが判明しました。このRLエージェントの報酬関数と状態表現を修正するPythonコードを提案してください。",
-    "tags": [
-      "マルチモーダルRL",
-      "幻覚",
-      "デバッグ",
-      "データ効率",
-      "強化学習"
-    ],
-    "id": "20260126_060738_01",
-    "date": "2026-01-26",
-    "source_news": {
-      "title": "マルチモーダルRLのArgosが幻覚を減らしデータ効率を向上。",
-      "url": "https://www.microsoft.com/en-us/research/blog/multimodal-reinforcement-learning-with-agentic-verifier-for-ai-agents/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Differential Transformer V2で推論コードを最適化",
-    "news_highlight": "推論速度を最大2倍、メモリ使用量を30%削減し、基盤モデルの効率化に貢献。",
-    "problem_context": "大規模AIモデルの推論遅延や高コストを解消",
-    "recommended_ai": {
-      "model": "Differential Transformer V2",
-      "reason": "基盤モデルの効率化に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "リアルタイム処理が必要なAPIの推論コードを高速化したい時",
-      "既存のTransformerベースモデルのメモリ使用量を削減したい時",
-      "新しいAIモデルの設計段階で効率的なアーキテクチャを検討したい時"
-    ],
-    "steps": [
-      "既存の推論コードをDifferential Transformer V2に提示する。",
-      "効率化の目標（例: 速度、メモリ）を明確に伝える。",
-      "Differential Transformer V2から提案された最適化コードを確認する。",
-      "提案されたコードをテスト環境で評価し、導入を検討する。"
-    ],
-    "prompt": "以下のPython推論コードをDifferential Transformer V2のアーキテクチャを考慮し、推論速度を20%向上させるように最適化してください。",
-    "tags": [
-      "Transformer",
-      "最適化",
-      "基盤モデル",
-      "効率化",
-      "Python"
-    ],
-    "id": "20260126_060810_02",
-    "date": "2026-01-26",
-    "source_news": {
-      "title": "Differential Transformer V2発表、基盤モデルの効率化に貢献。",
-      "url": "https://huggingface.co/blog/microsoft/diff-attn-v2"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
