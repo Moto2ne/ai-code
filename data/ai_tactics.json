@@ -1,5 +1,123 @@
 [
   {
+    "title": "vLLMでLLM推論を高速化",
+    "news_highlight": "vLLMがネイティブ速度化によりLLM推論を大幅高速化、応答速度とスループット向上",
+    "problem_context": "LLM推論のレイテンシとスループット改善",
+    "recommended_ai": {
+      "model": "vLLM",
+      "reason": "LLM推論を高速化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "リアルタイムLLMアプリケーションの応答性向上",
+      "LLM APIサービスの同時リクエスト処理能力向上",
+      "バッチ推論処理の実行時間短縮"
+    ],
+    "steps": [
+      "1. 既存のLLM推論環境をvLLMに移行する",
+      "2. vLLMの最新バージョンをインストールまたは更新する",
+      "3. 推論コードをvLLMのAPIに合わせて修正する",
+      "4. 推論速度とスループットをベンチマークで測定する"
+    ],
+    "prompt": "PythonとvLLMでHugging FaceのMistral-7Bモデルをロードし、バッチ推論を行うAPIエンドポイントを実装するコードを生成してください。",
+    "tags": [
+      "LLM",
+      "推論",
+      "高速化",
+      "vLLM",
+      "Python"
+    ],
+    "id": "20260715_070223_01",
+    "date": "2026-07-15",
+    "source_news": {
+      "title": "vLLMがネイティブ速度化、LLM推論を大幅高速化。",
+      "url": "https://huggingface.co/blog/native-speed-vllm-transformers-backend"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "FlintでAIエージェントのデータ可視化",
+    "news_highlight": "FlintはAIエージェント向けオープンソース可視化言語、表現力豊かなチャート生成を可能に",
+    "problem_context": "AIエージェントの分析結果を効果的に可視化したい",
+    "recommended_ai": {
+      "model": "Flint",
+      "reason": "AIエージェント向けに特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントが分析結果を視覚的に報告する時",
+      "データサイエンティストがAIの予測モデルの出力を可視化する時",
+      "AIエージェントの意思決定プロセスをチャートで理解したい時"
+    ],
+    "steps": [
+      "1. Flintライブラリを開発環境にインストールする",
+      "2. 可視化したいデータセット（例: CSV, JSON）を準備する",
+      "3. AIエージェントにFlint言語でチャート生成コードを依頼する",
+      "4. 生成されたコードを実行し、チャートを確認・調整する"
+    ],
+    "prompt": "Flint言語を用いて、与えられたデータセットから時系列トレンドを示す折れ線グラフを生成するコードを記述してください。軸ラベルとタイトルを含めてください。",
+    "tags": [
+      "可視化",
+      "AIエージェント",
+      "データ分析",
+      "オープンソース"
+    ],
+    "id": "20260715_070250_02",
+    "date": "2026-07-15",
+    "source_news": {
+      "title": "AIエージェント向け可視化言語Flint発表、表現力豊かなチャート生成。",
+      "url": "https://www.microsoft.com/en-us/research/blog/flint-a-visualization-language-for-the-ai-era/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "AWS Bedrock AgentCoreでマルチエージェント設計",
+    "news_highlight": "Thrad.aiがAWS Bedrock AgentCoreでマルチエージェントを構築し、見込み客発見からパーソナライズメール生成までを自動化。",
+    "problem_context": "複雑なビジネスプロセス自動化の設計と実装",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "マルチエージェントのオーケストレーション",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数のAIモデルを連携させた自動化ワークフローを設計する時",
+      "複雑なビジネスロジックをエージェントに分割して実装する時",
+      "既存のAPIやツールをAIエージェントに組み込む方法を検討する時"
+    ],
+    "steps": [
+      "1. 自動化したいビジネスプロセスをタスクに分解する",
+      "2. 各タスクを担当するエージェントの役割とゴールを定義する",
+      "3. Amazon Bedrock AgentCoreでエージェントとツール（API）を設定する",
+      "4. エージェント間の連携ロジックと実行フローを設計し、テストする"
+    ],
+    "prompt": "見込み客発見、情報収集、パーソナライズメール生成のマルチエージェントシステムをAmazon Bedrock AgentCoreで構築する設計案を提示してください。",
+    "tags": [
+      "マルチエージェント",
+      "自動化",
+      "AWS Bedrock",
+      "システム設計"
+    ],
+    "id": "20260715_070314_03",
+    "date": "2026-07-15",
+    "source_news": {
+      "title": "AWS Bedrockでマルチエージェントシステム構築、自動化を加速。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/multi-agent-social-intelligence-with-strands-agents-and-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GPT-5.6で複雑なAPI設計を効率化",
     "news_highlight": "GPT-5.6はトークンあたりの知能とコスト効率が向上、複雑なタスクに対応",
     "problem_context": "複雑なAPI設計の考慮漏れや時間消費",
@@ -19377,125 +19495,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
       "icon": "🚀"
-    }
-  },
-  {
-    "title": "GPT-4oでAppSync Events AIゲートウェイ設計",
-    "news_highlight": "AWS AppSync EventsでサーバーレスAIゲートウェイ構築、AWSサービスと統合し堅牢性を向上",
-    "problem_context": "AIモデル利用時のセキュリティ、スケーラビリティ、コスト管理",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "最新の高性能モデルで、幅広いAIタスクに対応可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいAIモデルを既存システムに安全に組み込みたい時",
-      "複数のAIサービスへのアクセスを統一的に管理したい時",
-      "AI APIの認証・認可・レート制限を設計する時"
-    ],
-    "steps": [
-      "1. AppSyncスキーマを定義し、AIモデルのAPIエンドポイントをマッピングする",
-      "2. Lambdaリゾルバを作成し、AIモデルへのリクエスト変換・応答処理を実装する",
-      "3. IAMロールを設定し、LambdaからAIモデルへの安全なアクセスを許可する",
-      "4. AppSyncの認証・認可機能（Cognito, IAMなど）を設定し、ゲートウェイを保護する"
-    ],
-    "prompt": "AWS AppSync EventsでサーバーレスAIゲートウェイ設計を提案。GPT-4oをバックエンドとし、認証、認可、レート制限、エラーハンドリングの具体的な実装案を提示してください。",
-    "tags": [
-      "AWS AppSync",
-      "サーバーレス",
-      "AIゲートウェイ",
-      "アーキテクチャ",
-      "API管理",
-      "セキュリティ"
-    ],
-    "id": "20260129_061346_03",
-    "date": "2026-01-29",
-    "source_news": {
-      "title": "AWS AppSync EventsでサーバーレスAIゲートウェイ構築。堅牢なアーキテクチャ設計を解説。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-serverless-ai-gateway-architecture-with-aws-appsync-events/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "GPT-4oでAssetOpsBench評価基準を適用",
-    "news_highlight": "産業用AIエージェントの性能評価基準「AssetOpsBench」発表、信頼性向上へ",
-    "problem_context": "産業用AIエージェントの信頼性・性能評価が困難",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "複雑な産業タスク理解と推論能力",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "産業用AIエージェントの要件定義時",
-      "AIエージェントの設計レビュー時",
-      "AIエージェントのテストケース作成時"
-    ],
-    "steps": [
-      "1. AssetOpsBenchの評価項目と基準を調査する。",
-      "2. 開発中のAIエージェントの設計書を準備する。",
-      "3. AIにAssetOpsBench基準に基づいた設計レビューを依頼する。",
-      "4. AIの提案を元に設計を改善し、テスト計画を策定する。"
-    ],
-    "prompt": "AssetOpsBenchの評価項目を参考に、開発中の産業用AIエージェントの設計書をレビューし、改善点を提案してください。",
-    "tags": [
-      "AIエージェント",
-      "ベンチマーク",
-      "産業応用",
-      "品質保証"
-    ],
-    "id": "20260128_060747_01",
-    "date": "2026-01-28",
-    "source_news": {
-      "title": "AIエージェントの産業応用向けベンチマーク「AssetOpsBench」を発表。",
-      "url": "https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Alyahでアラビア語LLMを評価・改善",
-    "news_highlight": "アラビア語LLMのエミラティ方言能力を評価する新ベンチマーク「Alyah」を発表。",
-    "problem_context": "アラビア語エミラティ方言のLLM性能評価が困難。",
-    "recommended_ai": {
-      "model": "Alyah",
-      "reason": "特定方言の評価指標を提供",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "アラビア語（エミラティ方言）対応チャットボットの品質保証",
-      "既存LLMのエミラティ方言対応度を検証したい時",
-      "エミラティ方言のデータセットの品質を評価したい時"
-    ],
-    "steps": [
-      "評価対象のLLMとAlyahベンチマークの実行環境を準備",
-      "Alyahベンチマークを対象LLMに対して実行し、スコアを取得",
-      "低スコアだったエミラティ方言の質問とLLMの応答を特定",
-      "特定した質問と応答を元に、LLMのプロンプトやファインチューニングデータを改善"
-    ],
-    "prompt": "Alyahベンチマークで低スコアだったエミラティ方言の質問「こんにちは、元気ですか？」に対し、LLMが「お元気ですか？」と回答しました。より自然で適切なエミラティ方言の応答を生成するためのプロンプト改善案を3つ提案してください。",
-    "tags": [
-      "LLM評価",
-      "多言語対応",
-      "ファインチューニング",
-      "プロンプトエンジニアリング"
-    ],
-    "id": "20260128_060817_02",
-    "date": "2026-01-28",
-    "source_news": {
-      "title": "アラビア語LLMのエミラティ方言能力を評価する新ベンチマーク「Alyah」を発表。",
-      "url": "https://huggingface.co/blog/tiiuae/emirati-benchmarks"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
