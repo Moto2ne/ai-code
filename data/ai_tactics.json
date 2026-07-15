@@ -1,5 +1,124 @@
 [
   {
+    "title": "PyTorchのAttention最適化をGPT-4oで支援",
+    "news_highlight": "PyTorchのAttentionプロファイリング技術で、Tensor Core利用率やメモリ帯域幅のボトルネックを特定可能",
+    "problem_context": "Attention機構の性能ボトルネックを特定したい",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "コード生成と分析に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Transformerモデルの推論速度が遅い時",
+      "Attention層のメモリ使用量を削減したい時",
+      "PyTorchモデルのGPUリソース利用率を改善したい時"
+    ],
+    "steps": [
+      "プロファイリングしたいPyTorchモデルのAttention層を含むコードを準備する",
+      "AIにプロファイリングコードの追加方法を尋ねる",
+      "AIが提案したコードをモデルに組み込み、プロファイリングを実行する",
+      "プロファイリング結果（例: Tensor Core利用率、メモリ帯域幅）をAIに渡し、ボトルネック分析と最適化案を依頼する"
+    ],
+    "prompt": "PyTorchモデルのAttention層のプロファイリングコードを生成してください。Tensor Core利用率とメモリ帯域幅を測定し、ボトルネックを特定できる形式で出力してください。",
+    "tags": [
+      "PyTorch",
+      "Attention",
+      "プロファイリング",
+      "最適化",
+      "GPU"
+    ],
+    "id": "20260716_070542_01",
+    "date": "2026-07-16",
+    "source_news": {
+      "title": "PyTorchのAttention機構プロファイリング技術を解説",
+      "url": "https://huggingface.co/blog/torch-attention-profile"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "InklingでPythonコードを生成",
+    "news_highlight": "新モデルInklingがHugging Faceに登場、Pythonコード生成をサポート。",
+    "problem_context": "定型的なコード記述の手間を削減したい。",
+    "recommended_ai": {
+      "model": "Inkling (Hugging Face)",
+      "reason": "最新モデルで効率的なコード生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい機能のプロトタイプコードを素早く作成したい時",
+      "既存のコードに類似したユーティリティ関数を実装する時",
+      "簡単なスクリプトや定型処理のコードを生成したい時"
+    ],
+    "steps": [
+      "1. Hugging FaceのInklingモデルページで利用方法を確認する。",
+      "2. Python環境に`transformers`ライブラリをインストールする。",
+      "3. 生成したいコードの要件を具体的に記述する。",
+      "4. Inklingモデルにプロンプトを与え、生成されたコードをテストする。"
+    ],
+    "prompt": "Pythonで、指定されたURLからHTMLコンテンツを取得し、特定のCSSセレクタに一致する要素のテキストを抽出する関数を書いてください。",
+    "tags": [
+      "コード生成",
+      "Python",
+      "Hugging Face",
+      "開発効率化"
+    ],
+    "id": "20260716_070609_02",
+    "date": "2026-07-16",
+    "source_news": {
+      "title": "Hugging Faceに新モデル「Inkling」が公開",
+      "url": "https://huggingface.co/blog/thinkingmachines-inkling"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Hugging Face Agentsでエージェント設計",
+    "news_highlight": "Hugging Faceがエージェント構築のベストプラクティスを共有し、ツール利用の効率的なアプローチを提示",
+    "problem_context": "LLMエージェントの設計と実装が難しい",
+    "recommended_ai": {
+      "model": "Hugging Face Agents",
+      "reason": "エージェント構築に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "特定のタスクを自動化するエージェントを設計したい時",
+      "既存のエージェントの動作を改善したい時",
+      "複数のツールを連携させるエージェントを実装したい時"
+    ],
+    "steps": [
+      "1. Hugging Face Agentsのドキュメントで推奨されるエージェントパターンを確認する。",
+      "2. 解決したいタスクと利用可能なツール（API、関数など）をリストアップする。",
+      "3. AIにタスクとツールを伝え、エージェントの初期設計（プロンプト、ツール呼び出しロジック）を依頼する。",
+      "4. 提案された設計を基にコードを実装し、テストする。"
+    ],
+    "prompt": "Hugging Face Agentsを使って、以下のタスクを自動化するエージェントの設計（プロンプトとツール呼び出しロジック）を提案してください。タスク: Webページから最新ニュースを要約。利用可能ツール: `requests`でWebページ取得、`BeautifulSoup`でHTML解析、`summarize_text`関数でテキスト要約。",
+    "tags": [
+      "エージェント",
+      "Hugging Face",
+      "LLM",
+      "設計",
+      "自動化"
+    ],
+    "id": "20260716_070639_03",
+    "date": "2026-07-16",
+    "source_news": {
+      "title": "エージェント構築の実践的知見をHugging Faceが共有",
+      "url": "https://huggingface.co/blog/allenai/shippy-tech-blog"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "vLLMでLLM推論を高速化",
     "news_highlight": "vLLMがネイティブ速度化によりLLM推論を大幅高速化、応答速度とスループット向上",
     "problem_context": "LLM推論のレイテンシとスループット改善",
@@ -19375,126 +19494,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "エミラティ方言ベンチマークでLLM改善",
-    "news_highlight": "アラビア語LLMのエミラティ方言に特化した初の評価ベンチマークが発表された。",
-    "problem_context": "アラビア語LLMのエミラティ方言対応度評価が困難",
-    "recommended_ai": {
-      "model": "エミラティ方言評価ベンチマーク",
-      "reason": "特定方言の性能を客観的に評価",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "アラビア語LLM開発者が特定方言の性能を検証したい時",
-      "多言語対応アプリでアラビア語エミラティ方言の品質を保証したい時",
-      "既存LLMをエミラティ方言向けにファインチューニングする際の評価指標として"
-    ],
-    "steps": [
-      "開発中のアラビア語LLMモデルの出力を準備する",
-      "エミラティ方言評価ベンチマークの公開リポジトリから評価スクリプトを入手する",
-      "準備したLLM出力データとベンチマークスクリプトを実行し評価レポートを生成する",
-      "レポート結果を分析しエミラティ方言におけるLLMの弱点を特定し改善計画を立てる"
-    ],
-    "prompt": "エミラティ方言で、ドバイの観光名所について500文字で説明してください。若者向けのカジュアルなトーンでお願いします。",
-    "tags": [
-      "LLM",
-      "アラビア語",
-      "ベンチマーク",
-      "評価",
-      "方言"
-    ],
-    "id": "20260130_061235_03",
-    "date": "2026-01-30",
-    "source_news": {
-      "title": "アラビア語LLMのエミラティ方言評価ベンチマーク発表",
-      "url": "https://huggingface.co/blog/tiiuae/emirati-benchmarks"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "GPT-5.2内蔵PrismでLaTeX技術文書を効率化",
-    "news_highlight": "GPT-5.2内蔵の無料LaTeXワークスペースPrismが、執筆・共同作業・推論を支援。",
-    "problem_context": "LaTeXでの技術文書作成やレビューに時間がかかる。",
-    "recommended_ai": {
-      "model": "GPT-5.2 (Prism内蔵)",
-      "reason": "LaTeXに特化し、執筆・推論を支援。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "LaTeXで技術仕様書や論文のドラフトを作成する時",
-      "既存のLaTeXドキュメントの表現や論理構成を改善したい時",
-      "複雑な数式や図のLaTeXコードを生成したい時"
-    ],
-    "steps": [
-      "1. PrismワークスペースでLaTeXドキュメントを開く。",
-      "2. AIアシスタント機能（GPT-5.2）を呼び出す。",
-      "3. プロンプトを入力し、提案されたLaTeXコードや文章を適用する。",
-      "4. 生成された内容をレビューし、必要に応じて修正する。"
-    ],
-    "prompt": "以下の日本語の説明に基づいて、このセクションのLaTeXコードを生成してください。数式環境と図のプレースホルダーを含め、専門的なトーンで記述してください。",
-    "tags": [
-      "LaTeX",
-      "ドキュメント生成",
-      "レビュー",
-      "GPT-5.2"
-    ],
-    "id": "20260129_061251_01",
-    "date": "2026-01-29",
-    "source_news": {
-      "title": "GPT-5.2内蔵のLaTeXワークスペースPrism発表。研究者の執筆・共同作業を支援。",
-      "url": "https://openai.com/index/introducing-prism"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Amazon Bedrock AgentCoreでAIエージェントをIaC管理",
-    "news_highlight": "Amazon Bedrock AgentCoreがIaC対応し、CloudFormation/CDK/TerraformでAIエージェントを構築可能に",
-    "problem_context": "AIエージェントのデプロイと管理の自動化",
-    "recommended_ai": {
-      "model": "Amazon Bedrock AgentCore",
-      "reason": "IaCでAIエージェントを構築可能に",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいAIエージェント環境を迅速に構築したい時",
-      "既存のAIエージェント設定をバージョン管理したい時",
-      "複数の環境（開発/ステージング/本番）に同じAIエージェントをデプロイしたい時"
-    ],
-    "steps": [
-      "1. CloudFormation/CDK/Terraformテンプレートを準備する",
-      "2. AIエージェントの定義（基盤モデル、アクショングループ等）をテンプレートに記述する",
-      "3. IaCツール（AWS CLI, cdk deploy, terraform apply）でデプロイを実行する",
-      "4. デプロイされたAIエージェントの動作をテストする"
-    ],
-    "prompt": "Amazon Bedrock AgentCoreでClaude 3 Sonnetを使用し、Lambda関数をアクショングループとするAIエージェントのCloudFormationテンプレートを生成してください。",
-    "tags": [
-      "IaC",
-      "CloudFormation",
-      "CDK",
-      "Terraform",
-      "AIエージェント",
-      "デプロイ"
-    ],
-    "id": "20260129_061315_02",
-    "date": "2026-01-29",
-    "source_news": {
-      "title": "Amazon Bedrock AgentCoreがIaCに対応。CloudFormation等でAIエージェント構築可能に。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-ai-agents-with-amazon-bedrock-agentcore-using-aws-cloudformation/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
     }
   }
 ]
