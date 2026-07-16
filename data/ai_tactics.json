@@ -1,5 +1,124 @@
 [
   {
+    "title": "Google VidsでGemini Omni動画生成を効率化",
+    "news_highlight": "Google VidsがGemini Omniと個人アバターで動画生成・編集機能を強化",
+    "problem_context": "技術解説やマーケティング動画制作の効率化",
+    "recommended_ai": {
+      "model": "Gemini Omni",
+      "reason": "動画生成・編集機能強化のため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新機能の技術デモ動画を迅速に作成したい時",
+      "API利用ガイドの動画コンテンツを生成したい時",
+      "社内向けトレーニング動画を効率的に制作したい時"
+    ],
+    "steps": [
+      "Google Vidsを開き、新しい動画生成プロジェクトを開始する",
+      "Gemini Omniに動画の目的、ターゲット、主要な説明ポイントを指示する",
+      "個人アバターを選択し、生成されたスクリプトとナレーションをレビューする",
+      "生成された動画をプレビューし、必要に応じて編集・調整する"
+    ],
+    "prompt": "新機能『リアルタイムデータ同期API』の技術解説動画を生成してください。ターゲットは開発者で、専門用語を交えながら機能概要と利用例を説明するスクリプトを作成し、個人アバターでナレーションを付けてください。",
+    "tags": [
+      "動画生成",
+      "コンテンツ制作",
+      "マーケティング",
+      "Gemini Omni"
+    ],
+    "id": "20260717_070620_01",
+    "date": "2026-07-17",
+    "source_news": {
+      "title": "Google VidsがGemini Omniと個人アバターで動画生成・編集機能を強化。",
+      "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "AWS BedrockでAgentic Vision設計",
+    "news_highlight": "AWS BedrockとMCPで視覚情報処理し、エージェントが賢く意思決定するAgentic Visionを構築",
+    "problem_context": "視覚情報に基づくエージェントの賢い意思決定",
+    "recommended_ai": {
+      "model": "AWS Bedrock",
+      "reason": "Agentic Vision構築に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "監視カメラ映像から異常を検知し、自動で対応するシステムを設計する時",
+      "ロボットが周囲の環境を認識し、最適な行動経路を決定するアルゴリズムを開発する時",
+      "製造ラインで製品の欠陥を画像認識で特定し、自動で不良品を排除するシステムを構築する時"
+    ],
+    "steps": [
+      "1. 視覚情報処理の要件を定義する。",
+      "2. AWS Bedrockで基盤モデルを選定し、MCPと連携設定を行う。",
+      "3. エージェントの意思決定ロジックを設計し、プロンプトを記述する。",
+      "4. 実際の視覚データでシステムをテストし、性能を評価する。"
+    ],
+    "prompt": "AWS BedrockとComputer Vision MCP Serverを使い、監視カメラ映像から異常を検知し、自動でアラートを発するAgentic Visionシステム設計案を提案してください。",
+    "tags": [
+      "AWS Bedrock",
+      "Agentic Vision",
+      "コンピュータビジョン",
+      "エージェント",
+      "設計"
+    ],
+    "id": "20260717_070645_02",
+    "date": "2026-07-17",
+    "source_news": {
+      "title": "AWS BedrockとMCPで視覚情報を処理し、エージェントが賢く意思決定する「Agentic Vision」を構築。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-vision-building-visual-intelligence-with-amazon-bedrock-and-mcp-servers/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "NVIDIA Nemotron 3 Embedでエージェント検索強化",
+    "news_highlight": "NVIDIA Nemotron 3 EmbedがRTEBで1位を獲得し、エージェントの検索精度を大幅向上",
+    "problem_context": "エージェントの検索精度不足によるタスク失敗",
+    "recommended_ai": {
+      "model": "NVIDIA Nemotron 3 Embed",
+      "reason": "RTEBで1位、検索精度を向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "RAGシステムで、ユーザーの質問に対する回答生成の根拠となる情報を効率的に検索したい時。",
+      "エージェントが特定のドキュメントから情報を抽出し、要約や分析を行う際。",
+      "コードベースから関連する関数やクラス定義を検索し、コード生成や修正の精度を高めたい時。"
+    ],
+    "steps": [
+      "1. NVIDIA Nemotron 3 EmbedをRAGシステムまたはエージェントの検索モジュールに組み込む。",
+      "2. 検索対象のドキュメントやコードをNemotron 3 Embedでベクトル化し、ベクトルデータベースに格納する。",
+      "3. エージェントからの検索クエリをNemotron 3 Embedでベクトル化し、ベクトルデータベースから関連情報を取得する。",
+      "4. 取得した関連情報をLLMに渡し、ユーザーの質問に対する回答やタスクを実行させる。"
+    ],
+    "prompt": "あなたは情報検索の専門家です。提供された検索結果を基に、ユーザーの質問『NVIDIA Nemotron 3 Embedの具体的な活用例を教えてください。』に、簡潔かつ正確に回答を生成してください。",
+    "tags": [
+      "RAG",
+      "エージェント",
+      "検索",
+      "埋め込みモデル",
+      "ベクトル検索"
+    ],
+    "id": "20260717_070720_03",
+    "date": "2026-07-17",
+    "source_news": {
+      "title": "NVIDIA Nemotron 3 EmbedがRTEBで1位、エージェントの検索能力を向上。",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "PyTorchのAttention最適化をGPT-4oで支援",
     "news_highlight": "PyTorchのAttentionプロファイリング技術で、Tensor Core利用率やメモリ帯域幅のボトルネックを特定可能",
     "problem_context": "Attention機構の性能ボトルネックを特定したい",
@@ -19371,124 +19490,6 @@
     "source_news": {
       "title": "Googleが無限にインタラクティブな世界を生成するGenieを発表",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
-    }
-  },
-  {
-    "title": "GPT-5/Codexで大規模データ分析スクリプト生成",
-    "news_highlight": "GPT-5/Codex活用で大規模データから数分で信頼できる洞察を生成、社内データエージェント公開",
-    "problem_context": "大規模データからの迅速な洞察抽出が困難",
-    "recommended_ai": {
-      "model": "GPT-5 / Codex (社内データエージェント)",
-      "reason": "大規模データ分析とコード生成に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ログデータから特定のエラーパターンを抽出するスクリプトが必要な時",
-      "データベースのパフォーマンスボトルネックを特定するSQLクエリを生成したい時",
-      "A/Bテスト結果の統計的有意性を評価するPythonスクリプトを作成したい時"
-    ],
-    "steps": [
-      "分析したいデータセットのスキーマ情報とサンプルデータを準備する",
-      "解決したい課題（例: エラー原因特定、パフォーマンスボトルネック）を具体的に記述する",
-      "AIにデータ分析スクリプト（SQL, Pythonなど）の生成を依頼する",
-      "生成されたスクリプトを実行し、結果を検証・デバッグする"
-    ],
-    "prompt": "以下のログデータスキーマとサンプルデータに基づき、過去24時間で最も頻繁に発生したエラータイプとその件数を特定するPythonスクリプトを生成してください。エラーメッセージのパターンも考慮してください。",
-    "tags": [
-      "データ分析",
-      "コード生成",
-      "デバッグ",
-      "パフォーマンス最適化"
-    ],
-    "id": "20260131_061254_03",
-    "date": "2026-01-31",
-    "source_news": {
-      "title": "OpenAIがGPT-5活用した社内データエージェントを公開",
-      "url": "https://openai.com/index/inside-our-in-house-data-agent"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "ClaudeでCUDAカーネル生成",
-    "news_highlight": "ClaudeがCUDAカーネルを生成し、オープンモデルの学習を高速化",
-    "problem_context": "CUDAカーネル開発の複雑さと時間消費",
-    "recommended_ai": {
-      "model": "Claude",
-      "reason": "CUDAカーネル生成に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいGPUアルゴリズムを試したい時",
-      "既存のPython/PyTorchコードをCUDAで高速化したい時",
-      "オープンソースAIモデルのカスタムレイヤーをCUDAで実装したい時"
-    ],
-    "steps": [
-      "1. 高速化したい計算ロジック（Python/擬似コード）を準備する",
-      "2. ClaudeにCUDAカーネル生成を依頼する",
-      "3. 生成されたCUDAカーネルをプロジェクトに組み込む",
-      "4. パフォーマンスを測定し、必要に応じてClaudeに最適化を依頼する"
-    ],
-    "prompt": "与えられたPythonの行列乗算ロジックを、NVIDIA GPUで実行可能な高性能CUDAカーネルとして生成してください。共有メモリとスレッドブロックの最適化を考慮してください。",
-    "tags": [
-      "CUDA",
-      "GPUプログラミング",
-      "高性能計算",
-      "AIモデル最適化",
-      "コード生成"
-    ],
-    "id": "20260130_061139_01",
-    "date": "2026-01-30",
-    "source_news": {
-      "title": "ClaudeでCUDAカーネルを生成し、オープンモデルを教育",
-      "url": "https://huggingface.co/blog/upskill"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "DaggrでAIワークフローを効率的にデバッグ",
-    "news_highlight": "DaggrはAIアプリのワークフロー構築・デバッグを支援、ステップごとの入出力可視化でエラー特定を効率化。",
-    "problem_context": "複雑なAIワークフローのデバッグが困難",
-    "recommended_ai": {
-      "model": "Daggr",
-      "reason": "ワークフローの可視化とデバッグ",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "複数のAIモデル連携アプリのエラー調査時",
-      "AIワークフローの特定ステップの挙動確認時",
-      "新規AIワークフローの設計とテスト時"
-    ],
-    "steps": [
-      "1. Daggrに既存のAIワークフローをインポートまたは新規作成する",
-      "2. ワークフローの各ステップにテストデータを投入し実行する",
-      "3. DaggrのUIで各ステップの入出力と中間結果を確認する",
-      "4. エラー発生箇所を特定し、関連するコードや設定を修正する"
-    ],
-    "prompt": "このAIワークフローの実行ログを解析し、各ステップの入出力とエラー箇所を特定してください。特にパフォーマンスボトルネックも指摘してください。",
-    "tags": [
-      "AIワークフロー",
-      "デバッグ",
-      "開発効率化",
-      "MMLOps"
-    ],
-    "id": "20260130_061205_02",
-    "date": "2026-01-30",
-    "source_news": {
-      "title": "AIアプリのワークフロー構築・デバッグツールDaggr発表",
-      "url": "https://huggingface.co/blog/daggr"
     },
     "article": null,
     "visual_theme": {
