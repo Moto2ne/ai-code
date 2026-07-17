@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-Redでプロンプトインジェクション対策",
+    "news_highlight": "GPT-RedはAIの自己改善で安全性・堅牢性・プロンプトインジェクション耐性を向上。",
+    "problem_context": "AIアプリケーションのプロンプトインジェクション脆弱性",
+    "recommended_ai": {
+      "model": "GPT-Red",
+      "reason": "プロンプトインジェクション耐性向上に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIアプリケーション開発でプロンプトの安全性を確認したい時",
+      "既存のAIサービスがプロンプトインジェクションに脆弱でないか検証したい時",
+      "ユーザーからの悪意ある入力に対するAIの挙動をテストしたい時"
+    ],
+    "steps": [
+      "開発中のAIアプリケーションのプロンプト定義を準備する。",
+      "GPT-RedのAPIまたはインターフェースに、プロンプト定義とテストしたい悪意ある入力を与える。",
+      "GPT-Redが生成した攻撃シナリオと脆弱性レポートを確認する。",
+      "レポートに基づき、プロンプトの修正や入力フィルタリングを実装し再テストする。"
+    ],
+    "prompt": "以下のAIアプリケーションのプロンプト定義に対し、プロンプトインジェクション攻撃を試み、脆弱性があれば具体的な攻撃手法と対策案を提示してください。プロンプト定義: [ここにプロンプト定義]",
+    "tags": [
+      "AIセキュリティ",
+      "プロンプトインジェクション",
+      "レッドチーミング",
+      "AIテスト"
+    ],
+    "id": "20260718_065750_01",
+    "date": "2026-07-18",
+    "source_news": {
+      "title": "GPT-Red発表、AIの自己改善で安全性・堅牢性を向上。",
+      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Grok 4.3でエージェントの設計",
+    "news_highlight": "Grok 4.3がAmazon Bedrockで利用可能に。エージェント/エンタープライズ向け。",
+    "problem_context": "複雑なタスクを自動化するエージェント開発",
+    "recommended_ai": {
+      "model": "Grok 4.3",
+      "reason": "エージェント開発に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規エージェントの動作フローを設計する時",
+      "既存エージェントのプロンプトを改善したい時",
+      "エージェントに新しいツール連携を実装する前"
+    ],
+    "steps": [
+      "BedrockコンソールでGrok 4.3を選択し、新しいエージェントの目的と制約を入力。",
+      "Grok 4.3に、その目的を達成するためのステップと必要なツールを提案させる。",
+      "提案されたフローとプロンプトを基に、エージェントの初期実装コードを生成。",
+      "生成されたコードをテストし、Grok 4.3にフィードバックして改善を繰り返す。"
+    ],
+    "prompt": "あなたは顧客サポートエージェントです。ユーザーの注文状況を確認し、必要に応じて返金処理を行うためのステップバイステップの計画と、各ステップで利用するAPIツールをJSON形式で提案してください。",
+    "tags": [
+      "エージェント開発",
+      "プロンプト設計",
+      "API連携",
+      "Bedrock"
+    ],
+    "id": "20260718_065817_02",
+    "date": "2026-07-18",
+    "source_news": {
+      "title": "Grok 4.3がAmazon Bedrockで利用可能に。エージェント向け。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-grok-on-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "BedrockでRAG検索精度向上",
+    "news_highlight": "Bedrockはエージェント向け知識ベース構築を簡素化し、検索精度を向上。本番環境対応も強化。",
+    "problem_context": "エージェントの誤回答や情報不足を解消",
+    "recommended_ai": {
+      "model": "Amazon Bedrock",
+      "reason": "知識ベース構築とRAG強化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "社内ドキュメントからの情報検索精度向上",
+      "カスタマーサポートAIの回答精度向上",
+      "開発者向けAIアシスタントの回答精度向上"
+    ],
+    "steps": [
+      "BedrockコンソールでKnowledge Basesを作成",
+      "既存のドキュメント（S3など）をデータソースとして登録",
+      "エージェントとKnowledge Baseを連携設定",
+      "エージェントの回答をテストし、検索精度を評価"
+    ],
+    "prompt": "あなたは社内ドキュメントを参照するAIアシスタントです。ユーザーの質問に対し、Knowledge Baseから得た情報のみで回答してください。不明な場合は不明と答えてください。",
+    "tags": [
+      "RAG",
+      "Bedrock",
+      "知識ベース",
+      "エージェント"
+    ],
+    "id": "20260718_065841_03",
+    "date": "2026-07-18",
+    "source_news": {
+      "title": "Bedrockでエージェント向け知識ベース構築、検索精度向上。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-enterprise-search-for-agents-with-amazon-bedrock-managed-knowledge-base/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Google VidsでGemini Omni動画生成を効率化",
     "news_highlight": "Google VidsがGemini Omniと個人アバターで動画生成・編集機能を強化",
     "problem_context": "技術解説やマーケティング動画制作の効率化",
@@ -19379,122 +19496,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
       "icon": "🚀"
-    }
-  },
-  {
-    "title": "GPT-5/Codexでログ分析スクリプト生成",
-    "news_highlight": "GPT-5とCodexが大規模データセットを数分で推論し、信頼性の高い洞察を提供。",
-    "problem_context": "膨大なログからの障害原因特定が困難。",
-    "recommended_ai": {
-      "model": "GPT-5",
-      "reason": "大規模データ推論とコード生成に強み。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "本番環境の障害発生時にログから原因を特定したい時",
-      "システムパフォーマンスのボトルネックを特定したい時",
-      "特定のユーザー行動パターンをログから分析したい時"
-    ],
-    "steps": [
-      "分析したいログデータの一部（数行〜数十行）を準備する。",
-      "分析の目的（例: エラーログの集計、特定のユーザーの行動追跡）を明確にする。",
-      "AIにログデータと目的を提示し、Pythonスクリプトの生成を依頼する。",
-      "生成されたスクリプトをローカルで実行し、結果を検証する。"
-    ],
-    "prompt": "以下のログデータから、最も頻繁に発生しているエラーメッセージとその回数を集計するPythonスクリプトを生成してください。ログフォーマットはJSONです。",
-    "tags": [
-      "ログ分析",
-      "コード生成",
-      "障害対応"
-    ],
-    "id": "20260201_060931_03",
-    "date": "2026-02-01",
-    "source_news": {
-      "title": "OpenAIがGPT-5で社内データエージェントを構築",
-      "url": "https://openai.com/index/inside-our-in-house-data-agent"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "UniRGで医療画像レポート生成を効率化",
-    "news_highlight": "UniRGがマルチモーダル強化学習で多様な医療画像レポート生成性能を向上させる",
-    "problem_context": "医療画像レポートの多様な形式への対応不足",
-    "recommended_ai": {
-      "model": "UniRG",
-      "reason": "医療画像レポート生成に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "医療画像診断レポートの初稿自動生成",
-      "既存レポートの形式統一と情報抽出",
-      "新規疾患の画像所見レポートテンプレート作成"
-    ],
-    "steps": [
-      "医療画像データと既存レポートのペアを準備",
-      "UniRGモデルに画像とレポート形式の指示を入力",
-      "生成されたレポート初稿を専門医がレビュー",
-      "レビュー結果をフィードバックしモデルを再学習"
-    ],
-    "prompt": "以下の胸部X線画像と過去のレポート形式を参考に、新しい患者の医療画像レポートを生成してください。所見、診断、推奨事項を含めてください。",
-    "tags": [
-      "医療AI",
-      "画像診断",
-      "強化学習",
-      "自然言語生成"
-    ],
-    "id": "20260131_061158_01",
-    "date": "2026-01-31",
-    "source_news": {
-      "title": "マルチモーダル強化学習で医療画像レポート生成を効率化",
-      "url": "https://www.microsoft.com/en-us/research/blog/unirg-scaling-medical-imaging-report-generation-with-multimodal-reinforcement-learning/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
-      "icon": "🎨"
-    }
-  },
-  {
-    "title": "Genieでインタラクティブ世界を設計",
-    "news_highlight": "Google Genieが無限にインタラクティブな3D世界を生成、物理演算も対応",
-    "problem_context": "ゲームレベルや仮想環境の初期設計に時間がかかる",
-    "recommended_ai": {
-      "model": "Genie",
-      "reason": "インタラクティブな世界生成に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ゲーム開発者が新しいレベルの初期プロトタイプを素早く作成したい時",
-      "UI/UXデザイナーがインタラクティブな仮想空間でユーザーフローを検証したい時",
-      "ロボット工学者が特定のシナリオを持つシミュレーション環境を生成したい時"
-    ],
-    "steps": [
-      "Genieのインターフェースを開く",
-      "生成したい世界のコンセプトやルールをテキストで入力",
-      "Genieが生成したインタラクティブな世界をプレビュー",
-      "生成された世界を基に、具体的なアセット配置やスクリプトを調整"
-    ],
-    "prompt": "ファンタジーRPGのダンジョンレベルを生成してください。プレイヤーは宝箱を探し、モンスターと戦い、パズルを解く必要があります。",
-    "tags": [
-      "ゲーム開発",
-      "プロトタイピング",
-      "仮想環境",
-      "レベルデザイン"
-    ],
-    "id": "20260131_061227_02",
-    "date": "2026-01-31",
-    "source_news": {
-      "title": "Googleが無限にインタラクティブな世界を生成するGenieを発表",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
