@@ -1,5 +1,123 @@
 [
   {
+    "title": "GPT-Redのアプローチでプロンプト脆弱性テスト",
+    "news_highlight": "GPT-Redは自己対戦でAIの安全性・プロンプト耐性を自動向上させるOpenAIのレッドチーミングシステム。",
+    "problem_context": "AIアプリのプロンプトインジェクション脆弱性特定",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "最新モデルで攻撃パターンを生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIアプリケーションのプロンプトインジェクションテストケース生成",
+      "開発中のAIモデルの安全性評価",
+      "悪意ある入力に対するAIの応答堅牢化"
+    ],
+    "steps": [
+      "開発中のAIアプリケーションのシステムプロンプトを準備する",
+      "GPT-4oに「このシステムプロンプトを突破するプロンプトインジェクション攻撃パターンを5つ生成してください」と依頼する",
+      "生成された攻撃パターンをAIアプリケーションに適用し、不適切な応答がないか確認する",
+      "不適切な応答があった場合、システムプロンプトや入力フィルタリングを修正し、再テストする"
+    ],
+    "prompt": "あなたはAIのプロンプトインジェクション攻撃を専門とするセキュリティエンジニアです。以下のシステムプロンプトを突破し、AIに意図しない動作をさせるための攻撃プロンプトを5つ生成してください。システムプロンプト: あなたはユーザーからの質問に答えるチャットボットです。ユーザーの質問に丁寧かつ簡潔に回答してください。",
+    "tags": [
+      "AIセキュリティ",
+      "プロンプトインジェクション",
+      "レッドチーミング",
+      "AIテスト"
+    ],
+    "id": "20260720_065810_01",
+    "date": "2026-07-20",
+    "source_news": {
+      "title": "GPT-Red発表、AIの安全性・プロンプト耐性を自動向上",
+      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Grok 4.3で自動化スクリプト生成",
+    "news_highlight": "Grok 4.3がAmazon Bedrockで提供開始、エージェント/エンタープライズ用途に最適",
+    "problem_context": "特定タスクを自動化するエージェントコードを効率的に開発したい。",
+    "recommended_ai": {
+      "model": "Grok 4.3",
+      "reason": "エージェント機能とエンタープライズ用途に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "特定のAPIを呼び出す自動化スクリプトを作成したい時",
+      "既存のコードベースに新しい自動化機能を追加する時",
+      "定型的なデータ処理スクリプトを迅速に作成したい時"
+    ],
+    "steps": [
+      "1. 自動化したいタスクの要件を具体的に整理する。",
+      "2. Grok 4.3にタスク内容と使用したい言語/ライブラリを提示する。",
+      "3. 生成されたコードをローカル環境でテストする。",
+      "4. 必要に応じてコードを修正し、本番環境にデプロイする。"
+    ],
+    "prompt": "Pythonで、指定されたS3バケットからファイルをダウンロードし、特定のキーワードを含む行を抽出するスクリプトを生成してください。",
+    "tags": [
+      "コード生成",
+      "自動化",
+      "Python",
+      "Amazon Bedrock"
+    ],
+    "id": "20260720_065836_02",
+    "date": "2026-07-20",
+    "source_news": {
+      "title": "Grok 4.3がAmazon Bedrockで提供開始",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-grok-on-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "BedrockマネージドKBでRAGシステム構築",
+    "news_highlight": "BedrockマネージドKBがRAGシステム構築を簡素化、高精度検索と本番運用対応を提供",
+    "problem_context": "RAGシステム構築の複雑さ、運用負荷を軽減したい",
+    "recommended_ai": {
+      "model": "BedrockマネージドKB",
+      "reason": "RAGシステム構築を簡素化するため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "社内ドキュメント検索システムを構築したい時",
+      "顧客サポート向けFAQチャットボットを開発する時",
+      "開発中のAIエージェントに最新情報を参照させたい時"
+    ],
+    "steps": [
+      "Bedrockコンソールでナレッジベースを作成し、データソースをS3に設定する",
+      "Bedrock API/SDKを使ってナレッジベースから関連情報を取得するコードを実装する",
+      "取得した情報をプロンプトに含め、LLM（例: Claude 3）で回答を生成するロジックを組む",
+      "構築したRAGシステムをAIエージェントと連携し、テスト環境で動作検証する"
+    ],
+    "prompt": "Pythonのboto3 SDKを使って、BedrockマネージドKBからユーザーの質問に関連する情報を取得し、その情報を用いてClaude 3 Sonnetで回答を生成するRAGシステムのコード例を提示してください。",
+    "tags": [
+      "RAG",
+      "Bedrock",
+      "ナレッジベース",
+      "AIエージェント",
+      "Python"
+    ],
+    "id": "20260720_065900_03",
+    "date": "2026-07-20",
+    "source_news": {
+      "title": "BedrockマネージドKBでエージェント向け検索を構築",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-enterprise-search-for-agents-with-amazon-bedrock-managed-knowledge-base/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Hugging Face PEFTでLLMを効率的にファインチューニング",
     "news_highlight": "NVIDIAとHugging FaceがLLMの効率的ファインチューニングを発表、PEFTとTensorRTを統合し学習と推論を高速化",
     "problem_context": "LLMのファインチューニングが高コストで時間もかかる",
@@ -19378,125 +19496,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
       "icon": "💻"
-    }
-  },
-  {
-    "title": "AWS Bedrock AgentCoreでAIエージェント設計",
-    "news_highlight": "AWS Bedrock AgentCoreが企業向けAIエージェント構築の9つのベストプラクティスを提供",
-    "problem_context": "企業向けAIエージェントの設計品質向上",
-    "recommended_ai": {
-      "model": "Amazon Bedrock AgentCore",
-      "reason": "企業向けAIエージェント構築に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規AIエージェントの機能設計時",
-      "既存AIエージェントの機能拡張時",
-      "エージェントのAPI連携ロジック検討時"
-    ],
-    "steps": [
-      "構築したいAIエージェントの目的と主要機能を定義する。",
-      "エージェントが実行すべき外部システム連携（APIなど）を特定する。",
-      "特定した連携について、API仕様書や既存コードを参照する。",
-      "以下のプロンプトで、AgentCoreのアクション定義を依頼する。"
-    ],
-    "prompt": "AWS Bedrock AgentCoreのベストプラクティスに基づき、顧客情報管理システムAPI（GET /customers/{id}, POST /customers）と連携するAIエージェントのアクション定義をJSON形式で設計してください。入力と出力のスキーマを含めてください。",
-    "tags": [
-      "AIエージェント",
-      "Bedrock",
-      "設計",
-      "API連携"
-    ],
-    "id": "20260204_061645_03",
-    "date": "2026-02-04",
-    "source_news": {
-      "title": "AWS Bedrock AgentCoreで企業向けAIエージェント構築のベストプラクティス",
-      "url": "https://aws.amazon.com/blogs/machine-learning/ai-agents-in-enterprises-best-practices-with-amazon-bedrock-agentcore/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "ClaudeでCUDAカーネル生成と最適化",
-    "news_highlight": "ClaudeがCUDAカーネルを生成し、オープンモデルの学習効率を向上させる技術を発表。",
-    "problem_context": "CUDAカーネル開発の専門知識不足と開発時間短縮。",
-    "recommended_ai": {
-      "model": "Claude",
-      "reason": "複雑なCUDAコードを自動生成",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "MLモデルのカスタムレイヤーをGPUで高速化したい時",
-      "既存のPyTorch/TensorFlow演算のボトルネックをCUDAで最適化したい時",
-      "新しいGPUアルゴリズムのプロトタイプを素早く作成したい時"
-    ],
-    "steps": [
-      "最適化したい計算ロジック（Python/擬似コード）を準備する",
-      "ClaudeにCUDAカーネル生成を依頼する",
-      "生成されたカーネルを既存のMLフレームワークに組み込みテストする",
-      "パフォーマンスを測定し、必要に応じてClaudeに改善を依頼する"
-    ],
-    "prompt": "以下のPythonコードをCUDAカーネルに変換し、PyTorchから呼び出せるようにしてください。特に、テンソル操作の最適化に注力してください。",
-    "tags": [
-      "CUDA",
-      "GPUプログラミング",
-      "機械学習",
-      "最適化",
-      "コード生成"
-    ],
-    "id": "20260202_061001_01",
-    "date": "2026-02-02",
-    "source_news": {
-      "title": "ClaudeでCUDAカーネルを生成し、オープンモデルを教育する技術を発表。",
-      "url": "https://huggingface.co/blog/upskill"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "DaggrでLLMアプリのフローを可視化・デバッグ",
-    "news_highlight": "Hugging FaceがLLMアプリの視覚的チェーン・検査ツール「Daggr」を発表。",
-    "problem_context": "LLMアプリの複雑な処理フローのデバッグが困難。",
-    "recommended_ai": {
-      "model": "Daggr",
-      "reason": "LLMアプリの可視化・デバッグに特化。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "LLMアプリケーションのプロトタイプ開発時、処理の流れを確認したい時",
-      "本番稼働中のLLMアプリで予期せぬ出力が発生し、原因を特定したい時",
-      "複数のLLMツールやAPIを連携させた複雑なワークフローを設計する時"
-    ],
-    "steps": [
-      "1. 既存のLLMアプリケーションコード（LangChain/LlamaIndexなど）をDaggrにインポートまたは接続する",
-      "2. DaggrのGUI上で、アプリケーションの各ステップがどのようにチェーンされているか視覚的に確認する",
-      "3. アプリケーションを実行し、各ステップの中間入力・出力をリアルタイムで検査し、問題箇所を特定する",
-      "4. 問題特定後、コードを修正し、Daggrで再度実行して修正が正しく反映されたか検証する"
-    ],
-    "prompt": "LangChainで開発中のLLMアプリケーションのPythonコードをDaggrにインポートし、視覚的なフローと中間結果を検査してください。",
-    "tags": [
-      "LLM開発",
-      "デバッグ",
-      "可視化",
-      "ワークフロー",
-      "Hugging Face"
-    ],
-    "id": "20260202_061026_02",
-    "date": "2026-02-02",
-    "source_news": {
-      "title": "Hugging Faceがアプリを視覚的にチェーン・検査する開発ツール「Daggr」を発表。",
-      "url": "https://huggingface.co/blog/daggr"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
