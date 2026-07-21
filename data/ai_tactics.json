@@ -1,5 +1,122 @@
 [
   {
+    "title": "GeminiでGoogle検索連携API設計",
+    "news_highlight": "Google検索にアプリ連携機能追加、アプリコンテンツを検索結果に直接表示可能に",
+    "problem_context": "Google検索アプリ連携APIの設計・実装支援",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "Googleサービス連携に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Google検索連携APIの初期設計時",
+      "既存アプリへの連携機能追加時",
+      "連携機能のデバッグや最適化時"
+    ],
+    "steps": [
+      "Google検索のConnected apps rendering公式ドキュメントを開く",
+      "ドキュメントの主要なAPI仕様や要件をコピーする",
+      "Geminiに貼り付け、既存アプリとの連携設計案を依頼する",
+      "Geminiが提案した設計案を基に、実装計画を立てる"
+    ],
+    "prompt": "Google検索のConnected apps rendering機能の公式ドキュメントを基に、ECアプリの商品情報連携API設計案を提案してください。既存のREST APIとの整合性も考慮してください。",
+    "tags": [
+      "API設計",
+      "Google検索",
+      "アプリ連携"
+    ],
+    "id": "20260722_070650_01",
+    "date": "2026-07-22",
+    "source_news": {
+      "title": "Google検索にアプリ連携機能を追加、開発者向け機会拡大",
+      "url": "https://blog.google/products-and-platforms/products/search/connected-apps/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "Amazon BedrockでClaudeマルチモデル設計",
+    "news_highlight": "CouchbaseがAmazon BedrockでClaudeを活用し、マルチモデルAIを構築",
+    "problem_context": "複雑なAIモデル選定と統合の課題",
+    "recommended_ai": {
+      "model": "Amazon Bedrock (Claude)",
+      "reason": "複数のAIモデルを統合管理",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAI機能を設計する時",
+      "既存のAIシステムを拡張する時",
+      "異なるタスクに最適なモデルを選定する時"
+    ],
+    "steps": [
+      "1. Bedrockで利用可能なClaudeモデル群を確認する。",
+      "2. 各タスク（例: 要約、コード生成）に最適なClaudeモデルを選定する。",
+      "3. Bedrock APIを通じて選定したモデルを呼び出すコードを実装する。",
+      "4. 異なるモデルからの出力を統合し、テストする。"
+    ],
+    "prompt": "Amazon Bedrockで利用可能なClaudeモデル群の中から、ユーザーからの自然言語クエリをSQLに変換するタスクに最適なモデルとその理由を教えてください。",
+    "tags": [
+      "AI設計",
+      "マルチモデル",
+      "Bedrock",
+      "Claude",
+      "アーキテクチャ"
+    ],
+    "id": "20260722_070715_02",
+    "date": "2026-07-22",
+    "source_news": {
+      "title": "Amazon BedrockでマルチモデルAI構築、Claude活用事例",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-couchbase-built-a-multi-model-ai-architecture-for-capella-iq-with-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "NVIDIA NeMo Agentで専門エージェント設計",
+    "news_highlight": "Amazon QuickとNVIDIA NeMo Agentで専門エージェント構築、ビジネスユーザー向けワークフローを効率化",
+    "problem_context": "専門エージェントの設計・実装が複雑",
+    "recommended_ai": {
+      "model": "NVIDIA NeMo Agent Toolkit",
+      "reason": "専門エージェント構築に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIエージェントの機能要件を定義する時",
+      "既存のビジネスプロセスをAIエージェントで自動化する設計をする時",
+      "NVIDIA NeMo Agent Toolkitを使ったエージェントの初期プロトタイプを開発する時"
+    ],
+    "steps": [
+      "1. 構築したい専門エージェントの目的と主要機能を定義する。",
+      "2. NVIDIA NeMo Agent Toolkitのドキュメントを参照し、エージェントのアーキテクチャを検討する。",
+      "3. 定義した機能に基づいて、エージェントのツール、プロンプト、ワークフローの設計を始める。",
+      "4. Amazon Quickとの連携を考慮し、ビジネスユーザーが利用しやすいUI/UXを設計する。"
+    ],
+    "prompt": "NVIDIA NeMo Agent Toolkitを用いて、サプライチェーンリスク管理エージェントの設計を提案してください。主要機能、必要なツール、プロンプトの構成、Amazon Quickとの連携方法を含めてください。",
+    "tags": [
+      "AIエージェント",
+      "NVIDIA NeMo",
+      "Amazon Quick",
+      "設計"
+    ],
+    "id": "20260722_070742_03",
+    "date": "2026-07-22",
+    "source_news": {
+      "title": "Amazon QuickとNVIDIA NeMoで専門エージェント構築",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-specialized-agent-workflows-for-your-business-with-amazon-quick-and-nvidia-nemo-agent-toolkit/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Cosmos 3 Edgeでオフライン画像解析",
     "news_highlight": "Hugging Face Cosmos 3 Edgeはモデルサイズ50%削減、推論速度2倍でエッジデバイス向けマルチモーダルAI",
     "problem_context": "エッジデバイスでのAI推論の遅延とプライバシー課題",
@@ -19378,123 +19495,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "Pazaで低リソース言語ASR設計",
-    "news_highlight": "Pazaは39のアフリカ言語をカバーする初の低リソース言語ASRベンチマークPazaBenchを発表。",
-    "problem_context": "多様な言語話者への音声UI対応",
-    "recommended_ai": {
-      "model": "Paza",
-      "reason": "低リソース言語ASRに特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "アフリカ言語話者向け音声UI開発",
-      "多言語コールセンターのASR導入",
-      "教育コンテンツの音声認識字幕生成"
-    ],
-    "steps": [
-      "1. 対象言語の音声データ準備",
-      "2. Paza API/SDKのドキュメント確認",
-      "3. Pazaを用いて音声認識コード実装",
-      "4. 認識結果を評価し、精度を改善"
-    ],
-    "prompt": "Paza APIを使用して、ハウサ語の音声ファイル（.wav）をテキストに変換するPythonコードを生成してください。エラーハンドリングも考慮してください。",
-    "tags": [
-      "ASR",
-      "多言語",
-      "音声認識",
-      "低リソース言語"
-    ],
-    "id": "20260206_061338_03",
-    "date": "2026-02-06",
-    "source_news": {
-      "title": "低リソース言語向けASRモデルPaza発表、初のベンチマーク。",
-      "url": "https://www.microsoft.com/en-us/research/blog/paza-introducing-automatic-speech-recognition-benchmarks-and-models-for-low-resource-languages/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "GPT-5/Codexでデータ分析スクリプト生成",
-    "news_highlight": "GPT-5とCodexが数分で大量データから信頼性の高い洞察を提供。",
-    "problem_context": "大量データからの洞察抽出に時間と手間がかかる。",
-    "recommended_ai": {
-      "model": "GPT-5",
-      "reason": "大規模データ処理とコード生成に強み。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "本番環境のログからエラー原因を特定したい時",
-      "A/Bテスト結果のデータから有意差を分析したい時",
-      "データベースのパフォーマンスデータからボトルネックを特定したい時"
-    ],
-    "steps": [
-      "1. 分析対象のデータセット（CSV, JSONなど）のサンプルを準備する。",
-      "2. AIにデータの形式と分析目的（例: 「エラー発生頻度」「ユーザー行動パターン」）を伝える。",
-      "3. AIが生成したデータ分析スクリプト（Python/Pandasなど）を実行し、結果を確認する。",
-      "4. 得られた洞察を基に、次のアクション（コード修正、機能改善など）を検討する。"
-    ],
-    "prompt": "以下のCSVデータから、ユーザーごとの平均滞在時間を計算し、上位5名のユーザーIDと時間を表示するPythonスクリプトを生成してください。データはuser_id, timestamp, event_typeの形式です。",
-    "tags": [
-      "データ分析",
-      "スクリプト生成",
-      "Python",
-      "効率化"
-    ],
-    "id": "20260205_061521_01",
-    "date": "2026-02-05",
-    "source_news": {
-      "title": "OpenAIがGPT-5活用しデータ分析を効率化する社内AIエージェントを発表。",
-      "url": "https://openai.com/index/inside-our-in-house-data-agent"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Codexアプリで複雑な機能実装を自動化",
-    "news_highlight": "Codexアプリは複数エージェント、並列ワークフロー、長時間タスクで開発効率化",
-    "problem_context": "大規模な機能開発の効率化と自動化",
-    "recommended_ai": {
-      "model": "Codex app",
-      "reason": "複数エージェントで複雑なタスクを自動化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規機能開発で複数のファイルにまたがるコードを生成したい時",
-      "大規模なコードベースのリファクタリング計画を立て実行したい時",
-      "複雑なバグの根本原因を特定し、複数ファイルの修正案を得たい時"
-    ],
-    "steps": [
-      "1. Codexアプリを起動し、開発中のプロジェクトディレクトリを読み込ませる",
-      "2. 実装したい機能の要件（例: ユーザー管理機能）を自然言語で詳細に記述",
-      "3. アプリ内で「複数エージェントによるコード生成とテスト生成の並列実行」を指示",
-      "4. 生成されたコードとテストをレビューし、IDEで統合・テストを実行"
-    ],
-    "prompt": "Python/FastAPIでユーザー認証とCRUD操作を持つバックエンドAPIを、React/TypeScriptで対応するフロントエンドを生成してください。バリデーションとエラーハンドリングを含めてください。",
-    "tags": [
-      "コード生成",
-      "開発効率化",
-      "並列処理",
-      "macOS"
-    ],
-    "id": "20260205_061549_02",
-    "date": "2026-02-05",
-    "source_news": {
-      "title": "OpenAIがAIコーディングと開発を効率化するCodexアプリを発表。",
-      "url": "https://openai.com/index/introducing-the-codex-app"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
-      "icon": "💻"
     }
   }
 ]
