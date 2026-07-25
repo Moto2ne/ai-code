@@ -1,5 +1,123 @@
 [
   {
+    "title": "DiffusersでNunchaku 4-bit量子化推論を導入",
+    "news_highlight": "Nunchaku 4-bit量子化推論がDiffusersに導入、画像生成の推論速度とメモリ効率が向上。",
+    "problem_context": "Diffusersでの画像生成推論速度とメモリ使用量の課題",
+    "recommended_ai": {
+      "model": "Nunchaku 4-bit量子化",
+      "reason": "Diffusersの推論効率を最大化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Stable Diffusionモデルの推論速度を改善したい時",
+      "限られたGPUメモリで大規模モデルを動かしたい時",
+      "Webアプリケーションでリアルタイム画像生成を実装する時"
+    ],
+    "steps": [
+      "1. Diffusersライブラリを最新バージョンに更新する",
+      "2. モデルをロードする際に、Nunchaku 4-bit量子化オプションを指定する",
+      "3. 量子化されたモデルで画像を生成し、推論速度とメモリ使用量を測定する",
+      "4. 測定結果を非量子化モデルと比較し、効率改善を確認する"
+    ],
+    "prompt": "DiffusersでStable Diffusion XLモデルをNunchaku 4-bit量子化でロードし、画像を生成するPythonコードを記述してください。",
+    "tags": [
+      "画像生成",
+      "Diffusers",
+      "量子化",
+      "推論最適化",
+      "Python"
+    ],
+    "id": "20260726_065958_01",
+    "date": "2026-07-26",
+    "source_news": {
+      "title": "Nunchaku 4-bit量子化推論がDiffusersに導入、効率化へ。",
+      "url": "https://huggingface.co/blog/nunchaku-diffusers"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "GPT-5.6で既存コードを最適化",
+    "news_highlight": "GPT-5.6 Sol/Terra/LunaがBedrockで利用可能、コスト削減も実現",
+    "problem_context": "既存コードの効率化とコスト最適化",
+    "recommended_ai": {
+      "model": "GPT-5.6 Sol",
+      "reason": "コスト効率と高性能を両立",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存のPythonコードをより効率的にリファクタリングしたい時",
+      "新しいAPIエンドポイントの設計案を迅速に作成したい時",
+      "SQLクエリのパフォーマンス改善案を検討したい時"
+    ],
+    "steps": [
+      "1. BedrockコンソールでGPT-5.6 Solモデルを選択",
+      "2. 最適化したいPythonコードをBedrock API経由で送信",
+      "3. 提案された改善コードをレビューし、テスト環境で実行",
+      "4. パフォーマンス向上とコスト削減効果を評価"
+    ],
+    "prompt": "以下のPythonコードを、実行速度とメモリ使用量を考慮して最適化してください。改善点と理由も説明してください。",
+    "tags": [
+      "コード最適化",
+      "Bedrock",
+      "コスト削減",
+      "リファクタリング"
+    ],
+    "id": "20260726_070023_02",
+    "date": "2026-07-26",
+    "source_news": {
+      "title": "OpenAI GPT-5.6がBedrockで利用可能に、コスト削減も。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/get-started-with-openai-gpt-5-6-sol-terra-and-luna-on-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Claude Opus 5で複雑なシステム設計",
+    "news_highlight": "Claude Opus 5がAWS Bedrockで利用開始、複雑な推論とエージェントシステム統合に最適。",
+    "problem_context": "複雑なシステム設計の初期段階で、多角的な視点と詳細な考慮が必要な場合。",
+    "recommended_ai": {
+      "model": "Claude Opus 5",
+      "reason": "高度な推論能力",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいマイクロサービスアーキテクチャを検討する時",
+      "既存システムのボトルネック解消策を設計する時",
+      "複雑なデータパイプラインの設計レビューを行う時"
+    ],
+    "steps": [
+      "1. 設計したいシステムの概要と現在の課題をまとめる。",
+      "2. 既存の関連する設計ドキュメントやコードスニペットを用意する。",
+      "3. Claude Opus 5にシステム設計の提案や改善点を依頼する。",
+      "4. 提案された設計案をチームで検討し、実装計画に落とし込む。"
+    ],
+    "prompt": "AWS Bedrockで利用可能なClaude Opus 5。マイクロサービスアーキテクチャで、認証認可、データ永続化、非同期処理を考慮したシステム設計を提案してください。",
+    "tags": [
+      "システム設計",
+      "アーキテクチャ",
+      "AWS Bedrock",
+      "Claude Opus 5"
+    ],
+    "id": "20260726_070048_03",
+    "date": "2026-07-26",
+    "source_news": {
+      "title": "Claude Opus 5がAWS Bedrockで利用開始、高性能モデル。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-opus-5-on-aws-anthropics-most-capable-opus-model/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
     "title": "OpenAI Presenceで社内チャットボット設計",
     "news_highlight": "OpenAI Presenceは企業向けAIエージェントプラットフォームで、音声・チャットエージェントを安全にデプロイ可能。",
     "problem_context": "社内問い合わせ対応の効率化と自動化",
@@ -19382,123 +19500,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "Transformers.js v4で推論性能を比較検証",
-    "news_highlight": "Transformers.js v4プレビュー版がNPM公開、Web環境での推論最適化を検証可能",
-    "problem_context": "WebアプリでのAIモデル推論のパフォーマンス課題",
-    "recommended_ai": {
-      "model": "Transformers.js v4",
-      "reason": "最新のWeb推論最適化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "既存のWeb AI機能をv4へ移行する際の性能評価",
-      "新しいAIモデルをWebアプリに組み込む前の性能検証",
-      "WebブラウザでのAI推論の応答速度を改善したい時"
-    ],
-    "steps": [
-      "既存のTransformers.js v3プロジェクトを用意する。",
-      "v4プレビュー版をインストールし、同じモデルで推論コードを記述する。",
-      "v3とv4それぞれの推論実行時間を計測し、パフォーマンスを比較する。",
-      "結果を基に、v4への移行計画や新機能導入の可否を検討する。"
-    ],
-    "prompt": "Transformers.js v3とv4で、'Xenova/distilbert-base-uncased-finetuned-sst-2-english'モデルの感情分析タスクをそれぞれ100回実行し、平均推論時間を計測するJavaScriptコードを生成してください。",
-    "tags": [
-      "Web AI",
-      "パフォーマンス",
-      "JavaScript",
-      "プロトタイピング"
-    ],
-    "id": "20260210_061911_03",
-    "date": "2026-02-10",
-    "source_news": {
-      "title": "Transformers.js v4プレビュー版がNPMで公開",
-      "url": "https://huggingface.co/blog/transformersjs-v4"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "Holo2でUI多言語テキスト生成",
-    "news_highlight": "Holo2モデルがHugging FaceでUIローカライゼーション分野でトップ評価を獲得。",
-    "problem_context": "UIテキストの多言語対応が非効率。",
-    "recommended_ai": {
-      "model": "Holo2 (Hugging Face)",
-      "reason": "UIローカライゼーションに特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規機能のUIテキストを多言語化する時",
-      "既存UIの表現を特定の言語向けに調整する時",
-      "多言語対応のテストデータを作成する時"
-    ],
-    "steps": [
-      "翻訳したいUIテキスト（日本語）を準備する。",
-      "ターゲット言語（例: 英語、中国語）を指定する。",
-      "Holo2モデルにテキストとターゲット言語を渡し、翻訳を依頼する。",
-      "生成された多言語テキストをUIに適用し、表示を確認する。"
-    ],
-    "prompt": "以下の日本語UIテキストを英語、中国語（簡体字）、韓国語に翻訳し、各言語の文化に合わせた自然な表現に調整してください。テキスト: '設定を保存'",
-    "tags": [
-      "ローカライゼーション",
-      "UI/UX",
-      "多言語対応",
-      "テキスト生成"
-    ],
-    "id": "20260209_061153_01",
-    "date": "2026-02-09",
-    "source_news": {
-      "title": "Hugging FaceでHolo2モデルがUIローカライゼーションでトップに",
-      "url": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Nemotron ColEmbed V2で社内リソースをマルチモーダル検索",
-    "news_highlight": "Nemotron ColEmbed V2がHugging Faceで利用可能、画像とテキストを組み合わせた高精度マルチモーダル検索を実現。",
-    "problem_context": "既存コードやアセットの検索効率が悪い。",
-    "recommended_ai": {
-      "model": "Nemotron ColEmbed V2",
-      "reason": "画像とテキストで高精度検索可能。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "既存UI画面から関連コードを特定したい時",
-      "設計図と要件から既存コンポーネントを探したい時",
-      "エラー画面とログからデバッグ情報を検索したい時"
-    ],
-    "steps": [
-      "1. 検索したいUI画面のスクリーンショットを準備する。",
-      "2. 関連するキーワードやエラーメッセージをテキストで用意する。",
-      "3. Nemotron ColEmbed V2を組み込んだ検索システムに、画像とテキストを入力する。",
-      "4. 返された関連コード、ドキュメント、アセットを確認し、実務に適用する。"
-    ],
-    "prompt": "添付のUIスクリーンショット画像とテキスト『ユーザー登録フローのバリデーションロジック』から、関連するバックエンドAPI定義とフロントエンドのバリデーションコードを検索し、最も関連性の高いものを3つ提示してください。",
-    "tags": [
-      "マルチモーダル",
-      "検索",
-      "既存システム理解",
-      "アセット管理"
-    ],
-    "id": "20260209_061222_02",
-    "date": "2026-02-09",
-    "source_news": {
-      "title": "Hugging FaceでNemotron ColEmbed V2がマルチモーダル検索を強化",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-colembed-v2"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
