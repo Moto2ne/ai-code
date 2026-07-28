@@ -1,5 +1,121 @@
 [
   {
+    "title": "Gemini Managed Agentsでコード品質自動化",
+    "news_highlight": "Gemini APIのManaged Agentsが3.6 Flash、Hooks、Triggersで機能強化。",
+    "problem_context": "コードレビューの負荷軽減と品質向上",
+    "recommended_ai": {
+      "model": "Gemini Managed Agents (with 3.6 Flash)",
+      "reason": "高速な自動処理とイベント連携が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエスト作成時に自動でコードレビューを依頼したい時",
+      "コミット前に静的解析とベストプラクティスチェックを自動化したい時",
+      "CI/CDパイプラインでデプロイ前にコード品質を自動検証したい時"
+    ],
+    "steps": [
+      "Managed Agentをコード品質チェック用に設定する。",
+      "Hooks/Triggersを設定し、GitプッシュやPR作成をトリガーとする。",
+      "エージェントがコードを分析し、改善提案を生成する。",
+      "生成された提案をレビューし、必要に応じてコードに適用する。"
+    ],
+    "prompt": "以下のTypeScriptコードをレビューし、セキュリティ脆弱性、パフォーマンス問題、一般的なベストプラクティス違反を指摘してください。改善案も提示してください。",
+    "tags": [
+      "コードレビュー",
+      "自動化",
+      "CI/CD",
+      "TypeScript"
+    ],
+    "id": "20260729_070852_01",
+    "date": "2026-07-29",
+    "source_news": {
+      "title": "Gemini APIのManaged Agentsが3.6 Flash等で機能強化",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "Diffusersで画像生成推論を高速化",
+    "news_highlight": "DiffusersにNunchaku 4-bit推論導入、画像生成の効率と速度が向上",
+    "problem_context": "画像生成モデルの推論速度とリソース消費",
+    "recommended_ai": {
+      "model": "Diffusers (Nunchaku 4-bit推論)",
+      "reason": "推論速度とメモリ効率向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ローカル環境での画像生成速度を上げたい時",
+      "限られたGPUメモリで大規模モデルを動かしたい時",
+      "バッチ処理で多数の画像を効率的に生成したい時"
+    ],
+    "steps": [
+      "1. Diffusersライブラリを最新版にアップデートする",
+      "2. モデルロード時にNunchaku 4-bit推論を有効にするオプションを追加する",
+      "3. 画像生成スクリプトを実行し、速度とメモリ使用量を比較する",
+      "4. 生成された画像の品質を確認し、必要に応じてパラメータを調整する"
+    ],
+    "prompt": "DiffusersでStable Diffusionモデルをロードする際、Nunchaku 4-bit推論を有効にするPythonコードを生成してください。モデルは\"runwayml/stable-diffusion-v1-5\"を使用。",
+    "tags": [
+      "画像生成",
+      "推論最適化",
+      "Diffusers",
+      "Python",
+      "MLOps"
+    ],
+    "id": "20260729_070917_02",
+    "date": "2026-07-29",
+    "source_news": {
+      "title": "DiffusersにNunchaku 4-bit推論導入、効率向上",
+      "url": "https://huggingface.co/blog/nunchaku-diffusers"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "LangGraphでマルチエージェントAI設計",
+    "news_highlight": "LangGraphでワークフロー、Strandsで推論、Bedrock AgentCoreで本番級マルチエージェントAI構築",
+    "problem_context": "マルチエージェントAIの設計・実装が難しい",
+    "recommended_ai": {
+      "model": "LangGraph",
+      "reason": "ワークフローオーケストレーション",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複雑なデータ処理パイプラインを自動化する時",
+      "複数のAIモデルを連携させて高度な意思決定システムを構築する時",
+      "ユーザーからの多様な要求に対応するチャットボットを開発する時"
+    ],
+    "steps": [
+      "1. LangGraphのPythonライブラリをインストールする",
+      "2. 解決したいタスクを複数のサブタスクに分解する",
+      "3. 各サブタスクを処理するエージェント（ノード）を定義する",
+      "4. LangGraphでエージェント間の状態遷移とワークフローを記述しテストする"
+    ],
+    "prompt": "LangGraphを使って、ユーザーからの質問を分類し、データベース検索エージェントと要約エージェントを連携させるマルチエージェントワークフローのPythonコードを生成してください。",
+    "tags": [
+      "マルチエージェントAI",
+      "ワークフローオーケストレーション"
+    ],
+    "id": "20260729_070942_03",
+    "date": "2026-07-29",
+    "source_news": {
+      "title": "LangGraph等でマルチエージェントAI構築法を解説",
+      "url": "https://aws.amazon.com/blogs/machine-learning/market-surveillance-agent-with-langgraph-and-strands-on-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Claude Opus 5でAWS Bedrock推論最適化",
     "news_highlight": "Claude Opus 5がAWS Bedrockで利用可能。最新最強モデルとして本番推論性能向上。",
     "problem_context": "AWS BedrockでのAIモデル統合の課題",
@@ -19383,123 +19499,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "Gemini 3 Deep Thinkで難解バグ解析",
-    "news_highlight": "Googleが新モデルGemini 3 Deep Thinkを発表、複雑な問題解決能力を強化",
-    "problem_context": "複雑なバグの根本原因特定に時間がかかる",
-    "recommended_ai": {
-      "model": "Gemini 3 Deep Think",
-      "reason": "高度な推論で複雑な問題を解決",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "本番環境で再現しない複雑なバグに直面した時",
-      "複数のマイクロサービスにまたがる連携バグを調査する時",
-      "レガシーコードベースの予期せぬ挙動を解析する時"
-    ],
-    "steps": [
-      "1. バグが発生したコードブロックと関連するログを収集する",
-      "2. エラーメッセージ、スタックトレース、再現手順をまとめる",
-      "3. Gemini 3 Deep Thinkにそれらの情報を入力し、バグの原因と修正案を依頼する",
-      "4. 提案された修正案を検証し、テスト環境で動作確認する"
-    ],
-    "prompt": "以下のコードとログから、バグの根本原因を特定し、具体的な修正案を提案してください。コード: `[コード]` ログ: `[ログ]` エラー: `[エラーメッセージ]`",
-    "tags": [
-      "デバッグ",
-      "バグ解析",
-      "トラブルシューティング"
-    ],
-    "id": "20260213_061915_03",
-    "date": "2026-02-13",
-    "source_news": {
-      "title": "Google、新モデルGemini 3 Deep Thinkを発表。",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
-    }
-  },
-  {
-    "title": "Transformers.js v4でブラウザAI推論",
-    "news_highlight": "Transformers.js v4がNPM公開、ブラウザ/Node.jsでAIモデルを直接実行可能に。",
-    "problem_context": "WebアプリでAIモデルを直接実行したい。",
-    "recommended_ai": {
-      "model": "Transformers.js v4",
-      "reason": "ブラウザ/Node.jsでAI実行可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "Webアプリケーションでリアルタイムなテキスト処理を行いたい時",
-      "ユーザーのデバイス上で完結するAI機能を提供し、サーバー負荷を軽減したい時",
-      "オフライン環境でも動作するAI機能をWebアプリに組み込みたい時"
-    ],
-    "steps": [
-      "1. `npm install @xenova/transformers` を実行し、Transformers.jsをプロジェクトに追加する。",
-      "2. 実行したいAIモデル（例: 感情分析モデル）をHugging Face Hubから選定する。",
-      "3. JavaScriptコードで `pipeline` 関数をインポートし、モデルをロードして推論を実行する。",
-      "4. WebブラウザまたはNode.js環境でアプリケーションを実行し、AI機能を確認する。"
-    ],
-    "prompt": "Transformers.js v4を使って、ブラウザ上でテキストの感情分析を行うJavaScriptコードを生成してください。入力フィールドと結果表示を含めてください。",
-    "tags": [
-      "Web開発",
-      "AI推論",
-      "JavaScript",
-      "ブラウザAI"
-    ],
-    "id": "20260212_061740_01",
-    "date": "2026-02-12",
-    "source_news": {
-      "title": "Transformers.js v4がNPM公開、ブラウザ/Node.jsでAI実行。",
-      "url": "https://huggingface.co/blog/transformersjs-v4"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "BedrockでIoT通知フィルタリングロジック生成",
-    "news_highlight": "SwannがBedrockでIoTに生成AI提供、インテリジェント通知フィルタリングとコスト最適化を実現。",
-    "problem_context": "IoTデバイスからの大量通知を効率的に処理したい",
-    "recommended_ai": {
-      "model": "Amazon Bedrock",
-      "reason": "IoT通知フィルタリングとコスト最適化に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "IoTデバイスの異常検知ルールを迅速に作成したい時",
-      "大量のIoTアラートから重要なものだけを抽出するロジックを設計する時",
-      "通知システムの運用コストを削減するためのフィルタリング戦略を検討する時"
-    ],
-    "steps": [
-      "Bedrockコンソールで新しいモデル（例: Claude 3 Sonnet）を選択する。",
-      "IoTデバイスから受信する通知データのサンプル（JSON形式など）を準備する。",
-      "Bedrockのプロンプトに、フィルタリングしたい条件と出力形式を具体的に記述する。",
-      "生成されたフィルタリングロジック（Pythonスクリプトなど）をテスト環境で検証し、デプロイする。"
-    ],
-    "prompt": "IoTデバイスのセンサーデータ（JSON形式）から、温度が30度以上、湿度が80%以上の異常通知のみを抽出するPython関数を生成してください。",
-    "tags": [
-      "IoT",
-      "Bedrock",
-      "通知フィルタリング",
-      "コスト最適化",
-      "Python"
-    ],
-    "id": "20260212_061806_02",
-    "date": "2026-02-12",
-    "source_news": {
-      "title": "SwannがBedrockでIoTに生成AI提供、コスト最適化も。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/swann-provides-generative-ai-to-millions-of-iot-devices-using-amazon-bedrock/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
