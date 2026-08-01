@@ -1,5 +1,110 @@
 [
   {
+    "title": "LFM2.5エンコーダでCPU長文推論",
+    "news_highlight": "LFM2.5エンコーダがCPU上で高速な長文脈推論を実現",
+    "problem_context": "CPU環境での長文テキスト処理の性能課題",
+    "recommended_ai": {
+      "model": "LFM2.5エンコーダ",
+      "reason": "CPUでの高速長文推論",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模ログデータのリアルタイム分析",
+      "ローカル環境での技術文書検索",
+      "組み込みシステムでの自然言語処理"
+    ],
+    "steps": [
+      "LFM2.5エンコーダのPythonライブラリをインストール",
+      "処理したい長文テキストファイルを準備",
+      "エンコーダでテキストをベクトル表現に変換",
+      "変換したベクトルを検索や分類モデルの入力に利用"
+    ],
+    "prompt": "PythonでLFM2.5エンコーダを使い、指定されたテキストファイルをベクトル化するコードを生成してください。出力はNumPy配列でお願いします。",
+    "tags": [
+      "自然言語処理",
+      "エンコーダ",
+      "CPU最適化",
+      "長文脈"
+    ],
+    "id": "20260802_070007_01",
+    "date": "2026-08-02",
+    "source_news": {
+      "title": "CPUで高速な長文脈推論を可能にするLFM2.5エンコーダを発表。",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "AI戦術",
+    "problem_context": "AI技術の活用",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "高性能",
+      "badge_color": "orange"
+    },
+    "prompt": "最新のAI技術を活用して効率化を図ってください。",
+    "tags": [
+      "AI",
+      "自動生成"
+    ],
+    "id": "20260802_070034_02",
+    "date": "2026-08-02",
+    "source_news": {
+      "title": "GPUリソースの効率的な管理と最適化の重要性を解説。",
+      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "NVIDIA Isaac Simで外科ロボットシミュレーションを設計",
+    "news_highlight": "NVIDIA、外科ロボット向けリアルタイム生成シミュレーションで手術計画・トレーニングを高度化",
+    "problem_context": "外科ロボットの動作検証とトレーニング環境の構築",
+    "recommended_ai": {
+      "model": "NVIDIA Isaac Sim",
+      "reason": "ロボティクス特化シミュレーションプラットフォーム",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい外科ロボットの制御アルゴリズムを開発する時",
+      "手術トレーニング用の仮想環境を迅速に構築したい時",
+      "ロボットの異常動作シナリオを仮想空間でテストする時",
+      "実際のロボットにデプロイする前にAIモデルを事前検証する時"
+    ],
+    "steps": [
+      "1. NVIDIA Isaac Simを起動し、既存のロボットモデルをロードする。",
+      "2. シミュレーション環境に手術器具や患者モデルを配置する。",
+      "3. ロボットの目標動作パスやタスクをPythonスクリプトで定義する。",
+      "4. シミュレーションを実行し、ロボットの動作データやセンサー出力を記録する。",
+      "5. 記録されたデータを用いて制御アルゴリズムやAIモデルを評価・改善する。"
+    ],
+    "prompt": "NVIDIA Isaac SimのPython APIを使用して、外科ロボットが特定の目標点へ正確に移動し、指定されたオブジェクトを把持するシミュレーションシナリオを記述してください。初期位置、目標位置、把持動作のコマンドを含めてください。",
+    "tags": [
+      "ロボティクス",
+      "シミュレーション",
+      "AI開発",
+      "NVIDIA"
+    ],
+    "id": "20260802_070105_03",
+    "date": "2026-08-02",
+    "source_news": {
+      "title": "NVIDIAと連携し、外科ロボット向けリアルタイム生成シミュレーション。",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Gemini Managed Agentsで複雑なワークフロー設計",
     "news_highlight": "Managed Agentsが3.6 Flashで高速化、hooks/triggersでイベント駆動が可能に",
     "problem_context": "複雑なマルチステップタスクの自動化と連携",
@@ -19383,123 +19488,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
       "icon": "✨"
-    }
-  },
-  {
-    "title": "Nemotron 3 Nano 30BでPythonコード生成",
-    "news_highlight": "NVIDIA Nemotron 3 Nano 30B (3Bパラメータ)がSageMaker JumpStartで利用可能に。",
-    "problem_context": "定型的なPythonコード作成の効率化",
-    "recommended_ai": {
-      "model": "NVIDIA Nemotron 3 Nano 30B",
-      "reason": "SageMaker JumpStartで手軽に利用可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規機能開発でボイラープレートコードが必要な時",
-      "既存のPythonスクリプトを改善したい時",
-      "単体テストコードを効率的に書きたい時"
-    ],
-    "steps": [
-      "1. SageMaker JumpStartでNemotron 3 Nano 30Bをデプロイ",
-      "2. デプロイされたエンドポイントの推論コードをコピー",
-      "3. 開発環境でプロンプトと推論コードを実行",
-      "4. 生成されたコードを検証し、プロジェクトに統合"
-    ],
-    "prompt": "Pythonで、指定されたS3バケットからファイルをダウンロードし、ローカルに保存する関数を記述してください。エラーハンドリングも追加してください。",
-    "tags": [
-      "コード生成",
-      "SageMaker",
-      "LLM",
-      "Python"
-    ],
-    "id": "20260217_061238_03",
-    "date": "2026-02-17",
-    "source_news": {
-      "title": "NVIDIA Nemotron 3 Nano 30BがAmazon SageMaker JumpStartで利用可能に。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-nano-30b-is-now-available-in-amazon-sagemaker-jumpstart/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "Hugging Face Transformers.js v4でWebアプリにAI機能追加",
-    "news_highlight": "Transformers.js v4がNPM公開、ブラウザ/Node.jsでHugging Faceモデルを直接実行可能に。",
-    "problem_context": "WebアプリにAI機能を低コスト・高速で組み込みたい。",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "Transformers.js v4の導入コードを効率的に生成",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ユーザー入力テキストの感情分析をクライアントサイドで行いたい時",
-      "Webページ上のテキストを要約する機能を実装したい時",
-      "Node.jsバックエンドで軽量な自然言語処理タスクを実行したい時"
-    ],
-    "steps": [
-      "1. GPT-4oにTransformers.js v4を使った感情分析コードの生成を依頼する。",
-      "2. 生成されたコードをプロジェクトに組み込み、必要な依存関係をインストールする。",
-      "3. Webページ上の入力フィールドと結果表示部分をコードに接続する。",
-      "4. ブラウザで動作を確認し、必要に応じてコードを調整する。"
-    ],
-    "prompt": "Hugging Face Transformers.js v4を使って、Webブラウザで動作する感情分析のJavaScriptコードを生成してください。入力テキストを受け取り、ポジティブ/ネガティブを判定するものです。",
-    "tags": [
-      "JavaScript",
-      "Web開発",
-      "自然言語処理",
-      "オンデバイスAI"
-    ],
-    "id": "20260216_061016_01",
-    "date": "2026-02-16",
-    "source_news": {
-      "title": "Hugging Face Transformers.js v4がNPMで公開",
-      "url": "https://huggingface.co/blog/transformersjs-v4"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Hugging Face OpenEnvでAIエージェント評価",
-    "news_highlight": "Hugging Face OpenEnvがAIエージェントの実環境評価を可能にし、信頼性向上。",
-    "problem_context": "AIエージェントの実環境での性能評価が困難。",
-    "recommended_ai": {
-      "model": "Hugging Face OpenEnv",
-      "reason": "実環境での評価が可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "AIエージェントを本番環境にデプロイする前に、実際のアプリケーションでテストしたい時",
-      "開発中のAIエージェントが、ユーザーの操作にどう反応するか確認したい時",
-      "複数のAIエージェント実装の中から、最も安定したものを選択したい時"
-    ],
-    "steps": [
-      "1. 評価したいAIエージェントのコードを準備する。",
-      "2. OpenEnvのドキュメントに従い、評価環境をセットアップする。",
-      "3. OpenEnvにエージェントを登録し、評価タスクを定義する。",
-      "4. 評価を実行し、OpenEnvが提供するメトリクスで性能を分析する。"
-    ],
-    "prompt": "OpenEnvで評価するAIエージェントのテストシナリオをJSON形式で記述してください。ユーザーログイン、商品検索、カート追加のステップを含めてください。",
-    "tags": [
-      "AIエージェント",
-      "評価",
-      "テスト",
-      "HuggingFace"
-    ],
-    "id": "20260216_061040_02",
-    "date": "2026-02-16",
-    "source_news": {
-      "title": "Hugging Face OpenEnvで実環境エージェント評価",
-      "url": "https://huggingface.co/blog/openenv-turing"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
     }
   }
 ]
