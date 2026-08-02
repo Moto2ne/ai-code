@@ -1,5 +1,122 @@
 [
   {
+    "title": "NVIDIA Cosmos-H-Dreamsでシミュレーションデータ生成",
+    "news_highlight": "Cosmos-H-Dreamsが外科手術ロボット向けリアルタイム生成シミュレーションを実現。",
+    "problem_context": "物理シミュレーション用データが不足",
+    "recommended_ai": {
+      "model": "NVIDIA Cosmos-H-Dreams",
+      "reason": "リアルタイム物理シミュレーションに特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIモデル学習用の多様なシミュレーションデータが必要な時",
+      "物理ロボットの制御アルゴリズムを仮想環境で検証したい時",
+      "危険なシナリオでのロボット挙動を安全にテストしたい時"
+    ],
+    "steps": [
+      "Cosmos-H-Dreams環境にアクセスし、シミュレーション対象のロボットモデルをインポートする。",
+      "シミュレーションシナリオ（例: 障害物配置、外部力）を設定する。",
+      "リアルタイム生成シミュレーションを実行し、ロボットの挙動データやセンサーデータを記録する。",
+      "記録したデータをAIモデルの学習データセットとして利用する。"
+    ],
+    "prompt": "外科手術ロボットのリアルタイムシミュレーション環境を構築し、特定の操作シナリオ（例: 組織切開、縫合）におけるロボットアームの挙動データを生成してください。",
+    "tags": [
+      "シミュレーション",
+      "ロボティクス",
+      "データ生成",
+      "AI学習"
+    ],
+    "id": "20260803_065905_01",
+    "date": "2026-08-03",
+    "source_news": {
+      "title": "NVIDIA Cosmos-H-Dreamsで外科手術ロボット向けリアルタイム生成シミュレーションを実現。",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "LFM2.5-Encodersで大規模コード理解",
+    "news_highlight": "LFM2.5-EncodersはCPUで高速な長文コンテキスト推論を実現、ローカル利用可能。",
+    "problem_context": "大規模な既存コードの全体像把握に時間がかかる。",
+    "recommended_ai": {
+      "model": "LFM2.5-Encoders",
+      "reason": "CPUで長文高速推論が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規プロジェクト参加時に既存コードの構造を理解したい時",
+      "特定機能の改修で関連する複数ファイルのコードを把握したい時",
+      "大規模な技術ドキュメントから特定の情報を抽出したい時"
+    ],
+    "steps": [
+      "1. LFM2.5-Encodersをローカル環境にセットアップする。",
+      "2. 分析したいコードベース（複数ファイル）をLFM2.5-Encodersに入力する。",
+      "3. コードの構造や依存関係について質問を投げる。",
+      "4. AIの回答を参考にコードを読み解き、理解を深める。"
+    ],
+    "prompt": "以下のコードベースの主要モジュールと依存関係を説明してください。`src/core`ディレクトリの役割と、他のモジュールとの連携方法を詳しく教えてください。",
+    "tags": [
+      "コード理解",
+      "大規模コード",
+      "ローカルAI",
+      "CPU推論"
+    ],
+    "id": "20260803_065931_02",
+    "date": "2026-08-03",
+    "source_news": {
+      "title": "LFM2.5-Encodersを発表、CPUで高速な長文コンテキスト推論が可能に。",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
+    "title": "EvoLibでLLMのタスク適応能力を活かす",
+    "news_highlight": "EvoLibはLLMの経験を再利用可能なスキルと洞察に変え、タスク適応能力を向上",
+    "problem_context": "LLMが新しいタスクへ知識を適用しにくい",
+    "recommended_ai": {
+      "model": "EvoLib",
+      "reason": "LLMの知識適応を強化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存システムの設計パターンを新規開発に適用したい時",
+      "異なるプログラミング言語間で共通ロジックを実装したい時",
+      "過去のバグ修正経験から類似エラーの解決策を探したい時"
+    ],
+    "steps": [
+      "既存の設計ドキュメントやコードをLLMにインプットする",
+      "新規タスクの要件を具体的にLLMに提示する",
+      "LLMに既存知識を適用した設計案やコード生成を依頼する",
+      "提案された設計やコードをレビューし、テストする"
+    ],
+    "prompt": "既存の認証システム設計パターンを参考に、新しいマイクロサービス用の認証APIの設計を提案してください。TypeScriptとNestJSを使用します。",
+    "tags": [
+      "設計",
+      "コード生成",
+      "知識活用",
+      "適応学習"
+    ],
+    "id": "20260803_065959_03",
+    "date": "2026-08-03",
+    "source_news": {
+      "title": "EvoLibがLLMの経験を知識に変え、タスク適応能力を向上。",
+      "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "LFM2.5エンコーダでCPU長文推論",
     "news_highlight": "LFM2.5エンコーダがCPU上で高速な長文脈推論を実現",
     "problem_context": "CPU環境での長文テキスト処理の性能課題",
@@ -19371,123 +19488,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
       "icon": "🚀"
-    }
-  },
-  {
-    "title": "OpenEnvでAIエージェントの動作検証",
-    "news_highlight": "OpenEnvはツール利用AIエージェントの実環境での動作を評価する新手法",
-    "problem_context": "AIエージェントの実環境での信頼性検証が困難",
-    "recommended_ai": {
-      "model": "OpenEnv",
-      "reason": "AIエージェントの動作を客観的に評価",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "開発中のAIエージェントが本番環境で期待通りに動作するか確認したい時",
-      "AIエージェントが特定のツール連携でエラーを出す原因を特定したい時",
-      "複数のAIエージェント候補から実用性の高いものを選定したい時"
-    ],
-    "steps": [
-      "1. OpenEnvの評価環境をセットアップする。",
-      "2. 評価したいAIエージェントと、利用するツール群をOpenEnvに登録する。",
-      "3. AIエージェントに実行させたいタスクシナリオを定義する。",
-      "4. OpenEnvで評価を実行し、エージェントのツール利用ログと結果を分析する。"
-    ],
-    "prompt": "OpenEnvで、AIエージェントがGitリポジトリからコードをクローンし、指定されたブランチに切り替えるタスクを評価してください。",
-    "tags": [
-      "AIエージェント",
-      "テスト",
-      "評価",
-      "デバッグ"
-    ],
-    "id": "20260218_061724_03",
-    "date": "2026-02-18",
-    "source_news": {
-      "title": "ツール利用AIエージェントの実環境での評価手法OpenEnv",
-      "url": "https://huggingface.co/blog/openenv-turing"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "GPT-5.3-Codex-Sparkで高速コード生成",
-    "news_highlight": "GPT-5.3-Codex-Sparkは15倍高速なコード生成、128kコンテキスト対応。",
-    "problem_context": "開発速度向上と大規模コード理解の課題解決。",
-    "recommended_ai": {
-      "model": "GPT-5.3-Codex-Spark",
-      "reason": "リアルタイム性と高速生成",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しい機能のプロトタイプを素早く作成したい時",
-      "既存の複雑なコードベースに新機能を追加する時",
-      "大規模なリファクタリングでコードの整合性を保ちたい時"
-    ],
-    "steps": [
-      "1. 新規機能の要件を具体的に定義する。",
-      "2. 関連する既存コード（最大128kトークン）をコピーする。",
-      "3. AIに要件と既存コードを渡し、新規機能のコード生成を依頼する。",
-      "4. 生成されたコードをレビューし、テスト環境で動作確認する。"
-    ],
-    "prompt": "以下の要件と既存のTypeScriptコードを考慮し、新しいユーザー認証機能を実装してください。既存コード: [ここに既存コードを貼り付け]。要件: ユーザー名とパスワードによるログイン、トークンベースの認証。",
-    "tags": [
-      "コード生成",
-      "高速開発",
-      "プロトタイピング",
-      "大規模コンテキスト"
-    ],
-    "id": "20260217_061149_01",
-    "date": "2026-02-17",
-    "source_news": {
-      "title": "OpenAIが新コーディングモデルGPT-5.3-Codex-Sparkを発表、15倍高速化。",
-      "url": "https://openai.com/index/introducing-gpt-5-3-codex-spark"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Gemini 3 Deep Thinkで複雑アルゴリズム設計",
-    "news_highlight": "複雑な科学・工学課題の解決を加速、高度な推論能力で研究推進。",
-    "problem_context": "高度な推論が必要なアルゴリズム設計の効率化",
-    "recommended_ai": {
-      "model": "Gemini 3 Deep Think",
-      "reason": "高度な推論と問題解決能力",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しい研究分野でのアルゴリズム設計を始める時",
-      "既存の複雑なアルゴリズムの性能改善を検討する時",
-      "複数の技術要素が絡むシステム設計の初期段階"
-    ],
-    "steps": [
-      "1. 解決したい科学・工学的な問題と制約条件を明確にする。",
-      "2. 問題の概要、入力、期待される出力、性能要件をAIに提示する。",
-      "3. AIが提案したアルゴリズムの設計思想と主要ロジックを確認する。",
-      "4. 提案されたアルゴリズムを基にプロトタイプ実装し、検証する。"
-    ],
-    "prompt": "与えられた制約と要件に基づき、効率的でスケーラブルなデータ処理アルゴリズムを設計してください。Pythonでの実装例と時間計算量も提示してください。",
-    "tags": [
-      "アルゴリズム設計",
-      "研究開発",
-      "Python",
-      "最適化"
-    ],
-    "id": "20260217_061213_02",
-    "date": "2026-02-17",
-    "source_news": {
-      "title": "Googleが新AIモデルGemini 3 Deep Thinkを発表、科学・研究・工学を推進。",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
     }
   }
 ]
