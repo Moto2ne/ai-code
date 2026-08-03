@@ -1,5 +1,123 @@
 [
   {
+    "title": "Gemini APIのManaged Agentsで自律エージェントを拡張",
+    "news_highlight": "Managed Agents Gemini 3.6がFlash対応、hooksで機能拡張し、より高速で柔軟なエージェント開発が可能に。",
+    "problem_context": "複雑なタスクを自動化するエージェント開発の効率化",
+    "recommended_ai": {
+      "model": "Gemini APIのManaged Agents",
+      "reason": "Flash対応とhooksで柔軟性向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザーの問い合わせに自動応答するチャットボットのロジックを拡張したい時",
+      "複数の外部APIを連携させる自動ワークフローを構築したい時",
+      "特定のイベント発生時にカスタム処理を実行するエージェントを開発したい時"
+    ],
+    "steps": [
+      "1. Gemini APIのManaged Agentsで基本エージェントを定義する",
+      "2. Flash対応を活用し、高速処理が必要なステップを特定する",
+      "3. hooks機能を使って、特定のイベント（例: ユーザー入力、API応答）発生時に実行するカスタムロジック（例: データ検証、外部サービス呼び出し）を実装する",
+      "4. エージェントの動作をテストし、hooksが期待通りに機能するか検証する"
+    ],
+    "prompt": "Gemini APIのManaged Agentsで、ユーザーが商品名を尋ねた際に在庫情報を検索し、在庫がない場合は関連商品を提案するエージェントをhooksを使って設計してください。",
+    "tags": [
+      "エージェント開発",
+      "API連携",
+      "自動化",
+      "チャットボット"
+    ],
+    "id": "20260804_071133_01",
+    "date": "2026-08-04",
+    "source_news": {
+      "title": "Gemini APIのManaged AgentsがFlash対応、hooksで機能拡張。",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "OrchardでAIエージェント開発を効率化",
+    "news_highlight": "OrchardはAIエージェント訓練・評価の複雑さを軽減し、小規模モデルで高性能を実現するオープンフレームワーク",
+    "problem_context": "AIエージェント開発の複雑性、小規模モデルの性能課題",
+    "recommended_ai": {
+      "model": "Orchard",
+      "reason": "AIエージェント開発を効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIエージェントのプロトタイプを迅速に開発したい時",
+      "既存エージェントの性能を多様なタスクで評価したい時",
+      "リソース制約下でAIエージェントを最適化したい時"
+    ],
+    "steps": [
+      "OrchardのGitHubリポジトリをクローンする",
+      "開発環境にOrchardをセットアップする",
+      "提供されているサンプルエージェントを動かしてみる",
+      "カスタムタスク向けエージェントを実装し、訓練・評価"
+    ],
+    "prompt": "Orchardフレームワークを活用し、Webスクレイピングを行うAIエージェントの初期設計と主要なコード構造をPythonで提案してください。状態管理とタスク実行ロジックを含めてください。",
+    "tags": [
+      "AIエージェント",
+      "フレームワーク",
+      "オープンソース",
+      "評価",
+      "訓練"
+    ],
+    "id": "20260804_071200_02",
+    "date": "2026-08-04",
+    "source_news": {
+      "title": "スケーラブルなエージェントAI向けオープンフレームワークOrchard。",
+      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "EchoverseでAIエージェントの多段階訓練",
+    "news_highlight": "多段階ワークフローAIエージェントの訓練をリアル環境Echoverseで効率化",
+    "problem_context": "AIエージェントが複雑な多段階タスクで失敗する",
+    "recommended_ai": {
+      "model": "Echoverse",
+      "reason": "リアル環境で多段階訓練が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントの多段階処理ロジック設計時",
+      "AIエージェントの複雑なシナリオテスト時",
+      "AIエージェントのリアル環境での動作検証時"
+    ],
+    "steps": [
+      "1. 訓練したいAIエージェントの目標タスクとワークフローを定義",
+      "2. Echoverseに定義したシナリオと期待される行動を設定",
+      "3. Echoverse上でAIエージェントを訓練し、シミュレーション実行",
+      "4. シミュレーション結果を分析し、エージェントのロジックを改善"
+    ],
+    "prompt": "Echoverseで顧客サポートAIエージェントを訓練するため、メール対応、FAQ検索、チケット発行の多段階ワークフローを定義してください。",
+    "tags": [
+      "AIエージェント",
+      "シミュレーション",
+      "多段階タスク",
+      "訓練環境"
+    ],
+    "id": "20260804_071226_03",
+    "date": "2026-08-04",
+    "source_news": {
+      "title": "AIエージェントの多段階訓練向け、リアル環境Echoverse発表。",
+      "url": "https://www.microsoft.com/en-us/research/blog/echoverse-deep-evolving-environments-for-computer-use-agents/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "NVIDIA Cosmos-H-Dreamsでシミュレーションデータ生成",
     "news_highlight": "Cosmos-H-Dreamsが外科手術ロボット向けリアルタイム生成シミュレーションを実現。",
     "problem_context": "物理シミュレーション用データが不足",
@@ -19369,125 +19487,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "Claudeで大規模コード生成を高速化",
-    "news_highlight": "Codex/Claudeの推論速度が最大30%向上、大規模コード生成のレイテンシを短縮",
-    "problem_context": "複雑なコード生成の遅延とリソース消費",
-    "recommended_ai": {
-      "model": "Claude",
-      "reason": "長文処理とコード生成に強み",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "大規模な既存プロジェクトに新機能を追加する際",
-      "複雑なアルゴリズムの実装を検討する際",
-      "複数のファイルにまたがるリファクタリングを行う際"
-    ],
-    "steps": [
-      "既存のコードベースの関連ファイルをAIに提供する。",
-      "追加したい機能やリファクタリングの要件を具体的に記述する。",
-      "AIが生成したコードをレビューし、必要に応じて修正を指示する。",
-      "生成されたコードをテスト環境で検証する。"
-    ],
-    "prompt": "以下の既存コードベースに、ユーザー認証機能を実装してください。ユーザー登録、ログイン、パスワードリセットの各フローを含め、セキュリティを考慮した実装をお願いします。",
-    "tags": [
-      "コード生成",
-      "性能最適化",
-      "大規模開発",
-      "Claude"
-    ],
-    "id": "20260219_061914_03",
-    "date": "2026-02-19",
-    "source_news": {
-      "title": "Codex/Claude向けカスタムカーネルで性能最適化",
-      "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Bedrock AgentCoreで自律エージェント設計",
-    "news_highlight": "Bedrock AgentCoreがcontext message strategyで自律エージェントの継続通信を維持",
-    "problem_context": "自律型AIエージェントのセッション維持が困難",
-    "recommended_ai": {
-      "model": "Bedrock AgentCore",
-      "reason": "長期稼働エージェント構築に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "顧客サポートチャットボットのセッション維持",
-      "長期プロジェクト管理エージェントの状態管理",
-      "複雑なワークフロー自動化エージェントの継続実行"
-    ],
-    "steps": [
-      "1. Bedrock AgentCoreで新規エージェントプロジェクトを作成",
-      "2. エージェントの目的と長期的な状態管理要件を定義",
-      "3. context message strategyを考慮したエージェントのステップとツールを設計",
-      "4. 継続的なセッション維持のためのメッセージングロジックを実装",
-      "5. エージェントの長期稼働テストとデバッグ"
-    ],
-    "prompt": "Bedrock AgentCoreで顧客サポート用の自律型AIエージェントを設計してください。context message strategyを用いて、ユーザーとの長期的な会話状態を維持するロジックを含めてください。",
-    "tags": [
-      "自律型AI",
-      "エージェント",
-      "Bedrock",
-      "状態管理",
-      "アーキテクチャ設計"
-    ],
-    "id": "20260218_061630_01",
-    "date": "2026-02-18",
-    "source_news": {
-      "title": "Bedrock AgentCoreで長期間稼働する自律型AIエージェント構築法",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-long-running-mcp-servers-on-amazon-bedrock-agentcore-with-strands-agents-integration/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Bedrock AgentCoreでWebスクレイピング自動化",
-    "news_highlight": "Bedrock AgentCoreがプロキシ、ブラウザプロファイル、拡張機能でWebブラウジングを詳細制御。",
-    "problem_context": "複雑なWebサイトからのデータ抽出が困難。",
-    "recommended_ai": {
-      "model": "Bedrock AgentCore",
-      "reason": "ブラウザ制御機能でWeb操作を自動化。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "競合サイトからの価格情報収集",
-      "自社Webサービスの定期的なUIテスト",
-      "社内システムのデータ入力自動化"
-    ],
-    "steps": [
-      "1. Bedrock AgentCoreでエージェントを作成する。",
-      "2. 必要なWebサイトにアクセスするためのプロキシを設定する。",
-      "3. データ抽出用のブラウザ拡張機能をエージェントに組み込む。",
-      "4. 抽出したいデータ構造と操作手順をエージェントに指示する。"
-    ],
-    "prompt": "ECサイトから商品名、価格、在庫状況を抽出し、CSV形式で出力してください。ログインが必要な場合、提供された認証情報を使用し、特定のブラウザプロファイルで実行してください。",
-    "tags": [
-      "Webスクレイピング",
-      "自動化",
-      "データ抽出",
-      "テスト自動化"
-    ],
-    "id": "20260218_061656_02",
-    "date": "2026-02-18",
-    "source_news": {
-      "title": "Bedrock AgentCoreでAIエージェントのブラウジングを詳細制御",
-      "url": "https://aws.amazon.com/blogs/machine-learning/customize-ai-agent-browsing-with-proxies-profiles-and-extensions-in-amazon-bedrock-agentcore-browser/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
     }
   }
 ]
