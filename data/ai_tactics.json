@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-5.6 Solで複雑なバグ原因を特定",
+    "news_highlight": "GPT-5.6 Solが精度と一貫性を向上、Lunaは無料開放で無制限チャット可能",
+    "problem_context": "複雑なバグの特定と修正に時間がかかる",
+    "recommended_ai": {
+      "model": "GPT-5.6 Sol",
+      "reason": "精度と一貫性が向上したため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "本番環境で発生した原因不明のバグを調査する時",
+      "プルリクエストで指摘された複雑なロジックエラーを修正する時",
+      "既存システムのパフォーマンスボトルネックを特定する時"
+    ],
+    "steps": [
+      "エラーログやスタックトレースを収集する",
+      "問題の発生箇所と思われるコードを特定する",
+      "AIにエラーログとコード、期待する動作を貼り付けて原因分析を依頼する",
+      "AIの提案に基づきコードを修正し、テストする"
+    ],
+    "prompt": "以下のエラーログと関連コードを分析し、バグの原因と具体的な修正案を提示してください。期待する動作はユーザー認証です。言語はTypeScriptです。",
+    "tags": [
+      "デバッグ",
+      "コード分析",
+      "バグ修正",
+      "GPT-5.6 Sol"
+    ],
+    "id": "20260807_080736_01",
+    "date": "2026-08-07",
+    "source_news": {
+      "title": "ChatGPTのGPT-5.6 Solが精度向上、Lunaは無料開放。",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "OrchardでAIエージェントを評価・改善",
+    "news_highlight": "OrchardはAIエージェントの訓練・評価OSS。小型モデルで高性能を支援し複雑性軽減。",
+    "problem_context": "AIエージェントの性能評価と最適化が困難",
+    "recommended_ai": {
+      "model": "Orchard",
+      "reason": "エージェント評価・訓練に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIエージェントの性能を客観的に比較したい時",
+      "既存のAIエージェントの改善点を特定したい時",
+      "リソース制約下で動く小型AIエージェントを開発したい時"
+    ],
+    "steps": [
+      "1. Orchardフレームワークをインストールし、開発環境をセットアップする。",
+      "2. 評価したいAIエージェントのコードをOrchardの形式に適合させる。",
+      "3. Orchardの評価ツールを使って、複数のタスクでエージェントの性能を測定する。",
+      "4. 評価結果を分析し、エージェントの改善点や最適化の方向性を特定する。"
+    ],
+    "prompt": "Orchardフレームワークを活用し、PythonでAIエージェントの評価環境を構築するコード例を生成してください。タスクはシンプルなテキスト分類とし、評価指標はF1スコアでお願いします。",
+    "tags": [
+      "AIエージェント",
+      "評価",
+      "オープンソース",
+      "Python"
+    ],
+    "id": "20260807_080804_02",
+    "date": "2026-08-07",
+    "source_news": {
+      "title": "MicrosoftがスケーラブルなAIエージェント向けOSSフレームワークOrchardを公開。",
+      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCoreでAIエージェントのコスト最適化",
+    "news_highlight": "AgentCoreがDogwoodによる時間ベースのポリシーとゲートウェイでのレート制限を提供。",
+    "problem_context": "AIエージェントの予期せぬ高コストと不安定な動作を抑制。",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "エージェントの制御とコスト管理に特化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントが外部APIを過剰に呼び出すのを防ぎたい時",
+      "特定の時間帯にのみAIエージェントの特定機能を有効にしたい時",
+      "開発中のAIエージェントの予期せぬコスト増を抑制したい時"
+    ],
+    "steps": [
+      "Bedrock AgentCoreコンソールで既存エージェントを選択。",
+      "Dogwoodポリシーエディタを開き、新しいポリシーを記述。",
+      "レート制限設定で、外部API呼び出しの上限を設定。",
+      "ポリシーと設定をデプロイし、エージェントの動作をテスト。"
+    ],
+    "prompt": "Dogwood言語で、AIエージェントが特定の外部APIを1分間に10回以上呼び出さないよう制限するポリシーを生成してください。",
+    "tags": [
+      "AIエージェント",
+      "コスト管理",
+      "ポリシー",
+      "レート制限"
+    ],
+    "id": "20260807_080832_03",
+    "date": "2026-08-07",
+    "source_news": {
+      "title": "Bedrock AgentCoreがエージェント制御とコスト管理の新機能、新ポリシー言語Dogwoodも。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/control-agent-behaviors-and-cost-beyond-a-single-action-new-capabilities-in-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GPT-4oでWebアプリのセキュリティ脆弱性レビュー",
     "news_highlight": "OpenAIがAIモデルの第三者評価と安全性強化策を発表、開発者はAIのセキュリティ利用を強化。",
     "problem_context": "開発中のWebアプリの潜在的セキュリティリスク特定。",
@@ -19355,124 +19472,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "UnslothでAIモデルを無料ファインチューニング",
-    "news_highlight": "UnslothとHF Jobsの無料枠でAIモデルを高速ファインチューニング、GPUコストゼロ",
-    "problem_context": "AIモデルのファインチューニングのGPUコストが高い",
-    "recommended_ai": {
-      "model": "Unsloth",
-      "reason": "高速・低メモリでモデルを無料ファインチューニング",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "既存LLMを自社データで特化させたい時",
-      "プロジェクトの初期段階でモデル性能を検証したい時",
-      "GPU予算が限られている中でモデル改善を試みたい時"
-    ],
-    "steps": [
-      "ファインチューニング用データセットをHugging Face Hubにアップロードする",
-      "Hugging Face Jobsで無料GPUインスタンスを選択しノートブックを起動する",
-      "Unslothを使ったファインチューニングスクリプトをノートブックに記述する",
-      "スクリプトを実行し、学習済みモデルをHugging Face Hubに保存する"
-    ],
-    "prompt": "Unslothを使って、`mistralai/Mistral-7B-Instruct-v0.2`モデルを`my_dataset.jsonl`で3エポックファインチューニングするPythonスクリプトを生成してください。",
-    "tags": [
-      "AIモデル学習",
-      "コスト削減",
-      "LLMファインチューニング",
-      "Unsloth",
-      "HF Jobs"
-    ],
-    "id": "20260222_061004_03",
-    "date": "2026-02-22",
-    "source_news": {
-      "title": "UnslothとHF JobsでAIモデルを無料で学習",
-      "url": "https://huggingface.co/blog/unsloth-jobs"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "GeminiでゲームBGMをプロトタイピング",
-    "news_highlight": "GeminiがLyria 3で音楽生成機能を追加、表現力が向上し多様なジャンルに対応。",
-    "problem_context": "ゲームやアプリのBGM/SE選定に時間。",
-    "recommended_ai": {
-      "model": "Gemini",
-      "reason": "高度な音楽生成と表現力。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ゲーム開発でBGMの初期アイデアを素早く試したい時",
-      "アプリのUI/UXサウンドのバリエーションを検討したい時",
-      "動画コンテンツの短いジングルや効果音を生成したい時"
-    ],
-    "steps": [
-      "1. Geminiの音楽生成機能にアクセスする。",
-      "2. ジャンル、ムード、楽器、テンポなどの要件をプロンプトに入力する。",
-      "3. 生成された音楽を試聴し、プロジェクトの雰囲気に合うか確認する。",
-      "4. 必要に応じてプロンプトを調整し、複数のバリエーションを生成する。"
-    ],
-    "prompt": "ゲームの戦闘シーンに合う、オーケストラ風でテンポの速いBGMを生成してください。勇壮で緊張感のある雰囲気で、ループ可能な構成にしてください。",
-    "tags": [
-      "音楽生成",
-      "プロトタイピング",
-      "ゲーム開発",
-      "コンテンツ制作"
-    ],
-    "id": "20260221_060943_01",
-    "date": "2026-02-21",
-    "source_news": {
-      "title": "Geminiが音楽生成機能を追加、Lyria 3で表現力向上。",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
-    }
-  },
-  {
-    "title": "GGML/llama.cppでローカルAI推論",
-    "news_highlight": "GGML/llama.cppがHFに統合、ローカルLLM推論を高速化し開発を促進",
-    "problem_context": "ローカルでのLLM実行環境構築が複雑",
-    "recommended_ai": {
-      "model": "GGML/llama.cpp",
-      "reason": "軽量・高速なローカル推論",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "オフライン環境でAIチャットボットを動かしたい時",
-      "機密データを外部に送らずにAI処理したい時",
-      "エッジデバイスでAIモデルを動かしたい時"
-    ],
-    "steps": [
-      "1. Hugging FaceでGGML/llama.cpp対応のモデルを検索する",
-      "2. llama.cppリポジトリをクローンし、ビルドする",
-      "3. ダウンロードしたモデルファイルをllama.cppの実行ファイルでロードする",
-      "4. ローカル環境で推論を実行し、既存アプリケーションに統合する"
-    ],
-    "prompt": "Pythonでllama.cppを使ってローカルでテキスト生成AIを動かすサンプルコードを書いてください。モデルパスとプロンプトは変数で指定できるようにしてください。",
-    "tags": [
-      "ローカルAI",
-      "LLM",
-      "推論",
-      "HuggingFace"
-    ],
-    "id": "20260221_061008_02",
-    "date": "2026-02-21",
-    "source_news": {
-      "title": "GGMLとllama.cppがHFに統合、ローカルAI開発を促進。",
-      "url": "https://huggingface.co/blog/ggml-joins-hf"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
-      "icon": "🦙"
     }
   }
 ]
