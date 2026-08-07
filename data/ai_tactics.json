@@ -1,5 +1,128 @@
 [
   {
+    "title": "OrchardでAIエージェント開発効率化",
+    "news_highlight": "OrchardはAIエージェントの訓練・評価を簡素化し、小規模モデルで高性能を実現するオープンソースフレームワーク",
+    "problem_context": "AIエージェント開発・評価の複雑性、リソース制約",
+    "recommended_ai": {
+      "model": "Orchard",
+      "reason": "AIエージェント開発を効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントのプロトタイプを迅速に作成したい時",
+      "既存のAIエージェントの性能を異なるタスクで評価したい時",
+      "限られた計算リソースで高性能なAIエージェントを開発したい時"
+    ],
+    "steps": [
+      "1. OrchardのGitHubリポジトリをクローンする",
+      "2. ドキュメントに従い開発環境をセットアップする",
+      "3. サンプルエージェントを参考に独自のタスクを定義する",
+      "4. 定義したタスクでエージェントを訓練・評価する"
+    ],
+    "prompt": "Orchardフレームワークで、特定のタスク向けAIエージェントの設計方針と評価指標を提案してください。",
+    "tags": [
+      "AIエージェント",
+      "オープンソース",
+      "機械学習",
+      "フレームワーク"
+    ],
+    "id": "20260808_061732_01",
+    "date": "2026-08-08",
+    "source_news": {
+      "title": "Orchard: スケーラブルなAIエージェント向けオープンソースフレームワーク",
+      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "AWS AgentCore gatewayでAIトラフィックを制御",
+    "news_highlight": "Amazon Bedrock AgentCore gatewayでリクエスト/トークン/接続のレート制限をJWT/IAM IDで設定可能に",
+    "problem_context": "AIサービスの過剰利用によるコスト増大やシステム負荷を抑制したい",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore gateway",
+      "reason": "AIトラフィックの細粒度な制御が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAI機能を本番リリースする前の負荷テスト計画時",
+      "AIサービスの利用コストが予算を超過しそうな時",
+      "特定のユーザーグループやアプリケーションからのAI利用を制限したい時",
+      "不正なAPI呼び出しやDoS攻撃からAIサービスを保護したい時"
+    ],
+    "steps": [
+      "AWSマネジメントコンソールでAgentCore gatewayの設定画面を開く",
+      "レート制限を適用したいAgentまたはAliasを選択する",
+      "「Rate limiting」セクションで「Create rate limit rule」を選択する",
+      "制限タイプ（リクエスト、トークン、接続）とスコープ（JWTクレーム、IAM ID）を設定し、具体的な制限値（例: 100リクエスト/分）を入力する",
+      "設定を保存し、テスト環境で動作を確認する"
+    ],
+    "prompt": "AWS CloudFormationテンプレートでAmazon Bedrock AgentCore gatewayのレート制限設定を記述してください。JWTクレームに基づき、1分あたり100リクエストに制限する設定を含めてください。",
+    "tags": [
+      "AWS",
+      "AgentCore",
+      "Bedrock",
+      "レート制限",
+      "コスト最適化",
+      "セキュリティ",
+      "IaC"
+    ],
+    "id": "20260808_061801_02",
+    "date": "2026-08-08",
+    "source_news": {
+      "title": "AWS AgentCore gatewayでAIトラフィックのレート制限設定が可能に",
+      "url": "https://aws.amazon.com/blogs/machine-learning/configure-rate-limits-for-ai-traffic-on-agentcore-gateway/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "AWS AgentCoreでAIエージェントの時系列ポリシー設計",
+    "news_highlight": "AWS AgentCoreが時系列ポリシーでAIエージェントのセッション履歴に基づく認証を強化、ワークフローシーケンス制御を実現",
+    "problem_context": "AIエージェントの不正な操作や情報漏洩を防止したい",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "時系列ポリシーでセキュリティ強化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "機密データを取り扱うAIエージェントの設計時",
+      "複数のステップを持つAIエージェントのワークフロー定義時",
+      "AIエージェントのセキュリティ監査準備時"
+    ],
+    "steps": [
+      "1. AgentCoreで対象エージェントのポリシー設定画面を開く",
+      "2. 時系列ポリシーのルール定義セクションに移動する",
+      "3. セッション履歴に基づく条件（例: 「直前のステップが承認でなければデータ送信を禁止」）を記述する",
+      "4. データアクセス制限（例: 「特定のステップ後には機密データへのアクセスを禁止」）を追加する",
+      "5. ポリシーを適用し、エージェントの動作をテストする"
+    ],
+    "prompt": "Amazon Bedrock AgentCoreで、AIエージェントが顧客データを外部APIに送信する前に、必ず内部承認ステップを完了していることを確認する時系列ポリシーのJSON定義を生成してください。",
+    "tags": [
+      "セキュリティ",
+      "AIエージェント",
+      "Bedrock",
+      "ポリシー管理"
+    ],
+    "id": "20260808_061828_03",
+    "date": "2026-08-08",
+    "source_news": {
+      "title": "AWS AgentCoreで時系列ポリシーによるAIエージェントのセキュリティ強化",
+      "url": "https://aws.amazon.com/blogs/machine-learning/securing-ai-agents-with-temporal-policies-in-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GPT-5.6 Solで複雑なバグ原因を特定",
     "news_highlight": "GPT-5.6 Solが精度と一貫性を向上、Lunaは無料開放で無制限チャット可能",
     "problem_context": "複雑なバグの特定と修正に時間がかかる",
@@ -19353,125 +19476,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "GPT-4oで合成ペルソナ生成しデータ拡張",
-    "news_highlight": "合成ペルソナで日本のAI開発のデータ不足を解消、プライバシー保護し多様なデータセットを確保。",
-    "problem_context": "日本のAI開発におけるデータ不足とプライバシー課題",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "多様なペルソナを生成可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいAIモデルの学習データが不足している時",
-      "既存モデルのバイアスを軽減したい時",
-      "プライバシーに配慮したデータセットを作成したい時"
-    ],
-    "steps": [
-      "1. 開発中のAIモデルが扱うユーザー属性を特定する",
-      "2. 特定した属性に基づき、合成ペルソナの要件（年齢、性別、興味など）を定義する",
-      "3. AIに定義した要件と生成したいペルソナ数を渡し、合成ペルソナデータを生成させる",
-      "4. 生成されたペルソナデータをAIモデルの学習データとして組み込み、モデルを再学習・評価する"
-    ],
-    "prompt": "日本の20代女性、都内在住、IT企業勤務、趣味は旅行とカフェ巡り、という設定で、50人分の合成ペルソナデータをJSON形式で生成してください。各ペルソナには、氏名、年齢、職業、趣味、購買傾向を含めてください。",
-    "tags": [
-      "データ拡張",
-      "プライバシー保護",
-      "AI学習",
-      "データ生成"
-    ],
-    "id": "20260223_061052_03",
-    "date": "2026-02-23",
-    "source_news": {
-      "title": "合成ペルソナで日本のAI開発のデータ不足を解消。",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata-ja"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "GPT-4oでGradioアプリのUIを高速生成",
-    "news_highlight": "Gradioのgr.HTMLで生のHTMLを直接表示可能、カスタムUI統合で開発効率向上",
-    "problem_context": "Gradio標準UIの限界、外部コンポーネント統合の困難さ",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "Gradioコード生成とUI設計支援に最適",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "Gradioアプリに特定のCSSスタイルやJavaScriptコンポーネントを組み込みたい時",
-      "既存のHTMLテンプレートや外部ウィジェットをGradioアプリ内で表示したい時",
-      "AIモデルの出力結果をよりリッチな形式（グラフ、表など）で表示したい時"
-    ],
-    "steps": [
-      "GradioアプリのUIをカスタマイズしたい箇所を特定する。",
-      "GPT-4oにgr.HTMLを使ったカスタムHTMLコードの生成を依頼する。",
-      "生成されたHTMLコードをGradioアプリのgr.HTMLコンポーネントに組み込む。",
-      "アプリを実行し、期待通りにカスタムUIが表示されるか確認する。"
-    ],
-    "prompt": "Gradioアプリでgr.HTMLを使い、青い背景色と中央に\"Hello, Gradio!\"と表示されるdiv要素を含むカスタムHTMLコードを生成してください。",
-    "tags": [
-      "Gradio",
-      "Web開発",
-      "UI/UX",
-      "コード生成",
-      "Python"
-    ],
-    "id": "20260222_060913_01",
-    "date": "2026-02-22",
-    "source_news": {
-      "title": "Gradioのgr.HTMLでWebアプリを効率的に開発",
-      "url": "https://huggingface.co/blog/gradio-html-one-shot-apps"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Flyte SDKでEKS上のMLワークフロー構築",
-    "news_highlight": "Union.ai 2.0がFlyte Python SDKによるEKS上でのAI/MLワークフローのオーケストレーションとスケーリングを可能に。",
-    "problem_context": "EKS上でのMLワークフロー構築の複雑性",
-    "recommended_ai": {
-      "model": "Flyte SDK",
-      "reason": "EKS上のMLワークフローを効率化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規MLパイプラインをEKSにデプロイする時",
-      "既存のMLワークフローのスケーラビリティを改善したい時",
-      "MLパイプラインの実行状況を監視・管理したい時"
-    ],
-    "steps": [
-      "Flyte Python SDKをインストールする",
-      "Flyteプロジェクトのディレクトリを作成し、ワークフローコードを記述する",
-      "`flytectl register`コマンドでワークフローをUnion.ai 2.0に登録する",
-      "`flytectl launch`コマンドでEKS上でワークフローを実行する"
-    ],
-    "prompt": "Flyte Python SDKを使って、EKS上で動くシンプルな画像分類MLワークフローを構築するPythonコードを生成してください。データ前処理、モデル学習、推論のステップを含めてください。",
-    "tags": [
-      "MLパイプライン",
-      "EKS",
-      "Flyte",
-      "Python",
-      "ワークフローオーケストレーション"
-    ],
-    "id": "20260222_060937_02",
-    "date": "2026-02-22",
-    "source_news": {
-      "title": "Flyte SDKでEKS上のAI/MLワークフローを構築",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-ai-workflows-on-amazon-eks-with-union-ai-and-flyte/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
