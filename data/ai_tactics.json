@@ -1,5 +1,106 @@
 [
   {
+    "title": "GPT-5.6 Solでコード品質を向上",
+    "news_highlight": "GPT-5.6 Solは精度と一貫性が向上、GPT-5.6 Lunaは無料ユーザーに無制限チャットを提供",
+    "problem_context": "コード品質の維持と開発効率の向上",
+    "recommended_ai": {
+      "model": "GPT-5.6 Sol",
+      "reason": "精度向上と一貫性",
+      "badge_color": "orange"
+    },
+    "id": "20260810_061224_01",
+    "date": "2026-08-10",
+    "source_news": {
+      "title": "ChatGPTがGPT-5.6 Solを改善し、Lunaを無料提供。",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "OrchardでAIエージェントのプロトタイプ開発",
+    "news_highlight": "OrchardはAIエージェントの訓練・評価用オープンソースF/W。複雑性を軽減し、小型モデルで高性能を支援。",
+    "problem_context": "AIエージェント開発の複雑性と評価の困難さ",
+    "recommended_ai": {
+      "model": "Orchard",
+      "reason": "AIエージェント開発を効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIエージェントの動作設計を検討する時",
+      "既存AIエージェントの性能改善策を評価する時",
+      "複数のAIモデルでエージェントのプロトタイプを比較する時"
+    ],
+    "steps": [
+      "1. Orchardをローカル環境にセットアップする。",
+      "2. 開発したいAIエージェントのタスクと目標を定義する。",
+      "3. OrchardのAPIを使ってエージェントの行動ロジックを実装する。",
+      "4. 定義したタスクでエージェントを訓練し、性能を評価する。"
+    ],
+    "prompt": "Orchardフレームワークで、ユーザーの質問に答えるAIエージェントの行動ロジックをPythonで記述してください。質問解析、情報検索、回答生成のステップを含めてください。",
+    "tags": [
+      "AIエージェント",
+      "フレームワーク",
+      "オープンソース",
+      "開発",
+      "評価",
+      "プロトタイプ"
+    ],
+    "id": "20260810_061249_02",
+    "date": "2026-08-10",
+    "source_news": {
+      "title": "MicrosoftがAIエージェント用オープンソースF/W「Orchard」を発表。",
+      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "LFM2.5-2.6Bでローカルコードレビュー",
+    "news_highlight": "LFM2.5-2.6Bモデルがローカルデプロイ可能になり、プライベートなAIエージェントとして利用可能",
+    "problem_context": "機密性の高いコードを外部AIに送らずレビューしたい",
+    "recommended_ai": {
+      "model": "LFM2.5-2.6B",
+      "reason": "ローカル環境で動作し機密性を確保",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードをレビューしたい時",
+      "オフライン環境でコードの改善案を得たい時",
+      "機密性の高い社内コードのセキュリティレビューを行いたい時"
+    ],
+    "steps": [
+      "1. LFM2.5-2.6Bモデルをローカル環境にデプロイする",
+      "2. レビューしたいコードファイルを開く",
+      "3. コード全体または特定関数をコピーする",
+      "4. ローカルAIエージェントに貼り付け、改善点を依頼する",
+      "5. 提案された修正案を適用し、テストする"
+    ],
+    "prompt": "以下のTypeScriptコードをレビューし、セキュリティ、パフォーマンス、可読性の観点から改善点を提案してください。",
+    "tags": [
+      "コードレビュー",
+      "ローカルAI",
+      "セキュリティ"
+    ],
+    "id": "20260810_061313_03",
+    "date": "2026-08-10",
+    "source_news": {
+      "title": "LFM2.5-2.6BモデルでローカルAIエージェントをデプロイ可能に。",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "OrchardでAIエージェントを効率開発",
     "news_highlight": "オープンソースF/W Orchardは、AIエージェントの訓練・評価の複雑さを軽減し、小型モデルで高性能を実現。",
     "problem_context": "AIエージェント開発の複雑性、性能評価の困難さ",
@@ -19336,123 +19437,6 @@
     "source_news": {
       "title": "IBMらがIT-Benchで企業Agent失敗原因を診断",
       "url": "https://huggingface.co/blog/ibm-research/itbenchandmast"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "OpenAIの指摘でAI生成コードのデバッグ精度向上",
-    "news_highlight": "OpenAIはSWE-bench Verifiedの評価中止、Pro推奨でAIコード生成の信頼性向上",
-    "problem_context": "AI生成コードの品質がベンチマークと乖離",
-    "recommended_ai": {
-      "model": "OpenAI",
-      "reason": "信頼性の高い評価基準を提示",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "AIが生成した複雑なロジックのコードをデバッグする時",
-      "AIが提案したリファクタリングコードをレビューする時",
-      "新しいAIモデルを導入する前に、そのコード生成能力を評価する時"
-    ],
-    "steps": [
-      "AIモデルに特定の機能のコード生成を依頼する。",
-      "生成されたコードをローカル環境で実行し、エラーや予期せぬ動作がないか確認する。",
-      "エラーが発生した場合、AIモデルにエラーメッセージとコードを渡し、修正を依頼する。",
-      "修正されたコードを再度テストし、SWE-bench Proの評価基準を参考に、より厳密なテストケースで検証する。"
-    ],
-    "prompt": "このPythonコードのバグを修正してください。SWE-bench Proの評価基準を意識し、堅牢性と効率性を高める修正案を提案してください。",
-    "tags": [
-      "コードデバッグ",
-      "AI評価",
-      "品質保証",
-      "プロンプトエンジニアリング"
-    ],
-    "id": "20260225_061655_03",
-    "date": "2026-02-25",
-    "source_news": {
-      "title": "OpenAI、SWE-bench Verifiedの評価中止とProを推奨",
-      "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "GeminiでゲームBGMプロトタイプ生成",
-    "news_highlight": "GeminiがLyria 3技術で音楽生成に対応、多様なジャンルとムードのBGMを生成可能。",
-    "problem_context": "ゲーム開発におけるBGM制作の時間とコスト削減。",
-    "recommended_ai": {
-      "model": "Gemini",
-      "reason": "音楽生成機能が利用可能。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ゲームの新しいステージやイベントのBGMを検討する時",
-      "ゲームのプロトタイプに仮のBGMを組み込みたい時",
-      "ゲームデザイナーにBGMの方向性を提案する時"
-    ],
-    "steps": [
-      "1. Geminiの音楽生成機能にアクセスする。",
-      "2. 生成したいBGMのジャンル、ムード、長さ、楽器構成などの要件を具体的に記述する。",
-      "3. 生成された複数のBGM候補を試聴し、最適なものを選ぶ。",
-      "4. 選んだBGMをゲームのプロトタイプに組み込み、動作を確認する。"
-    ],
-    "prompt": "「ファンタジーRPGの戦闘シーンに合う、オーケストラ調で壮大なBGMを30秒間生成してください。テンポは速めで、緊張感のある雰囲気を希望します。」",
-    "tags": [
-      "ゲーム開発",
-      "BGM生成",
-      "プロトタイピング",
-      "オーディオ"
-    ],
-    "id": "20260224_062159_01",
-    "date": "2026-02-24",
-    "source_news": {
-      "title": "Geminiが音楽生成に対応、表現の幅を拡大。",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
-    }
-  },
-  {
-    "title": "GPT-4oで合成メディア検出ロジック設計",
-    "news_highlight": "合成メディアの真偽検証が喫緊の課題。AIは検出精度85%だが、新たな生成手法で常に更新が必要。",
-    "problem_context": "合成メディアの真偽検証システムの開発",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "多モーダルデータ解析と高度な推論が可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しい合成メディア検出アルゴリズムを検討する時",
-      "既存のコンテンツ認証APIに真偽検証機能を追加する時",
-      "生成AIが作成したコンテンツの信頼性を評価する時"
-    ],
-    "steps": [
-      "1. 検証したいメディアの種類（画像、動画、音声）を特定",
-      "2. 既存の真偽検証技術（例: メタデータ分析、デジタルウォーターマーク）の限界を整理",
-      "3. AIに、特定メディアの合成検出ロジックの設計方針を依頼",
-      "4. 提案されたロジックを基にPoCコードを作成し、検出精度を評価"
-    ],
-    "prompt": "画像、動画、音声の合成メディア検出ロジックを設計してください。既存技術の限界を考慮し、AIを活用した検出手法の具体的な実装方針と、その評価指標を提案してください。",
-    "tags": [
-      "合成メディア",
-      "真偽検証",
-      "AIセキュリティ",
-      "コンテンツ認証"
-    ],
-    "id": "20260224_062227_02",
-    "date": "2026-02-24",
-    "source_news": {
-      "title": "合成メディアの真偽検証技術を解説、課題と方向性。",
-      "url": "https://www.microsoft.com/en-us/research/blog/media-authenticity-methods-in-practice-capabilities-limitations-and-directions/"
     },
     "article": null,
     "visual_theme": {
