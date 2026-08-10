@@ -1,5 +1,125 @@
 [
   {
+    "title": "Muse GlimmerでUI画像からReactコンポーネント生成",
+    "news_highlight": "MetaがAgenticなマルチモーダルAI「Muse Glimmer」をオープンソースで発表",
+    "problem_context": "UIデザインからフロントエンドコード生成を高速化",
+    "recommended_ai": {
+      "model": "Muse Glimmer",
+      "reason": "AgenticなマルチモーダルAI",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "手書きのワイヤーフレームからUIコンポーネントのコードを生成したい時",
+      "既存のWebサイトやアプリのスクリーンショットから改善案やコードを得たい時",
+      "UIデザインのプロトタイプを素早くコードで検証したい時"
+    ],
+    "steps": [
+      "UIのイメージ（手書き、画像、URLなど）を準備する",
+      "Muse Glimmerにそのイメージと生成したいコードの種類（例: Reactコンポーネント）を指示する",
+      "生成されたコードを確認し、必要に応じて修正・調整する",
+      "生成されたコードをプロジェクトに統合し、動作を確認する"
+    ],
+    "prompt": "以下のUI画像から、ReactのTypeScriptコンポーネントを生成してください。CSSはTailwind CSSを使用し、アクセシビリティに配慮してください。",
+    "tags": [
+      "フロントエンド",
+      "UI/UX",
+      "コード生成",
+      "マルチモーダル",
+      "Agentic AI"
+    ],
+    "id": "20260811_061909_01",
+    "date": "2026-08-11",
+    "source_news": {
+      "title": "MetaがAgenticなマルチモーダルAI「Muse Glimmer」をオープンソースで発表。",
+      "url": "https://huggingface.co/blog/muse-glimmer"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
+      "icon": "🎨"
+    }
+  },
+  {
+    "title": "AWS Bedrock AgentCoreでFinOpsエージェント開発",
+    "news_highlight": "AWS Bedrock AgentCoreでFinOpsエージェント開発が75%高速化、本番稼働期間を10-12ヶ月から短縮。",
+    "problem_context": "AIエージェント開発の複雑性と長期化を解消したい",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "エージェント開発を大幅に効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "クラウドコスト最適化エージェントを迅速に構築したい時",
+      "既存のLangChain/LangGraphベースのエージェントを効率化したい時",
+      "複雑なビジネスロジックを持つAIエージェントを設計・実装する時"
+    ],
+    "steps": [
+      "1. BedrockコンソールでAgentCoreの新規エージェントを作成する。",
+      "2. エージェントの目的と実行可能なアクション（APIスキーマなど）を定義する。",
+      "3. Bedrock AgentCoreに指示するプロンプトを記述し、エージェントの振る舞いを調整する。",
+      "4. エージェントをテストし、必要に応じてプロンプトやアクション定義を反復改善する。"
+    ],
+    "prompt": "FinOpsのベストプラクティスに基づき、AWSクラウドコストを最適化するAIエージェントを設計してください。EC2インスタンスの利用率分析と推奨アクションを生成するツールを組み込んでください。",
+    "tags": [
+      "FinOps",
+      "AIエージェント",
+      "AWS",
+      "開発効率化",
+      "コスト最適化"
+    ],
+    "id": "20260811_062316_02",
+    "date": "2026-08-11",
+    "source_news": {
+      "title": "AWS Bedrock AgentCoreでFinOpsエージェント開発が75%高速化。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "NVIDIA Magpie TTSで多言語音声エージェント設計",
+    "news_highlight": "NVIDIA Magpie TTSは低遅延で多言語対応の音声エージェント構築を可能に",
+    "problem_context": "リアルタイム多言語音声対話システムの開発遅延",
+    "recommended_ai": {
+      "model": "NVIDIA Magpie TTS",
+      "reason": "低遅延多言語音声生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "グローバル向け音声アシスタントのプロトタイプ開発時",
+      "多言語コールセンターの自動応答システム設計時",
+      "リアルタイム翻訳機能を持つアプリの音声UI検討時"
+    ],
+    "steps": [
+      "1. Magpie TTSのAPIドキュメントを確認する。",
+      "2. ターゲット言語と音声応答のシナリオを定義する。",
+      "3. 定義したシナリオに基づき、Magpie TTSのAPI呼び出しコードを記述する。",
+      "4. 生成された多言語音声をテストし、遅延と自然さを評価する。"
+    ],
+    "prompt": "NVIDIA Magpie TTSを活用したリアルタイム多言語音声エージェントのアーキテクチャ設計案を提示してください。主要コンポーネントとデータフローを含めてください。",
+    "tags": [
+      "TTS",
+      "多言語",
+      "リアルタイム",
+      "音声エージェント",
+      "設計"
+    ],
+    "id": "20260811_062341_03",
+    "date": "2026-08-11",
+    "source_news": {
+      "title": "NVIDIA Magpie TTSで低遅延多言語音声エージェントを構築可能に。",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GPT-5.6 Solでコード品質を向上",
     "news_highlight": "GPT-5.6 Solは精度と一貫性が向上、GPT-5.6 Lunaは無料ユーザーに無制限チャットを提供",
     "problem_context": "コード品質の維持と開発効率の向上",
@@ -19325,123 +19445,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "vLLMでLoRAモデル推論を最適化",
-    "news_highlight": "vLLMがMoEモデル向けmulti-LoRA推論を実装、カーネル最適化で推論効率を大幅向上。",
-    "problem_context": "複数のLoRAモデル推論の性能低下とメモリ消費",
-    "recommended_ai": {
-      "model": "vLLM",
-      "reason": "LoRA推論を最適化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "複数のLoRAモデルを同時に運用し、推論速度が低下している時",
-      "新しいLoRAモデルを開発し、既存のLLMサービスに効率的に組み込みたい時",
-      "MoEモデルの推論コストを削減し、スループットを向上させたい時"
-    ],
-    "steps": [
-      "1. 既存のLLM推論環境でvLLMがサポートするモデルか確認する。",
-      "2. vLLMをインストールし、既存のLoRAモデルをvLLMの形式に変換する。",
-      "3. vLLMのmulti-LoRA機能を有効にして推論サーバーを起動する。",
-      "4. 既存のアプリケーションからvLLMのエンドポイントを呼び出し、性能を評価する。"
-    ],
-    "prompt": "vLLMでLlama-3-8BベースのLoRAモデルを複数同時にロードし、推論サーバーを起動するPythonコードを生成してください。各LoRAモデルのパスを指定できるようにしてください。",
-    "tags": [
-      "LLM",
-      "推論最適化",
-      "LoRA",
-      "vLLM"
-    ],
-    "id": "20260226_061712_03",
-    "date": "2026-02-26",
-    "source_news": {
-      "title": "vLLMでファインチューンモデルを効率提供、推論を最適化。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/efficiently-serve-dozens-of-fine-tuned-models-with-vllm-on-amazon-sagemaker-ai-and-amazon-bedrock/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "OpenAI Agentで企業向けエージェント設計",
-    "news_highlight": "OpenAIが企業向けAgentのパイロットから本番移行をセキュア・スケーラブルに支援するパートナー発表。",
-    "problem_context": "企業向けAIエージェントの設計・実装が複雑",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "複雑なエージェント設計を支援",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規AIエージェントのアーキテクチャ設計時",
-      "既存システムと連携するエージェントのAPI設計時",
-      "エージェントのタスクフローを定義する時"
-    ],
-    "steps": [
-      "1. 開発するエージェントの目的と主要タスクを定義する",
-      "2. 既存システムとの連携要件やデータフローを整理する",
-      "3. 定義した情報をプロンプトに含め、AIに設計案を依頼する",
-      "4. 提案された設計案をレビューし、必要に応じて修正・詳細化する"
-    ],
-    "prompt": "企業向けカスタマーサポートAIエージェントのアーキテクチャを設計してください。既存CRMシステムと連携し、ユーザーの問い合わせ履歴を参照、FAQ応答、チケット発行機能を持ちます。",
-    "tags": [
-      "AIエージェント",
-      "システム設計",
-      "GPT-4o",
-      "エンタープライズAI"
-    ],
-    "id": "20260225_061559_01",
-    "date": "2026-02-25",
-    "source_news": {
-      "title": "OpenAI、企業向けAgentデプロイ支援パートナーを発表",
-      "url": "https://openai.com/index/frontier-alliance-partners"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "GPT-4oで企業Agentの失敗原因を診断",
-    "news_highlight": "IT-Benchで企業Agentの失敗原因を特定、実運用課題を浮き彫りに",
-    "problem_context": "企業Agentの運用失敗原因を特定し改善",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "複雑な問題分析に強み",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "開発中のAIエージェントが期待通りに動作しない時",
-      "既存のAIエージェントのパフォーマンスが低下した時",
-      "AIエージェントの設計段階で潜在的なリスクを評価したい時"
-    ],
-    "steps": [
-      "失敗したAIエージェントのログやエラーメッセージを収集する",
-      "エージェントの設計ドキュメントや関連コードを用意する",
-      "AIにログ、エラー、設計、コードを提示し、失敗原因の分析を依頼する",
-      "AIの提案に基づき、設計やコードを修正し、再テストする"
-    ],
-    "prompt": "以下の企業Agentのログ、設計、コードを分析し、失敗原因と具体的な改善策を提案してください。ログ: [ログ内容] 設計: [設計概要] コード: [関連コード]",
-    "tags": [
-      "AIエージェント",
-      "デバッグ",
-      "運用改善",
-      "設計レビュー"
-    ],
-    "id": "20260225_061625_02",
-    "date": "2026-02-25",
-    "source_news": {
-      "title": "IBMらがIT-Benchで企業Agent失敗原因を診断",
-      "url": "https://huggingface.co/blog/ibm-research/itbenchandmast"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
     }
   }
 ]
