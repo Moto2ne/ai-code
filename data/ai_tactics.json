@@ -1,5 +1,123 @@
 [
   {
+    "title": "MetaのローカルマルチモーダルAIでオフライン画像解析",
+    "news_highlight": "Meta、ネットワーク不要で画像・テキスト処理可能なマルチモーダルAIをOSS公開。",
+    "problem_context": "オフライン環境でのAI活用や機密データ処理",
+    "recommended_ai": {
+      "model": "MetaのローカルマルチモーダルAI",
+      "reason": "オフラインで機密データ処理が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ネットワークが不安定な現場での画像解析",
+      "企業内秘匿情報を含むドキュメントの要約・分析",
+      "組み込みシステムやエッジデバイスでのAI機能実装"
+    ],
+    "steps": [
+      "MetaのGitHubリポジトリからモデルと関連ツールをダウンロード",
+      "ローカル環境にモデルをセットアップし、必要な依存関係をインストール",
+      "解析したい画像ファイルと関連テキストデータを準備",
+      "モデルを起動し、画像とテキストを入力して解析結果を取得"
+    ],
+    "prompt": "添付の設計図画像と仕様書テキストを分析し、潜在的な不整合箇所を指摘してください。指摘箇所と理由を詳細に記述してください。",
+    "tags": [
+      "ローカルAI",
+      "マルチモーダル",
+      "OSS",
+      "エッジAI",
+      "プライバシー"
+    ],
+    "id": "20260812_062002_01",
+    "date": "2026-08-12",
+    "source_news": {
+      "title": "Meta、ローカル実行可能なマルチモーダルAIをOSS公開。",
+      "url": "https://huggingface.co/blog/muse-glimmer"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
+      "icon": "🦙"
+    }
+  },
+  {
+    "title": "GPT-4で特化AI開発を加速",
+    "news_highlight": "大規模AIの知識蒸留コストを大幅削減し、小規模特化モデル開発を加速",
+    "problem_context": "カスタムAIモデル開発の高コストと複雑性",
+    "recommended_ai": {
+      "model": "GPT-4",
+      "reason": "高性能な教師モデルとして活用可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "特定の業務に特化したAIアシスタントを開発したい時",
+      "エッジデバイス向けに軽量なAIモデルを実装したい時",
+      "既存の大規模AIのAPIコストを削減しつつ性能を維持したい時"
+    ],
+    "steps": [
+      "ターゲット業務のデータセットを準備する",
+      "GPT-4などの大規模AIで教師モデルを構築・微調整する",
+      "発表された新技術を活用し、小規模モデルへ知識蒸留を行う",
+      "蒸留された小規模モデルを評価し、実運用に導入する"
+    ],
+    "prompt": "特定の業務向けに、GPT-4を教師モデルとした知識蒸留計画を立案してください。必要なデータセット、モデルアーキテクチャ、評価指標を含めてください。",
+    "tags": [
+      "AIモデル開発",
+      "コスト最適化",
+      "知識蒸留",
+      "軽量モデル"
+    ],
+    "id": "20260812_062029_02",
+    "date": "2026-08-12",
+    "source_news": {
+      "title": "大規模AIの知識蒸留を低コスト化する技術を発表。",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "NVIDIA音声AIでリアルタイム翻訳",
+    "news_highlight": "NVIDIAが低遅延・多言語対応の音声AIモデルをオープンウェイトで提供開始。",
+    "problem_context": "リアルタイム音声翻訳や多言語音声アシスタント開発の遅延と複雑性。",
+    "recommended_ai": {
+      "model": "NVIDIAの低遅延多言語音声AI",
+      "reason": "低遅延・多言語対応",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "多言語会議のリアルタイム翻訳システム構築",
+      "グローバル顧客向け音声アシスタントの多言語化",
+      "アクセシビリティ向上のためのリアルタイム字幕・音声合成"
+    ],
+    "steps": [
+      "1. NVIDIAのオープンウェイトリポジトリから音声AIモデルのSDK/ライブラリをダウンロードする。",
+      "2. 開発環境にモデルをセットアップし、必要な依存関係をインストールする。",
+      "3. モデルのAPIまたはSDKを利用し、リアルタイム音声入力処理コードを記述する。",
+      "4. 多言語対応の音声認識・翻訳・合成機能をアプリケーションに組み込み、性能をテストする。"
+    ],
+    "prompt": "NVIDIAの低遅延多言語音声AIモデルを使い、英語の音声をリアルタイムで日本語に翻訳し、合成音声で出力するPythonコードを生成してください。",
+    "tags": [
+      "音声AI",
+      "多言語",
+      "リアルタイム",
+      "NVIDIA"
+    ],
+    "id": "20260812_062102_03",
+    "date": "2026-08-12",
+    "source_news": {
+      "title": "NVIDIA、低遅延多言語音声AIをオープンウェイトで提供。",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Muse GlimmerでUI画像からReactコンポーネント生成",
     "news_highlight": "MetaがAgenticなマルチモーダルAI「Muse Glimmer」をオープンソースで発表",
     "problem_context": "UIデザインからフロントエンドコード生成を高速化",
@@ -19325,126 +19443,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "vLLMでMoEモデルの効率的推論",
-    "news_highlight": "vLLMがMoEモデルのmulti-LoRA推論をカーネル最適化で効率化、デプロイコスト削減",
-    "problem_context": "MoEモデル推論コスト高と複数LoRA管理の複雑さ",
-    "recommended_ai": {
-      "model": "vLLM",
-      "reason": "MoEモデル推論を効率化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "MoEモデルを本番環境へデプロイする際",
-      "複数LoRAを持つMoEモデルの性能評価時",
-      "MoEモデルの推論APIを開発する際"
-    ],
-    "steps": [
-      "1. vLLMをインストールする",
-      "2. MoEモデルと複数のLoRAアダプターを準備する",
-      "3. vLLMでモデルとLoRAをロードし推論を実行する",
-      "4. 推論スループットやレイテンシを測定し評価する"
-    ],
-    "prompt": "vLLMでMixtral 8x7B MoEモデルと複数のLoRAアダプターを効率的にロードし、推論を実行するPythonコード例を生成してください。",
-    "tags": [
-      "vLLM",
-      "MoE",
-      "LoRA",
-      "推論最適化",
-      "デプロイ"
-    ],
-    "id": "20260227_061733_03",
-    "date": "2026-02-27",
-    "source_news": {
-      "title": "vLLMでMoEモデルを効率的に提供する技術と最適化を解説。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/efficiently-serve-dozens-of-fine-tuned-models-with-vllm-on-amazon-sagemaker-ai-and-amazon-bedrock/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "GGML/llama.cppでローカルLLM推論",
-    "news_highlight": "Hugging FaceにGGML/llama.cpp統合、CPUでLLM高速実行、メモリ効率化",
-    "problem_context": "GPUなしでLLMをローカル実行したい",
-    "recommended_ai": {
-      "model": "GGML/llama.cpp",
-      "reason": "ローカル環境での効率的なLLM実行",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "開発PCで手軽にLLMを試したい時",
-      "オフライン環境でLLMを使いたい時",
-      "機密データをクラウドに送らずにLLM処理したい時"
-    ],
-    "steps": [
-      "Hugging Face Transformersをインストール",
-      "GGML対応モデルをHugging Face Hubから選択",
-      "ローカル環境でモデルをロードし推論を実行",
-      "パフォーマンスを評価し量子化設定を調整"
-    ],
-    "prompt": "PythonでREST APIのエンドポイントを設計してください。ユーザー認証とデータ取得機能を含めてください。",
-    "tags": [
-      "ローカルAI",
-      "LLM",
-      "推論",
-      "効率化",
-      "CPU"
-    ],
-    "id": "20260226_061618_01",
-    "date": "2026-02-26",
-    "source_news": {
-      "title": "GGMLとllama.cppがHFに統合、ローカルAI効率化を推進。",
-      "url": "https://huggingface.co/blog/ggml-joins-hf"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
-      "icon": "🦙"
-    }
-  },
-  {
-    "title": "オープンソースVLMでJetsonデプロイ最適化",
-    "news_highlight": "JetsonでオープンソースVLMのデプロイを加速、エッジAI推論性能を向上。",
-    "problem_context": "JetsonでのVLMデプロイの複雑さ、推論遅延",
-    "recommended_ai": {
-      "model": "オープンソースVLM",
-      "reason": "Jetsonでの高性能推論、柔軟なカスタマイズ性",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "Jetson向けVLMアプリケーションのプロトタイプ開発時",
-      "既存VLMモデルをJetson向けに最適化してデプロイする時",
-      "エッジデバイスでリアルタイム画像解析とテキスト生成を組み合わせる時"
-    ],
-    "steps": [
-      "JetsonデバイスにVLM実行環境をセットアップする",
-      "オープンソースVLMモデルを選択し、Jetson向けに量子化/最適化する",
-      "最適化されたモデルをJetsonにデプロイし、推論コードを実装する",
-      "デプロイしたVLMの性能をベンチマークし、ボトルネックを特定する"
-    ],
-    "prompt": "Jetson Nano上で動作するVision-Language Model (VLM) のデプロイ手順と、画像入力からテキスト出力を得るPythonコード例を生成してください。モデルの量子化と最適化についても触れてください。",
-    "tags": [
-      "Edge AI",
-      "VLM",
-      "Jetson",
-      "デプロイ",
-      "最適化"
-    ],
-    "id": "20260226_061645_02",
-    "date": "2026-02-26",
-    "source_news": {
-      "title": "オープンソースVLMをJetsonにデプロイ、Edge AIを加速。",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-on-jetson"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
