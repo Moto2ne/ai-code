@@ -1,5 +1,107 @@
 [
   {
+    "title": "AI戦術",
+    "problem_context": "AI技術の活用",
+    "recommended_ai": {
+      "model": "Gemini",
+      "reason": "高性能",
+      "badge_color": "orange"
+    },
+    "prompt": "最新のAI技術を活用して効率化を図ってください。",
+    "tags": [
+      "AI",
+      "自動生成"
+    ],
+    "id": "20260813_061908_01",
+    "date": "2026-08-13",
+    "source_news": {
+      "title": "OpenAIのサイバー防御AI「Daybreak」がAWS Bedrockで利用可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-cyber-defense-with-openai-and-aws-daybreak-red-daybreak-blue-now-available-to-eligible-customers-on-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Llama 4/Llama Guard 4で安全なRAG設計",
+    "news_highlight": "Llama 4 MaverickとLlama Guard 4をAWS SageMakerにセルフホストし、pgvectorでRAGを構築",
+    "problem_context": "データ主権要件のあるAIアプリケーション開発",
+    "recommended_ai": {
+      "model": "Llama 4 Maverick, Llama Guard 4, Amazon SageMaker AI, pgvector",
+      "reason": "データ主権と安全性、RAG構築のため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "機密データを扱うRAGアプリケーションの設計時",
+      "生成AIの出力が不適切でないか検証したい時",
+      "特定のリージョンにAIモデルをデプロイする計画時"
+    ],
+    "steps": [
+      "Llama 4 MaverickをSageMakerでデプロイする環境を準備する。",
+      "pgvectorを有効にしたPostgreSQLインスタンスをセットアップし、ドキュメントをベクトル化して格納する。",
+      "Llama Guard 4をSageMakerでデプロイし、Llama 4の出力フィルタリングを設定する。",
+      "RAGパイプラインを構築し、Llama 4とLlama Guard 4を連携させてテストする。"
+    ],
+    "prompt": "Llama 4 MaverickとLlama Guard 4をAWS SageMaker上でセルフホストし、pgvectorを活用したRAGパイプラインの設計図と主要なコードスニペットを生成してください。データ主権を考慮した構成を含めてください。",
+    "tags": [
+      "RAG",
+      "データ主権",
+      "AWS SageMaker",
+      "セキュリティ"
+    ],
+    "id": "20260813_061938_02",
+    "date": "2026-08-13",
+    "source_news": {
+      "title": "Llama 4とLlama Guard 4をUK主権AWSにデプロイした事例。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-oneadvanced-deployed-over-50-ai-agents-on-uk-sovereign-aws/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
+      "icon": "🦙"
+    }
+  },
+  {
+    "title": "GPT-5.6 Solで金融データモデル設計",
+    "news_highlight": "GPT-5.6 Solは金融業務向けに編集・追跡可能なExcelワークブックでデータモデルを生成。",
+    "problem_context": "複雑な金融データモデルの設計と定義に時間がかかる",
+    "recommended_ai": {
+      "model": "GPT-5.6 Sol",
+      "reason": "金融特化モデルで正確なデータ構造定義",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規金融システム開発時のデータモデル設計",
+      "既存システムのデータ移行計画策定時",
+      "データウェアハウスのスキーマ設計"
+    ],
+    "steps": [
+      "1. 設計したい金融業務要件を具体的に記述する。",
+      "2. GPT-5.6 SolにExcel形式でのデータモデル定義を依頼する。",
+      "3. 生成されたExcelワークブックをレビューし、整合性を確認する。",
+      "4. 定義を基にデータベーススキーマやAPI仕様を設計する。"
+    ],
+    "prompt": "銀行の顧客管理システムにおける顧客、口座、取引の主要エンティティとその属性、データ型、制約、リレーションシップを定義したExcelワークブックを生成してください。",
+    "tags": [
+      "データモデル",
+      "設計",
+      "Excel"
+    ],
+    "id": "20260813_062008_03",
+    "date": "2026-08-13",
+    "source_news": {
+      "title": "OpenAIが金融業務向け新モデルGPT-5.6 Solを発表。",
+      "url": "https://openai.com/index/model-ml"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "MetaのローカルマルチモーダルAIでオフライン画像解析",
     "news_highlight": "Meta、ネットワーク不要で画像・テキスト処理可能なマルチモーダルAIをOSS公開。",
     "problem_context": "オフライン環境でのAI活用や機密データ処理",
@@ -19326,123 +19428,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
       "icon": "🎨"
-    }
-  },
-  {
-    "title": "vLLMでMoEモデルの高速推論を実装",
-    "news_highlight": "vLLMがMoEモデル向けmulti-LoRA推論をカーネル最適化で高速化、リソース効率向上。",
-    "problem_context": "複数LoRAモデルの推論遅延とGPUコスト増大",
-    "recommended_ai": {
-      "model": "vLLM",
-      "reason": "MoEモデルの高速推論と効率化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "複数の専門モデルを単一エンドポイントで提供したい時",
-      "GPUリソースを最大限活用し、推論コストを削減したい時",
-      "リアルタイム応答が求められるAIアプリケーションを開発する時"
-    ],
-    "steps": [
-      "既存のLoRAファインチューンモデル群を準備する。",
-      "vLLMをセットアップし、MoEモデルとLoRAアダプターをロードする。",
-      "vLLMのmulti-LoRA推論機能を活用してリクエストを送信する。",
-      "推論速度とGPU使用率をモニタリングし、パフォーマンスを評価する。"
-    ],
-    "prompt": "vLLMでMixture of Expertsモデルと複数のLoRAアダプターを効率的にデプロイするためのPythonスクリプトと設定例を生成してください。",
-    "tags": [
-      "LLM推論",
-      "GPU最適化",
-      "MoEモデル",
-      "ファインチューニング"
-    ],
-    "id": "20260228_061254_03",
-    "date": "2026-02-28",
-    "source_news": {
-      "title": "AWS、vLLMで多数のファインチューンモデルを高速提供",
-      "url": "https://aws.amazon.com/blogs/machine-learning/efficiently-serve-dozens-of-fine-tuned-models-with-vllm-on-amazon-sagemaker-ai-and-amazon-bedrock/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "GPT-4oでセキュリティ脆弱性を検出",
-    "news_highlight": "OpenAIが最新レポートで悪意あるAI利用の検出・防御策を報告。GPT-4oは256Kコンテキストでセキュリティ分析を強化。",
-    "problem_context": "AI悪用によるシステム脆弱性を見落とす",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "広範なコンテキストで詳細分析",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プルリクエストを出す前にコードのセキュリティレビューをしたい時",
-      "外部ライブラリ導入前に潜在的な脆弱性を確認したい時",
-      "既存システムのセキュリティ監査で疑わしいパターンを検出したい時"
-    ],
-    "steps": [
-      "レビューしたいコードスニペットまたは設定ファイルをコピーする",
-      "GPT-4oに貼り付け、『このコードに潜在的なセキュリティ脆弱性がないか、悪意あるAI利用の観点から分析してください。特にプロンプトインジェクション、データ漏洩、不正アクセスにつながる可能性のある箇所を指摘し、具体的な修正案を提示してください。』と指示する",
-      "GPT-4oの提案を基にコードを修正する",
-      "修正後、再度テストを行い、意図しない副作用がないか確認する"
-    ],
-    "prompt": "以下のコードに潜在的なセキュリティ脆弱性がないか、悪意あるAI利用の観点から分析してください。プロンプトインジェクション、データ漏洩、不正アクセスにつながる可能性を指摘し、具体的な修正案を提示してください：[ここにコードを貼り付け]",
-    "tags": [
-      "セキュリティ",
-      "コードレビュー",
-      "脆弱性検出",
-      "GPT-4o"
-    ],
-    "id": "20260227_061640_01",
-    "date": "2026-02-27",
-    "source_news": {
-      "title": "悪意あるAI利用の現状と検出・防御策をOpenAIが報告。",
-      "url": "https://openai.com/index/disrupting-malicious-ai-uses"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "OpenAIの知見でコード品質を評価",
-    "news_highlight": "SWE-benchは信頼性低下、OpenAIは新ベンチマークSWE-bench Proを推奨",
-    "problem_context": "既存ベンチマークの信頼性低下による誤評価",
-    "recommended_ai": {
-      "model": "SWE-bench Pro",
-      "reason": "より正確なコード品質評価",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "AI生成コードの品質を客観的に評価したい時",
-      "新しいAIモデル導入前の性能比較をしたい時",
-      "既存コードベースの技術的負債を特定したい時"
-    ],
-    "steps": [
-      "評価したいコードリポジトリを準備する",
-      "SWE-bench Proの環境をセットアップする",
-      "評価対象のコードをSWE-bench Proに投入し実行する",
-      "出力された詳細なレポートを基にコードを改善する"
-    ],
-    "prompt": "このPythonコードを、一般的なベンチマークでは見落とされがちなエッジケースや潜在的な脆弱性の観点からレビューし、改善案を提示してください。",
-    "tags": [
-      "コードレビュー",
-      "品質保証",
-      "AI活用",
-      "ベンチマーク"
-    ],
-    "id": "20260227_061707_02",
-    "date": "2026-02-27",
-    "source_news": {
-      "title": "OpenAIがSWE-benchの信頼性低下を指摘、新ベンチマークを推奨。",
-      "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
     }
   }
 ]
