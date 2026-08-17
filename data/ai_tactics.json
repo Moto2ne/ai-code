@@ -1,5 +1,123 @@
 [
   {
+    "title": "GPT-5.6 Solで高速コード生成",
+    "news_highlight": "GPT-5.6 Solが最大14倍高速化、Ultrafastモードで最大750トークン/秒の出力",
+    "problem_context": "AI応答待ちによる開発停滞を解消",
+    "recommended_ai": {
+      "model": "GPT-5.6 Sol (Ultrafast)",
+      "reason": "高速なコード生成とレビュー",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模なコードリファクタリングの提案を求める時",
+      "CI/CDパイプラインでの自動コードレビュー",
+      "リアルタイムでのコードスニペット生成"
+    ],
+    "steps": [
+      "現在のプロジェクトのコードベースから、特定の機能に関連するファイルを複数選択する。",
+      "選択したコードをAIに渡し、『この機能のパフォーマンスを最大化するためのリファクタリング案を提示してください。』と指示する。",
+      "AIが生成した複数のリファクタリング案を比較検討し、最も適切なものを選択する。",
+      "選択したコードをテスト環境で実行し、パフォーマンス改善を確認する。"
+    ],
+    "prompt": "以下のTypeScriptコードをレビューし、パフォーマンス最適化と保守性向上のための具体的なリファクタリング案を複数提示してください。特に非同期処理とデータ構造に注目してください。",
+    "tags": [
+      "コード生成",
+      "リファクタリング",
+      "パフォーマンス最適化",
+      "API"
+    ],
+    "id": "20260818_060929_01",
+    "date": "2026-08-18",
+    "source_news": {
+      "title": "GPT-5.6 Solが最大14倍高速化、Ultrafastモード発表",
+      "url": "https://openai.com/index/previewing-ultrafast"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Nemotron 3.5 Lightningでエージェント設計",
+    "news_highlight": "Nemotron 3.5 Lightning 30B MoEがSageMaker JumpStartで利用可能、高負荷エージェントワークロード向け。",
+    "problem_context": "複雑なエージェントのタスクフロー設計が困難。",
+    "recommended_ai": {
+      "model": "NVIDIA Nemotron 3.5 Lightning",
+      "reason": "エージェント特化で高負荷対応",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客対応チャットボットのエージェントロジックを設計する時",
+      "複数のAPIを連携させる自動化エージェントのタスクフローを考案する時",
+      "既存エージェントの機能拡張や改善案を検討する時"
+    ],
+    "steps": [
+      "SageMaker JumpStartでNemotron 3.5 Lightningをデプロイする。",
+      "解決したいエージェントタスクの概要と利用可能なツールを定義する。",
+      "定義した内容をプロンプトとしてNemotron 3.5 Lightningに送信する。",
+      "提案されたエージェントのタスクフローやツール利用ロジックを実装・テストする。"
+    ],
+    "prompt": "あなたはAIエージェント設計の専門家です。以下の要件を満たすエージェントのタスクフローと、利用すべきツール（関数名と引数）を提案してください。要件: ユーザーからの問い合わせに対し、商品在庫を確認し、発送状況を追跡する。",
+    "tags": [
+      "エージェントAI",
+      "SageMaker",
+      "設計",
+      "コード生成",
+      "LLM"
+    ],
+    "id": "20260818_060955_02",
+    "date": "2026-08-18",
+    "source_news": {
+      "title": "Agent向けNVIDIA Nemotron 3.5 LightningがSageMakerで利用可能",
+      "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "AMIEのリアルタイム相談能力で設計レビュー",
+    "news_highlight": "AMIEがリアルタイム臨床相談能力を実証し、複雑な医療情報を即座に分析・応答。",
+    "problem_context": "複雑なシステム設計の潜在リスクを早期発見",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "複雑な設計を多角的に分析し、改善案を提案",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のシステム設計レビュー時",
+      "既存システムのアーキテクチャ改善検討時",
+      "技術選定のメリット・デメリット比較時"
+    ],
+    "steps": [
+      "1. 設計ドキュメント（UML図、シーケンス図、データモデルなど）を準備",
+      "2. 設計の目的、制約、主要なコンポーネントをAIに説明",
+      "3. AIに潜在的な問題点、改善案、代替案を質問",
+      "4. AIのフィードバックを基に設計を修正・議論"
+    ],
+    "prompt": "以下のシステム設計について、潜在的な問題点、パフォーマンスボトルネック、セキュリティリスク、スケーラビリティの観点からレビューし、改善案を具体的に提案してください。",
+    "tags": [
+      "設計レビュー",
+      "アーキテクチャ",
+      "リスク分析",
+      "AI活用"
+    ],
+    "id": "20260818_061022_03",
+    "date": "2026-08-18",
+    "source_news": {
+      "title": "医療AIシステムAMIEがリアルタイム臨床相談能力を実証",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-5.6 Solで大規模コード生成",
     "news_highlight": "GPT-5.6 Sol APIが14倍高速化、最大750トークン/秒で大量出力が可能に。",
     "problem_context": "大規模なコード生成やレビューの待ち時間短縮",
@@ -19291,125 +19409,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "Phi-4でUIスクリーンショットからコード生成",
-    "news_highlight": "Phi-4は15Bパラメータのオープンなマルチモーダル推論モデルで、画像理解に基づくコード生成が可能。",
-    "problem_context": "UI設計から実装への変換を迅速化したい。",
-    "recommended_ai": {
-      "model": "Phi-4-reasoning-vision-15B",
-      "reason": "マルチモーダルで画像からの推論に強み。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "デザイナーからのUIモックアップをコード化する時",
-      "既存のWebサイトやアプリのUIを再実装する時",
-      "アイデア段階のUIスケッチからプロトタイプを素早く作成する時"
-    ],
-    "steps": [
-      "UIのスクリーンショットまたはモックアップ画像を準備する。",
-      "Phi-4が利用可能な環境（HuggingFaceなど）に画像をアップロードする。",
-      "生成したいコードの種類（React, Vue, HTML/CSSなど）と要件をプロンプトで指示する。",
-      "Phi-4が生成したコードを確認し、必要に応じて修正・調整する。"
-    ],
-    "prompt": "このUIスクリーンショットを元に、ReactとTailwind CSSでコンポーネントコードを生成してください。ボタンはクリック可能に、入力フィールドは編集可能にしてください。",
-    "tags": [
-      "コード生成",
-      "UI/UX",
-      "フロントエンド",
-      "マルチモーダル"
-    ],
-    "id": "20260305_061458_03",
-    "date": "2026-03-05",
-    "source_news": {
-      "title": "Microsoftが15BのオープンなマルチモーダルモデルPhi-4を発表。",
-      "url": "https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "CORPGENでプロジェクトドキュメントを自動生成",
-    "news_highlight": "Microsoftが実務向けAIエージェント「CORPGEN」を発表。複数の相互依存タスクを横断処理し、知識労働者の生産性を向上。",
-    "problem_context": "複数の関連タスクの連携とドキュメント作成の効率化",
-    "recommended_ai": {
-      "model": "CORPGEN",
-      "reason": "実務タスク連携に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規機能開発時の設計書とテスト計画書を同時に作成する時",
-      "既存システムの改修に伴う影響範囲分析と関連ドキュメント更新を行う時",
-      "週次進捗報告書と関連するタスクリスト、課題リストを自動生成する時"
-    ],
-    "steps": [
-      "1. プロジェクトの概要と目的をCORPGENに入力する。",
-      "2. 必要なドキュメント（設計書、テスト計画書、進捗報告書など）の種類を指定する。",
-      "3. 既存のコードベースや関連資料（あれば）をCORPGENに参照させる。",
-      "4. 生成されたドキュメントを確認し、必要に応じて修正指示を出す。"
-    ],
-    "prompt": "新規機能「ユーザー認証モジュール」の開発について、以下の情報を元に、設計書、テスト計画書、および週次進捗報告書のドラフトを生成してください。既存の認証API仕様書も参照してください。",
-    "tags": [
-      "ドキュメント生成",
-      "タスク連携",
-      "プロジェクト管理",
-      "AIエージェント"
-    ],
-    "id": "20260304_061520_01",
-    "date": "2026-03-04",
-    "source_news": {
-      "title": "Microsoftが実務向けAIエージェント「CORPGEN」を発表。",
-      "url": "https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "ClaudeとLangGraphで会話AIエージェントを設計",
-    "news_highlight": "AWS BedrockのClaudeとLangGraphをSageMaker AIで統合し、会話AIエージェントの設計・管理を効率化",
-    "problem_context": "複雑な会話AIエージェントの設計と運用",
-    "recommended_ai": {
-      "model": "Claude (via Amazon Bedrock)",
-      "reason": "高度な対話エージェント構築に適している",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "複雑な多段階対話フローを持つチャットボットのプロトタイプ開発",
-      "既存のLLMアプリケーションにツール利用（Function Calling）を追加する際",
-      "会話AIエージェントの対話履歴と状態管理ロジックを設計する時"
-    ],
-    "steps": [
-      "1. LangGraphの基本的なグラフ構造（ノード、エッジ）を定義する。",
-      "2. 各ノードでBedrockのClaudeを呼び出すロジックを実装する。",
-      "3. SageMaker AIのMLflowでエージェントの実行履歴と評価指標を追跡する設定を行う。",
-      "4. 定義したLangGraphエージェントをテストし、対話フローを検証する。"
-    ],
-    "prompt": "LangGraphを使って、ユーザーの質問に応じて外部APIを呼び出すClaudeベースの会話AIエージェントのPythonコードを生成してください。天気予報APIをツールとして組み込んでください。",
-    "tags": [
-      "LangGraph",
-      "Claude",
-      "Bedrock",
-      "SageMaker",
-      "会話AI",
-      "エージェント"
-    ],
-    "id": "20260304_061547_02",
-    "date": "2026-03-04",
-    "source_news": {
-      "title": "AWSがLangGraphとSageMakerでClaude会話AIエージェント構築法を解説。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-serverless-conversational-ai-agent-using-claude-with-langgraph-and-managed-mlflow-on-amazon-sagemaker-ai/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
-      "icon": "🧠"
     }
   }
 ]
