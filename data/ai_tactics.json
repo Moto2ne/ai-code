@@ -1,5 +1,123 @@
 [
   {
+    "title": "Code LlamaでGPU利用率を最適化",
+    "news_highlight": "GPUクラスタ利用率を33%向上させる効率化手法が発表され、リソースコストを削減。",
+    "problem_context": "GPUリソースの無駄をなくし、コストを削減したい。",
+    "recommended_ai": {
+      "model": "Code Llama",
+      "reason": "コード最適化と生成に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "GPUジョブのスケジューリングスクリプトを改善したい時",
+      "DockerコンテナのGPU設定を最適化したい時",
+      "GPU利用状況を監視するスクリプトを作成したい時"
+    ],
+    "steps": [
+      "1. 現在のGPU利用状況とジョブキューのデータを収集する。",
+      "2. 収集したデータと既存のスケジューリングコードをAIに提示する。",
+      "3. AIが提案する最適化されたスケジューリングコードを実装する。",
+      "4. 最適化後のGPU利用率を監視し、効果を検証する。"
+    ],
+    "prompt": "PythonでGPUジョブスケジューリングスクリプトを最適化してください。現在のジョブキューとGPUリソースの割り当て状況を考慮し、利用率を最大化するコードを提案してください。",
+    "tags": [
+      "GPU最適化",
+      "MLOps",
+      "リソース管理",
+      "Python"
+    ],
+    "id": "20260819_060834_01",
+    "date": "2026-08-19",
+    "source_news": {
+      "title": "GPUクラスタ利用率を33%向上させる効率化手法",
+      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
+      "icon": "🦙"
+    }
+  },
+  {
+    "title": "GPT-4oでエージェントのメモリ効率化設計",
+    "news_highlight": "AIエージェントの長期記憶管理を効率化し、トークンコストを最大30%削減",
+    "problem_context": "AIエージェントの運用コスト高騰",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "高度な推論と多機能性",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "長期稼働するAIエージェントのコストを削減したい時",
+      "AIエージェントの応答速度を向上させたい時",
+      "複雑なタスクを処理するエージェントの設計を見直す時"
+    ],
+    "steps": [
+      "現在稼働中のAIエージェントのログからメモリ使用状況とトークン消費量を分析する。",
+      "AIにエージェントのタスクフローと現在のメモリ管理戦略（例: RAG、要約、キャッシュ）を説明する。",
+      "AIにメモリ最適化技術（例: 段階的要約、セマンティックキャッシュ、動的コンテキスト管理）の適用案を依頼する。",
+      "提案された設計変更を実装し、A/Bテストで効果を検証する"
+    ],
+    "prompt": "AIエージェントのメモリ最適化専門家として、長期記憶の効率化とトークンコスト削減のための設計改善案を提案してください。現在のエージェントのタスクとメモリ管理の課題を後続で詳しく説明します。",
+    "tags": [
+      "AIエージェント",
+      "メモリ最適化",
+      "コスト削減",
+      "設計",
+      "GPT-4o"
+    ],
+    "id": "20260819_060901_02",
+    "date": "2026-08-19",
+    "source_news": {
+      "title": "AIエージェントのメモリ要件を最適化し効率化する技術",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Codexでレガシーテストシステム刷新",
+    "news_highlight": "AsanaがCodexで5年分の開発を2週間で完了、費用約$12K。",
+    "problem_context": "古いテストシステムの刷新が困難",
+    "recommended_ai": {
+      "model": "OpenAI Codex",
+      "reason": "レガシーコードの理解と生成に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存システムのテストコードを生成する時",
+      "レガシーコードの挙動を理解したい時",
+      "古いシステムの機能拡張を実装する時"
+    ],
+    "steps": [
+      "1. 既存のテスト対象コードをAIに渡す",
+      "2. AIに新しいテストフレームワークに合わせたテストコード生成を依頼",
+      "3. 生成されたテストコードを実行し、既存の挙動と比較",
+      "4. 必要に応じてAIに修正を依頼し、デバッグ・調整"
+    ],
+    "prompt": "既存のPython unittestコードをpytest形式に移行したい。以下のテスト対象コードに対するpytest形式のテストコードを生成してください。`def add(a, b): return a + b`",
+    "tags": [
+      "レガシーコード",
+      "リファクタリング",
+      "テスト自動化",
+      "コード生成"
+    ],
+    "id": "20260819_060926_03",
+    "date": "2026-08-19",
+    "source_news": {
+      "title": "AsanaがCodexで5年分の開発を2週間で完了、効率化を実証",
+      "url": "https://openai.com/index/asana"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
     "title": "GPT-5.6 Solで高速コード生成",
     "news_highlight": "GPT-5.6 Solが最大14倍高速化、Ultrafastモードで最大750トークン/秒の出力",
     "problem_context": "AI応答待ちによる開発停滞を解消",
@@ -19305,105 +19423,6 @@
     "source_news": {
       "title": "推論モデルの思考制御困難がAI安全策に寄与するとOpenAIが発表",
       "url": "https://openai.com/index/reasoning-models-chain-of-thought-controllability"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "GPT-5.4でコードのセキュリティレビュー",
-    "news_highlight": "GPT-5.4システムカード公開、モデルの振る舞いと安全対策を詳細に記述",
-    "problem_context": "生成コードの潜在的なセキュリティ脆弱性",
-    "recommended_ai": {
-      "model": "GPT-5.4",
-      "reason": "詳細な安全性情報活用",
-      "badge_color": "orange"
-    },
-    "id": "20260306_061623_03",
-    "date": "2026-03-06",
-    "source_news": {
-      "title": "GPT-5.4のシステムカード公開、モデル特性と安全性を詳述",
-      "url": "https://openai.com/index/gpt-5-4-thinking-system-card"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Gemini 3.1 Flash-Liteで軽量APIを設計",
-    "news_highlight": "Gemini 3.1 Flash-Liteは低リソース環境向け軽量モデル、高速応答と低コストを実現。",
-    "problem_context": "低リソース環境でのAI機能実装",
-    "recommended_ai": {
-      "model": "Gemini 3.1 Flash-Lite",
-      "reason": "軽量で高速、低コスト",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "エッジデバイス向け推論コードを最適化したい時",
-      "モバイルアプリのバックエンドAPIを設計する時",
-      "低コストでAI機能をプロトタイピングしたい時"
-    ],
-    "steps": [
-      "APIの要件（機能、入出力）を整理する。",
-      "AIにAPIエンドポイントの設計案とコード生成を依頼する。",
-      "生成された設計案とコードをレビューし、必要に応じて修正する。",
-      "軽量モデルの特性を活かした最適化ポイントをAIに質問する。"
-    ],
-    "prompt": "PythonとFastAPIを使って、ユーザー認証とデータ取得を行う軽量なREST APIの設計案とコードを生成してください。低リソース環境での動作を考慮してください。",
-    "tags": [
-      "API設計",
-      "軽量モデル",
-      "FastAPI",
-      "Python"
-    ],
-    "id": "20260305_061407_01",
-    "date": "2026-03-05",
-    "source_news": {
-      "title": "Gemini 3.1 Flash-Lite発表、スケーラブルなAI向け軽量モデル。",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
-    }
-  },
-  {
-    "title": "GPT-4oでTransformer MoE設計を検討",
-    "news_highlight": "MoE技術によりTransformerモデルの推論コストを最大5倍削減、処理速度を2倍向上",
-    "problem_context": "大規模Transformerの推論コストと速度の課題",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "最新のAI技術の設計支援に優れる",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいモデルアーキテクチャを設計する際",
-      "既存モデルの推論効率を改善したい時",
-      "特定のタスクに特化したモデルを構築する際"
-    ],
-    "steps": [
-      "1. 既存のTransformerモデルのボトルネック（例: 推論時間、メモリ使用量）を特定する",
-      "2. GPT-4oにMoE導入による効率化の可能性について相談する",
-      "3. 提案されたMoEアーキテクチャの設計案（ルーター、エキスパート数など）をレビューする",
-      "4. 設計案に基づき、PoC（概念実証）のためのコード実装計画を立てる"
-    ],
-    "prompt": "既存のTransformerモデルの推論効率を改善するため、MoE（Mixture-of-Experts）アーキテクチャ導入の具体的な設計案を提案してください。特に、ルーターの設計とエキスパートの選定基準について詳しく解説してください。",
-    "tags": [
-      "Transformer",
-      "MoE",
-      "モデル最適化",
-      "アーキテクチャ設計"
-    ],
-    "id": "20260305_061433_02",
-    "date": "2026-03-05",
-    "source_news": {
-      "title": "TransformerにおけるMoE技術解説、モデル効率化に貢献。",
-      "url": "https://huggingface.co/blog/moe-transformers"
     },
     "article": null,
     "visual_theme": {
