@@ -1,5 +1,125 @@
 [
   {
+    "title": "OpenAI APIで機密データ処理を安全化",
+    "news_highlight": "OpenAI APIがデータ保持ゼロを再確認、Private Safety Processingで高安全処理とプライバシー両立をプレビュー。",
+    "problem_context": "機密データをAIで安全に処理したい、プライバシー懸念を解消したい。",
+    "recommended_ai": {
+      "model": "OpenAI API",
+      "reason": "データ保持ゼロと安全処理強化のため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客の個人情報を含む問い合わせをAIで処理する時",
+      "医療記録をAIで分析するアプリケーションを開発する時",
+      "社内機密文書の自動分類システムを構築する時"
+    ],
+    "steps": [
+      "1. OpenAI APIの利用規約とデータポリシーを確認する。",
+      "2. APIリクエストに`x-openai-data-retention: off`ヘッダーを追加する。",
+      "3. Private Safety Processingの利用可否を確認し適用する。",
+      "4. ダミーデータでAPIの安全性と挙動を検証する。"
+    ],
+    "prompt": "以下の機密性の高い医療記録から、患者のプライバシーを保護しつつ、主要な症状と診断結果を抽出してください。個人情報は匿名化してください。",
+    "tags": [
+      "セキュリティ",
+      "プライバシー",
+      "コンプライアンス",
+      "API連携",
+      "データ処理"
+    ],
+    "id": "20260820_060952_01",
+    "date": "2026-08-20",
+    "source_news": {
+      "title": "OpenAIがAPI向けデータ保持ゼロと安全処理を強化。",
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCoreでAI決済設計",
+    "news_highlight": "Amazon Bedrock AgentCore決済GA、AIエージェント自律取引可能に。支出ガードレール、プロトコル非依存オーケストレーションを内蔵。",
+    "problem_context": "AIエージェントの安全な自律決済処理の実現",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore payments",
+      "reason": "AIエージェントの安全な自律決済",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客からの注文処理で自動決済を行うAIエージェントを開発する時",
+      "サブスクリプションサービスの自動更新・課金ロジックを設計する時",
+      "複数の決済プロバイダーを統合するシステムを構築する時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCore paymentsのドキュメントを確認し、API仕様を理解する。",
+      "2. 決済を伴うAIエージェントのタスクフローを設計する。",
+      "3. AgentCore paymentsのSDK/APIを用いて、決済処理ロジックを実装する。",
+      "4. 支出ガードレール設定やプロトコルオーケストレーション機能を組み込み、テストする。"
+    ],
+    "prompt": "Amazon Bedrock AgentCore paymentsを利用し、ユーザーの注文情報に基づいてStripe経由で決済を行うPythonコードを生成してください。支出ガードレールも考慮してください。",
+    "tags": [
+      "AIエージェント",
+      "決済",
+      "Bedrock",
+      "自律取引",
+      "ガードレール"
+    ],
+    "id": "20260820_061018_02",
+    "date": "2026-08-20",
+    "source_news": {
+      "title": "Bedrock AgentCore決済GA、AIエージェント安全取引可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "ReplitのGPT-5.6 Lunaでコード生成",
+    "news_highlight": "ReplitがGPT-5.6 Luna搭載の無料モードで、トークンコストを気にせず開発可能に。",
+    "problem_context": "新規機能のプロトタイプ開発を高速化したい。",
+    "recommended_ai": {
+      "model": "Replit GPT-5.6 Luna (Free Mode)",
+      "reason": "無料で高性能なAIアシスタント",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいライブラリやフレームワークのコード例を素早く知りたい時",
+      "複雑なアルゴリズムの実装方法が分からない時",
+      "既存コードに新機能を追加する際の初期実装を検討する時"
+    ],
+    "steps": [
+      "1. ReplitのFree Modeで新しいプロジェクトを作成する。",
+      "2. AIチャットウィンドウを開き、実装したい機能の要件を記述する。",
+      "3. 生成されたコードをプロジェクトに貼り付け、動作を確認する。",
+      "4. 必要に応じてAIに修正や改善を依頼する。"
+    ],
+    "prompt": "PythonとFlaskを使って、ユーザー登録とログイン機能を持つシンプルなWeb APIを作成してください。ユーザー情報はメモリ上に保持し、認証にはJWTを使用してください。",
+    "tags": [
+      "コード生成",
+      "プロトタイピング",
+      "Web開発",
+      "Python",
+      "Flask"
+    ],
+    "id": "20260820_061042_03",
+    "date": "2026-08-20",
+    "source_news": {
+      "title": "ReplitがGPT-5.6 Luna搭載の無料モードで開発を拡大。",
+      "url": "https://openai.com/index/replit"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "Code LlamaでGPU利用率を最適化",
     "news_highlight": "GPUクラスタ利用率を33%向上させる効率化手法が発表され、リソースコストを削減。",
     "problem_context": "GPUリソースの無駄をなくし、コストを削減したい。",
@@ -19310,124 +19430,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
       "icon": "🎨"
-    }
-  },
-  {
-    "title": "Codex Securityで脆弱性検出・修正",
-    "news_highlight": "Codex SecurityはAIアプリの脆弱性を高精度で検出し、検証、パッチ適用まで自動化",
-    "problem_context": "複雑なAIアプリの脆弱性を見逃しがち",
-    "recommended_ai": {
-      "model": "Codex Security",
-      "reason": "高精度な脆弱性検出と修正",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プルリクエストを出す前に自分のコードの脆弱性をチェックしたい時",
-      "本番環境デプロイ前にAIアプリ全体のセキュリティ診断をしたい時",
-      "既存のAIアプリケーションに新たな脆弱性がないか定期的に確認したい時"
-    ],
-    "steps": [
-      "1. 診断したいAIアプリケーションのプロジェクトルートを指定する",
-      "2. Codex Securityを実行し、脆弱性スキャンを開始する",
-      "3. 検出された脆弱性の詳細レポートを確認し、修正案をレビューする",
-      "4. 提案されたパッチを適用し、再度スキャンして修正を確認する"
-    ],
-    "prompt": "このAIアプリケーションプロジェクト全体を分析し、潜在的なセキュリティ脆弱性を検出、検証し、修正パッチを提案してください。",
-    "tags": [
-      "セキュリティ",
-      "脆弱性検出",
-      "AIアプリケーション",
-      "コードレビュー",
-      "自動修正"
-    ],
-    "id": "20260307_061322_03",
-    "date": "2026-03-07",
-    "source_news": {
-      "title": "OpenAIがAIアプリの脆弱性検出ツールCodex Security発表",
-      "url": "https://openai.com/index/codex-security-now-in-research-preview"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
-      "icon": "💻"
-    }
-  },
-  {
-    "title": "GPT-5.4で大規模コードベースを理解",
-    "news_highlight": "GPT-5.4は最先端のコーディングと1Mトークン対応でプロの作業を効率化。",
-    "problem_context": "複雑なコードベースの迅速な理解と改修",
-    "recommended_ai": {
-      "model": "GPT-5.4",
-      "reason": "最先端のコーディングと1Mトークン対応",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規プロジェクト参加時にコードベース全体を素早く把握したい時",
-      "複数のファイルにまたがる複雑なバグの原因を特定したい時",
-      "レガシーシステムで特定の機能実装を調査したい時"
-    ],
-    "steps": [
-      "関連する複数のコードファイルをAIに提示する",
-      "「この機能の全体像と主要な処理フローを説明してください。」と依頼する",
-      "AIの回答を元に、不明点や深掘りしたい箇所を質問する",
-      "理解した内容をドキュメントにまとめるか、次の開発タスクに進む"
-    ],
-    "prompt": "以下の複数のファイルから、`UserAuthenticationService`の主要な処理フローと依存関係を詳細に説明してください。",
-    "tags": [
-      "コード分析",
-      "大規模言語モデル",
-      "開発効率化",
-      "コード理解"
-    ],
-    "id": "20260306_061526_01",
-    "date": "2026-03-06",
-    "source_news": {
-      "title": "OpenAIがGPT-5.4を発表、最先端のコーディングと1Mトークン対応",
-      "url": "https://openai.com/index/introducing-gpt-5-4"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "OpenAIモデルで推論過程をデバッグ",
-    "news_highlight": "OpenAIがCoT-Control導入、推論モデルの思考制御困難を発見し監視可能性を強化",
-    "problem_context": "AIの推論過程が不透明でデバッグ困難",
-    "recommended_ai": {
-      "model": "OpenAIモデル (GPT-4oなど)",
-      "reason": "思考過程の可視化に強み",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "AIが意図しないコードを生成した際の原因究明",
-      "AIが生成した設計案の論理的妥当性検証",
-      "AIによるセキュリティ脆弱性分析の信頼性評価"
-    ],
-    "steps": [
-      "1. AIにCoTを明示的に出力させるプロンプトを準備",
-      "2. AIにタスクとCoT出力プロンプトを送信",
-      "3. AIのCoT出力を分析し、誤った推論ステップを特定",
-      "4. 特定した問題点に基づき、プロンプトを修正・再実行"
-    ],
-    "prompt": "以下の要件を満たすPythonコードを生成してください。思考の連鎖（Chain of Thought）を段階的に示し、最終的な結論を出力してください。",
-    "tags": [
-      "AIデバッグ",
-      "プロンプトエンジニアリング",
-      "AI安全性",
-      "CoT"
-    ],
-    "id": "20260306_061551_02",
-    "date": "2026-03-06",
-    "source_news": {
-      "title": "推論モデルの思考制御困難がAI安全策に寄与するとOpenAIが発表",
-      "url": "https://openai.com/index/reasoning-models-chain-of-thought-controllability"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
     }
   }
 ]
