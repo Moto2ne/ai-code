@@ -1,5 +1,121 @@
 [
   {
+    "title": "Replit GPT-5.6 Lunaで高速プロトタイピング",
+    "news_highlight": "ReplitがGPT-5.6 Luna搭載の無料開発モード提供、トークンコスト不要",
+    "problem_context": "AI利用のトークンコストを気にせず開発したい",
+    "recommended_ai": {
+      "model": "GPT-5.6 Luna (Replit)",
+      "reason": "無料でトークン無制限利用可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい技術スタックのプロトタイプを迅速に作成したい時",
+      "複雑なロジックを持つ関数の実装方法が分からない時",
+      "既存コードのエラー原因を特定し、修正案を得たい時"
+    ],
+    "steps": [
+      "1. Replitにアクセスし、新しいプロジェクトを作成する。",
+      "2. 開発したい機能の要件をAIに伝える。",
+      "3. AIが生成したコードをテストし、必要に応じて修正を依頼する。",
+      "4. 完成したコードを自分のプロジェクトに統合する。"
+    ],
+    "prompt": "PythonとFastAPIで、ユーザー認証（登録・ログイン）APIを実装してください。JWTトークンを使用し、データベースはSQLiteでお願いします。",
+    "tags": [
+      "コード生成",
+      "プロトタイピング",
+      "デバッグ",
+      "学習"
+    ],
+    "id": "20260821_061021_01",
+    "date": "2026-08-21",
+    "source_news": {
+      "title": "Replitが新モデルGPT-5.6 Lunaで無料開発モード提供。",
+      "url": "https://openai.com/index/replit"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Skala 1.1で分子設計を最適化",
+    "news_highlight": "Skala 1.1は深層学習で精度向上、計算化学エコシステムでの利用が容易に。",
+    "problem_context": "新規分子の特性予測精度が低い",
+    "recommended_ai": {
+      "model": "Skala 1.1",
+      "reason": "高精度な特性予測が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規材料の安定構造を探索したい時",
+      "触媒反応の活性化エネルギーを評価したい時",
+      "薬物候補分子の結合親和性を予測したい時"
+    ],
+    "steps": [
+      "1. 予測したい分子構造（SMILES形式など）を準備する。",
+      "2. Skala 1.1対応の計算化学ライブラリで特性計算を実行する。",
+      "3. 計算結果（エネルギー、電子状態など）を取得し分析する。",
+      "4. 分析結果に基づき、分子構造の設計を改善する。"
+    ],
+    "prompt": "分子式C6H6の安定構造と電子状態をSkala 1.1で計算し、その結果から最適な材料設計指針を提案してください。",
+    "tags": [
+      "計算化学",
+      "材料設計",
+      "深層学習",
+      "量子化学"
+    ],
+    "id": "20260821_061058_02",
+    "date": "2026-08-21",
+    "source_news": {
+      "title": "Microsoftが新深層学習モデルSkala 1.1をリリース、精度向上。",
+      "url": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "LFM2.5-DSparkでAI推論を高速化",
+    "news_highlight": "LFM2.5-DSparkはAIモデルの推論速度を最大3.2倍高速化",
+    "problem_context": "AIモデルの推論速度が遅く、応答性が低い",
+    "recommended_ai": {
+      "model": "LFM2.5-DSpark",
+      "reason": "推論速度が最大3.2倍高速化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "リアルタイム推薦システムの応答性向上",
+      "画像認識APIのレイテンシ削減",
+      "大規模バッチ推論の処理時間短縮"
+    ],
+    "steps": [
+      "1. 既存のAIモデルと推論コードを特定する。",
+      "2. LFM2.5-DSparkの導入ドキュメントを確認し、環境をセットアップする。",
+      "3. 既存の推論コードをLFM2.5-DSparkのAPIに適合させる。",
+      "4. LFM2.5-DSparkを適用した推論速度をベンチマークで測定する。"
+    ],
+    "prompt": "PythonとPyTorchで実装された画像分類モデルの推論コードを、LFM2.5-DSparkを使って最適化する具体的なコード修正案を提示してください。",
+    "tags": [
+      "推論最適化",
+      "高速化",
+      "MMLOps"
+    ],
+    "id": "20260821_061124_03",
+    "date": "2026-08-21",
+    "source_news": {
+      "title": "LFM2.5-DSparkで推論速度が最大3.2倍高速化。",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "OpenAI APIで機密データ処理を安全化",
     "news_highlight": "OpenAI APIがデータ保持ゼロを再確認、Private Safety Processingで高安全処理とプライバシー両立をプレビュー。",
     "problem_context": "機密データをAIで安全に処理したい、プライバシー懸念を解消したい。",
@@ -19331,105 +19447,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "GPT-5.4で信頼性の高いコードレビュー",
-    "news_highlight": "GPT-5.4のシステムカード公開で、モデルの挙動と安全性の透明性が向上。",
-    "problem_context": "AI生成コードの信頼性と予測可能性の向上",
-    "recommended_ai": {
-      "model": "GPT-5.4",
-      "reason": "モデル挙動の透明性向上",
-      "badge_color": "orange"
-    },
-    "id": "20260308_060913_03",
-    "date": "2026-03-08",
-    "source_news": {
-      "title": "OpenAIが新モデルGPT-5.4のシステムカードを公開。",
-      "url": "https://openai.com/index/gpt-5-4-thinking-system-card"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "GPT-5.4で大規模コードのデバッグ",
-    "news_highlight": "GPT-5.4は最先端のコーディング能力と1Mトークンコンテキストで複雑なバグを解決。",
-    "problem_context": "複数ファイルに跨る複雑なバグ",
-    "recommended_ai": {
-      "model": "GPT-5.4",
-      "reason": "1Mトークンで広範囲を分析",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "本番環境で発生した原因不明のエラーを調査する時",
-      "複数のモジュールが絡み合う複雑なバグを修正する時",
-      "レガシーコードのデバッグで全体像を把握したい時"
-    ],
-    "steps": [
-      "エラーが発生している主要なファイルと関連する依存ファイル群を特定する。",
-      "これらのファイルのコード全体とエラーメッセージ、スタックトレースをコピーする。",
-      "GPT-5.4に貼り付け、「このコードベースで発生しているエラーの原因を特定し、修正案を提示してください。」と依頼する。",
-      "提案された修正案を適用し、テストを実行してバグが解決したか確認する。"
-    ],
-    "prompt": "以下のコードとエラーメッセージから、バグの原因を特定し、修正案を提示してください。関連するファイル群とスタックトレースも提供します。",
-    "tags": [
-      "デバッグ",
-      "エラー解決",
-      "大規模コード",
-      "GPT-5.4"
-    ],
-    "id": "20260307_061234_01",
-    "date": "2026-03-07",
-    "source_news": {
-      "title": "GPT-5.4発表、コード生成・ツール利用・1Mトークン対応",
-      "url": "https://openai.com/index/introducing-gpt-5-4"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Phi-4-reasoning-vision-15BでUIレビュー",
-    "news_highlight": "Phi-4-reasoning-vision-15Bは15Bパラメータのオープンなマルチモーダル推論モデル",
-    "problem_context": "UIの視覚的な問題とコードの乖離を特定したい",
-    "recommended_ai": {
-      "model": "Phi-4-reasoning-vision-15B",
-      "reason": "画像とコードの関連付けに強み",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "開発中のUIスクリーンショットから改善点を洗い出す時",
-      "UIの表示バグ発生時にスクリーンショットと関連コードから原因を特定する時",
-      "既存UIのスクリーンショットから機能仕様書や操作手順書を作成する時"
-    ],
-    "steps": [
-      "レビューしたいUIのスクリーンショットを準備する",
-      "関連するフロントエンドコード（HTML, CSS, JSなど）をコピーする",
-      "AIにスクリーンショットとコードを渡し、改善点やバグの原因を尋ねる",
-      "提案された改善策や修正コードを適用し、テストする"
-    ],
-    "prompt": "このUIスクリーンショットとHTML/CSSコードを見てください。視覚的な問題点や改善点を指摘し、具体的な修正コードを提案してください。",
-    "tags": [
-      "UIレビュー",
-      "マルチモーダル",
-      "コード改善",
-      "デバッグ"
-    ],
-    "id": "20260307_061258_02",
-    "date": "2026-03-07",
-    "source_news": {
-      "title": "MicrosoftがPhi-4-reasoning-vision-15Bを公開",
-      "url": "https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
-      "icon": "🎨"
     }
   }
 ]
