@@ -1,5 +1,123 @@
 [
   {
+    "title": "AWS Bedrock GPT-5.6でグローバルAI推論設計",
+    "news_highlight": "AWS Bedrock GPT-5.6が25+リージョンでクロスリージョン推論に対応",
+    "problem_context": "グローバル展開アプリのAI推論レイテンシ最適化",
+    "recommended_ai": {
+      "model": "OpenAI GPT-5.6 (Sol/Terra/Luna) on AWS Bedrock",
+      "reason": "クロスリージョン推論対応",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "グローバルユーザー向けアプリケーションのAI応答速度を改善したい時",
+      "特定の国のデータレジデンシー要件を満たすAI推論アーキテクチャを検討する時",
+      "複数のAWSリージョンにまたがる高可用性AIサービスを設計する時"
+    ],
+    "steps": [
+      "設計中のアプリケーションのユーザー分布とデータレジデンシー要件を定義する",
+      "AI推論が必要な機能と、そのレイテンシ許容範囲を特定する",
+      "AWS BedrockのGPT-5.6クロスリージョン推論を活用したアーキテクチャ図を作成する",
+      "作成したアーキテクチャ図とリージョン戦略をAIにレビューさせ、改善点を検討する"
+    ],
+    "prompt": "グローバル展開するWebアプリケーションのAI推論アーキテクチャを設計してください。ユーザーは日本とヨーロッパに分布し、データはそれぞれの地域に保持する必要があります。AWS BedrockのGPT-5.6クロスリージョン推論を活用し、レイテンシとデータレジデンシーを最適化する構成案を提示してください。",
+    "tags": [
+      "アーキテクチャ設計",
+      "グローバル展開",
+      "レイテンシ最適化",
+      "データレジデンシー"
+    ],
+    "id": "20260822_060841_01",
+    "date": "2026-08-22",
+    "source_news": {
+      "title": "AWS BedrockでOpenAI GPT-5.6モデルがクロスリージョン推論に対応。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "OpenAI APIで機密コードレビュー",
+    "news_highlight": "OpenAI APIはZDRを再確認し、Private Safety Processingを導入、データプライバシーを強化。",
+    "problem_context": "機密情報を含むコードのAI処理におけるデータプライバシー懸念",
+    "recommended_ai": {
+      "model": "OpenAI API",
+      "reason": "データ保持ゼロで機密情報を安全に処理可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "社内システム開発で機密性の高いコードのレビュー",
+      "顧客データを含む設計文書の要約・分析",
+      "セキュリティ監査前の脆弱性チェックコード生成"
+    ],
+    "steps": [
+      "1. レビューしたい機密コードを準備する",
+      "2. 必要に応じてコード内の具体的な顧客名などを抽象化する",
+      "3. OpenAI APIにコードとレビュー依頼を送信する",
+      "4. AIからのレビュー結果を確認し、修正を検討する"
+    ],
+    "prompt": "以下のPythonコードのセキュリティ脆弱性を特定し、改善案を提示してください。特にSQLインジェクションとXSSに注意してください。",
+    "tags": [
+      "プライバシー",
+      "セキュリティ",
+      "コードレビュー",
+      "API"
+    ],
+    "id": "20260822_060907_02",
+    "date": "2026-08-22",
+    "source_news": {
+      "title": "OpenAIがAPI顧客向けにデータ保持ゼロを再確認、プライバシー強化。",
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "AWS BedrockでRAGコストを最適化",
+    "news_highlight": "AWS BedrockでRAGのInputトークンコストを大幅削減するクエリ認識圧縮パターン",
+    "problem_context": "RAGシステムにおける高額なInputトークンコスト",
+    "recommended_ai": {
+      "model": "AWS Bedrock",
+      "reason": "RAGコスト削減に特化した機能を提供",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "RAGアプリケーションの運用コストを削減したい時",
+      "LLMへの入力トークン数を最適化したい時",
+      "既存RAGシステムのパフォーマンスとコスト効率を改善したい時"
+    ],
+    "steps": [
+      "1. 既存RAGシステムのInputトークンコストを分析する。",
+      "2. AWS Bedrock上でクエリ認識圧縮パターンの設計を検討する。",
+      "3. 関連ドキュメントを参考に、圧縮ロジックを実装する。",
+      "4. 圧縮適用前後のコストと応答品質を比較評価する。"
+    ],
+    "prompt": "与えられたユーザーの質問と検索結果から、質問応答に必要な情報のみを抽出し、簡潔なコンテキストを生成してください。",
+    "tags": [
+      "RAG",
+      "コスト最適化",
+      "AWS Bedrock",
+      "LLM",
+      "コンテキスト圧縮"
+    ],
+    "id": "20260822_060934_03",
+    "date": "2026-08-22",
+    "source_news": {
+      "title": "AWS BedrockでRAGコストを削減するクエリ認識圧縮パターン。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Replit GPT-5.6 Lunaで高速プロトタイピング",
     "news_highlight": "ReplitがGPT-5.6 Luna搭載の無料開発モード提供、トークンコスト不要",
     "problem_context": "AI利用のトークンコストを気にせず開発したい",
@@ -19322,125 +19440,6 @@
     "date": "2026-03-09",
     "source_news": {
       "title": "Hugging FaceがModular Diffusersを発表、拡散モデル開発を効率化",
-      "url": "https://huggingface.co/blog/modular-diffusers"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
-    }
-  },
-  {
-    "title": "GPT-5.4で大規模コードのリファクタリング",
-    "news_highlight": "GPT-5.4は最先端のコーディング性能と1Mトークンコンテキストを提供",
-    "problem_context": "複雑な既存コードの品質向上と保守性改善",
-    "recommended_ai": {
-      "model": "GPT-5.4",
-      "reason": "大規模コード理解と高精度な生成",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "レガシーコードの保守・改善を行う時",
-      "大規模なプルリクエストのレビュー前にコード品質を高めたい時",
-      "複数のファイルにまたがる機能のリファクタリング計画を立てる時"
-    ],
-    "steps": [
-      "1. リファクタリングしたい機能に関連する全ファイルの内容をコピーする",
-      "2. 現在の課題と目標（例: 可読性向上、パフォーマンス改善）を明確にする",
-      "3. AIにコピーしたコードと課題・目標を渡し、改善案とリファクタリング後のコードを依頼する",
-      "4. 提案されたコードと改善点をレビューし、必要に応じてテストを実施する"
-    ],
-    "prompt": "以下のTypeScriptとReactのコードを、可読性と保守性を向上させるようにリファクタリングしてください。コンポーネントの責務分割と命名規則に注意。コード: [ここにコードを貼り付け]",
-    "tags": [
-      "リファクタリング",
-      "コード品質",
-      "大規模コード",
-      "TypeScript",
-      "React"
-    ],
-    "id": "20260309_061018_03",
-    "date": "2026-03-09",
-    "source_news": {
-      "title": "OpenAIがGPT-5.4を発表、コーディング性能とコンテキストが大幅向上",
-      "url": "https://openai.com/index/introducing-gpt-5-4"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Codex Securityで脆弱性を自動修正",
-    "news_highlight": "Codex Securityはプロジェクト文脈分析で複雑な脆弱性を高信頼性・低ノイズで検出・修正",
-    "problem_context": "セキュリティ脆弱性の見落としと修正工数",
-    "recommended_ai": {
-      "model": "Codex Security",
-      "reason": "脆弱性検出・修正に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プルリクエスト前のコードセキュリティレビュー",
-      "既存システムの定期的なセキュリティ診断",
-      "緊急脆弱性報告時の影響特定と修正案生成"
-    ],
-    "steps": [
-      "1. 診断対象のコードリポジトリをCodex Securityに連携",
-      "2. プロジェクト全体の脆弱性分析と修正パッチ生成を依頼",
-      "3. 提案された修正パッチの内容をレビューし、承認",
-      "4. 修正適用後、再スキャンで脆弱性解消を確認"
-    ],
-    "prompt": "このプロジェクトのコードベース全体を分析し、OWASP Top 10に準拠したセキュリティ脆弱性を検出し、修正パッチを生成してください。特に認証・認可周りを重点的に見てください。",
-    "tags": [
-      "セキュリティ",
-      "脆弱性診断",
-      "自動修正",
-      "DevSecOps"
-    ],
-    "id": "20260308_060820_01",
-    "date": "2026-03-08",
-    "source_news": {
-      "title": "OpenAIがAIセキュリティエージェントCodex Securityを発表。",
-      "url": "https://openai.com/index/codex-security-now-in-research-preview"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
-      "icon": "💻"
-    }
-  },
-  {
-    "title": "Modular Diffusersで拡散モデルをカスタマイズ",
-    "news_highlight": "Hugging FaceがModular Diffusersを発表、拡散モデルのコンポーネントを交換可能にし、開発効率を向上。",
-    "problem_context": "拡散モデルのカスタマイズが複雑で時間かかる。",
-    "recommended_ai": {
-      "model": "Hugging Face Diffusers (Modular Diffusers)",
-      "reason": "拡散モデルのモジュール化を直接提供。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "特定の画像生成タスク向けにモデルを微調整したい時",
-      "既存の拡散モデルの特定コンポーネントを交換して実験したい時",
-      "独自のデータセットで拡散モデルの一部を再学習させたい時"
-    ],
-    "steps": [
-      "Hugging FaceのDiffusersライブラリをインストールする。",
-      "Modular Diffusersのドキュメントを参照し、モジュール構成を理解する。",
-      "交換したいコンポーネント（例: U-Net、VAE、Scheduler）を特定する。",
-      "既存のコンポーネントをカスタム実装または別の事前学習済みコンポーネントに置き換える。",
-      "新しい構成でモデルをロードし、画像生成やファインチューニングを実行する。"
-    ],
-    "prompt": "Hugging Face DiffusersのModular Diffusers機能を使って、Stable DiffusionモデルのU-Netコンポーネントをカスタム実装に置き換えるPythonコードを生成してください。",
-    "tags": [
-      "拡散モデル",
-      "モデルカスタマイズ",
-      "Hugging Face",
-      "Python"
-    ],
-    "id": "20260308_060843_02",
-    "date": "2026-03-08",
-    "source_news": {
-      "title": "Hugging FaceがModular Diffusersを発表、拡散モデルをモジュール化。",
       "url": "https://huggingface.co/blog/modular-diffusers"
     },
     "article": null,
