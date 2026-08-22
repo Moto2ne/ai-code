@@ -1,5 +1,122 @@
 [
   {
+    "title": "LFM2.5-DSparkで推論を高速化",
+    "news_highlight": "LFM2.5-DSparkは推論を最大3.2倍高速化し、リアルタイム処理を強化。",
+    "problem_context": "AI推論の応答速度が遅い、処理コストが高い。",
+    "recommended_ai": {
+      "model": "LFM2.5-DSpark",
+      "reason": "推論速度が大幅向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "リアルタイムレコメンデーションの応答速度改善",
+      "大量の画像/テキストデータに対するバッチ処理時間短縮",
+      "CI/CDパイプラインでのモデル評価時間削減"
+    ],
+    "steps": [
+      "既存の推論コードでLFM2.5-DSparkを組み込む準備をする。",
+      "LFM2.5-DSparkのAPIまたはSDKを導入する。",
+      "既存モデルの推論部分をLFM2.5-DSpark経由に書き換える。",
+      "変更前後の推論速度とリソース使用量をベンチマークで比較する。"
+    ],
+    "prompt": "既存のPyTorchモデル`my_model`をLFM2.5-DSparkで推論高速化するためのPythonコードを生成してください。入力データは`torch.randn(1, 3, 224, 224)`とします。",
+    "tags": [
+      "推論高速化",
+      "パフォーマンス最適化",
+      "リアルタイムAI",
+      "MLOps"
+    ],
+    "id": "20260823_060737_01",
+    "date": "2026-08-23",
+    "source_news": {
+      "title": "LFM2.5-DSparkで推論が最大3.2倍高速化",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Sentence Transformersでセマンティック検索実装",
+    "news_highlight": "Sentence Transformersはテキストを多ベクトル埋め込みに変換し、効率的な意味検索や類似度計算を可能にする。",
+    "problem_context": "大量のテキストから関連情報を効率的に検索したい。",
+    "recommended_ai": {
+      "model": "Sentence Transformers",
+      "reason": "テキストの意味的類似度を高速に計算できる。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザーからの問い合わせに最も関連性の高いFAQを自動で提示したい時。",
+      "大規模な技術ドキュメントの中から特定のトピックに関連する文書を素早く見つけたい時。",
+      "新規開発する機能と既存の類似機能を比較し、重複を避けたい時。"
+    ],
+    "steps": [
+      "検索対象となるテキストデータを準備する。",
+      "Sentence Transformersモデルをロードし、各テキストの埋め込みベクトルを生成する。",
+      "ユーザーの検索クエリも同様に埋め込みベクトルに変換する。",
+      "クエリベクトルとテキスト埋め込みベクトルのコサイン類似度を計算し、類似度が高い順に結果を提示する。"
+    ],
+    "prompt": "PythonとSentence Transformersを使って、与えられたテキストリストからクエリに最も類似するテキストを上位3件検索するコードを生成してください。コサイン類似度を使用してください。",
+    "tags": [
+      "NLP",
+      "検索",
+      "Python",
+      "埋め込み"
+    ],
+    "id": "20260823_060804_02",
+    "date": "2026-08-23",
+    "source_news": {
+      "title": "Sentence Transformersで多ベクトル埋め込みモデルを解説",
+      "url": "https://huggingface.co/blog/multi-vector-encoder"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "AIリソース最適化ツールでGPU利用率向上",
+    "news_highlight": "GPUクラスタ利用率が33ポイント向上、AIで効率的なリソース管理を実現",
+    "problem_context": "GPUリソースの確保とコスト最適化が課題",
+    "recommended_ai": {
+      "model": "AIリソース最適化ツール",
+      "reason": "GPUリソースを効率的に配分",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIモデルの学習ジョブを投入する前",
+      "既存のAIモデルの推論バッチ処理を最適化したい時",
+      "GPU利用コストを削減しつつ性能を維持したい時"
+    ],
+    "steps": [
+      "AIモデル学習/推論ジョブの要件（GPU数、メモリ、実行時間）を定義する",
+      "AIリソース最適化ツールにジョブ定義と優先度を登録する",
+      "ツールが提示するGPU割り当て計画とコスト予測を確認する",
+      "計画を承認し、ジョブを実行。リアルタイムで利用状況を監視する"
+    ],
+    "prompt": "GPUクラスタで実行するPyTorchモデル学習ジョブのリソース要求設定をJSON形式で生成してください。必要なGPU数、メモリ、実行時間、優先度を含めてください。",
+    "tags": [
+      "GPU最適化",
+      "MLOps",
+      "コスト削減",
+      "リソース管理"
+    ],
+    "id": "20260823_060831_03",
+    "date": "2026-08-23",
+    "source_news": {
+      "title": "GPUクラスタ利用率が33ポイント向上、効率的な管理法",
+      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "AWS Bedrock GPT-5.6でグローバルAI推論設計",
     "news_highlight": "AWS Bedrock GPT-5.6が25+リージョンでクロスリージョン推論に対応",
     "problem_context": "グローバル展開アプリのAI推論レイテンシ最適化",
@@ -19329,123 +19446,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
       "icon": "🎨"
-    }
-  },
-  {
-    "title": "Hugging Face DiffusersでDiffusionモデルをカスタマイズ",
-    "news_highlight": "Hugging FaceがDiffusionモデルをU-Net, VAEなどモジュール化し、コンポーネントの交換・再利用を容易に",
-    "problem_context": "Diffusionモデルのカスタマイズが複雑で時間がかかる",
-    "recommended_ai": {
-      "model": "Hugging Face Diffusers",
-      "reason": "モジュール化で開発効率向上",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "既存のDiffusionモデルの特定コンポーネントを改善したい時",
-      "異なるDiffusionモデルのコンポーネントを組み合わせて新しいモデルを試したい時",
-      "特定用途に特化したDiffusionモデルを効率的に構築したい時"
-    ],
-    "steps": [
-      "1. Diffusersライブラリの最新版をインストールする。",
-      "2. 既存のDiffusionモデルをロードし、U-NetやVAEなどのコンポーネントを抽出する。",
-      "3. 別のモデルや自作のコンポーネントと交換し、新しいパイプラインを構築する。",
-      "4. 構築したパイプラインで画像を生成し、性能を評価する。"
-    ],
-    "prompt": "Hugging Face Diffusersを使って、Stable Diffusion v1.5のU-NetをLoRAでファインチューニングしたU-Netに置き換え、新しいテキストto画像生成パイプラインを構築するPythonコードを生成してください。",
-    "tags": [
-      "Diffusionモデル",
-      "画像生成",
-      "Hugging Face",
-      "MLOps"
-    ],
-    "id": "20260310_061451_03",
-    "date": "2026-03-10",
-    "source_news": {
-      "title": "Hugging FaceがDiffusionモデルのモジュール化ツールを発表。",
-      "url": "https://huggingface.co/blog/modular-diffusers"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "Phi-4-reasoning-visionでUIバグ解析",
-    "news_highlight": "Phi-4-reasoning-vision-15B公開、150億パラメータのオープンウェイトマルチモーダル推論モデル",
-    "problem_context": "画像とテキスト情報からデバッグや改善",
-    "recommended_ai": {
-      "model": "Phi-4-reasoning-vision-15B",
-      "reason": "マルチモーダル推論に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "UIのスクリーンショットからバグの原因を特定したい時",
-      "既存のUIデザインから改善点を提案してほしい時",
-      "画像とテキスト情報からコードの仕様を明確にしたい時"
-    ],
-    "steps": [
-      "1. 問題のUIスクリーンショットと関連するエラーメッセージを準備",
-      "2. Hugging FaceのPhi-4-reasoning-vision-15BモデルのAPIを呼び出す",
-      "3. スクリーンショットとエラーメッセージをプロンプトと共にモデルに送信",
-      "4. モデルの推論結果（原因分析、修正コード）を確認し、適用"
-    ],
-    "prompt": "このUIのスクリーンショットと以下のエラーメッセージを考慮し、バグの原因と修正コードを提案してください。エラーメッセージ: [ここにエラーメッセージを貼り付け]",
-    "tags": [
-      "マルチモーダル",
-      "デバッグ",
-      "UI/UX",
-      "コード生成"
-    ],
-    "id": "20260309_060927_01",
-    "date": "2026-03-09",
-    "source_news": {
-      "title": "Phi-4-reasoning-vision公開、Hugging Faceで利用可能なオープンウェイトマルチモーダルモデル",
-      "url": "https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
-      "icon": "🎨"
-    }
-  },
-  {
-    "title": "Modular Diffusersで拡散モデルを効率開発",
-    "news_highlight": "Hugging Face Modular Diffusersが拡散モデルのモジュール化を推進、開発効率を大幅向上",
-    "problem_context": "拡散モデルの複雑な開発・実験を簡素化したい",
-    "recommended_ai": {
-      "model": "Modular Diffusers (Hugging Face)",
-      "reason": "拡散モデル開発をモジュール化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しい拡散モデルのアーキテクチャを試したい時",
-      "既存の拡散モデルにカスタムレイヤーを追加したい時",
-      "拡散モデルのトレーニングパイプラインを迅速に構築したい時"
-    ],
-    "steps": [
-      "1. Modular Diffusersのドキュメントで利用可能なモジュールを確認する。",
-      "2. 目的の拡散モデル構成に必要なモジュール（例: UNet, Scheduler, VAE）を選択する。",
-      "3. 選択したモジュールを組み合わせてモデルのコードを生成する。",
-      "4. 生成されたモデルコードをテストし、必要に応じてカスタマイズする。"
-    ],
-    "prompt": "Modular DiffusersでUNetとDDPMスケジューラを組み合わせた拡散モデルの基本構造をPythonで記述してください。VAEはデフォルトを使用。",
-    "tags": [
-      "拡散モデル",
-      "Hugging Face",
-      "AI開発",
-      "モジュール化"
-    ],
-    "id": "20260309_060952_02",
-    "date": "2026-03-09",
-    "source_news": {
-      "title": "Hugging FaceがModular Diffusersを発表、拡散モデル開発を効率化",
-      "url": "https://huggingface.co/blog/modular-diffusers"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
