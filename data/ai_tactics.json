@@ -1,5 +1,121 @@
 [
   {
+    "title": "GPT-4oでAgentのメモリ効率設計",
+    "news_highlight": "Agentのメモリ使用量を最大30%削減、コスト最適化と応答速度向上を実現する設計指針を提示。",
+    "problem_context": "Agentの長期記憶によるメモリ肥大化とコスト増",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "複雑なAgent設計と最適化に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "長期実行型Agentの設計時にメモリ戦略を検討する時",
+      "既存Agentのメモリ使用量が高く、コスト削減を検討する時",
+      "Agentの応答速度が遅く、パフォーマンス改善が必要な時"
+    ],
+    "steps": [
+      "1. 開発中のAgentの現在のメモリ使用状況とタスクフローを整理する。",
+      "2. 整理した情報を元に、AIに効率的なメモリ設計指針を依頼する。",
+      "3. AIが提案した指針（例: 記憶の要約、外部DB連携、キャッシュ戦略）を検討する。",
+      "4. 提案された設計を実装し、メモリ使用量とパフォーマンスを評価する。"
+    ],
+    "prompt": "あなたはAgent設計の専門家です。長期実行型Agentのメモリ使用量を削減し、パフォーマンスを向上させるための効率的な設計指針を提示してください。特に、コンテキスト管理、長期記憶戦略、外部ツール連携について具体的に提案してください。",
+    "tags": [
+      "Agent開発",
+      "メモリ最適化",
+      "設計",
+      "パフォーマンス"
+    ],
+    "id": "20260825_061055_01",
+    "date": "2026-08-25",
+    "source_news": {
+      "title": "Agentのメモリ要件を分析し、効率的な設計指針を提示。",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "AWS Agent RegistryでAIスキル設計",
+    "news_highlight": "AWS Agent RegistryがARD標準対応でエージェント/ツール/スキルを一元管理し、クロス環境での発見・利用を促進。",
+    "problem_context": "組織内のAIエージェント/ツールが散在。",
+    "recommended_ai": {
+      "model": "AWS Agent Registry",
+      "reason": "エージェントリソースの一元管理",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規AIエージェントの機能設計時",
+      "既存エージェントへの新スキル追加時",
+      "チーム内のAIツール利用状況確認時"
+    ],
+    "steps": [
+      "AWS Agent Registryで「顧客情報取得」スキルを検索する",
+      "検索結果から最適なスキル定義とAPI仕様を確認する",
+      "そのスキル定義を基に、新しいエージェントの設計書を作成する",
+      "作成した設計書をチームでレビューする"
+    ],
+    "prompt": "AWS Agent Registryで発見した顧客情報取得スキルのAPI仕様（JSON形式）を基に、このスキルを組み込む新しいAIエージェントの設計概要を記述してください。入力、出力、エラーハンドリングを含めてください。",
+    "tags": [
+      "エージェント開発",
+      "設計",
+      "リソース管理"
+    ],
+    "id": "20260825_061125_02",
+    "date": "2026-08-25",
+    "source_news": {
+      "title": "Agent発見・管理のオープン仕様ARDとAWSレジストリ。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-resource-discovery-ard-an-open-specification-for-agent-discovery/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "LFM2.5-DSparkで推論高速化",
+    "news_highlight": "LFM2.5-DSparkは推論速度を最大3.2倍高速化し、リアルタイム処理を強化。",
+    "problem_context": "AIモデルの推論遅延によるリアルタイム処理の課題",
+    "recommended_ai": {
+      "model": "LFM2.5-DSpark",
+      "reason": "推論速度が最大3.2倍向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "リアルタイム異常検知システムで応答速度を改善したい時",
+      "大規模データに対するバッチ推論処理の時間を短縮したい時",
+      "エッジデバイス上でAIモデルの実行性能を向上させたい時"
+    ],
+    "steps": [
+      "1. LFM2.5-DSparkの導入ドキュメントを確認し、環境構築要件を把握する。",
+      "2. 既存の推論コードをLFM2.5-DSparkのAPI/SDKに適合するように修正する。",
+      "3. テストデータを用いて推論速度と精度をベンチマークし、効果を検証する。",
+      "4. 本番環境にデプロイし、リアルタイム性能と安定性を監視する。"
+    ],
+    "prompt": "LFM2.5-DSparkを活用したリアルタイム異常検知システムの推論アーキテクチャを設計してください。低遅延と高スループットを両立する構成を重視します。",
+    "tags": [
+      "AIモデル",
+      "推論最適化",
+      "リアルタイム処理",
+      "パフォーマンス"
+    ],
+    "id": "20260825_061149_03",
+    "date": "2026-08-25",
+    "source_news": {
+      "title": "LFM2.5-DSparkで推論が最大3.2倍高速化。",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Gemini Visionで画像からUI要件抽出",
     "news_highlight": "GeminiとPixel連携でVision機能強化、画像からUI要件を自動抽出し設計を加速",
     "problem_context": "UI設計時の手動での情報抽出と記述の手間",
@@ -19349,124 +19465,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "Ulysses SPが実現するLLMで大規模コード分析",
-    "news_highlight": "Ulysses SPにより数百万トークン対応LLMの学習が効率化、大規模コンテキスト処理が可能に。",
-    "problem_context": "巨大なコードベースやログの全体像把握が困難。",
-    "recommended_ai": {
-      "model": "Ulysses SP",
-      "reason": "大規模コンテキスト処理に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "数万行のレガシーコードの全体構造を理解したい時",
-      "複数ファイルにまたがるバグの原因を特定したい時",
-      "大規模システムのログから異常パターンを検出したい時"
-    ],
-    "steps": [
-      "関連する全てのコードファイルと設定ファイルをAIにアップロードする。",
-      "目的（例: 「このシステムの認証フローを説明してください」）を明確に指示する。",
-      "AIの分析結果を基に、不明点や深掘りしたい箇所を質問する。",
-      "提案された改善点や構造図をレビューし、実務に適用する。"
-    ],
-    "prompt": "このリポジトリ全体のコードを分析し、主要なモジュール間の依存関係とデータフローをMarkdown形式で説明してください。特に認証機能に焦点を当ててください。",
-    "tags": [
-      "コード分析",
-      "大規模コンテキスト",
-      "システム理解",
-      "レガシーコード"
-    ],
-    "id": "20260312_061519_03",
-    "date": "2026-03-12",
-    "source_news": {
-      "title": "数百万トークン対応LLMの効率的学習技術Ulysses SP発表。",
-      "url": "https://huggingface.co/blog/ulysses-sp"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "Codex Securityで脆弱性を自動修正",
-    "news_highlight": "Codex Securityはプロジェクト文脈を分析し、複雑な脆弱性を高精度で検知・修正",
-    "problem_context": "複雑な脆弱性の見落としと修正工数",
-    "recommended_ai": {
-      "model": "Codex Security",
-      "reason": "脆弱性検出・修正に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プルリクエスト前のセキュリティチェック",
-      "既存システムの脆弱性スキャンと修正",
-      "CI/CDパイプラインでの自動セキュリティ検証"
-    ],
-    "steps": [
-      "開発中のコードをCodex Securityに連携",
-      "Codex Securityが脆弱性を検知・検証",
-      "提案されたパッチコードを確認",
-      "パッチを適用し、テストを実行"
-    ],
-    "prompt": "指定されたリポジトリの全コードを分析し、OWASP Top 10に準拠した脆弱性を検出し、修正パッチを生成してください。",
-    "tags": [
-      "セキュリティ",
-      "脆弱性診断",
-      "自動修正",
-      "CI/CD"
-    ],
-    "id": "20260311_061424_01",
-    "date": "2026-03-11",
-    "source_news": {
-      "title": "OpenAIがAIセキュリティエージェントCodex Securityを発表。",
-      "url": "https://openai.com/index/codex-security-now-in-research-preview"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
-      "icon": "💻"
-    }
-  },
-  {
-    "title": "SageMaker LLMでStrandsエージェント連携",
-    "news_highlight": "SageMaker LLMでBedrock Messages API非対応モデル向けカスタムパーサー構築",
-    "problem_context": "Bedrock Messages API非対応LLMの連携困難",
-    "recommended_ai": {
-      "model": "SageMaker LLM",
-      "reason": "Strandsエージェントとの連携を可能にするため",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "Bedrock Messages API非対応のSageMaker LLMをStrandsエージェントで使いたい時",
-      "既存のSageMaker LLMをStrandsエージェントに組み込む際、データ形式変換が必要な時",
-      "Strandsエージェントの柔軟性を高めるため、多様なLLMを接続したい時"
-    ],
-    "steps": [
-      "1. Strandsエージェントのカスタムプロバイダーインターフェース仕様を確認する",
-      "2. 利用したいSageMaker LLMの入出力形式（JSONスキーマ等）を特定する",
-      "3. Bedrock Messages API形式とSageMaker LLM形式間の変換ロジックを設計する",
-      "4. Pythonでカスタムモデルパーサーコードを実装し、Strandsエージェントに登録する"
-    ],
-    "prompt": "Strandsエージェントのカスタムプロバイダーとして、SageMakerでホストされたLLM（入力: JSON、出力: テキスト）をBedrock Messages API形式に変換するPythonコードを生成してください。",
-    "tags": [
-      "LLM",
-      "SageMaker",
-      "Strands",
-      "カスタムプロバイダー",
-      "データ変換"
-    ],
-    "id": "20260311_061448_02",
-    "date": "2026-03-11",
-    "source_news": {
-      "title": "SageMaker LLMでStrandsエージェント用カスタムプロバイダー構築。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/building-custom-model-provider-for-strands-agents-with-llms-hosted-on-sagemaker-ai-endpoints/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
     }
   }
 ]
