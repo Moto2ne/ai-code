@@ -1,5 +1,122 @@
 [
   {
+    "title": "OpenAI Jalapeñoで大規模設計案を高速生成",
+    "news_highlight": "OpenAI JalapeñoはAI推論を高速化し、高スループットと低レイテンシを実現",
+    "problem_context": "複雑なシステム設計案の検討に時間がかかる",
+    "recommended_ai": {
+      "model": "OpenAIモデル (GPT-4oなど)",
+      "reason": "Jalapeñoで推論が高速化されるため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規システムのアーキテクチャ設計を検討する時",
+      "既存システムのマイクロサービス分割案を評価したい時",
+      "複数の技術スタックを用いた設計案を比較検討したい時"
+    ],
+    "steps": [
+      "1. 設計したいシステムの要件定義書や概要を準備",
+      "2. OpenAIモデルに設計課題と制約条件を提示",
+      "3. 提案された複数の設計案と評価ポイントを確認",
+      "4. 提案を基に詳細設計を深掘り、または修正指示を出す"
+    ],
+    "prompt": "[プロジェクト名]の[機能名]について、[技術スタック]を用いた最適なアーキテクチャ設計案を3つ提案してください。各案のメリット・デメリットも記述してください。",
+    "tags": [
+      "AI推論",
+      "アーキテクチャ設計",
+      "システム設計",
+      "効率化"
+    ],
+    "id": "20260826_060946_01",
+    "date": "2026-08-26",
+    "source_news": {
+      "title": "OpenAIが推論チップJalapeño発表、AI推論の速度と効率を大幅向上",
+      "url": "https://openai.com/index/jalapeno-first-results"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Hugging Face Optimumで量子化モデルを最適化",
+    "news_highlight": "4ビット量子化モデルがフル精度を凌駕、推論速度とメモリ効率を大幅改善",
+    "problem_context": "リソース制約下でのAIモデルデプロイ",
+    "recommended_ai": {
+      "model": "Hugging Face Optimum",
+      "reason": "量子化による効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "エッジデバイスへのAIモデルデプロイ時",
+      "リアルタイム推論が必要なAPI開発時",
+      "クラウド費用を削減したい時"
+    ],
+    "steps": [
+      "1. PyTorch/TensorFlowで学習済みのモデルを準備する。",
+      "2. Hugging Face Optimumライブラリをインストールする。",
+      "3. モデルと量子化設定を指定して量子化を実行する。",
+      "4. 量子化されたモデルの性能（精度、速度、メモリ）を評価する。"
+    ],
+    "prompt": "PyTorchで学習済みのBERTモデルをHugging Face OptimumとONNX Runtimeを使って4ビット量子化し、推論速度を向上させるためのPythonコードと手順を教えてください。",
+    "tags": [
+      "量子化",
+      "モデル最適化",
+      "推論高速化",
+      "エッジAI"
+    ],
+    "id": "20260826_061014_02",
+    "date": "2026-08-26",
+    "source_news": {
+      "title": "量子化で4ビットモデルがフル精度を凌駕、AI効率化を加速",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "GPT-5.6でコードレビューを効率化",
+    "news_highlight": "GPT-5.6がKiroで提供開始、開発者向け価格性能が向上し効率化",
+    "problem_context": "開発コストを抑えつつコード品質を向上させたい",
+    "recommended_ai": {
+      "model": "GPT-5.6",
+      "reason": "価格性能向上で開発効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードをレビューしたい時",
+      "チームメンバーのコードを効率的にレビューしたい時",
+      "既存のレガシーコードの改善点を特定したい時"
+    ],
+    "steps": [
+      "レビューしたいコードブロックをコピーする",
+      "GPT-5.6 (Kiro) にコードを貼り付け、改善点を依頼する",
+      "提案された修正点や改善案を検討し、コードに適用する",
+      "修正後のコードをテストし、動作を確認する"
+    ],
+    "prompt": "以下のPythonコードの潜在的なバグ、改善点、セキュリティ脆弱性を指摘し、より効率的で堅牢なコードに修正する提案をしてください。",
+    "tags": [
+      "コードレビュー",
+      "品質向上",
+      "効率化",
+      "デバッグ"
+    ],
+    "id": "20260826_061042_03",
+    "date": "2026-08-26",
+    "source_news": {
+      "title": "OpenAIがGPT-5.6をKiroで提供、開発者向け価格性能向上",
+      "url": "https://openai.com/index/gpt-5-6-in-kiro"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "GPT-4oでAgentのメモリ効率設計",
     "news_highlight": "Agentのメモリ使用量を最大30%削減、コスト最適化と応答速度向上を実現する設計指針を提示。",
     "problem_context": "Agentの長期記憶によるメモリ肥大化とコスト増",
@@ -19350,121 +19467,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "AgentRxでAIエージェントのデバッグ",
-    "news_highlight": "AgentRxはAIエージェントの複雑なマルチステップタスクのデバッグを体系的に支援するフレームワーク。",
-    "problem_context": "複雑なAIエージェントの挙動分析とデバッグが困難。",
-    "recommended_ai": {
-      "model": "AgentRx",
-      "reason": "AIエージェント特化のデバッグフレームワーク",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "AIエージェントが意図しない動作をした際の原因特定",
-      "マルチステップAPIワークフローの実行失敗時のトラブルシューティング",
-      "複雑なWebインターフェース操作エージェントの挙動分析"
-    ],
-    "steps": [
-      "1. AgentRxフレームワークをAIエージェント開発環境に導入する。",
-      "2. デバッグしたいエージェントの実行ログとAgentRxのトレース情報を収集する。",
-      "3. AgentRxの可視化ツールでエージェントの実行パスと状態遷移を分析する。",
-      "4. 特定された問題箇所に基づき、エージェントのプロンプトやツール利用ロジックを修正する。"
-    ],
-    "prompt": "AgentRxの分析結果として、エージェントがAPI呼び出しに失敗しました。この原因と、API呼び出しロジックの修正案を具体的に提案してください。",
-    "tags": [
-      "デバッグ",
-      "AIエージェント",
-      "トラブルシューティング"
-    ],
-    "id": "20260313_061529_03",
-    "date": "2026-03-13",
-    "source_news": {
-      "title": "AIエージェント向け体系的デバッグフレームワークAgentRxを発表。",
-      "url": "https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Granite 4.0 1BでEdgeデバイス音声認識",
-    "news_highlight": "Edge AI向け小型多言語音声モデルGranite 4.0 1B発表。低リソース環境で高精度音声認識を実現。",
-    "problem_context": "Edgeデバイスでの音声認識機能実装の課題。",
-    "recommended_ai": {
-      "model": "Granite 4.0 1B",
-      "reason": "Edge AI向け小型多言語音声モデル",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "組み込みシステムでオフライン音声コマンドを実装したい時。",
-      "IoTデバイスで多言語対応の音声インターフェースを開発する時。",
-      "ネットワーク帯域が限られた環境でリアルタイム音声処理が必要な時。"
-    ],
-    "steps": [
-      "ターゲットEdgeデバイスのOSとハードウェア情報を確認する。",
-      "Granite 4.0 1BのSDKまたはAPIドキュメントを入手する。",
-      "提供されたサンプルコードを参考に、音声入力からテキスト変換までの基本処理を実装する。",
-      "多言語対応が必要な場合、言語設定やモデル切り替えのロジックを追加する。"
-    ],
-    "prompt": "Raspberry Pi 4上でPythonとGranite 4.0 1Bモデルを使用して、マイク入力から英語と日本語の音声をテキストに変換するサンプルコードを生成してください。",
-    "tags": [
-      "Edge AI",
-      "音声認識",
-      "多言語"
-    ],
-    "id": "20260312_061417_01",
-    "date": "2026-03-12",
-    "source_news": {
-      "title": "Edge AI向け小型多言語音声モデルGranite 4.0 1B発表。",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-4-speech"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "NVIDIA Nemotron 3 Nanoでテストコード生成",
-    "news_highlight": "NVIDIA Nemotron 3 NanoがBedrockで利用可能。フルマネージド、サーバーレスで提供。",
-    "problem_context": "新機能やバグ修正後のテストコード作成を効率化。",
-    "recommended_ai": {
-      "model": "NVIDIA Nemotron 3 Nano",
-      "reason": "Bedrockで手軽に利用可能、軽量モデルで高速。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しい関数やクラスの基本的なテストケースを素早く生成したい時",
-      "既存のコードに回帰テストを追加したいが、どこから手をつければ良いか迷う時",
-      "特定のエッジケースに対するテストコードのアイデアが欲しい時"
-    ],
-    "steps": [
-      "テストしたい関数やクラスのコードをコピーする。",
-      "BedrockのNemotron 3 Nanoにプロンプトとコードを貼り付ける。",
-      "生成されたテストコードを確認し、テストフレームワークに合わせて調整する。",
-      "テストを実行し、必要に応じて修正・追加する。"
-    ],
-    "prompt": "以下のPython関数に対するpytestのテストコードを生成してください。主要なユースケースとエッジケースをカバーし、アサーションを含めてください。",
-    "tags": [
-      "コード生成",
-      "テストコード",
-      "Bedrock",
-      "開発効率"
-    ],
-    "id": "20260312_061446_02",
-    "date": "2026-03-12",
-    "source_news": {
-      "title": "NVIDIA Nemotron 3 NanoがBedrockで利用可能に。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/run-nvidia-nemotron-3-nano-as-a-fully-managed-serverless-model-on-amazon-bedrock/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
