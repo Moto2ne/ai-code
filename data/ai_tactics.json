@@ -1,5 +1,122 @@
 [
   {
+    "title": "SageMaker Feature Storeで特徴量バッチ書き込み",
+    "news_highlight": "SageMaker Feature StoreがBatchWriteRecordで最大25レコードを複数FGに一括書き込み可能に。",
+    "problem_context": "特徴量ストアへの逐次書き込みが遅い。",
+    "recommended_ai": {
+      "model": "Amazon SageMaker Feature Store",
+      "reason": "特徴量管理を効率化するため。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "MLパイプラインのデータ投入部分を最適化したい時",
+      "複数の特徴量グループにデータを効率的に書き込みたい時",
+      "既存の逐次書き込みコードをリファクタリングしたい時"
+    ],
+    "steps": [
+      "1. 既存のSageMaker Feature StoreへのPutRecord呼び出し部分のコードを特定する。",
+      "2. 複数のレコードをまとめてBatchWriteRecordに渡すためのデータ構造を準備する。",
+      "3. BatchWriteRecord APIを呼び出すPythonコードを記述する。",
+      "4. 新しいコードでパイプラインを実行し、パフォーマンスを比較する。"
+    ],
+    "prompt": "PythonでSageMaker Feature StoreのBatchWriteRecord APIを使って、複数のFeatureGroupに最大25レコードを一度に書き込むコードを生成してください。エラーハンドリングも考慮してください。",
+    "tags": [
+      "特徴量エンジニアリング",
+      "MLOps",
+      "Python",
+      "SageMaker"
+    ],
+    "id": "20260829_070919_01",
+    "date": "2026-08-29",
+    "source_news": {
+      "title": "SageMaker Feature Storeが新APIで特徴量管理を強化。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/batch-write-and-discover-records-in-amazon-sagemaker-feature-store/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "4bit量子化モデルで推論最適化",
+    "news_highlight": "4bit量子化モデルがフル精度を凌駕、推論速度とメモリ効率を大幅改善",
+    "problem_context": "AIモデルのデプロイコストと推論速度の課題",
+    "recommended_ai": {
+      "model": "4bit量子化モデル",
+      "reason": "軽量化と高精度を両立",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "エッジデバイス向けAIアプリケーション開発時",
+      "クラウドAIの推論コストを削減したい時",
+      "リアルタイム応答が求められるAIシステム設計時"
+    ],
+    "steps": [
+      "1. 既存のPyTorch/TensorFlowモデルを選択する",
+      "2. bitsandbytesやHugging Face Optimum等のライブラリで4bit量子化を試みる",
+      "3. 量子化後のモデルの精度と推論速度を評価する",
+      "4. 評価結果に基づき、本番環境へのデプロイ戦略を検討する"
+    ],
+    "prompt": "既存のPyTorchモデルを4bit量子化し、推論速度とメモリ使用量を最適化するPythonコードを生成してください。bitsandbytesライブラリを使用し、評価コードも加えてください。",
+    "tags": [
+      "AI最適化",
+      "量子化",
+      "推論高速化",
+      "エッジAI"
+    ],
+    "id": "20260829_070951_02",
+    "date": "2026-08-29",
+    "source_news": {
+      "title": "4bit量子化モデルがフル精度を凌駕する新技術発表。",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "GPT-5.6 Terraでインド向けデータ処理コード生成",
+    "news_highlight": "BedrockがOpenAI GPT-5.6 Terra/Lunaをインド国内推論で提供開始、ローカルデータ処理に対応",
+    "problem_context": "インド国内データ主権要件への対応",
+    "recommended_ai": {
+      "model": "OpenAI GPT-5.6 Terra",
+      "reason": "インド国内データ処理に対応",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "インドの顧客向けサービスで個人情報処理ロジックを設計する時",
+      "インドの規制に準拠したデータ保存・処理コードを生成する時",
+      "インド市場向けコンテンツのローカライズを自動化する時"
+    ],
+    "steps": [
+      "BedrockコンソールでGPT-5.6 Terraモデルを有効化する。",
+      "インド国内データ処理要件のあるコードの仕様を準備する。",
+      "プロンプトに要件と既存コード（あれば）を記述し、モデルに送信する。",
+      "生成されたコードをレビューし、テスト環境で動作確認する。"
+    ],
+    "prompt": "インドのデータプライバシー規制（例: DPDP Act）に準拠した、顧客データ匿名化処理を行うPython関数を生成してください。入力はJSON形式の顧客データです。",
+    "tags": [
+      "データ主権",
+      "コンプライアンス",
+      "ローカライズ",
+      "コード生成"
+    ],
+    "id": "20260829_071018_03",
+    "date": "2026-08-29",
+    "source_news": {
+      "title": "BedrockがOpenAI新モデルをインド国内推論で提供開始。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-openai-models-on-amazon-bedrock-for-in-country-inferencing-in-india/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "4ビット量子化モデルで推論最適化",
     "news_highlight": "4ビット量子化モデルがフル精度モデルを上回る性能を達成し、効率と性能の両立を実現",
     "problem_context": "大規模モデルの推論コストとメモリ制約を解決したい",
@@ -19334,123 +19451,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "Hugging Face Hubで学習ログを管理",
-    "news_highlight": "Hugging Face Hubにストレージバケット機能が追加され、任意のファイルをモデル/データセットリポジトリで管理可能に。",
-    "problem_context": "モデル学習ログや評価結果の管理・共有が煩雑。",
-    "recommended_ai": {
-      "model": "Hugging Face Hub",
-      "reason": "モデル関連ファイルの一元管理が可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "モデル学習の進捗をチームで共有したい時",
-      "過去の学習結果や評価指標を比較したい時",
-      "学習パイプラインの中間成果物を保存したい時"
-    ],
-    "steps": [
-      "1. Hugging Face Hubにモデルまたはデータセットリポジトリを作成する。",
-      "2. Pythonの学習スクリプトに`huggingface_hub`ライブラリをインポートする。",
-      "3. 学習完了後、ログファイル（例: CSV, JSON）を生成する。",
-      "4. `HfApi().upload_file()` を使用し、生成したログファイルをリポジトリにアップロードする。"
-    ],
-    "prompt": "PythonでHugging Face Hubのストレージバケットに学習ログ（CSV形式）をアップロードするコードを生成してください。リポジトリIDとファイルパスを指定できるようにしてください。",
-    "tags": [
-      "MLOps",
-      "HuggingFace",
-      "データ管理",
-      "学習ログ"
-    ],
-    "id": "20260316_061216_03",
-    "date": "2026-03-16",
-    "source_news": {
-      "title": "Hugging Face Hubにストレージバケット機能が追加。",
-      "url": "https://huggingface.co/blog/storage-buckets"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "OpenAI APIでエージェントがコード自動修正",
-    "news_highlight": "OpenAI APIがResponses API、shell tool、hosted containersでエージェントに安全なコード実行環境を提供。",
-    "problem_context": "複雑なバグの特定と修正に時間がかかる",
-    "recommended_ai": {
-      "model": "OpenAI API (Responses API, shell tool, hosted containers)",
-      "reason": "エージェントがコード実行環境を持つため",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "テストが失敗したコードの原因究明と修正",
-      "CI/CDパイプラインで発生したエラーの自動解析",
-      "開発環境のセットアップスクリプトの自動生成と実行"
-    ],
-    "steps": [
-      "OpenAI API経由でエージェントにエラーログと関連コードを渡す",
-      "エージェントにshell toolでコードを実行させ、問題を特定させる",
-      "エージェントが提案する修正コードをレビューする",
-      "修正コードを適用し、エージェントにhosted containersで再テストさせる"
-    ],
-    "prompt": "以下のエラーログとソースコードを分析し、shell toolで問題を特定してください。修正コードを提案し、hosted containersで実行してテスト結果を報告してください。",
-    "tags": [
-      "デバッグ",
-      "自動修正",
-      "エージェント",
-      "CI/CD"
-    ],
-    "id": "20260315_061140_01",
-    "date": "2026-03-15",
-    "source_news": {
-      "title": "OpenAIがAPI経由でエージェントにコンピュータ環境を提供、安全な実行が可能に。",
-      "url": "https://openai.com/index/equip-responses-api-computer-environment"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Bedrock AgentCoreでAIエージェントの振る舞いを設計",
-    "news_highlight": "Bedrock AgentCoreにポリシー機能追加、AIエージェントの安全な制御を推論とは独立した決定論的レイヤーで実現。",
-    "problem_context": "AIエージェントの予期せぬ動作や情報漏洩を防止",
-    "recommended_ai": {
-      "model": "Amazon Bedrock AgentCore",
-      "reason": "AIエージェントの安全な制御に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "AIエージェントが機密情報にアクセスしないよう制御したい時",
-      "AIエージェントが特定の外部APIを呼び出さないよう制限したい時",
-      "AIエージェントの応答内容に倫理的・法的制約を課したい時"
-    ],
-    "steps": [
-      "AWSコンソールでBedrock AgentCoreのエージェント設定画面を開く。",
-      "対象エージェントの「ポリシー」セクションに移動し、新規ポリシーを作成する。",
-      "エージェントが実行可能なアクションやアクセス可能なリソースをJSON形式で定義する。",
-      "ポリシーをエージェントに適用し、定義した制約が機能するかテストする。"
-    ],
-    "prompt": "Amazon Bedrock AgentCoreで、エージェントがS3バケット`my-sensitive-data`への書き込み操作を禁止するポリシーをJSON形式で生成してください。",
-    "tags": [
-      "AIエージェント",
-      "セキュリティ",
-      "コンプライアンス",
-      "AWS"
-    ],
-    "id": "20260315_061209_02",
-    "date": "2026-03-15",
-    "source_news": {
-      "title": "Bedrock AgentCoreにポリシー機能追加、AIエージェントの安全な制御を実現。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/secure-ai-agents-with-policy-in-amazon-bedrock-agentcore/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
     }
   }
 ]
