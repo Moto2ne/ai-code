@@ -1,5 +1,123 @@
 [
   {
+    "title": "Amazon Quickとfalでクリエイティブワークフロー自動化",
+    "news_highlight": "Amazon Quickとfalでエージェントハーネス構築、断片化ツール連携し生産性向上",
+    "problem_context": "断片化ツールと手動コンテキスト転送による生産性低下",
+    "recommended_ai": {
+      "model": "Amazon Quick & fal",
+      "reason": "エージェント型ワークフロー構築に最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "UIコンポーネントの複数バリエーションを迅速に生成したい時",
+      "マーケティングLPのA/Bテスト用コンテンツを自動生成したい時",
+      "技術ドキュメントの更新や多言語化を効率化したい時"
+    ],
+    "steps": [
+      "1. Amazon Quickでエージェント定義とタスクフローを設計する",
+      "2. falを使って外部APIや既存ツールとの連携ロジックを実装する",
+      "3. クリエイティブアセット生成タスクをエージェントに割り当てる",
+      "4. 生成されたアセットをレビューし、フィードバックをエージェントに学習させる"
+    ],
+    "prompt": "指定されたデザインシステムに基づき、ログインフォームのUIコンポーネントを3種類のバリエーションで生成してください。各バリエーションは異なるレイアウトとカラースキームを持つこと。",
+    "tags": [
+      "エージェントAI",
+      "ワークフロー自動化",
+      "クリエイティブAI",
+      "API連携"
+    ],
+    "id": "20260831_061312_01",
+    "date": "2026-08-31",
+    "source_news": {
+      "title": "Amazon Quickとfalでエージェント型クリエイティブワークフローを構築。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-creative-workflows-with-amazon-quick-and-fal/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "QuantMaster-4bitでエッジAI最適化",
+    "news_highlight": "QuantMaster-4bitが4bit量子化でフル精度モデルを凌駕、推論速度2倍、メモリ消費量1/4を実現",
+    "problem_context": "エッジデバイスでのAIモデル推論の遅延とリソース不足",
+    "recommended_ai": {
+      "model": "QuantMaster-4bit",
+      "reason": "高精度かつ軽量な推論を実現",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "IoTデバイスにAI機能を組み込む際のリソース制約解消",
+      "モバイルアプリでのオンデバイスAI推論の高速化",
+      "クラウドAI推論コストを削減しつつ性能を維持したい時"
+    ],
+    "steps": [
+      "1. 既存のフル精度モデルをQuantMaster-4bit形式に変換するツールを準備",
+      "2. 変換したモデルを対象のエッジデバイスまたは環境にデプロイ",
+      "3. 変換モデルの推論速度と精度をベンチマークで評価",
+      "4. 既存システムとの性能比較を行い、置き換えの可否を判断"
+    ],
+    "prompt": "既存のPyTorchモデルをQuantMaster-4bit形式に量子化し、Jetson Nanoで動作させるためのPythonスクリプトを生成してください。量子化後のモデルの精度評価コードもお願いします。",
+    "tags": [
+      "量子化",
+      "エッジAI",
+      "推論最適化",
+      "コスト削減"
+    ],
+    "id": "20260831_061339_02",
+    "date": "2026-08-31",
+    "source_news": {
+      "title": "4bit量子化モデルがフル精度を凌駕する新技術を発表。",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "AWS Bedrock GPT-5.6でインド向けコード生成",
+    "news_highlight": "AWS BedrockがOpenAI GPT-5.6 (Terra/Luna) のインド国内推論、クロスリージョン推論に対応",
+    "problem_context": "インド国内データ要件遵守しAI開発",
+    "recommended_ai": {
+      "model": "OpenAI GPT-5.6 (Terra/Luna) on AWS Bedrock",
+      "reason": "インド国内推論対応でデータ主権を確保",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "インドの顧客向けアプリケーションのローカライズ",
+      "インドの規制に準拠したデータ処理ロジックの実装",
+      "インド市場向けサービスの多言語対応（ヒンディー語など）"
+    ],
+    "steps": [
+      "AWS BedrockコンソールでGPT-5.6モデルを選択",
+      "推論リージョンをインド国内に設定",
+      "インド特有の要件をプロンプトに含めコード生成",
+      "生成されたコードをレビューし、規制準拠を確認"
+    ],
+    "prompt": "インドの個人情報保護法に準拠したユーザー登録フォームのPythonコードを生成してください。入力検証とデータ暗号化を含めてください。",
+    "tags": [
+      "AWS Bedrock",
+      "GPT-5.6",
+      "インド",
+      "ローカライズ",
+      "データプライバシー"
+    ],
+    "id": "20260831_061404_03",
+    "date": "2026-08-31",
+    "source_news": {
+      "title": "AWS BedrockがOpenAI GPT-5.6モデルのインド国内推論に対応。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-openai-models-on-amazon-bedrock-for-in-country-inferencing-in-india/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "4bit量子化モデルで推論最適化",
     "news_highlight": "4bit量子化モデルがフル精度モデルを上回る性能を達成、推論速度とメモリ効率を大幅改善",
     "problem_context": "AIモデルの推論コスト高騰とメモリ制約",
@@ -19332,122 +19450,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
       "icon": "🚀"
-    }
-  },
-  {
-    "title": "OpenAI ChatGPT Agentのセキュリティ設計",
-    "news_highlight": "OpenAIがChatGPT Agentのプロンプトインジェクション対策技術を公開、危険なアクションと機密データ保護を強化。",
-    "problem_context": "AI Agentのプロンプトインジェクション脆弱性対策",
-    "recommended_ai": {
-      "model": "ChatGPT",
-      "reason": "プロンプトインジェクション対策の知見が豊富",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "AI Agentのセキュリティ設計を行う時",
-      "既存のAI Agentのプロンプトインジェクション脆弱性をレビューする時",
-      "AI Agentの安全なプロンプトを設計する時"
-    ],
-    "steps": [
-      "開発中のAI Agentの機能とデータアクセス権限を定義する。",
-      "OpenAIの公開情報を参考に、潜在的なプロンプトインジェクション攻撃パターンをリストアップする。",
-      "AIにAgentの設計書と攻撃パターンを渡し、対策案を検討させる。",
-      "提案された対策を実装し、テストする。"
-    ],
-    "prompt": "あなたはセキュリティ専門家です。以下のAI Agentの機能とデータアクセス権限を考慮し、プロンプトインジェクション攻撃から保護するための具体的な設計原則と対策案を提案してください。Agent機能: [機能詳細]、データアクセス: [アクセス権限]",
-    "tags": [
-      "セキュリティ",
-      "AI Agent",
-      "プロンプトインジェクション",
-      "設計"
-    ],
-    "id": "20260318_061859_03",
-    "date": "2026-03-18",
-    "source_news": {
-      "title": "AI Agentのプロンプトインジェクション対策、OpenAIが技術詳細公開。",
-      "url": "https://openai.com/index/designing-agents-to-resist-prompt-injection"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Gemini in Sheetsでテストデータ生成",
-    "news_highlight": "GeminiがGoogle Sheetsに新ベータ機能として統合され、SOTA性能を達成",
-    "problem_context": "テストデータ作成の手間と品質の課題を解決",
-    "recommended_ai": {
-      "model": "Gemini in Sheets",
-      "reason": "スプレッドシートでSOTA性能を発揮",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "テストケース作成時に多様なデータを生成したい時",
-      "APIのモックデータやダミーデータを素早く用意したい時",
-      "データベースの初期データを効率的に作成したい時"
-    ],
-    "steps": [
-      "1. Google Sheetsを開き、新しいシートを作成する。",
-      "2. Geminiサイドバー（または機能）を起動する。",
-      "3. 生成したいデータの要件をプロンプトに入力する。",
-      "4. 生成されたデータをコピーし、開発環境で利用する。"
-    ],
-    "prompt": "ユーザー管理システムのテストデータとして、名前、メールアドレス、パスワード（ハッシュ化済み）、登録日、アクティブ状態の5列を持つCSVデータを100件生成してください。",
-    "tags": [
-      "データ生成",
-      "テスト",
-      "スプレッドシート"
-    ],
-    "id": "20260317_061831_01",
-    "date": "2026-03-17",
-    "source_news": {
-      "title": "GeminiがGoogle SheetsでSOTA性能達成、実務応用を強化。",
-      "url": "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
-    }
-  },
-  {
-    "title": "OpenAIエージェントで開発環境自動化",
-    "news_highlight": "OpenAIがResponses APIでエージェントランタイムを提供、シェルツールとコンテナで安全なファイル/ツール/状態管理を実現。",
-    "problem_context": "複雑な開発タスクの自動化と安全な実行",
-    "recommended_ai": {
-      "model": "OpenAI Agent Runtime",
-      "reason": "安全なコンテナでツール実行可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいプロジェクトの初期セットアップを自動化したい時",
-      "CI/CDパイプラインで複雑なテストを自動実行したい時",
-      "開発環境で特定のスクリプトを安全に実行したい時"
-    ],
-    "steps": [
-      "1. OpenAI Agent Runtime APIのドキュメントを確認し、エージェント定義を作成する。",
-      "2. エージェント定義に、必要なファイル操作やシェルコマンドをツールとして組み込む。",
-      "3. Responses APIを通じてエージェントを実行し、結果を監視する。",
-      "4. エージェントの実行ログや出力に基づき、定義を改善・調整する。"
-    ],
-    "prompt": "新しいPythonプロジェクトの仮想環境をセットアップし、requirements.txtから依存ライブラリをインストールしてください。",
-    "tags": [
-      "エージェント",
-      "自動化",
-      "CI/CD",
-      "開発環境"
-    ],
-    "id": "20260317_061858_02",
-    "date": "2026-03-17",
-    "source_news": {
-      "title": "OpenAIがエージェントランタイムを構築、APIで安全な実行環境を提供。",
-      "url": "https://openai.com/index/equip-responses-api-computer-environment"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
     }
   }
 ]
