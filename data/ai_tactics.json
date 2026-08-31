@@ -1,5 +1,122 @@
 [
   {
+    "title": "GradioでAIアプリを迅速デプロイ",
+    "news_highlight": "GradioがAIワークフローの構築・実行・デプロイを統合、開発から公開までを高速化。",
+    "problem_context": "AIモデルのUI開発・デプロイの手間を削減。",
+    "recommended_ai": {
+      "model": "Gradio",
+      "reason": "AIアプリ開発・デプロイを効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "開発中のAIモデルの動作を素早く確認したい時",
+      "同僚やステークホルダーにAIモデルのデモを見せたい時",
+      "プロトタイプAIアプリをWebで公開したい時"
+    ],
+    "steps": [
+      "既存のAIモデル推論コード（例: `model.predict(input)`）を準備する。",
+      "Gradioの`gr.Interface`または`gr.Blocks`でUIコンポーネントを定義する。",
+      "`interface.launch(share=True)`で一時的な公開URLを生成する。",
+      "生成されたURLを共有し、フィードバックを収集する。"
+    ],
+    "prompt": "Gradioを使って、画像分類モデルのデモUIをPythonで作成してください。入力は画像、出力はクラスラベルと確率です。",
+    "tags": [
+      "AIデプロイ",
+      "プロトタイピング",
+      "UI開発",
+      "Gradio"
+    ],
+    "id": "20260901_061404_01",
+    "date": "2026-09-01",
+    "source_news": {
+      "title": "GradioでAIワークフロー構築・実行・デプロイが可能に",
+      "url": "https://huggingface.co/blog/gradio-workflow-guide"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "SageMaker Feature Storeでバッチ処理効率化",
+    "news_highlight": "SageMaker Feature StoreにBatchWriteRecord/ListRecords API追加、最大25レコードをバッチ書き込み可能",
+    "problem_context": "特徴量ストアへのデータ書き込み効率化",
+    "recommended_ai": {
+      "model": "Amazon SageMaker Feature Store",
+      "reason": "バッチ処理とレコード管理を強化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい特徴量データを効率的にFeature Storeに投入したい時",
+      "既存の特徴量レコードのIDを一覧で確認したい時",
+      "モデル推論前に最新の特徴量データを一括で更新したい時"
+    ],
+    "steps": [
+      "1. 書き込みたい特徴量データ（最大25レコード）をPythonのリスト形式で準備する。",
+      "2. boto3の`sagemaker-featurestore-runtime`クライアントを初期化する。",
+      "3. `batch_write_record`メソッドを呼び出すPythonコードを記述する。",
+      "4. 書き込み成功/失敗をログに出力し、データがFeature Storeに反映されたか確認する。"
+    ],
+    "prompt": "Pythonのboto3ライブラリを使用して、SageMaker Feature StoreのBatchWriteRecord APIを呼び出すコードを生成してください。特徴量グループ名 'my-feature-group' と、2つのレコードを渡す例を含めてください。",
+    "tags": [
+      "SageMaker",
+      "Feature Store",
+      "バッチ処理",
+      "データ管理"
+    ],
+    "id": "20260901_061431_02",
+    "date": "2026-09-01",
+    "source_news": {
+      "title": "SageMaker Feature Storeにバッチ書き込み/検索API追加",
+      "url": "https://aws.amazon.com/blogs/machine-learning/batch-write-and-discover-records-in-amazon-sagemaker-feature-store/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "AWS Agent RegistryでAIエージェント設計",
+    "news_highlight": "AWS Agent RegistryがGA、組織内のAIエージェント構成要素を一元管理、検索、統制可能に。",
+    "problem_context": "組織内のAIエージェント構成要素の管理が煩雑。",
+    "recommended_ai": {
+      "model": "AWS Agent Registry",
+      "reason": "AIエージェント構成要素の一元管理",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規AIエージェント開発時に既存スキルを検索したい時",
+      "既存AIエージェントの利用ツールを標準化したい時",
+      "AIエージェントのデプロイ構成を設計する時"
+    ],
+    "steps": [
+      "開発中のAIエージェントが利用するLambda関数やAPI Gatewayエンドポイントを特定する。",
+      "Registryに登録するカスタムリソースのJSON定義をAIに生成させる。",
+      "生成されたJSON定義をAWS Agent RegistryコンソールまたはCLIで登録する。",
+      "新規エージェント設計時にRegistryを検索し、登録済みリソースの再利用を検討する。"
+    ],
+    "prompt": "AWS Agent Registryに登録するLambdaベースのカスタムツール定義をJSON形式で生成してください。ツール名: `OrderLookupTool`、説明: `顧客の注文履歴を検索する`、入力スキーマ: `{\"orderId\": {\"type\": \"string\"}}`。",
+    "tags": [
+      "AIエージェント",
+      "AWS",
+      "カタログ",
+      "設計"
+    ],
+    "id": "20260901_061502_03",
+    "date": "2026-09-01",
+    "source_news": {
+      "title": "AWS Agent RegistryがGA、エージェント等を一元管理",
+      "url": "https://aws.amazon.com/blogs/machine-learning/manage-agents-tools-and-skills-at-scale-with-aws-agent-registry/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Amazon Quickとfalでクリエイティブワークフロー自動化",
     "news_highlight": "Amazon Quickとfalでエージェントハーネス構築、断片化ツール連携し生産性向上",
     "problem_context": "断片化ツールと手動コンテキスト転送による生産性低下",
@@ -19332,124 +19449,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "Holotron-12Bで複数ファイル横断コード修正",
-    "news_highlight": "Holotron-12Bは高スループットなAIエージェントモデル、複数ファイル横断タスクを高速処理",
-    "problem_context": "複数ファイルにまたがる複雑なコード修正に時間がかかる",
-    "recommended_ai": {
-      "model": "Holotron-12B",
-      "reason": "高スループットなエージェント",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "既存機能のバグ修正で、複数の関連ファイルにわたる変更が必要な時",
-      "新機能追加時に、影響範囲が広く複数モジュールのコード修正が必要な時",
-      "大規模リファクタリングで、特定のパターンを複数のファイルに適用したい時"
-    ],
-    "steps": [
-      "修正対象のディレクトリと、修正内容の概要を準備する",
-      "Holotron-12Bに、修正対象のコードベースと修正指示を与える",
-      "Holotron-12Bが提案する複数ファイルの修正案を確認する",
-      "提案されたコードをテストし、必要に応じて微調整して適用する"
-    ],
-    "prompt": "このディレクトリ内のファイル群を分析し、ユーザー認証ロジックをOAuth2に移行してください。関連する全てのファイルに変更を適用し、具体的なコード修正案を提示してください。",
-    "tags": [
-      "コード修正",
-      "リファクタリング",
-      "エージェントAI",
-      "高スループット"
-    ],
-    "id": "20260319_061757_03",
-    "date": "2026-03-19",
-    "source_news": {
-      "title": "Holotron-12B発表、高スループットなAIエージェントモデル。",
-      "url": "https://huggingface.co/blog/Hcompany/holotron-12b"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "GPT-5.4 mini/nanoでAgentスクリプト生成",
-    "news_highlight": "GPT-5.4 mini/nanoはAgentワークロード向けに高速化・最適化、コーディング・ツール利用に特化",
-    "problem_context": "Agentのコード生成・実行速度の向上",
-    "recommended_ai": {
-      "model": "GPT-5.4 mini/nano",
-      "reason": "Agentワークロードに最適化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "Agentが実行するPythonスクリプトを自動生成したい時",
-      "既存のAgentコードのパフォーマンス改善案が欲しい時",
-      "Agentが利用する外部API呼び出し関数を生成したい時"
-    ],
-    "steps": [
-      "1. Agentに実行させたいタスクを明確にする",
-      "2. タスク内容と必要な情報をプロンプトに記述",
-      "3. GPT-5.4 mini/nanoにスクリプト生成を依頼",
-      "4. 生成されたスクリプトをテストし、Agentに組み込む"
-    ],
-    "prompt": "Agentが実行するPythonスクリプトを生成してください。目的はWebサイトから最新ニュース記事のタイトルとURLをスクレイピングし、CSVファイルに保存することです。requestsとBeautifulSoupを使用してください。",
-    "tags": [
-      "Agent開発",
-      "コード生成",
-      "Python",
-      "API連携",
-      "最適化"
-    ],
-    "id": "20260318_061806_01",
-    "date": "2026-03-18",
-    "source_news": {
-      "title": "GPT-5.4 mini/nano発表、Agentワークロード向けに高速化・最適化。",
-      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "AgentRxでAIエージェントのデバッグ効率化",
-    "news_highlight": "AgentRxはAI Agentの多段階APIワークフローのデバッグと信頼性を向上",
-    "problem_context": "AI Agentの複雑な動作のデバッグが困難",
-    "recommended_ai": {
-      "model": "AgentRx",
-      "reason": "AI Agentのデバッグに特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "AIエージェントが期待通りに動作しない時",
-      "複雑なAPI連携でエラーが発生した時",
-      "AIエージェントの意思決定プロセスを理解したい時"
-    ],
-    "steps": [
-      "AgentRxをプロジェクトに導入する",
-      "AIエージェントの実行ログをAgentRxで収集する",
-      "AgentRxの可視化ツールで実行パスを分析する",
-      "特定のステップでエラーや予期せぬ動作を特定し修正する"
-    ],
-    "prompt": "AgentRxのデバッグコンセプトに基づき、Pythonで実装されたAI Agentの多段階API呼び出しにおける各ステップの状態を記録し、エラー発生時にその前後をトレースするデバッグコードを生成してください。",
-    "tags": [
-      "AI Agent",
-      "デバッグ",
-      "信頼性",
-      "フレームワーク"
-    ],
-    "id": "20260318_061832_02",
-    "date": "2026-03-18",
-    "source_news": {
-      "title": "AI Agent向けデバッグフレームワークAgentRx発表。信頼性向上へ。",
-      "url": "https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
     }
   }
 ]
