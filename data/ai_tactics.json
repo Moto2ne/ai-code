@@ -1,5 +1,125 @@
 [
   {
+    "title": "Amazon Quick Automateでエージェント設計",
+    "news_highlight": "Amazon Quick Automateで本番級エージェント自動化のベストプラクティスを提供。",
+    "problem_context": "エージェント設計の複雑性、最適なプロセス選定。",
+    "recommended_ai": {
+      "model": "Amazon Quick Automate",
+      "reason": "エージェント自動化に特化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいビジネスプロセスを自動化するエージェントを設計する時",
+      "既存のエージェントのパフォーマンスを改善したい時",
+      "複数のエージェントを連携させる最適な方法を検討する時"
+    ],
+    "steps": [
+      "1. 自動化したいビジネスプロセスを特定し、その目的と期待結果を明確にする。",
+      "2. Amazon Quick Automateの設計インターフェースを開き、主要なタスクとサブタスクを定義する。",
+      "3. 各タスクに最適なエージェントの役割と機能を設計し、入力・出力を指定する。",
+      "4. エージェント間の連携ロジックを構築し、テストシナリオを作成して動作検証を行う。"
+    ],
+    "prompt": "Amazon Quick Automateで、顧客オンボーディングプロセスを自動化するエージェントを設計してください。初期情報収集、KYC、契約締結の3ステップで構成し、各ステップのエージェントの役割と連携方法を具体的に記述してください。",
+    "tags": [
+      "エージェント設計",
+      "プロセス自動化",
+      "Amazon Quick Automate",
+      "ベストプラクティス"
+    ],
+    "id": "20260904_061435_01",
+    "date": "2026-09-04",
+    "source_news": {
+      "title": "Amazon Quick Automateでエージェント自動化のベストプラクティス",
+      "url": "https://aws.amazon.com/blogs/machine-learning/best-practices-for-building-agentic-automations-with-amazon-quick-automate/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "LangGraphエージェントをBedrock AgentCoreへ移行",
+    "news_highlight": "Notebook環境のLangGraphエージェントをBedrock AgentCoreへ本番移行する2段階プロセス",
+    "problem_context": "LangGraphエージェントの本番運用化",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "LangGraphエージェントの本番運用基盤",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "LangGraphで開発したエージェントを本番環境にデプロイしたい時",
+      "エージェントの信頼性、スケーラビリティ、セキュリティを向上させたい時",
+      "既存のLangGraphエージェントをBedrockのマネージドサービスに移行する計画を立てる時"
+    ],
+    "steps": [
+      "既存のLangGraphエージェントのコードベースを特定する。",
+      "Bedrock AgentCoreのRuntime APIを利用してエージェントのロジックをラップする。",
+      "Bedrock AgentCoreのGatewayを介してエージェントの外部アクセスを設定する。",
+      "移行後のエージェントの動作とパフォーマンスをテストし、デバッグする。"
+    ],
+    "prompt": "LangGraphエージェントのPythonコードをBedrock AgentCoreのRuntimeに適合させるための変更点を提案してください。特に、エージェントの入出力とツール呼び出し部分に焦点を当ててください。",
+    "tags": [
+      "LangGraph",
+      "Bedrock AgentCore",
+      "エージェント開発",
+      "本番移行",
+      "AWS"
+    ],
+    "id": "20260904_061500_02",
+    "date": "2026-09-04",
+    "source_news": {
+      "title": "LangGraphエージェントをBedrock AgentCoreへ移行する方法",
+      "url": "https://aws.amazon.com/blogs/machine-learning/migrate-agentic-workloads-to-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Bedrock AgentCoreで機能設計とコード生成",
+    "news_highlight": "Bedrock AgentCoreがAI-DLCの概念をコード化、2つの参照実装で開発効率を向上",
+    "problem_context": "AI-DLCにおける概念からコードへの変換の困難さ",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "AI-DLCの概念をコード化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のAPI設計と実装コードのひな形が欲しい時",
+      "既存システムの改修で、影響範囲を考慮したコード変更案が欲しい時",
+      "複雑なビジネスロジックをコードに落とし込む初期段階"
+    ],
+    "steps": [
+      "1. 新機能の要件定義書や概要を準備する",
+      "2. Bedrock AgentCoreに要件をインプットし、設計案を依頼する",
+      "3. 生成されたAPI定義やクラス構造などの設計案を確認・承認する",
+      "4. 承認した設計に基づき、AgentCoreに実装コードの生成を依頼する",
+      "5. 生成されたコードを開発環境でテストし、必要に応じて修正する"
+    ],
+    "prompt": "新しいユーザー管理機能のAPI設計とPythonコードを生成してください。ユーザー登録、ログイン、プロフィール更新、ユーザー削除のエンドポイントを含み、FastAPIフレームワークを使用してください。",
+    "tags": [
+      "AI-DLC",
+      "コード生成",
+      "設計",
+      "Bedrock",
+      "エージェント"
+    ],
+    "id": "20260904_061528_03",
+    "date": "2026-09-04",
+    "source_news": {
+      "title": "Bedrock AgentCoreでAI駆動開発ライフサイクルを構築",
+      "url": "https://aws.amazon.com/blogs/machine-learning/ai-driven-development-lifecycle-using-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Google PicsでUIモックアップ生成",
     "news_highlight": "Google Workspaceに画像生成・編集機能「Google Pics」が提供開始",
     "problem_context": "新機能のUIモックアップ作成の手間",
@@ -19330,121 +19450,6 @@
     "source_news": {
       "title": "SageMaker AIエンドポイントのメトリクス強化で性能監視向上。",
       "url": "https://aws.amazon.com/blogs/machine-learning/enhanced-metrics-for-amazon-sagemaker-ai-endpoints-deeper-visibility-for-better-performance/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
-    }
-  },
-  {
-    "title": "NVIDIA Nemotron 3 Superでコード生成",
-    "news_highlight": "NVIDIA Nemotron 3 SuperがAmazon Bedrockで利用可能に。高性能LLMで開発効率向上。",
-    "problem_context": "新規機能のコード生成を効率化したい",
-    "recommended_ai": {
-      "model": "NVIDIA Nemotron 3 Super",
-      "reason": "高性能なコード生成能力",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいAPIエンドポイントのコードを生成したい時",
-      "既存の関数を別の言語やフレームワークに変換したい時",
-      "特定のアルゴリズムを実装するコードのひな形が欲しい時"
-    ],
-    "steps": [
-      "1. BedrockコンソールでNemotron 3 Superを選択",
-      "2. 実装したい機能の要件を具体的に記述",
-      "3. 生成されたコードを開発環境にコピー＆ペースト",
-      "4. コードをテストし、必要に応じて修正"
-    ],
-    "prompt": "PythonとFastAPIを使って、ユーザー認証（ログイン、登録）を行うAPIエンドポイントを生成してください。データベースはPostgreSQLを使用し、パスワードはハッシュ化してください。",
-    "tags": [
-      "コード生成",
-      "API開発",
-      "Bedrock",
-      "LLM"
-    ],
-    "id": "20260322_061116_03",
-    "date": "2026-03-22",
-    "source_news": {
-      "title": "NVIDIA Nemotron 3 SuperがAmazon Bedrockで利用可能に。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/run-nvidia-nemotron-3-super-on-amazon-bedrock/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "GPT-5.4 mini/nanoで高速コードレビュー",
-    "news_highlight": "GPT-5.4 mini/nanoはコーディング最適化された高速版、API/サブエージェント向け",
-    "problem_context": "大規模コードベースの高速な品質チェック",
-    "recommended_ai": {
-      "model": "GPT-5.4 mini/nano",
-      "reason": "コーディング最適化と高速性",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プルリクエストを出す前に自分のコードをレビューしたい時",
-      "既存のレガシーコードの改善点を素早く見つけたい時",
-      "新しいライブラリ導入時のコード規約適合性を確認したい時"
-    ],
-    "steps": [
-      "1. レビューしたいコードブロックをコピーする",
-      "2. AIチャットに貼り付け、プロンプトを入力する",
-      "3. AIの提案を読み、改善点や潜在バグを確認する",
-      "4. 提案された修正を適用し、テストを実行する"
-    ],
-    "prompt": "以下のTypeScriptコードをレビューし、パフォーマンス、セキュリティ、可読性の観点から改善点を提案してください。潜在的なバグも指摘してください。",
-    "tags": [
-      "コードレビュー",
-      "パフォーマンス改善",
-      "セキュリティ",
-      "デバッグ"
-    ],
-    "id": "20260321_061249_01",
-    "date": "2026-03-21",
-    "source_news": {
-      "title": "GPT-5.4 mini/nano発表、コーディング等に最適化された高速版",
-      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Holotron-12Bで並列タスク処理を最適化",
-    "news_highlight": "Holotron-12Bは高スループットAIエージェント、並列処理性能を大幅向上",
-    "problem_context": "AIエージェントの処理遅延やリソース不足を解消",
-    "recommended_ai": {
-      "model": "Holotron-12B",
-      "reason": "高スループットで並列処理に強い",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "複数のマイクロサービス連携処理を高速化したい時",
-      "CI/CDパイプラインで並列テストを効率化したい時",
-      "大量のログデータからリアルタイムで異常検知したい時"
-    ],
-    "steps": [
-      "1. Holotron-12BのAPIキーを取得し、開発環境に設定する",
-      "2. 並列処理したいタスク群を定義した設定ファイル（例: YAML）を作成する",
-      "3. Holotron-12BのSDK/APIを使い、設定ファイルを指定して処理をキックする",
-      "4. 処理結果を監視し、パフォーマンスボトルネックがあれば設定を調整する"
-    ],
-    "prompt": "以下の複数のAPIレスポンスデータを並列で解析し、共通するパターンと異常値を特定してください。結果は要約と詳細リストで出力。",
-    "tags": [
-      "高スループット",
-      "AIエージェント"
-    ],
-    "id": "20260321_061317_02",
-    "date": "2026-03-21",
-    "source_news": {
-      "title": "Holotron-12Bリリース、高スループットなAIエージェント",
-      "url": "https://huggingface.co/blog/Hcompany/holotron-12b"
     },
     "article": null,
     "visual_theme": {
