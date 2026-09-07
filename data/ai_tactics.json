@@ -1,5 +1,124 @@
 [
   {
+    "title": "GPT-6 Astraで技術文書高速レビュー",
+    "news_highlight": "GPT-6 Astraが金融文書レビューで40%性能向上、数分で41文書を処理しエラー検出。",
+    "problem_context": "複雑な技術文書のレビュー時間短縮と精度向上",
+    "recommended_ai": {
+      "model": "GPT-6 Astra",
+      "reason": "高速処理と高精度なエラー検出",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードの設計意図をレビューしたい時",
+      "新しいライブラリのドキュメントから重要な変更点を素早く抽出したい時",
+      "既存システムの設計書から潜在的な不整合や改善点を見つけたい時"
+    ],
+    "steps": [
+      "レビューしたい技術文書（設計書、仕様書、コードコメントなど）を準備する。",
+      "文書の内容をAIに貼り付けるか、ファイルとしてアップロードする。",
+      "レビューの目的（例：潜在的なバグ、不整合、改善点）を明確に指示する。",
+      "AIの提案を検討し、必要に応じて修正や追加の質問を行う。"
+    ],
+    "prompt": "以下の技術仕様書をレビューし、潜在的な不整合、曖昧な記述、または改善すべき点を指摘してください。特にセキュリティ関連の記述に注目してください。",
+    "tags": [
+      "レビュー",
+      "ドキュメント分析",
+      "品質保証",
+      "高速化"
+    ],
+    "id": "20260908_061406_01",
+    "date": "2026-09-08",
+    "source_news": {
+      "title": "GPT-6 Astraが金融文書レビューで40%性能向上、高速処理。",
+      "url": "https://openai.com/index/legora-financial-statement-review-with-astra"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "350Mモデルで構造化出力改善",
+    "news_highlight": "TRLと100GRPOステップで350Mモデルの構造化出力が大幅改善",
+    "problem_context": "AIモデルの出力が不安定で解析しにくい",
+    "recommended_ai": {
+      "model": "350Mモデル (TRL適用)",
+      "reason": "構造化出力の精度と安定性向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "APIレスポンスとしてJSONを生成する際",
+      "ログデータから特定の情報を抽出・整形する際",
+      "設定ファイルやスクリプトを特定のフォーマットで生成する際"
+    ],
+    "steps": [
+      "1. AIに特定の構造化データ生成を依頼",
+      "2. 生成されたデータをスキーマやバリデータで検証",
+      "3. 不備があれば具体的な修正指示をプロンプトに追加",
+      "4. 修正されたデータをシステムに組み込みテスト"
+    ],
+    "prompt": "以下の情報を元に、ユーザー情報を示すJSONオブジェクトを生成してください。名前、メール、役割、最終ログイン日時を含め、キーはスネークケースで記述してください。",
+    "tags": [
+      "構造化出力",
+      "TRL",
+      "GRPO",
+      "JSON生成",
+      "AIモデルチューニング"
+    ],
+    "id": "20260908_061434_02",
+    "date": "2026-09-08",
+    "source_news": {
+      "title": "TRLで350Mモデルを100GRPOステップで構造化出力改善。",
+      "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Bedrock/Textractで大規模文書解析RAG",
+    "news_highlight": "BedrockナレッジベースをTextractで大規模文書向けにカスタマイズ、高精度抽出と生成AIを統合",
+    "problem_context": "大規模文書からの高精度情報抽出とRAG精度向上",
+    "recommended_ai": {
+      "model": "Amazon Bedrock, Amazon Textract",
+      "reason": "大規模文書の高精度抽出と生成AI連携",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "契約書や技術仕様書から特定情報を抽出したい時",
+      "社内文書群から質問応答システムを構築したい時",
+      "PDF形式の報告書から主要な数値や結論を自動要約したい時"
+    ],
+    "steps": [
+      "1. Amazon Textractで大規模文書（PDF等）からテキストと構造情報を高精度に抽出する。",
+      "2. 抽出したテキストや構造化データをAmazon Bedrockナレッジベースのデータソースとして設定する。",
+      "3. BedrockのRAG機能を使い、抽出情報に基づいた質問応答システムを構築しテストする。",
+      "4. Textractの解析設定やBedrockのプロンプトを調整し、応答精度を最適化する。"
+    ],
+    "prompt": "Textractで抽出した以下のデータから、契約当事者名と契約期間を抽出して箇条書きで提示してください。データ: {\"Text\": \"契約書 当事者:A社,B社 期間:2023-2024\"}",
+    "tags": [
+      "RAG",
+      "ドキュメント解析",
+      "情報抽出",
+      "生成AI",
+      "AWS"
+    ],
+    "id": "20260908_061505_03",
+    "date": "2026-09-08",
+    "source_news": {
+      "title": "BedrockナレッジベースをTextractで大規模文書向けにカスタマイズ。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/customizing-your-knowledge-base-on-amazon-bedrock-for-large-and-complex-documents-using-amazon-textract/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Gemini 3.7 Flashで高速コード生成",
     "news_highlight": "Googleが新モデルGemini 3.7 Flashを発表、学生向け1年間無償プランを提供。",
     "problem_context": "開発中の簡単なコードを素早く生成したい",
@@ -19334,122 +19453,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "Bedrock Claudeでエンティティ認識を加速",
-    "news_highlight": "BedrockでClaude Tool use導入、設定・学習不要で動的エンティティ認識を加速",
-    "problem_context": "非構造化データからのエンティティ抽出が困難",
-    "recommended_ai": {
-      "model": "Claude Tool use on Amazon Bedrock",
-      "reason": "設定不要で高精度なエンティティ認識",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ログから異常なIPアドレスやユーザー名を抽出したい時",
-      "顧客問い合わせから製品名、機能、感情を抽出したい時",
-      "技術仕様書からAPIエンドポイントやパラメータを抽出したい時"
-    ],
-    "steps": [
-      "1. BedrockコンソールでClaude Tool useを有効化する。",
-      "2. 抽出したい非構造化テキストを用意する。",
-      "3. 抽出したいエンティティの型と説明を定義する。",
-      "4. Claude Tool use APIを呼び出し、結果を処理する。"
-    ],
-    "prompt": "以下の顧客問い合わせから、製品名、問題の種類、緊急度をJSON形式で抽出してください。製品名は'product_name'、問題は'issue_type'、緊急度は'urgency'とします。",
-    "tags": [
-      "エンティティ認識",
-      "情報抽出"
-    ],
-    "id": "20260326_061806_03",
-    "date": "2026-03-26",
-    "source_news": {
-      "title": "BedrockでClaudeのツール利用を導入、エンティティ認識を加速。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-custom-entity-recognition-with-claude-tool-use-in-amazon-bedrock/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "OpenAI Coding Agentでコードレビュー強化",
-    "news_highlight": "OpenAIがchain-of-thought監視でコーディングAgentの安全性とリスク検出を強化",
-    "problem_context": "AI生成コードの潜在リスク特定と安全性確保",
-    "recommended_ai": {
-      "model": "OpenAI Coding Agent",
-      "reason": "chain-of-thought監視で安全性を高めるため",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "AI生成コードのセキュリティレビュー時",
-      "AIが提案した設計の潜在リスク評価時",
-      "AIデバッグ支援の副作用確認時"
-    ],
-    "steps": [
-      "開発中の機能のコード生成をAIに依頼する。",
-      "AIに生成コードの各部分の意図と潜在リスクを詳細に説明させる。",
-      "AIの説明からセキュリティ脆弱性やバグの可能性を特定する。",
-      "特定したリスクに基づき、AIにコード修正案を依頼し適用する。"
-    ],
-    "prompt": "以下のコードをレビューし、各行の意図、潜在的なセキュリティリスク、バグの可能性をchain-of-thought形式で詳細に説明してください。",
-    "tags": [
-      "コードレビュー",
-      "AI安全性",
-      "セキュリティ",
-      "デバッグ"
-    ],
-    "id": "20260325_061806_01",
-    "date": "2026-03-25",
-    "source_news": {
-      "title": "OpenAIが内部コーディングAgentの安全性監視方法を公開。",
-      "url": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Amazon Bedrock AgentCoreでSlack連携CDK生成",
-    "news_highlight": "Amazon Bedrock AgentCoreとSlack統合をAWS CDKで構築、3つのLambda関数を活用。",
-    "problem_context": "Bedrock AgentCoreとSlack連携のインフラ構築",
-    "recommended_ai": {
-      "model": "Amazon Bedrock AgentCore",
-      "reason": "Slack連携のインフラ構築を支援",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "Bedrock AgentCoreとSlack連携の初期構築時",
-      "既存のCDKスタックにBedrock AgentCore連携を追加する時",
-      "Slackからの入力を処理するLambda関数の実装時"
-    ],
-    "steps": [
-      "1. Bedrock AgentCoreとSlack連携の要件を定義する。",
-      "2. 以下のプロンプトをAIに渡し、AWS CDKコードとLambda関数コードを生成させる。",
-      "3. 生成されたコードをAWS CDKプロジェクトに組み込み、デプロイする。",
-      "4. SlackとBedrock AgentCoreの連携テストを実施し、必要に応じてコードを修正する。"
-    ],
-    "prompt": "AWS CDK (TypeScript) を使用して、Amazon Bedrock AgentCoreとSlackを統合するインフラを構築してください。3つのLambda関数（Slackイベント処理、AgentCore呼び出し、応答送信）を含めてください。",
-    "tags": [
-      "AWS CDK",
-      "Lambda",
-      "Slack",
-      "Bedrock AgentCore",
-      "インフラ構築"
-    ],
-    "id": "20260325_061833_02",
-    "date": "2026-03-25",
-    "source_news": {
-      "title": "Amazon Bedrock AgentCoreとSlackの統合方法を解説。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/integrating-amazon-bedrock-agentcore-with-slack/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
     }
   }
 ]
