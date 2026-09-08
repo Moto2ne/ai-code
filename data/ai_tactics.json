@@ -1,5 +1,123 @@
 [
   {
+    "title": "TRL/GRPOで構造化出力モデルを構築",
+    "news_highlight": "TRL/GRPOで3.5億モデルを100ステップで構造化出力にファインチューニング。",
+    "problem_context": "大規模モデルの構造化出力調整の効率化",
+    "recommended_ai": {
+      "model": "TRL/GRPO (Hugging Face TRL)",
+      "reason": "効率的な構造化出力ファインチューニング",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "APIレスポンスをJSONスキーマに準拠させたい時",
+      "非構造化ログから特定情報を抽出したい時",
+      "自然言語からDBクエリを生成したい時"
+    ],
+    "steps": [
+      "1. 目的の構造化出力スキーマを定義する。",
+      "2. 構造化出力の入出力ペアデータセットを作成する。",
+      "3. TRL/GRPOライブラリで基盤モデルとデータセットを設定する。",
+      "4. 100ステップ程度の学習でモデルをファインチューニングする。",
+      "5. ファインチューニング後のモデルで構造化出力をテストする。"
+    ],
+    "prompt": "以下のJSONスキーマに従い、ユーザーの質問に対する回答を生成してください。スキーマ: {\"topic\": \"string\", \"summary\": \"string\", \"keywords\": [\"string\"]}",
+    "tags": [
+      "LLM",
+      "ファインチューニング",
+      "構造化出力",
+      "MLOps"
+    ],
+    "id": "20260909_061312_01",
+    "date": "2026-09-09",
+    "source_news": {
+      "title": "TRLとGRPOで3.5億モデルを100ステップで構造化出力にファインチューニング。",
+      "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Hugging Face Funesで長期コード修正",
+    "news_highlight": "Hugging Faceがコーディングエージェントに独自の記憶機能Funesを導入し、長期的な文脈理解を強化。",
+    "problem_context": "複雑なコード修正でAIが文脈を忘れがち",
+    "recommended_ai": {
+      "model": "Hugging Face Funes",
+      "reason": "長期的な記憶で文脈維持",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数ファイルにまたがる大規模なリファクタリング作業",
+      "過去の設計意図を踏まえた機能追加や変更",
+      "長時間かかる複雑なバグの特定と修正"
+    ],
+    "steps": [
+      "Funesを搭載したHugging Face Agentを起動する",
+      "プロジェクトのルートディレクトリを指定し、エージェントに読み込ませる",
+      "修正したい機能やバグの概要、関連するファイルを指示する",
+      "エージェントが提案する修正案をレビューし、必要に応じて追加の指示を与える"
+    ],
+    "prompt": "このプロジェクトの認証モジュールをリファクタリングし、セキュリティ強化と可読性向上を図ってください。既存のテストケースは維持してください。",
+    "tags": [
+      "コードリファクタリング",
+      "AIエージェント",
+      "長期記憶"
+    ],
+    "id": "20260909_061338_02",
+    "date": "2026-09-09",
+    "source_news": {
+      "title": "Hugging Faceがコーディングエージェントに独自の記憶機能Funesを導入。",
+      "url": "https://huggingface.co/blog/funes"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "NeoMMEで多言語マルチモーダル検索実装",
+    "news_highlight": "Hugging Face NeoMMEは効率的なマルチモーダル・多言語エンコーダーで、異なるモダリティ・言語間の意味関連性を高精度で捉える。",
+    "problem_context": "異なる言語・形式のデータ検索が非効率",
+    "recommended_ai": {
+      "model": "Hugging Face NeoMME",
+      "reason": "マルチモーダル・多言語対応",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ECサイトで画像とキーワード両方で商品を検索したい時",
+      "多言語対応のコンテンツ管理システムで関連コンテンツを推薦したい時",
+      "顧客からの問い合わせ（テキストとスクリーンショット）を自動分類したい時"
+    ],
+    "steps": [
+      "NeoMMEモデルをHugging Face Transformersからロードする。",
+      "検索対象の画像とテキストデータをNeoMMEで埋め込みベクトルに変換する。",
+      "ユーザー入力（画像またはテキスト）も同様にベクトル化する。",
+      "ベクトル間のコサイン類似度を計算し、類似度の高いデータを検索結果として提示する。"
+    ],
+    "prompt": "NeoMMEを使ったPythonでのマルチモーダル検索の実装コードを生成してください。画像パスとテキストクエリを受け取り、類似度順に結果を返す関数を含めてください。",
+    "tags": [
+      "マルチモーダル",
+      "多言語",
+      "検索",
+      "エンコーダー",
+      "Hugging Face"
+    ],
+    "id": "20260909_061404_03",
+    "date": "2026-09-09",
+    "source_news": {
+      "title": "Hugging Faceが効率的なマルチモーダル・多言語エンコーダーNeoMMEを発表。",
+      "url": "https://huggingface.co/blog/Hcompany/neomme"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-6 Astraで技術文書高速レビュー",
     "news_highlight": "GPT-6 Astraが金融文書レビューで40%性能向上、数分で41文書を処理しエラー検出。",
     "problem_context": "複雑な技術文書のレビュー時間短縮と精度向上",
@@ -19329,125 +19447,6 @@
     "source_news": {
       "title": "AIの悪用・安全リスク特定のためバグバウンティ開始。",
       "url": "https://openai.com/index/safety-bug-bounty"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
-    }
-  },
-  {
-    "title": "Bedrock GuardrailsでAI応答の安全設計",
-    "news_highlight": "Bedrock Guardrailsが年齢・文脈対応の安全なAI応答を自動生成し、責任あるAIデプロイを支援。",
-    "problem_context": "不適切なAI応答によるリスクを低減したい。",
-    "recommended_ai": {
-      "model": "Bedrock Guardrails",
-      "reason": "不適切応答を自動で抑制",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ユーザー向けAIチャットボットの応答を設計する時",
-      "社内向けAIアシスタントの出力が不適切でないか確認する時",
-      "特定の年齢層に合わせたAIコンテンツの安全性を検証する時"
-    ],
-    "steps": [
-      "1. Bedrock Guardrailsのポリシー設定画面を開く",
-      "2. ターゲットユーザーの年齢層や文脈に応じたルールを定義する",
-      "3. 不適切と判断されるキーワードや表現を登録する",
-      "4. 設定したGuardrailsをAIモデルに適用し、テストする"
-    ],
-    "prompt": "あなたは顧客サポートAIです。ユーザーの年齢層が10代であることを考慮し、不適切な言葉遣いを避け、親しみやすいトーンで質問に答えてください。質問：『このゲームは面白い？』",
-    "tags": [
-      "AI倫理",
-      "コンテンツモデレーション",
-      "AWS",
-      "セキュリティ"
-    ],
-    "id": "20260327_061507_03",
-    "date": "2026-03-27",
-    "source_news": {
-      "title": "Bedrock Guardrailsで年齢・文脈対応の安全なAIを構築。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/building-age-responsive-context-aware-ai-with-amazon-bedrock-guardrails/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "SageMakerでGPU予約し推論エンドポイントを効率デプロイ",
-    "news_highlight": "SageMakerでp-family GPU容量を予約し、AI推論エンドポイントを効率的にデプロイ可能",
-    "problem_context": "GPUリソース確保と推論エンドポイントの効率的デプロイ",
-    "recommended_ai": {
-      "model": "SageMaker",
-      "reason": "GPU容量予約とデプロイを統合",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "大規模モデルの推論環境を構築する際",
-      "急なトラフィック増加に備えGPUリソースを確保したい時",
-      "推論コストを最適化しつつ安定稼働させたい時"
-    ],
-    "steps": [
-      "1. AWSマネジメントコンソールでSageMakerを開く。",
-      "2. 「トレーニングプラン」から「予約」を選択し、p-family GPU容量を検索。",
-      "3. 必要なGPUタイプと期間を指定し、推論用予約を作成。",
-      "4. 予約した容量に紐づけてSageMaker推論エンドポイントをデプロイ。"
-    ],
-    "prompt": "SageMakerで予約したp4d.24xlargeインスタンス向けに、PyTorchモデルの推論エンドポイントをデプロイするCloudFormationテンプレートを生成してください。",
-    "tags": [
-      "AWS",
-      "SageMaker",
-      "GPU",
-      "推論",
-      "デプロイ",
-      "リソース管理"
-    ],
-    "id": "20260326_061713_01",
-    "date": "2026-03-26",
-    "source_news": {
-      "title": "SageMakerでGPU容量を予約し、AI推論エンドポイントを効率的にデプロイ。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-sagemaker-ai-inference-endpoints-with-set-gpu-capacity-using-training-plans/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Hugging Face Transformersでドメイン特化埋め込みモデル構築",
-    "news_highlight": "既存の汎用埋め込みモデルを1日未満でドメイン特化型にファインチューニングする手法が発表された。",
-    "problem_context": "特定のドメインで埋め込みモデルの精度が低い",
-    "recommended_ai": {
-      "model": "Gemini 1.5 Pro",
-      "reason": "ファインチューニングコード生成に最適",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "RAGシステムで検索精度を向上させたい時",
-      "特定の業界用語に特化した文書分類を行いたい時",
-      "類似商品推薦システムでドメイン特化の推薦精度を高めたい時"
-    ],
-    "steps": [
-      "ファインチューニングしたいドメインのテキストデータ（例: 質問と回答ペア、類似文書ペア）を準備する。",
-      "ベースとなる汎用埋め込みモデル（例: `sentence-transformers/all-MiniLM-L6-v2`）を選定する。",
-      "Gemini 1.5 Proに、選定したモデルとデータセットを用いたファインチューニングコード生成を依頼する。",
-      "生成されたPythonコードを実行し、ドメイン特化型埋め込みモデルを構築・評価する。"
-    ],
-    "prompt": "Hugging Face TransformersライブラリとSentence Transformersフレームワークを使用し、`sentence-transformers/all-MiniLM-L6-v2`モデルを、CSV形式の質問と回答ペアデータでファインチューニングするPythonコードを生成してください。コントラスト学習を適用し、評価指標としてコサイン類似度を使用してください。",
-    "tags": [
-      "埋め込みモデル",
-      "ファインチューニング",
-      "RAG",
-      "Hugging Face"
-    ],
-    "id": "20260326_061740_02",
-    "date": "2026-03-26",
-    "source_news": {
-      "title": "1日未満でドメイン特化型埋め込みモデルを構築する手法。",
-      "url": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune"
     },
     "article": null,
     "visual_theme": {
