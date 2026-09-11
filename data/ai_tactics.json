@@ -1,5 +1,123 @@
 [
   {
+    "title": "SageMaker HyperPodで推論コールドスタート削減",
+    "news_highlight": "SageMaker HyperPodがモデルキャッシングをサポート、推論コールドスタートを削減しNVMeからの高速ロードを実現。",
+    "problem_context": "MLモデル推論のコールドスタート時間短縮",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "設定コード生成と最適化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいMLモデルを本番環境にデプロイする際",
+      "推論APIのレイテンシを改善したい時",
+      "オートスケーリング時の初期起動時間を短縮したい時"
+    ],
+    "steps": [
+      "SageMaker HyperPodクラスター設定ファイルを開く。",
+      "モデルキャッシング関連のパラメータを特定する。",
+      "AIに最適な設定コード（CloudFormation/Terraform）生成を依頼。",
+      "生成コードを適用し、デプロイ後のパフォーマンスを監視。"
+    ],
+    "prompt": "SageMaker HyperPodでモデルキャッシングを有効化するCloudFormationテンプレートを生成。モデル重みとコンテナイメージの事前ロード設定を含めてください。",
+    "tags": [
+      "SageMaker",
+      "HyperPod",
+      "MLOps",
+      "推論最適化",
+      "コールドスタート"
+    ],
+    "id": "20260912_061342_01",
+    "date": "2026-09-12",
+    "source_news": {
+      "title": "SageMaker HyperPodでモデルキャッシングにより推論コールドスタートを削減。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-inference-cold-starts-on-amazon-sagemaker-hyperpod-with-model-caching/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "SageMaker InferenceでLLMデプロイ最適化",
+    "news_highlight": "SageMaker Inferenceがprefix-aware routingでLLMレイテンシを削減、KVキャッシュをウォームに保つ。",
+    "problem_context": "LLM推論のレイテンシが高く、ユーザー体験が悪い。",
+    "recommended_ai": {
+      "model": "Amazon SageMaker Inference",
+      "reason": "LLM推論のレイテンシを効率的に削減",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "LLMアプリケーションのデプロイ設定を最適化したい時",
+      "LLM推論のレイテンシ改善策を検討したい時",
+      "大規模LLMサービスのスケーラビリティを向上させたい時"
+    ],
+    "steps": [
+      "SageMaker Inferenceのエンドポイント設定を確認する。",
+      "prefix-aware routingが有効になっているか、または設定可能か確認する。",
+      "LLMアプリケーションのトラフィックパターンを分析し、共通のプロンプトプレフィックスを特定する。",
+      "必要に応じてエンドポイント設定を更新し、prefix-aware routingを適用してレイテンシを測定する。"
+    ],
+    "prompt": "SageMaker InferenceでLLMエンドポイントをデプロイする際、prefix-aware routingを有効にするためのAWS CLIコマンドと、その設定がKVキャッシュに与える影響について教えてください。",
+    "tags": [
+      "LLMデプロイ",
+      "レイテンシ最適化",
+      "SageMaker",
+      "インフラ"
+    ],
+    "id": "20260912_061409_02",
+    "date": "2026-09-12",
+    "source_news": {
+      "title": "SageMaker Inferenceでprefix-aware routingによりLLMレイテンシを削減。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-llm-latency-with-prefix-aware-routing-on-amazon-sagemaker-inference/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "ChatGPTのHabitatで分散DB設計",
+    "news_highlight": "ChatGPTのHabitatが10億ユーザー、22M req/secを支える分散ストレージへ進化",
+    "problem_context": "大規模サービス向けデータストアの設計課題",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "大規模システム設計とコード最適化に強み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規サービスで高スケーラビリティなデータストアを設計する時",
+      "既存システムのデータアクセス層のパフォーマンス改善を検討する時",
+      "分散トランザクションやデータ一貫性の課題を解決する時"
+    ],
+    "steps": [
+      "1. 現在のシステム要件（ユーザー数、rps、データ量）をまとめる",
+      "2. AIに要件と既存アーキテクチャの概要を提示する",
+      "3. 提案された分散データストアの設計案や最適化戦略を評価する",
+      "4. 提案に基づき、PoCコードや設計ドキュメントを作成する"
+    ],
+    "prompt": "10億ユーザー、22M req/secを想定した、高可用性・低遅延な分散データストアのアーキテクチャ設計を提案してください。データモデルとスケーリング戦略を含めてください。",
+    "tags": [
+      "分散システム",
+      "データベース設計",
+      "スケーラビリティ",
+      "パフォーマンス最適化"
+    ],
+    "id": "20260912_061436_03",
+    "date": "2026-09-12",
+    "source_news": {
+      "title": "OpenAIが10億ChatGPTユーザーを支えるストレージを効率的にスケーリング。",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "GPT-Live-1 APIで音声対話UX設計",
     "news_highlight": "GPT-Live-1 APIは全二重音声会話、カスタム音声、電話サポートをAPIで提供",
     "problem_context": "音声対話UXの自然さ・カスタム性向上",
@@ -19349,123 +19467,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "Gemini 3.1 Flashで音声UIプロトタイプ生成",
-    "news_highlight": "Gemini 3.1 FlashでオーディオAIがより自然で高信頼に進化。",
-    "problem_context": "自然な音声UIのプロトタイプ作成が困難。",
-    "recommended_ai": {
-      "model": "Gemini 3.1 Flash",
-      "reason": "自然で高信頼なオーディオAI機能強化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "音声コマンド機能のプロトタイプを迅速に作成したい時",
-      "ユーザー向け音声ガイドのスクリプトと音声を生成したい時",
-      "既存アプリの音声応答をより自然に改善したい時"
-    ],
-    "steps": [
-      "音声UIで実現したい機能や対話シナリオをテキストで記述する。",
-      "Gemini 3.1 FlashのAPIまたはUIにシナリオをプロンプトとして入力する。",
-      "生成された音声応答や対話フローを確認し、必要に応じて調整する。",
-      "プロトタイプをチームやユーザーと共有し、フィードバックを得る。"
-    ],
-    "prompt": "スマートホームアプリの音声コマンドUIプロトタイプを作成してください。ユーザーが「電気をつけて」と言ったら「どの部屋の電気ですか？」と応答し、部屋名を言ったら「〇〇の電気をつけます」と応答するシナリオを生成してください。",
-    "tags": [
-      "音声UI",
-      "プロトタイピング",
-      "オーディオAI",
-      "UXデザイン"
-    ],
-    "id": "20260330_061412_03",
-    "date": "2026-03-30",
-    "source_news": {
-      "title": "Gemini 3.1 Flash Live発表、オーディオAIがより自然で高信頼に",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
-    }
-  },
-  {
-    "title": "Amazon Pollyでリアルタイム会話AIプロトタイプ開発",
-    "news_highlight": "Amazon Pollyが双方向ストリーミングAPIを導入、リアルタイムTTSで会話型AIを強化。",
-    "problem_context": "会話型AIの応答遅延と自然な対話の実現。",
-    "recommended_ai": {
-      "model": "Amazon Polly Bidirectional Streaming API",
-      "reason": "リアルタイムTTSで会話の遅延を解消。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "顧客サポートチャットボットの音声応答をリアルタイム化したい時",
-      "音声アシスタントのプロトタイプで自然な対話フローを検証したい時",
-      "ゲーム内のNPCにリアルタイムで動的なセリフを話させたい時"
-    ],
-    "steps": [
-      "1. AWS SDKをプロジェクトに導入し、Pollyクライアントを初期化する。",
-      "2. Bidirectional Streaming APIを使用してテキストを送信するストリームを開く。",
-      "3. テキストデータをリアルタイムでストリームに書き込み、同時に音声データを受信する。",
-      "4. 受信した音声データを再生し、会話の遅延がないかテストする。"
-    ],
-    "prompt": "Amazon Polly Bidirectional Streaming APIを使って、ユーザーからのテキスト入力に応じてリアルタイムで音声応答を生成し再生するPythonコードを記述してください。",
-    "tags": [
-      "リアルタイムTTS",
-      "会話型AI",
-      "Amazon Polly",
-      "音声合成"
-    ],
-    "id": "20260329_061222_01",
-    "date": "2026-03-29",
-    "source_news": {
-      "title": "リアルタイム音声合成APIで会話型AIを強化",
-      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-polly-bidirectional-streaming-real-time-speech-synthesis-for-conversational-ai/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Gemini 3.1 Flashで音声認識精度向上",
-    "news_highlight": "Gemini 3.1 FlashはオーディオAIをより自然で信頼性高く改善",
-    "problem_context": "既存音声認識の誤認識率が高い",
-    "recommended_ai": {
-      "model": "Gemini 3.1 Flash",
-      "reason": "オーディオAI改善のため",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "音声コマンドシステムの誤認識を減らしたい時",
-      "議事録自動作成の認識精度を上げたい時",
-      "カスタマーサポートの音声ボットの応答を改善したい時"
-    ],
-    "steps": [
-      "1. 既存の音声認識ログから誤認識が多いフレーズを特定する",
-      "2. Gemini 3.1 Flash APIのドキュメントを確認し、音声認識の利用方法を把握する",
-      "3. 誤認識フレーズをGemini 3.1 Flashでテストし、認識結果を比較する",
-      "4. 改善が見られる場合、既存システムへのGemini 3.1 Flash導入を検討する"
-    ],
-    "prompt": "既存の音声認識システムで「会議の議事録」が「会議の疑似録」と誤認識されました。Gemini 3.1 Flashでこの誤認識を避けるためのAPI利用時の推奨設定や、考慮すべき点を提案してください。",
-    "tags": [
-      "音声認識",
-      "API連携",
-      "品質改善",
-      "Gemini"
-    ],
-    "id": "20260329_061250_02",
-    "date": "2026-03-29",
-    "source_news": {
-      "title": "Gemini 3.1 Flash Live: オーディオAIをより自然で信頼性高く改善",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
     }
   }
 ]
