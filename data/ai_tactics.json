@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-6 AstraでDevinテスト強化しコードレビュー削減",
+    "news_highlight": "GPT-6 AstraがDevinのテスト能力を強化、コードレビュー削減とリリース加速へ",
+    "problem_context": "コードレビューの負担軽減とテスト品質向上",
+    "recommended_ai": {
+      "model": "GPT-6 Astra",
+      "reason": "Devinテスト能力を強化するため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエスト提出前の自己テストを強化したい時",
+      "複雑なロジックのテストケースを網羅したい時",
+      "CI/CDパイプラインでの自動テストの質を高めたい時"
+    ],
+    "steps": [
+      "Devinにテストしたい機能のコードと関連する要件を提示する。",
+      "DevinがGPT-6 Astraを活用し、テストケースを生成・実行する。",
+      "Devinが生成したテスト結果とカバレッジレポートを確認する。",
+      "レポートに基づき、Devinが指摘した問題点や改善点を修正し、コードを承認する。"
+    ],
+    "prompt": "以下のTypeScriptで書かれた認証モジュールについて、単体テストと統合テストを網羅的に作成し、実行結果とカバレッジを報告してください。",
+    "tags": [
+      "コードレビュー",
+      "テスト自動化",
+      "品質保証"
+    ],
+    "id": "20260913_061359_01",
+    "date": "2026-09-13",
+    "source_news": {
+      "title": "GPT-6 AstraがDevinのテストを強化、コードレビュー削減へ",
+      "url": "https://openai.com/index/cognition-devin-testing-with-astra"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "SageMakerでLLM推論遅延を3.5倍削減",
+    "news_highlight": "SageMakerがprefix-aware routingでLLM推論遅延を最大3.5倍削減。",
+    "problem_context": "LLM推論の応答遅延とコストの最適化",
+    "recommended_ai": {
+      "model": "Amazon SageMaker Inference",
+      "reason": "LLM推論遅延を直接改善",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザー向けチャットボットの応答速度を改善したい時",
+      "リアルタイム性が求められるLLMアプリケーションを開発する時",
+      "LLM推論のインフラコストを最適化したい時"
+    ],
+    "steps": [
+      "1. SageMakerコンソールで既存のLLMエンドポイント設定を確認する",
+      "2. 新規デプロイ時、prefix-aware routingが有効になる設定でエンドポイントを作成する",
+      "3. 既存エンドポイントの場合、設定を更新しトラフィックを段階的に移行する",
+      "4. パフォーマンステストを実施し、遅延削減効果とコストを評価する"
+    ],
+    "prompt": "SageMaker Python SDKを使用して、Llama 2 7Bモデルをデプロイし、prefix-aware routingを有効にするエンドポイント設定コードを生成してください。",
+    "tags": [
+      "LLM",
+      "SageMaker",
+      "推論最適化",
+      "コスト削減"
+    ],
+    "id": "20260913_061424_02",
+    "date": "2026-09-13",
+    "source_news": {
+      "title": "SageMakerがLLM推論遅延を最大3.5倍削減する新ルーティング",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-llm-latency-with-prefix-aware-routing-on-amazon-sagemaker-inference/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCore EvaluationsでマルチAI監視",
+    "news_highlight": "Amazon Bedrock AgentCore EvaluationsがマルチAIエージェントの監視と品質評価にデュアルレイヤーアプローチを導入し、安全性と信頼性を向上。",
+    "problem_context": "マルチAIエージェントの監視と品質評価が困難。",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore Evaluations",
+      "reason": "マルチAIの監視・評価に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プロダクション環境のマルチAIエージェントの異常検知を自動化したい時",
+      "新しいAIエージェントのデプロイ前に品質と安全性を検証したい時",
+      "AIエージェントのパフォーマンス低下の原因を特定したい時"
+    ],
+    "steps": [
+      "Amazon BedrockコンソールでAgentCore Evaluationsを設定する。",
+      "監視対象のマルチAIエージェントと評価メトリクス（例: 応答品質、安全性スコア）を定義する。",
+      "デュアルレイヤー監視（リアルタイム監視と定期的な詳細評価）を有効にする。",
+      "評価結果に基づいてアラートを設定し、異常を検知した際に自動で通知を受け取る。"
+    ],
+    "prompt": "Amazon Bedrock AgentCore Evaluationsで、本番環境のマルチAIエージェントの応答品質と安全性スコアを継続的に監視し、異常を検知した際に開発チームに通知する設定を構成してください。",
+    "tags": [
+      "マルチAI",
+      "監視",
+      "品質評価",
+      "安全性",
+      "Bedrock"
+    ],
+    "id": "20260913_061448_03",
+    "date": "2026-09-13",
+    "source_news": {
+      "title": "マルチAIエージェントの監視・品質評価で安全性向上",
+      "url": "https://aws.amazon.com/blogs/machine-learning/monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "SageMaker HyperPodで推論コールドスタート削減",
     "news_highlight": "SageMaker HyperPodがモデルキャッシングをサポート、推論コールドスタートを削減しNVMeからの高速ロードを実現。",
     "problem_context": "MLモデル推論のコールドスタート時間短縮",
@@ -19350,123 +19467,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "Gemini 3.1 Flashで音声UI設計",
-    "news_highlight": "Gemini 3.1 Flashで音声AIがより自然に、リアルタイム対話が強化",
-    "problem_context": "音声によるUI/UX設計の効率化",
-    "recommended_ai": {
-      "model": "Gemini 3.1 Flash",
-      "reason": "自然な音声AIが強化されたため",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規機能のUI/UXを音声でブレインストーミングしたい時",
-      "アクセシビリティ対応の音声インターフェースを設計する時",
-      "複雑なシステム設計のアイデアを口頭でAIに伝えたい時"
-    ],
-    "steps": [
-      "Gemini 3.1 Flashの音声入力機能を有効にする。",
-      "設計したいUI/UXのコンセプトを口頭でAIに説明する。",
-      "AIが生成した設計案（テキスト、コードの骨子など）を確認する。",
-      "必要に応じて音声でフィードバックし、設計を洗練させる。"
-    ],
-    "prompt": "ユーザーが音声で操作できるスマートホームデバイスのUI設計を提案してください。リビングの照明、エアコン、テレビの操作を含み、自然な対話フローとエラーハンドリングも考慮してください。",
-    "tags": [
-      "設計",
-      "音声AI",
-      "UI/UX",
-      "多モーダル"
-    ],
-    "id": "20260331_062110_03",
-    "date": "2026-03-31",
-    "source_news": {
-      "title": "Gemini 3.1 Flash Live発表、音声AIがより自然に",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
-    }
-  },
-  {
-    "title": "Hugging Face EVAで音声エージェント評価",
-    "news_highlight": "Hugging Faceが音声エージェントの意図理解、応答適切性、会話の流れを多角的に評価する新フレームワークEVAを発表。",
-    "problem_context": "音声エージェントの客観的・総合的な評価が困難。",
-    "recommended_ai": {
-      "model": "Hugging Face EVA",
-      "reason": "音声エージェントの総合評価を標準化。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "音声エージェントの新規開発時に性能目標を設定する時",
-      "既存の音声エージェントの改善点を特定する時",
-      "複数の音声エージェントモデルを比較選定する時"
-    ],
-    "steps": [
-      "1. 評価したい音声エージェントのログデータ（ユーザー発話、エージェント応答）を準備する。",
-      "2. EVAフレームワークの評価スクリプトをHugging Face Hubから取得する。",
-      "3. ログデータをEVAフレームワークに入力し、評価を実行する。",
-      "4. 出力された評価レポートを分析し、意図理解度や応答適切性などの改善点を特定する。"
-    ],
-    "prompt": "Hugging Face EVAの評価レポートから、意図理解度が低いと判明しました。この音声エージェントの意図理解モデルの改善策をPythonコードで提案してください。",
-    "tags": [
-      "音声AI",
-      "評価",
-      "品質保証",
-      "Hugging Face"
-    ],
-    "id": "20260330_061318_01",
-    "date": "2026-03-30",
-    "source_news": {
-      "title": "音声エージェント評価の新フレームワークEVAをHugging Faceが発表",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/eva"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "OpenClawでロボット制御コード生成",
-    "news_highlight": "Hugging Faceがロボット操作のオープンソースOpenClawを発表、汎用ロボット制御を支援",
-    "problem_context": "ロボット制御コードの記述が複雑で開発効率が低い",
-    "recommended_ai": {
-      "model": "OpenClaw",
-      "reason": "Hugging Face提供の汎用ロボット制御",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいロボットアームの制御プロトタイプを開発する時",
-      "ロボットの特定のタスクを自動化するアルゴリズムを検証する時",
-      "AIモデルと連携するロボットの動作をシミュレーションする時"
-    ],
-    "steps": [
-      "1. OpenClawの環境をローカルにセットアップする",
-      "2. AIにロボットのタスクと目標を具体的に記述して制御コードの生成を依頼する",
-      "3. 生成されたPythonコードをOpenClawのフレームワークに組み込む",
-      "4. シミュレーション環境または実機で動作検証を行い、必要に応じて調整する"
-    ],
-    "prompt": "OpenClawフレームワークとPythonを使用して、6軸ロボットアームが特定の物体をピックアップし、別の場所にプレースする制御コードを生成してください。",
-    "tags": [
-      "ロボット制御",
-      "オープンソース",
-      "Python",
-      "HuggingFace"
-    ],
-    "id": "20260330_061347_02",
-    "date": "2026-03-30",
-    "source_news": {
-      "title": "Hugging Faceがロボット操作のオープンソースプロジェクトOpenClawを発表",
-      "url": "https://huggingface.co/blog/liberate-your-openclaw"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
