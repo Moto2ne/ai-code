@@ -1,5 +1,123 @@
 [
   {
+    "title": "GPT-6 AstraでDevinのテストを強化しコードレビュー削減",
+    "news_highlight": "GPT-6 AstraがDevinのテスト能力を向上させ、コードレビュー工数を削減",
+    "problem_context": "テスト不足によるバグ、コードレビュー工数増大",
+    "recommended_ai": {
+      "model": "Devin (GPT-6 Astra搭載)",
+      "reason": "高度なテスト自動化と分析",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能開発時のテストケース自動生成",
+      "プルリクエスト提出前の自動回帰テスト実行と結果分析",
+      "既存コードの潜在バグ特定と修正提案"
+    ],
+    "steps": [
+      "Devinに新規機能の仕様書またはコードを提示",
+      "Devinにテストケースの生成と実行を指示",
+      "Devinが提示するテスト結果とコードレビュー削減提案を確認",
+      "必要に応じてDevinの提案を基にコードを修正し、再テスト"
+    ],
+    "prompt": "以下のTypeScript/Reactコンポーネントのテストケースを網羅的に生成し、実行してください。潜在的なバグや改善点を指摘し、コードレビューを効率化する提案をしてください。",
+    "tags": [
+      "テスト自動化",
+      "コードレビュー",
+      "Devin",
+      "GPT-6 Astra",
+      "品質保証"
+    ],
+    "id": "20260914_061305_01",
+    "date": "2026-09-14",
+    "source_news": {
+      "title": "GPT-6 AstraがDevinのテスト能力を向上、コードレビュー削減へ",
+      "url": "https://openai.com/index/cognition-devin-testing-with-astra"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Granite PatchTST-FM-r2で時系列予測",
+    "news_highlight": "IBMのSOTA時系列モデルGranite PatchTST-FM-r2は予測精度と異常検知能力を大幅向上。",
+    "problem_context": "時系列データ予測の精度向上と異常検知の自動化。",
+    "recommended_ai": {
+      "model": "Granite PatchTST-FM-r2",
+      "reason": "SOTA時系列予測に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "サーバーのCPU使用率を予測し、リソース増強計画を立てる時",
+      "IoTセンサーデータから機器故障の予兆を検知したい時",
+      "ECサイトの将来の売上を予測し、在庫を最適化したい時"
+    ],
+    "steps": [
+      "1. 予測したい時系列データをCSV形式で準備する（タイムスタンプと数値）。",
+      "2. IBM CloudのGranite PatchTST-FM-r2サービスにアクセスし、データセットをアップロード。",
+      "3. 予測期間、異常検知閾値などのパラメータを設定し、モデルを実行する。",
+      "4. 予測結果と異常検知アラートを確認し、システム運用やビジネス戦略に活用。"
+    ],
+    "prompt": "以下のCSV形式の時系列データ（timestamp, value）を用いて、Granite PatchTST-FM-r2で今後90日間の予測と異常検知を行うPythonスクリプトを生成してください。",
+    "tags": [
+      "時系列予測",
+      "異常検知",
+      "IBM",
+      "データ分析"
+    ],
+    "id": "20260914_061334_02",
+    "date": "2026-09-14",
+    "source_news": {
+      "title": "IBMがSOTA時系列モデルGranite PatchTST-FM-r2をリリース",
+      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "SageMakerでLLM推論レイテンシを最適化",
+    "news_highlight": "SageMaker Inferenceがprefix-aware routingでLLMレイテンシを最大2.5倍削減。",
+    "problem_context": "LLM推論の応答速度が遅い、コストが高い。",
+    "recommended_ai": {
+      "model": "Amazon SageMaker Inference",
+      "reason": "新機能でLLMレイテンシを削減可能。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存LLMアプリケーションのパフォーマンス改善時",
+      "新規LLMデプロイメントの設計時",
+      "LLM運用コストの最適化を検討する時"
+    ],
+    "steps": [
+      "1. 現在のSageMaker LLMエンドポイントのレイテンシを計測する。",
+      "2. SageMaker Inferenceのドキュメントでprefix-aware routingの設定方法を確認する。",
+      "3. 既存のLLMエンドポイント設定を更新し、prefix-aware routingを有効にする。",
+      "4. 更新後のエンドポイントで再度レイテンシを計測し、改善効果を評価する。"
+    ],
+    "prompt": "SageMakerのLLMエンドポイントでprefix-aware routingを有効化する具体的なAPI呼び出し例と設定パラメータを教えてください。",
+    "tags": [
+      "SageMaker",
+      "LLM",
+      "パフォーマンス最適化",
+      "デプロイメント"
+    ],
+    "id": "20260914_061359_03",
+    "date": "2026-09-14",
+    "source_news": {
+      "title": "SageMakerでLLMレイテンシを最大2.5倍削減する新機能",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-llm-latency-with-prefix-aware-routing-on-amazon-sagemaker-inference/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-6 AstraでDevinテスト強化しコードレビュー削減",
     "news_highlight": "GPT-6 AstraがDevinのテスト能力を強化、コードレビュー削減とリリース加速へ",
     "problem_context": "コードレビューの負担軽減とテスト品質向上",
@@ -19350,123 +19468,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
       "icon": "🚀"
-    }
-  },
-  {
-    "title": "Amazon Bedrock AgentCoreでFinOpsエージェント設計",
-    "news_highlight": "Amazon Bedrock AgentCoreでFinOpsエージェントを構築、複数AWSアカウントのコスト管理を自動化",
-    "problem_context": "複数AWSアカウントのコスト管理と最適化",
-    "recommended_ai": {
-      "model": "Amazon Bedrock AgentCore",
-      "reason": "FinOpsエージェント構築に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいAWSプロジェクトのコスト見積もり時",
-      "月次AWS利用料の異常値を検知したい時",
-      "コスト最適化の提案を自動生成したい時"
-    ],
-    "steps": [
-      "1. Bedrock AgentCoreで新しいエージェントを作成",
-      "2. AWS Cost Explorer APIを呼び出すAction Groupを定義",
-      "3. コスト最適化のナレッジベースを連携",
-      "4. エージェントの動作をテストしデプロイ"
-    ],
-    "prompt": "AWS Cost Explorer APIを利用し、複数アカウントの月次コストを分析し、コスト削減の提案を行うFinOpsエージェントを設計してください。",
-    "tags": [
-      "FinOps",
-      "AWS",
-      "コスト管理",
-      "エージェント",
-      "Bedrock"
-    ],
-    "id": "20260401_061917_03",
-    "date": "2026-04-01",
-    "source_news": {
-      "title": "Amazon Bedrock AgentCoreでFinOpsエージェントを構築する方法を解説。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-finops-agent-using-amazon-bedrock-agentcore/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "VLMでロボット空間計画の意思決定支援",
-    "news_highlight": "ロボット操作VLMの空間計画課題解決に向けた新ベンチマーク発表",
-    "problem_context": "VLMのロボット空間計画における意思決定の曖昧さ",
-    "recommended_ai": {
-      "model": "GPT-4V",
-      "reason": "高度な画像理解と推論で計画を補完",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ロボットの複雑なタスクシーケンスを設計する時",
-      "VLMが生成した行動計画の妥当性を検証する時",
-      "ロボットが予期せぬ状況で停止した原因を分析する時"
-    ],
-    "steps": [
-      "1. ロボットの現在の環境画像とVLMの計画出力を準備",
-      "2. GPT-4Vに画像と計画、タスク目標を提示",
-      "3. 計画の曖昧な点や改善点を具体的に質問",
-      "4. 提案された改善案をVLMの入力や後処理に適用しテスト"
-    ],
-    "prompt": "このロボット環境画像とVLMが生成した行動計画を見てください。タスク目標は「[目標]」です。計画で「何を」「どこで」実行するか曖昧な点を指摘し、具体的な改善案を提案してください。",
-    "tags": [
-      "ロボティクス",
-      "VLM",
-      "空間計画",
-      "意思決定",
-      "GPT-4V"
-    ],
-    "id": "20260331_062016_01",
-    "date": "2026-03-31",
-    "source_news": {
-      "title": "ロボット操作向けVLMの空間計画ベンチマーク発表",
-      "url": "https://www.microsoft.com/en-us/research/blog/groundedplanbench-spatially-grounded-long-horizon-task-planning-for-robot-manipulation/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "GPT-4Vでロボット行動計画を生成",
-    "news_highlight": "視覚ロボットの対話型計画ベンチマーク公開、動的環境での行動計画精度を評価",
-    "problem_context": "ロボットが動的環境で柔軟な行動計画を立てるのが困難",
-    "recommended_ai": {
-      "model": "GPT-4V",
-      "reason": "視覚情報とテキストでロボット行動計画を生成",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ロボットが予期せぬ障害物に出くわした際の回避行動を設計する時",
-      "ロボットが新しい物体を認識し、それに応じた操作手順を生成する時",
-      "ロボットのタスク実行中にエラーが発生し、リカバリープランを検討する時"
-    ],
-    "steps": [
-      "1. ロボットの現在の視覚情報（画像/動画）とタスク目標を準備する",
-      "2. 予期せぬ状況（例: マグカップが倒れた）をテキストで記述する",
-      "3. AIに視覚情報と状況、タスク目標を渡し、次の行動計画を依頼する",
-      "4. 提案された行動計画をロボットシミュレーターで検証する"
-    ],
-    "prompt": "この画像はロボットの現在の視点です。タスクは『キッチンを掃除する』です。マグカップが倒れました。次の最適な行動計画をステップバイステップで生成してください。",
-    "tags": [
-      "ロボット工学",
-      "マルチモーダルAI"
-    ],
-    "id": "20260331_062044_02",
-    "date": "2026-03-31",
-    "source_news": {
-      "title": "視覚に基づいたロボットの対話型計画ベンチマーク",
-      "url": "https://www.microsoft.com/en-us/research/blog/asgardbench-a-benchmark-for-visually-grounded-interactive-planning/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
     }
   }
 ]
