@@ -1,5 +1,126 @@
 [
   {
+    "title": "GPT-6 AstraでDevinのテスト自動生成",
+    "news_highlight": "GPT-6 AstraがDevinのテスト能力を向上、コードレビュー削減と出荷加速を支援",
+    "problem_context": "テスト作成とレビューの効率化、品質保証の課題",
+    "recommended_ai": {
+      "model": "GPT-6 Astra",
+      "reason": "Devinのテスト能力を向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Devinが生成したコードのテストケースを自動で補完したい時",
+      "Devinが生成したテストコードの品質を向上させたい時",
+      "Devinが生成したコードの潜在的なバグを特定したい時"
+    ],
+    "steps": [
+      "1. Devinに新機能のコードと初期テストコードを生成させる。",
+      "2. 生成されたテストコードと対象コードをGPT-6 Astraに提示する。",
+      "3. GPT-6 Astraにテストの網羅性不足や潜在バグを指摘させ、追加テストを提案させる。",
+      "4. GPT-6 Astraの提案に基づき、Devinにテストコードを修正・追加させる。",
+      "5. 修正・追加されたテストを実行し、結果を確認する。"
+    ],
+    "prompt": "以下のコードと既存のテストコードを分析し、テストカバレッジの不足箇所と潜在バグを特定してください。それらを網羅する追加テストケースを生成し、コード修正案も提示してください。",
+    "tags": [
+      "テスト",
+      "自動化",
+      "Devin",
+      "GPT-6 Astra",
+      "品質保証"
+    ],
+    "id": "20260915_061336_01",
+    "date": "2026-09-15",
+    "source_news": {
+      "title": "GPT-6 AstraがDevinのテスト能力を向上、開発効率化へ",
+      "url": "https://openai.com/index/cognition-devin-testing-with-astra"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "IBM SOTA時系列モデルで需要予測",
+    "news_highlight": "IBMが商用SOTA時系列モデルをリリース、高精度予測を実業務に適用可能",
+    "problem_context": "時系列データの高精度予測とモデル構築の効率化",
+    "recommended_ai": {
+      "model": "IBM SOTA時系列モデル",
+      "reason": "SOTA精度で商用利用可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "将来のサービス利用状況を予測し、リソース計画を最適化したい時",
+      "製品の需要を予測し、在庫管理と生産計画を最適化したい時",
+      "サーバーの負荷変動を予測し、スケーリング戦略を立案したい時"
+    ],
+    "steps": [
+      "1. 予測対象の時系列データをCSVまたはDBから準備する",
+      "2. IBMのプラットフォームにデータをアップロードし、モデル学習設定を行う",
+      "3. 予測期間と出力形式を指定し、モデルを実行して予測結果を取得する",
+      "4. 予測結果をPythonで可視化し、既存システムへの組み込みを検討する"
+    ],
+    "prompt": "IBM SOTA時系列モデルで得られた売上予測データ（CSV）を読み込み、過去データと予測データを重ねて表示するPythonのMatplotlibコードを生成してください。",
+    "tags": [
+      "時系列予測",
+      "データ分析",
+      "Python",
+      "機械学習",
+      "IBM"
+    ],
+    "id": "20260915_061404_02",
+    "date": "2026-09-15",
+    "source_news": {
+      "title": "IBMが商用利用可能なSOTA時系列モデルをリリース",
+      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "AWS Bedrock AgentCoreでOAuth連携設計",
+    "news_highlight": "Bedrock AgentCoreがAIエージェント向けOAuth同意管理ポータルとセッションバインディングエンドポイントを提供",
+    "problem_context": "AIエージェントの安全な外部サービス連携",
+    "recommended_ai": {
+      "model": "AWS Bedrock AgentCore",
+      "reason": "AIエージェントのOAuth同意管理を簡素化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントがユーザーのGoogleカレンダーにイベントを追加する機能開発時",
+      "AIエージェントがSalesforceで顧客情報を更新する連携機能の実装時",
+      "外部SaaSと連携するAIエージェントの認証フロー設計時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCoreで新しいエージェントを作成し、外部APIを定義する。",
+      "2. AgentCore IdentityのConsent portalをプロビジョニングし、OAuthプロバイダーを設定する。",
+      "3. エージェントのAction GroupでOAuthスコープと同意ポータルへのリダイレクトを設定する。",
+      "4. ユーザーがエージェントを介して外部サービスにアクセスする際の同意フローをテストする。"
+    ],
+    "prompt": "AWS Bedrock AgentCoreで、ユーザーのGoogleカレンダーにイベントを追加するAIエージェントのOAuth同意フロー設計について、必要な設定手順とIAMポリシーの例を提示してください。",
+    "tags": [
+      "AWS Bedrock",
+      "AIエージェント",
+      "OAuth",
+      "セキュリティ",
+      "API連携"
+    ],
+    "id": "20260915_061429_03",
+    "date": "2026-09-15",
+    "source_news": {
+      "title": "AWS Bedrock AgentCoreがAIエージェント向けOAuth同意管理機能を追加",
+      "url": "https://aws.amazon.com/blogs/machine-learning/manage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GPT-6 AstraでDevinのテストを強化しコードレビュー削減",
     "news_highlight": "GPT-6 AstraがDevinのテスト能力を向上させ、コードレビュー工数を削減",
     "problem_context": "テスト不足によるバグ、コードレビュー工数増大",
@@ -19350,124 +19471,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
       "icon": "🎨"
-    }
-  },
-  {
-    "title": "OpenClawでロボット制御コード生成",
-    "news_highlight": "Hugging FaceがOpenClawを公開、ロボット制御のオープンソースフレームワーク提供",
-    "problem_context": "ロボット制御開発の複雑性・高コスト",
-    "recommended_ai": {
-      "model": "OpenClaw",
-      "reason": "ロボット制御を簡素化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいロボットアームの動作シーケンスをプロトタイプしたい時",
-      "既存のロボット制御コードを特定のタスク向けにカスタマイズしたい時",
-      "ロボットのシミュレーション環境で動作検証を行いたい時"
-    ],
-    "steps": [
-      "OpenClawのGitHubリポジトリをクローンする。",
-      "提供されているサンプルコードを参考に、制御したいロボットのモデル定義を記述する。",
-      "OpenClawのAPIを使って、目的の動作シーケンスをPythonで記述する。",
-      "シミュレーション環境で動作を検証し、必要に応じてコードを調整する。"
-    ],
-    "prompt": "OpenClawとPyBullet/MuJoCoを使って、UR5eロボットアームが特定の物体を掴むためのPython制御コードを生成してください。逆運動学とパスプランニングを含めてください。",
-    "tags": [
-      "ロボット制御",
-      "オープンソース",
-      "HuggingFace",
-      "シミュレーション"
-    ],
-    "id": "20260402_062203_03",
-    "date": "2026-04-02",
-    "source_news": {
-      "title": "Hugging FaceがOpenClawを公開、ロボット制御のオープン化か。",
-      "url": "https://huggingface.co/blog/liberate-your-openclaw"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "TRL v1.0でLLMをRLHFファインチューニング",
-    "news_highlight": "TRL v1.0がRLHF/DPOによるLLMファインチューニングを安定化、プロダクション利用可能に。",
-    "problem_context": "LLMの応答品質向上と特定タスクへの適応。",
-    "recommended_ai": {
-      "model": "TRL v1.0",
-      "reason": "LLMのRLHF/DPOファインチューニングに特化。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "既存LLMの応答が自社製品に合わない時",
-      "ユーザーフィードバックでLLMの振る舞いを改善したい時",
-      "特定タスクでLLMの精度を向上させたい時"
-    ],
-    "steps": [
-      "1. TRLライブラリをインストールし、ベースLLMとデータセットを準備",
-      "2. RLHF/DPOトレーニング設定ファイルを記述",
-      "3. トレーニングスクリプトを実行し、モデルをファインチューニング",
-      "4. ファインチューニング後のモデルを評価し、デプロイ"
-    ],
-    "prompt": "TRLライブラリとDPOアルゴリズムを用いて、指定されたデータセットでMistral-7BモデルをファインチューニングするPythonスクリプトを生成してください。",
-    "tags": [
-      "LLM",
-      "ファインチューニング",
-      "RLHF",
-      "DPO"
-    ],
-    "id": "20260401_061823_01",
-    "date": "2026-04-01",
-    "source_news": {
-      "title": "Hugging FaceがAIポストトレーニングライブラリTRL v1.0をリリース。",
-      "url": "https://huggingface.co/blog/trl-v1"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "AWS Agentでセキュリティと運用自動化",
-    "news_highlight": "AWS Security AgentとDevOps Agentが一般提供、オンデマンド侵入テストと運用をAIで自動化",
-    "problem_context": "セキュリティ脆弱性の早期発見と運用効率化",
-    "recommended_ai": {
-      "model": "AWS Security Agent / AWS DevOps Agent",
-      "reason": "セキュリティテストと運用をAIで自動化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "本番デプロイ前のアプリケーション脆弱性診断",
-      "CI/CDパイプラインでの運用異常検知",
-      "クラウドインフラのセキュリティと運用最適化"
-    ],
-    "steps": [
-      "1. AWSコンソールで対象Agentを有効化",
-      "2. テスト/監視対象のAWSリソースを指定",
-      "3. Agentによる自動テスト/監視を開始",
-      "4. 生成されたレポートや提案に基づき改善"
-    ],
-    "prompt": "AWS Security AgentでWebアプリケーションの侵入テストを実行し、脆弱性レポートを生成。AWS DevOps AgentでLambda関数の異常を監視し、自動復旧スクリプトを設定してください。",
-    "tags": [
-      "セキュリティ",
-      "DevOps",
-      "AI",
-      "自動化",
-      "クラウド運用"
-    ],
-    "id": "20260401_061852_02",
-    "date": "2026-04-01",
-    "source_news": {
-      "title": "AWSがセキュリティテストとクラウド運用のAIエージェントを一般提供。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/aws-launches-frontier-agents-for-security-testing-and-cloud-operations/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
     }
   }
 ]
