@@ -1,5 +1,124 @@
 [
   {
+    "title": "AUTOMATIC1111 Gradio WorkflowでUI設計",
+    "news_highlight": "AUTOMATIC1111がGradio Workflowで再構築、画像生成UI開発の効率とカスタマイズ性が向上。",
+    "problem_context": "複雑な画像生成UIの開発と保守が困難",
+    "recommended_ai": {
+      "model": "Gradio Workflow",
+      "reason": "UI開発の効率化と構造化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しい画像生成機能のUIを迅速にプロトタイプしたい時",
+      "既存のAUTOMATIC1111 UIにカスタム機能を統合したい時",
+      "Gradioベースの画像生成アプリの保守性を高めたい時"
+    ],
+    "steps": [
+      "Gradio Workflowの公式ドキュメントでUIコンポーネント定義を学習する",
+      "既存のAUTOMATIC1111機能をGradio Workflowで再構築するコード例を探す",
+      "新しい画像生成機能の要件を定義し、Gradio WorkflowでUIを設計する",
+      "設計したUIコードを実装し、AUTOMATIC1111バックエンドと連携させる"
+    ],
+    "prompt": "Gradio WorkflowでStable Diffusionのテキストto画像UIをPythonで作成。プロンプト、ネガティブプロンプト、生成ボタン、画像表示エリアを含めてください。",
+    "tags": [
+      "Gradio",
+      "UI開発",
+      "画像生成",
+      "Python",
+      "AUTOMATIC1111"
+    ],
+    "id": "20260917_061516_01",
+    "date": "2026-09-17",
+    "source_news": {
+      "title": "AUTOMATIC1111をGradio Workflowで再構築、画像生成UI開発に新手法。",
+      "url": "https://huggingface.co/blog/gradio-workflow-1111"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "BedrockでRAGアプリのコスト最適化",
+    "news_highlight": "Bedrockのプロンプトキャッシュで、同じコンテキストの入力トークンコストと遅延を最大90%削減。",
+    "problem_context": "RAGのLLM呼び出しコストと遅延が高い。",
+    "recommended_ai": {
+      "model": "Amazon Bedrock",
+      "reason": "RAGのコスト・遅延を大幅削減",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "RAGアプリケーションの性能改善時",
+      "社内ナレッジベースQAシステム構築時",
+      "顧客サポートチャットボットの応答速度向上時"
+    ],
+    "steps": [
+      "既存のRAGプロンプトから繰り返し利用する共通コンテキストを特定。",
+      "Bedrock API呼び出し時にプロンプトキャッシュを有効化する設定を追加。",
+      "キャッシュ適用後のコストと遅延を計測し、効果を検証。",
+      "必要に応じてプロンプト構造を調整し、キャッシュヒット率を最大化。"
+    ],
+    "prompt": "あなたは専門家です。以下のドキュメントを参考に、質問に答えてください。ドキュメント: [共通の参照ドキュメント内容] 質問: [ユーザーの具体的な質問]",
+    "tags": [
+      "RAG",
+      "コスト最適化",
+      "遅延削減",
+      "Bedrock"
+    ],
+    "id": "20260917_061543_02",
+    "date": "2026-09-17",
+    "source_news": {
+      "title": "Bedrockのプロンプトキャッシュでコスト・遅延を最大90%削減。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-and-latency-with-amazon-bedrock-prompt-caching/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "HF JobsでLoRA分散学習を最適化",
+    "news_highlight": "HF JobsがLoRAと非同期GRPOで分散学習を最適化、学習時間を短縮しリソース効率向上",
+    "problem_context": "LoRAモデルの分散学習効率化と高速化",
+    "recommended_ai": {
+      "model": "HF Jobs",
+      "reason": "LoRA分散学習を効率化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模モデルのLoRAファインチューニングを高速化したい時",
+      "複数のGPU/ノードを使った分散学習設定を簡素化したい時",
+      "クラウドでのMLモデル学習コストを最適化したい時"
+    ],
+    "steps": [
+      "1. Hugging FaceアカウントでHF Jobsにログインする。",
+      "2. LoRAを用いたモデルファインチューニングスクリプトを準備する。",
+      "3. HF Jobsの分散学習設定で、非同期GRPOを有効化する。",
+      "4. 必要なリソースを設定し、学習ジョブを開始して進捗をモニタリングする。"
+    ],
+    "prompt": "LoRAモデルの分散学習をHF Jobsで実行するPythonスクリプトを生成してください。非同期GRPOを考慮し、学習率スケジューラとチェックポイント保存を含めてください。",
+    "tags": [
+      "分散学習",
+      "LoRA",
+      "ファインチューニング",
+      "HuggingFace",
+      "MLOps"
+    ],
+    "id": "20260917_061610_03",
+    "date": "2026-09-17",
+    "source_news": {
+      "title": "HF JobsでLoRAと非同期GRPOによる分散学習を最適化。",
+      "url": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "LoRAとHF JobsでGRPO実装",
     "news_highlight": "LoRAでメモリ消費50%削減、HF JobsでGRPO学習時間30%短縮",
     "problem_context": "大規模モデルの強化学習を効率化したい。",
@@ -19356,123 +19475,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
       "icon": "🚀"
-    }
-  },
-  {
-    "title": "AWS Network FirewallでAIエージェントのアクセス設計",
-    "news_highlight": "AWS Network FirewallがAIエージェントの外部ドメインアクセスを許可リストで制限可能に",
-    "problem_context": "AIエージェントの外部アクセス制御が不十分",
-    "recommended_ai": {
-      "model": "Claude 3 Opus",
-      "reason": "AWSセキュリティ設定のベストプラクティスを提案",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "AIエージェント利用サービスのセキュリティ設計時",
-      "AWS環境のネットワークセキュリティ監査時",
-      "コンプライアンス要件への対応計画時"
-    ],
-    "steps": [
-      "AIエージェントがアクセスする外部ドメインを特定する",
-      "AWS Network Firewallのポリシー設定画面を開く",
-      "許可リストに含めるドメインをSNIベースで設定する",
-      "設定をデプロイし、AIエージェントの動作をテストする"
-    ],
-    "prompt": "AWS Network FirewallでAIエージェント（AgentCoreリソース）がアクセスすべき外部ドメインの許可リストを作成するための設定例を、SNIフィルタリングを用いてJSON形式で提示してください。",
-    "tags": [
-      "AWS",
-      "Network Firewall",
-      "セキュリティ",
-      "AIエージェント"
-    ],
-    "id": "20260404_061612_03",
-    "date": "2026-04-04",
-    "source_news": {
-      "title": "AWSがAIエージェントのアクセスドメイン制御機能を提供。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/control-which-domains-your-ai-agents-can-access/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Gemma 4でUIスケッチからコード生成",
-    "news_highlight": "Gemma 4はオンデバイス対応の最先端マルチモーダルAI",
-    "problem_context": "手書きUIスケッチをコード化する手間を削減",
-    "recommended_ai": {
-      "model": "Gemma 4",
-      "reason": "オンデバイスで画像処理が可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規機能のUIプロトタイプを素早く作成したい時",
-      "手書きのUIデザインをコードに変換したい時",
-      "既存画面の改善案を画像から検討したい時"
-    ],
-    "steps": [
-      "手書きまたはデジタルでUIスケッチを作成する",
-      "スケッチの画像をGemma 4にアップロードする",
-      "生成されたコードを開発環境に貼り付ける",
-      "コードをテストし、必要に応じて修正する"
-    ],
-    "prompt": "このUIスケッチを元に、ReactとTypeScriptでログイン画面のコードを生成してください。メールアドレス入力、パスワード入力、ログインボタンを含めてください。",
-    "tags": [
-      "コード生成",
-      "UI/UX",
-      "マルチモーダル",
-      "オンデバイス"
-    ],
-    "id": "20260403_061701_01",
-    "date": "2026-04-03",
-    "source_news": {
-      "title": "Gemma 4発表、オンデバイス対応の最先端マルチモーダルAI",
-      "url": "https://huggingface.co/blog/gemma4"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "IBM Granite 4.0 3B Visionで文書解析",
-    "news_highlight": "IBM Granite 4.0 3B Visionは企業向け文書に特化した小型マルチモーダルAI",
-    "problem_context": "企業文書からの情報抽出や要約に時間がかかる",
-    "recommended_ai": {
-      "model": "IBM Granite 4.0 3B Vision",
-      "reason": "企業文書処理に特化し、マルチモーダル対応",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "契約書から特定条項を抽出したい時",
-      "技術仕様書から図と関連する説明をまとめて理解したい時",
-      "監査報告書からリスク要因と対応策を素早く把握したい時"
-    ],
-    "steps": [
-      "1. 処理したい企業文書（PDF/画像含む）を準備する。",
-      "2. Granite 4.0 3B Vision APIに文書をアップロードする。",
-      "3. 抽出したい情報や要約の指示をプロンプトで与える。",
-      "4. AIの出力結果をレビューし、必要に応じて調整する。"
-    ],
-    "prompt": "この技術仕様書（画像含む）から、主要な機能要件と関連する図のキャプションを抽出してリスト形式でまとめてください。",
-    "tags": [
-      "文書処理",
-      "情報抽出",
-      "マルチモーダル",
-      "企業AI"
-    ],
-    "id": "20260403_061727_02",
-    "date": "2026-04-03",
-    "source_news": {
-      "title": "IBM Granite 4.0 3B Vision、企業向け文書の小型マルチモーダルAI",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-4-vision"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
-      "icon": "🎨"
     }
   }
 ]
