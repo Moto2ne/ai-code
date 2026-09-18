@@ -1,5 +1,124 @@
 [
   {
+    "title": "AWS AgentCoreで生産エージェントを最適化",
+    "news_highlight": "AWS AgentCoreランタイムは高速起動とメモリ最適化で生産エージェントの効率とコストを改善。",
+    "problem_context": "AIエージェントの起動遅延、高コスト、リソース消費",
+    "recommended_ai": {
+      "model": "AWS AgentCoreランタイム",
+      "reason": "高速起動とコスト効率",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存Bedrockエージェントの起動速度改善時",
+      "新規AIエージェントの設計・開発時",
+      "エージェントのクラウドコスト削減検討時"
+    ],
+    "steps": [
+      "1. AWS Bedrockコンソールで既存エージェント設定を開く",
+      "2. ランタイムオプションでAgentCoreを選択し保存",
+      "3. エージェントを再デプロイし、起動時間とコストを比較",
+      "4. 新規エージェントはAgentCoreをデフォルトで選択し開発"
+    ],
+    "prompt": "AWS Bedrock AgentCoreランタイムを既存エージェントに適用し、起動時間を短縮するCLIコマンドを生成してください。",
+    "tags": [
+      "AWS",
+      "Bedrock",
+      "AIエージェント",
+      "最適化",
+      "デプロイ"
+    ],
+    "id": "20260919_061303_01",
+    "date": "2026-09-19",
+    "source_news": {
+      "title": "AWS AgentCoreランタイム発表：高速起動と最適化で生産エージェントを効率化。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Kimi K3で大規模コードベースを分析",
+    "news_highlight": "Kimi K3がBedrockに登場、100万トークン対応の強力な新モデルでネイティブビジョンも。",
+    "problem_context": "大規模なコードやドキュメントの全体像把握",
+    "recommended_ai": {
+      "model": "Kimi K3",
+      "reason": "100万トークンで広範囲を理解",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存のレガシーシステム全体のコード構造を理解したい時",
+      "複数の関連ドキュメントとコードを同時に参照して設計レビューする時",
+      "大規模なプルリクエストの変更がシステム全体に与える影響を評価したい時"
+    ],
+    "steps": [
+      "1. BedrockでKimi K3モデルを選択する。",
+      "2. 分析したいコードベース全体、または関連する複数のファイルをアップロードする。",
+      "3. システムの主要な機能やアーキテクチャに関する質問をプロンプトに入力する。",
+      "4. Kimi K3の出力に基づき、コードの改善点や潜在的な問題を特定する。"
+    ],
+    "prompt": "以下の大規模なJavaプロジェクトのコードベース全体を分析し、主要なマイクロサービスとその間の依存関係を図示するMarkdown形式の概要を生成してください。",
+    "tags": [
+      "コード分析",
+      "システム設計",
+      "大規模言語モデル",
+      "Bedrock"
+    ],
+    "id": "20260919_061328_02",
+    "date": "2026-09-19",
+    "source_news": {
+      "title": "Amazon BedrockにKimi K3登場：100万トークン対応の強力な新モデル。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-on-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "SageMakerでHugging Faceモデルを自動デプロイ",
+    "news_highlight": "SageMaker AIでHugging Faceモデルを6つのエージェントスキルで効率デプロイ、リアルタイムエンドポイントを自動生成",
+    "problem_context": "Hugging FaceモデルのSageMakerデプロイの複雑さ",
+    "recommended_ai": {
+      "model": "Amazon SageMaker AI",
+      "reason": "Hugging Faceモデルのデプロイを自動化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいHugging Faceモデルを本番環境に迅速にデプロイしたい時",
+      "複数のHugging Faceモデルのデプロイ設定を標準化したい時",
+      "デプロイ用のServing Container選定に迷う時"
+    ],
+    "steps": [
+      "1. デプロイしたいHugging FaceモデルのIDまたはパスを特定する",
+      "2. SageMakerコーディングエージェントを起動し、デプロイ対象モデルを指定する",
+      "3. エージェントにデプロイを指示するプロンプトを入力する",
+      "4. 生成されたリアルタイムエンドポイントを確認し、テストする"
+    ],
+    "prompt": "Hugging Faceモデル'distilbert-base-uncased'をSageMakerにデプロイし、リアルタイムエンドポイントを作成してください。適切なServing Containerを自動選択してください。",
+    "tags": [
+      "SageMaker",
+      "Hugging Face",
+      "デプロイ",
+      "MLOps",
+      "自動化"
+    ],
+    "id": "20260919_061353_03",
+    "date": "2026-09-19",
+    "source_news": {
+      "title": "SageMakerでHugging Faceモデルをコーディングエージェントで効率デプロイ。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "GPT-4oで複雑なコード生成を安定化",
     "news_highlight": "AIエージェントのタスク実行一貫性が30%向上、複数ステップタスクでのエラー率が15%減少",
     "problem_context": "AIエージェントの出力が不安定で信頼性に欠ける",
@@ -19352,125 +19471,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "Gemini APIでコストと信頼性を最適化",
-    "news_highlight": "Gemini APIにコストと信頼性のバランス調整機能「Dials」が追加",
-    "problem_context": "AI利用のコスト増大と信頼性要件の課題",
-    "recommended_ai": {
-      "model": "Gemini API",
-      "reason": "コストと信頼性の調整が可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "本番環境でのAI推論コストを削減したい時",
-      "特定の機能でAI応答の安定性を高めたい時",
-      "開発・テスト環境でコストを抑えつつAIを活用したい時"
-    ],
-    "steps": [
-      "1. Gemini API呼び出しコードにDialsパラメータを追加",
-      "2. `cost_vs_quality`を`balanced`、`cost_optimized`、`quality_optimized`から選択",
-      "3. 各設定でAPI応答のレイテンシと精度を計測",
-      "4. アプリケーションの要件に最適なDials設定を適用"
-    ],
-    "prompt": "このシステム設計について、コスト効率を考慮した上で、主要なコンポーネントとそれらの連携方法を簡潔に説明してください。",
-    "tags": [
-      "API管理",
-      "コスト最適化",
-      "信頼性向上",
-      "AIインフラ"
-    ],
-    "id": "20260406_061419_03",
-    "date": "2026-04-06",
-    "source_news": {
-      "title": "Gemini APIでコストと信頼性のバランス調整機能を提供",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-flex-and-priority-inference/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
-    }
-  },
-  {
-    "title": "Gemma 4でデバイス内マルチモーダル推論",
-    "news_highlight": "Gemma 4はデバイス上で動作するマルチモーダルAI、オフライン利用可能",
-    "problem_context": "デバイス上で画像/テキストを処理し、低遅延推論",
-    "recommended_ai": {
-      "model": "Gemma 4",
-      "reason": "デバイス上でマルチモーダル処理",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ネットワーク接続がない環境で画像から情報を抽出したい時",
-      "機密性の高い画像データを外部に送信せず解析したい時",
-      "エッジデバイス向けAIアプリのプロトタイプを開発する時"
-    ],
-    "steps": [
-      "1. Gemma 4のローカル実行環境をセットアップする",
-      "2. 解析対象の画像ファイルと関連テキストデータを準備する",
-      "3. 準備したデータとプロンプトをGemma 4に渡して推論を実行する",
-      "4. 推論結果をアプリケーションロジックに統合し、動作をテストする"
-    ],
-    "prompt": "この画像内のエラーメッセージを読み取り、その解決策として考えられるPythonコードの修正案を提示してください。",
-    "tags": [
-      "Gemma 4",
-      "オンデバイスAI",
-      "マルチモーダル",
-      "エッジAI",
-      "画像解析",
-      "オフラインAI"
-    ],
-    "id": "20260405_061245_01",
-    "date": "2026-04-05",
-    "source_news": {
-      "title": "Gemma 4発表、デバイス上で動作するマルチモーダルAI",
-      "url": "https://huggingface.co/blog/gemma4"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Veo 3.1 Liteでプロモーション動画生成",
-    "news_highlight": "高効率な動画生成モデルVeo 3.1 Liteを発表、高品質な映像コンテンツを迅速に生成",
-    "problem_context": "動画コンテンツ制作の時間・コスト削減",
-    "recommended_ai": {
-      "model": "Veo 3.1 Lite",
-      "reason": "高効率な動画生成を実現",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プロダクトの新機能デモ動画作成",
-      "技術ブログやドキュメント用の説明動画作成",
-      "マーケティング向けプロモーション動画のラフ作成"
-    ],
-    "steps": [
-      "1. 生成したい動画のシナリオやテキストプロンプトを準備する",
-      "2. Veo 3.1 Liteのインターフェースにプロンプトを入力する",
-      "3. 生成された動画を確認し、必要に応じて調整指示を出す",
-      "4. 完成した動画をダウンロードし、プロジェクトに組み込む"
-    ],
-    "prompt": "当社の新機能『リアルタイム共同編集』のデモ動画を生成してください。ユーザーが同時にドキュメントを編集し、変更が即座に反映される様子を表現してください。",
-    "tags": [
-      "動画生成",
-      "プロモーション",
-      "デモ動画",
-      "コンテンツ制作"
-    ],
-    "id": "20260405_061310_02",
-    "date": "2026-04-05",
-    "source_news": {
-      "title": "Google、高効率な動画生成モデルVeo 3.1 Liteを発表",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
