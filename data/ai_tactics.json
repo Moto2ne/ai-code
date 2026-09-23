@@ -1,5 +1,125 @@
 [
   {
+    "title": "GPT-6 Astraで動画編集スクリプト生成",
+    "news_highlight": "GPT-6 Astraは動画編集を3倍高速化し、50種のカスタムエフェクトを生成可能",
+    "problem_context": "動画編集の工数削減とエフェクト開発の効率化",
+    "recommended_ai": {
+      "model": "GPT-6 Astra",
+      "reason": "動画編集の高速化とエフェクト生成に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "動画編集自動化スクリプトの開発時",
+      "新しい動画エフェクトのプロトタイプ作成時",
+      "既存の動画処理コードの最適化時"
+    ],
+    "steps": [
+      "自動化したい動画編集タスクを具体的に定義する（例：特定シーンのカット、BGM追加、テロップ挿入）。",
+      "GPT-6 Astraに、定義したタスクを実行するPythonスクリプト（例：MoviePy, OpenCV利用）の生成を依頼する。",
+      "生成されたスクリプトをテスト環境で実行し、期待通りの動作か確認する。",
+      "必要に応じて、スクリプトの修正や追加機能（例：カスタムエフェクト適用）をGPT-6 Astraに依頼し、反復的に改善する。"
+    ],
+    "prompt": "PythonのMoviePyライブラリを使って、動画ファイル`input.mp4`の冒頭5秒をカットし、`output.mp4`として保存するスクリプトを生成してください。さらに、動画全体にセピア調のカラーフィルターを適用する処理も追加してください。",
+    "tags": [
+      "動画編集",
+      "Python",
+      "スクリプト生成",
+      "自動化",
+      "エフェクト"
+    ],
+    "id": "20260924_061544_01",
+    "date": "2026-09-24",
+    "source_news": {
+      "title": "GPT-6 Astraで動画編集が3倍高速化、50種エフェクト生成。",
+      "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "GPT-6 Sol/Lunaでコードパフォーマンス最適化",
+    "news_highlight": "GPT-6 Sol/LunaがAmazon Bedrockで提供開始、知能と効率をワークロードに最適化",
+    "problem_context": "複雑なコードの性能改善と効率的な開発",
+    "recommended_ai": {
+      "model": "GPT-6 Sol/Luna",
+      "reason": "知能と効率で最適な選択肢",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存コードのパフォーマンスボトルネック特定",
+      "計算量の多いアルゴリズムの効率化",
+      "大規模なリファクタリング計画の立案"
+    ],
+    "steps": [
+      "1. 性能問題のあるコードブロックを特定する。",
+      "2. そのコードと関連する要件、現在の性能指標を準備する。",
+      "3. GPT-6 Sol/Lunaにコードと要件、目標性能を提示し、改善案を依頼する。",
+      "4. 提案された改善案を適用し、性能テストを実施する。"
+    ],
+    "prompt": "以下のPythonコードの計算効率を最大化してください。特にループ処理とデータ構造に注目し、改善されたコードと理由を提示してください。",
+    "tags": [
+      "コード最適化",
+      "パフォーマンス",
+      "リファクタリング",
+      "Bedrock"
+    ],
+    "id": "20260924_061609_02",
+    "date": "2026-09-24",
+    "source_news": {
+      "title": "GPT-6 Sol/LunaがAmazon Bedrockで提供開始。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Strands Agents SDKで会話型ビデオAI設計",
+    "news_highlight": "Strands Agents SDKがBedrock/Rekognition/Transcribeを統合し、会話型ビデオAIを構築可能",
+    "problem_context": "複雑な動画分析と会話AIの統合",
+    "recommended_ai": {
+      "model": "Strands Agents SDK",
+      "reason": "AWS AIサービス統合で会話型ビデオAI構築",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客サポート動画からFAQを自動生成したい時",
+      "会議動画から特定の発言者と内容を検索したい時",
+      "防犯カメラ映像から不審な行動を検知し説明させたい時"
+    ],
+    "steps": [
+      "1. 会話型ビデオAIの要件（入力、出力、会話フロー）を定義する。",
+      "2. Strands Agents SDKのドキュメントを参考に、エージェントの基本構造を設計する。",
+      "3. Rekognitionで抽出する動画イベントとTranscribeで処理する音声の言語を決定する。",
+      "4. Bedrockで利用するLLMと、Rekognition/Transcribeの出力をLLMに渡すプロンプト戦略を設計する。",
+      "5. Strands Agents SDKでこれらサービス間のデータフローとエージェントの意思決定ロジックを実装する。"
+    ],
+    "prompt": "Strands Agents SDKでRekognitionの動画分析結果とTranscribeの音声テキストをBedrockに渡し、ユーザー質問に答えるPythonエージェントの基本構造を設計してください。",
+    "tags": [
+      "AWS",
+      "エージェントAI",
+      "動画分析",
+      "会話AI",
+      "Strands Agents SDK"
+    ],
+    "id": "20260924_061638_03",
+    "date": "2026-09-24",
+    "source_news": {
+      "title": "AWSで会話型ビデオAIを構築するエージェントアーキテクチャ。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-conversational-video-intelligence-built-on-aws/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Hugging Face tokenizers v1で性能最適化",
     "news_highlight": "Hugging Face tokenizers v1リリース、エンコード/デコード性能を測定し改善。",
     "problem_context": "トークナイザー性能のボトルネック解消",
@@ -19329,127 +19449,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
       "icon": "🚀"
-    }
-  },
-  {
-    "title": "AWS Agent Registryでエージェントを共有・再利用",
-    "news_highlight": "AWS Agent Registryがプレビュー公開、企業内でAIエージェントの発見・共有・再利用を促進",
-    "problem_context": "企業内AIエージェントの散在と再利用の困難さ",
-    "recommended_ai": {
-      "model": "AWS Agent Registry (AgentCore)",
-      "reason": "企業内エージェントの一元管理と再利用",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいプロジェクトで既存のエージェント機能を活用したい時",
-      "チーム内で開発したエージェントを他チームと共有したい時",
-      "エージェントの機能拡張や改善を行う際、既存のツールやスキルを探したい時"
-    ],
-    "steps": [
-      "1. AWS Agent Registryにアクセスし、既存のエージェントを検索する。",
-      "2. 目的の機能を持つエージェント、ツール、スキルを発見する。",
-      "3. 発見したエージェントのドキュメントやAPI仕様を確認する。",
-      "4. 自身のプロジェクトにエージェントを統合し、テストする。"
-    ],
-    "prompt": "AWS Agent Registryで、既存のデータ分析エージェントのツールリストを提示してください。特にSQLクエリ実行機能を持つものを探しています。",
-    "tags": [
-      "エージェント開発",
-      "再利用",
-      "AWS",
-      "AgentCore",
-      "エンタープライズAI"
-    ],
-    "id": "20260411_061731_03",
-    "date": "2026-04-11",
-    "source_news": {
-      "title": "AWS Agent Registryがプレビュー公開、Agentの発見・共有・再利用を促進。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/the-future-of-managing-agents-at-scale-aws-agent-registry-now-in-preview/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Sentence Transformersでマルチモーダル検索強化",
-    "news_highlight": "Sentence Transformersがマルチモーダル埋め込みとRerankerモデルを公開し、検索精度を向上。",
-    "problem_context": "既存検索のテキスト・画像複合検索精度が低い。",
-    "recommended_ai": {
-      "model": "Sentence Transformers",
-      "reason": "マルチモーダル対応で検索精度向上",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ECサイトの商品検索機能で、テキストと画像の両方から関連性の高い商品を特定するロジックを設計する時。",
-      "社内文書管理システムで、テキストと図表を含む文書の検索精度を向上させるアルゴリズムを実装する時。",
-      "コンテンツ推薦システムで、記事のテキストとサムネイル画像からユーザーの興味に合うコンテンツを推薦するAPIを開発する時。"
-    ],
-    "steps": [
-      "既存の検索システムにおけるテキストと画像の埋め込み処理部分を特定する。",
-      "Sentence Transformersのマルチモーダルモデルをインポートし、既存の埋め込みモデルと置き換える。",
-      "検索クエリとドキュメントの埋め込みベクトルを生成するコードを記述する。",
-      "Rerankerモデルを適用し、検索結果の順位付けロジックを実装する。",
-      "新しい検索ロジックをテストし、既存システムとの精度比較を行う。"
-    ],
-    "prompt": "Sentence Transformersのマルチモーダル埋め込みモデルとRerankerモデルを使って、ECサイトの商品検索機能を実装するPythonコードを生成してください。商品名と商品画像のURLを入力とし、検索クエリと最も関連性の高い商品を返す関数を含めてください。",
-    "tags": [
-      "検索",
-      "マルチモーダル",
-      "推薦",
-      "Python",
-      "機械学習"
-    ],
-    "id": "20260410_062133_01",
-    "date": "2026-04-10",
-    "source_news": {
-      "title": "Sentence Transformersでマルチモーダル埋め込み・Rerankerモデルを公開",
-      "url": "https://huggingface.co/blog/multimodal-sentence-transformers"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Amazon Bedrock Novaでインテント分類器開発",
-    "news_highlight": "Amazon BedrockでNovaモデルのファインチューニングが可能に。インテント分類器の例で実装をデモ。",
-    "problem_context": "汎用モデルでは精度が出ない特定タスクの解決",
-    "recommended_ai": {
-      "model": "Amazon Nova (via Bedrock)",
-      "reason": "特定タスクで高精度化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "顧客サポートチャットボットの意図解釈精度向上",
-      "社内文書の自動分類システム構築時",
-      "特定の業界用語に特化したテキスト分析モデル開発時"
-    ],
-    "steps": [
-      "1. 特定タスク向けにラベル付けされたデータセットを準備する。",
-      "2. Amazon S3にファインチューニング用データセットをアップロードする。",
-      "3. Amazon BedrockコンソールでNovaモデルのファインチューニングジョブを作成し、S3パスを指定する。",
-      "4. ファインチューニング完了後、デプロイされたカスタムモデルをAPI経由でテストする。"
-    ],
-    "prompt": "インテント分類器のファインチューニング用データセットを作成したい。ユーザー発話例と対応する意図のペアをJSONL形式で20個生成してください。",
-    "tags": [
-      "ファインチューニング",
-      "LLM",
-      "Amazon Bedrock",
-      "Nova",
-      "NLP"
-    ],
-    "id": "20260410_062202_02",
-    "date": "2026-04-10",
-    "source_news": {
-      "title": "Amazon BedrockでNovaモデルのファインチューニングが可能に",
-      "url": "https://aws.amazon.com/blogs/machine-learning/customize-amazon-nova-models-with-amazon-bedrock-fine-tuning/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
