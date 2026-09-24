@@ -1,5 +1,124 @@
 [
   {
+    "title": "Strands Agents SDKでビデオAIエージェント構築",
+    "news_highlight": "Strands Agents SDKがBedrock/Rekognition/Transcribeを統合し、AWS上で会話型ビデオAIを効率的に構築",
+    "problem_context": "AWS上で複雑なAIサービス連携を効率化したい",
+    "recommended_ai": {
+      "model": "Strands Agents SDK",
+      "reason": "複数AWS AIサービスを統合可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "会話型ビデオAIのプロトタイプを迅速に作成したい時",
+      "既存のAWS AIサービスをAgenticアーキテクチャで統合したい時",
+      "ビデオコンテンツからの情報抽出と対話システムを構築したい時"
+    ],
+    "steps": [
+      "1. Strands Agents SDKをインストールする。",
+      "2. AWS Bedrock, Rekognition, TranscribeのAPIキーと設定を準備する。",
+      "3. Strands Agents SDKを使ってエージェント定義ファイルを作成する。",
+      "4. ビデオ処理、音声認識、LLM連携のロジックをエージェントに組み込む。",
+      "5. 作成したエージェントをAWS環境にデプロイし、テストする。"
+    ],
+    "prompt": "Strands Agents SDKを使用して、Amazon Bedrock、Rekognition、Transcribeを連携させ、ビデオから主要なイベントを抽出し、それについてユーザーと対話するエージェントの設計コードを生成してください。",
+    "tags": [
+      "Agentic AI",
+      "AWS",
+      "ビデオAI",
+      "LLM",
+      "SDK"
+    ],
+    "id": "20260925_061534_01",
+    "date": "2026-09-25",
+    "source_news": {
+      "title": "Agenticアーキテクチャで会話型ビデオAIをAWS上に構築",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-conversational-video-intelligence-built-on-aws/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "AgentCore GatewayでマルチアカウントAIエージェント設計",
+    "news_highlight": "AgentCore Gatewayがマルチアカウント対応、データ分離と横断クエリを両立",
+    "problem_context": "複数チームのデータ分離とAIエージェント連携の複雑さ",
+    "recommended_ai": {
+      "model": "AgentCore Gateway",
+      "reason": "データ分離と統合クエリを両立",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "異なるAWSアカウントに分散したデータをAIエージェントで分析したい時",
+      "チーム間のデータプライバシーを保ちつつ、共通AIサービスを利用したい時",
+      "新しいAIエージェントを複数アカウント連携で設計する時"
+    ],
+    "steps": [
+      "1. AgentCore Gatewayのプラットフォームアカウントをセットアップ",
+      "2. 各チームのAWSアカウントでデータソースとアクセス権限を設定",
+      "3. AgentCore Gatewayでデータソース横断クエリ用エージェントを定義",
+      "4. 定義したエージェントをテストし、複数アカウントからのデータ統合を確認"
+    ],
+    "prompt": "AgentCore Gatewayを利用し、3つのAWSアカウント（開発、ステージング、本番）に分散した顧客データを横断的に分析するAIエージェントのアーキテクチャ設計を提案してください。",
+    "tags": [
+      "アーキテクチャ設計",
+      "マルチアカウント",
+      "データ統合",
+      "AIエージェント"
+    ],
+    "id": "20260925_061559_02",
+    "date": "2026-09-25",
+    "source_news": {
+      "title": "AgentCore GatewayでマルチアカウントAIエージェントを構築",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCoreで社内知識検索を自動化",
+    "news_highlight": "HEMAはBedrock AgentCoreで社内AIアシスタントHALを構築し、開発者ポータル検索を即時回答に変換。MCP活用。",
+    "problem_context": "開発者が社内ドキュメントから必要な情報を探す手間。",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "社内知識ベース連携に特化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいプロジェクトに参加し、既存システムの設計情報を素早く把握したい時",
+      "特定のAPIの利用方法やパラメータについて、社内ドキュメントが見つからない時",
+      "社内ツールの設定方法やトラブルシューティング手順を調べたい時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCoreに社内ドキュメント（Confluence, Wiki, GitHub Wikiなど）をデータソースとして登録する",
+      "2. AgentCoreの設定で、質問応答エージェントを構築する",
+      "3. 開発者向けチャットインターフェース（Slack, Teamsなど）とAgentCoreを連携させる",
+      "4. チャットインターフェースから「〇〇APIの認証方法は？」のように質問し、回答を得る"
+    ],
+    "prompt": "社内API Gatewayの認証フローと、Pythonでの実装例を教えてください。具体的なコードスニペットを含めてください。",
+    "tags": [
+      "社内AI",
+      "知識管理",
+      "開発者体験",
+      "Bedrock"
+    ],
+    "id": "20260925_061624_03",
+    "date": "2026-09-25",
+    "source_news": {
+      "title": "Amazon Bedrock AgentCoreで社内AIアシスタントを構築",
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "GPT-6 Astraで動画編集スクリプト生成",
     "news_highlight": "GPT-6 Astraは動画編集を3倍高速化し、50種のカスタムエフェクトを生成可能",
     "problem_context": "動画編集の工数削減とエフェクト開発の効率化",
@@ -19333,122 +19452,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "Amazon Bedrock Novaで意図分類器をファインチューニング",
-    "news_highlight": "Amazon BedrockでNovaモデルのファインチューニングが完全実装可能に。意図分類器の例でデモ。",
-    "problem_context": "汎用モデルでは難しい特定の業務タスク精度向上",
-    "recommended_ai": {
-      "model": "Amazon Nova models",
-      "reason": "ファインチューニングで特定タスクに最適化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "顧客からの問い合わせ内容を自動で分類したい時",
-      "社内文書から特定の情報（例: 契約の種類、製品名）を抽出したい時",
-      "ユーザーの入力から次に行うべきアクション（例: 予約、情報提供）を判断したい時"
-    ],
-    "steps": [
-      "BedrockコンソールでNovaモデルのファインチューニングジョブを設定する。",
-      "意図分類用のラベル付きデータセット（例: 問い合わせ文と意図）をS3にアップロードする。",
-      "ファインチューニングジョブを実行し、カスタムモデルをデプロイする。",
-      "デプロイしたカスタムモデルをAPI経由で呼び出し、分類精度を評価する。"
-    ],
-    "prompt": "Amazon BedrockでNovaモデルのファインチューニングジョブを設定するPythonコードを生成してください。入力データセットはS3パス's3://my-bucket/training-data/'、出力モデル名は'my-intent-classifier'とします。",
-    "tags": [
-      "ファインチューニング",
-      "意図分類",
-      "Bedrock",
-      "Nova",
-      "MLOps"
-    ],
-    "id": "20260412_061438_03",
-    "date": "2026-04-12",
-    "source_news": {
-      "title": "Amazon BedrockでNovaモデルのファインチューニングが可能に。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/customize-amazon-nova-models-with-amazon-bedrock-fine-tuning/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "Bedrock AgentCoreでステートフルAgent設計",
-    "news_highlight": "Bedrock AgentCoreがステートフルなクライアント機能で、実行中のユーザー入力、LLM動的生成、進捗ストリーミングに対応。",
-    "problem_context": "複雑な対話型AIエージェントの設計と実装",
-    "recommended_ai": {
-      "model": "Bedrock AgentCore",
-      "reason": "ステートフルなAgent実行に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ユーザーとの多段階対話が必要なチャットボット開発時",
-      "長時間かかるバックグラウンド処理の進捗をリアルタイムでユーザーに通知したい時",
-      "ユーザーのフィードバックを基に動的にコンテンツを生成するシステムを構築する時"
-    ],
-    "steps": [
-      "Bedrock AgentCoreのステートフル機能のAPIドキュメントを確認する。",
-      "ユーザー入力とLLM応答の多段階処理フローを設計図として作成する。",
-      "AgentCore SDKを用いて、ユーザー入力待ちとLLM呼び出しを含むAgentロジックを実装する。",
-      "実装したAgentをデプロイし、複数のユーザー入力パターンで動作をテストする。"
-    ],
-    "prompt": "Bedrock AgentCoreで、ユーザーからの複数回の入力を受け付け、その都度LLMで応答を生成し、最終的な結果を返すステートフルなAgentのPythonコードを生成してください。",
-    "tags": [
-      "Agent開発",
-      "ステートフルAI",
-      "LLM",
-      "Bedrock"
-    ],
-    "id": "20260411_061640_01",
-    "date": "2026-04-11",
-    "source_news": {
-      "title": "Bedrock AgentCoreでステートフルなクライアント機能が導入され、複雑なAgent実行が可能に。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-stateful-mcp-client-capabilities-on-amazon-bedrock-agentcore-runtime/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Bedrock AgentCoreでReactアプリにAIエージェントを埋め込む",
-    "news_highlight": "Bedrock AgentCoreがReactアプリへのライブAIブラウザAgent埋め込みを解説",
-    "problem_context": "WebアプリにAIによる自動操作機能を組み込みたい",
-    "recommended_ai": {
-      "model": "Bedrock AgentCore",
-      "reason": "ReactアプリにAIエージェントを統合",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ユーザーサポートの自動化機能を実装する時",
-      "Webサイトの自動テストスクリプトを生成する時",
-      "複雑なフォーム入力やデータ収集を自動化する時"
-    ],
-    "steps": [
-      "1. Bedrock AgentCoreでAIエージェントセッションを開始し、Live View URLを生成する",
-      "2. ReactアプリケーションにLive View URLを埋め込み、ストリームをレンダリングするコンポーネントを作成する",
-      "3. AIエージェントがブラウザを操作するための指示（プロンプト）を設計する",
-      "4. ReactアプリとAIエージェントを連携させ、ブラウザ自動操作機能をテストする"
-    ],
-    "prompt": "Reactアプリに埋め込んだLive Viewで、指定されたWebサイトのログインフォームにユーザー名'testuser'、パスワード'password123'を入力し、ログインボタンをクリックしてください。",
-    "tags": [
-      "AIエージェント",
-      "React"
-    ],
-    "id": "20260411_061704_02",
-    "date": "2026-04-11",
-    "source_news": {
-      "title": "Bedrock AgentCoreでライブAIブラウザAgentをReactアプリに埋め込む方法を解説。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/embed-a-live-ai-browser-agent-in-your-react-app-with-amazon-bedrock-agentcore/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
     }
   }
 ]
