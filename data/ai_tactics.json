@@ -1,5 +1,126 @@
 [
   {
+    "title": "Hugging Face Transformersでllama.cppモデルを高速化",
+    "news_highlight": "Hugging Face Transformersがllama.cpp量子化モデルに対応し、ローカル推論を高速化・省リソース化",
+    "problem_context": "ローカル環境でのLLM推論が遅い・メモリ不足",
+    "recommended_ai": {
+      "model": "Hugging Face Transformers (with llama.cpp)",
+      "reason": "ローカル環境で高速・軽量推論",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ローカルPCで大規模言語モデルを試したい時",
+      "エッジデバイスやリソース制約のある環境にLLMをデプロイしたい時",
+      "推論コストを抑えつつ、オフラインでLLMを利用したい時"
+    ],
+    "steps": [
+      "1. Hugging Face Transformersライブラリを最新版に更新する",
+      "2. `transformers`から`AutoModelForCausalLM`と`AutoTokenizer`をインポートする",
+      "3. `model = AutoModelForCausalLM.from_pretrained(\"quantized_model_name\", device_map=\"auto\", torch_dtype=torch.float16)`のように量子化モデルをロードする",
+      "4. ロードしたモデルとトークナイザーを使ってテキスト生成を実行し、パフォーマンスを評価する"
+    ],
+    "prompt": "Hugging Face Transformersとllama.cpp量子化モデルを使って、ローカル環境でテキスト生成を行うPythonコードを記述してください。モデルは`TheBloke/Llama-2-7B-Chat-GGUF`を想定し、推論速度を最大化する設定を含めてください。",
+    "tags": [
+      "LLM",
+      "量子化",
+      "ローカル推論",
+      "パフォーマンス最適化",
+      "Python"
+    ],
+    "id": "20260926_061440_01",
+    "date": "2026-09-26",
+    "source_news": {
+      "title": "Hugging Face Transformersがllama.cpp量子化モデルに対応。",
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
+      "icon": "🦙"
+    }
+  },
+  {
+    "title": "Azure IoT EdgeでロボットAI推論をオフロード",
+    "news_highlight": "Microsoft ResearchがロボットAI推論オフロードでタスク成功率・効率向上を確認",
+    "problem_context": "ロボットのハードウェア制約によるAI推論性能の限界",
+    "recommended_ai": {
+      "model": "Azure IoT Edge",
+      "reason": "エッジデバイスのAI推論を効率的に管理・オフロード可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ロボットのオンデバイスAI推論が遅く、タスク失敗が頻発する時",
+      "ロボットの計算リソースが不足し、より複雑なAIモデルを動かせない時",
+      "複数のロボットでAIモデルのデプロイ・更新を効率化したい時"
+    ],
+    "steps": [
+      "1. ロボットのAIモデルをONNX形式に変換し、Azure Blob Storageへアップロード",
+      "2. Azure IoT Edgeで推論モジュールを作成し、ロボットデバイスへデプロイ",
+      "3. ロボット側のコードを修正し、ローカル推論からIoT Edgeモジュール呼び出しへ変更",
+      "4. オフロード後のタスク成功率と推論レイテンシを測定し、改善を確認"
+    ],
+    "prompt": "ONNX形式のYOLOv5モデルをAzure IoT EdgeモジュールとしてデプロイするDockerfileとmodule.jsonを作成してください。入力は画像データ、出力は検出結果です。",
+    "tags": [
+      "ロボット",
+      "AI推論",
+      "オフロード",
+      "エッジAI",
+      "Azure IoT Edge"
+    ],
+    "id": "20260926_061510_02",
+    "date": "2026-09-26",
+    "source_news": {
+      "title": "ロボットAI推論をオフロードし、効率とタスク成功率を向上。",
+      "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "MoE強化学習をEKSで高速化設計",
+    "news_highlight": "MoE強化学習をEKSで40%高速化、EFAとDeepEPでスケーリング改善",
+    "problem_context": "MoEモデルの学習速度とスケーリング課題",
+    "recommended_ai": {
+      "model": "MoE強化学習",
+      "reason": "EKS上で高速化とスケーリング",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模な強化学習モデルの学習環境を構築する時",
+      "既存のMoEモデルの学習が遅く、改善策を探している時",
+      "EKS上で分散学習環境を最適化したい時"
+    ],
+    "steps": [
+      "1. MoE強化学習モデルの学習コードを準備する",
+      "2. EKSクラスターにEFA対応インスタンスをプロビジョニングする",
+      "3. DeepEPを利用したEKS分散学習設定を適用する",
+      "4. モデルをデプロイし、学習速度とスケーリングを評価する"
+    ],
+    "prompt": "EKS上でMoE強化学習モデルを40%高速化するためのDeepEPとEFAを利用したKubernetesマニフェストと学習スクリプトの設計例を提示してください。",
+    "tags": [
+      "MoE",
+      "強化学習",
+      "EKS",
+      "分散学習",
+      "高速化",
+      "スケーリング"
+    ],
+    "id": "20260926_061534_03",
+    "date": "2026-09-26",
+    "source_news": {
+      "title": "MoE強化学習をEKSで40%高速化、スケーリングを改善。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-deepep-with-40-more-throughput/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Strands Agents SDKでビデオAIエージェント構築",
     "news_highlight": "Strands Agents SDKがBedrock/Rekognition/Transcribeを統合し、AWS上で会話型ビデオAIを効率的に構築",
     "problem_context": "AWS上で複雑なAIサービス連携を効率化したい",
@@ -19333,125 +19454,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "Amazon BedrockでNovaモデルをファインチューニング",
-    "news_highlight": "Amazon BedrockでNovaモデルのファインチューニングにより意図分類器の性能が向上",
-    "problem_context": "汎用LLMの精度不足、特定タスクへの最適化",
-    "recommended_ai": {
-      "model": "Amazon Nova models",
-      "reason": "Bedrockでファインチューニング可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "顧客からの問い合わせ意図を自動分類したい時",
-      "特定の業界用語に特化したチャットボットを開発する時",
-      "既存のLLMが期待通りの応答をしない時"
-    ],
-    "steps": [
-      "1. BedrockコンソールでNovaモデルを選択し、ファインチューニング設定を開く",
-      "2. ファインチューニング用のデータセット（JSONL形式）を準備しS3にアップロード",
-      "3. Bedrockでファインチューニングジョブを開始し、カスタムモデルを作成",
-      "4. 作成したカスタムモデルをデプロイし、API経由で推論をテスト"
-    ],
-    "prompt": "以下のユーザー発言を読み、その意図を「予約」「キャンセル」「問い合わせ」のいずれかに分類し、JSON形式で出力してください。例: {'text': '明日の会議を予約したい', 'intent': '予約'}",
-    "tags": [
-      "Bedrock",
-      "Nova",
-      "ファインチューニング",
-      "意図分類",
-      "LLM"
-    ],
-    "id": "20260413_061608_03",
-    "date": "2026-04-13",
-    "source_news": {
-      "title": "BedrockでNovaモデルのファインチューニング、性能向上。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/customize-amazon-nova-models-with-amazon-bedrock-fine-tuning/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "SafetensorsでPyTorchモデルを安全に保存",
-    "news_highlight": "SafetensorsがPyTorch Foundationに加入、モデルのロード速度向上と悪意あるコード実行リスクを低減。",
-    "problem_context": "PyTorchモデルのロード遅延やセキュリティリスクを解決。",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "PyTorchコード生成・レビューに強み",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "既存のPyTorchモデルをSafetensors形式に移行する時",
-      "Safetensors形式のモデルを安全にロードするコードを実装する時",
-      "モデルのロード・保存処理のパフォーマンスを改善したい時"
-    ],
-    "steps": [
-      "1. 既存のPyTorchモデルの保存コード（`torch.save`など）を用意する。",
-      "2. AIに、このモデルをSafetensors形式で保存するPythonコードの生成を依頼する。",
-      "3. 生成されたコードをプロジェクトに適用し、モデルの保存・ロード・推論をテストする。",
-      "4. 必要に応じて、AIにロード時間の短縮やメモリ使用量の最適化について追加で相談する。"
-    ],
-    "prompt": "PyTorchモデルの`state_dict`をSafetensors形式で保存し、その後ロードして推論を行うPythonコードを生成してください。モデルはResNet50とします。",
-    "tags": [
-      "PyTorch",
-      "Safetensors",
-      "モデル保存",
-      "セキュリティ",
-      "パフォーマンス"
-    ],
-    "id": "20260412_061345_01",
-    "date": "2026-04-12",
-    "source_news": {
-      "title": "SafetensorsがPyTorch Foundationに加入、モデルの効率的なロード・保存を推進。",
-      "url": "https://huggingface.co/blog/safetensors-joins-pytorch-foundation"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Waypoint-1.5でリアルタイム3Dシミュレーション",
-    "news_highlight": "Waypoint-1.5が汎用GPUで高忠実度インタラクティブ世界をリアルタイム生成可能に。",
-    "problem_context": "リアルタイム3Dシミュレーション開発の複雑性",
-    "recommended_ai": {
-      "model": "Waypoint-1.5",
-      "reason": "高忠実度インタラクティブ世界生成",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "仮想空間での製品プロトタイプ検証",
-      "自動運転シミュレーション環境の構築",
-      "建築・都市計画のリアルタイム可視化"
-    ],
-    "steps": [
-      "1. Waypoint-1.5 SDKを開発環境にセットアップ",
-      "2. シミュレーションしたい環境の要件（例: 都市、自然）を定義",
-      "3. 定義した要件に基づき、Waypoint-1.5のAPIを呼び出し、世界を生成",
-      "4. 生成された世界でインタラクションや物理挙動をテスト"
-    ],
-    "prompt": "リアルタイムでインタラクティブな都市環境シミュレーションを生成してください。交通量、歩行者の動き、昼夜の変化をパラメータとして設定可能にしてください。",
-    "tags": [
-      "3Dシミュレーション",
-      "リアルタイムレンダリング",
-      "仮想現実",
-      "ゲーム開発"
-    ],
-    "id": "20260412_061412_02",
-    "date": "2026-04-12",
-    "source_news": {
-      "title": "Waypoint-1.5が汎用GPUで高忠実度インタラクティブ世界を実現。",
-      "url": "https://huggingface.co/blog/waypoint-1-5"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
