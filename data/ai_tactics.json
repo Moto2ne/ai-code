@@ -1,5 +1,108 @@
 [
   {
+    "title": "OpenAI Daybreak programのAIでセキュリティコードレビュー",
+    "news_highlight": "OpenAIがウクライナのサイバー防衛にAIアクセス提供、民間インフラ保護を支援",
+    "problem_context": "コードのセキュリティ脆弱性を見落とすリスクを低減",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "高度なコード理解とセキュリティ知識",
+      "badge_color": "orange"
+    },
+    "id": "20260927_061401_01",
+    "date": "2026-09-27",
+    "source_news": {
+      "title": "OpenAIがウクライナのサイバー防衛にAIアクセスを提供",
+      "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Transformersでllama.cpp量子化モデルを効率利用",
+    "news_highlight": "Transformersがllama.cpp量子化モデルを直接サポートし、メモリ効率と推論速度を改善",
+    "problem_context": "ローカル環境でのLlamaモデルのメモリ・速度課題",
+    "recommended_ai": {
+      "model": "Hugging Face Transformers",
+      "reason": "llama.cpp量子化モデルを直接サポート",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ローカルPCでLlamaモデルを動かしたい時",
+      "エッジデバイス向けにモデルを最適化したい時",
+      "推論コストを削減したい時"
+    ],
+    "steps": [
+      "1. `pip install --upgrade transformers`でライブラリを最新化",
+      "2. Hugging Face Hubから`llama.cpp`量子化モデル（例: GGUF形式）を選択",
+      "3. `AutoModelForCausalLM.from_pretrained`で`quantization_config`を指定してモデルをロード",
+      "4. ロードしたモデルで推論を実行し、メモリ使用量と速度を評価"
+    ],
+    "prompt": "Hugging Face Transformersライブラリでllama.cpp量子化モデルをロードし、テキスト生成を行うPythonコードを教えてください。モデルは`TheBloke/Llama-2-7B-Chat-GGUF`を使用。",
+    "tags": [
+      "量子化",
+      "Llama",
+      "Transformers",
+      "推論最適化"
+    ],
+    "id": "20260927_061429_02",
+    "date": "2026-09-27",
+    "source_news": {
+      "title": "Transformersがllama.cpp量子化モデルをサポート",
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
+      "icon": "🦙"
+    }
+  },
+  {
+    "title": "MoE強化学習でEKSスケーリング設計",
+    "news_highlight": "MoE強化学習をEKSでEFA/DeepEP活用し40%高速化、スケーリング改善",
+    "problem_context": "MoE強化学習のEKSでの性能とスケーリング課題",
+    "recommended_ai": {
+      "model": "MoE強化学習",
+      "reason": "大規模モデルの効率的な学習",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模MoE強化学習モデルの学習環境を設計する時",
+      "EKS上でGPUリソースを効率的に利用したい時",
+      "既存のMoE学習パイプラインの性能ボトルネックを特定する時"
+    ],
+    "steps": [
+      "1. EKSクラスターの既存設定（ノードタイプ、GPU数）を確認する",
+      "2. EFAを有効化したEKSノードグループの設計案を検討する",
+      "3. DeepEPの導入とMoEモデルの学習コードへの適用方法を調査する",
+      "4. EKSマニフェストと学習スクリプトの変更点を設計し、性能改善計画を立てる"
+    ],
+    "prompt": "EKSでMoE強化学習を40%高速化するため、EFAとDeepEPを活用したクラスター設計と学習コードの変更点を具体的に提案してください。",
+    "tags": [
+      "EKS",
+      "MoE",
+      "強化学習",
+      "スケーリング",
+      "GPU",
+      "EFA",
+      "DeepEP",
+      "アーキテクチャ設計"
+    ],
+    "id": "20260927_061454_03",
+    "date": "2026-09-27",
+    "source_news": {
+      "title": "MoE強化学習をEKSで40%高速化、スケーリング改善",
+      "url": "https://aws.amazon.com/blogs/machine-learning/scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-deepep-with-40-more-throughput/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Hugging Face Transformersでllama.cppモデルを高速化",
     "news_highlight": "Hugging Face Transformersがllama.cpp量子化モデルに対応し、ローカル推論を高速化・省リソース化",
     "problem_context": "ローカル環境でのLLM推論が遅い・メモリ不足",
@@ -19335,125 +19438,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "Sentence Transformersでマルチモーダル検索",
-    "news_highlight": "Sentence Transformersがマルチモーダル埋め込みとリランカーモデルを発表、検索精度向上に貢献。",
-    "problem_context": "既存検索システムの精度不足、マルチモーダル情報活用。",
-    "recommended_ai": {
-      "model": "Sentence Transformers",
-      "reason": "マルチモーダル対応とリランク機能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "画像とテキストを組み合わせたコンテンツ検索",
-      "既存の検索結果の関連度を向上させたい時",
-      "類似する製品やドキュメントを効率的に発見したい時"
-    ],
-    "steps": [
-      "1. Sentence Transformersライブラリをインストールする",
-      "2. マルチモーダル埋め込みモデルをロードする",
-      "3. 検索対象のテキストと画像を埋め込みベクトルに変換する",
-      "4. ユーザーのクエリ（テキスト/画像）を埋め込みベクトルに変換し、類似度で初期検索を行う",
-      "5. リランカーモデルを用いて初期検索結果の順位を再調整し、最終結果を表示する"
-    ],
-    "prompt": "Sentence Transformersのマルチモーダル埋め込みモデルとリランカーモデルをPythonで利用し、画像とテキストの組み合わせで類似コンテンツを検索するコードを生成してください。",
-    "tags": [
-      "検索",
-      "マルチモーダル",
-      "リランカー",
-      "Python"
-    ],
-    "id": "20260414_062314_03",
-    "date": "2026-04-14",
-    "source_news": {
-      "title": "Sentence Transformersでマルチモーダル埋め込み・リランカーモデル発表",
-      "url": "https://huggingface.co/blog/multimodal-sentence-transformers"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "GPT-4oでmacOSアプリ署名スクリプトレビュー",
-    "news_highlight": "OpenAIがAxios攻撃に対応しmacOS証明書更新、ユーザーデータ侵害なし。",
-    "problem_context": "macOSアプリのコード署名プロセスの脆弱性特定",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "高度なセキュリティコード分析が可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "macOSアプリのリリース前に署名スクリプトをレビューしたい時",
-      "CI/CDパイプラインのセキュリティ脆弱性を特定したい時",
-      "証明書ローテーションスクリプトの安全性を確認したい時"
-    ],
-    "steps": [
-      "1. 既存のmacOSアプリ署名スクリプト（例: shellスクリプト）を準備する",
-      "2. スクリプトの内容をGPT-4oに貼り付ける",
-      "3. 提案されたセキュリティ強化案や脆弱性修正をスクリプトに適用する",
-      "4. 更新したスクリプトでテスト署名を行い、動作と安全性を確認する"
-    ],
-    "prompt": "以下のmacOSアプリ署名シェルスクリプトをレビューし、サプライチェーン攻撃対策として強化すべきセキュリティ脆弱性や改善点を具体的に提案してください。",
-    "tags": [
-      "セキュリティ",
-      "macOS",
-      "CI/CD",
-      "コードレビュー"
-    ],
-    "id": "20260413_061511_01",
-    "date": "2026-04-13",
-    "source_news": {
-      "title": "OpenAI、Axios攻撃に対応し証明書更新、データ侵害なし。",
-      "url": "https://openai.com/index/axios-developer-tool-compromise"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "GPT-4oでSafetensors変換コード生成",
-    "news_highlight": "SafetensorsがPyTorch Foundationに加入、モデルロード速度を最大2倍高速化、セキュリティも強化",
-    "problem_context": "既存PyTorchモデルの安全性とロード速度改善",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "コード生成と変換に最適",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "既存のPyTorchモデルをSafetensors形式に変換したい時",
-      "Safetensors形式のモデルをPyTorchでロードするコードが必要な時",
-      "モデルのセキュリティとロード効率を向上させたい時"
-    ],
-    "steps": [
-      "1. 変換したいPyTorchモデルのパスとモデルオブジェクトを準備する",
-      "2. AIにSafetensors形式への変換コード生成を依頼する",
-      "3. 生成されたコードを実行し、モデルをSafetensors形式で保存する",
-      "4. 保存したSafetensorsモデルをロードし、正しく動作するか確認する"
-    ],
-    "prompt": "PyTorchモデルをSafetensors形式に変換するPythonコードを生成してください。モデルは`model`変数に格納されており、`model.safetensors`として保存します。",
-    "tags": [
-      "PyTorch",
-      "Safetensors",
-      "モデル変換",
-      "セキュリティ",
-      "MLOps"
-    ],
-    "id": "20260413_061541_02",
-    "date": "2026-04-13",
-    "source_news": {
-      "title": "SafetensorsがPyTorch Foundationに加入、ML基盤強化。",
-      "url": "https://huggingface.co/blog/safetensors-joins-pytorch-foundation"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
     }
   }
 ]
