@@ -1,5 +1,122 @@
 [
   {
+    "title": "GPT-6 Astraで技術設計書を自動生成",
+    "news_highlight": "GPT-6 Astraは文脈認識を向上させ、構造化された技術文書生成を強化",
+    "problem_context": "複雑なシステム設計のドキュメント作成が非効率",
+    "recommended_ai": {
+      "model": "GPT-6 Astra",
+      "reason": "文脈認識と構造化に優れる",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能の技術設計書ドラフト作成",
+      "既存システムのアーキテクチャ概要文書生成",
+      "API仕様書の詳細記述"
+    ],
+    "steps": [
+      "1. 設計対象の要件定義書や関連コードを準備する",
+      "2. AIに設計書の骨子と内容生成を依頼する",
+      "3. 生成されたドラフトをレビューし、修正・加筆する",
+      "4. チーム内で共有し、フィードバックを反映する"
+    ],
+    "prompt": "以下の要件定義書と既存のシステム構成図を基に、新規機能の技術設計書をMarkdown形式で作成してください。機能概要、API設計、データベーススキーマ、シーケンス図の構成で記述してください。",
+    "tags": [
+      "設計",
+      "ドキュメンテーション",
+      "AIアシスタント"
+    ],
+    "id": "20260928_061440_01",
+    "date": "2026-09-28",
+    "source_news": {
+      "title": "GPT-6 Astraが法律文書生成を強化、文脈認識を向上。",
+      "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Codexで艦隊管理システムのコード生成",
+    "news_highlight": "Codex等が開発時間75時間節約、売上60%向上に貢献",
+    "problem_context": "艦隊管理システムの開発速度が遅い",
+    "recommended_ai": {
+      "model": "Codex",
+      "reason": "コード生成と開発効率化に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規機能のプロトタイプ開発時",
+      "既存コードのリファクタリング案を検討する時",
+      "テストコードを迅速に作成したい時",
+      "APIエンドポイントの実装を支援してほしい時"
+    ],
+    "steps": [
+      "1. 新規機能の要件を具体的に記述する",
+      "2. AIに要件と使用技術（例: Python, FastAPI）を提示し、コード生成を依頼",
+      "3. 生成されたコードを確認し、ビジネスロジックやエラーハンドリングを調整",
+      "4. 統合テストを実行し、期待通りに動作することを確認する"
+    ],
+    "prompt": "PythonとFastAPIを使って、艦隊管理システムの車両位置情報更新APIを実装してください。車両ID、緯度、経度を受け取り、データベースに保存する処理を含めてください。",
+    "tags": [
+      "コード生成",
+      "開発効率化",
+      "API開発",
+      "Python"
+    ],
+    "id": "20260928_061506_02",
+    "date": "2026-09-28",
+    "source_news": {
+      "title": "Codex等が売上60%向上、75時間節約に貢献。",
+      "url": "https://openai.com/index/proaction"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
+    "title": "RetroChimera知見をGPT-4oで応用",
+    "news_highlight": "RetroChimeraが小分子合成予測を大幅改善、医薬品・材料開発を加速",
+    "problem_context": "新規小分子の合成経路設計が困難",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "複雑な科学論文の理解と応用",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規化合物の合成戦略を検討する時",
+      "既存の合成経路の効率改善アイデアを探す時",
+      "関連する化学論文の要点を素早く把握したい時"
+    ],
+    "steps": [
+      "RetroChimeraのNature論文（または要約）を準備する",
+      "GPT-4oに論文の主要な手法や成果を説明する",
+      "自身のターゲット分子構造や合成目標を具体的に提示する",
+      "GPT-4oの提案を基に、合成経路のアイデアを評価・検証する"
+    ],
+    "prompt": "RetroChimeraの論文で示された小分子合成予測の知見を参考に、[ターゲット分子のSMILESまたは構造記述]のレトロ合成経路を3つ提案してください。各経路の鍵となる反応と実現可能性を評価してください。",
+    "tags": [
+      "化学",
+      "材料科学",
+      "AI/ML",
+      "研究開発"
+    ],
+    "id": "20260928_061535_03",
+    "date": "2026-09-28",
+    "source_news": {
+      "title": "RetroChimeraが小分子合成予測を改善、Nature論文発表。",
+      "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "OpenAI Daybreak programのAIでセキュリティコードレビュー",
     "news_highlight": "OpenAIがウクライナのサイバー防衛にAIアクセス提供、民間インフラ保護を支援",
     "problem_context": "コードのセキュリティ脆弱性を見落とすリスクを低減",
@@ -19320,124 +19437,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "Sentence Transformersでマルチモーダル検索実装",
-    "news_highlight": "Hugging FaceがSentence Transformersでマルチモーダル埋め込み・リランカーモデルを発表",
-    "problem_context": "テキストと画像を含む複雑な検索精度向上",
-    "recommended_ai": {
-      "model": "Sentence Transformers",
-      "reason": "マルチモーダル対応で検索精度向上",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ECサイトの商品検索精度向上",
-      "社内文書の図表含む情報検索",
-      "推薦システムのアイテムマッチング強化"
-    ],
-    "steps": [
-      "1. Sentence Transformersをインストール",
-      "2. マルチモーダルモデルをロード",
-      "3. テキストと画像を埋め込みに変換",
-      "4. 埋め込みベクトルで類似度検索を実行"
-    ],
-    "prompt": "Sentence Transformersのマルチモーダル埋め込みモデルを使い、テキストと画像パスから埋め込みベクトルを生成するPythonコードを記述してください。",
-    "tags": [
-      "マルチモーダル",
-      "埋め込み",
-      "検索",
-      "リランカー"
-    ],
-    "id": "20260415_062347_03",
-    "date": "2026-04-15",
-    "source_news": {
-      "title": "Hugging FaceがSentence Transformersでマルチモーダル埋め込み・リランカーモデルを発表。",
-      "url": "https://huggingface.co/blog/multimodal-sentence-transformers"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "GPT-5.4でAIエージェントのロジック設計",
-    "news_highlight": "CloudflareがGPT-5.4とCodexをAgent Cloudに統合し、AIエージェント構築を高速化・安全化",
-    "problem_context": "AIエージェントの複雑なロジック設計と実装の効率化",
-    "recommended_ai": {
-      "model": "OpenAI GPT-5.4",
-      "reason": "高度な推論とコード生成で設計を支援",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規AIエージェントの機能要件定義時",
-      "既存エージェントの機能拡張や改善時",
-      "エージェントのテストシナリオ作成時"
-    ],
-    "steps": [
-      "開発したいAIエージェントの目的と主要機能を具体的に記述",
-      "AIにエージェントのコアロジック設計とPythonコード生成を依頼",
-      "提案された設計とコードをレビューし、必要に応じて修正・調整",
-      "生成されたコードをテスト環境でデプロイし、動作検証"
-    ],
-    "prompt": "顧客サポートAIエージェントのコアロジックをPythonで設計し、コードを生成してください。ユーザー質問理解、FAQ検索、担当者エスカレーション機能を含めてください。",
-    "tags": [
-      "AIエージェント",
-      "GPT-5.4",
-      "ロジック設計",
-      "コード生成",
-      "Cloudflare"
-    ],
-    "id": "20260414_062223_01",
-    "date": "2026-04-14",
-    "source_news": {
-      "title": "CloudflareがOpenAI GPT-5.4を統合しAIエージェントを強化",
-      "url": "https://openai.com/index/cloudflare-openai-agent-cloud"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Waypoint-1.5で対話AIの設計",
-    "news_highlight": "Waypoint-1.5はGPU活用で高精細な対話世界を実現、複雑なシナリオ対応。",
-    "problem_context": "複雑な対話ロジックの設計が困難",
-    "recommended_ai": {
-      "model": "Waypoint-1.5",
-      "reason": "高精細な対話設計に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ゲーム内のNPC対話フローを設計したい時",
-      "仮想アシスタントの複雑な応答シナリオを作成したい時",
-      "教育シミュレーションでユーザーとのインタラクションを強化したい時"
-    ],
-    "steps": [
-      "対話の目的と主要な登場人物を定義する。",
-      "AIに主要な対話フローの骨子を生成依頼する。",
-      "生成されたフローを元に、分岐や例外処理を追加する。",
-      "AIに特定のシーンでの詳細なセリフ例を生成依頼する。"
-    ],
-    "prompt": "あなたはゲーム開発者です。プレイヤーがNPC『賢者エルフ』に『古代の秘宝』について尋ねる対話シナリオを設計してください。賢者は最初は秘密主義ですが、特定のキーワードで情報を開示します。",
-    "tags": [
-      "対話AI",
-      "シナリオ設計",
-      "ゲーム開発",
-      "GPU活用"
-    ],
-    "id": "20260414_062248_02",
-    "date": "2026-04-14",
-    "source_news": {
-      "title": "Waypoint-1.5リリース、GPUで高精細な対話世界を実現",
-      "url": "https://huggingface.co/blog/waypoint-1-5"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
