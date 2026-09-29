@@ -1,5 +1,120 @@
 [
   {
+    "title": "LFM2.5-VL-DSparkでVLM推論を高速化",
+    "news_highlight": "Hugging FaceがLFM2.5-VL-DSparkでVLM推論を大幅に高速化し、リアルタイム処理を強化。",
+    "problem_context": "VLMの推論速度が遅く、リアルタイム処理が困難。",
+    "recommended_ai": {
+      "model": "LFM2.5-VL-DSpark",
+      "reason": "VLMの推論を高速化するため。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "リアルタイム画像認識アプリケーションの応答速度を改善したい時",
+      "大量の画像とテキストデータから高速に情報を抽出したい時",
+      "VLMを用いたチャットボットの応答遅延を解消したい時"
+    ],
+    "steps": [
+      "1. Hugging FaceのLFM2.5-VL-DSparkの公式ドキュメントを確認する。",
+      "2. 既存のVLMモデル（例: BLIP, LLaVA）をLFM2.5-VL-DSpark互換に変換する。",
+      "3. 変換したモデルをアプリケーションに組み込み、推論速度を計測する。",
+      "4. パフォーマンスが改善されたか確認し、必要に応じて最適化を調整する。"
+    ],
+    "prompt": "Hugging FaceのLFM2.5-VL-DSparkを使って、既存のBLIPモデルの推論を高速化する手順をPythonコード例で示してください。",
+    "tags": [
+      "VLM",
+      "高速化",
+      "推論最適化",
+      "HuggingFace"
+    ],
+    "id": "20260930_061611_01",
+    "date": "2026-09-30",
+    "source_news": {
+      "title": "Hugging FaceがLFM2.5-VL-DSparkでVLMを高速化。",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "NVIDIA Kumo Tabularで表予測を高速化",
+    "news_highlight": "NVIDIA Kumo TabularがHugging Faceで表予測の精度・効率を大幅向上",
+    "problem_context": "表形式データの予測精度と処理速度の課題",
+    "recommended_ai": {
+      "model": "NVIDIA Kumo Tabular",
+      "reason": "精度・効率向上",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "顧客の離反予測モデルを開発する時",
+      "製品の需要予測精度を向上させたい時",
+      "金融取引の不正検知システムを構築する時"
+    ],
+    "steps": [
+      "Hugging Face SpacesでNVIDIA Kumo Tabularを探す",
+      "予測したい表形式データ（CSVなど）を準備する",
+      "Kumo Tabularのインターフェースにデータをアップロードし、予測を実行",
+      "予測結果の精度と処理速度を評価し、実務導入を検討する"
+    ],
+    "prompt": "既存の表予測モデルをNVIDIA Kumo Tabularに置き換える際の移行計画を立案してください。データ形式変換、API連携、性能評価のステップを含めてください。",
+    "tags": [
+      "表予測",
+      "機械学習"
+    ],
+    "id": "20260930_061639_02",
+    "date": "2026-09-30",
+    "source_news": {
+      "title": "Hugging FaceでNVIDIA Kumo Tabularが表予測の精度・効率を向上。",
+      "url": "https://huggingface.co/blog/nvidia/kumo-tabular"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "GPT-6.1 Solで複雑なコードをリファクタリング",
+    "news_highlight": "GPT-6.1 SolはAstra級知能を低価格で提供、APIはAstraの1/5。",
+    "problem_context": "肥大化したレガシーコードの保守性低下",
+    "recommended_ai": {
+      "model": "GPT-6.1 Sol",
+      "reason": "高度なコード理解と低コスト",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存の複雑な関数やクラスを改善したい時",
+      "パフォーマンスが低下しているコードを最適化したい時",
+      "新機能追加前にコードベースを整理したい時"
+    ],
+    "steps": [
+      "リファクタリングしたいコードブロックを特定する。",
+      "そのコードブロックの目的と現在の課題を明確にする。",
+      "GPT-6.1 Solにコードと課題を提示し、リファクタリング案を依頼する。",
+      "提案されたコードをレビューし、テスト環境で動作確認する。"
+    ],
+    "prompt": "以下のPythonコードを、可読性とパフォーマンスを向上させるようにリファクタリングしてください。特に、重複ロジックの排除と計算効率の改善に焦点を当ててください。元のコード: [ここにコードを貼り付け]",
+    "tags": [
+      "リファクタリング",
+      "コード品質",
+      "Python",
+      "コスト削減"
+    ],
+    "id": "20260930_061708_03",
+    "date": "2026-09-30",
+    "source_news": {
+      "title": "OpenAIがGPT-6.1 Solを発表、Astra級知能を低価格で提供。",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "AI戦術",
     "problem_context": "AI技術の活用",
     "recommended_ai": {
@@ -19305,125 +19420,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "AWS Trainium2とvLLMでLLM推論を高速化",
-    "news_highlight": "AWS Trainium2とvLLMが投機的デコーディングでLLM推論を高速化し、トークンあたりのコストを削減",
-    "problem_context": "LLM推論のレイテンシとコストを削減したい",
-    "recommended_ai": {
-      "model": "vLLM on AWS Trainium2",
-      "reason": "投機的デコーディングで高速化とコスト削減",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "リアルタイム応答が求められるチャットボットの推論速度向上",
-      "大規模なLLMアプリケーションの運用コスト削減",
-      "バッチ処理でのLLM推論スループット最大化"
-    ],
-    "steps": [
-      "AWS Trainium2インスタンスをプロビジョニングする。",
-      "vLLMライブラリをインストールし、必要な依存関係を設定する。",
-      "デプロイしたいLLMモデルを選択し、モデルファイルを準備する。",
-      "vLLMのAPIサーバーを起動する際に、投機的デコーディングを有効にする設定を適用する。"
-    ],
-    "prompt": "AWS Trainium2インスタンスでvLLMを使用し、投機的デコーディングを有効にしてLLMをデプロイするPythonコードと設定例を生成してください。",
-    "tags": [
-      "LLM",
-      "推論最適化",
-      "AWS",
-      "Trainium",
-      "vLLM",
-      "コスト削減"
-    ],
-    "id": "20260417_062244_03",
-    "date": "2026-04-17",
-    "source_news": {
-      "title": "AWS TrainiumとvLLMでLLM推論を投機的デコーディングで高速化",
-      "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-decode-heavy-llm-inference-with-speculative-decoding-on-aws-trainium-and-vllm/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "Waypoint-1.5で仮想環境を設計",
-    "news_highlight": "Hugging Face Waypoint-1.5はGPU向け高精細インタラクティブ世界モデル",
-    "problem_context": "複雑なシミュレーション環境構築の手間を削減",
-    "recommended_ai": {
-      "model": "Waypoint-1.5",
-      "reason": "高精細インタラクティブ世界モデル",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ロボットの行動シミュレーション環境を構築したい時",
-      "ゲームAIのテストシナリオを自動生成したい時",
-      "仮想空間でのユーザーインタラクションを設計したい時"
-    ],
-    "steps": [
-      "1. Waypoint-1.5のAPI/SDKをセットアップする。",
-      "2. 目的のシミュレーション環境の要件を定義する。",
-      "3. プロンプトを生成し、Waypoint-1.5に環境設計を依頼する。",
-      "4. 生成された環境モデルやシナリオをテストし、必要に応じて修正する。"
-    ],
-    "prompt": "高精細な仮想環境を設計してください。内容は、複雑な障害物がある都市の交差点で、自動運転車が安全に走行するためのシミュレーション環境です。",
-    "tags": [
-      "シミュレーション",
-      "仮想環境",
-      "設計",
-      "ロボティクス"
-    ],
-    "id": "20260416_062356_01",
-    "date": "2026-04-16",
-    "source_news": {
-      "title": "Hugging FaceがGPU向け高精細インタラクティブ世界モデルWaypoint-1.5を発表。",
-      "url": "https://huggingface.co/blog/waypoint-1-5"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Sentence Transformersでマルチモーダル検索改善",
-    "news_highlight": "Hugging FaceがSentence Transformersでマルチモーダル埋め込み・リランカーモデルを公開し、検索精度を向上。",
-    "problem_context": "既存の検索・推薦システムの精度が低い。",
-    "recommended_ai": {
-      "model": "Sentence Transformers (Hugging Face)",
-      "reason": "マルチモーダル対応で高精度",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ECサイトの商品検索でテキストと画像を組み合わせた検索結果を改善したい時",
-      "社内文書検索でテキストと図表の内容を考慮して関連度を高めたい時",
-      "コンテンツ推薦システムでユーザーの視聴履歴とコンテンツのメタデータを統合して精度を上げたい時"
-    ],
-    "steps": [
-      "既存の検索・推薦システムから評価用データセットを準備する。",
-      "Sentence Transformersのマルチモーダルモデルをロードする。",
-      "テキストと画像データから埋め込みベクトルを生成する。",
-      "生成した埋め込みベクトルを用いてリランカーを適用し、検索結果を評価する。"
-    ],
-    "prompt": "Sentence Transformersのマルチモーダル埋め込みモデルとリランカーモデルを使用して、テキストと画像の両方で検索可能なPythonの検索APIを実装してください。入力はクエリ文字列と画像パス、出力は関連度順のアイテムリストです。",
-    "tags": [
-      "検索",
-      "レコメンデーション",
-      "マルチモーダル",
-      "Python"
-    ],
-    "id": "20260416_062422_02",
-    "date": "2026-04-16",
-    "source_news": {
-      "title": "Hugging FaceがSentence Transformersでマルチモーダル埋め込み・リランカーモデルを公開。",
-      "url": "https://huggingface.co/blog/multimodal-sentence-transformers"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
