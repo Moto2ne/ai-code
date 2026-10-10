@@ -1,5 +1,122 @@
 [
   {
+    "title": "Claude Haiku 5.5でサブエージェント用コード生成",
+    "news_highlight": "Claude Haiku 5.5がAWS Bedrockで利用可能に。Claude 5.5系で最速・高効率、サブエージェント向け。",
+    "problem_context": "サブエージェントのAPI連携コード作成を高速化したい",
+    "recommended_ai": {
+      "model": "Claude Haiku 5.5",
+      "reason": "最速・高効率でサブエージェントに最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAPIと連携するサブエージェントのコードを生成したい時",
+      "特定のタスクを自動化する小さなスクリプトを作成したい時",
+      "既存のサブエージェントの処理を効率化したい時"
+    ],
+    "steps": [
+      "1. サブエージェントの目的と連携するAPIの仕様を定義する",
+      "2. Claude Haiku 5.5にプロンプトを送信し、コード生成を依頼する",
+      "3. 生成されたコードをテスト環境で実行し、動作を確認する",
+      "4. 必要に応じてコードを修正し、本番環境にデプロイする"
+    ],
+    "prompt": "Pythonで、指定されたAPIエンドポイント（例: `https://api.example.com/data`）からデータを取得し、JSON形式でパースするサブエージェント用関数を生成してください。",
+    "tags": [
+      "コード生成",
+      "API連携",
+      "サブエージェント",
+      "AWS Bedrock"
+    ],
+    "id": "20261011_061515_01",
+    "date": "2026-10-11",
+    "source_news": {
+      "title": "Claude Haiku 5.5がAWSで利用可能に。サブエージェント向けに最速・高効率。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #d4a27f 0%, #cc785c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Agent LightningでRLエージェント接続コード生成",
+    "news_highlight": "Agent Lightning v1.0発表。既存AIエージェントとRLフレームワークの複雑な接続を簡素化。",
+    "problem_context": "既存エージェントへの強化学習導入が複雑。",
+    "recommended_ai": {
+      "model": "Agent Lightning",
+      "reason": "既存エージェントとRL接続を簡素化。",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存のシミュレーション環境にRLエージェントを導入したい時",
+      "強化学習モデルのプロトタイピングを迅速に進めたい時",
+      "複数の異なるエージェントをRL訓練環境に統合したい時"
+    ],
+    "steps": [
+      "1. 既存エージェントの環境（Observation, Action Space）を定義する",
+      "2. Agent LightningのAPIドキュメントを参照する",
+      "3. プロンプトに既存エージェントの情報を渡し、接続コードを生成させる",
+      "4. 生成されたコードを既存エージェントのプロジェクトに組み込み、テストする"
+    ],
+    "prompt": "Agent Lightning v1.0を使って、Gymnasium環境に準拠した既存のPythonエージェントをRLフレームワークに接続するための初期設定コードを生成してください。Observation SpaceはBox(low=0, high=1, shape=(4,)), Action SpaceはDiscrete(2)です。",
+    "tags": [
+      "強化学習",
+      "エージェント",
+      "Python",
+      "プロトタイピング"
+    ],
+    "id": "20261011_061542_02",
+    "date": "2026-10-11",
+    "source_news": {
+      "title": "エージェント訓練用軽量RLフレームワークAgent Lightning v1.0発表。",
+      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "GPT-6 Astraでブラウザ操作スクリプト最適化",
+    "news_highlight": "GPT-6 Astraでブラウザエージェントのコスト76倍削減、5倍高速化",
+    "problem_context": "既存のブラウザ操作スクリプトが非効率",
+    "recommended_ai": {
+      "model": "GPT-6 Astra",
+      "reason": "高い効率改善実績とコスト削減効果",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "Webスクレイピングのパフォーマンスを改善したい時",
+      "E2Eテストの実行時間を短縮したい時",
+      "RPAボットの処理速度を向上させたい時"
+    ],
+    "steps": [
+      "1. 最適化したいブラウザ操作スクリプトを準備する",
+      "2. スクリプトの目的と現在のボトルネックを明確にする",
+      "3. GPT-6 Astraにスクリプトとボトルネックを提示し、最適化案を依頼する",
+      "4. 提案された最適化コードを適用し、パフォーマンスを測定する"
+    ],
+    "prompt": "以下のPython Seleniumスクリプトを、コストと実行速度を最大化するよう最適化してください。特に要素の特定と待機処理を見直してください。スクリプト: [ここにスクリプトを貼り付ける]",
+    "tags": [
+      "コード最適化",
+      "パフォーマンス改善",
+      "ブラウザ自動化",
+      "Python"
+    ],
+    "id": "20261011_061609_03",
+    "date": "2026-10-11",
+    "source_news": {
+      "title": "AsanaがブラウザエージェントでGPT-6.1 Solを使いコスト76倍削減、5倍高速化。",
+      "url": "https://openai.com/index/asana-browser-agent"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "d1決定モデルでエッジ異常検知",
     "news_highlight": "エッジデバイスでマルチモーダルデータを統合し、リアルタイム意思決定を可能にするオープンモデル",
     "problem_context": "エッジデバイスでの複雑な状況判断とリアルタイム応答",
@@ -19308,121 +19425,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "DeepSeek-V4で大規模コードレビュー",
-    "news_highlight": "DeepSeek-V4が100万トークン対応、AIエージェントのコード理解能力を大幅強化",
-    "problem_context": "大規模なコードベースの品質維持が困難",
-    "recommended_ai": {
-      "model": "DeepSeek-V4",
-      "reason": "100万トークンの長文理解",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プルリクエストを出す前に自分のコードをレビューしたい時",
-      "レガシーコードのリファクタリング方針を検討する時",
-      "複数ファイルにまたがる変更の影響範囲を分析したい時"
-    ],
-    "steps": [
-      "レビューしたいプロジェクトの関連ファイルを全て選択する",
-      "選択した全コードをDeepSeek-V4に貼り付ける",
-      "具体的なレビュー観点（例: 命名規則、パフォーマンス、セキュリティ）を指示する",
-      "DeepSeek-V4の提案を基にコードを修正し、テストする"
-    ],
-    "prompt": "このプロジェクトの全コードをレビューし、パフォーマンス、セキュリティ、可読性の観点から改善点を提案してください。具体的なコード例も示してください。",
-    "tags": [
-      "コードレビュー",
-      "リファクタリング",
-      "大規模コード"
-    ],
-    "id": "20260428_062939_03",
-    "date": "2026-04-28",
-    "source_news": {
-      "title": "DeepSeek-V4発表、100万トークンでAIエージェント強化。",
-      "url": "https://huggingface.co/blog/deepseekv4"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "GPT-5.5でAPI設計を効率化",
-    "news_highlight": "GPT-5.5はより高速で複雑なタスクに対応、API設計やデータ分析を効率化。",
-    "problem_context": "大規模システムのAPI設計における考慮漏れ防止。",
-    "recommended_ai": {
-      "model": "GPT-5.5",
-      "reason": "複雑な設計タスクに最適",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規マイクロサービスのAPIエンドポイントを設計する時",
-      "既存APIの拡張性を検討する時",
-      "複数のサービス間の連携APIを定義する時"
-    ],
-    "steps": [
-      "設計したいAPIの目的と主要な機能を定義する",
-      "既存システムとの関連や制約をAIに提示する",
-      "AIが提案したAPIスキーマやエンドポイント案をレビューする",
-      "提案された設計を基に詳細を詰めて実装する"
-    ],
-    "prompt": "新規ユーザー管理マイクロサービスのREST API設計を提案してください。認証、CRUD操作、エラーハンドリングを含み、JSON形式で出力してください。",
-    "tags": [
-      "API設計",
-      "システム設計",
-      "バックエンド"
-    ],
-    "id": "20260427_061700_01",
-    "date": "2026-04-27",
-    "source_news": {
-      "title": "OpenAIがGPT-5.5を発表、より高速で複雑なタスクに対応。",
-      "url": "https://openai.com/index/introducing-gpt-5-5"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "GPT-5.5でAI倫理リスクを評価",
-    "news_highlight": "GPT-5.5システムカード公開、安全性・倫理・性能の透明化とリスク軽減策を詳述",
-    "problem_context": "AI利用時の潜在的な安全性・倫理的リスクの特定",
-    "recommended_ai": {
-      "model": "GPT-5.5",
-      "reason": "安全性・倫理・性能の知見が豊富",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プルリクエスト提出前のコードの安全性レビュー",
-      "新機能開発時の倫理的影響評価",
-      "既存AIシステムの潜在的バイアス特定"
-    ],
-    "steps": [
-      "1. 評価したいコードや設計書を準備する",
-      "2. 準備した内容をAIに貼り付け、倫理的・安全性の観点からリスク評価を依頼",
-      "3. AIが提示した潜在的リスクや改善提案を確認する",
-      "4. 提案に基づき、コード修正や設計見直しを行う"
-    ],
-    "prompt": "以下のコード/設計について、潜在的なセキュリティ脆弱性、プライバシー侵害リスク、倫理的バイアスがないか詳細に評価し、具体的な改善案を提示してください。",
-    "tags": [
-      "AI倫理",
-      "セキュリティ",
-      "コードレビュー",
-      "設計"
-    ],
-    "id": "20260427_061727_02",
-    "date": "2026-04-27",
-    "source_news": {
-      "title": "GPT-5.5のシステムカード公開、安全性・倫理・性能を詳述。",
-      "url": "https://openai.com/index/gpt-5-5-system-card"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
     }
   }
 ]
