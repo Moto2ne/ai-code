@@ -1,5 +1,122 @@
 [
   {
+    "title": "Gemini 4 Argonでマイクロサービス設計",
+    "news_highlight": "Gemini 4 Argon発表。複雑な推論と大規模コード対応を期待。",
+    "problem_context": "複雑なシステム設計の初期段階で全体像を掴む",
+    "recommended_ai": {
+      "model": "Gemini 4 Argon",
+      "reason": "高度な推論能力に期待",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規マイクロサービス設計の初期検討",
+      "既存システムのモジュール分割案の検討",
+      "技術選定におけるアーキテクチャ比較"
+    ],
+    "steps": [
+      "新規開発するシステムの要件を箇条書きでまとめる。",
+      "既存システムとの連携ポイントや制約を記述する。",
+      "AIにプロンプトを貼り付けて設計案を依頼する。",
+      "提案された設計案を基にチームで議論し、具体化する。"
+    ],
+    "prompt": "新規マイクロサービスを設計してください。要件はユーザー認証、商品管理、注文処理です。RESTful APIとイベント駆動を組み合わせたアーキテクチャを提案してください。",
+    "tags": [
+      "システム設計",
+      "アーキテクチャ",
+      "マイクロサービス"
+    ],
+    "id": "20261017_061324_01",
+    "date": "2026-10-17",
+    "source_news": {
+      "title": "Googleが次世代AIモデルGemini 4 Argonを発表。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
+    "title": "GPT-6 Astraで自律エージェントの設計",
+    "news_highlight": "GPT-6 Astra, Ultrafast, GPT-Live-1でAIエージェント応用を拡大、Sign in with ChatGPTも。",
+    "problem_context": "複雑な開発タスクの自動化が困難",
+    "recommended_ai": {
+      "model": "GPT-6 Astra",
+      "reason": "複雑なエージェント設計を支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複数APIを組み合わせるバックエンド処理の設計",
+      "ユーザーの操作履歴に基づいたUIフローの自動生成",
+      "テストケースとモックデータの自動生成",
+      "既存コードベースへの新機能追加時の影響分析"
+    ],
+    "steps": [
+      "1. 実現したいエージェントの最終目標を定義",
+      "2. エージェントが実行すべき主要なステップを箇条書きで記述",
+      "3. GPT-6 Astraにプロンプトを送信し、設計案とコードスニペットを生成させる",
+      "4. 生成された設計とコードをレビューし、必要に応じて修正・実装"
+    ],
+    "prompt": "あなたは熟練したエージェント設計者です。ユーザーが指定する目標を達成するためのPythonエージェントの設計と、主要な関数スタブを生成してください。目標: ユーザーの問い合わせに応じて、社内ドキュメントを検索し、関連情報を要約して回答するエージェント。",
+    "tags": [
+      "AIエージェント",
+      "設計",
+      "コード生成",
+      "自動化"
+    ],
+    "id": "20261017_061350_02",
+    "date": "2026-10-17",
+    "source_news": {
+      "title": "OpenAIがAIエージェントの応用を拡大、新モデルも示唆。",
+      "url": "https://openai.com/index/amp-beyond-coding"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Muse Spark OpenでUIコード生成",
+    "news_highlight": "MetaのMuse Spark OpenはマルチモーダルMoEモデルで、効率的な推論と多様なデータ処理が可能",
+    "problem_context": "UIデザイン画像からフロントエンドコードを迅速に生成したい",
+    "recommended_ai": {
+      "model": "Muse Spark Open",
+      "reason": "マルチモーダルで画像とテキストを統合処理",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プロトタイプ開発の高速化",
+      "デザインシステムのコンポーネント化",
+      "既存UIのコードリファクタリング"
+    ],
+    "steps": [
+      "UIデザイン画像を準備する。",
+      "画像と生成したいコードの要件をAIに提示する。",
+      "AIが生成したコードを確認し、必要に応じて修正する。",
+      "生成されたコードをプロジェクトに統合しテストする。"
+    ],
+    "prompt": "このUIデザイン画像から、ReactとTailwind CSSを使って、ログインフォームのコンポーネントコードを生成してください。",
+    "tags": [
+      "コード生成",
+      "フロントエンド",
+      "UI/UX",
+      "マルチモーダル"
+    ],
+    "id": "20261017_061420_03",
+    "date": "2026-10-17",
+    "source_news": {
+      "title": "MetaがマルチモーダルMoEモデルMuse Spark Openを公開。",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Muse Spark OpenでUIコンポーネント生成",
     "news_highlight": "Metaの多モーダルMoEモデルMuse Spark OpenがHugging Faceで公開",
     "problem_context": "デザイン案からUIコンポーネントを効率的に作成したい",
@@ -19323,123 +19440,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
       "icon": "🚀"
-    }
-  },
-  {
-    "title": "AI Agentで相互作用リスクを設計レビュー",
-    "news_highlight": "AI Agentの相互作用で発生するネットワークレベルリスクを特定、新アプローチを提唱",
-    "problem_context": "複数AI Agent連携時の予期せぬ挙動を特定",
-    "recommended_ai": {
-      "model": "AI Agent",
-      "reason": "複雑な相互作用リスクを分析するため",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "複数のAI Agentを連携させるシステムを設計する時",
-      "既存のAgentシステムで予期せぬエラーや挙動が発生した時",
-      "新しいAgentの追加が既存システムに与える影響を評価する時"
-    ],
-    "steps": [
-      "1. 連携するAI Agentの役割と入出力を定義する",
-      "2. 各Agent間のデータフローと制御フローを記述する",
-      "3. AIに潜在的な相互作用リスクと脆弱性を分析させる",
-      "4. 提案されたリスク軽減策を設計に反映し、テストする"
-    ],
-    "prompt": "以下のAI Agent連携システム設計について、各Agent間の相互作用で発生しうる潜在的なリスクと、そのリスクを軽減するための設計上の考慮事項を具体的に提案してください。Agent A: ユーザー要求を解析しタスクを分割, Agent B: タスクを実行し結果を統合, データフロー: A→B(タスク), B→A(結果)",
-    "tags": [
-      "AI Agent",
-      "システム設計",
-      "リスク分析",
-      "セキュリティ"
-    ],
-    "id": "20260504_062133_03",
-    "date": "2026-05-04",
-    "source_news": {
-      "title": "Microsoftが大規模Agentネットワークの安全性と相互作用リスクを研究。",
-      "url": "https://www.microsoft.com/en-us/research/blog/red-teaming-a-network-of-agents-understanding-what-breaks-when-ai-agents-interact-at-scale/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Nemotron 3 Nano Omniで設計図からコード生成",
-    "news_highlight": "NVIDIAが長文対応マルチモーダルAI「Nemotron 3 Nano Omni」を発表。",
-    "problem_context": "複雑な設計図からのコード実装に時間がかかる。",
-    "recommended_ai": {
-      "model": "Nemotron 3 Nano Omni",
-      "reason": "長文・マルチモーダル対応で設計図を理解",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規機能のプロトタイプを素早く作成したい時",
-      "複雑なシステム設計図からコードの骨格を生成したい時",
-      "既存の設計図を元に、新しいモジュールを開発する時"
-    ],
-    "steps": [
-      "1. 設計図（UML、フローチャートなど）の画像を準備する。",
-      "2. 関連する技術要件や制約事項をテキストでまとめる。",
-      "3. Nemotron 3 Nano Omniに画像とテキストを渡し、コード生成を依頼する。",
-      "4. 生成されたコードをレビューし、テスト環境で動作確認する。"
-    ],
-    "prompt": "このUMLクラス図と以下の要件に基づき、Pythonでクラスのスケルトンコードを生成してください。要件: データベース接続、非同期処理を考慮。",
-    "tags": [
-      "コード生成",
-      "設計",
-      "マルチモーダル",
-      "Python"
-    ],
-    "id": "20260503_061934_01",
-    "date": "2026-05-03",
-    "source_news": {
-      "title": "NVIDIAが長文対応マルチモーダルAI「Nemotron 3 Nano Omni」を発表。",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Granite 4.1の知見でLLM評価指標を改善",
-    "news_highlight": "IBMがGranite 4.1 LLM構築方法を公開、モデル評価・最適化の実用知見を提供。",
-    "problem_context": "自社LLMの性能評価が曖昧で改善が進まない。",
-    "recommended_ai": {
-      "model": "Llama 3",
-      "reason": "Granite 4.1の知見を適用し、Llama 3の評価・改善に役立てるため。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "自社でファインチューニングしたLLMの性能を客観的に評価したい時",
-      "特定のタスクで既存LLMの精度が頭打ちになった時",
-      "新しいLLMを導入する際の評価基準を策定したい時"
-    ],
-    "steps": [
-      "IBMが公開したGranite 4.1の構築方法に関するドキュメントから、評価指標とデータセット選定の知見を抽出する。",
-      "抽出した知見を基に、自社で利用中のLLM（例: Llama 3）の評価スクリプトやテストケースを見直す。",
-      "見直した評価基準でLLMを再評価し、具体的な性能ボトルネックを特定する。",
-      "特定されたボトルネックに基づき、ファインチューニングデータやプロンプトの改善計画を策定する。"
-    ],
-    "prompt": "Granite 4.1の構築方法で推奨される評価指標を参考に、Pythonでテキスト分類モデルのF1スコア、精度、再現率を計算し、結果をJSON形式で出力する関数を生成してください。",
-    "tags": [
-      "LLM評価",
-      "ファインチューニング",
-      "Python",
-      "データサイエンス"
-    ],
-    "id": "20260503_062005_02",
-    "date": "2026-05-03",
-    "source_news": {
-      "title": "IBMがGranite 4.1 LLMの構築方法を公開、実用的な知見を提供。",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-4-1"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
