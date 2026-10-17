@@ -1,5 +1,124 @@
 [
   {
+    "title": "Beamで多段階コード生成とリファクタリング",
+    "news_highlight": "Agentic coding向けオープンモデルBeamがAWS SageMaker JumpStartで利用可能",
+    "problem_context": "複雑なコーディングタスクの多段階自動化",
+    "recommended_ai": {
+      "model": "Beam",
+      "reason": "Agentic codingと長期的タスクに特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新機能追加時の複数ファイルにわたるコード修正",
+      "大規模リファクタリングの計画と段階的実行",
+      "複雑なバグの根本原因特定と修正コード生成"
+    ],
+    "steps": [
+      "1. AWS SageMaker JumpStartでBeamエンドポイントをデプロイ",
+      "2. 解決したい複雑なタスク（例: 新機能追加）を詳細に記述",
+      "3. Beamにタスク実行を依頼し、出力された計画とコードを確認",
+      "4. 提案されたコードをテスト環境で検証し、必要に応じて調整"
+    ],
+    "prompt": "既存のPythonプロジェクトにユーザー認証機能を実装してください。必要なAPIエンドポイント、データベーススキーマ、フロントエンドの変更を段階的に提案し、コードを生成してください。",
+    "tags": [
+      "コード生成",
+      "リファクタリング",
+      "AWS",
+      "SageMaker",
+      "Agentic AI"
+    ],
+    "id": "20261018_061230_01",
+    "date": "2026-10-18",
+    "source_news": {
+      "title": "Agentic coding向けオープンモデル「Beam」がAWSで利用可能に",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Bedrock AgentCoreで自己改善型IDP構築",
+    "news_highlight": "Bedrock AgentCoreで自己改善型IDPを構築、最小限の人間介入で文書処理を自動化",
+    "problem_context": "ビジネス文書処理の自動化と効率化",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "自己改善型IDPシステム構築に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規事業で契約書や請求書の処理を自動化したい時",
+      "非定型文書からの情報抽出ロジックを設計する時",
+      "文書処理AIの学習サイクルを実装・デバッグする時"
+    ],
+    "steps": [
+      "Bedrock AgentCoreで新規エージェントとナレッジベースをセットアップ",
+      "文書分類、情報抽出、検証の各ステップをエージェントアクションとして定義",
+      "フィードバックループを実装し、エージェントが学習するデータソースを設定",
+      "エージェントの動作をテストし、精度向上のためのプロンプトやロジックを調整"
+    ],
+    "prompt": "あなたは契約書から当事者名、契約期間、金額を抽出し、抽出結果を検証するAIエージェントです。誤りがあれば修正し、その修正から学習してください。",
+    "tags": [
+      "IDP",
+      "Agentic AI",
+      "Bedrock",
+      "文書処理",
+      "自動化"
+    ],
+    "id": "20261018_061255_02",
+    "date": "2026-10-18",
+    "source_news": {
+      "title": "Bedrock AgentCoreで自己改善型文書処理AIを構築する方法",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-self-improving-document-processing-using-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Bedrock AgentCoreでAIエージェント評価設計",
+    "news_highlight": "Bedrock AgentCoreが9段階評価フレームワークを発表、AIエージェントの品質劣化を検知",
+    "problem_context": "AIエージェントの性能劣化を早期に発見したい",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "エージェント評価に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントの新規開発時に品質基準を定義する時",
+      "既存のAIエージェントの性能低下を定期的に監視する時",
+      "AIエージェントのプロンプトやツール変更後の影響を評価する時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCoreで評価対象のAIエージェントとタスクを定義する",
+      "2. 9段階評価フレームワークに基づき、評価指標と期待される出力を設定する",
+      "3. 評価データセットを準備し、AgentCoreで評価ジョブを実行する",
+      "4. 評価結果レポートを確認し、品質劣化の兆候があればエージェントを調整する"
+    ],
+    "prompt": "Bedrock AgentCoreの9段階評価フレームワークに基づき、顧客サポートAIエージェントの「情報提供の正確性」を評価するテストケースを5つ生成してください。",
+    "tags": [
+      "AIエージェント",
+      "品質評価",
+      "Bedrock",
+      "MMLOps"
+    ],
+    "id": "20261018_061320_03",
+    "date": "2026-10-18",
+    "source_news": {
+      "title": "Bedrock AgentCoreでAIエージェントの評価フレームワークを発表",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-agents-a-production-ready-evaluation-framework-with-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Gemini 4 Argonでマイクロサービス設計",
     "news_highlight": "Gemini 4 Argon発表。複雑な推論と大規模コード対応を期待。",
     "problem_context": "複雑なシステム設計の初期段階で全体像を掴む",
@@ -19321,125 +19440,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
       "icon": "✨"
-    }
-  },
-  {
-    "title": "Nemotron 3 Nano OmniでエッジAI実装",
-    "news_highlight": "NVIDIA Nemotron 3 Nano Omni発表、マルチモーダルAIを小型化しオンデバイス推論を強化。",
-    "problem_context": "エッジデバイスでのリアルタイムAI処理の課題解決",
-    "recommended_ai": {
-      "model": "NVIDIA Nemotron 3 Nano Omni",
-      "reason": "小型でオンデバイス動作可能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "工場ラインで不良品画像をリアルタイム検知したい時",
-      "オフライン環境で技術文書の内容を素早く把握したい時",
-      "IoTデバイスに音声コマンド機能を組み込みたい時"
-    ],
-    "steps": [
-      "Nemotron 3 Nano OmniのSDKを開発環境にセットアップする",
-      "対象のエッジデバイスで推論を実行するコードを記述する",
-      "学習済みモデルをデバイスにデプロイし、推論速度と精度を評価する",
-      "結果を基にモデルの最適化やデバイスの選定を行う"
-    ],
-    "prompt": "NVIDIA Nemotron 3 Nano Omniを使って、エッジデバイス上で工場ラインの製品画像をリアルタイムで解析し、異常を検知するPythonコードを生成してください。",
-    "tags": [
-      "エッジAI",
-      "マルチモーダル",
-      "オンデバイス",
-      "リアルタイム",
-      "Python"
-    ],
-    "id": "20260505_063038_03",
-    "date": "2026-05-05",
-    "source_news": {
-      "title": "NVIDIA Nemotron 3 Nano Omni発表、マルチモーダルAIを小型化。",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "Nemotron 3 Nano OmniでAgentの設計支援",
-    "news_highlight": "NVIDIA Nemotron 3 Nano Omniは長文・マルチモーダル対応、自律Agent開発を加速",
-    "problem_context": "Agent開発の複雑なロジック設計",
-    "recommended_ai": {
-      "model": "Nemotron 3 Nano Omni",
-      "reason": "Agent開発に特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "Agentの行動ロジックを設計する時",
-      "マルチモーダルな入力（画像＋テキスト）を処理するAgentを開発する時",
-      "長文の仕様書からAgentのタスクフローを抽出する時"
-    ],
-    "steps": [
-      "1. Agentの目的と制約を定義する。",
-      "2. Nemotron 3 Nano Omniに目的と制約、期待する入出力形式を提示する。",
-      "3. 提案されたAgentの行動フローやロジックをレビューする。",
-      "4. 必要に応じて修正し、Agentの実装に活用する。"
-    ],
-    "prompt": "あなたは自律Agentの設計者です。ユーザーの意図を理解し、適切なツールを選択してタスクを完了するAgentの行動ロジックを設計してください。目的: Webサイトの情報を収集し要約、制約: リアルタイム性、入出力: URLと要約",
-    "tags": [
-      "Agent開発",
-      "設計支援",
-      "マルチモーダル",
-      "長文処理"
-    ],
-    "id": "20260504_062040_01",
-    "date": "2026-05-04",
-    "source_news": {
-      "title": "NVIDIAが長文・マルチモーダル対応のAgent向け新モデルNemotron 3 Nano Omniを発表。",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "AWS SageMaker Agentic AIでデータ分析スクリプト生成",
-    "news_highlight": "AWS SageMaker上でAgentic AIがデータ分析をセルフサービス化、S3連携で効率化",
-    "problem_context": "データ分析コード作成の手間、結果解釈の複雑さ",
-    "recommended_ai": {
-      "model": "AWS SageMaker Agentic AI",
-      "reason": "データ分析の自動化と効率化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいデータセットの探索的データ分析（EDA）を行う時",
-      "特定のビジネス指標を可視化するレポートを作成する時",
-      "データ前処理のパイプラインを迅速に構築したい時"
-    ],
-    "steps": [
-      "1. 分析したいS3バケットのデータパスを指定する",
-      "2. Agentic AIに分析目的（例: '顧客の購買傾向を分析し、最も売れている商品を特定'）を指示する",
-      "3. AIが生成したデータ分析コード（Python/Rなど）と結果を確認する",
-      "4. 必要に応じてコードを修正し、SageMaker上で実行、結果を評価する"
-    ],
-    "prompt": "S3バケット's3://my-data-bucket/sales/'にあるCSVファイルから、顧客の購買傾向を分析し、Pythonで最も売れている商品トップ5を特定するコードを生成してください。",
-    "tags": [
-      "データ分析",
-      "SageMaker",
-      "Agentic AI",
-      "Python",
-      "S3"
-    ],
-    "id": "20260504_062106_02",
-    "date": "2026-05-04",
-    "source_news": {
-      "title": "AWSがSageMaker上でAgentic AIによるデータ分析を可能にするソリューションを発表。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/unleashing-agentic-ai-analytics-on-amazon-sagemaker-with-amazon-athena-and-amazon-quick/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
     }
   }
 ]
