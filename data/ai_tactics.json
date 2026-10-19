@@ -1,5 +1,123 @@
 [
   {
+    "title": "MagnetarでZKP検証ロジック設計",
+    "news_highlight": "MagnetarがZKPでデータ秘匿し計算結果を検証、標準言語サポートで主流化を促進",
+    "problem_context": "機密データを秘匿し計算結果の正当性を検証",
+    "recommended_ai": {
+      "model": "Magnetar",
+      "reason": "ZKPの実装と検証を容易にする",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "機密性の高い顧客データを用いたAIモデルの推論結果が、特定の基準を満たしていることを第三者に証明したい時",
+      "複数のマイクロサービス間で共有される計算結果が、各サービスで正しく処理されたことを検証したい時",
+      "ブロックチェーン上のスマートコントラクトが、オフチェーンの機密データに基づいて正しく実行されたことを証明したい時"
+    ],
+    "steps": [
+      "検証したい計算ロジック（例: AIモデルの推論関数）と、秘匿したい入力データを特定する",
+      "Magnetarの公式ドキュメントを参照し、選択したプログラミング言語（例: Python）のSDKをインストールする",
+      "既存のアプリケーションコードに、Magnetar SDKを使ったZKP証明生成と検証のロジックを組み込む",
+      "テストデータを用いて、データが秘匿されつつ計算結果が正しく検証されることを確認する"
+    ],
+    "prompt": "MagnetarのPython SDKを使用し、入力データ`x`を秘匿したまま、`y = x * 2`の計算結果`y`が正しいことを検証するZKP証明生成・検証コードを生成してください。",
+    "tags": [
+      "ZKP",
+      "データ秘匿",
+      "検証",
+      "セキュリティ",
+      "分散システム"
+    ],
+    "id": "20261020_061504_01",
+    "date": "2026-10-20",
+    "source_news": {
+      "title": "ZKPでデータ秘匿し計算結果を検証するMagnetar発表",
+      "url": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCoreでAIエージェント評価",
+    "news_highlight": "Amazon Bedrock AgentCoreが9段階評価フレームワークを提供、AIエージェントの静かな品質劣化を検知。",
+    "problem_context": "AIエージェントの応答品質が静かに劣化する問題。",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "エージェント評価に特化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいAIエージェントのデプロイ前テスト時",
+      "既存エージェントの定期的な品質監視時",
+      "エージェントのプロンプトやツール変更後",
+      "ユーザーからの品質低下報告を受けた時"
+    ],
+    "steps": [
+      "1. Amazon Bedrock AgentCoreで評価フレームワークを有効化する。",
+      "2. 評価したいAIエージェントとテストケースを定義し、評価を実行する。",
+      "3. 9段階評価の結果レポートを確認し、品質劣化の兆候を特定する。",
+      "4. 劣化が確認された場合、エージェントのプロンプトやツールを修正し再評価。"
+    ],
+    "prompt": "Amazon Bedrock AgentCoreの9段階評価フレームワークを活用し、特定のAIエージェントの応答品質を評価するPythonスクリプトを生成してください。テストケースはJSON形式で定義します。",
+    "tags": [
+      "AIエージェント",
+      "品質保証",
+      "Bedrock",
+      "デバッグ"
+    ],
+    "id": "20261020_061530_02",
+    "date": "2026-10-20",
+    "source_news": {
+      "title": "AIエージェントの信頼性評価フレームワークをBedrockで提供",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-agents-a-production-ready-evaluation-framework-with-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Gemini 4 Argonで複雑なコードをリファクタリング",
+    "news_highlight": "Gemini 4 Argonは推論速度2倍、マルチモーダル理解度向上、コンテキスト512Kトークン対応",
+    "problem_context": "大規模コードの可読性・保守性向上",
+    "recommended_ai": {
+      "model": "Gemini 4 Argon",
+      "reason": "複雑なコード理解と改善提案",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "技術的負債を解消したい時",
+      "パフォーマンスボトルネックを改善したい時",
+      "プルリクエスト前にコード品質を高めたい時"
+    ],
+    "steps": [
+      "リファクタリングしたいコードブロックを特定する",
+      "コードブロックと関連する要件、現在の課題をAIに提示する",
+      "AIが提案したリファクタリング案をレビューし、必要に応じて修正する",
+      "提案されたコードをテスト環境で実行し、動作確認を行う"
+    ],
+    "prompt": "以下のPythonコードを、PEP8に準拠し、テスト容易性を高める形でリファクタリングしてください。特に、`process_data`関数の複雑性を軽減し、依存関係を明確にしてください。",
+    "tags": [
+      "リファクタリング",
+      "コード品質",
+      "Python"
+    ],
+    "id": "20261020_061557_03",
+    "date": "2026-10-20",
+    "source_news": {
+      "title": "Googleが次世代AIモデルGemini 4 Argonを発表",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
+      "icon": "✨"
+    }
+  },
+  {
     "title": "Gemini 4 Argonで複雑な設計支援",
     "news_highlight": "Gemini 4 Argonは複雑な難題解決に特化、高度な推論能力を強化",
     "problem_context": "複雑なシステム設計の初期検討",
@@ -19326,122 +19444,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "OpenAI MRCプロトコルで分散学習コード最適化",
-    "news_highlight": "OpenAI MRCプロトコル発表、大規模AI学習の性能と安定性を向上させる新ネットワークプロトコル",
-    "problem_context": "大規模AI学習のネットワークボトルネック解消",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "分散学習コード設計に最適",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "大規模モデルの分散学習コードを設計する時",
-      "既存の分散学習コードのパフォーマンスを改善したい時",
-      "MLOpsパイプラインの学習ステージを最適化する時"
-    ],
-    "steps": [
-      "現在使用している分散学習フレームワーク（例: PyTorch Distributed）と学習コードを準備する。",
-      "AIにMRCプロトコルの特性を考慮した最適化ポイントを質問する。",
-      "AIの提案に基づき、コードのデータロード、通信、同期部分を修正する。",
-      "修正後のコードで学習を実行し、性能と安定性を評価する。"
-    ],
-    "prompt": "PyTorch DistributedDataParallelを使用しています。OpenAI MRCプロトコルの特性を最大限に活かすため、データロード、通信、同期処理の最適化戦略を提案してください。具体的なコード例も示してください。",
-    "tags": [
-      "分散学習",
-      "MLOps",
-      "パフォーマンス最適化",
-      "ネットワークプロトコル"
-    ],
-    "id": "20260507_063054_03",
-    "date": "2026-05-07",
-    "source_news": {
-      "title": "OpenAIがMRCプロトコル発表、大規模AI学習の性能と安定性向上。",
-      "url": "https://openai.com/index/mrc-supercomputer-networking"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "LLMでAIエージェント連携リスクを評価",
-    "news_highlight": "Microsoft Researchが複数AIエージェント連携時のネットワークリスクを特定、新安全対策を研究",
-    "problem_context": "複数AIエージェント連携システムの潜在リスク特定",
-    "recommended_ai": {
-      "model": "Generative AI",
-      "reason": "複雑なシナリオ分析に有効",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "複数AIエージェント連携システム設計時",
-      "AIエージェント連携システムのセキュリティレビュー時",
-      "既存AIエージェント連携システムの脆弱性診断時"
-    ],
-    "steps": [
-      "1. 連携するAIエージェントの役割とインタラクションフローを定義する。",
-      "2. 各エージェントの入出力、トリガー、依存関係を詳細に記述する。",
-      "3. 定義した情報と想定されるリスクシナリオをAIに提示する。",
-      "4. AIが提示した潜在的リスクと対策案をレビューし、設計に反映する。"
-    ],
-    "prompt": "以下のAIエージェント連携システム設計について、潜在的なネットワークレベルのリスクと、それに対する具体的な安全対策を提案してください。各エージェントの役割とインタラクションフローを記述します。",
-    "tags": [
-      "AIセキュリティ",
-      "システム設計",
-      "リスク分析"
-    ],
-    "id": "20260506_062808_01",
-    "date": "2026-05-06",
-    "source_news": {
-      "title": "複数AIエージェント連携時のリスクと安全対策を研究",
-      "url": "https://www.microsoft.com/en-us/research/blog/red-teaming-a-network-of-agents-understanding-what-breaks-when-ai-agents-interact-at-scale/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Amazon Bedrockで不適切メッセージ検出API開発",
-    "news_highlight": "Amazon BedrockのNovaモデルで生成AIを活用し、メッセージ防御とビジネス保護を強化",
-    "problem_context": "ユーザー投稿の不適切コンテンツ検出を自動化したい",
-    "recommended_ai": {
-      "model": "Amazon Nova Foundation Models",
-      "reason": "高度なテキスト分析と防御機能",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ユーザーが投稿するコメントやレビューの自動フィルタリング",
-      "チャットアプリケーションでの不適切発言のリアルタイム検知",
-      "フォーラム投稿におけるヘイトスピーチやスパムの事前ブロック"
-    ],
-    "steps": [
-      "Amazon BedrockコンソールでNovaモデルへのアクセスを有効化する。",
-      "検出したい不適切メッセージのカテゴリ（例: ヘイトスピーチ、暴力表現、個人情報）を定義する。",
-      "Bedrock API (boto3など) を使用して、Novaモデルにテキストを送信するPythonスクリプトを作成する。",
-      "モデルの応答を解析し、不適切と判断された場合にフラグを立てるロジックを実装する"
-    ],
-    "prompt": "以下のテキストがヘイトスピーチ、暴力表現、個人情報のいずれかに該当するかを判断し、該当する場合はそのカテゴリを、該当しない場合は「安全」と出力してください。分析対象テキスト:",
-    "tags": [
-      "セキュリティ",
-      "コンテンツモデレーション",
-      "API開発",
-      "生成AI"
-    ],
-    "id": "20260506_062840_02",
-    "date": "2026-05-06",
-    "source_news": {
-      "title": "Bedrockで生成AIを活用したメッセージ防御とビジネス保護",
-      "url": "https://aws.amazon.com/blogs/machine-learning/intelligence-driven-message-defense-and-insights-using-amazon-bedrock/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
