@@ -1,5 +1,124 @@
 [
   {
+    "title": "Laplace 3Bで長文処理コスト削減",
+    "news_highlight": "Laplace 3BはKVキャッシュ問題を解決、再帰状態が29.5MB/シーケンスで固定。",
+    "problem_context": "長文処理時のメモリ肥大化と推論コスト増",
+    "recommended_ai": {
+      "model": "Laplace 3B",
+      "reason": "長文処理のメモリ効率を改善",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "長文ドキュメントのリアルタイム要約",
+      "大規模コードベースの分析とリファクタリング",
+      "顧客サポートチャットボットでの長期会話履歴維持"
+    ],
+    "steps": [
+      "Laplace 3BのAPIまたはモデルをデプロイ環境にセットアップする。",
+      "処理したい長文データ（ドキュメント、コード、会話ログなど）を用意する。",
+      "Laplace 3Bにデータを入力し、必要なタスク（要約、分析、応答生成など）を実行する。",
+      "メモリ使用量と推論速度をモニタリングし、従来のモデルと比較評価する。"
+    ],
+    "prompt": "以下の長文ドキュメントを要約し、主要な論点と結論を500字以内でまとめてください。メモリ効率を最大化してください。",
+    "tags": [
+      "LLM",
+      "メモリ最適化",
+      "長文処理",
+      "コスト削減",
+      "Trainium2"
+    ],
+    "id": "20261021_061518_01",
+    "date": "2026-10-21",
+    "source_news": {
+      "title": "i14のLaplace 3Bモデル発表、KVキャッシュ問題を解決",
+      "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "ALTK-Evolveで複雑な設計レビュー",
+    "news_highlight": "ALTK-Evolveがτ²-benchでトップ、記憶学習で複雑な設計課題に対応。",
+    "problem_context": "大規模システムの設計レビュー精度向上",
+    "recommended_ai": {
+      "model": "ALTK-Evolve",
+      "reason": "記憶学習で文脈理解",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "大規模なシステム設計の初期段階で、複数の設計案を比較検討したい時",
+      "既存の複雑なマイクロサービスアーキテクチャに新しい機能を統合する際の設計レビュー",
+      "特定のドメイン知識を要するAPI設計の妥当性を評価したい時"
+    ],
+    "steps": [
+      "レビューしたい設計ドキュメント（例: ER図、シーケンス図、API仕様）をテキスト形式で準備する。",
+      "AIに、設計の目的、既存システムの概要、考慮すべき制約を具体的に伝える。",
+      "AIに設計ドキュメントを貼り付け、レビューを依頼する。",
+      "AIの提案を元に、設計の改善点や潜在的な問題を特定し、議論する。"
+    ],
+    "prompt": "以下のマイクロサービス設計ドキュメントをレビューし、スケーラビリティ、セキュリティ、保守性の観点から改善点を提案してください。既存システムはAWS LambdaとDynamoDBを使用しています。",
+    "tags": [
+      "設計レビュー",
+      "アーキテクチャ",
+      "マイクロサービス",
+      "記憶学習"
+    ],
+    "id": "20261021_061542_02",
+    "date": "2026-10-21",
+    "source_news": {
+      "title": "ALTK-Evolveがτ²-benchでトップ、記憶学習で性能向上",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "ChatGPTでCOBOL/SQLiteコードを改善",
+    "news_highlight": "ChatGPTが低リソース言語対応を強化、ソフトウェア工学・SQLite・COBOL移行の新評価を導入",
+    "problem_context": "低リソース言語のコード保守・移行の困難さ",
+    "recommended_ai": {
+      "model": "ChatGPT",
+      "reason": "低リソース言語対応強化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "COBOLレガシーコードを現代言語へ移行する時",
+      "SQLiteデータベースのクエリ性能を改善したい時",
+      "低リソース言語のコードのバグを特定・修正する時"
+    ],
+    "steps": [
+      "移行したいCOBOLコードをコピーする。",
+      "AIに指定言語（例: Python）への変換を依頼する。",
+      "AIが生成したコードをテスト環境で実行し検証する。",
+      "必要に応じて修正し、新しいシステムに統合する。"
+    ],
+    "prompt": "以下のCOBOLコードをPythonに変換し、現代的なベストプラクティスに従ってリファクタリングしてください。元のロジックは維持してください。 [COBOLコード]",
+    "tags": [
+      "レガシーコード",
+      "COBOL",
+      "SQLite",
+      "コード移行",
+      "デバッグ"
+    ],
+    "id": "20261021_061609_03",
+    "date": "2026-10-21",
+    "source_news": {
+      "title": "ChatGPTが低リソース言語対応を強化、新評価も導入",
+      "url": "https://openai.com/index/low-resource-programming-languages"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "MagnetarでZKP検証ロジック設計",
     "news_highlight": "MagnetarがZKPでデータ秘匿し計算結果を検証、標準言語サポートで主流化を促進",
     "problem_context": "機密データを秘匿し計算結果の正当性を検証",
@@ -19323,122 +19442,6 @@
     "source_news": {
       "title": "OpenAI APIに新リアルタイム音声モデル、音声AI体験を向上",
       "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Amazon Bedrock AgentCoreで自律エージェント設計",
-    "news_highlight": "Amazon Bedrock AgentCore PaymentsでAIエージェントが外部サービス利用料を即時支払い可能に。",
-    "problem_context": "AIエージェントの外部サービス利用コスト管理",
-    "recommended_ai": {
-      "model": "Amazon Bedrock AgentCore",
-      "reason": "決済機能が統合されたため",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "AIエージェントが外部APIを利用する際の支払い処理を自動化したい時",
-      "AIエージェントにクラウドサービス利用料を自動で支払わせたい時",
-      "AIエージェントの自律的なタスク実行におけるコスト管理を効率化したい時"
-    ],
-    "steps": [
-      "1. Bedrock AgentCoreでエージェントを定義する。",
-      "2. 外部サービス利用に必要なAPIやリソースを特定する。",
-      "3. AgentCore Paymentsで支払い方法と予算を設定する。",
-      "4. エージェントの実行ログと支払い履歴を監視し、コストを最適化する。"
-    ],
-    "prompt": "Amazon Bedrock AgentCoreで、外部API（例: 翻訳API）を利用し、その利用料をAgentCore Paymentsで自動支払いするエージェントの設計概要をJSON形式で記述してください。",
-    "tags": [
-      "AIエージェント",
-      "コスト管理",
-      "API連携",
-      "Bedrock"
-    ],
-    "id": "20260508_062705_03",
-    "date": "2026-05-08",
-    "source_news": {
-      "title": "Amazon Bedrock AgentCoreに決済機能、AIエージェントが支払い可能に",
-      "url": "https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "GPT-5.5 InstantでAPI設計レビュー",
-    "news_highlight": "GPT-5.5 InstantはChatGPTのデフォルトモデルを更新、性能向上とハルシネーション削減。",
-    "problem_context": "AIによる設計案やレビューの信頼性を向上させたい",
-    "recommended_ai": {
-      "model": "GPT-5.5 Instant",
-      "reason": "ハルシネーション削減で信頼性向上",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規API設計の初期レビュー時",
-      "既存APIの改善案を検討する時",
-      "複雑なロジックの設計方針を相談する時"
-    ],
-    "steps": [
-      "1. 設計中のAPI仕様書（OpenAPIなど）を準備する。",
-      "2. AIにAPI仕様書を貼り付け、レビューを依頼する。",
-      "3. AIの指摘事項や改善提案を確認し、設計に反映する。",
-      "4. 必要に応じてAIと対話し、詳細を詰める。"
-    ],
-    "prompt": "以下のAPI仕様書をレビューし、潜在的な問題点、改善点、セキュリティ上の懸念を指摘してください。特に整合性と効率性に注目してください。",
-    "tags": [
-      "API設計",
-      "コードレビュー",
-      "品質向上"
-    ],
-    "id": "20260507_062956_01",
-    "date": "2026-05-07",
-    "source_news": {
-      "title": "GPT-5.5 Instant発表、ChatGPTの性能向上とハルシネーション削減。",
-      "url": "https://openai.com/index/gpt-5-5-instant"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "GPT-5.5 Instantで安全なコード生成",
-    "news_highlight": "GPT-5.5 Instantのシステムカード公開、高速応答と安全利用の詳細が明確に。",
-    "problem_context": "セキュリティ脆弱性の少ないコードを効率的に書きたい",
-    "recommended_ai": {
-      "model": "GPT-5.5 Instant",
-      "reason": "安全性ガイドラインが明確",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規機能開発でセキュリティを考慮したコードを生成する時",
-      "既存コードのセキュリティ脆弱性がないかレビューしたい時",
-      "特定のセキュリティ要件を満たすコードスニペットが必要な時"
-    ],
-    "steps": [
-      "1. 開発中の機能要件とセキュリティ要件を明確にする。",
-      "2. GPT-5.5 Instantに要件と既存コード（あれば）を提示し、安全なコード生成を依頼する。",
-      "3. 生成されたコードをセキュリティ観点からレビューし、必要に応じて修正を指示する。",
-      "4. 最終的なコードをテスト環境で動作確認し、脆弱性スキャンを実施する。"
-    ],
-    "prompt": "以下の機能要件とセキュリティ要件を満たすPythonのWeb APIエンドポイントを生成してください。SQLインジェクション対策と入力値検証を必ず含めてください。",
-    "tags": [
-      "コード生成",
-      "セキュリティ",
-      "レビュー",
-      "Python"
-    ],
-    "id": "20260507_063024_02",
-    "date": "2026-05-07",
-    "source_news": {
-      "title": "GPT-5.5 Instantのシステムカード公開、モデル詳細と安全性。",
-      "url": "https://openai.com/index/gpt-5-5-instant-system-card"
     },
     "article": null,
     "visual_theme": {
