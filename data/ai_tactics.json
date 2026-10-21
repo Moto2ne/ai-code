@@ -1,5 +1,123 @@
 [
   {
+    "title": "Model GardenのCodexでコードレビュー",
+    "news_highlight": "OpenAIモデルとCodexがGoogle Cloud Model Gardenで利用可能。Google Cloud環境で開発を統合。",
+    "problem_context": "プルリクエストのレビュー負荷が高い",
+    "recommended_ai": {
+      "model": "Codex",
+      "reason": "コード特化のAIモデル",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードをレビューしたい時",
+      "チームメンバーのコードの品質を均一に保ちたい時",
+      "新しい機能開発で、初期段階のコードの品質を上げたい時"
+    ],
+    "steps": [
+      "レビューしたいコードをModel GardenのCodexにインプットする",
+      "Codexからのレビュー結果（改善提案、バグ指摘など）を確認する",
+      "提案された修正をコードに適用し、テストする",
+      "必要に応じて、さらに詳細な質問をCodexに投げかける"
+    ],
+    "prompt": "以下のPythonコードをレビューし、改善点、潜在的なバグ、セキュリティ脆弱性を指摘してください。PEP8に準拠しているかも確認してください。",
+    "tags": [
+      "コードレビュー",
+      "品質向上",
+      "Google Cloud",
+      "OpenAI"
+    ],
+    "id": "20261022_061431_01",
+    "date": "2026-10-22",
+    "source_news": {
+      "title": "OpenAIモデルがGoogle CloudのModel Gardenで利用可能に",
+      "url": "https://openai.com/index/openai-models-google-cloud"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "icon": "💻"
+    }
+  },
+  {
+    "title": "MagnetarでZKP回路設計と検証",
+    "news_highlight": "Magnetarが標準言語でゼロ知識証明実装を可能にし、計算結果検証を効率化",
+    "problem_context": "ZKP実装の複雑さ、機密データ保護の課題",
+    "recommended_ai": {
+      "model": "Magnetar",
+      "reason": "標準言語でZKP実装を容易に",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "機密データを公開せずにユーザー認証を検証したい時",
+      "スマートコントラクトの計算結果の正当性を証明したい時",
+      "クラウド上のAIモデル推論結果の信頼性を検証したい時"
+    ],
+    "steps": [
+      "1. Magnetar SDKをプロジェクトに導入する",
+      "2. 標準言語でZKP回路のロジックを記述する",
+      "3. Magnetarを使って証明生成・検証コードを生成する",
+      "4. 生成されたコードをアプリケーションに組み込みテストする"
+    ],
+    "prompt": "Pythonで、ある数値が特定の範囲内にあることを証明するZKP回路のロジックと、Magnetarで利用可能な証明生成・検証コードの骨子を生成してください。",
+    "tags": [
+      "ゼロ知識証明",
+      "プライバシー保護",
+      "セキュリティ",
+      "検証"
+    ],
+    "id": "20261022_061457_02",
+    "date": "2026-10-22",
+    "source_news": {
+      "title": "ゼロ知識証明を標準言語で使えるMagnetarを発表",
+      "url": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Amazon Bedrock AgentCoreでサプライチェーンAPI設計",
+    "news_highlight": "Amazon Bedrock AgentCoreが散在するサプライチェーンデータから会話型AIで洞察生成を可能に。",
+    "problem_context": "散在するサプライチェーンデータからの洞察抽出",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "複数システム連携で会話型AI構築",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "サプライチェーンの複数システムAPI連携設計時",
+      "会話型AIエージェントのツール定義時",
+      "ビジネスユーザー向けデータ照会機能開発時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCoreで新規エージェントを作成",
+      "2. 連携したいERP/SCMシステムのAPI仕様書を準備",
+      "3. AgentCoreのツールとしてLambda関数またはAPI Gatewayを定義",
+      "4. 定義したツールがサプライチェーンデータを取得・更新するロジックを実装",
+      "5. エージェントのプロンプトを調整し、テスト環境で動作確認"
+    ],
+    "prompt": "Amazon Bedrock AgentCoreのツールとして、SAP ERPの在庫情報を取得するLambda関数（Python）のコードと、そのAPI GatewayエンドポイントのOpenAPIスキーマを生成してください。",
+    "tags": [
+      "サプライチェーン",
+      "API連携",
+      "会話型AI",
+      "AWS"
+    ],
+    "id": "20261022_061523_03",
+    "date": "2026-10-22",
+    "source_news": {
+      "title": "Amazon Bedrock AgentCoreで会話型サプライチェーンAI",
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-data-to-decisions-conversational-supply-chain-intelligence-with-amazon-quick-and-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Laplace 3Bで長文処理コスト削減",
     "news_highlight": "Laplace 3BはKVキャッシュ問題を解決、再帰状態が29.5MB/シーケンスで固定。",
     "problem_context": "長文処理時のメモリ肥大化と推論コスト増",
@@ -19339,109 +19457,6 @@
     "source_news": {
       "title": "Mixture of Experts (MoE)でモジュール性を高める新手法。",
       "url": "https://huggingface.co/blog/allenai/emo"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "AI戦術",
-    "problem_context": "AI技術の活用",
-    "recommended_ai": {
-      "model": "Gemini",
-      "reason": "高性能",
-      "badge_color": "orange"
-    },
-    "prompt": "最新のAI技術を活用して効率化を図ってください。",
-    "tags": [
-      "AI",
-      "自動生成"
-    ],
-    "id": "20260509_062901_03",
-    "date": "2026-05-09",
-    "source_news": {
-      "title": "サイバーセキュリティ向け小型特化モデルCyberSecQwen-4B発表。",
-      "url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/cybersecqwen-4b"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "Gemini APIで長時間ジョブのリアルタイム処理",
-    "news_highlight": "Gemini APIにWebhooksが追加され、長時間ジョブの完了通知をリアルタイム化",
-    "problem_context": "長時間ジョブの完了通知遅延とポーリング負荷",
-    "recommended_ai": {
-      "model": "Gemini API",
-      "reason": "Webhooks機能追加",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "長時間AI推論完了後のユーザー通知",
-      "バッチ処理完了後の自動後続処理トリガー",
-      "大規模データ処理の進捗状況リアルタイム監視"
-    ],
-    "steps": [
-      "1. Gemini APIの長時間ジョブ呼び出しコードを特定。",
-      "2. Webhookエンドポイント（例: /api/gemini-callback）を実装。",
-      "3. Gemini API呼び出し時にWebhook URLを設定し、ジョブを実行。",
-      "4. Webhookエンドポイントでイベントを受信し、後続処理を自動実行。"
-    ],
-    "prompt": "Python FlaskでGemini APIからのPOSTリクエストを受け取るWebhookエンドポイントを作成。リクエストボディをログに出力し、200 OKを返してください。",
-    "tags": [
-      "Webhooks",
-      "非同期処理",
-      "API連携",
-      "リアルタイム通知"
-    ],
-    "id": "20260508_062613_01",
-    "date": "2026-05-08",
-    "source_news": {
-      "title": "Gemini APIにWebhooks追加、長時間ジョブの遅延を削減",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/event-driven-webhooks/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4285f4 0%, #34a853 100%)",
-      "icon": "✨"
-    }
-  },
-  {
-    "title": "OpenAI音声APIでリアルタイム音声翻訳",
-    "news_highlight": "OpenAI APIの新リアルタイム音声モデルは推論、翻訳、文字起こしに対応し、より自然な音声AI体験を実現。",
-    "problem_context": "多言語対応アプリの音声UI開発効率化",
-    "recommended_ai": {
-      "model": "OpenAIリアルタイム音声モデル",
-      "reason": "高精度なリアルタイム音声処理",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "多言語会議のリアルタイム通訳機能の実装",
-      "音声コマンドによるアプリケーション操作の精度向上",
-      "顧客サポートチャットボットの音声応答機能強化"
-    ],
-    "steps": [
-      "OpenAI APIキーを取得し、開発環境に設定する。",
-      "音声入力ストリームをOpenAI音声APIに送信するコードを記述する。",
-      "APIからのリアルタイム応答（翻訳/文字起こし/推論結果）を処理する。",
-      "ユーザーインターフェースに結果を表示し、動作をテストする。"
-    ],
-    "prompt": "PythonでOpenAIリアルタイム音声APIを使い、マイク入力音声をリアルタイムで英語に翻訳し、翻訳結果をテキストとして表示するコードを生成してください。",
-    "tags": [
-      "音声AI",
-      "リアルタイム処理",
-      "API連携",
-      "多言語対応"
-    ],
-    "id": "20260508_062639_02",
-    "date": "2026-05-08",
-    "source_news": {
-      "title": "OpenAI APIに新リアルタイム音声モデル、音声AI体験を向上",
-      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api"
     },
     "article": null,
     "visual_theme": {
