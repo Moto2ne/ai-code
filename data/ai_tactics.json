@@ -1,5 +1,122 @@
 [
   {
+    "title": "SLMでドメイン特化推論コスト削減",
+    "news_highlight": "SLMの語彙特化により推論コスト77%削減、特定業務での実用化を加速",
+    "problem_context": "LLMの推論コストとレイテンシを削減したい",
+    "recommended_ai": {
+      "model": "SLM (Small Language Model)",
+      "reason": "語彙特化で推論コストを大幅削減",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "特定の業界用語を含む顧客問い合わせの自動分類",
+      "社内システムのログから異常検知と原因特定",
+      "専門分野の技術文書からの情報抽出と要約"
+    ],
+    "steps": [
+      "既存LLM利用タスクからドメイン特化可能なものを特定する。",
+      "対象ドメインの専門用語を含むデータセットを準備する。",
+      "SLMを準備したデータセットで語彙特化ファインチューニングする。",
+      "ファインチューニング済みSLMの推論コストと精度を評価し導入を検討する。"
+    ],
+    "prompt": "「以下の顧客問い合わせを、[製品名]に関する[分類カテゴリ]に分類し、要約してください：[問い合わせ内容]」",
+    "tags": [
+      "コスト削減",
+      "ファインチューニング",
+      "ドメイン特化",
+      "推論最適化"
+    ],
+    "id": "20261023_061502_01",
+    "date": "2026-10-23",
+    "source_news": {
+      "title": "SLM語彙特化で推論コスト77%削減、実用化へ",
+      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "NVIDIA Kumoで関係データ分析",
+    "news_highlight": "NVIDIA Kumoは教師なしで関係データ処理、訓練不要で複雑なパターン発見",
+    "problem_context": "複雑なデータ関係の発見と分析に時間",
+    "recommended_ai": {
+      "model": "NVIDIA Kumo",
+      "reason": "訓練不要で関係データ処理",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規プロジェクトでデータ間の相関を素早く把握したい時",
+      "既存システムの異常検知ロジックを改善したい時",
+      "ユーザー行動データからレコメンデーション精度を高めたい時"
+    ],
+    "steps": [
+      "1. Kumoに分析したい関係データセットを準備する。",
+      "2. KumoのAPI/SDKを使ってデータセットを投入する。",
+      "3. Kumoが生成した関係性グラフや洞察を可視化ツールで確認する。",
+      "4. 発見された関係性に基づき、システム設計やロジックを改善する。"
+    ],
+    "prompt": "与えられた顧客購買データから、関連性の高い商品ペアを訓練なしで抽出し、レコメンデーションに活用できる形式で出力してください。",
+    "tags": [
+      "データ分析",
+      "異常検知",
+      "レコメンデーション",
+      "教師なし学習"
+    ],
+    "id": "20261023_061528_02",
+    "date": "2026-10-23",
+    "source_news": {
+      "title": "NVIDIA Kumoが教師あり学習超え、訓練不要で関係データ処理",
+      "url": "https://huggingface.co/blog/nvidia/kumo-relational"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "OlmoEarth v1.3で地理空間特徴量抽出",
+    "news_highlight": "OlmoEarth v1.3が地球全体のSOTA埋め込みを提供し、地理空間分析精度を向上。",
+    "problem_context": "地理空間データの高精度な特徴量抽出",
+    "recommended_ai": {
+      "model": "OlmoEarth v1.3",
+      "reason": "地球全体のSOTA埋め込み",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "衛星画像からの土地利用分類モデル開発時",
+      "都市計画における地域特性分析時",
+      "災害予測モデルの精度向上時"
+    ],
+    "steps": [
+      "1. OlmoEarth v1.3のAPI/ライブラリをプロジェクトに導入。",
+      "2. 分析対象の地理空間データ（例: 緯度経度、衛星画像）を準備。",
+      "3. OlmoEarth v1.3の埋め込み生成関数を呼び出し、特徴量ベクトルを取得。",
+      "4. 取得した特徴量ベクトルを機械学習モデルの入力として利用し、予測・分類を実行。"
+    ],
+    "prompt": "PythonでOlmoEarth v1.3ライブラリを使い、与えられた緯度経度リストから地理空間埋め込みを生成し、Pandas DataFrameに格納するコードを記述してください。",
+    "tags": [
+      "地理空間AI",
+      "埋め込み",
+      "特徴量抽出",
+      "機械学習"
+    ],
+    "id": "20261023_061553_03",
+    "date": "2026-10-23",
+    "source_news": {
+      "title": "OlmoEarth v1.3リリース、地球全体のSOTA埋め込みを提供",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Model GardenのCodexでコードレビュー",
     "news_highlight": "OpenAIモデルとCodexがGoogle Cloud Model Gardenで利用可能。Google Cloud環境で開発を統合。",
     "problem_context": "プルリクエストのレビュー負荷が高い",
@@ -19343,120 +19460,6 @@
     "source_news": {
       "title": "OpenAIが新リアルタイム音声モデルをAPIで提供開始。",
       "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "GPT-5.5-Cyberで脆弱性診断コード生成",
-    "news_highlight": "GPT-5.5-Cyberが脆弱性研究と重要インフラ保護を加速する新機能を提供",
-    "problem_context": "セキュリティ脆弱性の特定と修正に時間がかかる",
-    "recommended_ai": {
-      "model": "GPT-5.5-Cyber",
-      "reason": "サイバーセキュリティに特化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新規機能開発時のセキュリティチェック",
-      "既存システムの脆弱性診断スクリプト作成",
-      "外部ライブラリ導入前のセキュリティ評価"
-    ],
-    "steps": [
-      "1. 診断したいコードの機能と目的を整理する。",
-      "2. GPT-5.5-Cyberに脆弱性診断スクリプトの生成を依頼する。",
-      "3. 生成されたスクリプトをテスト環境で実行する。",
-      "4. 診断結果を分析し、必要に応じてコードを修正する。"
-    ],
-    "prompt": "PythonでWebアプリケーションのSQLインジェクション脆弱性を検出する診断スクリプトを生成してください。入力値のサニタイズ不足をチェックするロジックを含めてください。",
-    "tags": [
-      "セキュリティ",
-      "脆弱性診断",
-      "コード生成"
-    ],
-    "id": "20260510_062205_03",
-    "date": "2026-05-10",
-    "source_news": {
-      "title": "OpenAIが新モデルGPT-5.5とサイバー特化版をリリース。",
-      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "vLLM V1で強化学習モデルをデプロイ",
-    "news_highlight": "vLLM V1が強化学習の正確性を向上、RLHFモデルの推論品質が安定",
-    "problem_context": "強化学習モデルの推論品質を向上",
-    "recommended_ai": {
-      "model": "vLLM V1",
-      "reason": "強化学習モデルの推論精度向上",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "RLHFでファインチューニングしたモデルを本番環境にデプロイする時",
-      "強化学習で生成されたテキストの品質が不安定な時",
-      "複数の強化学習モデルの推論性能を比較評価する時"
-    ],
-    "steps": [
-      "1. 既存のvLLM環境をV1にアップデートする。",
-      "2. 強化学習でファインチューニングされたモデルをvLLM V1でロードする。",
-      "3. モデルにプロンプトを与え、推論結果の品質を評価する。",
-      "4. 以前のバージョンや他の推論エンジンと比較し、品質向上を確認する。"
-    ],
-    "prompt": "vLLM V1でデプロイしたモデルに対し、以下の顧客問い合わせに最適な回答を生成してください。『製品Aの返品方法を教えてください。』",
-    "tags": [
-      "LLM推論",
-      "強化学習",
-      "モデルデプロイ",
-      "品質向上"
-    ],
-    "id": "20260509_062800_01",
-    "date": "2026-05-09",
-    "source_news": {
-      "title": "vLLMがV1に進化、強化学習の正確性を向上。",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "GPT-4oでMoE的振る舞いを設計",
-    "news_highlight": "MoEの新手法により、エキスパートモジュールのルーティング精度が向上し、特定タスクへの適応性が高まる",
-    "problem_context": "特定タスクでLLMの出力精度が低い",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "MoEの概念をプロンプトで模倣し、専門性を引き出すため",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "特定のプログラミング言語/フレームワークに特化したコードを生成したい時",
-      "特定のドメイン知識に基づいたテキストを生成したい時",
-      "既存のコードベースのスタイルガイドに沿ったレビューやリファクタリングを行いたい時"
-    ],
-    "steps": [
-      "1. 対象とするタスクの専門知識やスタイルガイドを定義する。",
-      "2. GPT-4oに、その専門知識を持つ「エキスパート」としての役割を指示するプロンプトを作成する。",
-      "3. タスクの入力データと共にプロンプトを送信し、出力を得る。",
-      "4. 出力が期待通りか評価し、必要に応じてプロンプトを調整する。"
-    ],
-    "prompt": "あなたはセキュリティ監査のエキスパートです。以下のPythonコードについて、OWASP Top 10の脆弱性観点からレビューし、修正案を提示してください。",
-    "tags": [
-      "プロンプトエンジニアリング",
-      "モデルカスタマイズ"
-    ],
-    "id": "20260509_062836_02",
-    "date": "2026-05-09",
-    "source_news": {
-      "title": "Mixture of Experts (MoE)でモジュール性を高める新手法。",
-      "url": "https://huggingface.co/blog/allenai/emo"
     },
     "article": null,
     "visual_theme": {
