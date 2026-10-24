@@ -1,5 +1,123 @@
 [
   {
+    "title": "OpenAI意思決定APIで設計判断を高速化",
+    "news_highlight": "OpenAIが応答速度50%向上、料金70%削減の意思決定APIを公開",
+    "problem_context": "開発中の設計判断やコードレビューに時間がかかる",
+    "recommended_ai": {
+      "model": "OpenAI意思決定API",
+      "reason": "高速かつ低コストで、特定の判断タスクに最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードをレビューしたい時",
+      "新機能の設計方針で複数の選択肢を比較検討したい時",
+      "緊急性の高いエラーログから根本原因を素早く特定したい時"
+    ],
+    "steps": [
+      "1. 検討したいコード、設計ドキュメント、またはエラーログを準備する。",
+      "2. AIに具体的な判断を求めるプロンプトを入力する。",
+      "3. AIからの高速な評価や提案を基に、次のアクションを決定する。",
+      "4. 提案された内容をチームで共有し、最終的な意思決定プロセスを加速する。"
+    ],
+    "prompt": "以下のAPI設計案について、セキュリティとスケーラビリティの観点からリスクを評価し、改善点を提案してください。簡潔に3点にまとめてください。",
+    "tags": [
+      "コードレビュー",
+      "設計支援",
+      "意思決定",
+      "コスト削減"
+    ],
+    "id": "20261025_061353_01",
+    "date": "2026-10-25",
+    "source_news": {
+      "title": "OpenAIが高速・低コストな意思決定APIを公開",
+      "url": "https://openai.com/index/decisions-api"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Bedrock AgentCoreでマルチエージェント設計",
+    "news_highlight": "BayerがBedrock AgentCoreで自律型意思決定エンジン構築、自然言語質問対応。",
+    "problem_context": "複雑なビジネスロジックの自動化と意思決定支援",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "エージェント連携と自動化を支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複雑な業務フローを自動化したい時",
+      "自然言語でデータ分析や情報収集を指示したい時",
+      "複数のAPIやデータソースを連携させるシステムを設計する時"
+    ],
+    "steps": [
+      "1. 自動化したい業務フローを詳細に記述する。",
+      "2. 各ステップを処理するエージェントの役割と必要なツールを定義する。",
+      "3. Bedrock AgentCoreのコンソールでエージェントとアクションを設定する。",
+      "4. 自然言語での質問に対する応答ロジックを実装しテストする。"
+    ],
+    "prompt": "Amazon Bedrock AgentCoreを使って、顧客からの問い合わせに対して、製品情報データベース検索、FAQ応答、サポートチケット発行を自動化するマルチエージェントシステムを設計してください。",
+    "tags": [
+      "エージェント",
+      "設計",
+      "自動化",
+      "Bedrock"
+    ],
+    "id": "20261025_061421_02",
+    "date": "2026-10-25",
+    "source_news": {
+      "title": "BayerがBedrock AgentCoreで自律型意思決定エンジン構築",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "GPT-4oでRLエージェントのDBチューニングコード生成",
+    "news_highlight": "DB性能評価をRL報酬に変換し、強化学習エージェントでDBチューニングを自動化",
+    "problem_context": "DBチューニングの複雑性と手動作業の負荷を軽減",
+    "recommended_ai": {
+      "model": "GPT-4o",
+      "reason": "RLエージェントのコード生成と設計支援",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "強化学習エージェントの初期実装コードを生成したい時",
+      "DB性能メトリクスを報酬関数に変換するロジックを設計したい時",
+      "DBパラメータチューニングの自動化スクリプトを作成したい時"
+    ],
+    "steps": [
+      "1. 強化学習エージェントがチューニングするDBの種類とパラメータを特定する。",
+      "2. 報酬関数として利用するDB性能メトリクス（例: クエリ応答時間）を定義する。",
+      "3. AIにRLエージェントの基本構造と報酬関数ロジックのコード生成を依頼する。",
+      "4. 生成されたコードをDB環境に適用し、エージェントの訓練と評価を行う。"
+    ],
+    "prompt": "PythonとOpenAI Gymを使って、PostgreSQLのmax_connectionsパラメータをチューニングする強化学習エージェントの基本コードを生成してください。報酬関数はクエリ応答時間の逆数としてください。",
+    "tags": [
+      "強化学習",
+      "DBチューニング",
+      "Python",
+      "コード生成",
+      "MLOps"
+    ],
+    "id": "20261025_061449_03",
+    "date": "2026-10-25",
+    "source_news": {
+      "title": "DB評価をRL報酬に変換しエージェントを訓練する技術",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
     "title": "Amazon Pollyで新音声のコード生成",
     "news_highlight": "Amazon Polly生成エンジンが大幅強化、低遅延で新音声14種追加、ヒンディー語/フィンランド語GA。",
     "problem_context": "最新の自然な音声でテキストを読み上げたい。",
@@ -19343,122 +19461,6 @@
     "source_news": {
       "title": "MoEアーキテクチャのEMO発表、大規模モデルの効率化・モジュール化に貢献。",
       "url": "https://huggingface.co/blog/allenai/emo"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "GPT-5.5-Cyberで脆弱性コードレビュー",
-    "news_highlight": "GPT-5.5とGPT-5.5-Cyberがサイバーセキュリティ分野の効率化を推進、脆弱性調査を加速。",
-    "problem_context": "サイバーセキュリティの脆弱性特定と対策に時間がかかる",
-    "recommended_ai": {
-      "model": "GPT-5.5-Cyber",
-      "reason": "サイバーセキュリティ特化で高精度",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プルリクエストを出す前に自分のコードをセキュリティレビューしたい時",
-      "既存システムに潜在する脆弱性を特定したい時",
-      "インシデント発生時に疑わしいコードの安全性を迅速に評価したい時"
-    ],
-    "steps": [
-      "レビューしたいコードスニペットを準備する",
-      "GPT-5.5-Cyberにコードを貼り付ける",
-      "潜在的な脆弱性とその修正案を依頼する",
-      "提案された修正案をレビューし、必要に応じて適用する"
-    ],
-    "prompt": "以下のPythonコードに潜在的なセキュリティ脆弱性がないか分析し、具体的な修正案を提示してください。",
-    "tags": [
-      "サイバーセキュリティ",
-      "脆弱性分析",
-      "コードレビュー",
-      "GPT-5.5-Cyber"
-    ],
-    "id": "20260512_063620_03",
-    "date": "2026-05-12",
-    "source_news": {
-      "title": "OpenAIがGPT-5.5とGPT-5.5-Cyberを発表、サイバーセキュリティ分野の効率化を推進。",
-      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Amazon Bedrock AgentCoreで自律決済エージェント設計",
-    "news_highlight": "Amazon Bedrock AgentCore PaymentsがAIエージェントの自律決済を可能にし、自律型AI実現へ。",
-    "problem_context": "AIエージェントの自律的なリソース利用と支払い管理",
-    "recommended_ai": {
-      "model": "Amazon Bedrock AgentCore",
-      "reason": "新機能の直接的な利用と設計支援",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "外部API利用時に自動で課金処理を行うエージェントを設計する時",
-      "クラウドサービスのリソースを自律的にプロビジョニングし、支払いを行うシステムを構築する時",
-      "AIエージェントの費用対効果を最大化する支払いロジックを検討する時"
-    ],
-    "steps": [
-      "Amazon Bedrock AgentCore Paymentsのドキュメントを確認する。",
-      "エージェントが利用する外部サービスと支払いフローを定義する。",
-      "支払いロジックとセキュリティ要件をAIに提示し、アーキテクチャ設計を依頼する。",
-      "提案された設計に基づき、プロトタイプ実装とテストを行う。"
-    ],
-    "prompt": "Amazon Bedrock AgentCore Paymentsを利用し、外部APIを自律的に利用・課金するAIエージェントのアーキテクチャ設計を提案してください。セキュリティとエラーハンドリングを考慮してください。",
-    "tags": [
-      "エージェント開発",
-      "アーキテクチャ設計",
-      "コスト管理"
-    ],
-    "id": "20260511_062225_01",
-    "date": "2026-05-11",
-    "source_news": {
-      "title": "AIエージェントが支払いを行うBedrock AgentCore Paymentsを発表。自律型AIの実現へ。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "OpenAI APIリアルタイム音声モデルで音声UI設計",
-    "news_highlight": "OpenAI APIにリアルタイム音声モデル追加、音声認識・翻訳・文字起こしを強化",
-    "problem_context": "リアルタイム音声処理の遅延と精度不足",
-    "recommended_ai": {
-      "model": "OpenAI APIリアルタイム音声モデル",
-      "reason": "リアルタイム性でUX向上",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "音声コマンドでアプリを操作したい時",
-      "多言語ユーザーとリアルタイムで会話したい時",
-      "会議の音声を即座にテキスト化したい時"
-    ],
-    "steps": [
-      "OpenAI APIキーを設定する",
-      "音声入力用のマイクとWeb Audio APIを準備する",
-      "リアルタイム音声ストリームをAPIに送信するコードを書く",
-      "APIからのテキスト出力をUIに表示し、応答処理を実装する"
-    ],
-    "prompt": "JavaScriptとWeb Audio APIを使って、マイクからのリアルタイム音声ストリームをOpenAI APIに送信し、認識結果をコンソールに出力するコードを生成してください。",
-    "tags": [
-      "音声認識",
-      "リアルタイム",
-      "API連携",
-      "UI/UX"
-    ],
-    "id": "20260511_062251_02",
-    "date": "2026-05-11",
-    "source_news": {
-      "title": "OpenAI APIにリアルタイム音声モデル追加。音声認識・翻訳・文字起こしを強化。",
-      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api"
     },
     "article": null,
     "visual_theme": {
