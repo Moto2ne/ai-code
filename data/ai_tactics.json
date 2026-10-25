@@ -1,5 +1,122 @@
 [
   {
+    "title": "OpenAI Decision APIでリアルタイム判断",
+    "news_highlight": "OpenAIが高速・低コストな意思決定APIをリリース、アプリ応答性向上とコスト削減",
+    "problem_context": "リアルタイム処理の遅延とコスト高を解消したい",
+    "recommended_ai": {
+      "model": "OpenAI Decision API",
+      "reason": "高速・低コストで迅速な判断が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "ユーザー入力の即時バリデーション",
+      "不正アクセスをリアルタイム検知",
+      "コンテンツの即時推薦ロジック"
+    ],
+    "steps": [
+      "1. 判断したいデータをJSON形式で準備",
+      "2. OpenAI Decision APIのエンドポイントにPOSTリクエスト",
+      "3. 返却された判断結果をパース",
+      "4. アプリケーションの処理に組み込む"
+    ],
+    "prompt": "入力テキストが不適切か判断し、`{\"is_inappropriate\": true, \"reason\": \"暴力的な表現\"}`のJSONで出力。テキスト: 'このサービスは最悪だ！爆破してやる！'",
+    "tags": [
+      "API連携",
+      "リアルタイム処理",
+      "コスト最適化",
+      "意思決定"
+    ],
+    "id": "20261026_061259_01",
+    "date": "2026-10-26",
+    "source_news": {
+      "title": "OpenAIが高速・低コストな意思決定APIをリリース、アプリ応答性向上へ。",
+      "url": "https://openai.com/index/decisions-api"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "NVIDIA Kumo Relationalで予測モデルを高速開発",
+    "news_highlight": "Kumo Relationalが教師なしで教師ありMLを凌駕、学習不要で高性能予測を実現。",
+    "problem_context": "MLモデル開発の時間とコストを削減したい。",
+    "recommended_ai": {
+      "model": "NVIDIA Kumo Relational",
+      "reason": "学習不要で高精度なため",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規推薦システムのPoCを素早く構築したい時",
+      "既存の不正検知ロジックをMLで強化したい時",
+      "顧客行動予測モデルをML専門家なしで開発したい時"
+    ],
+    "steps": [
+      "予測したい対象のリレーショナルデータを準備する（例: 顧客、商品、取引データ）。",
+      "Kumo RelationalのAPIまたはSDKをプロジェクトに組み込む。",
+      "予測対象（例: 購買確率、不正スコア）と関連する特徴量を指定してモデルを呼び出す。",
+      "返された予測結果をアプリケーションのビジネスロジックに統合しテストする。"
+    ],
+    "prompt": "Kumo Relational APIを使って、顧客ID、過去の購買履歴、閲覧履歴から次回の購買確率を予測するPythonコードを生成してください。",
+    "tags": [
+      "MLOps",
+      "データ分析",
+      "プロトタイピング",
+      "リレーショナルAI"
+    ],
+    "id": "20261026_061325_02",
+    "date": "2026-10-26",
+    "source_news": {
+      "title": "NVIDIA Kumo Relationalが教師なしで教師ありMLを凌駕、学習不要。",
+      "url": "https://huggingface.co/blog/nvidia/kumo-relational"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Amazon Pollyで多言語音声コンテンツ生成",
+    "news_highlight": "Amazon Polly: 低遅延、表現力向上、14新ボイス、9ロケール、ヒンディー/フィンランド語GA",
+    "problem_context": "高品質な多言語音声コンテンツを効率的に作成したい",
+    "recommended_ai": {
+      "model": "Amazon Polly",
+      "reason": "低遅延と表現力向上で自然な音声生成",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "アプリケーションの音声ガイドを多言語化したい時",
+      "eラーニング教材のナレーションを高品質にしたい時",
+      "アクセシビリティ対応でウェブサイトの読み上げ機能を追加したい時"
+    ],
+    "steps": [
+      "1. Amazon Pollyコンソールを開く",
+      "2. 読み上げたいテキストと希望の言語・ボイスを選択する",
+      "3. SSMLタグを使って発音や間隔を調整する",
+      "4. 生成された音声をダウンロードし、アプリケーションに組み込む"
+    ],
+    "prompt": "以下の日本語テキストを、新しい女性ボイスで自然に読み上げてください。感情は穏やかに、速度は標準でお願いします。",
+    "tags": [
+      "音声合成",
+      "多言語対応",
+      "アクセシビリティ",
+      "AWS"
+    ],
+    "id": "20261026_061350_03",
+    "date": "2026-10-26",
+    "source_news": {
+      "title": "Amazon Polly生成エンジンが大幅進化、低遅延で表現力向上。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "OpenAI意思決定APIで設計判断を高速化",
     "news_highlight": "OpenAIが応答速度50%向上、料金70%削減の意思決定APIを公開",
     "problem_context": "開発中の設計判断やコードレビューに時間がかかる",
@@ -19347,125 +19464,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "vLLM V1でLLM推論の品質向上",
-    "news_highlight": "vLLM V1がRLモデルの推論正確性を向上、出力品質と信頼性を強化",
-    "problem_context": "LLM推論の出力品質が不安定",
-    "recommended_ai": {
-      "model": "vLLM V1",
-      "reason": "RLモデルの正確性向上",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "RLHFでファインチューニングしたモデルのデプロイ",
-      "複雑なビジネスロジックを含むプロンプトの実行",
-      "ユーザーからの多様な質問に対する応答生成",
-      "コード生成やデータ抽出など、正確性が求められるタスク"
-    ],
-    "steps": [
-      "既存のvLLM環境をV1にアップデートする。",
-      "RLHFでファインチューニングしたモデルをvLLM V1でデプロイする。",
-      "複雑なプロンプトで推論を実行し、出力品質を評価する。",
-      "以前のバージョンと比較し、出力の正確性や指示追従性の改善を確認する。"
-    ],
-    "prompt": "以下の顧客レビューを感情分析し、ポジティブ、ネガティブ、中立のいずれかを判定してください。判定理由も簡潔に記述してください。",
-    "tags": [
-      "LLM推論",
-      "RLHF",
-      "モデルデプロイ",
-      "品質改善",
-      "Python"
-    ],
-    "id": "20260513_063506_03",
-    "date": "2026-05-13",
-    "source_news": {
-      "title": "vLLMがV1に更新、RLにおける正確性を重視",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "vLLMでLLM推論を最適化",
-    "news_highlight": "vLLM V1がLLM推論効率を最大化、RLタスクでの応答正確性を強化",
-    "problem_context": "LLM推論コスト高騰とRL応答の不安定性",
-    "recommended_ai": {
-      "model": "vLLM",
-      "reason": "LLM推論効率とRL精度を両立",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プロダクション環境のLLM API応答速度を改善したい時",
-      "LLMベースの強化学習エージェントの推論精度を高めたい時",
-      "多数のユーザーが利用するLLMアプリケーションのコストを削減したい時"
-    ],
-    "steps": [
-      "既存のLLM推論コード（例: Hugging Face Transformers）を特定する",
-      "`pip install vllm`でvLLMをインストールし、モデルをロードする",
-      "`vllm.LLM`で推論を実行するコードに書き換える",
-      "書き換えたコードでパフォーマンスとRLタスクの正確性を評価する"
-    ],
-    "prompt": "既存のHugging Face Transformers推論コードをvLLMに移行するPythonコードを生成してください。モデルは`meta-llama/Llama-2-7b-hf`を使用し、バッチ推論の例を含めてください。",
-    "tags": [
-      "LLM最適化",
-      "推論効率",
-      "強化学習",
-      "Python"
-    ],
-    "id": "20260512_063520_01",
-    "date": "2026-05-12",
-    "source_news": {
-      "title": "LLM推論効率化ライブラリvLLMがV1に進化、RLにおける正確性を重視。",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "EMOの思想でGPT-4oをモジュール活用",
-    "news_highlight": "MoEアーキテクチャのEMO発表、大規模モデルの効率化・モジュール化に貢献。",
-    "problem_context": "複雑な開発タスクの効率的な分割と実行",
-    "recommended_ai": {
-      "model": "GPT-4o",
-      "reason": "高い汎用性とAPI連携の容易さ",
-      "badge_color": "blue"
-    },
-    "use_cases": [
-      "複雑な機能のコード生成",
-      "大規模なリファクタリング計画",
-      "複数技術スタックにまたがる設計レビュー"
-    ],
-    "steps": [
-      "1. 複雑なタスクを複数の小さなサブタスクに分解する。",
-      "2. 各サブタスクに最適なプロンプトを作成する。",
-      "3. GPT-4oに各サブタスクを順次実行させる。",
-      "4. 各サブタスクの結果を統合し、最終成果物を作成する。"
-    ],
-    "prompt": "あなたはシステム設計のエキスパートです。ユーザー管理機能の設計を、DBスキーマ、APIエンドポイント、フロントエンドコンポーネントの3つのモジュールに分割し、それぞれの設計概要を提示してください。",
-    "tags": [
-      "システム設計",
-      "タスク分割",
-      "プロンプトエンジニアリング",
-      "GPT-4o"
-    ],
-    "id": "20260512_063555_02",
-    "date": "2026-05-12",
-    "source_news": {
-      "title": "MoEアーキテクチャのEMO発表、大規模モデルの効率化・モジュール化に貢献。",
-      "url": "https://huggingface.co/blog/allenai/emo"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
     }
   }
 ]
