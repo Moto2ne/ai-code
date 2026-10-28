@@ -1,5 +1,124 @@
 [
   {
+    "title": "Amazon Bedrock AgentCoreでAIプラットフォーム設計",
+    "news_highlight": "Bedrock AgentCoreでガバナンス/マルチアカウント対応エージェントAIプラットフォームのオープンソース参照ブループリントが公開",
+    "problem_context": "ガバナンス対応エージェントAIプラットフォームの設計",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "エージェントAIプラットフォーム構築用",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新規エージェントAIプラットフォームのアーキテクチャ設計時",
+      "既存AIシステムをAgentCoreベースに移行する際の設計検討時",
+      "マルチアカウント環境でのAIエージェント運用設計時"
+    ],
+    "steps": [
+      "Bedrock AgentCoreのオープンソース参照ブループリントをダウンロード",
+      "ブループリントのアーキテクチャ図とオペレーティングモデルをレビュー",
+      "自社要件に合わせてブループリントのカスタマイズ箇所を特定",
+      "カスタマイズした設計案をAgentCore上で実装し、ガバナンスをテスト"
+    ],
+    "prompt": "Amazon Bedrock AgentCoreのオープンソース参照ブループリントに基づき、マルチアカウント対応エージェントAIプラットフォームの初期アーキテクチャ設計案を提示してください。",
+    "tags": [
+      "AIエージェント",
+      "プラットフォーム構築",
+      "AWS Bedrock",
+      "アーキテクチャ設計"
+    ],
+    "id": "20261029_061051_01",
+    "date": "2026-10-29",
+    "source_news": {
+      "title": "Bedrock AgentCoreでエージェントAIプラットフォーム構築",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Ray Train DLCsでEKS分散学習環境構築",
+    "news_highlight": "Ray Train DLCsはCUDA-through-EFAスタックを内包し、EKSでのQwen2.5-1.5B分散学習のイメージ構築を不要化",
+    "problem_context": "EKSでの分散学習環境構築の手間を削減",
+    "recommended_ai": {
+      "model": "Ray Train DLCs",
+      "reason": "イメージ構築不要で高速化",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいLLMをEKS上でファインチューニングする際",
+      "分散学習環境のセットアップ時間を短縮したい時",
+      "PyTorch FSDPを使ったモデル学習の検証環境を構築する時"
+    ],
+    "steps": [
+      "Ray Train DLCsの公式ドキュメントからEKSセットアップガイドを確認",
+      "提供されているQwen2.5-1.5Bファインチューニングサンプルコードをダウンロード",
+      "EKSクラスターにRay Train DLCsをデプロイし、サンプルを実行",
+      "学習結果とリソース使用状況をモニタリングし、最適化"
+    ],
+    "prompt": "Ray Train DLCsを用いてEKS上でQwen2.5-1.5BをPyTorch FSDPでファインチューニングする際の、最小限のEKSクラスタ設定とRay Jobスクリプト例を提示してください。",
+    "tags": [
+      "Ray Train",
+      "EKS",
+      "分散学習",
+      "PyTorch FSDP",
+      "LLMファインチューニング"
+    ],
+    "id": "20261029_061114_02",
+    "date": "2026-10-29",
+    "source_news": {
+      "title": "Ray Train DLCsでEKS上での分散学習を加速",
+      "url": "https://aws.amazon.com/blogs/machine-learning/distributed-training-with-ray-train-dlcs-and-efa-on-eks/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Flint-interactiveでAIエージェントの可視化設計",
+    "news_highlight": "Flint-interactiveはAIエージェントが対話型可視化を生成、データ探索を強化",
+    "problem_context": "AIエージェントのデータ分析結果を対話的に提示したい",
+    "recommended_ai": {
+      "model": "Flint-interactive",
+      "reason": "AIエージェントの対話型可視化を可能にする",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントが生成するレポートの質を高めたい時",
+      "ユーザーがデータ分析結果を深掘りできる機能を追加したい時",
+      "AIエージェントのデータ探索UI/UXを改善したい時"
+    ],
+    "steps": [
+      "AIエージェントにFlint-interactiveの利用を指示するプロンプトを設計する",
+      "AIエージェントが生成したFlint-interactiveコードを評価する",
+      "ユーザーのフィードバックに基づき、プロンプトを改善し再生成を指示する",
+      "生成された対話型可視化をAIエージェントの出力に統合する"
+    ],
+    "prompt": "以下の売上データ(JSON)をFlint-interactiveで対話型棒グラフに可視化。クリックで地域別詳細、期間フィルタ機能を含めてください。",
+    "tags": [
+      "AIエージェント",
+      "可視化",
+      "データ分析",
+      "UI/UX",
+      "設計"
+    ],
+    "id": "20261029_061142_03",
+    "date": "2026-10-29",
+    "source_news": {
+      "title": "AIエージェント向け対話型可視化言語Flint-interactive",
+      "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "CodeRabbitで複雑なコードのセキュリティ強化",
     "news_highlight": "CodeRabbitがGPT-6.1 Solで複雑なコードのセキュリティリスクを調査し、修正案を提示",
     "problem_context": "複雑なコードのセキュリティ脆弱性を見落とす",
@@ -19334,125 +19453,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "Granite R2で多言語セマンティック検索",
-    "news_highlight": "IBM Granite R2は高性能オープン多言語埋め込みモデルで、セマンティック検索に最適。",
-    "problem_context": "多言語コンテンツの意味検索精度を向上させたい。",
-    "recommended_ai": {
-      "model": "Granite R2",
-      "reason": "多言語対応の高性能埋め込みモデル。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "多言語対応のドキュメント検索機能を開発したい時",
-      "ユーザーが入力した自然言語で製品を検索したい時",
-      "既存のキーワード検索の関連性を改善したい時"
-    ],
-    "steps": [
-      "検索対象の多言語テキストデータを準備する。",
-      "Granite R2 APIまたはライブラリでテキストを埋め込みベクトルに変換する。",
-      "ベクトルデータベースに埋め込みをインデックス化し保存する。",
-      "ユーザーの検索クエリをGranite R2で埋め込み、類似検索を実行する。",
-      "検索結果を関連性の高い順に表示する機能を実装する。"
-    ],
-    "prompt": "PythonとSentence Transformersライブラリ（Granite R2を想定）を使って、テキストリストからセマンティック検索を行うコードを生成してください。検索クエリと類似度上位3件を返す関数を含めてください。",
-    "tags": [
-      "セマンティック検索",
-      "埋め込みモデル",
-      "Python",
-      "多言語"
-    ],
-    "id": "20260516_062843_03",
-    "date": "2026-05-16",
-    "source_news": {
-      "title": "IBMの高性能オープン多言語埋め込みモデルGranite R2公開",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "SageMaker Training Compilerで学習高速化",
-    "news_highlight": "SageMaker Training Compilerが学習時間を最大50%短縮、コストを最大30%削減。",
-    "problem_context": "大規模MLモデル学習の計算コストと時間。",
-    "recommended_ai": {
-      "model": "Amazon SageMaker Training Compiler",
-      "reason": "学習コードを自動で最適化し高速化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "大規模な基盤モデルの学習時間を短縮したい時",
-      "MLモデル学習のクラウド費用を削減したい時",
-      "ハイパーパラメータチューニングの試行回数を増やしたい時"
-    ],
-    "steps": [
-      "1. 既存のSageMaker学習スクリプト（PyTorch/TensorFlow）を開く。",
-      "2. SageMaker Estimatorの初期化時に`compiler_config=sagemaker.compiler.CompilerConfig()`を追加。",
-      "3. 学習ジョブを実行し、最適化前後の学習時間とコストを比較する。",
-      "4. 最適化されたモデルの性能を評価し、本番環境にデプロイする。"
-    ],
-    "prompt": "SageMaker Python SDKでPyTorchモデルを学習する際、Training Compilerを有効にするEstimatorの設定コードを生成してください。必要なインポートと引数を含めてください。",
-    "tags": [
-      "AWS",
-      "SageMaker",
-      "MLOps",
-      "学習最適化",
-      "コスト削減"
-    ],
-    "id": "20260515_063157_01",
-    "date": "2026-05-15",
-    "source_news": {
-      "title": "AWSでの基盤モデル学習・推論の効率化ツールを発表。",
-      "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "Bedrock AgentCoreでAIエージェントの安全な情報収集",
-    "news_highlight": "Bedrock AgentCoreはChromeポリシーでAIエージェントのブラウジングを特定サイトに制限、セッション記録で監視可能。",
-    "problem_context": "AIエージェントの意図しない情報アクセスを防止したい。",
-    "recommended_ai": {
-      "model": "Bedrock AgentCore",
-      "reason": "ブラウジング制御機能が提供されるため。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "社内ドキュメントから特定の技術情報を抽出する時",
-      "外部APIの公式ドキュメントから仕様を調査する時",
-      "特定の技術ブログから最新のベストプラクティスを収集する時"
-    ],
-    "steps": [
-      "1. Bedrock AgentCoreで新しいAIエージェントを構成する。",
-      "2. Chrome Enterpriseポリシーを設定し、エージェントがアクセスできるURLを特定のドメインに制限する。",
-      "3. エージェントに特定のウェブサイトから情報を抽出するタスクを指示する。",
-      "4. セッション記録を確認し、エージェントが制限された範囲内で動作していることを検証する。"
-    ],
-    "prompt": "指定された社内Wikiサイトから、最新の認証プロトコルに関する情報を抽出し、主要な変更点と推奨される実装方法を要約してください。",
-    "tags": [
-      "AIエージェント",
-      "セキュリティ",
-      "情報抽出",
-      "Bedrock"
-    ],
-    "id": "20260515_063223_02",
-    "date": "2026-05-15",
-    "source_news": {
-      "title": "Bedrock AgentCoreでAIエージェントのブラウジングを制御可能に。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazon-bedrock-agentcore/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
     }
   }
 ]
