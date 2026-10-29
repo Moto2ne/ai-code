@@ -1,5 +1,123 @@
 [
   {
+    "title": "NVIDIA多言語音声認識モデルで多言語音声認識",
+    "news_highlight": "NVIDIA多言語音声認識モデルがHugging Faceで公開、多様な言語の音声を高精度でテキスト化",
+    "problem_context": "多言語音声データのテキスト化に時間と手間がかかる",
+    "recommended_ai": {
+      "model": "NVIDIA多言語音声認識モデル",
+      "reason": "多言語対応で高精度な音声認識が可能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "多言語の会議録を自動でテキスト化したい時",
+      "ユーザーからの音声フィードバックを分析したい時",
+      "動画コンテンツの字幕を自動生成したい時"
+    ],
+    "steps": [
+      "1. Hugging Faceからモデルをダウンロードまたはロード",
+      "2. 音声ファイルをモデルが処理できる形式に準備",
+      "3. モデルに音声ファイルを渡しテキスト化を実行",
+      "4. 生成されたテキストをアプリケーションに組み込む"
+    ],
+    "prompt": "PythonでHugging FaceのNVIDIA多言語音声認識モデルを使い、`input.wav`を日本語にテキスト変換するコードを生成してください。",
+    "tags": [
+      "音声認識",
+      "多言語",
+      "HuggingFace",
+      "AIモデル"
+    ],
+    "id": "20261030_061116_01",
+    "date": "2026-10-30",
+    "source_news": {
+      "title": "NVIDIAの多言語音声認識モデルがHugging Faceで公開。",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Mistral Large 4でコードレビュー",
+    "news_highlight": "Mistral Large 4がHugging Faceで利用可能。GPT-4級の高性能で多言語対応。",
+    "problem_context": "複雑なコードの潜在バグや改善点を見逃す",
+    "recommended_ai": {
+      "model": "Mistral Large 4",
+      "reason": "高性能で長文理解に優れ、コードレビューに最適",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "プルリクエストを出す前に自分のコードをレビューしたい時",
+      "チームメンバーのコードを効率的にレビューしたい時",
+      "レガシーコードの改善点を洗い出したい時"
+    ],
+    "steps": [
+      "1. レビューしたいコード（ファイル全体または一部）をコピーする",
+      "2. Hugging FaceのMistral Large 4インターフェースにアクセスする",
+      "3. プロンプトにコピーしたコードとレビュー依頼を貼り付けて実行する",
+      "4. 提案された改善点やバグ修正案をコードに適用し、テストする"
+    ],
+    "prompt": "以下のPythonコードをレビューし、潜在的なバグ、改善点、セキュリティ脆弱性を指摘し、より効率的で堅牢なコードに修正案を提示してください。",
+    "tags": [
+      "コードレビュー",
+      "品質向上",
+      "バグ検出",
+      "Hugging Face",
+      "Python"
+    ],
+    "id": "20261030_061143_02",
+    "date": "2026-10-30",
+    "source_news": {
+      "title": "Mistral Large 4モデルがHugging Faceで利用可能に。",
+      "url": "https://huggingface.co/blog/mistral-large4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "オープンな音声認識・意思決定モデルで音声UI実装",
+    "news_highlight": "Apple向けにオープンな音声認識・意思決定モデルが発表され、開発者が自由に利用可能に。",
+    "problem_context": "音声入力によるUX向上と意思決定ロジックの自動化",
+    "recommended_ai": {
+      "model": "オープンな音声認識・意思決定モデル",
+      "reason": "Appleエコシステムでの音声AI活用を促進",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "iOSアプリに音声コマンド機能を追加したい時",
+      "ユーザーの音声指示に基づきタスクを自動実行したい時",
+      "アクセシビリティ向上のため音声入力に対応したい時"
+    ],
+    "steps": [
+      "1. モデルのSDKをプロジェクトに組み込む",
+      "2. マイクからユーザーの音声入力を取得する",
+      "3. 取得した音声をモデルに渡し、認識結果と意図を受け取る",
+      "4. 意図に基づきアプリの機能を実行する"
+    ],
+    "prompt": "SwiftUIで、ユーザーの音声コマンド「今日の天気は？」を認識し、天気情報を表示するiOSアプリのコードを生成してください。",
+    "tags": [
+      "音声認識",
+      "意思決定",
+      "iOS開発",
+      "AIモデル"
+    ],
+    "id": "20261030_061209_03",
+    "date": "2026-10-30",
+    "source_news": {
+      "title": "Apple向けオープンな音声認識・意思決定モデルを発表。",
+      "url": "https://huggingface.co/blog/anydecisionmodel"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Amazon Bedrock AgentCoreでAIプラットフォーム設計",
     "news_highlight": "Bedrock AgentCoreでガバナンス/マルチアカウント対応エージェントAIプラットフォームのオープンソース参照ブループリントが公開",
     "problem_context": "ガバナンス対応エージェントAIプラットフォームの設計",
@@ -19333,126 +19451,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
       "icon": "🤖"
-    }
-  },
-  {
-    "title": "Granite R2で多言語検索を強化",
-    "news_highlight": "IBMが多言語埋め込みモデルGranite R2を公開、高精度な多言語テキスト理解を実現",
-    "problem_context": "多言語コンテンツのセマンティック検索精度向上",
-    "recommended_ai": {
-      "model": "Granite R2",
-      "reason": "高精度な多言語埋め込みを提供",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "多言語対応のセマンティック検索システムを開発する時",
-      "グローバルユーザー向けRAGシステムを構築する時",
-      "多言語の顧客フィードバックを分析する時"
-    ],
-    "steps": [
-      "多言語ドキュメントをGranite R2で埋め込みベクトル化する。",
-      "生成されたベクトルをベクトルデータベースにインデックス化する。",
-      "ユーザーの多言語クエリをGranite R2でベクトル化する。",
-      "クエリベクトルでベクトルDBを検索し、関連情報を取得する。"
-    ],
-    "prompt": "PythonとLangChainを使い、Granite R2で多言語テキストの埋め込みベクトルを生成し、ChromaDBに保存するコードを書いてください。日本語と英語のサンプルテキストを含めてください。",
-    "tags": [
-      "多言語",
-      "埋め込み",
-      "RAG",
-      "セマンティック検索",
-      "ベクトルDB"
-    ],
-    "id": "20260517_062253_03",
-    "date": "2026-05-17",
-    "source_news": {
-      "title": "IBMが多言語埋め込みモデルGranite R2を公開、高精度。",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "icon": "⚡"
-    }
-  },
-  {
-    "title": "Hugging FaceでAWS SageMaker推論",
-    "news_highlight": "AWS SageMakerでHugging Faceモデルの学習・推論が可能、デプロイが容易に",
-    "problem_context": "Hugging FaceモデルのAWS本番デプロイが複雑",
-    "recommended_ai": {
-      "model": "Hugging Face Transformers",
-      "reason": "AWS SageMakerと連携し、デプロイ・運用を簡素化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "ファインチューニングしたHugging Faceモデルを本番環境にデプロイしたい時",
-      "Hugging Face HubのモデルをAPIとして提供したい時",
-      "低レイテンシでAIモデルの推論サービスを構築したい時"
-    ],
-    "steps": [
-      "Hugging Faceモデルを選択し、必要であればファインチューニングする",
-      "AWS SageMaker SDKを使ってHugging Face Estimatorを定義する",
-      "SageMakerのトレーニングジョブを起動し、モデルを学習させる",
-      "学習済みモデルをSageMakerのエンドポイントとしてデプロイする",
-      "デプロイされたエンドポイントに推論リクエストを送信し動作確認"
-    ],
-    "prompt": "PythonとAWS SageMaker SDKを使って、Hugging Faceの`distilbert-base-uncased`モデルをSageMakerエンドポイントとしてデプロイするコードを生成してください。推論スクリプトも合わせて含めてください。",
-    "tags": [
-      "AWS",
-      "SageMaker",
-      "Hugging Face",
-      "推論",
-      "デプロイ"
-    ],
-    "id": "20260516_062746_01",
-    "date": "2026-05-16",
-    "source_news": {
-      "title": "AWSでの基盤モデル学習・推論にHugging Face活用",
-      "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "icon": "🧠"
-    }
-  },
-  {
-    "title": "GitHub Copilotで推論バッチ処理を非同期化",
-    "news_highlight": "連続バッチ処理を非同期化し、GPU利用率向上と推論スループット最大2倍を実現",
-    "problem_context": "AI推論のGPUリソースが非効率、レイテンシが高い",
-    "recommended_ai": {
-      "model": "GitHub Copilot",
-      "reason": "既存コードの非同期化を効率的に支援",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "既存の同期推論バッチ処理を非同期化したい時",
-      "推論サーバーのGPU利用率を向上させたい時",
-      "推論APIのレスポンスタイムを改善したい時"
-    ],
-    "steps": [
-      "非同期化したい推論バッチ処理のPythonコードを開く",
-      "非同期処理を導入したい箇所でGitHub Copilotにコード提案を依頼",
-      "Copilotが提案したasyncioベースの非同期コードをレビューし適用",
-      "性能テストを実施し、スループットとレイテンシの改善を確認"
-    ],
-    "prompt": "このPythonの推論バッチ処理コードをasyncioを使って非同期化してください。複数の推論リクエストを並行処理できるように修正し、GPU利用効率を高めてください。",
-    "tags": [
-      "Python",
-      "非同期処理",
-      "推論最適化",
-      "MLOps"
-    ],
-    "id": "20260516_062813_02",
-    "date": "2026-05-16",
-    "source_news": {
-      "title": "連続バッチ処理の非同期化で推論効率を向上",
-      "url": "https://huggingface.co/blog/continuous_async"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
