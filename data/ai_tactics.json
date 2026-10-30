@@ -1,5 +1,122 @@
 [
   {
+    "title": "Apple向け音声認識/決定オープンモデルで音声UI設計",
+    "news_highlight": "Apple向け音声認識/決定オープンモデル発表、マルチモーダル対応",
+    "problem_context": "音声入力のUX改善とマルチモーダル連携",
+    "recommended_ai": {
+      "model": "Apple向け音声認識/決定オープンモデル",
+      "reason": "音声認識と決定、マルチモーダル対応",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "音声コマンドでアプリを操作する機能の実装時",
+      "ユーザーの音声とテキスト入力を組み合わせた対話システム設計時",
+      "アクセシビリティ向上のため音声入力機能を拡張する時"
+    ],
+    "steps": [
+      "1. 音声UIの要件定義とフロー図を作成する",
+      "2. モデルのAPIまたはSDKを利用し音声入力処理のコードを記述する",
+      "3. マルチモーダル入力（例: 音声+画面タップ）の連携ロジックを実装する",
+      "4. ユーザーテストを実施し、認識精度と決定ロジックを調整する"
+    ],
+    "prompt": "ユーザーの音声コマンドを認識し、特定のアプリケーション機能を実行するPythonコードを生成してください。マルチモーダル入力として、音声と同時に画面上のボタンが押された場合の処理も考慮してください。",
+    "tags": [
+      "音声認識",
+      "マルチモーダル",
+      "UI/UX",
+      "アクセシビリティ"
+    ],
+    "id": "20261031_060838_01",
+    "date": "2026-10-31",
+    "source_news": {
+      "title": "Apple向け音声認識/決定オープンモデル発表、マルチモーダル対応",
+      "url": "https://huggingface.co/blog/anydecisionmodel"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🧠"
+    }
+  },
+  {
+    "title": "Mistral Large 4でPythonコード生成",
+    "news_highlight": "Mistral Large 4がHugging Faceで公開され、高性能LLMが利用可能に。",
+    "problem_context": "新規機能のプロトタイプ開発を加速したい。",
+    "recommended_ai": {
+      "model": "Mistral Large 4",
+      "reason": "高性能でHugging Faceから利用容易",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "新しいライブラリの利用方法を素早く知りたい時",
+      "特定のアルゴリズムをPythonで実装したい時",
+      "Webフレームワークの基本的なボイラープレートコードを生成したい時"
+    ],
+    "steps": [
+      "Hugging FaceのMistral Large 4ページにアクセスする。",
+      "推論APIまたはTransformersライブラリの利用方法を確認する。",
+      "開発環境でMistral Large 4を呼び出すコードを記述する。",
+      "プロンプトを送信し、生成されたコードをローカルでテストする。"
+    ],
+    "prompt": "PythonでFastAPIを使って、ユーザー認証（ログイン、登録）機能を持つシンプルなREST APIを作成してください。データベースはSQLiteを使用します。",
+    "tags": [
+      "コード生成",
+      "Python",
+      "FastAPI",
+      "LLM"
+    ],
+    "id": "20261031_060903_02",
+    "date": "2026-10-31",
+    "source_news": {
+      "title": "Mistral Large 4がHugging Faceで利用可能に",
+      "url": "https://huggingface.co/blog/mistral-large4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "💡"
+    }
+  },
+  {
+    "title": "Bedrockでマルチエージェント開発",
+    "news_highlight": "マルチエージェントで貨物請求例外処理を自動化し、6ヶ月でアクティブ例外を70%削減。",
+    "problem_context": "複雑な業務フローの自動化と効率化。",
+    "recommended_ai": {
+      "model": "Amazon Bedrock",
+      "reason": "マルチエージェント構築基盤",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "既存の業務フローをAIで自動化したい時",
+      "複数のAIが連携するシステムを設計したい時",
+      "複雑な条件分岐を持つビジネスロジックをAIに任せたい時"
+    ],
+    "steps": [
+      "1. 自動化したい業務フローを詳細に洗い出す。",
+      "2. 各ステップで必要な情報、判断基準、出力形式を定義する。",
+      "3. Bedrock上で各ステップを担当するエージェント（LLM、ツール）を設計する。",
+      "4. エージェント間の連携ロジックを実装し、テストする。"
+    ],
+    "prompt": "Amazon Bedrock上で、貨物請求の例外処理を自動化するマルチエージェントシステムを設計してください。各エージェントの役割と連携フローを具体的に記述してください。",
+    "tags": [
+      "Bedrock",
+      "マルチエージェント",
+      "業務自動化",
+      "LLM"
+    ],
+    "id": "20261031_060926_03",
+    "date": "2026-10-31",
+    "source_news": {
+      "title": "Bedrockで業務自動化、マルチエージェントで70%効率化",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "NVIDIA多言語音声認識モデルで多言語音声認識",
     "news_highlight": "NVIDIA多言語音声認識モデルがHugging Faceで公開、多様な言語の音声を高精度でテキスト化",
     "problem_context": "多言語音声データのテキスト化に時間と手間がかかる",
@@ -19330,127 +19447,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       "icon": "💡"
-    }
-  },
-  {
-    "title": "AWS Bedrock AgentCoreでAIエージェントのアクセス設計",
-    "news_highlight": "AWS Bedrock AgentCoreがAIエージェントの閲覧範囲を制御可能にし、セキュリティと精度を向上。",
-    "problem_context": "AIエージェントの過剰な情報アクセスによるリスクを低減したい。",
-    "recommended_ai": {
-      "model": "AWS Bedrock AgentCore",
-      "reason": "エージェントのアクセス制御機能を提供。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "機密情報を含むデータソースへのAIエージェントのアクセスを制限したい時",
-      "AIエージェントが実行できる外部API呼び出しを厳密に管理したい時",
-      "AIエージェントの応答精度を特定の情報源に限定して向上させたい時"
-    ],
-    "steps": [
-      "1. AWS Bedrock AgentCoreで新しいエージェントを作成または既存エージェントを選択する。",
-      "2. エージェントの設定画面で「Action groups」または「Knowledge bases」のアクセス権限設定を開く。",
-      "3. エージェントがアクセスを許可する特定のS3バケット、Lambda関数、またはAPIエンドポイントを指定する。",
-      "4. 意図しない情報源へのアクセスを拒否するポリシーを定義し、エージェントをテストして動作を確認する。"
-    ],
-    "prompt": "AWS Bedrock AgentCoreで、顧客情報データベース（RDS）へのアクセスを許可せず、製品カタログ（S3バケット）と注文履歴APIのみにアクセス可能なAIエージェントの設計ポリシーをJSON形式で記述してください。",
-    "tags": [
-      "AWS",
-      "Bedrock",
-      "AgentCore",
-      "セキュリティ",
-      "アクセス制御",
-      "AIエージェント"
-    ],
-    "id": "20260518_062448_03",
-    "date": "2026-05-18",
-    "source_news": {
-      "title": "AWS Bedrock AgentCoreでAIエージェントの閲覧範囲を制御可能に。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazon-bedrock-agentcore/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Stream Vision AgentsとNova 2 Sonicで音声AIエージェント構築",
-    "news_highlight": "Stream Vision AgentsとAmazon Nova 2 Sonicでリアルタイム音声AIエージェントを数分で本番環境対応可能に",
-    "problem_context": "リアルタイム音声AIエージェントの開発時間短縮",
-    "recommended_ai": {
-      "model": "Stream Vision Agents, Amazon Nova 2 Sonic",
-      "reason": "リアルタイム音声AIエージェント構築を迅速化",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "顧客サポート向け音声ボットのプロトタイプ開発",
-      "社内業務効率化のための音声インターフェース実装",
-      "既存アプリケーションへの音声対話機能追加"
-    ],
-    "steps": [
-      "1. Stream Vision AgentsのGitHubリポジトリをクローンする。",
-      "2. Amazon BedrockとNova 2 SonicのAPIキーを設定する。",
-      "3. 提供されているサンプルコードを参考に音声エージェントをデプロイする。",
-      "4. リアルタイム音声対話の動作をテストし、応答速度を評価する。"
-    ],
-    "prompt": "Stream Vision AgentsとAmazon Nova 2 Sonicを使って、顧客からの問い合わせにリアルタイムで応答する音声AIエージェントのPythonコードを生成してください。Amazon BedrockのClaude 3 HaikuをバックエンドLLMとして使用し、簡単なFAQ応答機能を実装してください。",
-    "tags": [
-      "音声AI",
-      "リアルタイム",
-      "エージェント",
-      "Amazon Bedrock",
-      "Nova 2 Sonic",
-      "Stream Vision Agents"
-    ],
-    "id": "20260517_062153_01",
-    "date": "2026-05-17",
-    "source_news": {
-      "title": "Stream Vision AgentsとNova 2 Sonicでリアルタイム音声AIエージェントを構築。",
-      "url": "https://aws.amazon.com/blogs/machine-learning/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
-      "icon": "🎨"
-    }
-  },
-  {
-    "title": "GPT-5.5で社内ドキュメントからAPI設計",
-    "news_highlight": "GPT-5.5がOfficeQA ProでSOTA達成、企業向けエージェントワークフローに導入",
-    "problem_context": "膨大な社内ドキュメントからの情報抽出とAPI設計",
-    "recommended_ai": {
-      "model": "GPT-5.5",
-      "reason": "複雑なビジネス文書理解に優れる",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいAPIを設計する際、既存のサービス仕様書から必要なエンティティやビジネスルールを抽出したい時",
-      "複数の社内ドキュメントに散らばる情報を統合し、APIエンドポイントの設計案を作成したい時",
-      "既存システムの機能拡張で、関連するドキュメントを基にRESTful APIの設計を検討したい時"
-    ],
-    "steps": [
-      "1. API設計に必要な社内ドキュメント（例: サービス仕様書）の内容をテキスト化する",
-      "2. 設計したいAPIの目的と概要を明確にする",
-      "3. GPT-5.5にドキュメントを基にしたAPI設計を依頼する",
-      "4. 提案されたAPI設計案をレビューし、修正する"
-    ],
-    "prompt": "以下の社内ドキュメントを参考に、商品情報管理APIのRESTfulな設計をJSON形式で提案してください。エンドポイント、リクエスト/レスポンスのスキーマを含めてください。ドキュメント: [ドキュメント内容]",
-    "tags": [
-      "API設計",
-      "ドキュメント理解",
-      "情報抽出",
-      "エンタープライズ"
-    ],
-    "id": "20260517_062224_02",
-    "date": "2026-05-17",
-    "source_news": {
-      "title": "DatabricksがGPT-5.5を導入、OfficeQA ProでSOTA達成。",
-      "url": "https://openai.com/index/databricks"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
     }
   }
 ]
