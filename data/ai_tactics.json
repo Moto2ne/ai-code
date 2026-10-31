@@ -1,5 +1,121 @@
 [
   {
+    "title": "Amazon Bedrock AgentCoreでWebアプリライブプレビュー",
+    "news_highlight": "Amazon Bedrock AgentCore Session endpointsが認証済みURLでWebアプリのライブプレビューを可能に。",
+    "problem_context": "開発中のWebアプリのリアルタイム確認が困難",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "Webアプリのライブプレビュー機能を提供",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "開発中のWebアプリのUI/UXをリアルタイムで確認したい時",
+      "チームメンバーに開発中の機能を素早く共有し、フィードバックを得たい時",
+      "バックエンドとフロントエンドの連携をデバッグする際に、実際の動作を確認したい時"
+    ],
+    "steps": [
+      "1. Amazon Bedrock AgentCoreでエージェントを設定し、Webアプリのコードをデプロイする。",
+      "2. AgentCore Session endpointで発行された認証済みURLにアクセスする。",
+      "3. 開発中のWebアプリのUI/動作をブラウザでリアルタイムに確認する。",
+      "4. 変更を加え、再度デプロイして即座に反映を確認する。"
+    ],
+    "prompt": "Amazon Bedrock AgentCoreで開発中のReactアプリをデプロイし、Session endpointの認証済みURLを発行してください。ポート3000へのHTTP/WebSocket接続を許可します。",
+    "tags": [
+      "Web開発",
+      "デバッグ",
+      "リアルタイムプレビュー",
+      "CI/CD"
+    ],
+    "id": "20261101_060818_01",
+    "date": "2026-11-01",
+    "source_news": {
+      "title": "Amazon Bedrock AgentCoreでWebアプリのライブプレビューが可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/preview-web-apps-live-as-your-coding-agent-builds-them-with-amazon-bedrock-agentcore-runtime/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "ChatGPTデスクトップアプリでBedrock経由のコードレビュー",
+    "news_highlight": "ChatGPTデスクトップアプリがAmazon Bedrock (GovCloud) で利用可能に。セキュアなローカルデプロイで推論をルーティング。",
+    "problem_context": "企業内データでAI利用時のセキュリティ懸念解消",
+    "recommended_ai": {
+      "model": "ChatGPTデスクトップアプリ (via Amazon Bedrock)",
+      "reason": "セキュアな環境でAI活用",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "機密性の高い社内コードのレビューをAIに依頼したい時",
+      "企業内システムのアーキテクチャ設計案をAIと議論したい時",
+      "社内ドキュメントの要約やドラフト作成をセキュアに行いたい時"
+    ],
+    "steps": [
+      "ChatGPTデスクトップアプリをBedrock (GovCloud) に設定する",
+      "レビューしたい社内コードをアプリに貼り付ける",
+      "具体的なレビュー観点を含んだプロンプトを入力する",
+      "AIの提案を基にコードを修正し、テストする"
+    ],
+    "prompt": "このPythonコードのセキュリティ脆弱性を特定し、修正案を提示してください。特にSQLインジェクションとXSSに注目してください。",
+    "tags": [
+      "コードレビュー",
+      "セキュリティ",
+      "AWS Bedrock",
+      "ChatGPT"
+    ],
+    "id": "20261101_060844_02",
+    "date": "2026-11-01",
+    "source_news": {
+      "title": "ChatGPTデスクトップアプリをAmazon Bedrockで設定可能に。",
+      "url": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
+      "icon": "🤖"
+    }
+  },
+  {
+    "title": "Mistral Large 4で複雑なロジック生成",
+    "news_highlight": "Mistral Large 4がHugging Faceで利用開始、複雑な推論タスクに対応可能",
+    "problem_context": "複雑なビジネスロジックの実装に時間がかかる",
+    "recommended_ai": {
+      "model": "Mistral Large 4",
+      "reason": "Hugging Faceで利用可能、高性能",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "複雑なビジネスロジックを含むコードスニペットの生成",
+      "既存のレガシーコードの改善提案",
+      "多言語対応のAPIドキュメントの自動生成"
+    ],
+    "steps": [
+      "1. Hugging FaceのMistral Large 4 APIクライアントをセットアップ",
+      "2. 実装したいビジネスロジックの要件を具体的に記述",
+      "3. 要件をプロンプトとしてMistral Large 4に送信し、コードを生成",
+      "4. 生成されたコードをテストし、必要に応じて手動で調整"
+    ],
+    "prompt": "Pythonで、ECサイトの注文処理ロジックを生成してください。在庫確認、決済処理、注文履歴更新を含めてください。",
+    "tags": [
+      "コード生成",
+      "設計支援",
+      "Hugging Face"
+    ],
+    "id": "20261101_060910_03",
+    "date": "2026-11-01",
+    "source_news": {
+      "title": "新AIモデル「Mistral Large 4」がHugging Faceで利用開始。",
+      "url": "https://huggingface.co/blog/mistral-large4"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "⚡"
+    }
+  },
+  {
     "title": "Apple向け音声認識/決定オープンモデルで音声UI設計",
     "news_highlight": "Apple向け音声認識/決定オープンモデル発表、マルチモーダル対応",
     "problem_context": "音声入力のUX改善とマルチモーダル連携",
@@ -19323,125 +19439,6 @@
     "source_news": {
       "title": "電力網向け小型基盤モデルGridSFM発表、ミリ秒予測で効率化。",
       "url": "https://www.microsoft.com/en-us/research/blog/gridsfm-a-new-small-foundation-model-for-the-electric-grid/"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
-    }
-  },
-  {
-    "title": "Llama 3推論の非同期バッチ処理設計",
-    "news_highlight": "連続バッチ処理の非同期化により、LLM推論スループットを最大2倍向上、レイテンシを30%削減。",
-    "problem_context": "LLM推論の処理速度が遅く、コストが高い。",
-    "recommended_ai": {
-      "model": "Llama 3",
-      "reason": "推論対象モデルの効率化に直結",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "大量のテキスト生成ジョブを高速化したい時",
-      "リアルタイム応答が求められるLLMチャットボットのバックエンド",
-      "複数のユーザーからのLLMリクエストを同時に処理するAPIサーバー"
-    ],
-    "steps": [
-      "既存のLLM推論バッチ処理コード（Python, Node.js等）を特定する。",
-      "非同期処理ライブラリ（Pythonならasyncio、Node.jsならPromise.all）を導入する。",
-      "バッチ内の各推論リクエストを非同期関数としてラップする。",
-      "非同期実行機能（例: asyncio.gather）で並行処理し、結果を収集する。",
-      "変更後のコードでパフォーマンス計測を行い、スループットとレイテンシの改善を確認する。"
-    ],
-    "prompt": "Pythonで、複数のLLM推論リクエストを非同期に処理する連続バッチ処理のコードを生成してください。`asyncio`と`httpx`を使用し、並行処理を最大化してください。",
-    "tags": [
-      "LLM",
-      "推論最適化",
-      "非同期処理",
-      "Python",
-      "パフォーマンス"
-    ],
-    "id": "20260519_063357_03",
-    "date": "2026-05-19",
-    "source_news": {
-      "title": "連続バッチ処理の非同期化でLLM推論を効率化。",
-      "url": "https://huggingface.co/blog/continuous_async"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #0668E1 0%, #1877f2 100%)",
-      "icon": "🦙"
-    }
-  },
-  {
-    "title": "GPT-5.5で企業ドキュメントから情報抽出",
-    "news_highlight": "GPT-5.5がOfficeQA ProでSOTA達成、企業エージェントに導入。",
-    "problem_context": "社内ドキュメントからの情報検索が非効率。",
-    "recommended_ai": {
-      "model": "GPT-5.5",
-      "reason": "OfficeQA ProでSOTA達成、高い理解力。",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "新しいプロジェクトに参加し、過去の設計ドキュメントを素早く理解したい時",
-      "既存システムの特定の機能について、関連ドキュメントから情報を集めたい時",
-      "顧客からの問い合わせに対し、社内ナレッジベースから迅速に回答を生成したい時"
-    ],
-    "steps": [
-      "1. 質問したい社内ドキュメント（PDF, Word, テキストなど）を準備する。",
-      "2. ドキュメントの内容をテキスト形式で抽出し、AIに渡せる状態にする。",
-      "3. GPT-5.5 APIにドキュメント内容と質問を送信する。",
-      "4. 返答された情報を確認し、必要に応じて深掘り質問をする。"
-    ],
-    "prompt": "以下のプロジェクト仕様書の内容を基に、『ユーザー認証機能』の設計要件と実装上の注意点を抽出して箇条書きでまとめてください。",
-    "tags": [
-      "情報抽出",
-      "ドキュメント理解",
-      "QAシステム",
-      "ナレッジベース"
-    ],
-    "id": "20260518_062353_01",
-    "date": "2026-05-18",
-    "source_news": {
-      "title": "DatabricksがGPT-5.5を企業エージェントに導入、OfficeQA ProでSOTA達成。",
-      "url": "https://openai.com/index/databricks"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #10a37f 0%, #1a7f5a 100%)",
-      "icon": "🤖"
-    }
-  },
-  {
-    "title": "Copilotでユーザー利益を最大化するコード改善",
-    "news_highlight": "MSが新ベンチマークSocialReasoning Bench発表。AIエージェントは有能だが、ユーザー利益を常に最適化できない課題が判明。",
-    "problem_context": "AIが生成したコードがユーザー利益を最大化しない",
-    "recommended_ai": {
-      "model": "Copilot",
-      "reason": "MSが発表したベンチマークのため関連性が高い",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プルリクエストを出す前に自分のコードをレビューしたい時",
-      "既存機能の改善案を検討する時",
-      "新しい機能の設計段階で、ユーザー体験を最適化したい時"
-    ],
-    "steps": [
-      "1. 改善したいコードや設計ドキュメントをAIに提示する",
-      "2. 「ユーザーの利益を最大化する」という明確な目的をプロンプトで伝える",
-      "3. AIからの提案をユーザー視点で評価し、さらに深掘りする",
-      "4. 提案された改善策を実装し、ユーザーテストで効果を検証する"
-    ],
-    "prompt": "以下のコードはユーザーが商品をカートに追加する機能です。ユーザーの購入体験を最大化するため、パフォーマンスと使いやすさの観点から改善案を3つ提案してください。各案のメリット・デメリットも示してください。",
-    "tags": [
-      "コード改善",
-      "UX最適化",
-      "AIエージェント",
-      "設計レビュー"
-    ],
-    "id": "20260518_062422_02",
-    "date": "2026-05-18",
-    "source_news": {
-      "title": "MSがAIエージェントのユーザー利益行動を測る新ベンチマーク発表。",
-      "url": "https://www.microsoft.com/en-us/research/blog/socialreasoning-bench-measuring-whether-ai-agents-act-in-users-best-interests/"
     },
     "article": null,
     "visual_theme": {
