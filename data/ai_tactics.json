@@ -1,5 +1,86 @@
 [
   {
+    "title": "Bedrock AgentCoreで自律AIのデータ連携設計",
+    "news_highlight": "Bedrock AgentCoreとEDB Postgres AIで、ガバナンス付き自律AIセマンティック層を構築、ビジネス意味・結合パス・アクセス制御を統合。",
+    "problem_context": "自律AIが企業データソースを安全・正確に利用できない",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore",
+      "reason": "自律AIエージェントの実行基盤を提供",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "自律AIエージェントが企業データベースから情報を取得する際のデータモデル設計",
+      "複数のデータソースを統合し、AIエージェントが利用できるセマンティック層を定義する時",
+      "AIエージェントのデータアクセスにビジネスルールやセキュリティポリシーを適用する時"
+    ],
+    "steps": [
+      "1. EDB Postgres AIで既存の企業データソースを統合し、ビジネスエンティティを定義する。",
+      "2. Bedrock AgentCoreで新しいAIエージェントを作成し、データソースとしてEDB Postgres AIを設定する。",
+      "3. Strands Agentsを利用して、セマンティック層のビジネス意味、結合パス、アクセス制御ルールを定義する。",
+      "4. 定義したセマンティック層を通じてAIエージェントがデータをクエリし、結果を検証する。"
+    ],
+    "prompt": "EDB Postgres AIに接続された企業データソースから、顧客情報と注文履歴を結合し、AIエージェントが利用可能なセマンティック層のデータモデルとアクセス制御ルールをJSONで設計してください。",
+    "tags": [
+      "データ統合",
+      "自律AI",
+      "セマンティック層",
+      "データガバナンス"
+    ],
+    "id": "20261104_060929_01",
+    "date": "2026-11-04",
+    "source_news": {
+      "title": "Bedrock AgentCoreで自律型AIのセマンティック層を構築",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-amazon-bedrock-agentcore/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
+    "title": "Bedrock AgentCore Gatewayで認証連携設計",
+    "news_highlight": "Bedrock AgentCore GatewayがEntra IDとOBOトークン交換、ServiceNow APIをユーザーID保持で呼び出し可能に",
+    "problem_context": "AIエージェントの外部API認証とユーザーID保持",
+    "recommended_ai": {
+      "model": "Amazon Bedrock AgentCore Gateway",
+      "reason": "外部API認証とユーザーID保持を実現",
+      "badge_color": "orange"
+    },
+    "use_cases": [
+      "AIエージェントがユーザー代理でServiceNowチケット作成時",
+      "AIエージェントがユーザー権限でServiceNow情報取得時",
+      "AIエージェントの複数外部システム連携認証設計時"
+    ],
+    "steps": [
+      "1. Bedrock AgentCore GatewayでEntra IDを認証プロバイダに設定",
+      "2. Entra IDでアプリ登録し、ServiceNow APIパーミッション付与",
+      "3. GatewayでOBOトークン交換設定を構成し、スコープを定義",
+      "4. AIエージェントのアクションでServiceNow REST API呼び出しを実装"
+    ],
+    "prompt": "Amazon Bedrock AgentCore GatewayでMicrosoft Entra IDと連携し、ServiceNow REST APIをOBOトークンで呼び出すためのAWS CDKコードを生成してください。",
+    "tags": [
+      "認証",
+      "セキュリティ",
+      "AWS",
+      "Azure",
+      "ServiceNow",
+      "API連携",
+      "AIエージェント"
+    ],
+    "id": "20261104_060955_02",
+    "date": "2026-11-04",
+    "source_news": {
+      "title": "Bedrock AgentCore GatewayでAIエージェント認証連携",
+      "url": "https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/"
+    },
+    "article": null,
+    "visual_theme": {
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+      "icon": "🚀"
+    }
+  },
+  {
     "title": "Amazon Nova/Bedrock Agentで部品評価を自動化",
     "news_highlight": "Nova/Bedrockで航空宇宙部品評価を数日から数分に短縮、マルチエージェント活用",
     "problem_context": "複雑な部品の代替評価に膨大な時間がかかる",
@@ -19368,82 +19449,6 @@
     "visual_theme": {
       "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
       "icon": "⚡"
-    }
-  },
-  {
-    "title": "オープンエージェントでコードレビュー",
-    "news_highlight": "オープンエージェントの性能比較リーダーボード発表、タスク遂行能力がスコア化され比較可能に",
-    "problem_context": "プルリクエストのコード品質を向上させたい",
-    "recommended_ai": {
-      "model": "オープンエージェント",
-      "reason": "リーダーボードで高評価",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "プルリクエストを出す前に自分のコードをレビューしたい時",
-      "チームメンバーのコードレビューを効率化したい時",
-      "既存コードの潜在的なバグや改善点を特定したい時"
-    ],
-    "steps": [
-      "1. レビューしたいコードをコピーする",
-      "2. オープンエージェントにコードとレビュー観点を提示",
-      "3. エージェントの提案をレビューし、コードに適用",
-      "4. 修正後のコードをテスト環境で検証"
-    ],
-    "prompt": "以下のPythonコードをレビューし、バグ、セキュリティ脆弱性、改善点を指摘してください。また、よりPythonicな書き方を提案してください。コード: [ここにコードを貼り付け]",
-    "tags": [
-      "コードレビュー",
-      "品質向上"
-    ],
-    "id": "20260521_063943_01",
-    "date": "2026-05-21",
-    "source_news": {
-      "title": "オープンエージェントの性能を比較するリーダーボードを発表",
-      "url": "https://huggingface.co/blog/ibm-research/open-agent-leaderboard"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-      "icon": "🚀"
-    }
-  },
-  {
-    "title": "Ettin Rerankerで検索結果を最適化",
-    "news_highlight": "Ettin Rerankerモデルファミリーは検索結果の関連性ランキングを大幅向上、複雑なクエリにも対応。",
-    "problem_context": "検索結果の関連性が低く、情報発見に時間がかかる。",
-    "recommended_ai": {
-      "model": "Ettin Reranker",
-      "reason": "検索結果の関連性を高める",
-      "badge_color": "orange"
-    },
-    "use_cases": [
-      "社内ドキュメント検索の精度を上げたい時",
-      "顧客向けFAQシステムの回答精度を向上させたい時",
-      "大規模なデータセットから特定の情報を効率的に見つけたい時"
-    ],
-    "steps": [
-      "既存の検索システムから検索クエリと上位N件の検索結果を準備する。",
-      "Ettin Reranker APIにクエリと検索結果を送信し、再ランキングされた結果を受け取る。",
-      "再ランキングされた結果をユーザーインターフェースに表示する。",
-      "ユーザーからのフィードバックを収集し、モデルの性能改善に活用する。"
-    ],
-    "prompt": "Ettin Reranker APIに、クエリ「最新のAI技術トレンド」とドキュメントリスト「[doc_id_1: 'AIの進化', doc_id_2: '機械学習の基礎', doc_id_3: 'ディープラーニング応用']」を渡し、再ランキング結果を返してください。",
-    "tags": [
-      "検索",
-      "ランキング",
-      "情報検索",
-      "RAG"
-    ],
-    "id": "20260521_064009_02",
-    "date": "2026-05-21",
-    "source_news": {
-      "title": "新しいEttin Rerankerモデルファミリーを公開",
-      "url": "https://huggingface.co/blog/ettin-reranker"
-    },
-    "article": null,
-    "visual_theme": {
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "icon": "💡"
     }
   }
 ]
